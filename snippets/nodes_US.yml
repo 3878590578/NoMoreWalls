@@ -1,90 +1,61 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 01 | 1x US Los Angeles
-  password: 049f3ee0-5ebb-485d-8934-d0bd73cd4948
+  password: bae4515a-c8ca-458a-b153-d490e47560b2
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 049f3ee0-5ebb-485d-8934-d0bd73cd4948
+  password: bae4515a-c8ca-458a-b153-d490e47560b2
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 03 | 1x US Washington
-  password: 049f3ee0-5ebb-485d-8934-d0bd73cd4948
+  password: bae4515a-c8ca-458a-b153-d490e47560b2
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 6f478865-7b30-43df-bc50-91d11a67c199
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 6f478865-7b30-43df-bc50-91d11a67c199
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸 美国 03 | 1x US Washington
-  password: 6f478865-7b30-43df-bc50-91d11a67c199
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 2|🇺🇸4 |  1.0MB/s
+  name: 1|🇺🇸2 |  7.5MB/s
+  obfs: plain
   password: amazonskr05
   port: 443
-  server: 34.220.99.193
-  type: ss
-- name: 2|🇺🇸5 |  9.7MB/s
-  password: 1c3ff916-ea29-32b8-b475-672d42a5d72d
-  port: 20278
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z278.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 2|🇺🇸6 |  6.3MB/s
-  password: 1c3ff916-ea29-32b8-b475-672d42a5d72d
-  port: 24603
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z259.hongkongnode.top
-  type: trojan
-  udp: true
+  protocol: origin
+  server: 35.87.206.35
+  type: ssr
 - cipher: aes-256-cfb
-  name: 2|🇺🇸11 |  3.8MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.194.186.197
-  type: ss
-- cipher: aes-256-cfb
-  name: 2|🇺🇸12 |  5.4MB/s
+  name: 1|🇺🇸8 |  3.9MB/s
   obfs: plain
   password: amazonskr05
   port: 443
   protocol: origin
   server: 52.41.168.231
   type: ssr
-- name: 2|🇺🇸13 |  3.8MB/s
-  password: 1c3ff916-ea29-32b8-b475-672d42a5d72d
-  port: 16895
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x40.flybar.work
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸 美国 01 | 1x US Los Angeles
+  password: b698abac-9f07-4a44-97d9-3c4a899203f3
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: b698abac-9f07-4a44-97d9-3c4a899203f3
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸 美国 03 | 1x US Washington
+  password: b698abac-9f07-4a44-97d9-3c4a899203f3
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
   udp: true
 - client-fingerprint: chrome
   name: 13,14|美国|@ripaojiedian
@@ -95,14 +66,17 @@ proxies:
   skip-cert-verify: true
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 13|🇺🇸 美国4|@ripaojiedian
-  password: LKG8G8VL60RSB59P
-  port: 17003
-  server: 23.185.248.13
+  name: 13|🇺🇸 美国2|@ripaojiedian
+  port: 13447
+  server: 23.236.68.213
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 2e41fa05-75d0-4d8c-9e23-41e2e7a8fa9f
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -114,6 +88,24 @@ proxies:
   tls: false
   type: vmess
   uuid: a5e99fc4-5b87-4312-aa8a-52cad1971b92
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国4|@ripaojiedian
+  password: LKG8G8VL60RSB59P
+  port: 17003
+  server: 23.185.248.13
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 14|美国2|@ripaojiedian
+  network: tcp
+  port: '13447'
+  server: 23.236.68.213
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2e41fa05-75d0-4d8c-9e23-41e2e7a8fa9f
 - alterId: 0
   cipher: auto
   name: 14|美国3|@ripaojiedian

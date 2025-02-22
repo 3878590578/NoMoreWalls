@@ -1,87 +1,68 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 01 | 1x JP
-  password: 049f3ee0-5ebb-485d-8934-d0bd73cd4948
+  password: bae4515a-c8ca-458a-b153-d490e47560b2
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 02 | 1x JP
-  password: 049f3ee0-5ebb-485d-8934-d0bd73cd4948
+  password: bae4515a-c8ca-458a-b153-d490e47560b2
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 03 | 1x JP
-  password: 049f3ee0-5ebb-485d-8934-d0bd73cd4948
+  password: bae4515a-c8ca-458a-b153-d490e47560b2
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 1|🇯🇵1 |  4.8MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.179.112.66
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵 日本 01 | 1x JP
-  password: 6f478865-7b30-43df-bc50-91d11a67c199
+  name: 2|🇯🇵 日本 01 | 1x JP
+  password: b698abac-9f07-4a44-97d9-3c4a899203f3
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵 日本 02 | 1x JP
-  password: 6f478865-7b30-43df-bc50-91d11a67c199
+  name: 2|🇯🇵 日本 02 | 1x JP
+  password: b698abac-9f07-4a44-97d9-3c4a899203f3
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵 日本 03 | 1x JP
-  password: 6f478865-7b30-43df-bc50-91d11a67c199
+  name: 2|🇯🇵 日本 03 | 1x JP
+  password: b698abac-9f07-4a44-97d9-3c4a899203f3
   port: 36115
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 2|🇯🇵1 |  11.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.112.216.127
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 2|🇯🇵2 |  11.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.114.96.104
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 2|🇯🇵3 |  2.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.206.216.94
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 13|🇯🇵 日本|@ripaojiedian
-  password: 17J24GBDGLTUHDF3
-  port: 18011
-  server: 156.231.104.21
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 13|🇯🇵 日本2|@ripaojiedian
-  password: 1H5KX5QZBUOWP2P4
-  port: 18007
-  server: 156.231.104.17
-  tfo: false
-  type: ss
+- client-fingerprint: chrome
+  name: 13,14|日本|@ripaojiedian
+  network: tcp
+  password: 65f14831-5c67-483f-9e85-f3aa73f21187
+  port: 13012
+  server: naiu-jp.05vr9nyqg5.download
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 13|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.124.66.120
+  server: 43.203.240.54
   tfo: false
   type: ss
