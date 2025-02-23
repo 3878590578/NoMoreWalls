@@ -64,7 +64,7 @@ proxies:
 - down: 1000
   name: 6|🇺🇸 USA 01-Hy2
   password: 9f79211a-45c0-4810-80e0-0768f686a1da
-  port: 22739
+  port: 28809
   ports: 21000-50000
   server: akusum.mmaccc.top
   skip-cert-verify: true
@@ -73,7 +73,7 @@ proxies:
   up: 1000
 - alterId: 0
   cipher: auto
-  name: 7|?? 香港3 - 直連
+  name: 7|?? Singapore 4 - 直连
   network: ws
   port: 80
   server: 5cc6e8.36771e4b-c14b.sbs
@@ -81,10 +81,10 @@ proxies:
   udp: true
   uuid: 16cc7066-3cb3-4001-8a7a-d5a146cc8428
   ws-headers:
-    Host: hk03s.36771e4b-c14b.sbs
+    Host: sg04s.36771e4b-c14b.sbs
   ws-opts:
     headers:
-      Host: hk03s.36771e4b-c14b.sbs
+      Host: sg04s.36771e4b-c14b.sbs
     path: /
   ws-path: /
 - cipher: chacha20-ietf-poly1305
@@ -133,17 +133,10 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇭🇰香港 01 | 1x HK
-  password: b97316e9-5197-476a-96ca-506ca90beac6
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - down: 1000
   name: '27,179,180,181,182|🇱🇺卢森堡4 #3'
   password: 5e17ad47-6700-4b16-bc8e-949385b41dba
-  port: 21199
+  port: 21168
   ports: 21101-21199
   server: lu.xn--2vxn29amga.com
   skip-cert-verify: false
@@ -153,7 +146,7 @@ proxies:
 - down: 50
   name: 46|🇬🇧英国-联通 01
   password: 63769deb-4153-4b98-aba3-31bc07e53a2d
-  port: 36428
+  port: 30233
   ports: 20000-50000
   server: ld.556855.xyz
   skip-cert-verify: true
@@ -320,6 +313,34 @@ proxies:
   server: cshgz1.fuckcdn.top
   type: ss
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '86,87|新加坡01|流媒体 #1'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: sg001.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '88,89,90|新加坡01|流媒体 #4'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: sg001.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
 - cipher: aes-128-gcm
   name: '93,94|🇬🇧英国1 #1'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
@@ -744,8 +765,8 @@ proxies:
   server: node-a.dlg365.com
   type: ss
   udp: true
-- name: 163|英国01-0.8×
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
+- name: 166|英国01-0.8×
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 20073
   server: 36.228.244.241
   sni: taobao.phantasy.life
@@ -815,6 +836,20 @@ proxies:
   server: qq.miaolianyunapp.com
   type: ss
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '184,185,186,187,188,189,190|新加坡01|流媒体 #11'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: sg001.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b44da489-fc70-4fd0-8997-a83b51f59267
 - cipher: aes-128-gcm
   name: 191|英国1
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
