@@ -52,6 +52,22 @@ proxies:
   server: uk.acxylm.top
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 6|?? 香港3 - 直連
+  network: ws
+  port: 80
+  server: 5cc6e8.36771e4b-c14b.sbs
+  type: vmess
+  udp: true
+  uuid: 16cc7066-3cb3-4001-8a7a-d5a146cc8428
+  ws-headers:
+    Host: hk03s.36771e4b-c14b.sbs
+  ws-opts:
+    headers:
+      Host: hk03s.36771e4b-c14b.sbs
+    path: /
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 7|香港
   password: c7565627-f145-442a-b5a0-32222fbba49f
@@ -60,15 +76,15 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 27|🇭🇰香港 01 | 1x HK
-  password: 003dd3d1-4b91-4f41-b0c7-4c8fdc07de01
+  name: 29|🇭🇰香港 01 | 1x HK
+  password: 2bb840f2-27f7-41d8-a4eb-28b135db2292
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 27|🇬🇧英国家宽 01 | 1x UK
-  password: 003dd3d1-4b91-4f41-b0c7-4c8fdc07de01
+  name: 29|🇬🇧英国家宽 01 | 1x UK
+  password: 2bb840f2-27f7-41d8-a4eb-28b135db2292
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -175,22 +191,6 @@ proxies:
   port: 28918
   server: cshgz1.fuckcdn.top
   type: ss
-  udp: true
-- name: 106|🇬🇧|英国-IEPL 01
-  password: 44123e4a-3480-4392-978c-b4eb1b3095d7
-  port: 20020
-  server: IEPL01.catcat321.com
-  skip-cert-verify: true
-  sni: mp.weixin.qq.com
-  type: trojan
-  udp: true
-- name: 106|🇬🇧|英国-IEPL 02
-  password: 44123e4a-3480-4392-978c-b4eb1b3095d7
-  port: 20019
-  server: IEPL00.catcat321.com
-  skip-cert-verify: true
-  sni: mp.weixin.qq.com
-  type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: '120|🇬🇧 英国 #1'
@@ -437,12 +437,12 @@ proxies:
   name: 158|🇬🇧 UK 01 哈利波特
   password: fc04eeaa-c0b7-4829-90f1-9294121facc1
   port: 30130
-  server: 117.173.88.171
+  server: bitch.dianying.lat
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: '161,162|日本-优化 #4'
+  name: '161,162,163|日本-优化 #5'
   network: ws
   port: 16617
   server: yes.mojcn.com
@@ -458,7 +458,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '161,162|英国-优化-GPT #4'
+  name: '161,162,163|英国-优化-GPT #5'
   network: ws
   port: 16645
   server: yes.mojcn.com
@@ -474,7 +474,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '161,162|英国-优化2 #4'
+  name: '161,162,163|英国-优化2 #5'
   network: ws
   port: 16645
   server: m.cnmjin.net
@@ -490,7 +490,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '161,162|英国-优化3 #4'
+  name: '161,162,163|英国-优化3 #5'
   network: ws
   port: 16645
   server: t.cnmjcn.cyou
@@ -504,7 +504,7 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: '161,162|英国UK-T #4'
+- name: '161,162,163|英国UK-T #5'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 443
   server: uk.mjt000.com
@@ -513,7 +513,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '164|日本-优化 #5'
+  name: '164|日本-优化 #6'
   network: ws
   port: 16617
   server: yes.mojcn.com
@@ -529,7 +529,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '164|英国-优化-GPT #5'
+  name: '164|英国-优化-GPT #6'
   network: ws
   port: 16645
   server: yes.mojcn.com
@@ -545,7 +545,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '164|英国-优化2 #5'
+  name: '164|英国-优化2 #6'
   network: ws
   port: 16645
   server: m.cnmjin.net
@@ -561,7 +561,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '164|英国-优化3 #5'
+  name: '164|英国-优化3 #6'
   network: ws
   port: 16645
   server: t.cnmjcn.cyou
@@ -575,7 +575,7 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: '164|英国UK-T #5'
+- name: '164|英国UK-T #6'
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
   server: uk.mjt000.com
@@ -595,7 +595,7 @@ proxies:
     headers:
       Host: uk1.xn--drry30l.xyz
     path: /qidi?ed=2560
-- name: 178|GB_speednode_0049
+- name: 178|GB_speednode_0033
   password: '!!str 3747000103274291200'
   port: 443
   server: fond-moth.treefrog761.one
@@ -603,7 +603,7 @@ proxies:
   sni: fond-moth.treefrog761.one
   type: trojan
   udp: true
-- name: 178|GB_speednode_0050
+- name: 178|GB_speednode_0034
   password: '!!str 3747000103274291200'
   port: 443
   server: cuddly-slug.treefrog761.one
@@ -627,7 +627,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '184|🇸🇬 新加坡 #1'
+  name: '184|🇭🇰 香港3 #2'
   network: ws
   port: 80
   server: 5cc6e8.36771e4b-c14b.sbs
@@ -635,60 +635,12 @@ proxies:
   udp: true
   uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
   ws-headers:
-    Host: sg02s.36771e4b-c14b.sbs
+    Host: hk03s.36771e4b-c14b.sbs
   ws-opts:
     headers:
-      Host: sg02s.36771e4b-c14b.sbs
+      Host: hk03s.36771e4b-c14b.sbs
     path: /
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '185|🇰🇷 韩国3 #1'
-  network: ws
-  port: 80
-  server: 5cc6e8.36771e4b-c14b.sbs
-  type: vmess
-  udp: true
-  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
-  ws-headers:
-    Host: kr03s.36771e4b-c14b.sbs
-  ws-opts:
-    headers:
-      Host: kr03s.36771e4b-c14b.sbs
-    path: /
-  ws-path: /
-- name: '188|🇬🇧|英国-IEPL 01 #1'
-  password: fe0b59ec-6af0-45db-9509-4c66b464af2e
-  port: 20020
-  server: IEPL01.catcat321.com
-  skip-cert-verify: true
-  sni: mp.weixin.qq.com
-  type: trojan
-  udp: true
-- name: '188|🇬🇧|英国-IEPL 02 #1'
-  password: fe0b59ec-6af0-45db-9509-4c66b464af2e
-  port: 20019
-  server: IEPL00.catcat321.com
-  skip-cert-verify: true
-  sni: mp.weixin.qq.com
-  type: trojan
-  udp: true
-- name: '189|🇬🇧|英国-IEPL 01 #2'
-  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
-  port: 20020
-  server: IEPL01.catcat321.com
-  skip-cert-verify: true
-  sni: mp.weixin.qq.com
-  type: trojan
-  udp: true
-- name: '189|🇬🇧|英国-IEPL 02 #2'
-  password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
-  port: 20019
-  server: IEPL00.catcat321.com
-  skip-cert-verify: true
-  sni: mp.weixin.qq.com
-  type: trojan
-  udp: true
 - name: '197,198|英国 #14'
   password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
   port: 40007
@@ -712,13 +664,6 @@ proxies:
   udp: true
 - name: 200|英国01-0.8×
   password: f403ae92-ab07-4199-bdf1-f8701d164529
-  port: 20073
-  server: 36.228.244.241
-  sni: taobao.phantasy.life
-  type: trojan
-  udp: true
-- name: '204|英国01-0.8× #1'
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 20073
   server: 36.228.244.241
   sni: taobao.phantasy.life
