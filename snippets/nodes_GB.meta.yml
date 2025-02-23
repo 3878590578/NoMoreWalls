@@ -45,17 +45,26 @@ proxies:
   udp: true
   uuid: e1ad66b5-b62b-4cee-9f71-66c3ad3aaad6
   ws-opts: null
-- cipher: aes-256-gcm
-  name: 2|英国-GPT
-  password: eb4a6ce2-4165-436b-85b6-5ece3f048979
-  port: 19262
-  server: uk.acxylm.top
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 5|?? 韩国 - 1
+  network: ws
+  port: 80
+  server: 5cc6e8.36771e4b-c14b.sbs
+  type: vmess
   udp: true
+  uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
+  ws-headers:
+    Host: kr01s.36771e4b-c14b.sbs
+  ws-opts:
+    headers:
+      Host: kr01s.36771e4b-c14b.sbs
+    path: /
+  ws-path: /
 - down: 1000
-  name: 5|🇺🇸 USA 01-Hy2
+  name: 6|🇺🇸 USA 01-Hy2
   password: 9f79211a-45c0-4810-80e0-0768f686a1da
-  port: 34125
+  port: 39347
   ports: 21000-50000
   server: akusum.mmaccc.top
   skip-cert-verify: true
@@ -64,7 +73,7 @@ proxies:
   up: 1000
 - alterId: 0
   cipher: auto
-  name: 6|?? 香港3 - 直連
+  name: 7|?? Oregon 2 - Direct
   network: ws
   port: 80
   server: 5cc6e8.36771e4b-c14b.sbs
@@ -72,63 +81,21 @@ proxies:
   udp: true
   uuid: 16cc7066-3cb3-4001-8a7a-d5a146cc8428
   ws-headers:
-    Host: hk03s.36771e4b-c14b.sbs
+    Host: us02s.36771e4b-c14b.sbs
   ws-opts:
     headers:
-      Host: hk03s.36771e4b-c14b.sbs
+      Host: us02s.36771e4b-c14b.sbs
     path: /
   ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: 7|香港
+  name: 8|香港
   password: c7565627-f145-442a-b5a0-32222fbba49f
   port: 10589
   server: xn--xjoz-k84fw6ovpppy0f.fanqiang88.top
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 9|新加坡01|流媒体
-  port: 20230
-  reality-opts:
-    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
-    short-id: a7464bff
-  server: sg001.421421.xyz
-  servername: www.alibaba.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '10,11|新加坡01|流媒体 #2'
-  port: 20230
-  reality-opts:
-    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
-    short-id: a7464bff
-  server: sg001.421421.xyz
-  servername: www.alibaba.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0bfa2050-b165-4156-859c-70f36d300dce
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '12,13,14|新加坡01|流媒体 #5'
-  port: 20230
-  reality-opts:
-    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
-    short-id: a7464bff
-  server: sg001.421421.xyz
-  servername: www.alibaba.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 072c477b-90c1-4600-998f-1a2990542782
 - down: 1000
-  name: 19|英国
+  name: 14|英国
   password: 78af47f9-c503-412d-89d1-68afb0cd24c0
   port: 52897
   server: 46.17.44.136
@@ -137,7 +104,7 @@ proxies:
   type: hysteria2
   up: 1000
 - mport: 20000-50000
-  name: '22,23,24|🇬🇧【欧洲】英国01丨直连 #2'
+  name: '17,18,19|🇬🇧【欧洲】英国01丨直连 #2'
   password: fa1266c9-8090-4b48-9c58-81e188756da1
   port: 20000
   ports: 20000-50000
@@ -146,16 +113,8 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- name: '22,23,24|🇬🇧【欧洲】英国原生02丨直连【2x】 #2'
-  password: fa1266c9-8090-4b48-9c58-81e188756da1
-  port: 443
-  server: uk02.poke-mon.xyz
-  skip-cert-verify: true
-  sni: www.olympics.com
-  type: hysteria2
-  udp: true
 - mport: 20000-50000
-  name: '25|🇬🇧【欧洲】英国01丨直连 #3'
+  name: '20|🇬🇧【欧洲】英国01丨直连 #3'
   password: bdc8f27b-b7a6-4db8-bf0d-ccdef6a33ced
   port: 20000
   ports: 20000-50000
@@ -164,50 +123,27 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- name: '25|🇬🇧【欧洲】英国原生02丨直连【2x】 #3'
-  password: bdc8f27b-b7a6-4db8-bf0d-ccdef6a33ced
-  port: 443
-  server: uk02.poke-mon.xyz
-  skip-cert-verify: true
-  sni: www.olympics.com
-  type: hysteria2
-  udp: true
 - mport: 20000-50000
-  name: '26|🇬🇧【欧洲】英国01丨直连 #4'
+  name: '21|🇬🇧【欧洲】英国01丨直连 #4'
   password: e9a93162-a054-4a80-9fb1-14f8c0a4488e
   port: 20000
   ports: 20000-50000
   server: uk01.poke-mon.xyz
   skip-cert-verify: true
   sni: www.bing.com
-  type: hysteria2
-  udp: true
-- name: '26|🇬🇧【欧洲】英国原生02丨直连【2x】 #4'
-  password: e9a93162-a054-4a80-9fb1-14f8c0a4488e
-  port: 443
-  server: uk02.poke-mon.xyz
-  skip-cert-verify: true
-  sni: www.olympics.com
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 29|🇭🇰香港 01 | 1x HK
-  password: 2bb840f2-27f7-41d8-a4eb-28b135db2292
+  name: 24|🇭🇰香港 01 | 1x HK
+  password: b97316e9-5197-476a-96ca-506ca90beac6
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 29|🇬🇧英国家宽 01 | 1x UK
-  password: 2bb840f2-27f7-41d8-a4eb-28b135db2292
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - down: 1000
-  name: '32,217,218,219,220|🇱🇺卢森堡4 #3'
+  name: '27,179,180,181,182|🇱🇺卢森堡4 #3'
   password: 5e17ad47-6700-4b16-bc8e-949385b41dba
-  port: 21190
+  port: 21139
   ports: 21101-21199
   server: lu.xn--2vxn29amga.com
   skip-cert-verify: false
@@ -215,37 +151,16 @@ proxies:
   type: hysteria2
   up: 1000
 - down: 50
-  name: 52|🇬🇧英国-联通 01
+  name: 46|🇬🇧英国-联通 01
   password: 63769deb-4153-4b98-aba3-31bc07e53a2d
-  port: 49038
+  port: 38723
   ports: 20000-50000
   server: ld.556855.xyz
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
   up: 50
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '56,59,60,61|新加坡01|流媒体 #9'
-  port: 20230
-  reality-opts:
-    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
-    short-id: a7464bff
-  server: sg001.421421.xyz
-  servername: www.alibaba.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
-- cipher: chacha20-ietf-poly1305
-  name: 62|英国家宽-01
-  password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb
-  port: 54790
-  server: qwea.bat520.cc
-  type: ss
-  udp: true
-- name: '64|英国 #1'
+- name: '51|英国 #1'
   password: 2c87c009-914a-4a6c-b78f-3d7f7222aba8
   port: 38546
   server: xxyg.bbgjc.cc
@@ -253,7 +168,7 @@ proxies:
   sni: xxyg.bbgjc.cc
   type: hysteria2
   udp: true
-- name: '65|英国 #2'
+- name: '52|英国 #2'
   password: dc820238-0311-4f28-ac30-f45444e30a05
   port: 38546
   server: xxyg.bbgjc.cc
@@ -261,7 +176,7 @@ proxies:
   sni: xxyg.bbgjc.cc
   type: hysteria2
   udp: true
-- name: '66|英国 #3'
+- name: '53|英国 #3'
   password: 54b15150-9f8c-4792-98e7-f8331be76cf7
   port: 38546
   server: xxyg.bbgjc.cc
@@ -269,7 +184,7 @@ proxies:
   sni: xxyg.bbgjc.cc
   type: hysteria2
   udp: true
-- name: '67|英国 #4'
+- name: '54|英国 #4'
   password: c5149b0e-61e4-4c73-9b96-873a462dc4e8
   port: 38546
   server: xxyg.bbgjc.cc
@@ -277,7 +192,7 @@ proxies:
   sni: xxyg.bbgjc.cc
   type: hysteria2
   udp: true
-- name: '68|英国 #5'
+- name: '55|英国 #5'
   password: 55bb6493-61ee-4d70-b1c5-01547f2e17d1
   port: 38546
   server: xxyg.bbgjc.cc
@@ -286,7 +201,7 @@ proxies:
   type: hysteria2
   udp: true
 - auth: 334c4713-73ea-4e71-b827-21a22d31736b
-  name: 70|🇬🇧 英国
+  name: 56|🇬🇧 英国
   password: 334c4713-73ea-4e71-b827-21a22d31736b
   port: 22246
   server: fr3.xiaoliyu.cyou
@@ -294,14 +209,14 @@ proxies:
   sni: fr3.xiaoliyu.cyou
   type: hysteria2
 - auth: qaKSC44T83EOPpgCSR030vSH
-  name: 70|🇬🇧 英国 3
+  name: 56|🇬🇧 英国 3
   password: qaKSC44T83EOPpgCSR030vSH
   port: 443
   server: starlink-lon.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: hysteria2
-- name: 71|GB英国
+- name: 57|GB英国
   password: 76813b5b-55cf-4383-b0bb-cd87a69c4963
   port: 15466
   server: cfjyg.chuifengji.top
@@ -309,7 +224,7 @@ proxies:
   sni: cfjyg.chuifengji.top
   type: hysteria2
   udp: true
-- name: '72,73|GB英国 #2'
+- name: '58,59|GB英国 #2'
   password: 0895476a-b3b3-4fe5-9124-b60503349f97
   port: 15466
   server: cfjyg.chuifengji.top
@@ -319,16 +234,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '74|德国-法兰克福-001 #1'
-  network: ws
-  port: 20329
-  server: 185.121.134.12
-  type: vmess
-  udp: true
-  uuid: e5a63557-9587-4695-804b-537e2dbfa2b3
-- alterId: 0
-  cipher: auto
-  name: '92|德国-法兰克福-001 #18'
+  name: '70|德国-法兰克福-001 #11'
   network: ws
   port: 20329
   server: 185.121.134.12
@@ -337,7 +243,7 @@ proxies:
   uuid: 219e2f40-759b-4e00-9d4b-4bd588e5b84e
 - alterId: 0
   cipher: auto
-  name: '93|德国-法兰克福-001 #19'
+  name: '71|德国-法兰克福-001 #12'
   network: ws
   port: 20329
   server: 185.121.134.12
@@ -346,7 +252,7 @@ proxies:
   uuid: d1037421-3977-4cae-8462-0c7d22745e84
 - alterId: 0
   cipher: auto
-  name: '94|德国-法兰克福-001 #20'
+  name: '72|德国-法兰克福-001 #13'
   network: ws
   port: 20329
   server: 185.121.134.12
@@ -355,7 +261,7 @@ proxies:
   uuid: 7d3dea75-4636-4de5-bf3b-47ccc3411434
 - alterId: 0
   cipher: auto
-  name: '97|德国-法兰克福-001 #23'
+  name: '75|德国-法兰克福-001 #16'
   network: ws
   port: 20329
   server: 185.121.134.12
@@ -364,7 +270,7 @@ proxies:
   uuid: 70166ce6-326f-4b67-a296-a3253d8090fb
 - alterId: 0
   cipher: auto
-  name: '98,99|德国-法兰克福-001 #25'
+  name: '76,77|德国-法兰克福-001 #18'
   network: ws
   port: 20329
   server: 185.121.134.12
@@ -372,34 +278,27 @@ proxies:
   udp: true
   uuid: fceff025-b4ea-4fd2-9093-151b3bd503cd
 - cipher: aes-256-gcm
-  name: 100|[英国1] ✨ 2x
+  name: 78|[英国1] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 45337
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 100|[英国2] ✨ 2x
+  name: 78|[英国2] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 53289
   server: 69-in-2.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 100|[家宽-英国] ✨ 5x
-  password: NgmMHL7OVB5t6j3X
-  port: 20042
-  server: 69-in-1.226969.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 100|[英国] ✨ 5x
+  name: 78|[英国] ✨ 5x
   password: NgmMHL7OVB5t6j3X
   port: 54566
   server: 69-in-2.226969.xyz
   type: ss
   udp: true
-- name: '101,102|美国 #2'
+- name: '79,80|美国 #2'
   password: 74f19601-056d-443a-b94e-13bd373c9eec
   port: 36800
   server: mg.xjyjc.top
@@ -408,28 +307,63 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 103|🇬🇧英国 01
+  name: 81|🇬🇧英国 01
   password: 32c41b01-84be-11ef-bb6b-bc241111d95d
   port: 57447
   server: js.wnwwv.cn
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 105|🇬🇧 UK1x1
+  name: 83|🇬🇧 UK1x1
   password: d516b33d-86ee-49e8-9af7-4eb7405e5cfe
   port: 28918
   server: cshgz1.fuckcdn.top
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '120|🇬🇧 英国 #1'
-  password: eb79c4fa-baf9-456c-9163-67d9d3cf6ab5
-  port: 11932
-  server: 01.liantongzf.one
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 85|新加坡01|流媒体
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: sg001.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
+  uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '87|新加坡01|流媒体 #1'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: sg001.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '88,89,90|新加坡01|流媒体 #4'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: sg001.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
 - cipher: aes-128-gcm
-  name: '122,123|🇬🇧英国1 #1'
+  name: '93,94|🇬🇧英国1 #1'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
   port: 56001
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
@@ -437,19 +371,19 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 129|🇬🇧1 |  4.5MB/s
+  name: 98|🇬🇧1 |  4.5MB/s
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52613
   server: hk03.x.quickcht3.club
   type: ss
 - cipher: aes-128-gcm
-  name: '130,131|英国 #7'
+  name: '99,100|英国 #7'
   password: f05b3273-80bc-4161-a606-5830e84075d6
   port: 29201
   server: nnnnn.f1c.lol
   type: ss
   udp: true
-- name: '139|英国 #8'
+- name: '104|英国 #8'
   password: 1074f3c7-512a-4118-9798-2a45e2a3edf8
   port: 34563
   server: yg.laosijicc.top
@@ -457,7 +391,7 @@ proxies:
   sni: yg.laosijicc.top
   type: hysteria2
   udp: true
-- name: '140|英国 #9'
+- name: '105|英国 #9'
   password: d765ffa9-7da7-4961-9bc1-c6c79e2d5965
   port: 34563
   server: yg.laosijicc.top
@@ -465,7 +399,7 @@ proxies:
   sni: yg.laosijicc.top
   type: hysteria2
   udp: true
-- name: '141,142|英国 #11'
+- name: '106,107|英国 #11'
   password: ddde2db5-7bf0-48f0-93a9-704284dbed4b
   port: 34563
   server: yg.laosijicc.top
@@ -473,7 +407,7 @@ proxies:
   sni: yg.laosijicc.top
   type: hysteria2
   udp: true
-- name: '143|英国 #12'
+- name: '108|英国 #12'
   password: c6f59c36-89d5-479b-95d6-6b8459ee2b92
   port: 34563
   server: yg.laosijicc.top
@@ -483,7 +417,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 155|日本-优化
+  name: 119|日本-优化
   network: ws
   port: 16617
   server: yes.mojcn.com
@@ -499,23 +433,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 155|英国-优化-GPT
-  network: ws
-  port: 16645
-  server: yes.mojcn.com
-  type: vmess
-  udp: true
-  uuid: d0774966-fb63-4aca-9478-16c3f32be220
-  ws-headers:
-    Host: 706dc7c0280181c5816781dea5ae3d87.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: 706dc7c0280181c5816781dea5ae3d87.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 155|英国-优化2
+  name: 119|英国-优化2
   network: ws
   port: 16645
   server: m.cnmjin.net
@@ -531,7 +449,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 155|英国-优化3
+  name: 119|英国-优化3
   network: ws
   port: 16645
   server: t.cnmjcn.cyou
@@ -545,7 +463,7 @@ proxies:
       Host: 706dc7c0280181c5816781dea5ae3d87.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: 155|英国UK-T
+- name: 119|英国UK-T
   password: d0774966-fb63-4aca-9478-16c3f32be220
   port: 443
   server: uk.mjt000.com
@@ -554,7 +472,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '156|日本-优化 #1'
+  name: '120|日本-优化 #1'
   network: ws
   port: 16617
   server: yes.mojcn.com
@@ -570,23 +488,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '156|英国-优化-GPT #1'
-  network: ws
-  port: 16645
-  server: yes.mojcn.com
-  type: vmess
-  udp: true
-  uuid: 820517c1-1cfb-47ff-bfdd-48faf83773b5
-  ws-headers:
-    Host: cd8e88d8bdf6378f00346c2973620506.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: cd8e88d8bdf6378f00346c2973620506.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '156|英国-优化2 #1'
+  name: '120|英国-优化2 #1'
   network: ws
   port: 16645
   server: m.cnmjin.net
@@ -602,7 +504,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '156|英国-优化3 #1'
+  name: '120|英国-优化3 #1'
   network: ws
   port: 16645
   server: t.cnmjcn.cyou
@@ -616,7 +518,7 @@ proxies:
       Host: cd8e88d8bdf6378f00346c2973620506.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: '156|英国UK-T #1'
+- name: '120|英国UK-T #1'
   password: 820517c1-1cfb-47ff-bfdd-48faf83773b5
   port: 443
   server: uk.mjt000.com
@@ -625,7 +527,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '157|日本-优化 #2'
+  name: '121|日本-优化 #2'
   network: ws
   port: 16617
   server: yes.mojcn.com
@@ -641,23 +543,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '157|英国-优化-GPT #2'
-  network: ws
-  port: 16645
-  server: yes.mojcn.com
-  type: vmess
-  udp: true
-  uuid: ba001863-ddd0-4beb-8933-8a75a898c7ec
-  ws-headers:
-    Host: ba0f678896ea70308a3ea611bb985d7b.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: ba0f678896ea70308a3ea611bb985d7b.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '157|英国-优化2 #2'
+  name: '121|英国-优化2 #2'
   network: ws
   port: 16645
   server: m.cnmjin.net
@@ -673,7 +559,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '157|英国-优化3 #2'
+  name: '121|英国-优化3 #2'
   network: ws
   port: 16645
   server: t.cnmjcn.cyou
@@ -687,7 +573,7 @@ proxies:
       Host: ba0f678896ea70308a3ea611bb985d7b.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: '157|英国UK-T #2'
+- name: '121|英国UK-T #2'
   password: ba001863-ddd0-4beb-8933-8a75a898c7ec
   port: 443
   server: uk.mjt000.com
@@ -695,7 +581,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 158|🇬🇧 UK 01 哈利波特
+  name: 122|🇬🇧 UK 01 哈利波特
   password: fc04eeaa-c0b7-4829-90f1-9294121facc1
   port: 30130
   server: bitch.dianying.lat
@@ -703,7 +589,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '161,162,163|日本-优化 #5'
+  name: '125,126,127|日本-优化 #5'
   network: ws
   port: 16617
   server: yes.mojcn.com
@@ -719,23 +605,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '161,162,163|英国-优化-GPT #5'
-  network: ws
-  port: 16645
-  server: yes.mojcn.com
-  type: vmess
-  udp: true
-  uuid: 918003d3-1f5d-425c-b39c-ff61781e48f1
-  ws-headers:
-    Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '161,162,163|英国-优化2 #5'
+  name: '125,126,127|英国-优化2 #5'
   network: ws
   port: 16645
   server: m.cnmjin.net
@@ -751,7 +621,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '161,162,163|英国-优化3 #5'
+  name: '125,126,127|英国-优化3 #5'
   network: ws
   port: 16645
   server: t.cnmjcn.cyou
@@ -765,7 +635,7 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: '161,162,163|英国UK-T #5'
+- name: '125,126,127|英国UK-T #5'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 443
   server: uk.mjt000.com
@@ -774,7 +644,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '164|日本-优化 #6'
+  name: '128|日本-优化 #6'
   network: ws
   port: 16617
   server: yes.mojcn.com
@@ -790,23 +660,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '164|英国-优化-GPT #6'
-  network: ws
-  port: 16645
-  server: yes.mojcn.com
-  type: vmess
-  udp: true
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-headers:
-    Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '164|英国-优化2 #6'
+  name: '128|英国-优化2 #6'
   network: ws
   port: 16645
   server: m.cnmjin.net
@@ -822,7 +676,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '164|英国-优化3 #6'
+  name: '128|英国-优化3 #6'
   network: ws
   port: 16645
   server: t.cnmjcn.cyou
@@ -836,7 +690,7 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: '164|英国UK-T #6'
+- name: '128|英国UK-T #6'
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
   server: uk.mjt000.com
@@ -844,7 +698,7 @@ proxies:
   type: trojan
   udp: true
 - down: 1000
-  name: 165|[Hy2]纽约 公益站：https://siris.eu.o...
+  name: 129|[Hy2]纽约 公益站：https://siris.eu.o...
   password: cbd1d425-5379-4c44-82fc-5765d1d34dc9
   port: 2083
   server: nyc2.shigure.eu.org
@@ -854,7 +708,7 @@ proxies:
   up: 1000
 - alterId: 0
   cipher: auto
-  name: 166|[公益] 启迪 英国 1x
+  name: 130|[公益] 启迪 英国 1x
   network: ws
   port: 80
   server: qidi.xn--drry30l.xyz
@@ -865,7 +719,7 @@ proxies:
     headers:
       Host: uk1.xn--drry30l.xyz
     path: /qidi?ed=2560
-- name: 178|GB_speednode_0033
+- name: 142|GB_speednode_0033
   password: '!!str 3747000103274291200'
   port: 443
   server: fond-moth.treefrog761.one
@@ -873,7 +727,7 @@ proxies:
   sni: fond-moth.treefrog761.one
   type: trojan
   udp: true
-- name: 178|GB_speednode_0034
+- name: 142|GB_speednode_0034
   password: '!!str 3747000103274291200'
   port: 443
   server: cuddly-slug.treefrog761.one
@@ -881,7 +735,7 @@ proxies:
   sni: cuddly-slug.treefrog761.one
   type: trojan
   udp: true
-- name: 178|GB_speednode_0036
+- name: 142|GB_speednode_0036
   network: ws
   port: 443
   server: 31.22.116.38
@@ -895,37 +749,23 @@ proxies:
     headers:
       Host: usd.kobtty.me
     path: /bing
-- cipher: aes-128-gcm
-  name: 182|英国-1
-  password: 08d96d4a-d83e-4c14-9529-f00a63d25242
-  port: 40022
-  server: lh.node-is.green
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 182|英国-2
-  password: 08d96d4a-d83e-4c14-9529-f00a63d25242
-  port: 40023
-  server: lh.node-is.green
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '184|🇭🇰 香港3 #2'
+  name: '146|🇰🇷 韩国4 #1'
   network: ws
   port: 80
   server: 5cc6e8.36771e4b-c14b.sbs
   type: vmess
   udp: true
-  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
+  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
   ws-headers:
-    Host: hk03s.36771e4b-c14b.sbs
+    Host: kr04s.36771e4b-c14b.sbs
   ws-opts:
     headers:
-      Host: hk03s.36771e4b-c14b.sbs
+      Host: kr04s.36771e4b-c14b.sbs
     path: /
   ws-path: /
-- name: '197,198|英国 #14'
+- name: '160|英国 #13'
   password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
   port: 40007
   server: uk.fastsoonlink.com
@@ -933,42 +773,42 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 199|🇬🇧 UK 01 英国
+  name: 161|🇬🇧 UK 01 英国
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 59966
   server: node-a.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 199|🇬🇧 UK 02 英国
+  name: 161|🇬🇧 UK 02 英国
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49967
   server: node-a.dlg365.com
   type: ss
   udp: true
-- name: 200|英国01-0.8×
-  password: f403ae92-ab07-4199-bdf1-f8701d164529
+- name: 163|英国01-0.8×
+  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
   port: 20073
   server: 36.228.244.241
   sni: taobao.phantasy.life
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '205,206|🇬🇧 英国 01 #1'
+  name: '167,168|🇬🇧 英国 01 #1'
   password: 9c98ec59-231c-4091-ba05-a0c881021335
   port: 30470
   server: p1.bxy-fun1.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '205,206|🇬🇧 英国 02 #1'
+  name: '167,168|🇬🇧 英国 02 #1'
   password: 9c98ec59-231c-4091-ba05-a0c881021335
   port: 30471
   server: p1.bxy-fun2.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '205,206|🇬🇧 英国 03 #1'
+  name: '167,168|🇬🇧 英国 03 #1'
   password: 9c98ec59-231c-4091-ba05-a0c881021335
   port: 30472
   server: p1.bxy-fun3.xyz
@@ -976,7 +816,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '205,206|🇬🇧 英国 04 #1'
+  name: '167,168|🇬🇧 英国 04 #1'
   port: 30006
   reality-opts:
     public-key: vH0XwdUApBInpD0rXjq8sM3MXDmq9qPuf8nmuqSh1wo
@@ -990,358 +830,391 @@ proxies:
   uuid: 9c98ec59-231c-4091-ba05-a0c881021335
 - alterId: 0
   cipher: auto
-  name: 207|UK.英国.A
+  name: 169|UK.英国.A
   port: 18227
   server: xcuk.cokecloud.top
   type: vmess
   udp: true
   uuid: a01b5e27-ece5-4675-866f-36b23a65d2a8
 - cipher: chacha20-ietf-poly1305
-  name: '208|🇭🇰香港1 #1'
-  password: 2177c494-cc50-4378-8df9-fd6a22600d0f
-  port: 57799
-  server: iost.prprcheng.top
+  name: 170|香港|HK02
+  password: fef880e7-87cb-4bea-8e5e-5ae2bba6fbb5
+  port: 24517
+  server: byv89mrvakp2oc67koxfamr25ihojvsw.08.02.hk.6l6.site
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '209|🇬🇧 英国 #2'
+  name: 170|英国|COV2
+  password: fef880e7-87cb-4bea-8e5e-5ae2bba6fbb5
+  port: 18127
+  server: r8tbhtn9jty9ebzesikuygvc8y0b2koq.08.02.uk.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '171|🇬🇧 英国 #1'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51178
   server: qq.miaolianyunapp.com
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 210|🇬🇧 英国-V0 | 原生【3x】
-  port: 38362
-  server: uk0.nodeup.top
-  type: vmess
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '184,185,186,187,188,189,190|新加坡01|流媒体 #11'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: sg001.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-  uuid: 8a65656d-39ed-472c-a4b6-f4a5a20c122e
+  uuid: b44da489-fc70-4fd0-8997-a83b51f59267
 - cipher: aes-128-gcm
-  name: 229|英国1
+  name: 191|英国1
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
   port: 50023
   server: tc.teacat2.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 229|英国2
+  name: 191|英国2
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
   port: 50024
   server: tc.teacat2.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '230|英国1 #1'
+  name: '192|英国1 #1'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
   port: 50023
   server: tc.teacat2.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '230|英国2 #1'
+  name: '192|英国2 #1'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
   port: 50024
   server: tc.teacat2.xyz
   type: ss
   udp: true
-- name: '246,247|网址: sytcloud.top #1'
-  password: 43cf7bd3-8895-4c3f-829e-f1096490851e
-  port: 35801
-  server: yg.sytcloud.top
-  skip-cert-verify: true
-  sni: yg.sytcloud.top
-  type: hysteria2
+- cipher: aes-128-gcm
+  name: '193|英国1 #2'
+  password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
+  port: 50023
+  server: tc.teacat2.xyz
+  type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 248|英国 United Kingdom
+  name: '193|英国2 #2'
+  password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
+  port: 50024
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '194|英国1 #3'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 50023
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '194|英国2 #3'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 50024
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 212|英国 United Kingdom
   password: 1ce5d7f8-6397-47ae-a919-7538cee51ac7
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '249|英国 United Kingdom #1'
+  name: '213|英国 United Kingdom #1'
   password: aef0eeb6-0914-4e41-a62d-febdbe7bb9d7
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '250|英国 United Kingdom #2'
+  name: '214|英国 United Kingdom #2'
   password: e0e78bbd-b2be-4ca9-9200-4e786a5f2da7
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '251|英国 United Kingdom #3'
+  name: '215|英国 United Kingdom #3'
   password: 0e8fdc42-92ba-4ab8-be68-9ced064673fb
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '252|Hong Kong 01 #4'
+  name: '216|Hong Kong 01 #4'
   password: d5b76656-263e-487c-bf2f-1b9ccb6ab252
   port: 41411
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '252|英国 United Kingdom #4'
+  name: '216|英国 United Kingdom #4'
   password: d5b76656-263e-487c-bf2f-1b9ccb6ab252
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '253|英国 United Kingdom #5'
+  name: '217|英国 United Kingdom #5'
   password: 955c9b43-c177-4ac0-b27b-517c49bf412e
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '254|Hong Kong 01 #6'
+  name: '218|Hong Kong 01 #6'
   password: 893a7c5c-be0e-46b8-82cf-cdfaeb34ca91
   port: 41411
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '254|英国 United Kingdom #6'
+  name: '218|英国 United Kingdom #6'
   password: 893a7c5c-be0e-46b8-82cf-cdfaeb34ca91
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '255|英国 United Kingdom #7'
+  name: '219|英国 United Kingdom #7'
   password: 04b98315-e77d-461d-9085-48d0604cb9ff
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '256|英国 United Kingdom #8'
+  name: '220|英国 United Kingdom #8'
   password: 1a23bfef-73df-45f6-8ca3-58271f95ae30
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '257|英国 United Kingdom #9'
+  name: '221|英国 United Kingdom #9'
   password: b808e8ff-1368-4db4-937f-dcac39956071
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '258|Hong Kong 01 #10'
+  name: '222|Hong Kong 01 #10'
   password: 77ac0c0f-e7ad-4e45-a854-0520d2dd276f
   port: 41411
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '258|英国 United Kingdom #10'
+  name: '222|英国 United Kingdom #10'
   password: 77ac0c0f-e7ad-4e45-a854-0520d2dd276f
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '259|英国 United Kingdom #11'
+  name: '223|英国 United Kingdom #11'
   password: bdd18f90-8f98-41a1-b166-28e51c0256ee
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '260|英国 United Kingdom #12'
+  name: '224|英国 United Kingdom #12'
   password: 24ce61ca-9b7b-4990-8dcc-3477b904347a
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '261|Hong Kong 01 #13'
+  name: '225|Hong Kong 01 #13'
   password: 255efdf6-7190-48cc-aa84-1d871e757970
   port: 41411
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '261|英国 United Kingdom #13'
+  name: '225|英国 United Kingdom #13'
   password: 255efdf6-7190-48cc-aa84-1d871e757970
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '262|英国 United Kingdom #14'
+  name: '226|英国 United Kingdom #14'
   password: 175305da-8de7-4cbe-8fc9-a858ac0e1d26
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '263|Hong Kong 01 #15'
+  name: '227|Hong Kong 01 #15'
   password: 0bd47ae6-ca5b-4bb1-9e79-d16107291376
   port: 41411
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '263|英国 United Kingdom #15'
+  name: '227|英国 United Kingdom #15'
   password: 0bd47ae6-ca5b-4bb1-9e79-d16107291376
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '264|Hong Kong 01 #16'
+  name: '228|Hong Kong 01 #16'
   password: 28dd80e4-7d96-4a40-bf77-a366dd0d55a0
   port: 41411
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '264|英国 United Kingdom #16'
+  name: '228|英国 United Kingdom #16'
   password: 28dd80e4-7d96-4a40-bf77-a366dd0d55a0
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '265|Hong Kong 01 #17'
+  name: '229|Hong Kong 01 #17'
   password: ebbb25ec-d870-4f41-b981-af20701b0514
   port: 41411
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '265|英国 United Kingdom #17'
+  name: '229|英国 United Kingdom #17'
   password: ebbb25ec-d870-4f41-b981-af20701b0514
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '266|英国 United Kingdom #18'
+  name: '230|英国 United Kingdom #18'
   password: 1bf62f1f-a3fe-4687-a914-f5d9079faba0
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '267|英国 United Kingdom #19'
+  name: '231|英国 United Kingdom #19'
   password: c789cf82-f97b-457d-827f-924fba38c221
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '268|英国 United Kingdom #20'
+  name: '232|英国 United Kingdom #20'
   password: dd28eba3-405a-47a8-bbf9-b06f16cdb361
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '269|英国 United Kingdom #21'
+  name: '233|英国 United Kingdom #21'
   password: f3864bf6-7413-45d2-afba-c96cb426db31
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '270|Hong Kong 01 #22'
+  name: '234|Hong Kong 01 #22'
   password: b6066393-1190-4aed-af0b-d2bba1a03d78
   port: 41411
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '270|英国 United Kingdom #22'
+  name: '234|英国 United Kingdom #22'
   password: b6066393-1190-4aed-af0b-d2bba1a03d78
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '271|英国 United Kingdom #23'
+  name: '235|英国 United Kingdom #23'
   password: 2592ce08-8b63-4bb8-8877-c065de288d99
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '272|英国 United Kingdom #24'
+  name: '236|英国 United Kingdom #24'
   password: c34f6d24-bb53-4cd0-83b1-853a74385a95
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '273|英国 United Kingdom #25'
+  name: '237|英国 United Kingdom #25'
   password: 23018b6b-97f3-4c12-9c51-5356dbc4fad0
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '274|英国 United Kingdom #26'
+  name: '238|英国 United Kingdom #26'
   password: 05f24435-2d8e-428e-9b84-89ab0600228c
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '275|英国 United Kingdom #27'
+  name: '239|英国 United Kingdom #27'
   password: 5b9f2e3b-b942-4190-8e52-099da37a6667
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '276|英国 United Kingdom #28'
+  name: '240|英国 United Kingdom #28'
   password: be06d2c3-1179-4403-b2ba-44287017bfa8
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '277|英国 United Kingdom #29'
+  name: '241|英国 United Kingdom #29'
   password: 2bead2c5-81a6-485f-8428-e1bf8d0f38b0
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '278|英国 United Kingdom #30'
+  name: '242|英国 United Kingdom #30'
   password: 64fc6e33-8486-4842-adee-8daeef469003
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '279|英国 United Kingdom #31'
+  name: '243|英国 United Kingdom #31'
   password: 859f9a4e-bfe4-4f85-ac05-db9dc64581b5
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '280|英国 United Kingdom #32'
+  name: '244|英国 United Kingdom #32'
   password: 9bb8e80f-62ba-411c-9ddb-eb3aec0d9aaa
   port: 49201
   server: south.sf0jm.xyz
   type: ss
   udp: true
-- name: 286|客服邮箱：4143669@gmail.com
+- name: 250|客服邮箱：4143669@gmail.com
   password: c3c4bb3f-29da-4d60-8cd4-e9e418781df6
   port: 12097
   server: gddxc.fosi.hk
@@ -1350,28 +1223,28 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 287|🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰
+  name: 251|🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰
   password: e7076671-6cc4-4680-9633-1e38b6b9b4ea
   port: 58811
   server: southvip1.pkyun.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '288|🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰 #1'
+  name: '252|🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰 #1'
   password: 95c717d3-ba19-47cd-88ea-ba0d1d7794fa
   port: 58811
   server: southvip1.pkyun.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '289|🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰 #2'
+  name: '253|🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰 #2'
   password: 96dbb20c-19c8-4a2c-8c2c-ddb2992b5c00
   port: 58811
   server: southvip1.pkyun.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '299,300|🇬🇧 Kingdom 045 #1'
+  name: '263,264|🇬🇧 Kingdom 045 #1'
   password: c8a1d0a69902859d209f
   plugin: obfs
   plugin-opts:
@@ -1382,7 +1255,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '299,300|🇬🇧 Kingdom 081 #1'
+  name: '263,264|🇬🇧 Kingdom 081 #1'
   password: b252e75cc98799d5b2d1
   plugin: obfs
   plugin-opts:
@@ -1390,12 +1263,5 @@ proxies:
     mode: http
   port: 45570
   server: console.03.aliyun.aq.kunlunaqs.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 304|UK英国
-  password: c28be7d4-25c8-4351-bc58-e1675855c8af
-  port: 35506
-  server: gw.liangyuandianwan.com
   type: ss
   udp: true
