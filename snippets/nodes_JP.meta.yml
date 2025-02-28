@@ -157,7 +157,7 @@ proxies:
   ws-opts: null
 - alterId: 0
   cipher: auto
-  name: 5|?? 日本 - 1
+  name: 5|?? 香港 - 3
   network: ws
   port: 80
   server: f0406c.62d9-2244-2284.cfd
@@ -165,10 +165,42 @@ proxies:
   udp: true
   uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
   ws-headers:
-    Host: jp01s.62d9-2244-2284.cfd
+    Host: hk03s.62d9-2244-2284.cfd
   ws-opts:
     headers:
-      Host: jp01s.62d9-2244-2284.cfd
+      Host: hk03s.62d9-2244-2284.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 5|?? 日本 - 2
+  network: ws
+  port: 80
+  server: f0406c.62d9-2244-2284.cfd
+  type: vmess
+  udp: true
+  uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
+  ws-headers:
+    Host: jp02s.62d9-2244-2284.cfd
+  ws-opts:
+    headers:
+      Host: jp02s.62d9-2244-2284.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 5|?? 日本 - 3
+  network: ws
+  port: 80
+  server: f0406c.62d9-2244-2284.cfd
+  type: vmess
+  udp: true
+  uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
+  ws-headers:
+    Host: jp03s.62d9-2244-2284.cfd
+  ws-opts:
+    headers:
+      Host: jp03s.62d9-2244-2284.cfd
     path: /
   ws-path: /
 - alterId: 0
@@ -190,7 +222,7 @@ proxies:
 - down: 1000
   name: 6|🇯🇵 JP日本-Hy2
   password: 9f79211a-45c0-4810-80e0-0768f686a1da
-  port: 33780
+  port: 33825
   ports: 30000-40000
   server: akjp1um.mmaccc.top
   skip-cert-verify: true
@@ -305,8 +337,283 @@ proxies:
   server: gdgs.tarioblink.me
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: 11|🇯🇵 JP 日本 01 Pro
+  password: 52f6c7c1-85ef-4fcb-900d-35a4f8adb537
+  port: 30011
+  server: jp01.365003.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 11|🇯🇵 JP 日本 02 Pro
+  password: 52f6c7c1-85ef-4fcb-900d-35a4f8adb537
+  port: 30012
+  server: jp02.365003.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 11|🇯🇵 JP 日本 03 Pro
+  password: 52f6c7c1-85ef-4fcb-900d-35a4f8adb537
+  port: 30013
+  server: jp03.365003.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 12|日本01
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp001.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 12|日本02
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp002.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 12|日本03
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp003.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 12|日本04
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp004.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
+- name: 12|日本05
+  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
+  port: 20230
+  server: jp005.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: 12|日本06
+  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
+  port: 20230
+  server: jp006.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: 12|日本07
+  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
+  port: 20230
+  server: jp007.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: 12|日本08
+  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
+  port: 20230
+  server: jp008.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '14|日本01 #1'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp001.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0bfa2050-b165-4156-859c-70f36d300dce
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '14|日本02 #1'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp002.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0bfa2050-b165-4156-859c-70f36d300dce
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '14|日本03 #1'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp003.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0bfa2050-b165-4156-859c-70f36d300dce
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '14|日本04 #1'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp004.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0bfa2050-b165-4156-859c-70f36d300dce
+- name: '14|日本05 #1'
+  password: 0bfa2050-b165-4156-859c-70f36d300dce
+  port: 20230
+  server: jp005.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '14|日本06 #1'
+  password: 0bfa2050-b165-4156-859c-70f36d300dce
+  port: 20230
+  server: jp006.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '14|日本07 #1'
+  password: 0bfa2050-b165-4156-859c-70f36d300dce
+  port: 20230
+  server: jp007.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '14|日本08 #1'
+  password: 0bfa2050-b165-4156-859c-70f36d300dce
+  port: 20230
+  server: jp008.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- alterId: 1
+  cipher: auto
+  name: 15|🇯🇵 免费-日本1-Ver.6
+  port: 21585
+  server: cawjt-g05.jp01-0986-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ac7ff9e6-8770-3f96-a818-9fc37daa6c4a
+- alterId: 1
+  cipher: auto
+  name: 15|🇯🇵 免费-日本2-Ver.7
+  port: 11777
+  server: qpylu-g05.jp02-9a99-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac7ff9e6-8770-3f96-a818-9fc37daa6c4a
+- alterId: 1
+  cipher: auto
+  name: 15|🇯🇵 免费-日本3-Ver.6
+  port: 21585
+  server: zj3b6-g05.jp03-7d22-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ac7ff9e6-8770-3f96-a818-9fc37daa6c4a
+- alterId: 1
+  cipher: auto
+  name: 15|🇯🇵 免费-日本4-Ver.7
+  port: 448
+  server: mtobe-g05.jp04-3771-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac7ff9e6-8770-3f96-a818-9fc37daa6c4a
+- alterId: 1
+  cipher: auto
+  name: 15|🇯🇵 免费-日本5-Ver.8
+  port: 46486
+  server: kjxix-g05.jp05-6786-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac7ff9e6-8770-3f96-a818-9fc37daa6c4a
+- alterId: 1
+  cipher: auto
+  name: 15|🇯🇵 免费-日本6-Ver.7
+  port: 28787
+  server: xb83n-g05.jp06-7c5a-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ac7ff9e6-8770-3f96-a818-9fc37daa6c4a
+- alterId: 1
+  cipher: auto
+  name: 15|🇯🇵 免费-日本7-Ver.1
+  port: 28787
+  server: 4sg3z-g05.jp07-1f28-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac7ff9e6-8770-3f96-a818-9fc37daa6c4a
+- down: 0
+  name: 17|🇯🇵 日本【负载均衡】
+  password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
+  port: 54519
+  server: kr3.bethebest.eu.org
+  skip-cert-verify: true
+  type: hysteria2
+  up: 0
 - down: 500
-  name: 13|测试日本1
+  name: 20|测试日本1
   password: 78af47f9-c503-412d-89d1-68afb0cd24c0
   port: 48000
   server: jd.pandafly.site
@@ -315,7 +622,7 @@ proxies:
   type: hysteria2
   up: 500
 - down: 555
-  name: 13|日本测试2
+  name: 20|日本测试2
   password: 78af47f9-c503-412d-89d1-68afb0cd24c0
   port: 48001
   server: rb1.pandafly.site
@@ -324,7 +631,7 @@ proxies:
   type: hysteria2
   up: 555
 - down: 1000
-  name: 13|🇯🇵日本01|ISP
+  name: 20|🇯🇵日本01|ISP
   password: 78af47f9-c503-412d-89d1-68afb0cd24c0
   port: 60098
   server: 152.53.54.139
@@ -333,7 +640,7 @@ proxies:
   type: hysteria2
   up: 1000
 - down: 1000
-  name: 13|🇯🇵日本01
+  name: 20|🇯🇵日本01
   password: 78af47f9-c503-412d-89d1-68afb0cd24c0
   port: 52890
   server: 160.251.235.72
@@ -342,7 +649,7 @@ proxies:
   type: hysteria2
   up: 1000
 - down: 1000
-  name: 13|🇯🇵日本02
+  name: 20|🇯🇵日本02
   password: 78af47f9-c503-412d-89d1-68afb0cd24c0
   port: 52891
   server: 160.251.235.72
@@ -351,7 +658,7 @@ proxies:
   type: hysteria2
   up: 1000
 - down: 1000
-  name: 13|🇯🇵日本03
+  name: 20|🇯🇵日本03
   password: 78af47f9-c503-412d-89d1-68afb0cd24c0
   port: 52109
   server: 152.53.54.139
@@ -360,7 +667,7 @@ proxies:
   type: hysteria2
   up: 1000
 - down: 1000
-  name: 13|尼日利亚
+  name: 20|尼日利亚
   password: 78af47f9-c503-412d-89d1-68afb0cd24c0
   port: 52301
   server: 46.17.44.165
@@ -369,7 +676,7 @@ proxies:
   type: hysteria2
   up: 1000
 - down: 1000
-  name: 13|🇯🇵日本ISP
+  name: 20|🇯🇵日本ISP
   password: 78af47f9-c503-412d-89d1-68afb0cd24c0
   port: 52100
   server: 47.83.8.103
@@ -378,7 +685,7 @@ proxies:
   type: hysteria2
   up: 1000
 - down: 500
-  name: '14|测试日本1 #1'
+  name: '21|测试日本1 #1'
   password: 0755ae27-3fda-4802-869f-0ffbda05fff2
   port: 48000
   server: jd.pandafly.site
@@ -387,7 +694,7 @@ proxies:
   type: hysteria2
   up: 500
 - down: 1000
-  name: '14|🇯🇵日本01|ISP #1'
+  name: '21|🇯🇵日本01|ISP #1'
   password: 0755ae27-3fda-4802-869f-0ffbda05fff2
   port: 60098
   server: 152.53.54.139
@@ -396,7 +703,7 @@ proxies:
   type: hysteria2
   up: 1000
 - down: 500
-  name: '15|测试日本1 #2'
+  name: '22|测试日本1 #2'
   password: dc55f78c-43f5-4cb2-af10-2b7615607581
   port: 48000
   server: jd.pandafly.site
@@ -405,7 +712,7 @@ proxies:
   type: hysteria2
   up: 500
 - down: 1000
-  name: '15|🇯🇵日本01|ISP #2'
+  name: '22|🇯🇵日本01|ISP #2'
   password: dc55f78c-43f5-4cb2-af10-2b7615607581
   port: 60098
   server: 152.53.54.139
@@ -414,7 +721,7 @@ proxies:
   type: hysteria2
   up: 1000
 - mport: 20000-50000
-  name: '16,17,18|🇯🇵【亚洲】日本01丨直连 #2'
+  name: '23,24,25|🇯🇵【亚洲】日本01丨直连 #2'
   password: fa1266c9-8090-4b48-9c58-81e188756da1
   port: 20000
   ports: 20000-50000
@@ -424,7 +731,7 @@ proxies:
   type: hysteria2
   udp: true
 - mport: 20000-50000
-  name: '16,17,18|🇯🇵【亚洲】日本03丨直连 #2'
+  name: '23,24,25|🇯🇵【亚洲】日本03丨直连 #2'
   password: fa1266c9-8090-4b48-9c58-81e188756da1
   port: 20000
   ports: 20000-50000
@@ -433,7 +740,7 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- name: '16,17,18|🇯🇵【亚洲】日本樱花04丨直连【2x】 #2'
+- name: '23,24,25|🇯🇵【亚洲】日本樱花04丨直连【2x】 #2'
   password: fa1266c9-8090-4b48-9c58-81e188756da1
   port: 443
   server: jp04.poke-mon.xyz
@@ -442,7 +749,7 @@ proxies:
   type: hysteria2
   udp: true
 - mport: 20000-50000
-  name: '19|🇯🇵【亚洲】日本01丨直连 #3'
+  name: '26|🇯🇵【亚洲】日本01丨直连 #3'
   password: e9a93162-a054-4a80-9fb1-14f8c0a4488e
   port: 20000
   ports: 20000-50000
@@ -452,7 +759,7 @@ proxies:
   type: hysteria2
   udp: true
 - mport: 20000-50000
-  name: '19|🇯🇵【亚洲】日本03丨直连 #3'
+  name: '26|🇯🇵【亚洲】日本03丨直连 #3'
   password: e9a93162-a054-4a80-9fb1-14f8c0a4488e
   port: 20000
   ports: 20000-50000
@@ -461,7 +768,7 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- name: '19|🇯🇵【亚洲】日本樱花04丨直连【2x】 #3'
+- name: '26|🇯🇵【亚洲】日本樱花04丨直连【2x】 #3'
   password: e9a93162-a054-4a80-9fb1-14f8c0a4488e
   port: 443
   server: jp04.poke-mon.xyz
@@ -470,48 +777,27 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇯🇵日本 01 | 1x JP
-  password: 1013d36f-0b13-4fdc-a142-2f8bd05c1b77
-  port: 31111
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇯🇵日本 02 | 1x JP
-  password: 1013d36f-0b13-4fdc-a142-2f8bd05c1b77
-  port: 31113
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇯🇵日本 03 | 1x JP
-  password: 1013d36f-0b13-4fdc-a142-2f8bd05c1b77
-  port: 31115
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 21|日本[A1]
+  name: 27|日本[A1]
   password: cc256a78-3c73-4d34-b3ee-7fc72e895c30
   port: 13146
   server: czf1.hssl8088.icu
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21|日本[A2]
+  name: 27|日本[A2]
   password: cc256a78-3c73-4d34-b3ee-7fc72e895c30
   port: 13146
   server: xcdx.hssl8088.icu
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21|日本[A3]
+  name: 27|日本[A3]
   password: cc256a78-3c73-4d34-b3ee-7fc72e895c30
   port: 13146
   server: mddx.hssl8088.icu
   type: ss
   udp: true
-- name: 21|日本[B1]备用hy2
+- name: 27|日本[B1]备用hy2
   password: cc256a78-3c73-4d34-b3ee-7fc72e895c30
   port: 50000
   server: ackrb.hssl8088.icu
@@ -519,44 +805,30 @@ proxies:
   sni: ackrb.hssl8088.icu
   type: hysteria2
   udp: true
-- cipher: aes-256-cfb
-  name: 35|🇯🇵 JP
-  password: amazonskr05
-  port: 443
-  server: 54.238.247.32
+- cipher: chacha20-ietf-poly1305
+  name: 29|🇯🇵日本 01 | 1x JP
+  password: a7377e48-71c6-45cd-85e6-daad534be5e5
+  port: 31111
+  server: free.2apzhfa.xyz
   type: ss
-- cipher: aes-256-cfb
-  name: 35|🇯🇵 JP 2
-  password: amazonskr05
-  port: 443
-  server: 43.201.254.74
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 29|🇯🇵日本 02 | 1x JP
+  password: a7377e48-71c6-45cd-85e6-daad534be5e5
+  port: 31113
+  server: free.2apzhfa.xyz
   type: ss
-- cipher: aes-256-cfb
-  name: 35|🇯🇵 JP 3
-  password: amazonskr05
-  port: 443
-  server: 13.213.53.194
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 29|🇯🇵日本 03 | 1x JP
+  password: a7377e48-71c6-45cd-85e6-daad534be5e5
+  port: 31115
+  server: free.2apzhfa.xyz
   type: ss
-- alpn:
-  - http%2F1.1
-  client-fingerprint: random
-  name: 35|🇯🇵 JP 4
-  network: ws
-  port: 443
-  server: 18.183.158.211
-  servername: jujue.dilireba.us.kg
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: f6b6a5a1-1b4f-4531-983f-9d68c0273b8f
-  ws-opts:
-    headers:
-      Host: jujue.dilireba.us.kg
-    path: /?ed=2560&proxyip=18.183.158.211:443
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 44|🇯🇵日本01|1x
+  name: 35|🇯🇵日本01|1x
   port: 48897
   server: gg.youaremygod.top
   type: vmess
@@ -564,7 +836,7 @@ proxies:
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
-  name: 44|🇯🇵日本02|1x
+  name: 35|🇯🇵日本02|1x
   port: 48898
   server: gy.youaremygod.top
   type: vmess
@@ -572,7 +844,7 @@ proxies:
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
-  name: 44|🇯🇵日本03|1x
+  name: 35|🇯🇵日本03|1x
   port: 49101
   server: gg.youaremygod.top
   type: vmess
@@ -580,14 +852,14 @@ proxies:
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
-  name: 44|🇯🇵日本04|1x
+  name: 35|🇯🇵日本04|1x
   port: 49102
   server: gy.youaremygod.top
   type: vmess
   udp: true
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - cipher: chacha20-ietf-poly1305
-  name: 44|打機神線|🇯🇵日本01|5x
+  name: 35|打機神線|🇯🇵日本01|5x
   password: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
   port: 10114
   server: ii.youaremygod.top
@@ -595,7 +867,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 45|日本高速x1
+  name: 36|日本高速x1
   port: 46150
   server: beiyong-.596743944.top
   type: vmess
@@ -603,14 +875,14 @@ proxies:
   uuid: 7dbdba19-6a3b-4370-93b1-fb5a89adde0c
 - alterId: 0
   cipher: auto
-  name: '46,47|日本高速x1 #2'
+  name: '37,38|日本高速x1 #2'
   port: 46150
   server: beiyong-.596743944.top
   type: vmess
   udp: true
   uuid: b8d2b7da-cd51-4d8f-ab47-e04365d4f295
 - down: 35
-  name: 48|日本-东京-HY-001
+  name: 39|日本-东京-HY-001
   obfs: salamander
   obfs-password: ZTg1ZWVjNjAxZmRlNGI5MA==
   password: a3beb5f6-b991-403f-9d21-f8cadccbdad5
@@ -621,7 +893,7 @@ proxies:
   up: 35
 - alterId: 0
   cipher: auto
-  name: 48|日本-东京-001
+  name: 39|日本-东京-001
   network: ws
   port: 20327
   server: 212.192.221.4
@@ -630,7 +902,7 @@ proxies:
   uuid: a3beb5f6-b991-403f-9d21-f8cadccbdad5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '51,52|日本01 #1'
+  name: '42,43,44,45,46,47,48|日本01 #8'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -644,7 +916,7 @@ proxies:
   uuid: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '51,52|日本02 #1'
+  name: '42,43,44,45,46,47,48|日本02 #8'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -658,7 +930,7 @@ proxies:
   uuid: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '51,52|日本03 #1'
+  name: '42,43,44,45,46,47,48|日本03 #8'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -672,7 +944,7 @@ proxies:
   uuid: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '51,52|日本04 #1'
+  name: '42,43,44,45,46,47,48|日本04 #8'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -684,7 +956,7 @@ proxies:
   type: vless
   udp: true
   uuid: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
-- name: '51,52|日本05 #1'
+- name: '42,43,44,45,46,47,48|日本05 #8'
   password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
   port: 20230
   server: jp005.421421.xyz
@@ -692,7 +964,7 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: '51,52|日本06 #1'
+- name: '42,43,44,45,46,47,48|日本06 #8'
   password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
   port: 20230
   server: jp006.421421.xyz
@@ -700,7 +972,7 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: '51,52|日本07 #1'
+- name: '42,43,44,45,46,47,48|日本07 #8'
   password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
   port: 20230
   server: jp007.421421.xyz
@@ -708,7 +980,7 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: '51,52|日本08 #1'
+- name: '42,43,44,45,46,47,48|日本08 #8'
   password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
   port: 20230
   server: jp008.421421.xyz
@@ -717,21 +989,271 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 53|日本-住宅
+  name: 49|日本-住宅
   password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb
   port: 22443
   server: qwea.bat520.cc
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 53|尼日利亚-冷门
+  name: 49|尼日利亚-冷门
   password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb
   port: 35833
   server: qwea.bat520.cc
   type: ss
   udp: true
+- cipher: rc4-md5
+  name: 50|日本 ソフトバンク B01 500Mbps 1倍 Netfl...
+  password: 26d8vZ
+  port: 5185
+  server: jp06.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 ソフトバンク B02 500Mbps 1倍 Netfl...
+  password: 26d8vZ
+  port: 5185
+  server: jp07.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 ソフトバンク B03 500Mbps 1倍 Netfl...
+  password: 26d8vZ
+  port: 5185
+  server: jp08.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 ソフトバンク B04 500Mbps 1倍 Netfl...
+  password: 26d8vZ
+  port: 5185
+  server: jp09.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 ソフトバンク B05 500Mbps 1倍 Netfl...
+  password: 26d8vZ
+  port: 5185
+  server: jp10.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 01
+  password: 26d8vZ
+  port: 5185
+  server: jp01.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 02
+  password: 26d8vZ
+  port: 5185
+  server: jp02.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 03
+  password: 26d8vZ
+  port: 5185
+  server: jp03.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 04
+  password: 26d8vZ
+  port: 5185
+  server: jp04.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 06
+  password: 26d8vZ
+  port: 5185
+  server: jp27.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 07
+  password: 26d8vZ
+  port: 5185
+  server: jp28.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 08
+  password: 26d8vZ
+  port: 5185
+  server: jp29.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 09
+  password: 26d8vZ
+  port: 5185
+  server: jp30.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 10
+  password: 26d8vZ
+  port: 5185
+  server: jp31.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 11
+  password: 26d8vZ
+  port: 5185
+  server: jp32.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 12
+  password: 26d8vZ
+  port: 5185
+  server: jp22.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 13
+  password: 26d8vZ
+  port: 5185
+  server: jp23.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 14
+  password: 26d8vZ
+  port: 5185
+  server: jp24.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 15
+  password: 26d8vZ
+  port: 5185
+  server: jp25.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本 まつやまし auひかり ホーム1ギガ B 16
+  password: 26d8vZ
+  port: 5185
+  server: jp26.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本大阪 オプテージ B 01
+  password: 26d8vZ
+  port: 5185
+  server: jp14.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本大阪 オプテージ B 02
+  password: 26d8vZ
+  port: 5185
+  server: jp15.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本大阪 オプテージ B 03
+  password: 26d8vZ
+  port: 5185
+  server: jp16.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本大阪 オプテージ B 04
+  password: 26d8vZ
+  port: 5185
+  server: jp17.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本大阪 オプテージ B 05
+  password: 26d8vZ
+  port: 5185
+  server: jp18.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本大阪 オプテージ B 06
+  password: 26d8vZ
+  port: 5185
+  server: jp19.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|日本大阪 オプテージ B 07
+  password: 26d8vZ
+  port: 5185
+  server: jp20.graniterapids.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 50|海外连接 日本
+  password: 26d8vZ
+  port: 5185
+  server: 103.152.227.147
+  type: ss
+  udp: true
+- name: 51|日本
+  password: 2c87c009-914a-4a6c-b78f-3d7f7222aba8
+  port: 38546
+  server: xxrb.bbgjc.cc
+  skip-cert-verify: true
+  sni: xxrb.bbgjc.cc
+  type: hysteria2
+  udp: true
+- name: '52|日本 #1'
+  password: dc820238-0311-4f28-ac30-f45444e30a05
+  port: 38546
+  server: xxrb.bbgjc.cc
+  skip-cert-verify: true
+  sni: xxrb.bbgjc.cc
+  type: hysteria2
+  udp: true
+- name: '53|日本 #2'
+  password: 54b15150-9f8c-4792-98e7-f8331be76cf7
+  port: 38546
+  server: xxrb.bbgjc.cc
+  skip-cert-verify: true
+  sni: xxrb.bbgjc.cc
+  type: hysteria2
+  udp: true
+- name: '54|日本 #3'
+  password: c5149b0e-61e4-4c73-9b96-873a462dc4e8
+  port: 38546
+  server: xxrb.bbgjc.cc
+  skip-cert-verify: true
+  sni: xxrb.bbgjc.cc
+  type: hysteria2
+  udp: true
+- name: '55|日本 #4'
+  password: 55bb6493-61ee-4d70-b1c5-01547f2e17d1
+  port: 38546
+  server: xxrb.bbgjc.cc
+  skip-cert-verify: true
+  sni: xxrb.bbgjc.cc
+  type: hysteria2
+  udp: true
+- cipher: aes-128-gcm
+  name: 56|日本 A
+  password: 3519b9a7-7acf-4265-b7ab-6cb6f0a1cbfe
+  port: 566
+  server: aisalayer-a.upperlay.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 56|日本 B
+  password: 3519b9a7-7acf-4265-b7ab-6cb6f0a1cbfe
+  port: 567
+  server: aisalayer-a.upperlay.xyz
+  type: ss
+  udp: true
 - auth: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
-  name: 55|🇯🇵 日本东京4Gbps-1
+  name: 57|🇯🇵 日本东京4Gbps-1
   password: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
   port: 8899
   server: dj1.su8.lol
@@ -739,7 +1261,7 @@ proxies:
   sni: dj1.su8.lol
   type: hysteria2
 - auth: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
-  name: 55|🇯🇵 日本大阪4Gbps-1
+  name: 57|🇯🇵 日本大阪4Gbps-1
   password: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
   port: 8899
   server: riben1.su8.lol
@@ -747,7 +1269,7 @@ proxies:
   sni: riben1.su8.lol
   type: hysteria2
 - auth: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
-  name: 55|🇯🇵 日本东京-1
+  name: 57|🇯🇵 日本东京-1
   password: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
   port: 8899
   server: dj2.su8.lol
@@ -755,7 +1277,7 @@ proxies:
   sni: dj2.su8.lol
   type: hysteria2
 - auth: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
-  name: 55|🇯🇵 日本东京-2
+  name: 57|🇯🇵 日本东京-2
   password: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
   port: 8899
   server: dj3.su8.lol
@@ -763,7 +1285,7 @@ proxies:
   sni: dj3.su8.lol
   type: hysteria2
 - auth: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
-  name: 55|🇯🇵 日本大阪-1
+  name: 57|🇯🇵 日本大阪-1
   password: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
   port: 8899
   server: riben3.su8.lol
@@ -771,7 +1293,7 @@ proxies:
   sni: riben3.su8.lol
   type: hysteria2
 - cipher: rc4-md5
-  name: 55|🇯🇵 普通节点-日本A-01
+  name: 57|🇯🇵 普通节点-日本A-01
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -781,7 +1303,7 @@ proxies:
   server: 1.linkhub.degree
   type: ssr
 - cipher: rc4-md5
-  name: 55|🇯🇵 普通节点-日本A-02
+  name: 57|🇯🇵 普通节点-日本A-02
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -791,7 +1313,7 @@ proxies:
   server: 1.linkhub.degree
   type: ssr
 - cipher: rc4-md5
-  name: 55|🇯🇵 普通节点-日本B-01
+  name: 57,106|🇯🇵 普通节点-日本B-01 2
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -801,7 +1323,7 @@ proxies:
   server: 2.hublink.pro
   type: ssr
 - cipher: rc4-md5
-  name: 55|🇯🇵 普通节点-日本B-02
+  name: 57,106|🇯🇵 普通节点-日本B-02 2
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -811,7 +1333,7 @@ proxies:
   server: 2.hublink.pro
   type: ssr
 - cipher: rc4-md5
-  name: 55|🇯🇵 普通节点-日本C-01
+  name: 57,106|🇯🇵 普通节点-日本C-01 2
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -821,7 +1343,7 @@ proxies:
   server: 3.link-hub.click
   type: ssr
 - cipher: rc4-md5
-  name: 55|🇯🇵 普通节点-日本C-02
+  name: 57,106|🇯🇵 普通节点-日本C-02 2
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -831,7 +1353,7 @@ proxies:
   server: 3.link-hub.click
   type: ssr
 - auth: qaKSC44T83EOPpgCSR030vSH
-  name: 55|🇯🇵 日本
+  name: 57|🇯🇵 日本
   password: qaKSC44T83EOPpgCSR030vSH
   port: 443
   server: starlink-tko.2513142.xyz
@@ -839,7 +1361,7 @@ proxies:
   sni: www.cloudflare.com
   type: hysteria2
 - down: 15
-  name: '56|日本-东京-HY-001 #1'
+  name: '58|日本-东京-HY-001 #1'
   obfs: salamander
   obfs-password: ZTg1ZWVjNjAxZmRlNGI5MA==
   password: e5a63557-9587-4695-804b-537e2dbfa2b3
@@ -850,7 +1372,7 @@ proxies:
   up: 15
 - alterId: 0
   cipher: auto
-  name: '56|日本-东京-001 #1'
+  name: '58|日本-东京-001 #1'
   network: ws
   port: 20327
   server: 212.192.221.4
@@ -858,7 +1380,7 @@ proxies:
   udp: true
   uuid: e5a63557-9587-4695-804b-537e2dbfa2b3
 - down: 15
-  name: '57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73|日本-东京-HY-001 #18'
+  name: '59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75|日本-东京-HY-001 #18'
   obfs: salamander
   obfs-password: ZTg1ZWVjNjAxZmRlNGI5MA==
   password: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
@@ -869,57 +1391,190 @@ proxies:
   up: 15
 - alterId: 0
   cipher: auto
-  name: '57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73|日本-东京-001 #18'
+  name: '59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75|日本-东京-001 #18'
   network: ws
   port: 20327
   server: 212.192.221.4
   type: vmess
   udp: true
   uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
+- down: 100
+  name: '76|日本-东京-HY-001 #19'
+  obfs: salamander
+  obfs-password: ZTg1ZWVjNjAxZmRlNGI5MA==
+  password: 219e2f40-759b-4e00-9d4b-4bd588e5b84e
+  port: 28528
+  server: 212.192.221.4
+  skip-cert-verify: true
+  type: hysteria2
+  up: 100
+- alterId: 0
+  cipher: auto
+  name: '76|日本-东京-001 #19'
+  network: ws
+  port: 20327
+  server: 212.192.221.4
+  type: vmess
+  udp: true
+  uuid: 219e2f40-759b-4e00-9d4b-4bd588e5b84e
+- down: 15
+  name: '77|日本-东京-HY-001 #20'
+  obfs: salamander
+  obfs-password: ZTg1ZWVjNjAxZmRlNGI5MA==
+  password: d1037421-3977-4cae-8462-0c7d22745e84
+  port: 28528
+  server: 212.192.221.4
+  skip-cert-verify: true
+  type: hysteria2
+  up: 15
+- alterId: 0
+  cipher: auto
+  name: '77|日本-东京-001 #20'
+  network: ws
+  port: 20327
+  server: 212.192.221.4
+  type: vmess
+  udp: true
+  uuid: d1037421-3977-4cae-8462-0c7d22745e84
+- down: 15
+  name: '78|日本-东京-HY-001 #21'
+  obfs: salamander
+  obfs-password: ZTg1ZWVjNjAxZmRlNGI5MA==
+  password: 7d3dea75-4636-4de5-bf3b-47ccc3411434
+  port: 28528
+  server: 212.192.221.4
+  skip-cert-verify: true
+  type: hysteria2
+  up: 15
+- alterId: 0
+  cipher: auto
+  name: '78|日本-东京-001 #21'
+  network: ws
+  port: 20327
+  server: 212.192.221.4
+  type: vmess
+  udp: true
+  uuid: 7d3dea75-4636-4de5-bf3b-47ccc3411434
+- down: 15
+  name: '79|日本-东京-HY-001 #22'
+  obfs: salamander
+  obfs-password: ZTg1ZWVjNjAxZmRlNGI5MA==
+  password: 791a9aad-1a8b-435d-862e-627f41025d73
+  port: 28528
+  server: 212.192.221.4
+  skip-cert-verify: true
+  type: hysteria2
+  up: 15
+- alterId: 0
+  cipher: auto
+  name: '79|日本-东京-001 #22'
+  network: ws
+  port: 20327
+  server: 212.192.221.4
+  type: vmess
+  udp: true
+  uuid: 791a9aad-1a8b-435d-862e-627f41025d73
+- down: 35
+  name: '80|日本-东京-HY-001 #23'
+  obfs: salamander
+  obfs-password: ZTg1ZWVjNjAxZmRlNGI5MA==
+  password: f5dc8f26-f472-4089-82f8-7af58ea887d3
+  port: 28528
+  server: 212.192.221.4
+  skip-cert-verify: true
+  type: hysteria2
+  up: 35
+- alterId: 0
+  cipher: auto
+  name: '80|日本-东京-001 #23'
+  network: ws
+  port: 20327
+  server: 212.192.221.4
+  type: vmess
+  udp: true
+  uuid: f5dc8f26-f472-4089-82f8-7af58ea887d3
+- down: 1
+  name: '81|日本-东京-HY-001 #24'
+  obfs: salamander
+  obfs-password: ZTg1ZWVjNjAxZmRlNGI5MA==
+  password: 70166ce6-326f-4b67-a296-a3253d8090fb
+  port: 28528
+  server: 212.192.221.4
+  skip-cert-verify: true
+  type: hysteria2
+  up: 1
+- alterId: 0
+  cipher: auto
+  name: '81|日本-东京-001 #24'
+  network: ws
+  port: 20327
+  server: 212.192.221.4
+  type: vmess
+  udp: true
+  uuid: 70166ce6-326f-4b67-a296-a3253d8090fb
+- down: 15
+  name: '82,83|日本-东京-HY-001 #26'
+  obfs: salamander
+  obfs-password: ZTg1ZWVjNjAxZmRlNGI5MA==
+  password: fceff025-b4ea-4fd2-9093-151b3bd503cd
+  port: 28528
+  server: 212.192.221.4
+  skip-cert-verify: true
+  type: hysteria2
+  up: 15
+- alterId: 0
+  cipher: auto
+  name: '82,83|日本-东京-001 #26'
+  network: ws
+  port: 20327
+  server: 212.192.221.4
+  type: vmess
+  udp: true
+  uuid: fceff025-b4ea-4fd2-9093-151b3bd503cd
 - cipher: aes-256-gcm
-  name: 74|[日本1] ✨ 2x
+  name: 84|[日本1] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 37687
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[日本4] ✨ 2x
+  name: 84|[日本4] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 46277
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[日本5] ✨ 2x
+  name: 84|[日本5] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 46117
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[尼日利亚1] ✨ 5x
+  name: 84|[尼日利亚1] ✨ 5x
   password: NgmMHL7OVB5t6j3X
   port: 34353
   server: 69-in-2.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[尼日利亚2] ✨ 5x
+  name: 84|[尼日利亚2] ✨ 5x
   password: NgmMHL7OVB5t6j3X
   port: 20224
   server: 69-in-2.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[日本1] ✨ 5x
+  name: 84|[日本1] ✨ 5x
   password: NgmMHL7OVB5t6j3X
   port: 43312
   server: 69-in-2.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[日本2] ✨ 5x
+  name: 84|[日本2] ✨ 5x
   password: NgmMHL7OVB5t6j3X
   port: 45312
   server: 69-in-2.226969.xyz
@@ -927,7 +1582,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '78,154|日本01 #8'
+  name: '88|日本01 #9'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -941,7 +1596,7 @@ proxies:
   uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '78,154|日本02 #8'
+  name: '88|日本02 #9'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -955,7 +1610,7 @@ proxies:
   uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '78,154|日本03 #8'
+  name: '88|日本03 #9'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -969,7 +1624,7 @@ proxies:
   uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '78,154|日本04 #8'
+  name: '88|日本04 #9'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -981,7 +1636,7 @@ proxies:
   type: vless
   udp: true
   uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
-- name: '78,154|日本05 #8'
+- name: '88|日本05 #9'
   password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
   port: 20230
   server: jp005.421421.xyz
@@ -989,7 +1644,7 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: '78,154|日本06 #8'
+- name: '88|日本06 #9'
   password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
   port: 20230
   server: jp006.421421.xyz
@@ -997,7 +1652,7 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: '78,154|日本07 #8'
+- name: '88|日本07 #9'
   password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
   port: 20230
   server: jp007.421421.xyz
@@ -1005,7 +1660,7 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: '78,154|日本08 #8'
+- name: '88|日本08 #9'
   password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
   port: 20230
   server: jp008.421421.xyz
@@ -1015,7 +1670,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '79,80|日本01 #4'
+  name: '89,90|日本01 #11'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -1029,7 +1684,7 @@ proxies:
   uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '79,80|日本02 #4'
+  name: '89,90|日本02 #11'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -1043,7 +1698,7 @@ proxies:
   uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '79,80|日本03 #4'
+  name: '89,90|日本03 #11'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -1057,7 +1712,7 @@ proxies:
   uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '79,80|日本04 #4'
+  name: '89,90|日本04 #11'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -1069,7 +1724,7 @@ proxies:
   type: vless
   udp: true
   uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
-- name: '79,80|日本05 #4'
+- name: '89,90|日本05 #11'
   password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
   port: 20230
   server: jp005.421421.xyz
@@ -1077,7 +1732,7 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: '79,80|日本06 #4'
+- name: '89,90|日本06 #11'
   password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
   port: 20230
   server: jp006.421421.xyz
@@ -1085,7 +1740,7 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: '79,80|日本07 #4'
+- name: '89,90|日本07 #11'
   password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
   port: 20230
   server: jp007.421421.xyz
@@ -1093,7 +1748,7 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: '79,80|日本08 #4'
+- name: '89,90|日本08 #11'
   password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
   port: 20230
   server: jp008.421421.xyz
@@ -1103,7 +1758,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '81,82,83|日本01 #7'
+  name: '91,92,93,94|日本01 #15'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -1117,7 +1772,7 @@ proxies:
   uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '81,82,83|日本02 #7'
+  name: '91,92,93,94|日本02 #15'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -1131,7 +1786,7 @@ proxies:
   uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '81,82,83|日本03 #7'
+  name: '91,92,93,94|日本03 #15'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -1145,7 +1800,7 @@ proxies:
   uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '81,82,83|日本04 #7'
+  name: '91,92,93,94|日本04 #15'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -1157,7 +1812,7 @@ proxies:
   type: vless
   udp: true
   uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-- name: '81,82,83|日本05 #7'
+- name: '91,92,93,94|日本05 #15'
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
   port: 20230
   server: jp005.421421.xyz
@@ -1165,7 +1820,7 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: '81,82,83|日本06 #7'
+- name: '91,92,93,94|日本06 #15'
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
   port: 20230
   server: jp006.421421.xyz
@@ -1173,7 +1828,7 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: '81,82,83|日本07 #7'
+- name: '91,92,93,94|日本07 #15'
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
   port: 20230
   server: jp007.421421.xyz
@@ -1181,7 +1836,7 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: '81,82,83|日本08 #7'
+- name: '91,92,93,94|日本08 #15'
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
   port: 20230
   server: jp008.421421.xyz
@@ -1189,142 +1844,481 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 85|🇯🇵   Japan 15
-  password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
-  port: 46615
-  server: rb-jd.huidu51.com
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '95,96,97|日本01 #18'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp001.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 85|🇯🇵   Japan 16
-  password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
-  port: 46616
-  server: rb-jd.huidu51.com
-  type: ss
+  uuid: a124e41a-0fb8-4543-a0ab-a127c7b515a9
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '95,96,97|日本02 #18'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp002.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 85|🇯🇵  Japan 17
-  password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
-  port: 46617
-  server: rb-jd.huidu51.com
-  type: ss
+  uuid: a124e41a-0fb8-4543-a0ab-a127c7b515a9
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '95,96,97|日本03 #18'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp003.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 85|🇯🇵   Japan 18
-  password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
-  port: 46618
-  server: rb-jd.huidu51.com
-  type: ss
+  uuid: a124e41a-0fb8-4543-a0ab-a127c7b515a9
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '95,96,97|日本04 #18'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp004.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 85|🇯🇵   Japan 19
-  password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
-  port: 46619
-  server: rb-jd.huidu51.com
-  type: ss
+  uuid: a124e41a-0fb8-4543-a0ab-a127c7b515a9
+- name: '95,96,97|日本05 #18'
+  password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
+  port: 20230
+  server: jp005.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 85|🇯🇵   Japan 20
-  password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
-  port: 46620
-  server: rb-jd.huidu51.com
-  type: ss
+- name: '95,96,97|日本06 #18'
+  password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
+  port: 20230
+  server: jp006.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '95,96,97|日本07 #18'
+  password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
+  port: 20230
+  server: jp007.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '95,96,97|日本08 #18'
+  password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
+  port: 20230
+  server: jp008.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '99|日本01 #19'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp001.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '99|日本02 #19'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp002.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '99|日本03 #19'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp003.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '99|日本04 #19'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp004.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+- name: '99|日本05 #19'
+  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+  port: 20230
+  server: jp005.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '99|日本06 #19'
+  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+  port: 20230
+  server: jp006.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '99|日本07 #19'
+  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+  port: 20230
+  server: jp007.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '99|日本08 #19'
+  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+  port: 20230
+  server: jp008.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: '86,87|🇯🇵日本1 #1'
+  name: '102,103|🇯🇵日本1 #1'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
   port: 53001
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '86,87|🇯🇵日本2 #1'
+  name: '102,103|🇯🇵日本2 #1'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
   port: 53002
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '86,87|🇯🇵日本3 #1'
+  name: '102,103|🇯🇵日本3 #1'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
   port: 53003
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '86,87|🇯🇵日本4 #1'
+  name: '102,103|🇯🇵日本4 #1'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
   port: 53004
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '86,87|🇯🇵日本5 #1'
+  name: '102,103|🇯🇵日本5 #1'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
   port: 53005
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '86,87|🇯🇵日本6 #1'
+  name: '102,103|🇯🇵日本6 #1'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
   port: 53007
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 88|🇯🇵日本1 💧 1x
+  name: 104|🇯🇵日本1 💧 1x
   password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
   port: 43681
   server: jp1.qsm1.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 88|🇯🇵日本2 💧 1x
+  name: 104|🇯🇵日本2 💧 1x
   password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
   port: 32581
   server: jp2.qsm1.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 88|🇯🇵日本3 💧 1x
+  name: 104|🇯🇵日本3 💧 1x
   password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
   port: 43683
   server: jp3.qsm1.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 88|🇯🇵日本4 💧 1x
+  name: 104|🇯🇵日本4 💧 1x
   password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
   port: 43684
   server: jp4.qsm1.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 88|🇯🇵日本5 💧 1x
+  name: 104|🇯🇵日本5 💧 1x
   password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
   port: 43685
   server: jp4.qsm1.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 88|🇯🇵日本6 💧 1x
+  name: 104|🇯🇵日本6 💧 1x
   password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
   port: 43786
   server: jp4.qsm1.xyz
   type: ss
   udp: true
-- name: 91|🇯🇵1 |  6.3MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
+- name: 106|🇯🇵 日本 东京Amazon数据中心
+  password: 7d9c7804-1f7d-43f7-b19a-fa7c2fff4569
+  port: 20230
+  server: jp007.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+- cipher: aes-128-gcm
+  name: '106|🇯🇵 JP-149.22.87.204-0328 | 4.0... #1'
+  password: shadowsocks
   port: 443
-  server: jpgmo101-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jpgmo101-cdn-route.couldflare-cdn.com
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: '106|🇯🇵 JP-149.22.87.241-0327 | 3.7... #1'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-256-cfb
+  name: '106|🇯🇵 JP-3.112.245.114-2180 | 3.5... #1'
+  password: amazonskr05
+  port: 443
+  server: 3.112.245.114
+  type: ss
+- cipher: aes-128-gcm
+  name: '106|🇯🇵 JP-149.22.87.240-0324 | 3.1... #1'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- client-fingerprint: chrome
+  name: 106|🇯🇵 日本 004 2
+  network: ws
+  port: 443
+  server: 47.74.33.96
+  servername: jpc.kddhs.asia
+  skip-cert-verify: true
+  tfo: false
   tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: '93|🇯🇵 日本2 #1'
+  type: vless
+  udp: true
+  uuid: 29fffc40-85fa-46fc-ac13-4d846fd9f696
+  ws-opts:
+    headers:
+      Host: jpc.kddhs.asia
+    path: /bing
+- client-fingerprint: chrome
+  name: 106,111|🇺🇸3 |  1.6MB/s
+  network: ws
+  port: 2095
+  server: 156.238.18.163
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- client-fingerprint: chrome
+  name: 106|🇯🇵 日本 007 2
+  network: ws
+  port: 2052
+  server: 156.238.18.165
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- cipher: rc4-md5
+  name: 106|🇯🇵 普通节点-日本A-01 2
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40200
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 1.link-hub.blog
+  type: ssr
+- cipher: rc4-md5
+  name: 106|🇯🇵 普通节点-日本A-02 2
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40202
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 1.link-hub.blog
+  type: ssr
+- name: 107|日本H02直连Hysteria2
+  password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
+  port: 8081
+  server: 1jp003.156786.xyz
+  skip-cert-verify: false
+  sni: 1jp003.156786.xyz
+  type: hysteria2
+  udp: true
+- name: 107|日本H01直连Hysteria2
+  password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
+  port: 8081
+  server: hyfnjp01.156786.xyz
+  skip-cert-verify: false
+  sni: hyfnjp01.156786.xyz
+  type: hysteria2
+  udp: true
+- name: 107|日本1隧道
+  password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
+  port: 63938
+  server: twjpzz2.595780.xyz
+  sni: 1jp001.233235.xyz
+  type: trojan
+  udp: true
+- name: 107|日本2隧道
+  password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
+  port: 32840
+  server: twjpzznew.564659.xyz
+  sni: 1jp001.233235.xyz
+  type: trojan
+  udp: true
+- name: 107|日本3隧道
+  password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
+  port: 47910
+  server: twjpzznew.564659.xyz
+  sni: 1jp001.233235.xyz
+  type: trojan
+  udp: true
+- name: 107|日本4隧道
+  password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
+  port: 13608
+  server: twjpzznew.564659.xyz
+  sni: 2jp04162531be-29a9-2764-8627-51a5f4436fbd.233235.xyz
+  type: trojan
+  udp: true
+- name: '109|日本H02直连Hysteria2 #1'
+  password: a48d9102-3eb4-4576-8de7-482e58bc1a39
+  port: 8081
+  server: 1jp003.156786.xyz
+  skip-cert-verify: false
+  sni: 1jp003.156786.xyz
+  type: hysteria2
+  udp: true
+- name: '109|日本H01直连Hysteria2 #1'
+  password: a48d9102-3eb4-4576-8de7-482e58bc1a39
+  port: 8081
+  server: hyfnjp01.156786.xyz
+  skip-cert-verify: false
+  sni: hyfnjp01.156786.xyz
+  type: hysteria2
+  udp: true
+- name: '109|日本1隧道 #1'
+  password: a48d9102-3eb4-4576-8de7-482e58bc1a39
+  port: 63938
+  server: twjpzz2.595780.xyz
+  sni: 1jp001.233235.xyz
+  type: trojan
+  udp: true
+- name: '109|日本2隧道 #1'
+  password: a48d9102-3eb4-4576-8de7-482e58bc1a39
+  port: 32840
+  server: twjpzznew.564659.xyz
+  sni: 1jp001.233235.xyz
+  type: trojan
+  udp: true
+- name: '109|日本3隧道 #1'
+  password: a48d9102-3eb4-4576-8de7-482e58bc1a39
+  port: 47910
+  server: twjpzznew.564659.xyz
+  sni: 1jp001.233235.xyz
+  type: trojan
+  udp: true
+- name: '109|日本4隧道 #1'
+  password: a48d9102-3eb4-4576-8de7-482e58bc1a39
+  port: 13608
+  server: twjpzznew.564659.xyz
+  sni: 2jp04162531be-29a9-2764-8627-51a5f4436fbd.233235.xyz
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 111|🇯🇵1 |  4.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.216.127
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 111|🇯🇵2 |  5.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.64.124.92
+  type: ss
+- name: 111|🇯🇵3 |  8.8MB/s
+  password: 74296433-e708-3d2a-a2c1-4517de85b93d
+  port: 20300
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z300.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 111|🇯🇵4 |  5.4MB/s
+  password: 74296433-e708-3d2a-a2c1-4517de85b93d
+  port: 20071
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x71.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- name: '113|🇯🇵 日本2 #2'
   network: tcp
   password: 4b6711da-7dda-4a8e-9bac-c397679cbeb1
   port: 28713
@@ -1333,7 +2327,7 @@ proxies:
   sni: mmbiz1.redapricotcloud.com
   type: trojan
   udp: true
-- name: 93|🇳🇬 尼日利亚
+- name: 113|🇳🇬 尼日利亚
   network: tcp
   password: 4b6711da-7dda-4a8e-9bac-c397679cbeb1
   port: 34183
@@ -1342,7 +2336,7 @@ proxies:
   sni: mmbiz16.redapricotcloud.com
   type: trojan
   udp: true
-- name: 93|🇯🇵 日本 IPV6
+- name: 113|🇯🇵 日本 IPV6
   network: tcp
   password: 4b6711da-7dda-4a8e-9bac-c397679cbeb1
   port: 28713
@@ -1353,9 +2347,9 @@ proxies:
   udp: true
 - alterId: 1
   cipher: auto
-  name: 94|🇯🇵 免费-日本1-Ver.6
+  name: '115|🇯🇵 免费-日本1-Ver.6 #1'
   port: 21586
-  server: 7e8df-g06.jp01-0986-vm0.entry.fr0307a.art
+  server: 8m3mi-g06.jp01-0986-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1363,9 +2357,9 @@ proxies:
   uuid: e9537990-d286-3eaf-8596-d74249d3f347
 - alterId: 1
   cipher: auto
-  name: 94|🇯🇵 免费-日本2-Ver.7
+  name: '115|🇯🇵 免费-日本2-Ver.7 #1'
   port: 11778
-  server: cmo8a-g06.jp02-9a99-vm0.entry.fr0307a.art
+  server: 7lh3k-g06.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1373,9 +2367,9 @@ proxies:
   uuid: e9537990-d286-3eaf-8596-d74249d3f347
 - alterId: 1
   cipher: auto
-  name: 94|🇯🇵 免费-日本3-Ver.6
+  name: '115|🇯🇵 免费-日本3-Ver.6 #1'
   port: 21586
-  server: ujn24-g06.jp03-7d22-vm0.entry.fr0307a.art
+  server: rxxog-g06.jp03-7d22-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1383,9 +2377,9 @@ proxies:
   uuid: e9537990-d286-3eaf-8596-d74249d3f347
 - alterId: 1
   cipher: auto
-  name: 94|🇯🇵 免费-日本4-Ver.7
+  name: '115|🇯🇵 免费-日本4-Ver.7 #1'
   port: 449
-  server: aqmc2-g06.jp04-3771-vm0.entry.fr0307a.art
+  server: wm1tb-g06.jp04-3771-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1393,9 +2387,9 @@ proxies:
   uuid: e9537990-d286-3eaf-8596-d74249d3f347
 - alterId: 1
   cipher: auto
-  name: 94|🇯🇵 免费-日本5-Ver.8
+  name: '115|🇯🇵 免费-日本5-Ver.8 #1'
   port: 46487
-  server: vy5m6-g06.jp05-6786-vm0.entry.fr0307a.art
+  server: g8qct-g06.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1403,9 +2397,9 @@ proxies:
   uuid: e9537990-d286-3eaf-8596-d74249d3f347
 - alterId: 1
   cipher: auto
-  name: 94|🇯🇵 免费-日本6-Ver.7
+  name: '115|🇯🇵 免费-日本6-Ver.7 #1'
   port: 28788
-  server: 6ztig-g06.jp06-7c5a-vm0.entry.fr0307a.art
+  server: ulqbw-g06.jp06-7c5a-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1413,15 +2407,15 @@ proxies:
   uuid: e9537990-d286-3eaf-8596-d74249d3f347
 - alterId: 1
   cipher: auto
-  name: 94|🇯🇵 免费-日本7-Ver.1
+  name: '115|🇯🇵 免费-日本7-Ver.1 #1'
   port: 28788
-  server: fvoi6-g06.jp07-1f28-vm0.entry.fr0307a.art
+  server: 4jb7y-g06.jp07-1f28-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: e9537990-d286-3eaf-8596-d74249d3f347
-- name: 99|日本
+- name: '120|日本 #5'
   password: 1074f3c7-512a-4118-9798-2a45e2a3edf8
   port: 34566
   server: rb.laosijicc.top
@@ -1429,7 +2423,7 @@ proxies:
   sni: rb.laosijicc.top
   type: hysteria2
   udp: true
-- name: '100|日本 #1'
+- name: '121|日本 #6'
   password: d765ffa9-7da7-4961-9bc1-c6c79e2d5965
   port: 34566
   server: rb.laosijicc.top
@@ -1437,7 +2431,7 @@ proxies:
   sni: rb.laosijicc.top
   type: hysteria2
   udp: true
-- name: '101,102|日本 #3'
+- name: '122,123|日本 #8'
   password: ddde2db5-7bf0-48f0-93a9-704284dbed4b
   port: 34566
   server: rb.laosijicc.top
@@ -1445,7 +2439,7 @@ proxies:
   sni: rb.laosijicc.top
   type: hysteria2
   udp: true
-- name: '103|日本 #4'
+- name: '124|日本 #9'
   password: c6f59c36-89d5-479b-95d6-6b8459ee2b92
   port: 34566
   server: rb.laosijicc.top
@@ -1453,77 +2447,77 @@ proxies:
   sni: rb.laosijicc.top
   type: hysteria2
   udp: true
-- name: 105|日本 01
+- name: 126|日本 01
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50441
   server: mpkrykuslqfijsw-jp.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 105|日本 02
+- name: 126|日本 02
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50442
   server: mpkrykuslqfijsw-jp.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 105|日本 03
+- name: 126|日本 03
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50443
   server: mpkrykuslqfijsw-jp.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 105|日本 04
+- name: 126|日本 04
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50444
   server: mpkrykuslqfijsw-jp.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 105|日本 05
+- name: 126|日本 05
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50445
   server: mpkrykuslqfijsw-jp.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 105|日本 06
+- name: 126|日本 06
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50446
   server: mpkrykuslqfijsw-jp.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 105|日本 07
+- name: 126|日本 07
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50447
   server: mpkrykuslqfijsw-jp.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 105|日本 08
+- name: 126|日本 08
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50448
   server: mpkrykuslqfijsw-jp.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 105|日本 09
+- name: 126|日本 09
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50449
   server: mpkrykuslqfijsw-jp.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 105|日本 10
+- name: 126|日本 10
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50450
   server: mpkrykuslqfijsw-jp.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 112|日本|A01|1.0x
+- name: 133|日本|A01|1.0x
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: f4072180-4b96-42ed-8ab8-0240f6e13e1a
@@ -1533,7 +2527,7 @@ proxies:
   sni: apple.com
   type: hysteria2
   udp: true
-- name: 112|日本|A02|1.0x
+- name: 133|日本|A02|1.0x
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: f4072180-4b96-42ed-8ab8-0240f6e13e1a
@@ -1545,9 +2539,9 @@ proxies:
   udp: true
 - alterId: 1
   cipher: auto
-  name: '113|🇯🇵 免费-日本1-Ver.6 #1'
+  name: '134|🇯🇵 免费-日本1-Ver.6 #2'
   port: 21586
-  server: 32dyz-g06.jp01-0986-vm0.entry.fr0307a.art
+  server: tja8s-g06.jp01-0986-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1555,9 +2549,9 @@ proxies:
   uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
 - alterId: 1
   cipher: auto
-  name: '113|🇯🇵 免费-日本2-Ver.7 #1'
+  name: '134|🇯🇵 免费-日本2-Ver.7 #2'
   port: 11778
-  server: sljtf-g06.jp02-9a99-vm0.entry.fr0307a.art
+  server: usbm5-g06.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1565,9 +2559,9 @@ proxies:
   uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
 - alterId: 1
   cipher: auto
-  name: '113|🇯🇵 免费-日本3-Ver.6 #1'
+  name: '134|🇯🇵 免费-日本3-Ver.6 #2'
   port: 21586
-  server: m240p-g06.jp03-7d22-vm0.entry.fr0307a.art
+  server: 5mav9-g06.jp03-7d22-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1575,9 +2569,9 @@ proxies:
   uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
 - alterId: 1
   cipher: auto
-  name: '113|🇯🇵 免费-日本4-Ver.7 #1'
+  name: '134|🇯🇵 免费-日本4-Ver.7 #2'
   port: 449
-  server: cm3s5-g06.jp04-3771-vm0.entry.fr0307a.art
+  server: ky2hf-g06.jp04-3771-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1585,9 +2579,9 @@ proxies:
   uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
 - alterId: 1
   cipher: auto
-  name: '113|🇯🇵 免费-日本5-Ver.8 #1'
+  name: '134|🇯🇵 免费-日本5-Ver.8 #2'
   port: 46487
-  server: 4sq1f-g06.jp05-6786-vm0.entry.fr0307a.art
+  server: 3w6d3-g06.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1595,9 +2589,9 @@ proxies:
   uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
 - alterId: 1
   cipher: auto
-  name: '113|🇯🇵 免费-日本6-Ver.7 #1'
+  name: '134|🇯🇵 免费-日本6-Ver.7 #2'
   port: 28788
-  server: j0xqg-g06.jp06-7c5a-vm0.entry.fr0307a.art
+  server: 3cv43-g06.jp06-7c5a-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1605,9 +2599,9 @@ proxies:
   uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
 - alterId: 1
   cipher: auto
-  name: '113|🇯🇵 免费-日本7-Ver.1 #1'
+  name: '134|🇯🇵 免费-日本7-Ver.1 #2'
   port: 28788
-  server: z88vf-g06.jp07-1f28-vm0.entry.fr0307a.art
+  server: fkqal-g06.jp07-1f28-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1615,7 +2609,7 @@ proxies:
   uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
 - alterId: 0
   cipher: auto
-  name: 115|日本-优化2
+  name: 136|日本-优化2
   network: ws
   port: 16617
   server: m.cnmjin.net
@@ -1631,7 +2625,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 115|日本-优化3
+  name: 136|日本-优化3
   network: ws
   port: 16617
   server: t.cnmjcn.cyou
@@ -1646,7 +2640,7 @@ proxies:
     path: /
   ws-path: /
 - down: 10000
-  name: 115|日本JP-HY2
+  name: 136|日本JP-HY2
   password: d0774966-fb63-4aca-9478-16c3f32be220
   port: 1443
   server: jp.mjhy2.com
@@ -1654,7 +2648,7 @@ proxies:
   sni: jp.mjhy2.com
   type: hysteria2
   up: 10000
-- name: 115|日本JP-T
+- name: 136|日本JP-T
   password: d0774966-fb63-4aca-9478-16c3f32be220
   port: 443
   server: jp.mjt000.com
@@ -1662,7 +2656,7 @@ proxies:
   sni: jp.mjt000.com
   type: trojan
   udp: true
-- name: 115|尼日利亚NI-T
+- name: 136|尼日利亚NI-T
   password: d0774966-fb63-4aca-9478-16c3f32be220
   port: 443
   server: ni.mjt000.com
@@ -1671,7 +2665,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '116|日本-优化2 #1'
+  name: '137|日本-优化2 #1'
   network: ws
   port: 16617
   server: m.cnmjin.net
@@ -1687,7 +2681,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '116|日本-优化3 #1'
+  name: '137|日本-优化3 #1'
   network: ws
   port: 16617
   server: t.cnmjcn.cyou
@@ -1702,7 +2696,7 @@ proxies:
     path: /
   ws-path: /
 - down: 10000
-  name: '116|日本JP-HY2 #1'
+  name: '137|日本JP-HY2 #1'
   password: 820517c1-1cfb-47ff-bfdd-48faf83773b5
   port: 1443
   server: jp.mjhy2.com
@@ -1710,7 +2704,7 @@ proxies:
   sni: jp.mjhy2.com
   type: hysteria2
   up: 10000
-- name: '116|日本JP-T #1'
+- name: '137|日本JP-T #1'
   password: 820517c1-1cfb-47ff-bfdd-48faf83773b5
   port: 443
   server: jp.mjt000.com
@@ -1718,7 +2712,7 @@ proxies:
   sni: jp.mjt000.com
   type: trojan
   udp: true
-- name: '116|尼日利亚NI-T #1'
+- name: '137|尼日利亚NI-T #1'
   password: 820517c1-1cfb-47ff-bfdd-48faf83773b5
   port: 443
   server: ni.mjt000.com
@@ -1727,7 +2721,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '117|日本-优化2 #2'
+  name: '138|日本-优化2 #2'
   network: ws
   port: 16617
   server: m.cnmjin.net
@@ -1743,7 +2737,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '117|日本-优化3 #2'
+  name: '138|日本-优化3 #2'
   network: ws
   port: 16617
   server: t.cnmjcn.cyou
@@ -1758,7 +2752,7 @@ proxies:
     path: /
   ws-path: /
 - down: 10000
-  name: '117|日本JP-HY2 #2'
+  name: '138|日本JP-HY2 #2'
   password: ba001863-ddd0-4beb-8933-8a75a898c7ec
   port: 1443
   server: jp.mjhy2.com
@@ -1766,7 +2760,7 @@ proxies:
   sni: jp.mjhy2.com
   type: hysteria2
   up: 10000
-- name: '117|日本JP-T #2'
+- name: '138|日本JP-T #2'
   password: ba001863-ddd0-4beb-8933-8a75a898c7ec
   port: 443
   server: jp.mjt000.com
@@ -1774,7 +2768,7 @@ proxies:
   sni: jp.mjt000.com
   type: trojan
   udp: true
-- name: '117|尼日利亚NI-T #2'
+- name: '138|尼日利亚NI-T #2'
   password: ba001863-ddd0-4beb-8933-8a75a898c7ec
   port: 443
   server: ni.mjt000.com
@@ -1783,9 +2777,9 @@ proxies:
   udp: true
 - alterId: 1
   cipher: auto
-  name: '118|🇯🇵 免费-日本1-Ver.6 #2'
+  name: '139|🇯🇵 免费-日本1-Ver.6 #3'
   port: 21581
-  server: r7zfl-g01.jp01-0986-vm0.entry.fr0307a.art
+  server: xje0y-g01.jp01-0986-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1793,9 +2787,9 @@ proxies:
   uuid: 46d2d389-2469-30ad-9e7a-21f1daa63935
 - alterId: 1
   cipher: auto
-  name: '118|🇯🇵 免费-日本2-Ver.7 #2'
+  name: '139|🇯🇵 免费-日本2-Ver.7 #3'
   port: 11773
-  server: 5dndi-g01.jp02-9a99-vm0.entry.fr0307a.art
+  server: qafdl-g01.jp02-9a99-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1803,9 +2797,9 @@ proxies:
   uuid: 46d2d389-2469-30ad-9e7a-21f1daa63935
 - alterId: 1
   cipher: auto
-  name: '118|🇯🇵 免费-日本3-Ver.6 #2'
+  name: '139|🇯🇵 免费-日本3-Ver.6 #3'
   port: 21581
-  server: noqof-g01.jp03-7d22-vm0.entry.fr0307a.art
+  server: wr1ac-g01.jp03-7d22-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1813,9 +2807,9 @@ proxies:
   uuid: 46d2d389-2469-30ad-9e7a-21f1daa63935
 - alterId: 1
   cipher: auto
-  name: '118|🇯🇵 免费-日本4-Ver.7 #2'
+  name: '139|🇯🇵 免费-日本4-Ver.7 #3'
   port: 444
-  server: drcrf-g01.jp04-3771-vm0.entry.fr0307a.art
+  server: p47ay-g01.jp04-3771-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1823,9 +2817,9 @@ proxies:
   uuid: 46d2d389-2469-30ad-9e7a-21f1daa63935
 - alterId: 1
   cipher: auto
-  name: '118|🇯🇵 免费-日本5-Ver.8 #2'
+  name: '139|🇯🇵 免费-日本5-Ver.8 #3'
   port: 46482
-  server: effrh-g01.jp05-6786-vm0.entry.fr0307a.art
+  server: ipjgb-g01.jp05-6786-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1833,9 +2827,9 @@ proxies:
   uuid: 46d2d389-2469-30ad-9e7a-21f1daa63935
 - alterId: 1
   cipher: auto
-  name: '118|🇯🇵 免费-日本6-Ver.7 #2'
+  name: '139|🇯🇵 免费-日本6-Ver.7 #3'
   port: 28783
-  server: 6l7uz-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  server: d6ole-g01.jp06-7c5a-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1843,9 +2837,9 @@ proxies:
   uuid: 46d2d389-2469-30ad-9e7a-21f1daa63935
 - alterId: 1
   cipher: auto
-  name: '118|🇯🇵 免费-日本7-Ver.1 #2'
+  name: '139|🇯🇵 免费-日本7-Ver.1 #3'
   port: 28783
-  server: 6cqms-g01.jp07-1f28-vm0.entry.fr0307a.art
+  server: 0fqfg-g01.jp07-1f28-vm0.entry.fr0307a.art
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1853,7 +2847,7 @@ proxies:
   uuid: 46d2d389-2469-30ad-9e7a-21f1daa63935
 - alterId: 0
   cipher: auto
-  name: '120,121,122|日本-优化2 #5'
+  name: '141,142,143|日本-优化2 #5'
   network: ws
   port: 16617
   server: m.cnmjin.net
@@ -1869,7 +2863,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '120,121,122|日本-优化3 #5'
+  name: '141,142,143|日本-优化3 #5'
   network: ws
   port: 16617
   server: t.cnmjcn.cyou
@@ -1884,7 +2878,7 @@ proxies:
     path: /
   ws-path: /
 - down: 10000
-  name: '120,121,122|日本JP-HY2 #5'
+  name: '141,142,143|日本JP-HY2 #5'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1443
   server: jp.mjhy2.com
@@ -1892,7 +2886,7 @@ proxies:
   sni: jp.mjhy2.com
   type: hysteria2
   up: 10000
-- name: '120,121,122|日本JP-T #5'
+- name: '141,142,143|日本JP-T #5'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 443
   server: jp.mjt000.com
@@ -1900,7 +2894,7 @@ proxies:
   sni: jp.mjt000.com
   type: trojan
   udp: true
-- name: '120,121,122|尼日利亚NI-T #5'
+- name: '141,142,143|尼日利亚NI-T #5'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 443
   server: ni.mjt000.com
@@ -1909,7 +2903,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '123|日本-优化2 #6'
+  name: '144|日本-优化2 #6'
   network: ws
   port: 16617
   server: m.cnmjin.net
@@ -1925,7 +2919,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '123|日本-优化3 #6'
+  name: '144|日本-优化3 #6'
   network: ws
   port: 16617
   server: t.cnmjcn.cyou
@@ -1940,7 +2934,7 @@ proxies:
     path: /
   ws-path: /
 - down: 10000
-  name: '123|日本JP-HY2 #6'
+  name: '144|日本JP-HY2 #6'
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 1443
   server: jp.mjhy2.com
@@ -1948,7 +2942,7 @@ proxies:
   sni: jp.mjhy2.com
   type: hysteria2
   up: 10000
-- name: '123|日本JP-T #6'
+- name: '144|日本JP-T #6'
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
   server: jp.mjt000.com
@@ -1956,7 +2950,7 @@ proxies:
   sni: jp.mjt000.com
   type: trojan
   udp: true
-- name: '123|尼日利亚NI-T #6'
+- name: '144|尼日利亚NI-T #6'
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
   server: ni.mjt000.com
@@ -1965,7 +2959,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 131|疯日本高速90 (0.01x)
+  name: 152|疯日本高速90 (0.01x)
   network: ws
   port: 443
   server: mix1.998998.best
@@ -1983,34 +2977,34 @@ proxies:
     path: /wpmckfpajfng?ed=2560
   ws-path: /wpmckfpajfng?ed=2560
 - cipher: aes-128-gcm
-  name: 132|日本-1
+  name: 153|日本-1
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
   port: 40012
   server: lh.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 132|日本-2
+  name: 153|日本-2
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
   port: 40013
   server: lh.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 132|日本-3
+  name: 153|日本-3
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
   port: 40014
   server: lh.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 132|日本-4
+  name: 153|日本-4
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
   port: 40015
   server: lh.node-is.green
   type: ss
   udp: true
-- name: 132|Trojan-日本1 | 低倍率
+- name: 153|Trojan-日本1 | 低倍率
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
   port: 10116
   server: cc.rk1.node-is.green
@@ -2018,17 +3012,87 @@ proxies:
   sni: lhjp1.bilibili.com
   type: trojan
   udp: true
-- name: 132|Trojan-日本2 | 低倍率
+- name: 153|Trojan-日本2 | 低倍率
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
-  port: 41366
-  server: 51113c7202f6fa65c00c1b00a8b20f61.lh.gtm.node-is.green
+  port: 44342
+  server: bc6f0b24bb9724946ac105f4ca864c69.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: lhjp1.bilibili.com
   type: trojan
   udp: true
+- alterId: 1
+  cipher: auto
+  name: '154|🇯🇵 免费-日本1-Ver.6 #4'
+  port: 21584
+  server: msxbt-g04.jp01-0986-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
+  name: '154|🇯🇵 免费-日本2-Ver.7 #4'
+  port: 11776
+  server: 8ukgd-g04.jp02-9a99-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
+  name: '154|🇯🇵 免费-日本3-Ver.6 #4'
+  port: 21584
+  server: edofx-g04.jp03-7d22-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
+  name: '154|🇯🇵 免费-日本4-Ver.7 #4'
+  port: 447
+  server: kxx3s-g04.jp04-3771-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
+  name: '154|🇯🇵 免费-日本5-Ver.8 #4'
+  port: 46485
+  server: 6ctvj-g04.jp05-6786-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
+  name: '154|🇯🇵 免费-日本6-Ver.7 #4'
+  port: 28786
+  server: 8nawq-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
+  name: '154|🇯🇵 免费-日本7-Ver.1 #4'
+  port: 28786
+  server: ce4oh-g04.jp07-1f28-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
 - alterId: 0
   cipher: auto
-  name: '133|🇭🇰 香港3 #2'
+  name: 155|🇸🇬 新加坡4
   network: ws
   port: 80
   server: f0406c.62d9-2244-2284.cfd
@@ -2036,15 +3100,15 @@ proxies:
   udp: true
   uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
   ws-headers:
-    Host: hk03s.62d9-2244-2284.cfd
+    Host: sg04s.62d9-2244-2284.cfd
   ws-opts:
     headers:
-      Host: hk03s.62d9-2244-2284.cfd
+      Host: sg04s.62d9-2244-2284.cfd
     path: /
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '133|🇯🇵 日本1 #2'
+  name: '155|🇯🇵 日本1 #2'
   network: ws
   port: 80
   server: f0406c.62d9-2244-2284.cfd
@@ -2060,7 +3124,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '133|🇯🇵 日本2 #2'
+  name: 155|🇯🇵 日本4
   network: ws
   port: 80
   server: f0406c.62d9-2244-2284.cfd
@@ -2068,21 +3132,37 @@ proxies:
   udp: true
   uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
   ws-headers:
-    Host: jp02s.62d9-2244-2284.cfd
+    Host: jp04s.62d9-2244-2284.cfd
   ws-opts:
     headers:
-      Host: jp02s.62d9-2244-2284.cfd
+      Host: jp04s.62d9-2244-2284.cfd
     path: /
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 133|🇯🇵 日本3
+  name: '156|🇭🇰 香港1 #4'
   network: ws
   port: 80
   server: f0406c.62d9-2244-2284.cfd
   type: vmess
   udp: true
-  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
+  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
+  ws-headers:
+    Host: hk01s.62d9-2244-2284.cfd
+  ws-opts:
+    headers:
+      Host: hk01s.62d9-2244-2284.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '156|🇯🇵 日本3 #1'
+  network: ws
+  port: 80
+  server: f0406c.62d9-2244-2284.cfd
+  type: vmess
+  udp: true
+  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
   ws-headers:
     Host: jp03s.62d9-2244-2284.cfd
   ws-opts:
@@ -2092,23 +3172,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 133|🇯🇵 日本4
-  network: ws
-  port: 80
-  server: f0406c.62d9-2244-2284.cfd
-  type: vmess
-  udp: true
-  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
-  ws-headers:
-    Host: jp04s.62d9-2244-2284.cfd
-  ws-opts:
-    headers:
-      Host: jp04s.62d9-2244-2284.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '134|🇯🇵 日本4 #1'
+  name: '156|🇯🇵 日本4 #1'
   network: ws
   port: 80
   server: f0406c.62d9-2244-2284.cfd
@@ -2120,256 +3184,136 @@ proxies:
   ws-opts:
     headers:
       Host: jp04s.62d9-2244-2284.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '134|🇯🇵 日本1 #3'
-  network: ws
-  port: 80
-  server: f0406c.62d9-2244-2284.cfd
-  type: vmess
-  udp: true
-  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
-  ws-headers:
-    Host: jp01s.62d9-2244-2284.cfd
-  ws-opts:
-    headers:
-      Host: jp01s.62d9-2244-2284.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '134|🇯🇵 日本2 #3'
-  network: ws
-  port: 80
-  server: f0406c.62d9-2244-2284.cfd
-  type: vmess
-  udp: true
-  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
-  ws-headers:
-    Host: jp02s.62d9-2244-2284.cfd
-  ws-opts:
-    headers:
-      Host: jp02s.62d9-2244-2284.cfd
     path: /
   ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: '146,147|日本 #6'
+  name: '170,171|日本 #11'
   password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
   port: 40003
   server: jp.fastsoonlink.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 01
+  name: 172|🇯🇵 JP 01
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49936
   server: node-jp.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 02
+  name: 172|🇯🇵 JP 02
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49937
   server: node-jp.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 03
+  name: 172|🇯🇵 JP 03
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49938
   server: node-jp.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 04
+  name: 172|🇯🇵 JP 04
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49939
   server: node-jp.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 05
+  name: 172|🇯🇵 JP 05
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49940
   server: node-jp.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 06
+  name: 172|🇯🇵 JP 06
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49941
   server: node-jp.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 07
+  name: 172|🇯🇵 JP 07
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49942
   server: node-jp.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 08
+  name: 172|🇯🇵 JP 08
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49943
   server: node-jp.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 09
+  name: 172|🇯🇵 JP 09
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49944
   server: node-jp.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 10
+  name: 172|🇯🇵 JP 10
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49945
   server: node-jp.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 11
+  name: 172|🇯🇵 JP 11
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49946
   server: node-jp.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 12
+  name: 172|🇯🇵 JP 12
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49947
   server: node-jp.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 13
+  name: 172|🇯🇵 JP 13
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49948
   server: node-jp.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 14
+  name: 172|🇯🇵 JP 14
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49949
   server: node-jp.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 148|🇯🇵 JP 15
+  name: 172|🇯🇵 JP 15
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49950
   server: node-jp.dlg365.com
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '155|日本01 #9'
-  port: 20230
-  reality-opts:
-    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
-    short-id: a7464bff
-  server: jp001.421421.xyz
-  servername: www.alibaba.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7d9c7804-1f7d-43f7-b19a-fa7c2fff4569
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '155|日本02 #9'
-  port: 20230
-  reality-opts:
-    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
-    short-id: a7464bff
-  server: jp002.421421.xyz
-  servername: www.alibaba.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7d9c7804-1f7d-43f7-b19a-fa7c2fff4569
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '155|日本03 #9'
-  port: 20230
-  reality-opts:
-    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
-    short-id: a7464bff
-  server: jp003.421421.xyz
-  servername: www.alibaba.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7d9c7804-1f7d-43f7-b19a-fa7c2fff4569
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '155|日本04 #9'
-  port: 20230
-  reality-opts:
-    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
-    short-id: a7464bff
-  server: jp004.421421.xyz
-  servername: www.alibaba.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7d9c7804-1f7d-43f7-b19a-fa7c2fff4569
-- name: '155|日本05 #9'
-  password: 7d9c7804-1f7d-43f7-b19a-fa7c2fff4569
-  port: 20230
-  server: jp005.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
-- name: '155|日本06 #9'
-  password: 7d9c7804-1f7d-43f7-b19a-fa7c2fff4569
-  port: 20230
-  server: jp006.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
-- name: '155|日本07 #9'
-  password: 7d9c7804-1f7d-43f7-b19a-fa7c2fff4569
-  port: 20230
-  server: jp007.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
-- name: '155|日本08 #9'
-  password: 7d9c7804-1f7d-43f7-b19a-fa7c2fff4569
-  port: 20230
-  server: jp008.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '156,157|🇯🇵 日本 01 #1'
+  name: '180,181|🇯🇵 日本 01 #1'
   password: 9c98ec59-231c-4091-ba05-a0c881021335
   port: 26105
   server: p1.bxy-fun1.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '156,157|🇯🇵 日本 02 #1'
+  name: '180,181|🇯🇵 日本 02 #1'
   password: 9c98ec59-231c-4091-ba05-a0c881021335
   port: 23101
   server: p1.bxy-fun2.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '156,157|🇯🇵 日本 03 #1'
+  name: '180,181|🇯🇵 日本 03 #1'
   password: 9c98ec59-231c-4091-ba05-a0c881021335
   port: 35127
   server: p1.bxy-fun3.xyz
@@ -2377,7 +3321,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '156,157|🇯🇵 日本 04 #1'
+  name: '180,181|🇯🇵 日本 04 #1'
   port: 30002
   reality-opts:
     public-key: FnXw-m0a_GBVsiwbpjfvxYZjvZpLNrvSIO4N0U-7OEc
@@ -2389,154 +3333,119 @@ proxies:
   type: vless
   udp: true
   uuid: 9c98ec59-231c-4091-ba05-a0c881021335
-- name: 158|日本-新疆直连
-  password: a01b5e27-ece5-4675-866f-36b23a65d2a8
-  port: 32256
-  server: xj.cokecloud.top
-  sni: xj.cokecloud.top
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 158|JP.日本.A
-  password: a01b5e27-ece5-4675-866f-36b23a65d2a8
-  port: 20437
-  server: cokecloudjp.cokecloud.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 158|JP.日本.B
-  password: a01b5e27-ece5-4675-866f-36b23a65d2a8
-  port: 43291
-  server: cokecloudjp.cokecloud.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 158|JP.日本.C | 高速.2x倍率
-  password: a01b5e27-ece5-4675-866f-36b23a65d2a8
-  port: 19439
-  server: cokecloudjp.cokecloud.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 158|JP.日本.D
-  password: a01b5e27-ece5-4675-866f-36b23a65d2a8
-  port: 13215
-  server: cokecloudjp.cokecloud.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '159|🇯🇵 日本 01 #2'
+  name: '182|🇯🇵 日本 01 #2'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51119
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '159|🇯🇵 日本 02 #2'
+  name: '182|🇯🇵 日本 02 #2'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51120
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '159|🇯🇵 日本 03 #2'
+  name: '182|🇯🇵 日本 03 #2'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51121
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '159|🇯🇵 日本 04 #2'
+  name: '182|🇯🇵 日本 04 #2'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51122
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 159|🇯🇵 日本 05
+  name: 182|🇯🇵 日本 05
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51123
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 159|🇯🇵 日本 06
+  name: 182|🇯🇵 日本 06
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51124
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 159|🇯🇵 日本 07
+  name: 182|🇯🇵 日本 07
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51125
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 159|🇯🇵 日本 08
+  name: 182|🇯🇵 日本 08
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51126
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 159|🇯🇵 日本 09
+  name: 182|🇯🇵 日本 09
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51127
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 159|🇯🇵 日本 10
+  name: '182|🇯🇵 日本 10 #1'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51128
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 159|🇯🇵 日本 11
+  name: '182|🇯🇵 日本 11 #1'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51129
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 159|🇯🇵 日本 12
+  name: '182|🇯🇵 日本 12 #1'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51130
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 159|🇯🇵 日本 13
+  name: '182|🇯🇵 日本 13 #1'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51131
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 159|🇯🇵 日本 14
+  name: '182|🇯🇵 日本 14 #1'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51132
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 159|🇯🇵 日本 15
+  name: '182|🇯🇵 日本 15 #1'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51133
   server: jp.miaolianyunapp.com
   type: ss
   udp: true
-- name: 161|🇯🇵 日本-D0 | 速度极快
+- name: 184|🇯🇵 日本-D0 | 速度极快
   password: 8a65656d-39ed-472c-a4b6-f4a5a20c122e
   port: 30001
   server: jpn-d0.nodeup.top
   sni: jpn-d0.nodeup.top
   type: trojan
   udp: true
-- name: 161|🇯🇵 日本-D1 | 速度极快
+- name: 184|🇯🇵 日本-D1 | 速度极快
   password: 8a65656d-39ed-472c-a4b6-f4a5a20c122e
   port: 30002
   server: jpn-d1.nodeup.top
@@ -2545,7 +3454,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 161|🇯🇵 日本-R0
+  name: 184|🇯🇵 日本-R0
   port: 28656
   server: hd-hk-relay00.nodeup.top
   type: vmess
@@ -2553,7 +3462,7 @@ proxies:
   uuid: 8a65656d-39ed-472c-a4b6-f4a5a20c122e
 - alterId: 0
   cipher: auto
-  name: 161|🇯🇵 日本-R1
+  name: 184|🇯🇵 日本-R1
   port: 18693
   server: hd-relay01.nodeup.top
   type: vmess
@@ -2561,7 +3470,7 @@ proxies:
   uuid: 8a65656d-39ed-472c-a4b6-f4a5a20c122e
 - alterId: 0
   cipher: auto
-  name: 161|🇯🇵 日本-R2
+  name: 184|🇯🇵 日本-R2
   port: 38762
   server: jpn01.nodeup.top
   type: vmess
@@ -2569,25 +3478,278 @@ proxies:
   uuid: 8a65656d-39ed-472c-a4b6-f4a5a20c122e
 - alterId: 0
   cipher: auto
-  name: 161|🇯🇵 日本-R3
+  name: 184|🇯🇵 日本-R3
   port: 38788
   server: jpn02.nodeup.top
   type: vmess
   udp: true
   uuid: 8a65656d-39ed-472c-a4b6-f4a5a20c122e
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '189,190,191,192,193,194,195|日本01 #26'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp001.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b44da489-fc70-4fd0-8997-a83b51f59267
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '189,190,191,192,193,194,195|日本02 #26'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp002.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b44da489-fc70-4fd0-8997-a83b51f59267
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '189,190,191,192,193,194,195|日本03 #26'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp003.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b44da489-fc70-4fd0-8997-a83b51f59267
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '189,190,191,192,193,194,195|日本04 #26'
+  port: 20230
+  reality-opts:
+    public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
+    short-id: a7464bff
+  server: jp004.421421.xyz
+  servername: www.alibaba.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b44da489-fc70-4fd0-8997-a83b51f59267
+- name: '189,190,191,192,193,194,195|日本05 #26'
+  password: b44da489-fc70-4fd0-8997-a83b51f59267
+  port: 20230
+  server: jp005.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '189,190,191,192,193,194,195|日本06 #26'
+  password: b44da489-fc70-4fd0-8997-a83b51f59267
+  port: 20230
+  server: jp006.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '189,190,191,192,193,194,195|日本07 #26'
+  password: b44da489-fc70-4fd0-8997-a83b51f59267
+  port: 20230
+  server: jp007.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '189,190,191,192,193,194,195|日本08 #26'
+  password: b44da489-fc70-4fd0-8997-a83b51f59267
+  port: 20230
+  server: jp008.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- cipher: rc4-md5
+  name: 196|[v1] 日本・01
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: e9625136058.microsoft.com
+    mode: http
+  port: 1150
+  server: yd-05.paofunlink.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 196|[v1] 日本・02
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: e9625136058.microsoft.com
+    mode: http
+  port: 1151
+  server: yd-05.paofunlink.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 196|[v1] 日本・03
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: e9625136058.microsoft.com
+    mode: http
+  port: 1152
+  server: yd-02.paofunlink.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 196|[v1] 日本・04
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: e9625136058.microsoft.com
+    mode: http
+  port: 1153
+  server: yd-02.paofunlink.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 196|[v1] 日本・05
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: e9625136058.microsoft.com
+    mode: http
+  port: 1154
+  server: yd-02.paofunlink.com
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 197|日本-v2ray
+  network: ws
+  port: '443'
+  server: jp.sstank.top
+  servername: jp.sstank.top
+  tls: true
+  type: vmess
+  uuid: 6b772c91-a7e1-36a5-aa59-1b12f4339508
+  ws-opts:
+    headers:
+      Host: jp.sstank.top
+    path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 166|日本1
-  port: 10403
-  server: zz1.xmfvpn.com
+  name: 197|日本1-v2ray
+  network: ws
+  port: '443'
+  server: jp1.sstank.top
+  servername: jp1.sstank.top
+  tls: true
   type: vmess
-  udp: true
-  uuid: 9854cb4c-922a-373c-a77d-9792727c83a4
+  uuid: 6b772c91-a7e1-36a5-aa59-1b12f4339508
+  ws-opts:
+    headers:
+      Host: jp1.sstank.top
+    path: /hello
 - alterId: 0
   cipher: auto
-  name: 166|日本2
-  port: 10402
-  server: zz2.xmfvpn.com
+  name: 197|日本2-v2ray
+  network: ws
+  port: '443'
+  server: jp2.sstank.top
+  servername: jp2.sstank.top
+  tls: true
+  type: vmess
+  uuid: 6b772c91-a7e1-36a5-aa59-1b12f4339508
+  ws-opts:
+    headers:
+      Host: jp2.sstank.top
+    path: /hello
+- alterId: 0
+  cipher: auto
+  name: 197|日本3-V2ray
+  network: ws
+  port: '443'
+  server: jp3.sstank.top
+  servername: jp3.sstank.top
+  tls: true
+  type: vmess
+  uuid: 6b772c91-a7e1-36a5-aa59-1b12f4339508
+  ws-opts:
+    headers:
+      Host: jp3.sstank.top
+    path: /hello
+- alterId: 1
+  cipher: auto
+  name: '199|🇯🇵 免费-日本1-Ver.6 #5'
+  port: 21586
+  server: 1onbw-g06.jp01-0986-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: true
   type: vmess
   udp: true
-  uuid: 9854cb4c-922a-373c-a77d-9792727c83a4
+  uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720
+- alterId: 1
+  cipher: auto
+  name: '199|🇯🇵 免费-日本2-Ver.7 #5'
+  port: 11778
+  server: ab99t-g06.jp02-9a99-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720
+- alterId: 1
+  cipher: auto
+  name: '199|🇯🇵 免费-日本3-Ver.6 #5'
+  port: 21586
+  server: osowh-g06.jp03-7d22-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720
+- alterId: 1
+  cipher: auto
+  name: '199|🇯🇵 免费-日本4-Ver.7 #5'
+  port: 449
+  server: le8lb-g06.jp04-3771-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720
+- alterId: 1
+  cipher: auto
+  name: '199|🇯🇵 免费-日本5-Ver.8 #5'
+  port: 46487
+  server: 1gs1a-g06.jp05-6786-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720
+- alterId: 1
+  cipher: auto
+  name: '199|🇯🇵 免费-日本6-Ver.7 #5'
+  port: 28788
+  server: e44al-g06.jp06-7c5a-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720
+- alterId: 1
+  cipher: auto
+  name: '199|🇯🇵 免费-日本7-Ver.1 #5'
+  port: 28788
+  server: bqqlc-g06.jp07-1f28-vm0.entry.fr0307a.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720
