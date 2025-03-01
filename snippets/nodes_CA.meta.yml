@@ -1,6 +1,38 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  grpc-opts: null
+  h2-opts: null
+  http-opts: null
+  name: 1|加拿大-01
+  network: tcp
+  port: 45216
+  server: 112.65.92.20
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e1ad66b5-b62b-4cee-9f71-66c3ad3aaad6
+  ws-opts: null
+- alterId: 0
+  cipher: auto
+  grpc-opts: null
+  h2-opts: null
+  http-opts: null
+  name: 1|加拿大-02
+  network: tcp
+  port: 45253
+  server: ye.fxlcn.com
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e1ad66b5-b62b-4cee-9f71-66c3ad3aaad6
+  ws-opts: null
 - down: 500
-  name: 3|🇨🇦 Oracle 多伦多-Hy2
+  name: 6|🇨🇦 Oracle 多伦多-Hy2
   password: 9f79211a-45c0-4810-80e0-0768f686a1da
   port: 33019
   server: oracle-ca.mmaccc.top
@@ -9,7 +41,7 @@ proxies:
   type: hysteria2
   up: 100
 - down: 0
-  name: 13|🇨🇦 加拿大1 | x0.01
+  name: 16|🇨🇦 加拿大1 | x0.01
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: ca11.bethebest.eu.org
@@ -18,7 +50,7 @@ proxies:
   type: hysteria2
   up: 0
 - down: 0
-  name: 13|🇨🇦 加拿大2 | x0.01
+  name: 16|🇨🇦 加拿大2 | x0.01
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: ca12.bethebest.eu.org
@@ -28,7 +60,7 @@ proxies:
   up: 0
 - alterId: 0
   cipher: auto
-  name: 13|🇨🇦 加拿大1|cf
+  name: 16|🇨🇦 加拿大1|cf
   network: ws
   port: 2052
   server: hk.bethebest.eu.org
@@ -44,7 +76,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 13|🇨🇦 加拿大2|cf
+  name: 16|🇨🇦 加拿大2|cf
   network: ws
   port: 2052
   server: hk.bethebest.eu.org
@@ -58,36 +90,50 @@ proxies:
       Host: ca12.123417.xyz
     path: /
   ws-path: /
-- cipher: aes-256-cfb
-  name: 32|🇨🇦 CA
-  password: amazonskr05
-  port: 443
-  server: 34.218.246.115
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 44|🇨🇦 加拿大 01 | 1x CA
-  password: 9ea26fab-b837-4e17-95e1-47be2c213f20
+  name: 25|🇨🇦 加拿大 01 | 1x CA
+  password: 118916b0-fa7d-4177-9025-abb7d813a9b0
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 26|🇨🇦加拿大 01 | 1x CA
+  password: 6f31be51-d440-415b-9c5d-50f7b2b456a8
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 37|🇨🇦 CA
+  password: amazonskr05
+  port: 443
+  server: 34.218.246.115
+  type: ss
 - cipher: aes-256-gcm
-  name: 61|[加拿大1] ✨ 2x
+  name: 85|[加拿大1] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 45425
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 61|[加拿大] ✨ 5x
+  name: 85|[加拿大] ✨ 5x
   password: NgmMHL7OVB5t6j3X
   port: 15911
   server: 69-in-2.226969.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 86|🇨🇦加拿大 01
+  password: 32c41b01-84be-11ef-bb6b-bc241111d95d
+  port: 13475
+  server: js.wnwwv.cn
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 63|🇨🇦 CA加拿大多伦多x1
+  name: 88|🇨🇦 CA加拿大多伦多x1
   port: 23258
   reality-opts:
     public-key: p-g7A0RMBXZOUey2V-HjWsI-5j-EpNITj_JVqx_9OnI
@@ -99,30 +145,59 @@ proxies:
   type: vless
   udp: true
   uuid: d516b33d-86ee-49e8-9af7-4eb7405e5cfe
+- cipher: chacha20-ietf-poly1305
+  name: '91|🇨🇦 加拿大 #1'
+  password: eb79c4fa-baf9-456c-9163-67d9d3cf6ab5
+  port: 47503
+  server: 01.liantongzf.one
+  type: ss
+  udp: true
 - cipher: aes-128-gcm
-  name: '79,80|🇨🇦加拿大1 #1'
+  name: '93,94|🇨🇦加拿大1 #1'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
   port: 51401
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 81|🇨🇦加拿大1 💧 0.6x
+  name: 95|🇨🇦加拿大1 💧 0.6x
   password: a0d131b6-43e2-4bac-b5ff-b3979a574046
   port: 36067
   server: jp1.qsm1.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '82|🇨🇦加拿大1 💧 0.6x #1'
+  name: '96|🇨🇦加拿大1 💧 0.6x #1'
   password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
   port: 36067
   server: jp1.qsm1.xyz
   type: ss
   udp: true
+- name: 99|🇨🇦CA-100Mbps
+  network: ws
+  port: 443
+  server: back-ca1.uni-verse.top
+  servername: back-ca1.uni-verse.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: f6930f0c-3218-4bb6-ae98-4596a52865c0
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: back-ca1.uni-verse.top
+    max-early-data: 2560
+    path: /fuck
+- cipher: aes-256-gcm
+  name: 124|🇨🇦 加拿大S01
+  password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
+  port: 20059
+  server: hua7f-g06.ca01-ae5.entry.v50307shvkaa.art
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 97|加拿大-优化
+  name: 126|加拿大-优化
   network: ws
   port: 16641
   server: yes.mojcn.com
@@ -138,7 +213,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 97|加拿大-优化2
+  name: 126|加拿大-优化2
   network: ws
   port: 16641
   server: m.cnmjcn.com
@@ -154,7 +229,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 97|加拿大-优化3
+  name: 126|加拿大-优化3
   network: ws
   port: 16641
   server: t.cnmjcn.cyou
@@ -170,7 +245,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '98|加拿大-优化 #1'
+  name: '127|加拿大-优化 #1'
   network: ws
   port: 16641
   server: yes.mojcn.com
@@ -186,7 +261,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '98|加拿大-优化2 #1'
+  name: '127|加拿大-优化2 #1'
   network: ws
   port: 16641
   server: m.cnmjcn.com
@@ -202,7 +277,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '98|加拿大-优化3 #1'
+  name: '127|加拿大-优化3 #1'
   network: ws
   port: 16641
   server: t.cnmjcn.cyou
@@ -218,7 +293,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '99|加拿大-优化 #2'
+  name: '128|加拿大-优化 #2'
   network: ws
   port: 16641
   server: yes.mojcn.com
@@ -234,7 +309,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '99|加拿大-优化2 #2'
+  name: '128|加拿大-优化2 #2'
   network: ws
   port: 16641
   server: m.cnmjcn.com
@@ -250,7 +325,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '99|加拿大-优化3 #2'
+  name: '128|加拿大-优化3 #2'
   network: ws
   port: 16641
   server: t.cnmjcn.cyou
@@ -266,7 +341,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '100,101,102|加拿大-优化 #5'
+  name: '129,130,131|加拿大-优化 #5'
   network: ws
   port: 16641
   server: yes.mojcn.com
@@ -282,7 +357,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '100,101,102|加拿大-优化2 #5'
+  name: '129,130,131|加拿大-优化2 #5'
   network: ws
   port: 16641
   server: m.cnmjcn.com
@@ -298,7 +373,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '100,101,102|加拿大-优化3 #5'
+  name: '129,130,131|加拿大-优化3 #5'
   network: ws
   port: 16641
   server: t.cnmjcn.cyou
@@ -314,7 +389,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '103|加拿大-优化 #6'
+  name: '132|加拿大-优化 #6'
   network: ws
   port: 16641
   server: yes.mojcn.com
@@ -330,7 +405,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '103|加拿大-优化2 #6'
+  name: '132|加拿大-优化2 #6'
   network: ws
   port: 16641
   server: m.cnmjcn.com
@@ -346,7 +421,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '103|加拿大-优化3 #6'
+  name: '132|加拿大-优化3 #6'
   network: ws
   port: 16641
   server: t.cnmjcn.cyou
@@ -360,10 +435,250 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
+- grpc-opts:
+    grpc-service-name: pse5tgjou9de5p6h079j
+  name: 140|疯加拿大27 (0.05x)
+  network: grpc
+  port: 443
+  server: us1.998998.best
+  servername: server27.998877.best
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9e5ca724-3fc3-4247-b51a-b95d018ef97f
+- cipher: aes-128-gcm
+  name: 143|加拿大-1
+  password: 08d96d4a-d83e-4c14-9529-f00a63d25242
+  port: 40020
+  server: lh.node-is.green
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 143|加拿大-2
+  password: 08d96d4a-d83e-4c14-9529-f00a63d25242
+  port: 40021
+  server: lh.node-is.green
+  type: ss
+  udp: true
+- name: 143|Trojan-加拿大1 | 低倍率
+  password: 08d96d4a-d83e-4c14-9529-f00a63d25242
+  port: 10116
+  server: cc.rk1.node-is.green
+  skip-cert-verify: true
+  sni: lhca1.bilibili.com
+  type: trojan
+  udp: true
+- name: 143|Trojan-加拿大2 | 低倍率
+  password: 08d96d4a-d83e-4c14-9529-f00a63d25242
+  port: 45797
+  server: 68de9d038b0435de279688b3bf23c8a5.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: lhca1.bilibili.com
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '134|🇨🇦 加拿大 #1'
+  name: 173|加拿大|CA1
+  password: 5231f59f-c196-4094-aea5-4ecaa069ddc5
+  port: 19915
+  server: 70luslivsskpwm855plfjwgt5h2atwvf.08.01.ca.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '174|加拿大|CA1 #1'
+  password: fef880e7-87cb-4bea-8e5e-5ae2bba6fbb5
+  port: 19915
+  server: 70luslivsskpwm855plfjwgt5h2atwvf.08.01.ca.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '176|🇨🇦 加拿大 #2'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51176
   server: qq.miaolianyunapp.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 199|加拿大1
+  password: 593c3d63-04c7-4bbb-a03f-114eba08636c
+  port: 50021
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 199|加拿大2
+  password: 593c3d63-04c7-4bbb-a03f-114eba08636c
+  port: 50022
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- name: '199|Trojan-加拿大1 | 低倍率 #1'
+  password: 593c3d63-04c7-4bbb-a03f-114eba08636c
+  port: 10116
+  server: cc.rk1.node-is.green
+  skip-cert-verify: true
+  sni: tcca1.bilibili.com
+  type: trojan
+  udp: true
+- name: '199|Trojan-加拿大2 | 低倍率 #1'
+  password: 593c3d63-04c7-4bbb-a03f-114eba08636c
+  port: 47580
+  server: ceaecbdf562acb2422fa1c42f24587d8.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tcca1.bilibili.com
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '200|加拿大1 #1'
+  password: b64ec383-e598-465a-9e59-70e9b0d87f66
+  port: 50021
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '200|加拿大2 #1'
+  password: b64ec383-e598-465a-9e59-70e9b0d87f66
+  port: 50022
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- name: '200|Trojan-加拿大1 | 低倍率 #2'
+  password: b64ec383-e598-465a-9e59-70e9b0d87f66
+  port: 10116
+  server: cc.rk1.node-is.green
+  skip-cert-verify: true
+  sni: tcca1.bilibili.com
+  type: trojan
+  udp: true
+- name: '200|Trojan-加拿大2 | 低倍率 #2'
+  password: b64ec383-e598-465a-9e59-70e9b0d87f66
+  port: 42978
+  server: 61bb8eff1cce5b6cd901e571532ed04e.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tcca1.bilibili.com
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '201|加拿大1 #2'
+  password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
+  port: 50021
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '201|加拿大2 #2'
+  password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
+  port: 50022
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- name: '201|Trojan-加拿大1 | 低倍率 #3'
+  password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
+  port: 10116
+  server: cc.rk1.node-is.green
+  skip-cert-verify: true
+  sni: tcca1.bilibili.com
+  type: trojan
+  udp: true
+- name: '201|Trojan-加拿大2 | 低倍率 #3'
+  password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
+  port: 45776
+  server: 1c930366eec7d1e802e1d8cb22366700.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tcca1.bilibili.com
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '202|加拿大1 #3'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 50021
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '202|加拿大2 #3'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 50022
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- name: '202|Trojan-加拿大1 | 低倍率 #4'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 10116
+  server: cc.rk1.node-is.green
+  skip-cert-verify: true
+  sni: tcca1.bilibili.com
+  type: trojan
+  udp: true
+- name: '202|Trojan-加拿大2 | 低倍率 #4'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 44957
+  server: 2733e70ddfc1e80cb454cbe0f53aad67.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tcca1.bilibili.com
+  type: trojan
+  udp: true
+- name: 203|V1-加拿大-IPv6
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 49712
+  server: 52c268f987e6960e51851e69ebd2da7e.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: ca1.bilibili.com
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: pse5tgjou9de5p6h079j
+  name: '215,216|疯加拿大27 (0.05x) #2'
+  network: grpc
+  port: 443
+  server: us1.998998.best
+  servername: server27.998877.best
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 07b7b563-f868-49fb-943a-6425e3dc34d9
+- cipher: chacha20-ietf-poly1305
+  name: 229|🇨🇦 加拿大 蒙特利尔
+  password: e7076671-6cc4-4680-9633-1e38b6b9b4ea
+  port: 58809
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '230|🇨🇦 加拿大 蒙特利尔 #1'
+  password: 95c717d3-ba19-47cd-88ea-ba0d1d7794fa
+  port: 58809
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '231|🇨🇦 加拿大 蒙特利尔 #2'
+  password: 96dbb20c-19c8-4a2c-8c2c-ddb2992b5c00
+  port: 58809
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- grpc-opts:
+    grpc-service-name: pse5tgjou9de5p6h079j
+  name: '234|疯加拿大27 (0.05x) #3'
+  network: grpc
+  port: 443
+  server: us1.998998.best
+  servername: server27.998877.best
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9accf73f-7372-4403-b31e-0f83d86feb98
+- cipher: aes-128-gcm
+  name: '241,242,243,244|🇨🇦 Canada 070 #3'
+  password: 3fb1d360ec0c4c7a5054
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45910
+  server: console.03.aliyun.aq.kunlunaqs.com
   type: ss
   udp: true
