@@ -312,9 +312,41 @@ proxies:
   server: us02.365003.xyz
   type: ss
   udp: true
+- name: 13|美国03
+  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
+  port: 20230
+  server: us003.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: 13|美国04
+  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
+  port: 20230
+  server: us004.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '14,15|美国03 #2'
+  password: 0bfa2050-b165-4156-859c-70f36d300dce
+  port: 20230
+  server: us003.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '14,15|美国04 #2'
+  password: 0bfa2050-b165-4156-859c-70f36d300dce
+  port: 20230
+  server: us004.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 15|🇺🇸 美国1|cf
+  name: 18|🇺🇸 美国1|cf
   network: ws
   port: 2052
   server: hk.bethebest.eu.org
@@ -329,22 +361,29 @@ proxies:
     path: /
   ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇺🇸美国 01 | 1x US Los Angeles
-  password: c8c36cdd-2963-47a3-bac9-acba580a14e2
-  port: 31211
-  server: free.2apzhfa.xyz
+  name: 27|🇺🇸 美国 01 | 1x US Los Angeles
+  password: bc46c221-b307-454e-91c3-934fbb711ed9
+  port: 36211
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇺🇸美国 03 | 1x US Washington
-  password: c8c36cdd-2963-47a3-bac9-acba580a14e2
-  port: 31215
-  server: free.2apzhfa.xyz
+  name: 27|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: bc46c221-b307-454e-91c3-934fbb711ed9
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇺🇸 美国 03 | 1x US Washington
+  password: bc46c221-b307-454e-91c3-934fbb711ed9
+  port: 36215
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 26|美国(VM)
+  name: 31|美国(VM)
   network: ws
   port: 443
   server: hdu.gecs.top
@@ -356,69 +395,23 @@ proxies:
     headers:
       Host: hdu.gecs.top
     path: /vm
-- cipher: aes-256-cfb
-  name: 32|🇺🇸 US
-  password: amazonskr05
-  port: 443
-  server: 18.236.132.239
+- cipher: chacha20-ietf-poly1305
+  name: 32|🇺🇸美国 01 | 1x US Los Angeles
+  password: af15108c-e006-493b-be36-d29f94808fb9
+  port: 31211
+  server: free.2apzhfa.xyz
   type: ss
-- cipher: aes-256-cfb
-  name: 32|🇺🇸 US 2
-  password: amazonskr05
-  port: 443
-  server: 35.88.126.62
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 32|🇺🇸美国 03 | 1x US Washington
+  password: af15108c-e006-493b-be36-d29f94808fb9
+  port: 31215
+  server: free.2apzhfa.xyz
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 33|[vmess]🇺🇸 V002-US-付费推荐:dlj.tf/...
-  network: ws
-  port: 2095
-  server: csgo.com
-  type: vmess
   udp: true
-  uuid: 318c7023-285d-414f-bbc1-d8c19771924b
-  ws-headers:
-    Host: ovh.dafei.de
-  ws-opts:
-    headers:
-      Host: ovh.dafei.de
-    path: /
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 33|[vmess]🇺🇸 V004-US-付费推荐:dlj.tf/...
-  network: ws
-  port: 8880
-  server: www.csgo.com
-  type: vmess
-  udp: true
-  uuid: 318c7023-285d-414f-bbc1-d8c19771924b
-  ws-headers:
-    Host: ccs.dafei.de
-  ws-opts:
-    headers:
-      Host: ccs.dafei.de
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 33|[vmess]🇺🇸 V005-US-付费推荐:dlj.tf/...
-  network: ws
-  port: 8880
-  server: www.csgo.com
-  type: vmess
-  udp: true
-  uuid: 318c7023-285d-414f-bbc1-d8c19771924b
-  ws-headers:
-    Host: ovh.dafei.de
-  ws-opts:
-    headers:
-      Host: ovh.dafei.de
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 42|美国高速x2
+  name: 45|美国高速x2
   port: 17437
   server: beiyong-.596743944.top
   type: vmess
@@ -426,7 +419,7 @@ proxies:
   uuid: 7dbdba19-6a3b-4370-93b1-fb5a89adde0c
 - alterId: 0
   cipher: auto
-  name: 43|美国-纽约-001
+  name: 46|美国-纽约-001
   network: ws
   port: 20337
   server: 166.1.228.206
@@ -435,7 +428,7 @@ proxies:
   uuid: a3beb5f6-b991-403f-9d21-f8cadccbdad5
 - alterId: 0
   cipher: auto
-  name: 43|美国-拉斯维加斯-001
+  name: 46|美国-拉斯维加斯-001
   network: ws
   port: 443
   server: biazh.mmzhk.website
@@ -445,7 +438,7 @@ proxies:
   uuid: a3beb5f6-b991-403f-9d21-f8cadccbdad5
 - alterId: 0
   cipher: auto
-  name: 43|美国-拉斯维加斯-002
+  name: 46|美国-拉斯维加斯-002
   network: ws
   port: 443
   server: pdizy.whmvmkwuey.store
@@ -453,25 +446,9 @@ proxies:
   type: vmess
   udp: true
   uuid: a3beb5f6-b991-403f-9d21-f8cadccbdad5
-- name: '45,46,47,48,49,50|美国03 #5'
-  password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
-  port: 20230
-  server: us003.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
-- name: '45,46,47,48,49,50|美国04 #5'
-  password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
-  port: 20230
-  server: us004.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 54|🇺🇸 美国5
+  name: 51|🇺🇸 美国5
   port: 44014
   server: 120.198.71.219
   skip-cert-verify: true
@@ -480,7 +457,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '58|美国-纽约-001 #1'
+  name: '55|美国-纽约-001 #1'
   network: ws
   port: 20337
   server: 166.1.228.206
@@ -489,7 +466,7 @@ proxies:
   uuid: e5a63557-9587-4695-804b-537e2dbfa2b3
 - alterId: 0
   cipher: auto
-  name: '58|美国-拉斯维加斯-001 #1'
+  name: '55|美国-拉斯维加斯-001 #1'
   network: ws
   port: 443
   server: biazh.mmzhk.website
@@ -499,7 +476,7 @@ proxies:
   uuid: e5a63557-9587-4695-804b-537e2dbfa2b3
 - alterId: 0
   cipher: auto
-  name: '58|美国-拉斯维加斯-002 #1'
+  name: '55|美国-拉斯维加斯-002 #1'
   network: ws
   port: 443
   server: pdizy.whmvmkwuey.store
@@ -509,7 +486,7 @@ proxies:
   uuid: e5a63557-9587-4695-804b-537e2dbfa2b3
 - alterId: 0
   cipher: auto
-  name: '59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75|美国-纽约-001 #18'
+  name: '56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72|美国-纽约-001 #18'
   network: ws
   port: 20337
   server: 166.1.228.206
@@ -518,7 +495,7 @@ proxies:
   uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
 - alterId: 0
   cipher: auto
-  name: '59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75|美国-拉斯维加斯-001 #18'
+  name: '56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72|美国-拉斯维加斯-001 #18'
   network: ws
   port: 443
   server: biazh.mmzhk.website
@@ -528,7 +505,7 @@ proxies:
   uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
 - alterId: 0
   cipher: auto
-  name: '59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75|美国-拉斯维加斯-002 #18'
+  name: '56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72|美国-拉斯维加斯-002 #18'
   network: ws
   port: 443
   server: pdizy.whmvmkwuey.store
@@ -538,7 +515,7 @@ proxies:
   uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
 - alterId: 0
   cipher: auto
-  name: '76|美国-纽约-001 #19'
+  name: '73|美国-纽约-001 #19'
   network: ws
   port: 20337
   server: 166.1.228.206
@@ -547,7 +524,7 @@ proxies:
   uuid: 219e2f40-759b-4e00-9d4b-4bd588e5b84e
 - alterId: 0
   cipher: auto
-  name: '76|美国-拉斯维加斯-001 #19'
+  name: '73|美国-拉斯维加斯-001 #19'
   network: ws
   port: 443
   server: biazh.mmzhk.website
@@ -557,7 +534,7 @@ proxies:
   uuid: 219e2f40-759b-4e00-9d4b-4bd588e5b84e
 - alterId: 0
   cipher: auto
-  name: '76|美国-拉斯维加斯-002 #19'
+  name: '73|美国-拉斯维加斯-002 #19'
   network: ws
   port: 443
   server: pdizy.whmvmkwuey.store
@@ -567,7 +544,7 @@ proxies:
   uuid: 219e2f40-759b-4e00-9d4b-4bd588e5b84e
 - alterId: 0
   cipher: auto
-  name: '77|美国-纽约-001 #20'
+  name: '74|美国-纽约-001 #20'
   network: ws
   port: 20337
   server: 166.1.228.206
@@ -576,7 +553,7 @@ proxies:
   uuid: d1037421-3977-4cae-8462-0c7d22745e84
 - alterId: 0
   cipher: auto
-  name: '77|美国-拉斯维加斯-001 #20'
+  name: '74|美国-拉斯维加斯-001 #20'
   network: ws
   port: 443
   server: biazh.mmzhk.website
@@ -586,7 +563,7 @@ proxies:
   uuid: d1037421-3977-4cae-8462-0c7d22745e84
 - alterId: 0
   cipher: auto
-  name: '77|美国-拉斯维加斯-002 #20'
+  name: '74|美国-拉斯维加斯-002 #20'
   network: ws
   port: 443
   server: pdizy.whmvmkwuey.store
@@ -596,7 +573,7 @@ proxies:
   uuid: d1037421-3977-4cae-8462-0c7d22745e84
 - alterId: 0
   cipher: auto
-  name: '78|美国-纽约-001 #21'
+  name: '75|美国-纽约-001 #21'
   network: ws
   port: 20337
   server: 166.1.228.206
@@ -605,7 +582,7 @@ proxies:
   uuid: 7d3dea75-4636-4de5-bf3b-47ccc3411434
 - alterId: 0
   cipher: auto
-  name: '78|美国-拉斯维加斯-001 #21'
+  name: '75|美国-拉斯维加斯-001 #21'
   network: ws
   port: 443
   server: biazh.mmzhk.website
@@ -615,7 +592,7 @@ proxies:
   uuid: 7d3dea75-4636-4de5-bf3b-47ccc3411434
 - alterId: 0
   cipher: auto
-  name: '78|美国-拉斯维加斯-002 #21'
+  name: '75|美国-拉斯维加斯-002 #21'
   network: ws
   port: 443
   server: pdizy.whmvmkwuey.store
@@ -625,7 +602,7 @@ proxies:
   uuid: 7d3dea75-4636-4de5-bf3b-47ccc3411434
 - alterId: 0
   cipher: auto
-  name: '79|美国-纽约-001 #22'
+  name: '76|美国-纽约-001 #22'
   network: ws
   port: 20337
   server: 166.1.228.206
@@ -634,7 +611,7 @@ proxies:
   uuid: 791a9aad-1a8b-435d-862e-627f41025d73
 - alterId: 0
   cipher: auto
-  name: '79|美国-拉斯维加斯-001 #22'
+  name: '76|美国-拉斯维加斯-001 #22'
   network: ws
   port: 443
   server: biazh.mmzhk.website
@@ -644,7 +621,7 @@ proxies:
   uuid: 791a9aad-1a8b-435d-862e-627f41025d73
 - alterId: 0
   cipher: auto
-  name: '79|美国-拉斯维加斯-002 #22'
+  name: '76|美国-拉斯维加斯-002 #22'
   network: ws
   port: 443
   server: pdizy.whmvmkwuey.store
@@ -654,7 +631,7 @@ proxies:
   uuid: 791a9aad-1a8b-435d-862e-627f41025d73
 - alterId: 0
   cipher: auto
-  name: '80|美国-纽约-001 #23'
+  name: '77|美国-纽约-001 #23'
   network: ws
   port: 20337
   server: 166.1.228.206
@@ -663,7 +640,7 @@ proxies:
   uuid: 363d0358-29c1-4319-9210-1b335b171501
 - alterId: 0
   cipher: auto
-  name: '80|美国-拉斯维加斯-001 #23'
+  name: '77|美国-拉斯维加斯-001 #23'
   network: ws
   port: 443
   server: biazh.mmzhk.website
@@ -673,7 +650,7 @@ proxies:
   uuid: 363d0358-29c1-4319-9210-1b335b171501
 - alterId: 0
   cipher: auto
-  name: '80|美国-拉斯维加斯-002 #23'
+  name: '77|美国-拉斯维加斯-002 #23'
   network: ws
   port: 443
   server: pdizy.whmvmkwuey.store
@@ -683,7 +660,7 @@ proxies:
   uuid: 363d0358-29c1-4319-9210-1b335b171501
 - alterId: 0
   cipher: auto
-  name: '81|美国-纽约-001 #24'
+  name: '78|美国-纽约-001 #24'
   network: ws
   port: 20337
   server: 166.1.228.206
@@ -692,7 +669,7 @@ proxies:
   uuid: f5dc8f26-f472-4089-82f8-7af58ea887d3
 - alterId: 0
   cipher: auto
-  name: '81|美国-拉斯维加斯-001 #24'
+  name: '78|美国-拉斯维加斯-001 #24'
   network: ws
   port: 443
   server: biazh.mmzhk.website
@@ -702,7 +679,7 @@ proxies:
   uuid: f5dc8f26-f472-4089-82f8-7af58ea887d3
 - alterId: 0
   cipher: auto
-  name: '81|美国-拉斯维加斯-002 #24'
+  name: '78|美国-拉斯维加斯-002 #24'
   network: ws
   port: 443
   server: pdizy.whmvmkwuey.store
@@ -712,7 +689,7 @@ proxies:
   uuid: f5dc8f26-f472-4089-82f8-7af58ea887d3
 - alterId: 0
   cipher: auto
-  name: '82|美国-纽约-001 #25'
+  name: '79|美国-纽约-001 #25'
   network: ws
   port: 20337
   server: 166.1.228.206
@@ -721,7 +698,7 @@ proxies:
   uuid: 70166ce6-326f-4b67-a296-a3253d8090fb
 - alterId: 0
   cipher: auto
-  name: '82|美国-拉斯维加斯-001 #25'
+  name: '79|美国-拉斯维加斯-001 #25'
   network: ws
   port: 443
   server: biazh.mmzhk.website
@@ -731,7 +708,7 @@ proxies:
   uuid: 70166ce6-326f-4b67-a296-a3253d8090fb
 - alterId: 0
   cipher: auto
-  name: '82|美国-拉斯维加斯-002 #25'
+  name: '79|美国-拉斯维加斯-002 #25'
   network: ws
   port: 443
   server: pdizy.whmvmkwuey.store
@@ -741,7 +718,7 @@ proxies:
   uuid: 70166ce6-326f-4b67-a296-a3253d8090fb
 - alterId: 0
   cipher: auto
-  name: '83,84|美国-纽约-001 #27'
+  name: '80,81|美国-纽约-001 #27'
   network: ws
   port: 20337
   server: 166.1.228.206
@@ -750,7 +727,7 @@ proxies:
   uuid: fceff025-b4ea-4fd2-9093-151b3bd503cd
 - alterId: 0
   cipher: auto
-  name: '83,84|美国-拉斯维加斯-001 #27'
+  name: '80,81|美国-拉斯维加斯-001 #27'
   network: ws
   port: 443
   server: biazh.mmzhk.website
@@ -760,7 +737,7 @@ proxies:
   uuid: fceff025-b4ea-4fd2-9093-151b3bd503cd
 - alterId: 0
   cipher: auto
-  name: '83,84|美国-拉斯维加斯-002 #27'
+  name: '80,81|美国-拉斯维加斯-002 #27'
   network: ws
   port: 443
   server: pdizy.whmvmkwuey.store
@@ -769,48 +746,48 @@ proxies:
   udp: true
   uuid: fceff025-b4ea-4fd2-9093-151b3bd503cd
 - cipher: aes-256-gcm
-  name: 85|[美国1] ✨ 2x
+  name: 82|[美国1] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 33361
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 85|[美国4] ✨ 2x
+  name: 82|[美国4] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 43235
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 85|[美国5] ✨ 2x
+  name: 82|[美国5] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 43239
   server: 69-in-2.226969.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 88|🇺🇸美国  04
+  name: 85|🇺🇸美国  04
   password: 32c41b01-84be-11ef-bb6b-bc241111d95d
   port: 20319
   server: js.wnwwv.cn
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 88|🇺🇸美国 IPV6
+  name: 85|🇺🇸美国 IPV6
   password: 32c41b01-84be-11ef-bb6b-bc241111d95d
   port: 27319
   server: ipv6.wnwwv.cn
   type: ss
   udp: true
-- name: 91|🇺🇸|美国-隧道 02
+- name: 88|🇺🇸|美国-隧道 02
   password: 44123e4a-3480-4392-978c-b4eb1b3095d7
   port: 8210
   server: R1.tube-cat.com
   sni: us.catxstar.com
   type: trojan
   udp: true
-- name: 91|🇺🇸|美国-随机家庭IP 01 5倍消耗
+- name: 88|🇺🇸|美国-随机家庭IP 01 5倍消耗
   password: 44123e4a-3480-4392-978c-b4eb1b3095d7
   port: 20042
   server: IEPL.tube-cat.com
@@ -818,7 +795,7 @@ proxies:
   sni: us.catxstar.com
   type: trojan
   udp: true
-- name: 91|🇺🇸|美国-随机家庭IP 02 5倍消耗
+- name: 88|🇺🇸|美国-随机家庭IP 02 5倍消耗
   password: 44123e4a-3480-4392-978c-b4eb1b3095d7
   port: 20050
   server: IEPL.tube-cat.com
@@ -826,166 +803,186 @@ proxies:
   sni: us.catxstar.com
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 105|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 425aa562-dedf-4f5e-8157-60671e8aeb67
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
+- name: '89,158|美国03 #7'
+  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  port: 20230
+  server: us003.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '89,158|美国04 #7'
+  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  port: 20230
+  server: us004.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '91,92,93|美国03 #6'
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: us003.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '91,92,93|美国04 #6'
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: us004.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 105|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 425aa562-dedf-4f5e-8157-60671e8aeb67
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 105|🇺🇸 美国 03 | 1x US Washington
-  password: 425aa562-dedf-4f5e-8157-60671e8aeb67
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 106|🇺🇸 美国 01
+  name: 94|🇺🇸 美国 01
   password: eb79c4fa-baf9-456c-9163-67d9d3cf6ab5
   port: 47181
   server: jp1.dianxinzf.one
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 106|🇺🇸 美国 02
+  name: 94|🇺🇸 美国 02
   password: eb79c4fa-baf9-456c-9163-67d9d3cf6ab5
   port: 31934
   server: jp1.yidongzf.one
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 106|🇺🇸 美国 03
+  name: 94|🇺🇸 美国 03
   password: eb79c4fa-baf9-456c-9163-67d9d3cf6ab5
   port: 34645
   server: jp1.dianxinzf.one
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 106|🇺🇸 美国 04
+  name: 94|🇺🇸 美国 04
   password: eb79c4fa-baf9-456c-9163-67d9d3cf6ab5
   port: 30675
   server: jp1.yidongzf.one
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 106|🇺🇸 美国 05
+  name: 94|🇺🇸 美国 05
   password: eb79c4fa-baf9-456c-9163-67d9d3cf6ab5
   port: 37833
   server: jp1.dianxinzf.one
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 106|🇺🇸 美国 06
+  name: 94|🇺🇸 美国 06
   password: eb79c4fa-baf9-456c-9163-67d9d3cf6ab5
   port: 10953
   server: jp1.yidongzf.one
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 107|🇺🇸   USA 21
+  name: 95|🇺🇸   USA 21
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46621
   server: mg-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 107|🇺🇸  USA 22
+  name: 95|🇺🇸  USA 22
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46622
   server: mg-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 107|🇺🇸  USA 23
+  name: 95|🇺🇸  USA 23
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46623
   server: mg-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 107|🇺🇸  USA 24
+  name: 95|🇺🇸  USA 24
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46624
   server: mg-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 107|🇺🇸  USA 25
+  name: 95|🇺🇸  USA 25
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46625
   server: mg-jd.huidu51.com
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '108,109|🇺🇸美国1 #1'
+  name: '96,97|🇺🇸美国1 #1'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
   port: 54001
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '108,109|🇺🇸美国2 #1'
+  name: '96,97|🇺🇸美国2 #1'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
   port: 54002
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '108,109|🇺🇸美国3 #1'
+  name: '96,97|🇺🇸美国3 #1'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
   port: 54003
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '108,109|🇺🇸美国4 #1'
+  name: '96,97|🇺🇸美国4 #1'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
   port: 54004
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: 110|🇺🇸美国1 💧 1x
-  password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
-  port: 48491
-  server: jp2.qsm1.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 110|🇺🇸美国2 💧 1x
-  password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
-  port: 48492
-  server: jp2.qsm1.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 110|🇺🇸美国3 💧 1x
-  password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
-  port: 45768
-  server: jp3.qsm1.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 110|🇺🇸美国4 💧 1x
-  password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
-  port: 45960
-  server: jp4.qsm1.xyz
-  type: ss
-  udp: true
+- alpn:
+  - http/1.1
+  name: 100|🇺🇸 美国 Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.38.134
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 CloudFlare节点
+  name: 100|🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: 2082
+  server: s4.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-116-85-183.s4.db-link02.top
+    path: /dabai.in172.67.8.3
+- alterId: 0
+  cipher: auto
+  name: 100|🇺🇸 美国 CloudFlare节点 2
+  network: ws
+  port: 8880
+  server: 104.16.155.10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-103-58-39.s1.db-link02.top
+    path: /dabai.in104.25.249.215
+- alterId: 0
+  cipher: auto
+  name: 100|🇺🇸 美国 CloudFlare节点 3
   network: ws
   port: 2052
-  server: 198.41.209.70
+  server: 104.16.155.10
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -996,41 +993,21 @@ proxies:
     path: /dabai.in104.25.175.137
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 CloudFlare节点 2
+  name: 100|🇺🇸 美国 CloudFlare节点 4
   network: ws
   port: 443
-  server: rAkesMaRT.818185.gGFF.NET
+  server: 104.18.149.75
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 0343d7ab-fa29-478a-8877-0d6a8b7d2ab8
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
   ws-opts:
     headers:
-      Host: rakesmart.818185.ggff.net
-    path: /fBhqPm6Vqnob7lNM3m2RN6Lp
+      Host: us.insbot.filegear-sg.me
+    path: /aa
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 CloudFlare节点 3
-  network: ws
-  port: 2086
-  server: s1.db-link01.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-191-129-167.s1.db-link01.top
-    path: /dabai.in172.64.32.189
-- cipher: aes-256-gcm
-  name: 112|🇺🇸 北美地区 V2CROSS.COM
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 23.154.136.247
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 112|🇺🇸 美国 CloudFlare节点 4
+  name: 100|🇺🇸 美国 CloudFlare节点 5
   network: ws
   port: 443
   server: RAksMARt.818185.FIlEgEaR-sg.Me
@@ -1044,55 +1021,49 @@ proxies:
     path: /fBhqPm6Vqnob7lNM3m2RN6Lp
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 CloudFlare节点 5
-  network: ws
-  port: 443
-  server: 104.18.149.76
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 506b46ce-568f-47a7-f0dd-0864fb7f8040
-  ws-opts:
-    headers:
-      Host: sg.kkp.me.eu.org
-    path: /aa
-- cipher: aes-256-gcm
-  name: 112|🇺🇸 北美地区 V2CROSS.COM 2
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 23.154.136.44
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 112|🇺🇸 美国 CloudFlare节点 6
+  name: 100|🇺🇸 美国 CloudFlare节点 6
   network: ws
   port: 80
-  server: 104.17.139.69
+  server: 104.16.155.10
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: us03s.5d8ecf82.cfd
-    path: /
+      Host: 100-49-141-209.s1.db-link02.top
+    path: /dabai.in104.17.169.115
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 CloudFlare节点 7
+  name: 100|🇺🇸 美国 CloudFlare节点 7
   network: ws
-  port: 443
-  server: rAKsMaRt.890605.GgFF.NeT
+  port: 2082
+  server: s1.db-link02.top
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 0343d7ab-fa29-478a-8877-0d6a8b7d2ab8
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: raksmart.890605.ggff.net
-    path: /fBhqPm6Vqnob7lNM3m2RN6Lp
+      Host: 100-113-212-3.s1.db-link02.top
+    path: /dabai.in172.67.79.231
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 CloudFlare节点 8
+  name: 100|🇺🇸 美国 CloudFlare节点 8
+  network: ws
+  port: 2095
+  server: s1.db-link02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-33-108-197.s1.db-link02.top
+    path: /dabai.in104.24.248.64
+- alterId: 0
+  cipher: auto
+  name: 100|🇺🇸 美国 CloudFlare节点 9
   network: ws
   port: 2052
   server: 104.17.221.248
@@ -1106,165 +1077,165 @@ proxies:
     path: /dabai.in172.67.75.187
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 CloudFlare节点 9
+  name: 100|🇺🇸 美国 CloudFlare节点 10
   network: ws
-  port: 2086
-  server: 104.16.155.10
+  port: 443
+  server: rAkesMaRT.818185.gGFF.NET
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  uuid: 0343d7ab-fa29-478a-8877-0d6a8b7d2ab8
   ws-opts:
     headers:
-      Host: 100-47-154-9.s1.cn-db.top
-    path: /dabai.in104.24.181.189
+      Host: rakesmart.818185.ggff.net
+    path: /fBhqPm6Vqnob7lNM3m2RN6Lp
 - cipher: aes-256-cfb
-  name: 112|🇺🇸 _US_美国_1_0@4 2
+  name: 100|🇺🇸 _US_美国_1_0@4 3
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.47.252.251
   type: ss
 - cipher: aes-256-cfb
-  name: 112|🇺🇸 _US_美国_5_0@13 2
+  name: 100|🇺🇸 _US_美国_5_0@13 3
   password: amazonskr05
   port: 443
   server: 54.185.211.74
   type: ss
 - cipher: aes-256-gcm
-  name: 112|🇺🇸 _US_美国_6_0@19 2
+  name: 100|🇺🇸 _US_美国_6_0@19 3
   password: faBAoD54k87UJG7
   port: 2375
   server: 38.68.135.208
   type: ss
 - cipher: aes-128-gcm
-  name: '112|🇺🇸 US-37.19.198.244-0295 | 184... #1'
+  name: '100|🇺🇸 US-37.19.198.244-0295 | 222... #2'
   password: shadowsocks
   port: 443
   server: 37.19.198.244
   type: ss
 - cipher: aes-128-gcm
-  name: '112|🇺🇸 US-37.19.198.243-0293 | 146... #1'
+  name: '100|🇺🇸 US-37.19.198.243-0293 | 157... #2'
   password: shadowsocks
   port: 443
   server: 37.19.198.243
   type: ss
 - cipher: aes-128-gcm
-  name: '112|🇺🇸 US-37.19.198.236-0292 | 122... #1'
+  name: '100|🇺🇸 US-37.19.198.236-0292 | 137... #2'
   password: shadowsocks
   port: 443
   server: 37.19.198.236
   type: ss
 - cipher: rc4-md5
-  name: '112|🇺🇸 US-138.199.42.68-0287 | 98.... #1'
+  name: '100|🇺🇸 US-138.199.42.68-0287 | 102... #2'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 138.199.42.68
   type: ss
 - cipher: rc4-md5
-  name: '112|🇺🇸 US-194.5.215.59-0288 | 97.3... #1'
+  name: '100|🇺🇸 US-194.5.215.59-0288 | 89.5... #2'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 194.5.215.59
   type: ss
 - cipher: aes-128-gcm
-  name: '112|🇺🇸 US-37.19.198.160-0291 | 90.... #1'
+  name: '100|🇺🇸 US-37.19.198.160-0291 | 78.... #2'
   password: shadowsocks
   port: 443
   server: 37.19.198.160
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '112|🇺🇸 US-64.74.163.130-0297 | 78.... #1'
+  name: '100|🇺🇸 US-64.74.163.130-0297 | 71.... #2'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 64.74.163.130
   type: ss
 - cipher: aes-128-gcm
-  name: '112|🇺🇸 US-156.146.38.170-0281 | 76... #1'
+  name: '100|🇺🇸 US-156.146.38.170-0281 | 69... #2'
   password: shadowsocks
   port: 443
   server: 156.146.38.170
   type: ss
 - cipher: aes-128-gcm
-  name: '112|🇺🇸 US-156.146.38.167-0282 | 75... #1'
+  name: '100|🇺🇸 US-156.146.38.167-0282 | 67... #2'
   password: shadowsocks
   port: 443
   server: 156.146.38.167
   type: ss
 - cipher: aes-128-gcm
-  name: '112|🇺🇸 US-156.146.38.169-0286 | 72... #1'
+  name: '100|🇺🇸 US-156.146.38.169-0286 | 61... #2'
   password: shadowsocks
   port: 443
   server: 156.146.38.169
   type: ss
 - cipher: aes-128-gcm
-  name: '112|🇺🇸 US-156.146.38.168-0280 | 68... #1'
+  name: '100|🇺🇸 US-156.146.38.168-0280 | 58... #2'
   password: shadowsocks
   port: 443
   server: 156.146.38.168
   type: ss
 - cipher: aes-128-cfb
-  name: 112|🇺🇸 _US_美国_1_1@5 2
+  name: 100|🇺🇸 _US_美国_1_1@5 3
   password: shadowsocks
   port: 443
   server: 184.170.241.194
   type: ss
 - cipher: aes-128-gcm
-  name: '112|🇺🇸 US-173.244.56.6-0266 | 50.7... #1'
+  name: '100|🇺🇸 US-173.244.56.6-0266 | 47.4... #2'
   password: shadowsocks
   port: 443
   server: 173.244.56.6
   type: ss
 - cipher: aes-128-gcm
-  name: '112|🇺🇸 US-212.102.47.130-0271 | 47... #1'
+  name: '100|🇺🇸 US-212.102.47.130-0271 | 45... #2'
   password: shadowsocks
   port: 443
   server: 212.102.47.130
   type: ss
 - cipher: aes-256-gcm
-  name: '112|🇺🇸 US-154.3.8.151-6030 | 47.16... #1'
+  name: '100|🇺🇸 US-154.3.8.151-6030 | 45.65... #2'
   password: iUB0923RBA
   port: 30067
   server: 154.3.8.151
   type: ss
 - cipher: aes-128-gcm
-  name: '112|🇺🇸 US-212.102.47.132-0269 | 45... #1'
+  name: '100|🇺🇸 US-212.102.47.132-0269 | 43... #2'
   password: shadowsocks
   port: 443
   server: 212.102.47.132
   type: ss
 - cipher: rc4-md5
-  name: '112|🇺🇸 US-23.251.121.242-0272 | 44... #1'
+  name: '100|🇺🇸 US-23.251.121.242-0272 | 43... #2'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 23.251.121.242
   type: ss
 - cipher: rc4-md5
-  name: '112|🇺🇸 US-107.155.57.11-0273 | 42.... #1'
+  name: '100|🇺🇸 US-107.155.57.11-0273 | 42.... #2'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 107.155.57.11
   type: ss
 - cipher: rc4-md5
-  name: '112|🇺🇸 US-107.151.182.253-6137 | 4... #1'
+  name: '100|🇺🇸 US-107.151.182.253-6137 | 4... #2'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 107.151.182.253
   type: ss
 - cipher: rc4-md5
-  name: '112|🇺🇸 US-107.155.57.51-0276 | 40.... #1'
+  name: '100|🇺🇸 US-107.155.57.51-0276 | 36.... #2'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 107.155.57.51
   type: ss
 - cipher: aes-256-cfb
-  name: '112|🇺🇸 US-45.55.2.232-0290 | 37.78... #1'
+  name: '100|🇺🇸 US-45.55.2.232-0290 | 34.18... #2'
   password: 2170f8
   port: 14293
   server: 45.55.2.232
   type: ss
 - alterId: 64
   cipher: auto
-  name: '112|🇺🇸 US-142.0.136.1-5635 | 35.82... #1'
+  name: '100|🇺🇸 US-142.0.136.1-5635 | 33.20... #2'
   network: ws
   port: 31005
   server: 142.0.136.1
@@ -1278,7 +1249,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '112|🇺🇸 US-38.14.107.226-6022 | 35.... #1'
+  name: '100|🇺🇸 US-38.14.107.226-6022 | 32.... #2'
   network: ws
   port: 38003
   server: 38.14.107.226
@@ -1289,26 +1260,26 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-128-gcm
-  name: '112|🇺🇸 US-212.102.47.131-0270 | 34... #1'
+  name: '100|🇺🇸 US-212.102.47.131-0270 | 31... #2'
   password: shadowsocks
   port: 443
   server: 212.102.47.131
   type: ss
 - cipher: aes-256-cfb
-  name: '112|🇺🇸 US-54.244.204.173-5691 | 34... #1'
+  name: '100|🇺🇸 US-54.244.204.173-5691 | 30... #2'
   password: amazonskr05
   port: 443
   server: 54.244.204.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '112|🇺🇸 US-104.207.155.64-0265 | 28... #1'
+  name: '100|🇺🇸 US-104.207.155.64-0265 | 15... #2'
   password: o_A7inN1yqeWtOTL
   port: 1633
   server: 104.207.155.64
   type: ss
 - alterId: 64
   cipher: auto
-  name: '112|🇺🇸 US-38.14.107.233-8148 | 23.... #1'
+  name: '100|🇺🇸 US-38.14.107.233-8148 | 13.... #2'
   network: ws
   port: 38003
   server: 38.14.107.233
@@ -1321,14 +1292,14 @@ proxies:
       Host: www.23179753.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '112|🇺🇸 US-172.233.128.126-0268 | 2... #1'
+  name: '100|🇺🇸 US-172.233.128.126-0268 | 1... #2'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 172.233.128.126
   type: ss
 - alterId: 64
   cipher: auto
-  name: '112|🇺🇸 US-38.14.107.225-8134 | 23.... #1'
+  name: '100|🇺🇸 US-38.14.107.225-8134 | 12.... #2'
   network: ws
   port: 38003
   server: 38.14.107.225
@@ -1341,14 +1312,14 @@ proxies:
       Host: www.23179753.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '112|🇺🇸 US-172.232.171.192-0274 | 2... #1'
+  name: '100|🇺🇸 US-172.232.171.192-0274 | 1... #2'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 172.232.171.192
   type: ss
 - alterId: 0
   cipher: auto
-  name: '112|🇺🇸 US-2.58.87.221-6148 | 22.92... #1'
+  name: '100|🇺🇸 US-2.58.87.221-6148 | 11.82... #2'
   network: ws
   port: 12269
   server: 2.58.87.221
@@ -1359,20 +1330,20 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '112|🇺🇸 US-38.107.226.146-0397 | 22... #1'
+  name: '100|🇺🇸 US-38.107.226.146-0397 | 11... #2'
   password: H5S0hvcxRi#YLmgU
   port: 1230
   server: 38.107.226.146
   type: ss
 - cipher: aes-128-gcm
-  name: '112|🇺🇸 US-2.58.87.221-6028 | 21.58... #1'
+  name: '100|🇺🇸 US-2.58.87.221-6028 | 10.79... #2'
   password: Yc2CtrIz8L
   port: 16899
   server: 2.58.87.221
   type: ss
 - alterId: 64
   cipher: auto
-  name: '112|🇺🇸 US-38.14.107.228-8138 | 20.... #1'
+  name: '100|🇺🇸 US-38.14.107.228-8138 | 8.9... #2'
   network: ws
   port: 38003
   server: 38.14.107.228
@@ -1385,14 +1356,14 @@ proxies:
       Host: www.23179753.xyz
     path: /
 - cipher: aes-256-gcm
-  name: '112|🇺🇸 US-139.64.165.101-0404 | 19... #1'
+  name: '100|🇺🇸 US-139.64.165.101-0404 | 8.... #2'
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 139.64.165.101
   type: ss
 - alterId: 0
   cipher: auto
-  name: '112|🇺🇸 US-38.150.13.64-0388 | 12.9... #1'
+  name: '100|🇺🇸 US-38.150.13.64-0388 | 3.45... #2'
   network: ws
   port: 80
   server: 38.150.13.64
@@ -1402,9 +1373,16 @@ proxies:
   uuid: caa995ed-86a9-4968-a332-9c11e7e13107
   ws-opts:
     path: /
+- name: '100|🇺🇸 US-52.11.226.161-5709 | 3.4... #2'
+  password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
+  port: 20230
+  server: us003.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '112|🇺🇸 US-38.54.94.122-6019 | 11.2... #1'
+  name: '100|🇺🇸 US-38.54.94.122-6019 | 2.75... #2'
   network: ws
   port: 2053
   server: 38.54.94.122
@@ -1415,26 +1393,26 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '112|🇺🇸 US-92.118.112.111-5973 | 9.... #1'
+  name: '100|🇺🇸 US-92.118.112.111-5973 | 1.... #2'
   password: gmYDzSG6K35s8b19oY4fGz
   port: 18622
   server: 92.118.112.111
   type: ss
 - cipher: aes-256-gcm
-  name: '112|🇺🇸 US-139.64.165.101-0372 | 7.... #1'
+  name: '100|🇺🇸 US-139.64.165.101-0372 | 1.... #2'
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 139.64.165.101
   type: ss
 - cipher: aes-256-gcm
-  name: '112|🇺🇸 US-139.64.165.101-0365 | 7.... #1'
+  name: '100|🇺🇸 US-139.64.165.101-0365 | 1.... #2'
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 139.64.165.101
   type: ss
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 064 2
+  name: 100|🇺🇸 美国 064 3
   network: ws
   port: 80
   server: 104.21.69.44
@@ -1448,7 +1426,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 003 2
+  name: 100|🇺🇸 美国 003 3
   network: ws
   port: 80
   server: AC.fastly80-2.hosting-ip.com
@@ -1463,7 +1441,7 @@ proxies:
     path: /racevpn
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 030 2
+  name: 100|🇺🇸 美国 030 3
   network: ws
   port: 443
   server: 104.18.149.76
@@ -1478,14 +1456,14 @@ proxies:
     path: /aa
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 035 2
+  name: 100|🇺🇸 美国 035 3
   port: 550
   server: 172.204.8.10
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 81bbca70-a35f-487e-88a4-8bd5856b10a5
-- name: 112|🇺🇸 美国 037 2
+- name: 100|🇺🇸 美国 037 3
   network: ws
   password: '%3AZ%23%253cdIG%27c*%3B*O%7D'
   port: 443
@@ -1498,7 +1476,7 @@ proxies:
     headers:
       Host: JoinmAhDiSeRvER-csn.PaGeS.DEv
     path: /trVxXjc9031MC8sntF?ed=2560
-- name: 112|🇺🇸 美国 039 2
+- name: 100|🇺🇸 美国 039 3
   network: ws
   password: s42%26umY%28K5n*csP4
   port: 8443
@@ -1511,7 +1489,7 @@ proxies:
     headers:
       Host: JOInMAHDiseRVer-EEu.pAGEs.dEv
     path: /trOagy9SuM2cDpqUqO?ed=2560
-- name: 112|🇺🇸 美国 041 2
+- name: 100|🇺🇸 美国 041 3
   network: ws
   password: bpb-trojan
   port: 443
@@ -1525,7 +1503,7 @@ proxies:
     path: /tr
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 045 2
+  name: 100|🇺🇸 美国 045 3
   network: ws
   port: 80
   server: 6b2a30.50f8-2268-45e0.cfd
@@ -1539,7 +1517,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 040 2
+  name: 100|🇺🇸 美国 040 3
   network: ws
   port: 443
   server: biazh.mmzhk.website
@@ -1554,7 +1532,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 043 2
+  name: 100|🇺🇸 美国 043 3
   network: ws
   port: 443
   server: pdizy.whmvmkwuey.store
@@ -1569,7 +1547,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 050 2
+  name: 100|🇺🇸 美国 050 3
   network: ws
   port: 80
   server: 104.18.28.214
@@ -1582,7 +1560,7 @@ proxies:
     headers:
       Host: sg01s.57de-78fc4c715615.cfd
     path: /
-- name: 112|🇺🇸 美国 052 2
+- name: 100|🇺🇸 美国 052 3
   network: ws
   password: s42%26umY%28K5n*csP4
   port: 8443
@@ -1597,7 +1575,7 @@ proxies:
     path: /trOagy9SuM2cDpqUqO?ed=2560
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 053 2
+  name: 100|🇺🇸 美国 053 3
   network: ws
   port: 80
   server: 151.101.192.155
@@ -1612,7 +1590,7 @@ proxies:
     path: /racevpn
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 054 2
+  name: 100|🇺🇸 美国 054 3
   network: ws
   port: 2082
   server: 198.41.209.70
@@ -1627,7 +1605,7 @@ proxies:
     path: /dabai.in104.18.42.172
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 057 2
+  name: 100|🇺🇸 美国 057 3
   network: ws
   port: 80
   server: 162.159.252.210
@@ -1641,7 +1619,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 058 2
+  name: 100|🇺🇸 美国 058 3
   network: ws
   port: 80
   server: faedff.57de-78fc4c715615.cfd
@@ -1655,7 +1633,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 059 2
+  name: 100|🇺🇸 美国 059 3
   network: ws
   port: 2082
   server: 104.17.213.241
@@ -1669,7 +1647,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 112|🇺🇸 美国 060 2
+  name: 100|🇺🇸 美国 060 3
   network: ws
   port: 22443
   server: tls.18.node-for-bigairport.win
@@ -1683,19 +1661,19 @@ proxies:
       Host: tls.18.node-for-bigairport.win
     path: /
 - cipher: aes-256-cfb
-  name: 112|🇺🇸 _US_美国_6_1@15 2
+  name: 100|🇺🇸 _US_美国_6_1@15 3
   password: amazonskr05
   port: 443
   server: 52.33.5.226
   type: ss
 - cipher: aes-256-cfb
-  name: 112|🇺🇸 _US_美国_7_1@17 2
+  name: 100|🇺🇸 _US_美国_7_1@17 3
   password: amazonskr05
   port: 443
   server: 34.220.211.62
   type: ss
 - cipher: rc4-md5
-  name: 112|🇺🇸 普通节点-美国A-01 2
+  name: 100|🇺🇸 普通节点-美国A-01 3
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -1705,7 +1683,7 @@ proxies:
   server: 1.link-hub.blog
   type: ssr
 - cipher: rc4-md5
-  name: 112|🇺🇸 普通节点-美国A-02 2
+  name: 100|🇺🇸 普通节点-美国A-02 3
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -1715,7 +1693,7 @@ proxies:
   server: 1.link-hub.blog
   type: ssr
 - cipher: rc4-md5
-  name: 112|🇺🇸 普通节点-美国B-01 2
+  name: 100|🇺🇸 普通节点-美国B-01 3
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -1725,7 +1703,7 @@ proxies:
   server: 2.hublink.pro
   type: ssr
 - cipher: rc4-md5
-  name: 112|🇺🇸 普通节点-美国B-02 2
+  name: 100|🇺🇸 普通节点-美国B-02 3
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -1735,7 +1713,7 @@ proxies:
   server: 2.hublink.pro
   type: ssr
 - cipher: rc4-md5
-  name: 112|🇺🇸 普通节点-美国C-02 2
+  name: 100|🇺🇸 普通节点-美国C-02 3
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -1745,157 +1723,122 @@ proxies:
   server: 3.link-hub.click
   type: ssr
 - cipher: aes-256-cfb
-  name: 112|🇺🇸 US 2 2
-  password: amazonskr05
-  port: 443
-  server: 52.34.200.48
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 112|🇺🇸 US 3 2
-  password: amazonskr05
-  port: 443
-  server: 34.212.0.149
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 112|🇺🇸 US 4 2
+  name: 100|🇺🇸 US 6
   password: amazonskr05
   port: 443
   server: 54.190.1.125
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 117|🇺🇸1 |  5.9MB/s
+  name: 100|🇺🇸 US 3 3
   password: amazonskr05
   port: 443
-  server: 18.143.186.182
+  server: 52.34.200.48
   type: ss
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  h2-opts: {}
-  http-opts: {}
-  name: 117|🇺🇸3 |  5.8MB/s
-  network: ws
-  port: 22642
-  server: tk.hzlt.tkddns.xyz
-  servername: tk.hzlt.tkddns.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
   udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-b.tkong.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 117|🇺🇸4 |  4.9MB/s
-  network: ws
-  port: 443
-  server: mix1.998998.best
-  servername: jp1-2.zfork.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 07b7b563-f868-49fb-943a-6425e3dc34d9
-  ws-opts:
-    headers:
-      HOST: jp1-2.zfork.com
-    path: /wpmckfpajfng?ed=2560
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 117|🇺🇸6 |  1.5MB/s
+  name: 100|🇺🇸 US 4 3
   password: amazonskr05
   port: 443
-  server: 52.195.185.114
+  server: 34.212.0.149
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 117|🇺🇸11 |  5.3MB/s
-  network: ws
-  port: 22643
-  server: tk.hzlt.tkddns.xyz
-  servername: zxjp-c.tkong.cc
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: tk.hzlt.tkddns.xyz
-    path: /
-- name: 131|美国 01
+  udp: true
+- name: 105|🇺🇸1 |  2.9MB/s
+  password: ec619d15-c0a3-3e81-9494-a80671371471
+  port: 20294
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z294.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 105|🇺🇸2 |  4.9MB/s
+  password: ec619d15-c0a3-3e81-9494-a80671371471
+  port: 22741
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: dufu.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 105|🇺🇸4 |  5.9MB/s
+  password: ec619d15-c0a3-3e81-9494-a80671371471
+  port: 43337
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z102.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 105|🇺🇸5 |  5.8MB/s
+  password: ec619d15-c0a3-3e81-9494-a80671371471
+  port: 28678
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z143.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 119|美国 01
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50451
   server: mpkrykuslqfijsw-us.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 131|美国 02
+- name: 119|美国 02
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50452
   server: mpkrykuslqfijsw-us.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 131|美国 03
+- name: 119|美国 03
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50453
   server: mpkrykuslqfijsw-us.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 131|美国 04
+- name: 119|美国 04
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50454
   server: mpkrykuslqfijsw-us.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 131|美国 05
+- name: 119|美国 05
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50455
   server: mpkrykuslqfijsw-us.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 131|美国 06
+- name: 119|美国 06
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50456
   server: mpkrykuslqfijsw-us.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 131|美国 07
+- name: 119|美国 07
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50457
   server: mpkrykuslqfijsw-us.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 131|美国 08
+- name: 119|美国 08
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50458
   server: mpkrykuslqfijsw-us.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 131|美国 09
+- name: 119|美国 09
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50459
   server: mpkrykuslqfijsw-us.fliggynode.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 131|美国 10
+- name: 119|美国 10
   password: eb2ec34c-1d94-4ca5-bec0-356f75f9f4fa
   port: 50460
   server: mpkrykuslqfijsw-us.fliggynode.com
@@ -1903,218 +1846,27 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  name: 139|🇺🇲 美国S01
+  name: 127|🇺🇲 美国S01
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 20014
-  server: 7wkhm-g06.us01-ae5.entry.v50307shvkaa.art
+  server: fn0yv-g06.us01-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 139|🇺🇲 美国S02
+  name: 127|🇺🇲 美国S02
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 20019
-  server: 9349n-g06.us02-ae5.entry.v50307shvkaa.art
+  server: mhz83-g06.us02-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 143|[公益] 启迪 美国 1x
-  network: ws
-  port: 80
-  server: qidi.xn--drry30l.xyz
-  type: vmess
-  udp: true
-  uuid: 91b3507d-80ba-4c87-a4ff-cf29b7e0c63f
-  ws-opts:
-    headers:
-      Host: usa.xn--drry30l.xyz
-    path: /qidi?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 143|[公益] 启迪 美国 02 1x
-  network: ws
-  port: 80
-  server: qidi.xn--drry30l.xyz
-  type: vmess
-  udp: true
-  uuid: 91b3507d-80ba-4c87-a4ff-cf29b7e0c63f
-  ws-opts:
-    headers:
-      Host: us2.xn--drry30l.xyz
-    path: /qidi?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 143|[公益] 启迪 美国 03 1x
-  network: ws
-  port: 80
-  server: qidi.xn--drry30l.xyz
-  type: vmess
-  udp: true
-  uuid: 91b3507d-80ba-4c87-a4ff-cf29b7e0c63f
-  ws-opts:
-    headers:
-      Host: us3.xn--drry30l.xyz
-    path: /qidi?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 143|[公益] 启迪 美国 04 1x
-  network: ws
-  port: 8880
-  server: qidi.xn--drry30l.xyz
-  type: vmess
-  udp: true
-  uuid: 91b3507d-80ba-4c87-a4ff-cf29b7e0c63f
-  ws-opts:
-    headers:
-      Host: us4.xn--drry30l.xyz
-    path: /qidi?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 143|[公益] 启迪 美国 05 1x
-  network: ws
-  port: 80
-  server: qidi.xn--drry30l.xyz
-  type: vmess
-  udp: true
-  uuid: 91b3507d-80ba-4c87-a4ff-cf29b7e0c63f
-  ws-opts:
-    headers:
-      Host: us5.xn--drry30l.xyz
-    path: /qidi?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 150|🇺🇸 美国3
-  network: ws
-  port: 80
-  server: 7bf2aa.79b5-8c9f-14e2.cfd
-  type: vmess
-  udp: true
-  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
-  ws-headers:
-    Host: us03s.79b5-8c9f-14e2.cfd
-  ws-opts:
-    headers:
-      Host: us03s.79b5-8c9f-14e2.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 150|🇺🇸 美国4
-  network: ws
-  port: 80
-  server: 7bf2aa.79b5-8c9f-14e2.cfd
-  type: vmess
-  udp: true
-  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
-  ws-headers:
-    Host: us04s.79b5-8c9f-14e2.cfd
-  ws-opts:
-    headers:
-      Host: us04s.79b5-8c9f-14e2.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '151|🇺🇸 美国1 #2'
-  network: ws
-  port: 80
-  server: 7bf2aa.79b5-8c9f-14e2.cfd
-  type: vmess
-  udp: true
-  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
-  ws-headers:
-    Host: us01s.79b5-8c9f-14e2.cfd
-  ws-opts:
-    headers:
-      Host: us01s.79b5-8c9f-14e2.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '151|🇺🇸 美国2 #2'
-  network: ws
-  port: 80
-  server: 7bf2aa.79b5-8c9f-14e2.cfd
-  type: vmess
-  udp: true
-  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
-  ws-headers:
-    Host: us02s.79b5-8c9f-14e2.cfd
-  ws-opts:
-    headers:
-      Host: us02s.79b5-8c9f-14e2.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '151|🇺🇸 美国3 #1'
-  network: ws
-  port: 80
-  server: 7bf2aa.79b5-8c9f-14e2.cfd
-  type: vmess
-  udp: true
-  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
-  ws-headers:
-    Host: us03s.79b5-8c9f-14e2.cfd
-  ws-opts:
-    headers:
-      Host: us03s.79b5-8c9f-14e2.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '151|🇺🇸 美国4 #1'
-  network: ws
-  port: 80
-  server: 7bf2aa.79b5-8c9f-14e2.cfd
-  type: vmess
-  udp: true
-  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
-  ws-headers:
-    Host: us04s.79b5-8c9f-14e2.cfd
-  ws-opts:
-    headers:
-      Host: us04s.79b5-8c9f-14e2.cfd
-    path: /
-  ws-path: /
-- name: '154|🇺🇸|美国-隧道 02 #1'
-  password: 2db71c8f-b7d3-4272-b868-2f7c92b395d1
-  port: 8210
-  server: R1.tube-cat.com
-  sni: us.catxstar.com
-  type: trojan
-  udp: true
-- name: '155|🇺🇸|美国-隧道 02 #2'
-  password: fe0b59ec-6af0-45db-9509-4c66b464af2e
-  port: 8210
-  server: R1.tube-cat.com
-  sni: us.catxstar.com
-  type: trojan
-  udp: true
-- name: '155|🇺🇸|美国-随机家庭IP 01 5倍消耗 #1'
-  password: fe0b59ec-6af0-45db-9509-4c66b464af2e
-  port: 20042
-  server: IEPL.tube-cat.com
-  skip-cert-verify: true
-  sni: us.catxstar.com
-  type: trojan
-  udp: true
-- name: '155|🇺🇸|美国-随机家庭IP 02 5倍消耗 #1'
-  password: fe0b59ec-6af0-45db-9509-4c66b464af2e
-  port: 20050
-  server: IEPL.tube-cat.com
-  skip-cert-verify: true
-  sni: us.catxstar.com
-  type: trojan
-  udp: true
-- name: '156|🇺🇸|美国-隧道 02 #3'
+- name: '142,143|🇺🇸|美国-隧道 02 #2'
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
   port: 8210
   server: R1.tube-cat.com
   sni: us.catxstar.com
   type: trojan
   udp: true
-- name: '156|🇺🇸|美国-随机家庭IP 01 5倍消耗 #2'
+- name: '142,143|🇺🇸|美国-随机家庭IP 01 5倍消耗 #2'
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
   port: 20042
   server: IEPL.tube-cat.com
@@ -2122,184 +1874,370 @@ proxies:
   sni: us.catxstar.com
   type: trojan
   udp: true
-- name: '156|🇺🇸|美国-随机家庭IP 02 5倍消耗 #2'
+- name: '142,143|🇺🇸|美国-随机家庭IP 02 5倍消耗 #2'
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
   port: 20050
   server: IEPL.tube-cat.com
   skip-cert-verify: true
-  sni: us.catxstar.com
-  type: trojan
-  udp: true
-- name: '157|🇺🇸|美国-隧道 02 #4'
-  password: c03b5a06-cc76-4b47-af5f-5d1159892e6d
-  port: 8210
-  server: R1.tube-cat.com
   sni: us.catxstar.com
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '164,165|美国 #13'
+  name: '150,151|美国 #13'
   password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
   port: 40001
   server: us.fastsoonlink.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 166|🇺🇸 US 01
+  name: 152|🇺🇸 US 01
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49951
   server: node-us.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 166|🇺🇸 US 02
+  name: 152|🇺🇸 US 02
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49952
   server: node-us.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 166|🇺🇸 US 03
+  name: 152|🇺🇸 US 03
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49953
   server: node-us.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 166|🇺🇸 US 04
+  name: 152|🇺🇸 US 04
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49954
   server: node-us.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 166|🇺🇸 US 05
+  name: 152|🇺🇸 US 05
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49955
   server: node-us.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 166|🇺🇸 US 06
+  name: 152|🇺🇸 US 06
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49956
   server: node-us.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 166|🇺🇸 US 07
+  name: 152|🇺🇸 US 07
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49957
   server: node-us.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 166|🇺🇸 US 08
+  name: 152|🇺🇸 US 08
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49958
   server: node-us.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 166|🇺🇸 US 09
+  name: 152|🇺🇸 US 09
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49959
   server: node-us.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 166|🇺🇸 US 10
+  name: 152|🇺🇸 US 10
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49960
   server: node-us.dlg365.com
   type: ss
   udp: true
+- name: '159|美国03 #8'
+  password: d0d98f45-15ec-4a5a-9ccd-d4089e2204d9
+  port: 20230
+  server: us003.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: '159|美国04 #8'
+  password: d0d98f45-15ec-4a5a-9ccd-d4089e2204d9
+  port: 20230
+  server: us004.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '174,175|🇺🇸 美国 01 #2'
+  name: '160,161|🇺🇸 美国 01 #2'
   password: 9c98ec59-231c-4091-ba05-a0c881021335
   port: 23103
   server: p1.bxy-fun1.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '174,175|🇺🇸 美国 02 #2'
+  name: '160,161|🇺🇸 美国 02 #2'
   password: 9c98ec59-231c-4091-ba05-a0c881021335
   port: 26107
   server: p1.bxy-fun2.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '174,175|🇺🇸 美国 03 #2'
+  name: '160,161|🇺🇸 美国 03 #2'
   password: 9c98ec59-231c-4091-ba05-a0c881021335
   port: 26106
   server: p1.bxy-fun3.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '176|🇺🇸 美国 01 #3'
+  name: 162|US.美国.A
+  password: a01b5e27-ece5-4675-866f-36b23a65d2a8
+  port: 47393
+  server: cokecloudjp.cokecloud.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 162|US.美国.B
+  port: 25619
+  server: cokecloudus.cokecloud.top
+  type: vmess
+  udp: true
+  uuid: a01b5e27-ece5-4675-866f-36b23a65d2a8
+- cipher: chacha20-ietf-poly1305
+  name: 162|US.美国.C | 高速.2x倍率
+  password: a01b5e27-ece5-4675-866f-36b23a65d2a8
+  port: 17318
+  server: cokecloudjp.cokecloud.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 162|US.美国.D
+  password: a01b5e27-ece5-4675-866f-36b23a65d2a8
+  port: 40793
+  server: cokecloudjp.cokecloud.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 162|US.美国.E
+  port: 20067
+  server: cokecloudus.cokecloud.top
+  type: vmess
+  udp: true
+  uuid: a01b5e27-ece5-4675-866f-36b23a65d2a8
+- cipher: chacha20-ietf-poly1305
+  name: 163|美国|DA1
+  password: 5231f59f-c196-4094-aea5-4ecaa069ddc5
+  port: 15513
+  server: ftm3v8b1rwvl52o6rce5lcbsfm80tz8n.08.01.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 163|美国|KS1
+  password: 5231f59f-c196-4094-aea5-4ecaa069ddc5
+  port: 14506
+  server: nnr1v1zh0l8h2uphnnpiiaiqaasrzfye.08.02.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 163|美国|NY1
+  password: 5231f59f-c196-4094-aea5-4ecaa069ddc5
+  port: 49465
+  server: 4yk673hc5kvdzgpkjtgxi7h1e23lwnj8.08.03.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 163|美国|LA1
+  password: 5231f59f-c196-4094-aea5-4ecaa069ddc5
+  port: 17201
+  server: pv9zvp9i2ocv4c3j482qljx780v0o7cm.08.04.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 163|美国|PHX1
+  password: 5231f59f-c196-4094-aea5-4ecaa069ddc5
+  port: 34467
+  server: kgou9oxzpkbeg9wm90bo73u9i0e8oo0n.08.06.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 163|美国|SJ0
+  password: 5231f59f-c196-4094-aea5-4ecaa069ddc5
+  port: 29126
+  server: 5hgswhbns8qx1zm3shwiyixco3lmijcu.08.08.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '164|美国|DA1 #1'
+  password: fef880e7-87cb-4bea-8e5e-5ae2bba6fbb5
+  port: 15513
+  server: ftm3v8b1rwvl52o6rce5lcbsfm80tz8n.08.01.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '164|美国|KS1 #1'
+  password: fef880e7-87cb-4bea-8e5e-5ae2bba6fbb5
+  port: 14506
+  server: nnr1v1zh0l8h2uphnnpiiaiqaasrzfye.08.02.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '164|美国|NY1 #1'
+  password: fef880e7-87cb-4bea-8e5e-5ae2bba6fbb5
+  port: 49465
+  server: 4yk673hc5kvdzgpkjtgxi7h1e23lwnj8.08.03.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '164|美国|LA1 #1'
+  password: fef880e7-87cb-4bea-8e5e-5ae2bba6fbb5
+  port: 17201
+  server: pv9zvp9i2ocv4c3j482qljx780v0o7cm.08.04.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '164|美国|PHX1 #1'
+  password: fef880e7-87cb-4bea-8e5e-5ae2bba6fbb5
+  port: 34467
+  server: kgou9oxzpkbeg9wm90bo73u9i0e8oo0n.08.06.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '164|美国|SJ0 #1'
+  password: fef880e7-87cb-4bea-8e5e-5ae2bba6fbb5
+  port: 29126
+  server: 5hgswhbns8qx1zm3shwiyixco3lmijcu.08.08.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '165|美国|DA1 #2'
+  password: 6063748c-ca22-4407-8852-f077a90b39e9
+  port: 15513
+  server: ftm3v8b1rwvl52o6rce5lcbsfm80tz8n.08.01.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '165|美国|KS1 #2'
+  password: 6063748c-ca22-4407-8852-f077a90b39e9
+  port: 14506
+  server: nnr1v1zh0l8h2uphnnpiiaiqaasrzfye.08.02.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '165|美国|NY1 #2'
+  password: 6063748c-ca22-4407-8852-f077a90b39e9
+  port: 49465
+  server: 4yk673hc5kvdzgpkjtgxi7h1e23lwnj8.08.03.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '165|美国|LA1 #2'
+  password: 6063748c-ca22-4407-8852-f077a90b39e9
+  port: 17201
+  server: pv9zvp9i2ocv4c3j482qljx780v0o7cm.08.04.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '165|美国|PHX1 #2'
+  password: 6063748c-ca22-4407-8852-f077a90b39e9
+  port: 34467
+  server: kgou9oxzpkbeg9wm90bo73u9i0e8oo0n.08.06.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '165|美国|SJ0 #2'
+  password: 6063748c-ca22-4407-8852-f077a90b39e9
+  port: 29126
+  server: 5hgswhbns8qx1zm3shwiyixco3lmijcu.08.08.us.6l6.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '166|🇺🇸美国1 #2'
+  password: 2177c494-cc50-4378-8df9-fd6a22600d0f
+  port: 35443
+  server: iost.prprcheng.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '166|🇺🇸美国2 #2'
+  password: 2177c494-cc50-4378-8df9-fd6a22600d0f
+  port: 11535
+  server: 1.prprcheng.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '167|🇺🇸 美国 01 #3'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51151
   server: us.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '176|🇺🇸 美国 02 #3'
+  name: '167|🇺🇸 美国 02 #3'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51152
   server: us.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '176|🇺🇸 美国 03 #3'
+  name: '167|🇺🇸 美国 03 #3'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51153
   server: us.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '176|🇺🇸 美国 04 #3'
+  name: '167|🇺🇸 美国 04 #3'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51154
   server: us.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '176|🇺🇸 美国 05 #1'
+  name: '167|🇺🇸 美国 05 #1'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51155
   server: us.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '176|🇺🇸 美国 06 #1'
+  name: '167|🇺🇸 美国 06 #1'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51156
   server: us.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 176|🇺🇸 美国 07
+  name: 167|🇺🇸 美国 07
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51157
   server: us.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 176|🇺🇸 美国 08
+  name: 167|🇺🇸 美国 08
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51158
   server: us.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 176|🇺🇸 美国 09
+  name: 167|🇺🇸 美国 09
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51159
   server: us.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 176|🇺🇸 美国 10
+  name: 167|🇺🇸 美国 10
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51160
   server: us.miaolianyunapp.com
@@ -2307,7 +2245,473 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 179|疯美国高速6 (0.01x)
+  name: 169|🇺🇸 美国-R0
+  port: 38771
+  server: us01.nodeup.top
+  type: vmess
+  udp: true
+  uuid: 8a65656d-39ed-472c-a4b6-f4a5a20c122e
+- alterId: 0
+  cipher: auto
+  name: 169|🇺🇸 美国-R1
+  port: 38733
+  server: us02.nodeup.top
+  type: vmess
+  udp: true
+  uuid: 8a65656d-39ed-472c-a4b6-f4a5a20c122e
+- name: 169|🇺🇸 美国-D1
+  password: 8a65656d-39ed-472c-a4b6-f4a5a20c122e
+  port: 62761
+  server: us-d1.nodeup.top
+  sni: us-d1.nodeup.top
+  type: trojan
+  udp: true
+- name: 169|🇺🇸 美国-D2
+  password: 8a65656d-39ed-472c-a4b6-f4a5a20c122e
+  port: 52761
+  server: us-d2.nodeup.top
+  sni: us-d2.nodeup.top
+  type: trojan
+  udp: true
+- name: 169|🇺🇸 美国-D3
+  password: 8a65656d-39ed-472c-a4b6-f4a5a20c122e
+  port: 52762
+  server: us-d3.nodeup.top
+  sni: us-d3.nodeup.top
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '174|美国1 #1'
+  port: 10310
+  server: zz1.xmfvpn.com
+  type: vmess
+  udp: true
+  uuid: 9854cb4c-922a-373c-a77d-9792727c83a4
+- alterId: 0
+  cipher: auto
+  name: '174|美国2 #1'
+  port: 10202
+  server: zz2.xmfvpn.com
+  type: vmess
+  udp: true
+  uuid: 9854cb4c-922a-373c-a77d-9792727c83a4
+- alterId: 0
+  cipher: auto
+  name: 174|美国3
+  port: 10203
+  server: zz3.xmfvpn.com
+  type: vmess
+  udp: true
+  uuid: 9854cb4c-922a-373c-a77d-9792727c83a4
+- alterId: 0
+  cipher: auto
+  name: 174|美国4
+  port: 10204
+  server: zz3.xmfvpn.com
+  type: vmess
+  udp: true
+  uuid: 9854cb4c-922a-373c-a77d-9792727c83a4
+- cipher: aes-128-gcm
+  name: '181|美国1 #2'
+  password: 593c3d63-04c7-4bbb-a03f-114eba08636c
+  port: 50013
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '181|美国2 #2'
+  password: 593c3d63-04c7-4bbb-a03f-114eba08636c
+  port: 50014
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '181|美国3 #1'
+  password: 593c3d63-04c7-4bbb-a03f-114eba08636c
+  port: 50015
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '181|美国4 #1'
+  password: 593c3d63-04c7-4bbb-a03f-114eba08636c
+  port: 50016
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- name: 181|Trojan-美国1 | 低倍率
+  password: 593c3d63-04c7-4bbb-a03f-114eba08636c
+  port: 10116
+  server: cc.rk1.node-is.green
+  skip-cert-verify: true
+  sni: tcus1.bilibili.com
+  type: trojan
+  udp: true
+- name: 181|Trojan-美国2 | 低倍率
+  password: 593c3d63-04c7-4bbb-a03f-114eba08636c
+  port: 40356
+  server: 4126319961113383128f7c57278a42e5.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tcus1.bilibili.com
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '182|美国1 #3'
+  password: b64ec383-e598-465a-9e59-70e9b0d87f66
+  port: 50013
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '182|美国2 #3'
+  password: b64ec383-e598-465a-9e59-70e9b0d87f66
+  port: 50014
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '182|美国3 #2'
+  password: b64ec383-e598-465a-9e59-70e9b0d87f66
+  port: 50015
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '182|美国4 #2'
+  password: b64ec383-e598-465a-9e59-70e9b0d87f66
+  port: 50016
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- name: '182|Trojan-美国1 | 低倍率 #1'
+  password: b64ec383-e598-465a-9e59-70e9b0d87f66
+  port: 10116
+  server: cc.rk1.node-is.green
+  skip-cert-verify: true
+  sni: tcus1.bilibili.com
+  type: trojan
+  udp: true
+- name: '182|Trojan-美国2 | 低倍率 #1'
+  password: b64ec383-e598-465a-9e59-70e9b0d87f66
+  port: 46279
+  server: 6e01d2705564541c39f4ac8fddaaff6d.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tcus1.bilibili.com
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '183|美国1 #4'
+  password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
+  port: 50013
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '183|美国2 #4'
+  password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
+  port: 50014
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '183|美国3 #3'
+  password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
+  port: 50015
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '183|美国4 #3'
+  password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
+  port: 50016
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- name: '183|Trojan-美国1 | 低倍率 #2'
+  password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
+  port: 10116
+  server: cc.rk1.node-is.green
+  skip-cert-verify: true
+  sni: tcus1.bilibili.com
+  type: trojan
+  udp: true
+- name: '183|Trojan-美国2 | 低倍率 #2'
+  password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
+  port: 44310
+  server: 0faf7708ecdcb0b178bf8bb4948ce4ea.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tcus1.bilibili.com
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '184|美国1 #5'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 50013
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '184|美国2 #5'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 50014
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '184|美国3 #4'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 50015
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '184|美国4 #4'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 50016
+  server: tc.teacat2.xyz
+  type: ss
+  udp: true
+- name: '184|Trojan-美国1 | 低倍率 #3'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 10116
+  server: cc.rk1.node-is.green
+  skip-cert-verify: true
+  sni: tcus1.bilibili.com
+  type: trojan
+  udp: true
+- name: '184|Trojan-美国2 | 低倍率 #3'
+  password: 07e55e4a-ef94-4e81-addc-b62532cb503a
+  port: 43768
+  server: 9d16d9ecacb086a107366a15b0968080.lh.gtm.node-is.green
+  skip-cert-verify: true
+  sni: tcus1.bilibili.com
+  type: trojan
+  udp: true
+- name: 185|V0-美国-出现问题请先更新订阅！！！
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 40900
+  server: 2b035a998e771f1e4d7797dc878bf248.us.in.node-is.green
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
+  udp: true
+- name: 185|V0-美国-软件需开启跳过证书验证！！！
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 45895
+  server: a49c3319ad3d3715d787fcbae314fd1b.us.in.node-is.green
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
+  udp: true
+- name: 185|V0-美国-官网：www.cac.mom
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 47480
+  server: dda0814b988c456e5de20a8b8bc56ceb.us.in.node-is.green
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 186|🇺🇸 美国 - 01 - 0.5X
+  password: 1353f227-8603-4a06-b932-95e794c7b60b
+  port: 13501
+  server: usa-01-zz.manatraffic.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '187|🇺🇸 美国 - 01 - 0.5X #1'
+  password: 66061261-61d0-4243-a56f-393f38a6e99d
+  port: 13501
+  server: usa-01-zz.manatraffic.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '188|🇺🇸 美国 - 01 - 0.5X #2'
+  password: 8771d456-6779-4c33-a796-b6defc67bc75
+  port: 13501
+  server: usa-01-zz.manatraffic.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '197,198|疯美国高速6 (0.01x) #1'
+  network: ws
+  port: 443
+  server: us16.998998.best
+  servername: server9-3.998877.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 07b7b563-f868-49fb-943a-6425e3dc34d9
+  ws-headers:
+    Host: server9-3.998877.best
+  ws-opts:
+    headers:
+      Host: server9-3.998877.best
+    path: /rksdnuhgteb?ed=2560
+  ws-path: /rksdnuhgteb?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '197,198|疯美国高速10 (0.01x) #1'
+  network: ws
+  port: 443
+  server: us19.998998.best
+  servername: server2-1.998877.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 07b7b563-f868-49fb-943a-6425e3dc34d9
+  ws-headers:
+    Host: server2.998877.best
+  ws-opts:
+    headers:
+      Host: server2.998877.best
+    path: /setfdg/sdfg/sgi?ed=2560
+  ws-path: /setfdg/sdfg/sgi?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '197,198|疯美国高速87 (0.01x) #1'
+  network: ws
+  port: 443
+  server: us2.998998.best
+  servername: serverus1-1.998877.best
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 07b7b563-f868-49fb-943a-6425e3dc34d9
+  ws-headers:
+    Host: serverus1-1.998877.best
+  ws-opts:
+    headers:
+      Host: serverus1-1.998877.best
+    path: /e56yglr4i8j7nk?ed=2560
+  ws-path: /e56yglr4i8j7nk?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 204|US美国-1
+  password: 725b9c13-73bc-4b87-ac8b-bb60af8b0e13
+  port: 52716
+  server: nekros.3406xyz.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 204|US美国-2
+  password: 725b9c13-73bc-4b87-ac8b-bb60af8b0e13
+  port: 42758
+  server: gznekros.3406xyz.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 204|US美国-3
+  password: 725b9c13-73bc-4b87-ac8b-bb60af8b0e13
+  port: 57111
+  server: nekros.3406xyz.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 204|US美国-4
+  password: 725b9c13-73bc-4b87-ac8b-bb60af8b0e13
+  port: 11262
+  server: gznekros.3406xyz.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '205|US美国-1 #1'
+  password: 3dfd1e0e-7c43-49f2-8305-b0105d5076ea
+  port: 52716
+  server: nekros.3406xyz.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '205|US美国-2 #1'
+  password: 3dfd1e0e-7c43-49f2-8305-b0105d5076ea
+  port: 42758
+  server: gznekros.3406xyz.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '205|US美国-3 #1'
+  password: 3dfd1e0e-7c43-49f2-8305-b0105d5076ea
+  port: 57111
+  server: nekros.3406xyz.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '205|US美国-4 #1'
+  password: 3dfd1e0e-7c43-49f2-8305-b0105d5076ea
+  port: 11262
+  server: gznekros.3406xyz.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 206|🇺🇸 US 01 ggvison
+  password: e7076671-6cc4-4680-9633-1e38b6b9b4ea
+  port: 34401
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 206|🇺🇸 US 02 ccs
+  password: e7076671-6cc4-4680-9633-1e38b6b9b4ea
+  port: 34402
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 206|🇺🇸 US 03 CC
+  password: e7076671-6cc4-4680-9633-1e38b6b9b4ea
+  port: 34403
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '207|🇺🇸 US 01 ggvison #1'
+  password: 95c717d3-ba19-47cd-88ea-ba0d1d7794fa
+  port: 34401
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '207|🇺🇸 US 02 ccs #1'
+  password: 95c717d3-ba19-47cd-88ea-ba0d1d7794fa
+  port: 34402
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '207|🇺🇸 US 03 CC #1'
+  password: 95c717d3-ba19-47cd-88ea-ba0d1d7794fa
+  port: 34403
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '208|🇺🇸 US 01 ggvison #2'
+  password: 96dbb20c-19c8-4a2c-8c2c-ddb2992b5c00
+  port: 34401
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '208|🇺🇸 US 02 ccs #2'
+  password: 96dbb20c-19c8-4a2c-8c2c-ddb2992b5c00
+  port: 34402
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '208|🇺🇸 US 03 CC #2'
+  password: 96dbb20c-19c8-4a2c-8c2c-ddb2992b5c00
+  port: 34403
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '211|疯美国高速6 (0.01x) #2'
   network: ws
   port: 443
   server: us16.998998.best
@@ -2326,7 +2730,7 @@ proxies:
   ws-path: /rksdnuhgteb?ed=2560
 - alterId: 0
   cipher: auto
-  name: 179|疯美国高速10 (0.01x)
+  name: '211|疯美国高速10 (0.01x) #2'
   network: ws
   port: 443
   server: us19.998998.best
@@ -2345,7 +2749,7 @@ proxies:
   ws-path: /setfdg/sdfg/sgi?ed=2560
 - alterId: 0
   cipher: auto
-  name: 179|疯美国高速87 (0.01x)
+  name: '211|疯美国高速87 (0.01x) #2'
   network: ws
   port: 443
   server: us2.998998.best
@@ -2362,42 +2766,42 @@ proxies:
       Host: serverus1-1.998877.best
     path: /e56yglr4i8j7nk?ed=2560
   ws-path: /e56yglr4i8j7nk?ed=2560
-- name: 180|United States 01 Netflix T | x...
+- name: 212|United States 01 Netflix T | x...
   password: d16d869d-d65d-4167-a2cc-5a4f336b9c16
   port: 11262
   server: ccc.cm.xiaomi-api.xyz
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 180|United States 02 Netflix T | x...
+- name: 212|United States 02 Netflix T | x...
   password: d16d869d-d65d-4167-a2cc-5a4f336b9c16
   port: 11062
   server: ccc.cn1.xiaomi-api.xyz
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 180|United States 03 Netflix T | x...
+- name: 212|United States 03 Netflix T | x...
   password: d16d869d-d65d-4167-a2cc-5a4f336b9c16
   port: 11162
   server: ccc.ct.xiaomi-api.xyz
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '181|United States 01 Netflix T | x... #1'
+- name: '213|United States 01 Netflix T | x... #1'
   password: eb0c888c-0b55-4a0b-ba97-cfc6504e8213
   port: 11262
   server: ccc.cm.xiaomi-api.xyz
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '181|United States 02 Netflix T | x... #1'
+- name: '213|United States 02 Netflix T | x... #1'
   password: eb0c888c-0b55-4a0b-ba97-cfc6504e8213
   port: 11062
   server: ccc.cn1.xiaomi-api.xyz
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '181|United States 03 Netflix T | x... #1'
+- name: '213|United States 03 Netflix T | x... #1'
   password: eb0c888c-0b55-4a0b-ba97-cfc6504e8213
   port: 11162
   server: ccc.ct.xiaomi-api.xyz
@@ -2405,7 +2809,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 182|安徽联通转美国AN2[M][倍率:0.8]
+  name: 214|安徽联通转美国AN2[M][倍率:0.8]
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2415,14 +2819,14 @@ proxies:
   server: ahcu.k1ka52.ccddn4.icu
   type: ss
   udp: true
-- name: 182|安徽联通转美国AN4[M][Trojan][倍率:0.8]
+- name: 214|安徽联通转美国AN4[M][Trojan][倍率:0.8]
   password: ff9b0cf3-d742-34ce-bac7-51c3248e98a2
   port: 65303
   server: ahcu.k1ka52.ccddn4.icu
   sni: dl.hncuusan4.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: 182|安徽联通转美国AN6[M][Trojan][倍率:0.8]
+- name: 214|安徽联通转美国AN6[M][Trojan][倍率:0.8]
   password: ff9b0cf3-d742-34ce-bac7-51c3248e98a2
   port: 65306
   server: ahcu.k1ka52.ccddn4.icu
@@ -2430,7 +2834,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 182|安徽联通转美国AN7[M][倍率:0.8]
+  name: 214|安徽联通转美国AN7[M][倍率:0.8]
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2440,14 +2844,14 @@ proxies:
   server: ahcu.k1ka52.ccddn4.icu
   type: ss
   udp: true
-- name: 182|安徽联通转美国Cera[Trojan][倍率:0.9]
+- name: 214|安徽联通转美国Cera[Trojan][倍率:0.9]
   password: ff9b0cf3-d742-34ce-bac7-51c3248e98a2
   port: 65164
   server: ahcu.k1ka52.ccddn4.icu
   sni: dl.ahcuuscera.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: 182|安徽联通转美国Cera2[Trojan][倍率:0.9]
+- name: 214|安徽联通转美国Cera2[Trojan][倍率:0.9]
   password: ff9b0cf3-d742-34ce-bac7-51c3248e98a2
   port: 65165
   server: ahcu.k1ka52.ccddn4.icu
@@ -2455,7 +2859,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 182|安徽联通转美国Cera3[倍率:0.9]
+  name: 214|安徽联通转美国Cera3[倍率:0.9]
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2466,7 +2870,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 182|安徽联通转美国Cera4[倍率:0.9]
+  name: 214|安徽联通转美国Cera4[倍率:0.9]
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2476,14 +2880,14 @@ proxies:
   server: ahcu.k1ka52.ccddn4.icu
   type: ss
   udp: true
-- name: 182|安徽联通转美国DP[M][Trojan][倍率:0.8]
+- name: 214|安徽联通转美国DP[M][Trojan][倍率:0.8]
   password: ff9b0cf3-d742-34ce-bac7-51c3248e98a2
   port: 65162
   server: ahcu.k1ka52.ccddn4.icu
   sni: dl.ahcuusdp.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: 182|安徽联通转美国DP2[M][Trojan][倍率:0.8]
+- name: 214|安徽联通转美国DP2[M][Trojan][倍率:0.8]
   password: ff9b0cf3-d742-34ce-bac7-51c3248e98a2
   port: 65163
   server: ahcu.k1ka52.ccddn4.icu
@@ -2491,7 +2895,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 182|安徽联通转美国DP3[M][倍率:0.8]
+  name: 214|安徽联通转美国DP3[M][倍率:0.8]
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2502,7 +2906,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 182|安徽联通转美国DP4[M][倍率:0.8]
+  name: 214|安徽联通转美国DP4[M][倍率:0.8]
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2513,7 +2917,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 182|安徽联通转美国TE[M][倍率:0.8]
+  name: 214|安徽联通转美国TE[M][倍率:0.8]
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2523,28 +2927,28 @@ proxies:
   server: ahcu.k1ka52.ccddn4.icu
   type: ss
   udp: true
-- name: 182|江苏联通转美国AN[M][Trojan][倍率:0.8]
+- name: 214|江苏联通转美国AN[M][Trojan][倍率:0.8]
   password: ff9b0cf3-d742-34ce-bac7-51c3248e98a2
   port: 65206
   server: jscu.b3jg6a.ccddn4.icu
   sni: dl.jscuusan.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: 182|江苏联通转美国AN2[M][Trojan][倍率:0.8]
+- name: 214|江苏联通转美国AN2[M][Trojan][倍率:0.8]
   password: ff9b0cf3-d742-34ce-bac7-51c3248e98a2
   port: 65207
   server: jscu.b3jg6a.ccddn4.icu
   sni: dl.jscuusan2.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: 182|江苏联通转美国AN3[M][Trojan][倍率:0.8]
+- name: 214|江苏联通转美国AN3[M][Trojan][倍率:0.8]
   password: ff9b0cf3-d742-34ce-bac7-51c3248e98a2
   port: 65208
   server: jscu.b3jg6a.ccddn4.icu
   sni: dl.jscuusan3.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: 182|江苏联通转美国AN4[M][Trojan][倍率:0.8]
+- name: 214|江苏联通转美国AN4[M][Trojan][倍率:0.8]
   password: ff9b0cf3-d742-34ce-bac7-51c3248e98a2
   port: 65209
   server: jscu.b3jg6a.ccddn4.icu
@@ -2552,7 +2956,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 182|江苏联通转美国Cera[倍率:0.9]
+  name: 214|江苏联通转美国Cera[倍率:0.9]
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2562,7 +2966,7 @@ proxies:
   server: jscu.b3jg6a.ccddn4.icu
   type: ss
   udp: true
-- name: 182|江苏联通转美国Cera2[Trojan][倍率:0.9]
+- name: 214|江苏联通转美国Cera2[Trojan][倍率:0.9]
   password: ff9b0cf3-d742-34ce-bac7-51c3248e98a2
   port: 65222
   server: jscu.b3jg6a.ccddn4.icu
@@ -2570,7 +2974,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 182|江苏联通转美国DP[M][倍率:0.8]
+  name: 214|江苏联通转美国DP[M][倍率:0.8]
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2581,7 +2985,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 182|江苏联通转美国DP2[M][倍率:0.8]
+  name: 214|江苏联通转美国DP2[M][倍率:0.8]
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2591,7 +2995,7 @@ proxies:
   server: jscu.b3jg6a.ccddn4.icu
   type: ss
   udp: true
-- name: 182|江苏联通转美国TE[M][Trojan][倍率:0.8]
+- name: 214|江苏联通转美国TE[M][Trojan][倍率:0.8]
   password: ff9b0cf3-d742-34ce-bac7-51c3248e98a2
   port: 65213
   server: jscu.b3jg6a.ccddn4.icu
@@ -2599,7 +3003,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '183|安徽联通转美国AN2[M][倍率:0.8] #1'
+  name: '215|安徽联通转美国AN2[M][倍率:0.8] #1'
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2609,14 +3013,14 @@ proxies:
   server: ahcu.k1ka52.ccddn4.icu
   type: ss
   udp: true
-- name: '183|安徽联通转美国AN4[M][Trojan][倍率:0.8] #1'
+- name: '215|安徽联通转美国AN4[M][Trojan][倍率:0.8] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65303
   server: ahcu.k1ka52.ccddn4.icu
   sni: dl.hncuusan4.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: '183|安徽联通转美国AN6[M][Trojan][倍率:0.8] #1'
+- name: '215|安徽联通转美国AN6[M][Trojan][倍率:0.8] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65306
   server: ahcu.k1ka52.ccddn4.icu
@@ -2624,7 +3028,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '183|安徽联通转美国AN7[M][倍率:0.8] #1'
+  name: '215|安徽联通转美国AN7[M][倍率:0.8] #1'
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2634,14 +3038,14 @@ proxies:
   server: ahcu.k1ka52.ccddn4.icu
   type: ss
   udp: true
-- name: '183|安徽联通转美国Cera[Trojan][倍率:0.9] #1'
+- name: '215|安徽联通转美国Cera[Trojan][倍率:0.9] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65164
   server: ahcu.k1ka52.ccddn4.icu
   sni: dl.ahcuuscera.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: '183|安徽联通转美国Cera2[Trojan][倍率:0.9] #1'
+- name: '215|安徽联通转美国Cera2[Trojan][倍率:0.9] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65165
   server: ahcu.k1ka52.ccddn4.icu
@@ -2649,7 +3053,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '183|安徽联通转美国Cera3[倍率:0.9] #1'
+  name: '215|安徽联通转美国Cera3[倍率:0.9] #1'
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2660,7 +3064,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '183|安徽联通转美国Cera4[倍率:0.9] #1'
+  name: '215|安徽联通转美国Cera4[倍率:0.9] #1'
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2670,14 +3074,14 @@ proxies:
   server: ahcu.k1ka52.ccddn4.icu
   type: ss
   udp: true
-- name: '183|安徽联通转美国DP[M][Trojan][倍率:0.8] #1'
+- name: '215|安徽联通转美国DP[M][Trojan][倍率:0.8] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65162
   server: ahcu.k1ka52.ccddn4.icu
   sni: dl.ahcuusdp.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: '183|安徽联通转美国DP2[M][Trojan][倍率:0.8] #1'
+- name: '215|安徽联通转美国DP2[M][Trojan][倍率:0.8] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65163
   server: ahcu.k1ka52.ccddn4.icu
@@ -2685,7 +3089,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '183|安徽联通转美国DP3[M][倍率:0.8] #1'
+  name: '215|安徽联通转美国DP3[M][倍率:0.8] #1'
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2696,7 +3100,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '183|安徽联通转美国DP4[M][倍率:0.8] #1'
+  name: '215|安徽联通转美国DP4[M][倍率:0.8] #1'
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2707,7 +3111,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '183|安徽联通转美国TE[M][倍率:0.8] #1'
+  name: '215|安徽联通转美国TE[M][倍率:0.8] #1'
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2717,28 +3121,28 @@ proxies:
   server: ahcu.k1ka52.ccddn4.icu
   type: ss
   udp: true
-- name: '183|江苏联通转美国AN[M][Trojan][倍率:0.8] #1'
+- name: '215|江苏联通转美国AN[M][Trojan][倍率:0.8] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65206
   server: jscu.b3jg6a.ccddn4.icu
   sni: dl.jscuusan.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: '183|江苏联通转美国AN2[M][Trojan][倍率:0.8] #1'
+- name: '215|江苏联通转美国AN2[M][Trojan][倍率:0.8] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65207
   server: jscu.b3jg6a.ccddn4.icu
   sni: dl.jscuusan2.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: '183|江苏联通转美国AN3[M][Trojan][倍率:0.8] #1'
+- name: '215|江苏联通转美国AN3[M][Trojan][倍率:0.8] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65208
   server: jscu.b3jg6a.ccddn4.icu
   sni: dl.jscuusan3.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: '183|江苏联通转美国AN4[M][Trojan][倍率:0.8] #1'
+- name: '215|江苏联通转美国AN4[M][Trojan][倍率:0.8] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65209
   server: jscu.b3jg6a.ccddn4.icu
@@ -2746,7 +3150,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '183|江苏联通转美国Cera[倍率:0.9] #1'
+  name: '215|江苏联通转美国Cera[倍率:0.9] #1'
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2756,7 +3160,7 @@ proxies:
   server: jscu.b3jg6a.ccddn4.icu
   type: ss
   udp: true
-- name: '183|江苏联通转美国Cera2[Trojan][倍率:0.9] #1'
+- name: '215|江苏联通转美国Cera2[Trojan][倍率:0.9] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65222
   server: jscu.b3jg6a.ccddn4.icu
@@ -2764,7 +3168,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '183|江苏联通转美国DP[M][倍率:0.8] #1'
+  name: '215|江苏联通转美国DP[M][倍率:0.8] #1'
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2775,7 +3179,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '183|江苏联通转美国DP2[M][倍率:0.8] #1'
+  name: '215|江苏联通转美国DP2[M][倍率:0.8] #1'
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2785,7 +3189,7 @@ proxies:
   server: jscu.b3jg6a.ccddn4.icu
   type: ss
   udp: true
-- name: '183|江苏联通转美国TE[M][Trojan][倍率:0.8] #1'
+- name: '215|江苏联通转美国TE[M][Trojan][倍率:0.8] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65213
   server: jscu.b3jg6a.ccddn4.icu
@@ -2793,7 +3197,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '186,187,188,189|🇺🇸 USA 084 #3'
+  name: '218,219,220,221|🇺🇸 USA 084 #3'
   password: e6db72e9415e60e35892
   plugin: obfs
   plugin-opts:
@@ -2804,7 +3208,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '186,187,188,189|🇺🇸 USA 086 #3'
+  name: '218,219,220,221|🇺🇸 USA 086 #3'
   password: 4605c34b957ab8e1001b
   plugin: obfs
   plugin-opts:
@@ -2815,7 +3219,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '186,187,188,189|🇺🇸 USA 038 #3'
+  name: '218,219,220,221|🇺🇸 USA 038 #3'
   password: c1ee5895686790a383fb
   plugin: obfs
   plugin-opts:
@@ -2826,7 +3230,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '186,187,188,189|🇺🇸 USA 039 #3'
+  name: '218,219,220,221|🇺🇸 USA 039 #3'
   password: 2b7df6aadc759756b0cd
   plugin: obfs
   plugin-opts:
@@ -2837,7 +3241,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '186,187,188,189|🇺🇸 USA 040 #3'
+  name: '218,219,220,221|🇺🇸 USA 040 #3'
   password: 0a0fb8dbfb8cc2f25f02
   plugin: obfs
   plugin-opts:
@@ -2848,7 +3252,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '186,187,188,189|🇺🇸 USA 067 #3'
+  name: '218,219,220,221|🇺🇸 USA 067 #3'
   password: 8bf642be1622a09558bb
   plugin: obfs
   plugin-opts:
@@ -2859,7 +3263,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '186,187,188,189|🇺🇸 USA 069 #3'
+  name: '218,219,220,221|🇺🇸 USA 069 #3'
   password: 3938bfae997974860251
   plugin: obfs
   plugin-opts:
@@ -2870,7 +3274,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '186,187,188,189|🇺🇸 USA 026 #3'
+  name: '218,219,220,221|🇺🇸 USA 026 #3'
   password: 9d29e58723af34cad8da
   plugin: obfs
   plugin-opts:
@@ -2881,7 +3285,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '186,187,188,189|🇺🇸 USA 025 #3'
+  name: '218,219,220,221|🇺🇸 USA 025 #3'
   password: 97c3cf442df2d7099275
   plugin: obfs
   plugin-opts:
@@ -2893,7 +3297,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '190|美国-纽约-001 #28'
+  name: '222|美国-纽约-001 #28'
   network: ws
   port: 20337
   server: 166.1.228.206
@@ -2902,7 +3306,7 @@ proxies:
   uuid: 41cc36aa-dfb6-47bb-8e39-133ad5f2cd83
 - alterId: 0
   cipher: auto
-  name: '190|美国-拉斯维加斯-001 #28'
+  name: '222|美国-拉斯维加斯-001 #28'
   network: ws
   port: 443
   server: biazh.mmzhk.website
@@ -2912,7 +3316,7 @@ proxies:
   uuid: 41cc36aa-dfb6-47bb-8e39-133ad5f2cd83
 - alterId: 0
   cipher: auto
-  name: '190|美国-拉斯维加斯-002 #28'
+  name: '222|美国-拉斯维加斯-002 #28'
   network: ws
   port: 443
   server: pdizy.whmvmkwuey.store
@@ -2921,7 +3325,7 @@ proxies:
   udp: true
   uuid: 41cc36aa-dfb6-47bb-8e39-133ad5f2cd83
 - cipher: rc4-md5
-  name: 191|[v1] 美国・01
+  name: 223|[v1] 美国・01
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -2932,7 +3336,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 191|[v1] 美国・02
+  name: 223|[v1] 美国・02
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -2943,7 +3347,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 191|[v1] 美国・03
+  name: 223|[v1] 美国・03
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -2954,7 +3358,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 191|[v1] 美国・04
+  name: 223|[v1] 美国・04
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -2965,7 +3369,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 191|[v1] 美国・05
+  name: 223|[v1] 美国・05
   password: Paofu
   plugin: obfs
   plugin-opts:
