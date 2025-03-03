@@ -38,22 +38,6 @@ proxies:
   udp: true
   uuid: e1ad66b5-b62b-4cee-9f71-66c3ad3aaad6
   ws-opts: null
-- alterId: 0
-  cipher: auto
-  grpc-opts: null
-  h2-opts: null
-  http-opts: null
-  name: 1|德国-03
-  network: tcp
-  port: 45408
-  server: fa.fxlcn.com
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e1ad66b5-b62b-4cee-9f71-66c3ad3aaad6
-  ws-opts: null
 - down: 500
   name: 6|🇩🇪 Oracle 德国-Hy2
   password: 9f79211a-45c0-4810-80e0-0768f686a1da
@@ -111,7 +95,14 @@ proxies:
       Host: www.douyin.com
     path: /www.coursera.org?ed=1024
   ws-path: /www.coursera.org?ed=1024
-- name: 23|德国[B1]备用hy2
+- cipher: chacha20-ietf-poly1305
+  name: 16|🇩🇪 德国 01 | 1x DE
+  password: c2170e1d-4c60-422e-a0f6-edff342c9b5a
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 24|德国[B1]备用hy2
   password: a92716f0-ea87-436d-9296-3fab1248250d
   port: 50000
   server: akdg.hssl8088.icu
@@ -119,7 +110,7 @@ proxies:
   sni: akdg.hssl8088.icu
   type: hysteria2
   udp: true
-- name: '24|德国[B1]备用hy2 #1'
+- name: '25|德国[B1]备用hy2 #1'
   password: d227adad-d1c9-4218-aff4-773f0ce5ba1d
   port: 50000
   server: akdg.hssl8088.icu
@@ -127,20 +118,13 @@ proxies:
   sni: akdg.hssl8088.icu
   type: hysteria2
   udp: true
-- name: '25|德国[B1]备用hy2 #2'
+- name: '26|德国[B1]备用hy2 #2'
   password: bc4aa0d5-bab3-4198-bc6e-71a703dae55d
   port: 50000
   server: akdg.hssl8088.icu
   skip-cert-verify: true
   sni: akdg.hssl8088.icu
   type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇩🇪 德国 01 | 1x DE
-  password: 3e7acb81-8bfb-4597-af40-eead49c03617
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
   udp: true
 - alpn:
   - h3
@@ -225,6 +209,20 @@ proxies:
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  name: 85|🇩🇪德国1 💧 0.6x
+  password: a0d131b6-43e2-4bac-b5ff-b3979a574046
+  port: 36617
+  server: oz.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '86|🇩🇪德国1 💧 0.6x #1'
+  password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
+  port: 36617
+  server: oz.qsm1.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -289,7 +287,7 @@ proxies:
   name: 115|🇩🇪 德国S01
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 20054
-  server: mlx6c-g06.de01-ae5.entry.v50307shvkaa.art
+  server: js6vd-g06.de01-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - alterId: 0
@@ -452,19 +450,6 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 124|[公益] 启迪 德国 01 1x
-  network: ws
-  port: 8880
-  server: qidi.xn--drry30l.xyz
-  type: vmess
-  udp: true
-  uuid: 91b3507d-80ba-4c87-a4ff-cf29b7e0c63f
-  ws-opts:
-    headers:
-      Host: de.xn--drry30l.xyz
-    path: /qidi?ed=2560
 - grpc-opts:
     grpc-service-name: lsiadrughkhrt
   name: 130|疯德国高速65 (0.01x)
@@ -567,50 +552,12 @@ proxies:
   skip-cert-verify: true
   type: hysteria2
   udp: true
-- grpc-opts:
-    grpc-service-name: lsiadrughkhrt
-  name: '199,200|疯德国高速65 (0.01x) #2'
-  network: grpc
-  port: 443
-  server: uk1.998998.best
-  servername: server46.998877.best
+- down: 5000
+  name: '204|德国 #7'
+  password: d27f5980-4eac-4f98-925b-a76cf27ce038
+  port: 20281
+  server: de.lilil.eu.org
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 07b7b563-f868-49fb-943a-6425e3dc34d9
-- alterId: 0
-  cipher: auto
-  name: '199,200|疯德国73 (免费) #2'
-  network: ws
-  port: 443
-  server: eu9.998998.best
-  servername: server54-4.998877.best
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 07b7b563-f868-49fb-943a-6425e3dc34d9
-  ws-headers:
-    Host: server54-4.998877.best
-  ws-opts:
-    headers:
-      Host: server54-4.998877.best
-    path: /jsedr6deersed6h?ed=2560
-  ws-path: /jsedr6deersed6h?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '220,221|🇩🇪德国 #2'
-  network: ws
-  port: 2086
-  server: qrzv.youxuan.wiki
-  type: vless
-  udp: true
-  uuid: 4c0109f7-e002-410a-b37d-a56b391237a5
-  ws-headers:
-    Host: de.youxuan.wiki
-  ws-opts:
-    headers:
-      Host: de.youxuan.wiki
-    path: /youxuan
-  ws-path: /youxuan
+  sni: de.lilil.eu.org
+  type: hysteria2
+  up: 5000
