@@ -162,42 +162,10 @@ proxies:
   server: us1.acxylm.top
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 5|?? 美国 - 1
-  network: ws
-  port: 80
-  server: 5a1bb7.858c-3f8a-cadc.cfd
-  type: vmess
-  udp: true
-  uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
-  ws-headers:
-    Host: us01s.858c-3f8a-cadc.cfd
-  ws-opts:
-    headers:
-      Host: us01s.858c-3f8a-cadc.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 5|?? 美国 - 3
-  network: ws
-  port: 80
-  server: 5a1bb7.858c-3f8a-cadc.cfd
-  type: vmess
-  udp: true
-  uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
-  ws-headers:
-    Host: us03s.858c-3f8a-cadc.cfd
-  ws-opts:
-    headers:
-      Host: us03s.858c-3f8a-cadc.cfd
-    path: /
-  ws-path: /
 - down: 500
   name: 6|🇺🇸 USA 02-Hy2
   password: 9f79211a-45c0-4810-80e0-0768f686a1da
-  port: 40651
+  port: 41081
   ports: 20000-50000
   server: akuslax90.mmaccc.top
   skip-cert-verify: true
@@ -207,7 +175,7 @@ proxies:
 - down: 500
   name: 6|🇺🇸 USA 03-Hy2
   password: 9f79211a-45c0-4810-80e0-0768f686a1da
-  port: 35028
+  port: 42137
   ports: 30000-50000
   server: buylas.mmaccc.top
   skip-cert-verify: true
@@ -518,7 +486,21 @@ proxies:
   sni: niubi.pandafly.site
   type: hysteria2
   up: 1000
-- name: 23|美国[B2]备用hy2
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇺🇸美国 01 | 1x US Los Angeles
+  password: f9567a6a-1f34-4969-a090-544681c7d0af
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇺🇸美国 03 | 1x US Washington
+  password: f9567a6a-1f34-4969-a090-544681c7d0af
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 24|美国[B2]备用hy2
   password: a92716f0-ea87-436d-9296-3fab1248250d
   port: 50000
   server: mg02.hssl8088.icu
@@ -526,7 +508,7 @@ proxies:
   sni: mg02.hssl8088.icu
   type: hysteria2
   udp: true
-- name: '24|美国[B2]备用hy2 #1'
+- name: '25|美国[B2]备用hy2 #1'
   password: d227adad-d1c9-4218-aff4-773f0ce5ba1d
   port: 50000
   server: mg02.hssl8088.icu
@@ -534,34 +516,13 @@ proxies:
   sni: mg02.hssl8088.icu
   type: hysteria2
   udp: true
-- name: '25|美国[B2]备用hy2 #2'
+- name: '26|美国[B2]备用hy2 #2'
   password: bc4aa0d5-bab3-4198-bc6e-71a703dae55d
   port: 50000
   server: mg02.hssl8088.icu
   skip-cert-verify: true
   sni: mg02.hssl8088.icu
   type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 5b5d6a65-3617-41c8-827e-40d5cd80f323
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 5b5d6a65-3617-41c8-827e-40d5cd80f323
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇺🇸 美国 03 | 1x US Washington
-  password: 5b5d6a65-3617-41c8-827e-40d5cd80f323
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
   udp: true
 - cipher: aes-256-cfb
   name: 33|🇺🇸 US
@@ -592,16 +553,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 43,91|🇺🇸5 |  2.1MB/s
+- name: 43|🇺🇸 美国 东洛杉矶
   network: ws
   port: 8880
   server: 154.83.2.228
   servername: redw.pooriam.ir
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vless
-  udp: true
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
@@ -642,21 +602,11 @@ proxies:
   cipher: auto
   name: 47|美国-纽约-001
   network: ws
-  port: 21342
+  port: 20000
   server: 207.90.238.136
   type: vmess
   udp: true
   uuid: e5a63557-9587-4695-804b-537e2dbfa2b3
-- down: 15
-  name: 47|美国-纽约-HY-001
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: e5a63557-9587-4695-804b-537e2dbfa2b3
-  port: 29156
-  server: 207.90.238.136
-  skip-cert-verify: true
-  type: hysteria2
-  up: 15
 - alterId: 0
   cipher: auto
   name: 47|美国-拉斯维加斯-001
@@ -681,21 +631,11 @@ proxies:
   cipher: auto
   name: '48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64|美国-纽约-001 #17'
   network: ws
-  port: 21342
+  port: 20000
   server: 207.90.238.136
   type: vmess
   udp: true
   uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
-- down: 1
-  name: '48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64|美国-纽约-HY-001 #17'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
-  port: 29156
-  server: 207.90.238.136
-  skip-cert-verify: true
-  type: hysteria2
-  up: 1
 - alterId: 0
   cipher: auto
   name: '48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64|美国-拉斯维加斯-001 #17'
@@ -720,21 +660,11 @@ proxies:
   cipher: auto
   name: '65|美国-纽约-001 #18'
   network: ws
-  port: 21342
+  port: 20000
   server: 207.90.238.136
   type: vmess
   udp: true
   uuid: 219e2f40-759b-4e00-9d4b-4bd588e5b84e
-- down: 15
-  name: '65|美国-纽约-HY-001 #18'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 219e2f40-759b-4e00-9d4b-4bd588e5b84e
-  port: 29156
-  server: 207.90.238.136
-  skip-cert-verify: true
-  type: hysteria2
-  up: 15
 - alterId: 0
   cipher: auto
   name: '65|美国-拉斯维加斯-001 #18'
@@ -759,21 +689,11 @@ proxies:
   cipher: auto
   name: '66|美国-纽约-001 #19'
   network: ws
-  port: 21342
+  port: 20000
   server: 207.90.238.136
   type: vmess
   udp: true
   uuid: d1037421-3977-4cae-8462-0c7d22745e84
-- down: 15
-  name: '66|美国-纽约-HY-001 #19'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: d1037421-3977-4cae-8462-0c7d22745e84
-  port: 29156
-  server: 207.90.238.136
-  skip-cert-verify: true
-  type: hysteria2
-  up: 15
 - alterId: 0
   cipher: auto
   name: '66|美国-拉斯维加斯-001 #19'
@@ -798,21 +718,11 @@ proxies:
   cipher: auto
   name: '67|美国-纽约-001 #20'
   network: ws
-  port: 21342
+  port: 20000
   server: 207.90.238.136
   type: vmess
   udp: true
   uuid: 7d3dea75-4636-4de5-bf3b-47ccc3411434
-- down: 15
-  name: '67|美国-纽约-HY-001 #20'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 7d3dea75-4636-4de5-bf3b-47ccc3411434
-  port: 29156
-  server: 207.90.238.136
-  skip-cert-verify: true
-  type: hysteria2
-  up: 15
 - alterId: 0
   cipher: auto
   name: '67|美国-拉斯维加斯-001 #20'
@@ -837,21 +747,11 @@ proxies:
   cipher: auto
   name: '68|美国-纽约-001 #21'
   network: ws
-  port: 21342
+  port: 20000
   server: 207.90.238.136
   type: vmess
   udp: true
   uuid: 791a9aad-1a8b-435d-862e-627f41025d73
-- down: 15
-  name: '68|美国-纽约-HY-001 #21'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 791a9aad-1a8b-435d-862e-627f41025d73
-  port: 29156
-  server: 207.90.238.136
-  skip-cert-verify: true
-  type: hysteria2
-  up: 15
 - alterId: 0
   cipher: auto
   name: '68|美国-拉斯维加斯-001 #21'
@@ -876,21 +776,11 @@ proxies:
   cipher: auto
   name: '69|美国-纽约-001 #22'
   network: ws
-  port: 21342
+  port: 20000
   server: 207.90.238.136
   type: vmess
   udp: true
   uuid: 363d0358-29c1-4319-9210-1b335b171501
-- down: 1
-  name: '69|美国-纽约-HY-001 #22'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 363d0358-29c1-4319-9210-1b335b171501
-  port: 29156
-  server: 207.90.238.136
-  skip-cert-verify: true
-  type: hysteria2
-  up: 1
 - alterId: 0
   cipher: auto
   name: '69|美国-拉斯维加斯-001 #22'
@@ -915,21 +805,11 @@ proxies:
   cipher: auto
   name: '70|美国-纽约-001 #23'
   network: ws
-  port: 21342
+  port: 20000
   server: 207.90.238.136
   type: vmess
   udp: true
   uuid: f5dc8f26-f472-4089-82f8-7af58ea887d3
-- down: 35
-  name: '70|美国-纽约-HY-001 #23'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: f5dc8f26-f472-4089-82f8-7af58ea887d3
-  port: 29156
-  server: 207.90.238.136
-  skip-cert-verify: true
-  type: hysteria2
-  up: 35
 - alterId: 0
   cipher: auto
   name: '70|美国-拉斯维加斯-001 #23'
@@ -954,21 +834,11 @@ proxies:
   cipher: auto
   name: '71|美国-纽约-001 #24'
   network: ws
-  port: 21342
+  port: 20000
   server: 207.90.238.136
   type: vmess
   udp: true
   uuid: 70166ce6-326f-4b67-a296-a3253d8090fb
-- down: 100
-  name: '71|美国-纽约-HY-001 #24'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 70166ce6-326f-4b67-a296-a3253d8090fb
-  port: 29156
-  server: 207.90.238.136
-  skip-cert-verify: true
-  type: hysteria2
-  up: 100
 - alterId: 0
   cipher: auto
   name: '71|美国-拉斯维加斯-001 #24'
@@ -993,21 +863,11 @@ proxies:
   cipher: auto
   name: '72,73|美国-纽约-001 #26'
   network: ws
-  port: 21342
+  port: 20000
   server: 207.90.238.136
   type: vmess
   udp: true
   uuid: fceff025-b4ea-4fd2-9093-151b3bd503cd
-- down: 15
-  name: '72,73|美国-纽约-HY-001 #26'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: fceff025-b4ea-4fd2-9093-151b3bd503cd
-  port: 29156
-  server: 207.90.238.136
-  skip-cert-verify: true
-  type: hysteria2
-  up: 15
 - alterId: 0
   cipher: auto
   name: '72,73|美国-拉斯维加斯-001 #26'
@@ -1182,6 +1042,62 @@ proxies:
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  name: 84|🇺🇸美国1 💧 1x
+  password: a0d131b6-43e2-4bac-b5ff-b3979a574046
+  port: 48491
+  server: jp2.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 84|🇺🇸美国2 💧 1x
+  password: a0d131b6-43e2-4bac-b5ff-b3979a574046
+  port: 48492
+  server: jp2.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 84|🇺🇸美国3 💧 1x
+  password: a0d131b6-43e2-4bac-b5ff-b3979a574046
+  port: 45768
+  server: jp3.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 84|🇺🇸美国4 💧 1x
+  password: a0d131b6-43e2-4bac-b5ff-b3979a574046
+  port: 45960
+  server: jp4.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '85|🇺🇸美国1 💧 1x #1'
+  password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
+  port: 48491
+  server: jp2.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '85|🇺🇸美国2 💧 1x #1'
+  password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
+  port: 48492
+  server: jp2.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '85|🇺🇸美国3 💧 1x #1'
+  password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
+  port: 45768
+  server: jp3.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '85|🇺🇸美国4 💧 1x #1'
+  password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
+  port: 45960
+  server: jp4.qsm1.xyz
+  type: ss
+  udp: true
 - name: 87|美国H02直连Hysteria2
   password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
   port: 8080
@@ -1245,74 +1161,120 @@ proxies:
   sni: hyfnus02.767887.xyz
   type: hysteria2
   udp: true
-- name: 91|🇺🇸1 |  3.1MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 91|🇺🇸1 |  5.6MB/s
+  password: amazonskr05
   port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 91|🇺🇸2 |  1.5MB/s
-  network: ws
-  port: 8880
-  server: 154.83.2.156
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
+  server: 18.236.101.195
+  type: ss
   udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 91|🇺🇸3 |  6.2MB/s
-  password: myszy28811
-  port: 28811
-  server: pipi.myddns.me
-  type: socks5
-  udp: true
-  username: myszy
-- name: 91|🇺🇸4 |  4.7MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: usgp3-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: usgp3-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 91|🇺🇸6 |  3.5MB/s
-  network: ws
-  port: 8880
-  server: 154.83.2.230
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- delay: 1966
-  name: 91|🇺🇸7 |  1.8MB/s
-  network: ws
-  port: 443
-  server: 104.16.195.32
-  servername: c01.ylkszy.eu.org
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 55 Mbps
+  name: 91|🇺🇸2 |  6.1MB/s
+  port: 17549
+  server: 208.87.243.151
   skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 11 Mbps
+- alterId: 2
+  cipher: auto
+  name: 91|🇺🇸3 |  1.7MB/s
+  network: ws
+  port: 23615
+  server: 15.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 741ad2be-59ee-3607-be11-59f4a2a87929
+  ws-opts:
+    headers:
+      Host: 15.mamamajd.site
+    path: /
+- client-fingerprint: chrome
+  name: 91|🇺🇸4 |  1.9MB/s
+  network: ws
+  port: 443
+  server: 31.22.116.185
+  servername: usb.kobtty.me
+  tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 1b12594c-6f7a-4282-a9e5-69979762ab93
   ws-opts:
     headers:
-      Host: c01.ylkszy.eu.org
-    path: /?ed=2560
+      Host: usb.kobtty.me
+    path: /bing
+- client-fingerprint: chrome
+  name: 91|🇺🇸5 |  3.6MB/s
+  network: ws
+  port: 443
+  server: 193.9.49.241
+  servername: eua.kobtty.me
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: cd01db3b-4b0a-4718-98dd-1d38f55be03f
+  ws-opts:
+    headers:
+      Host: eua.kobtty.me
+    path: /bing
+- cipher: aes-256-cfb
+  name: 91|🇺🇸6 |  1.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.143.186.182
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 91|🇺🇸7 |  4.1MB/s
+  network: ws
+  port: 23618
+  server: 18.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 741ad2be-59ee-3607-be11-59f4a2a87929
+  ws-opts:
+    headers:
+      Host: 18.mamamajd.site
+    path: /
+- name: 91|🇺🇸8 |  6.0MB/s
+  network: ws
+  port: 80
+  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- alterId: 2
+  cipher: auto
+  name: 91|🇺🇸9 |  5.1MB/s
+  network: ws
+  port: 23616
+  server: 16.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 741ad2be-59ee-3607-be11-59f4a2a87929
+  ws-opts:
+    headers:
+      Host: 16.mamamajd.site
+    path: /
 - name: 94|US美国1
   password: ec9dcfee-f542-4263-9b90-d52c46b72f59
   port: 3330
@@ -1497,33 +1459,19 @@ proxies:
   name: 114|🇺🇲 美国S01
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 20014
-  server: vpwvk-g06.us01-ae5.entry.v50307shvkaa.art
+  server: 56af2-g06.us01-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 114|🇺🇲 美国S02
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 20019
-  server: p1sr4-g06.us02-ae5.entry.v50307shvkaa.art
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 122|🇺🇸美国 01 | 1x US Los Angeles
-  password: f2e22b1f-f6f7-4328-bd22-f4ccaf098ff4
-  port: 31211
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 122|🇺🇸美国 03 | 1x US Washington
-  password: f2e22b1f-f6f7-4328-bd22-f4ccaf098ff4
-  port: 31215
-  server: free.2apzhfa.xyz
+  server: eahnc-g06.us02-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - grpc-opts:
     grpc-service-name: pweo5ty89hinsgdiulo
-  name: 130|疯美国39 (0.01x)
+  name: 129|疯美国39 (0.01x)
   network: grpc
   port: 443
   server: us7.998998.best
@@ -1533,7 +1481,7 @@ proxies:
   type: vless
   udp: true
   uuid: 9e5ca724-3fc3-4247-b51a-b95d018ef97f
-- name: 130|疯美国51 (0.01x)
+- name: 129|疯美国51 (0.01x)
   network: ws
   port: 443
   server: us8.998998.best
@@ -1549,7 +1497,7 @@ proxies:
       Host: server38.998877.best
     max-early-data: 2560
     path: /se4tg9o8yti?ed=2560
-- name: 130|疯美国高速52 (0.01x)
+- name: 129|疯美国高速52 (0.01x)
   network: ws
   port: 8443
   server: us6.998998.best
@@ -1567,7 +1515,7 @@ proxies:
     path: /drtgoiuy/fd?ed=2560
 - grpc-opts:
     grpc-service-name: pserhgiousfh
-  name: 130|疯美国高速71 (0.02x)
+  name: 129|疯美国高速71 (0.02x)
   network: grpc
   port: 443
   server: us17.998998.best
@@ -1577,7 +1525,7 @@ proxies:
   type: vless
   udp: true
   uuid: 9e5ca724-3fc3-4247-b51a-b95d018ef97f
-- name: 130|疯美国高速75 (0.01x)
+- name: 129|疯美国高速75 (0.01x)
   network: ws
   port: 443
   server: us20.998998.best
@@ -1595,7 +1543,7 @@ proxies:
     path: /sertht?ed=2560
 - grpc-opts:
     grpc-service-name: sreipsthpi
-  name: 130|疯美国高速81 (0.02x)
+  name: 129|疯美国高速81 (0.02x)
   network: grpc
   port: 443
   server: us23.998998.best
@@ -1607,7 +1555,7 @@ proxies:
   uuid: 9e5ca724-3fc3-4247-b51a-b95d018ef97f
 - alterId: 0
   cipher: auto
-  name: 130|疯美国高速6 (0.01x)
+  name: 129|疯美国高速6 (0.01x)
   network: ws
   port: 443
   server: us16.998998.best
@@ -1626,7 +1574,7 @@ proxies:
   ws-path: /rksdnuhgteb?ed=2560
 - alterId: 0
   cipher: auto
-  name: 130|疯美国高速10 (0.01x)
+  name: 129|疯美国高速10 (0.01x)
   network: ws
   port: 443
   server: us19.998998.best
@@ -1645,52 +1593,52 @@ proxies:
   ws-path: /er5khymbnriysb?ed=2560
 - alterId: 0
   cipher: auto
-  name: 130|疯美国高速87 (0.01x)
+  name: 129|疯美国高速87 (0.01x)
   network: ws
   port: 443
   server: us2.998998.best
-  servername: serverus1-1.998877.best
+  servername: server1.99887766.best
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
   uuid: 9e5ca724-3fc3-4247-b51a-b95d018ef97f
   ws-headers:
-    Host: serverus1-1.998877.best
+    Host: server1.99887766.best
   ws-opts:
     headers:
-      Host: serverus1-1.998877.best
-    path: /e56yglr4i8j7nk?ed=2560
-  ws-path: /e56yglr4i8j7nk?ed=2560
+      Host: server1.99887766.best
+    path: /whgoiyu4ngehyt?ed=2560
+  ws-path: /whgoiyu4ngehyt?ed=2560
 - cipher: aes-128-gcm
-  name: 131|美国-1
+  name: 130|美国-1
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
   port: 40016
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 131|美国-2
+  name: 130|美国-2
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
   port: 40017
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 131|美国-3
+  name: 130|美国-3
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
   port: 40018
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 131|美国-4
+  name: 130|美国-4
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
   port: 40019
   server: lh2.node-is.green
   type: ss
   udp: true
-- name: 131|Trojan-美国1 | 低倍率
+- name: 130|Trojan-美国1 | 低倍率
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
   port: 10116
   server: cc.rk1.node-is.green
@@ -1698,33 +1646,17 @@ proxies:
   sni: lhus1.bilibili.com
   type: trojan
   udp: true
-- name: 131|Trojan-美国2 | 低倍率
+- name: 130|Trojan-美国2 | 低倍率
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
-  port: 47156
-  server: 8e38761f0c61bc9b1b3eda6bafb76e27.lh.gtm.node-is.green
+  port: 41553
+  server: 4d1ca2293edbbbe3ca7994c85c067b43.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: lhus1.bilibili.com
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: '133|🇺🇸 美国1 #1'
-  network: ws
-  port: 80
-  server: 5a1bb7.858c-3f8a-cadc.cfd
-  type: vmess
-  udp: true
-  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
-  ws-headers:
-    Host: us01s.858c-3f8a-cadc.cfd
-  ws-opts:
-    headers:
-      Host: us01s.858c-3f8a-cadc.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 133|🇺🇸 美国2
+  name: 132|🇺🇸 美国2
   network: ws
   port: 80
   server: 5a1bb7.858c-3f8a-cadc.cfd
@@ -1740,7 +1672,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 133|🇺🇸 美国3
+  name: 132|🇺🇸 美国3
   network: ws
   port: 80
   server: 5a1bb7.858c-3f8a-cadc.cfd
@@ -1756,39 +1688,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 133|🇺🇸 美国4
-  network: ws
-  port: 80
-  server: 5a1bb7.858c-3f8a-cadc.cfd
-  type: vmess
-  udp: true
-  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
-  ws-headers:
-    Host: us04s.858c-3f8a-cadc.cfd
-  ws-opts:
-    headers:
-      Host: us04s.858c-3f8a-cadc.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '134|🇺🇸 美国1 #2'
-  network: ws
-  port: 80
-  server: 5a1bb7.858c-3f8a-cadc.cfd
-  type: vmess
-  udp: true
-  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
-  ws-headers:
-    Host: us01s.858c-3f8a-cadc.cfd
-  ws-opts:
-    headers:
-      Host: us01s.858c-3f8a-cadc.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '134|🇺🇸 美国2 #1'
+  name: '133|🇺🇸 美国2 #1'
   network: ws
   port: 80
   server: 5a1bb7.858c-3f8a-cadc.cfd
@@ -1804,7 +1704,23 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '134|🇺🇸 美国4 #1'
+  name: '133|🇺🇸 美国3 #1'
+  network: ws
+  port: 80
+  server: 5a1bb7.858c-3f8a-cadc.cfd
+  type: vmess
+  udp: true
+  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
+  ws-headers:
+    Host: us03s.858c-3f8a-cadc.cfd
+  ws-opts:
+    headers:
+      Host: us03s.858c-3f8a-cadc.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '133|🇺🇸 美国4 #1'
   network: ws
   port: 80
   server: 5a1bb7.858c-3f8a-cadc.cfd
@@ -1818,21 +1734,21 @@ proxies:
       Host: us04s.858c-3f8a-cadc.cfd
     path: /
   ws-path: /
-- name: 137|🇺🇸|美国-隧道 02
+- name: 136|🇺🇸|美国-隧道 02
   password: 2db71c8f-b7d3-4272-b868-2f7c92b395d1
   port: 8210
   server: R1.tube-cat.com
   sni: us.catxstar.com
   type: trojan
   udp: true
-- name: '138|🇺🇸|美国-隧道 02 #1'
+- name: '137|🇺🇸|美国-隧道 02 #1'
   password: fe0b59ec-6af0-45db-9509-4c66b464af2e
   port: 8210
   server: R1.tube-cat.com
   sni: us.catxstar.com
   type: trojan
   udp: true
-- name: 138|🇺🇸|美国-随机家庭IP 01 5倍消耗
+- name: 137|🇺🇸|美国-随机家庭IP 01 5倍消耗
   password: fe0b59ec-6af0-45db-9509-4c66b464af2e
   port: 20042
   server: IEPL.tube-cat.com
@@ -1840,7 +1756,7 @@ proxies:
   sni: us.catxstar.com
   type: trojan
   udp: true
-- name: 138|🇺🇸|美国-随机家庭IP 02 5倍消耗
+- name: 137|🇺🇸|美国-随机家庭IP 02 5倍消耗
   password: fe0b59ec-6af0-45db-9509-4c66b464af2e
   port: 20050
   server: IEPL.tube-cat.com
@@ -1848,14 +1764,14 @@ proxies:
   sni: us.catxstar.com
   type: trojan
   udp: true
-- name: '139,140|🇺🇸|美国-隧道 02 #3'
+- name: '138,139|🇺🇸|美国-隧道 02 #3'
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
   port: 8210
   server: R1.tube-cat.com
   sni: us.catxstar.com
   type: trojan
   udp: true
-- name: '139,140|🇺🇸|美国-随机家庭IP 01 5倍消耗 #2'
+- name: '138,139|🇺🇸|美国-随机家庭IP 01 5倍消耗 #2'
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
   port: 20042
   server: IEPL.tube-cat.com
@@ -1863,7 +1779,7 @@ proxies:
   sni: us.catxstar.com
   type: trojan
   udp: true
-- name: '139,140|🇺🇸|美国-随机家庭IP 02 5倍消耗 #2'
+- name: '138,139|🇺🇸|美国-随机家庭IP 02 5倍消耗 #2'
   password: 3241798e-448c-4a35-8e08-439fcc0fcc2d
   port: 20050
   server: IEPL.tube-cat.com
@@ -1871,7 +1787,7 @@ proxies:
   sni: us.catxstar.com
   type: trojan
   udp: true
-- name: '141|🇺🇸|美国-隧道 02 #4'
+- name: '140|🇺🇸|美国-隧道 02 #4'
   password: c03b5a06-cc76-4b47-af5f-5d1159892e6d
   port: 8210
   server: R1.tube-cat.com
@@ -1881,7 +1797,7 @@ proxies:
 - alpn:
   - ''
   client-fingerprint: random
-  name: '142,143,144,145,146,147|剩余流量:999.00GB #5'
+  name: '141,142,143,144,145,146|剩余流量:999.00GB #5'
   network: ws
   port: 8443
   server: 192.9.246.112
@@ -1897,7 +1813,7 @@ proxies:
 - alpn:
   - ''
   client-fingerprint: random
-  name: '142,143,144,145,146,147|US2_free_风屿Link #5'
+  name: '141,142,143,144,145,146|US2_free_风屿Link #5'
   network: ws
   port: 8443
   server: 192.9.246.112
@@ -1910,6 +1826,27 @@ proxies:
     headers:
       Host: 159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com
     path: '%2Ffylink.pages.dev%2FproxyIP%3Dproxyip.aliyun.fxxk.dedyn.io'
+- cipher: chacha20-ietf-poly1305
+  name: 147|🇺🇸 美国 01 | 1x US Los Angeles
+  password: fc45304d-e531-4ee7-8c94-c96e5de286e7
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 147|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: fc45304d-e531-4ee7-8c94-c96e5de286e7
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 147|🇺🇸 美国 03 | 1x US Washington
+  password: fc45304d-e531-4ee7-8c94-c96e5de286e7
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 148|🇺🇸 US 01
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
@@ -2524,8 +2461,8 @@ proxies:
   udp: true
 - name: '187|Trojan-美国2 | 低倍率 #1'
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
-  port: 40058
-  server: 30ff36e3fcd69a2e1eb9aa3862cf52b9.lh.gtm.node-is.green
+  port: 48890
+  server: 97a7ddb3b5c3f03ec7944b3d6238e9fd.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcus1.bilibili.com
   type: trojan
@@ -2568,8 +2505,8 @@ proxies:
   udp: true
 - name: '188|Trojan-美国2 | 低倍率 #2'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
-  port: 42442
-  server: 2f7647b98a37641389002ed53c0df85f.lh.gtm.node-is.green
+  port: 48840
+  server: 8a85b1e5e2b2a2667858ff8f3deaa221.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcus1.bilibili.com
   type: trojan
@@ -2612,8 +2549,8 @@ proxies:
   udp: true
 - name: '189|Trojan-美国2 | 低倍率 #3'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
-  port: 49017
-  server: f7151cf4e4dcf2c5d7c068750d7fb47d.lh.gtm.node-is.green
+  port: 43783
+  server: 94027bec0dadaebc3af0bd00c1e1dec9.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcus1.bilibili.com
   type: trojan
@@ -2656,8 +2593,8 @@ proxies:
   udp: true
 - name: '190|Trojan-美国2 | 低倍率 #4'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
-  port: 49166
-  server: 1f1a2e8575667e2828be6d614a30b297.lh.gtm.node-is.green
+  port: 47205
+  server: e0e90befa864ece94038e02906116a69.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcus1.bilibili.com
   type: trojan
