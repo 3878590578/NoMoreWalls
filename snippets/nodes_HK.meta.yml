@@ -182,6 +182,22 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 5|?? 香港 - 1
+  network: ws
+  port: 80
+  server: 24b7ca.8bf8-666b-1f85.cfd
+  type: vmess
+  udp: true
+  uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
+  ws-headers:
+    Host: hk01s.8bf8-666b-1f85.cfd
+  ws-opts:
+    headers:
+      Host: hk01s.8bf8-666b-1f85.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 5|?? 香港 - 2
   network: ws
   port: 80
@@ -341,8 +357,22 @@ proxies:
   server: hks02.365003.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 16|🇭🇰 香港 02 | 1x HK
+  password: 1dc675f1-5800-456e-9a27-1a38d468117b
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 16|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 1dc675f1-5800-456e-9a27-1a38d468117b
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - down: 0
-  name: 18|🇭🇰 香港【负载均衡】
+  name: 19|🇭🇰 香港【负载均衡】
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 54521
   server: kr3.bethebest.eu.org
@@ -350,7 +380,7 @@ proxies:
   type: hysteria2
   up: 0
 - down: 0
-  name: 18|🇭🇰 香港2
+  name: 19|🇭🇰 香港2
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: hk7.bethebest.eu.org
@@ -358,7 +388,7 @@ proxies:
   type: hysteria2
   up: 0
 - down: 0
-  name: 18|🇭🇰 香港3
+  name: 19|🇭🇰 香港3
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: hk4.bethebest.eu.org
@@ -366,7 +396,7 @@ proxies:
   type: hysteria2
   up: 0
 - down: 0
-  name: 18|🇭🇰 香港4
+  name: 19|🇭🇰 香港4
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: hk5.bethebest.eu.org
@@ -374,7 +404,7 @@ proxies:
   type: hysteria2
   up: 0
 - down: 0
-  name: 18|🇭🇰 香港5
+  name: 19|🇭🇰 香港5
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: hk6.bethebest.eu.org
@@ -382,7 +412,7 @@ proxies:
   type: hysteria2
   up: 0
 - down: 1000
-  name: 21|🇭🇰香港04
+  name: 22|🇭🇰香港04
   password: 0755ae27-3fda-4802-869f-0ffbda05fff2
   port: 52890
   server: 107.174.52.160
@@ -391,7 +421,7 @@ proxies:
   type: hysteria2
   up: 1000
 - down: 1000
-  name: '22|🇭🇰香港04 #1'
+  name: '23|🇭🇰香港04 #1'
   password: dc55f78c-43f5-4cb2-af10-2b7615607581
   port: 52890
   server: 107.174.52.160
@@ -399,13 +429,6 @@ proxies:
   sni: niubi.pandafly.site
   type: hysteria2
   up: 1000
-- cipher: chacha20-ietf-poly1305
-  name: 23|🇭🇰香港 02 | 1x HK
-  password: 90c9817f-8e6c-44ea-ac25-37278e951277
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - name: 24|香港[B1]备用hy2
   password: a92716f0-ea87-436d-9296-3fab1248250d
   port: 50000
@@ -431,17 +454,10 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港 02 | 1x HK
-  password: d062bf43-ebad-4ad2-9aeb-bc9824cc4981
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇭🇰 香港住宅IP 03 | 1x HK
-  password: d062bf43-ebad-4ad2-9aeb-bc9824cc4981
-  port: 36145
-  server: free.2weradf.xyz
+  name: 28|🇭🇰香港 02 | 1x HK
+  password: 53997698-4a1d-4ea1-ace0-88e9fa1920e5
+  port: 31143
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -1041,6 +1057,15 @@ proxies:
   sni: 2jp04162531be-29a9-2764-8627-51a5f4436fbd.233235.xyz
   type: trojan
   udp: true
+- name: 92|🇭🇰1 |  6.1MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: hkre1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: hkre1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - cipher: chacha20-ietf-poly1305
   name: 93|公益路线1-香港HK 限速50Mbps
   password: 3c0a4b5f-4e49-4876-9b88-a5be67f73ba9
@@ -1147,28 +1172,28 @@ proxies:
   name: 115|🇭🇰 香港S01
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 19276
-  server: 1wssq-g06.hk01-ae5.entry.v50307shvkaa.art
+  server: h7ibi-g06.hk01-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 115|🇭🇰 香港S06 | x0.8
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 1417
-  server: fv5ku-g06.hk06-ae5.entry.v50307shvkaa.art
+  server: 1grj3-g06.hk06-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 115|🇭🇰 香港S07 | x0.8
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 1424
-  server: 2jzlg-g06.hk07-ae5.entry.v50307shvkaa.art
+  server: kmwa7-g06.hk07-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 115|🇭🇰 香港S08 | x0.8
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 18647
-  server: t88xu-g06.hk08-ae5.entry.v50307shvkaa.art
+  server: 6j0gv-g06.hk08-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - down: 2000
@@ -1624,28 +1649,12 @@ proxies:
   udp: true
 - name: 131|Trojan-香港2 | 低倍率
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
-  port: 48070
-  server: 3e132f39fa71ed9b60a8e1475efd1ced.lh.gtm.node-is.green
+  port: 49969
+  server: 1b8fb493bfaed8908bf8833afc0026a1.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: lhhk1.bilibili.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '133|🇭🇰 香港1 #1'
-  network: ws
-  port: 80
-  server: 24b7ca.8bf8-666b-1f85.cfd
-  type: vmess
-  udp: true
-  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
-  ws-headers:
-    Host: hk01s.8bf8-666b-1f85.cfd
-  ws-opts:
-    headers:
-      Host: hk01s.8bf8-666b-1f85.cfd
-    path: /
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '133|🇭🇰 香港2 #2'
@@ -1660,6 +1669,22 @@ proxies:
   ws-opts:
     headers:
       Host: hk02s.8bf8-666b-1f85.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '133|🇭🇰 香港3 #2'
+  network: ws
+  port: 80
+  server: 24b7ca.8bf8-666b-1f85.cfd
+  type: vmess
+  udp: true
+  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
+  ws-headers:
+    Host: hk03s.8bf8-666b-1f85.cfd
+  ws-opts:
+    headers:
+      Host: hk03s.8bf8-666b-1f85.cfd
     path: /
   ws-path: /
 - alterId: 0
@@ -2502,8 +2527,8 @@ proxies:
   udp: true
 - name: '187|Trojan-香港2 | 低倍率 #1'
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
-  port: 46770
-  server: 35692a36411eab08ff1edd532733c8aa.lh.gtm.node-is.green
+  port: 44228
+  server: dc52eb49a183dbd152240ddf30c17b07.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tchk1.bilibili.com
   type: trojan
@@ -2539,8 +2564,8 @@ proxies:
   udp: true
 - name: '188|Trojan-香港2 | 低倍率 #2'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
-  port: 45948
-  server: 471bd254ba762a8cb104e06e2da35b23.lh.gtm.node-is.green
+  port: 47567
+  server: 49fbef463eb3fa737dcf7696b4210833.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tchk1.bilibili.com
   type: trojan
@@ -2576,8 +2601,8 @@ proxies:
   udp: true
 - name: '189|Trojan-香港2 | 低倍率 #3'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
-  port: 47822
-  server: 141e05aeed53869c27e13b9569eaaa32.lh.gtm.node-is.green
+  port: 48116
+  server: 97fa23b49a5957e9f5c002ea5955d233.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tchk1.bilibili.com
   type: trojan
@@ -2613,8 +2638,8 @@ proxies:
   udp: true
 - name: '190|Trojan-香港2 | 低倍率 #4'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
-  port: 48740
-  server: 4df48737e815259f35441529da08ae88.lh.gtm.node-is.green
+  port: 43569
+  server: c193d7efbd8befebe0db7689161d6d9c.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tchk1.bilibili.com
   type: trojan
@@ -2645,6 +2670,41 @@ proxies:
   port: 24567
   server: hk2.fastsocks.xyz
   skip-cert-verify: true
+  type: hysteria2
+  udp: true
+- name: 204|香港高速
+  password: 4ce4d6a7-e47c-4d80-800c-bf874479c9b0
+  port: 5001
+  server: aws-hkhk.aikunapp.com
+  skip-cert-verify: true
+  sni: d1--cn-gotcha204-4.bilivideo.com
+  type: hysteria2
+- name: 204|香港高速2
+  password: 16ed9ae9-d895-4e13-ad48-fa7fe2720bb7
+  port: 3002
+  server: udp.1095804.xyz
+  skip-cert-verify: false
+  sni: udp.1095804.xyz
+  type: hysteria2
+  udp: true
+- mport: 52013-62013
+  name: 204|香港高速3
+  password: a9f94297-9137-4b85-9d48-bb71bc10687b
+  port: 52013
+  ports: 52013-62013
+  server: 154.16.183.48
+  skip-cert-verify: true
+  sni: files.xjqxz.top
+  type: hysteria2
+  udp: true
+- mport: 52013-62013
+  name: 204|香港高速4
+  password: a9f94297-9137-4b85-9d48-bb71bc10687b
+  port: 52013
+  ports: 52013-62013
+  server: 154.16.183.163
+  skip-cert-verify: true
+  sni: files.xjqxz.top
   type: hysteria2
   udp: true
 - down: 500
