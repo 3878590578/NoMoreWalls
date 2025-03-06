@@ -201,7 +201,7 @@ proxies:
 - down: 500
   name: 6|🇺🇸 USA 02-Hy2
   password: 9f79211a-45c0-4810-80e0-0768f686a1da
-  port: 44860
+  port: 28190
   ports: 20000-50000
   server: akuslax90.mmaccc.top
   skip-cert-verify: true
@@ -211,7 +211,7 @@ proxies:
 - down: 500
   name: 6|🇺🇸 USA 03-Hy2
   password: 9f79211a-45c0-4810-80e0-0768f686a1da
-  port: 31230
+  port: 34859
   ports: 30000-50000
   server: buylas.mmaccc.top
   skip-cert-verify: true
@@ -353,7 +353,7 @@ proxies:
   port: 20230
   server: us003.421421.xyz
   skip-cert-verify: true
-  sni: 421421.xyz
+  sni: www.alibaba.com
   type: trojan
   udp: true
 - name: 13|美国04
@@ -361,7 +361,7 @@ proxies:
   port: 20230
   server: us004.421421.xyz
   skip-cert-verify: true
-  sni: 421421.xyz
+  sni: www.alibaba.com
   type: trojan
   udp: true
 - client-fingerprint: chrome
@@ -397,7 +397,7 @@ proxies:
   port: 20230
   server: us003.421421.xyz
   skip-cert-verify: true
-  sni: 421421.xyz
+  sni: www.alibaba.com
   type: trojan
   udp: true
 - name: '14,15|美国04 #2'
@@ -405,7 +405,7 @@ proxies:
   port: 20230
   server: us004.421421.xyz
   skip-cert-verify: true
-  sni: 421421.xyz
+  sni: www.alibaba.com
   type: trojan
   udp: true
 - down: 0
@@ -522,7 +522,21 @@ proxies:
   sni: niubi.pandafly.site
   type: hysteria2
   up: 1000
-- name: 23|美国[B2]备用hy2
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇺🇸美国 01 | 1x US Los Angeles
+  password: 1a545b22-b04f-4ca4-b6bf-81100f03e960
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇺🇸美国 03 | 1x US Washington
+  password: 1a545b22-b04f-4ca4-b6bf-81100f03e960
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 24|美国[B2]备用hy2
   password: a92716f0-ea87-436d-9296-3fab1248250d
   port: 50000
   server: mg02.hssl8088.icu
@@ -530,7 +544,7 @@ proxies:
   sni: mg02.hssl8088.icu
   type: hysteria2
   udp: true
-- name: '24|美国[B2]备用hy2 #1'
+- name: '25|美国[B2]备用hy2 #1'
   password: d227adad-d1c9-4218-aff4-773f0ce5ba1d
   port: 50000
   server: mg02.hssl8088.icu
@@ -538,7 +552,7 @@ proxies:
   sni: mg02.hssl8088.icu
   type: hysteria2
   udp: true
-- name: '25|美国[B2]备用hy2 #2'
+- name: '26|美国[B2]备用hy2 #2'
   password: bc4aa0d5-bab3-4198-bc6e-71a703dae55d
   port: 50000
   server: mg02.hssl8088.icu
@@ -547,36 +561,22 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 27|🇺🇸美国 01 | 1x US Los Angeles
-  password: 11b75788-b0cb-4f38-a39a-72759e531c38
-  port: 31211
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇺🇸美国 03 | 1x US Washington
-  password: 11b75788-b0cb-4f38-a39a-72759e531c38
-  port: 31215
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 28|🇺🇸 美国 01 | 1x US Los Angeles
-  password: b6fd0254-bbaf-49b9-b4d8-30eaa5b05758
+  password: 4c7a9fd7-33e1-4ab9-b698-308f63520105
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: b6fd0254-bbaf-49b9-b4d8-30eaa5b05758
+  password: 4c7a9fd7-33e1-4ab9-b698-308f63520105
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 28|🇺🇸 美国 03 | 1x US Washington
-  password: b6fd0254-bbaf-49b9-b4d8-30eaa5b05758
+  password: 4c7a9fd7-33e1-4ab9-b698-308f63520105
   port: 36215
   server: free.2weradf.xyz
   type: ss
@@ -1225,86 +1225,10 @@ proxies:
   sni: hyfnus02.767887.xyz
   type: hysteria2
   udp: true
-- name: 92|🇺🇸7 |  5.5MB/s
-  network: ws
-  port: 80
-  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- client-fingerprint: chrome
-  name: 92|🇺🇸2 |  5.3MB/s
-  network: ws
-  port: 2086
-  server: 212.183.88.84
-  skip-cert-verify: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /TABRIZ.NET, TABRIZ.NET, TABRIZ.NET, TABRIZ.NET, TABRIZ.NET, TABRIZ.NET/?ed=2048
-- name: 92|🇺🇸3 |  4.8MB/s
-  network: ws
-  password: Pooria
-  port: 443
-  server: 104.17.148.22
-  skip-cert-verify: false
-  sni: 301.pOORiAm.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 301.pOORiAm.ir
-    path: /trPyOrWMfkHd15oxiI?ed=1520
-- name: 92|🇺🇸4 |  13.0MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 92|🇺🇸5 |  2.1MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: ustx004-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: ustx004-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 92|🇺🇸6 |  6.0MB/s
-  network: ws
-  port: 80
-  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?edfp
-- name: 92|🇺🇸8 |  4.2MB/s
-  password: nYXmrMHpoGZCFnYPTiMlg7om5Y
-  port: 12588
-  server: 159.65.69.97
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- name: 92|🇺🇸9 |  4.8MB/s
+- name: 92|🇺🇸1 |  4.9MB/s
   network: ws
   port: 8880
-  server: 154.83.2.156
+  server: 154.83.2.230
   servername: redw.pooriam.ir
   skip-cert-verify: false
   tls: false
@@ -1315,7 +1239,88 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 92|🇺🇸10 |  5.1MB/s
+- name: 92|🇺🇸2 |  5.4MB/s
+  password: nYXmrMHpoGZCFnYPTiMlg7om5Y
+  port: 12588
+  server: 159.65.69.97
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- client-fingerprint: chrome
+  name: 92|🇺🇸3 |  5.7MB/s
+  network: ws
+  port: 443
+  server: 31.22.116.185
+  servername: usb.kobtty.me
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1b12594c-6f7a-4282-a9e5-69979762ab93
+  ws-opts:
+    headers:
+      Host: usb.kobtty.me
+    path: /bing
+- client-fingerprint: chrome
+  name: 92|🇺🇸4 |  1.2MB/s
+  network: ws
+  port: 8880
+  server: 195.85.59.155
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: f6bd2c47-99da-4bca-bf70-7186aa9e7e06
+  ws-opts:
+    headers:
+      Host: photographipictureai.ir
+    path: /Telegram
+- client-fingerprint: chrome
+  name: 92|🇺🇸5 |  5.7MB/s
+  network: ws
+  port: 443
+  server: 31.22.116.15
+  servername: usa.sevco.me
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: aebc10f3-f34b-49c6-b5e7-68b864183906
+  ws-opts:
+    headers:
+      Host: usa.sevco.me
+    path: /bing
+- client-fingerprint: chrome
+  name: 92|🇺🇸6 |  4.6MB/s
+  network: ws
+  port: 443
+  server: 31.22.116.153
+  servername: usb.sevco.me
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: dd0d29f2-c6fd-4518-bed6-618ef8b12e86
+  ws-opts:
+    headers:
+      Host: usb.sevco.me
+    path: /bing
+- client-fingerprint: chrome
+  name: 92|🇺🇸7 |  1.9MB/s
+  network: ws
+  port: 443
+  server: 104.128.89.138
+  servername: usa.xzncr.asia
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 433f4c30-7b28-4d4e-b573-a6624231700a
+  ws-opts:
+    headers:
+      Host: usa.xzncr.asia
+    path: /bing
+- name: 92|🇺🇸8 |  5.0MB/s
   network: ws
   port: 2052
   server: 45.149.12.183
@@ -1329,46 +1334,21 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /TABRIZ.NET@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 92|🇺🇸11 |  23.6MB/s
-  network: tcp
+- client-fingerprint: chrome
+  name: 92|🇺🇸9 |  5.5MB/s
+  network: ws
   port: 443
-  server: 15.204.158.90
-  servername: 147135011033.sec21org.com
-  skip-cert-verify: true
+  server: 154.21.87.99
+  servername: usd.xzncr.asia
+  tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
-- name: 92|🇺🇸12 |  2.4MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: usgp2-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: usgp2-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- cipher: aes-256-cfb
-  name: 92|🇺🇸13 |  5.7MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.236.83.127
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 92|🇺🇸14 |  3.4MB/s
-  network: ws
-  port: 443
-  server: 104.19.32.0
-  servername: xmivideo.cfd
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
+  uuid: 034b7109-a45a-46d7-afde-3eec1af72322
   ws-opts:
     headers:
-      Host: xmivideo.cfd
-    path: /linkws
+      Host: usd.xzncr.asia
+    path: /bing
 - name: '101|美国 #2'
   password: 1074f3c7-512a-4118-9798-2a45e2a3edf8
   port: 34562
@@ -1521,14 +1501,14 @@ proxies:
   name: 115|🇺🇲 美国S01
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 20014
-  server: wo8n0-g06.us01-ae5.entry.v50307shvkaa.art
+  server: c4ccc-g06.us01-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 115|🇺🇲 美国S02
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 20019
-  server: 60d5m-g06.us02-ae5.entry.v50307shvkaa.art
+  server: mqf1v-g06.us02-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -1569,8 +1549,8 @@ proxies:
   udp: true
 - name: 131|Trojan-美国2 | 低倍率
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
-  port: 43908
-  server: 1b5542ae2fcc4b3ebe89fb51ec34775e.lh.gtm.node-is.green
+  port: 48299
+  server: ec6165da06b625bcd2136020423c7a87.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: lhus1.bilibili.com
   type: trojan
@@ -1589,6 +1569,22 @@ proxies:
   ws-opts:
     headers:
       Host: us01s.90b9-52e1-20c8.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 133|🇺🇸 美国2
+  network: ws
+  port: 80
+  server: df8f25.90b9-52e1-20c8.cfd
+  type: vmess
+  udp: true
+  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
+  ws-headers:
+    Host: us02s.90b9-52e1-20c8.cfd
+  ws-opts:
+    headers:
+      Host: us02s.90b9-52e1-20c8.cfd
     path: /
   ws-path: /
 - alterId: 0
@@ -1625,6 +1621,22 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  name: '134|🇺🇸 美国1 #2'
+  network: ws
+  port: 80
+  server: df8f25.90b9-52e1-20c8.cfd
+  type: vmess
+  udp: true
+  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
+  ws-headers:
+    Host: us01s.90b9-52e1-20c8.cfd
+  ws-opts:
+    headers:
+      Host: us01s.90b9-52e1-20c8.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: '134|🇺🇸 美国2 #1'
   network: ws
   port: 80
@@ -1637,22 +1649,6 @@ proxies:
   ws-opts:
     headers:
       Host: us02s.90b9-52e1-20c8.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '134|🇺🇸 美国3 #1'
-  network: ws
-  port: 80
-  server: df8f25.90b9-52e1-20c8.cfd
-  type: vmess
-  udp: true
-  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
-  ws-headers:
-    Host: us03s.90b9-52e1-20c8.cfd
-  ws-opts:
-    headers:
-      Host: us03s.90b9-52e1-20c8.cfd
     path: /
   ws-path: /
 - alterId: 0
@@ -1889,7 +1885,7 @@ proxies:
   port: 20230
   server: us003.421421.xyz
   skip-cert-verify: true
-  sni: 421421.xyz
+  sni: www.alibaba.com
   type: trojan
   udp: true
 - name: '155|美国04 #3'
@@ -1897,7 +1893,7 @@ proxies:
   port: 20230
   server: us004.421421.xyz
   skip-cert-verify: true
-  sni: 421421.xyz
+  sni: www.alibaba.com
   type: trojan
   udp: true
 - client-fingerprint: chrome
@@ -1933,7 +1929,7 @@ proxies:
   port: 20230
   server: us003.421421.xyz
   skip-cert-verify: true
-  sni: 421421.xyz
+  sni: www.alibaba.com
   type: trojan
   udp: true
 - name: '156|美国04 #4'
@@ -1941,7 +1937,7 @@ proxies:
   port: 20230
   server: us004.421421.xyz
   skip-cert-verify: true
-  sni: 421421.xyz
+  sni: www.alibaba.com
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -2297,7 +2293,7 @@ proxies:
   uuid: 9854cb4c-922a-373c-a77d-9792727c83a4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '181,182,183,185,186|美国01 #10'
+  name: '180,181,182,183,184,185,186|美国01 #12'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -2311,7 +2307,7 @@ proxies:
   uuid: b44da489-fc70-4fd0-8997-a83b51f59267
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '181,182,183,185,186|美国02 #9'
+  name: '180,181,182,183,184,185,186|美国02 #11'
   port: 20230
   reality-opts:
     public-key: gKQ1iax36vjbOYLKLveiSn_OnlBVAf3ecHLpQnrC4jw
@@ -2323,20 +2319,20 @@ proxies:
   type: vless
   udp: true
   uuid: b44da489-fc70-4fd0-8997-a83b51f59267
-- name: '181,182,183,185,186|美国03 #9'
+- name: '180,181,182,183,184,185,186|美国03 #11'
   password: b44da489-fc70-4fd0-8997-a83b51f59267
   port: 20230
   server: us003.421421.xyz
   skip-cert-verify: true
-  sni: 421421.xyz
+  sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '181,182,183,185,186|美国04 #9'
+- name: '180,181,182,183,184,185,186|美国04 #11'
   password: b44da489-fc70-4fd0-8997-a83b51f59267
   port: 20230
   server: us004.421421.xyz
   skip-cert-verify: true
-  sni: 421421.xyz
+  sni: www.alibaba.com
   type: trojan
   udp: true
 - cipher: aes-128-gcm
@@ -2377,8 +2373,8 @@ proxies:
   udp: true
 - name: '187|Trojan-美国2 | 低倍率 #1'
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
-  port: 43141
-  server: 5c716beeccb1d10ecc9247144ce2ee6d.lh.gtm.node-is.green
+  port: 40962
+  server: 6f0f6f2ae436327f7b6ff3ba987c0a4d.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcus1.bilibili.com
   type: trojan
@@ -2421,8 +2417,8 @@ proxies:
   udp: true
 - name: '188|Trojan-美国2 | 低倍率 #2'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
-  port: 41372
-  server: 03f47ace5712f54ffbf378978673327b.lh.gtm.node-is.green
+  port: 44821
+  server: 81a4b51586c3799d22be73621b35fb84.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcus1.bilibili.com
   type: trojan
@@ -2465,8 +2461,8 @@ proxies:
   udp: true
 - name: '189|Trojan-美国2 | 低倍率 #3'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
-  port: 44422
-  server: c84b784909da6b51325d0ef435b6e89d.lh.gtm.node-is.green
+  port: 47847
+  server: 4b3db4033295bce4d37c44a8271ab1f8.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcus1.bilibili.com
   type: trojan
@@ -2509,8 +2505,8 @@ proxies:
   udp: true
 - name: '190|Trojan-美国2 | 低倍率 #4'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
-  port: 44381
-  server: 9caf7eee4e9b549d06922fc977765d54.lh.gtm.node-is.green
+  port: 47656
+  server: 5cfe1d272aebbc1b51e1ca94d53c7374.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcus1.bilibili.com
   type: trojan
