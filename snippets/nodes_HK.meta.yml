@@ -201,15 +201,15 @@ proxies:
   name: 5|?? 香港 - 1
   network: ws
   port: 80
-  server: df8f25.90b9-52e1-20c8.cfd
+  server: 68607c.9872-f8ad063c17f4.cfd
   type: vmess
   udp: true
   uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
   ws-headers:
-    Host: hk01s.90b9-52e1-20c8.cfd
+    Host: hk01s.9872-f8ad063c17f4.cfd
   ws-opts:
     headers:
-      Host: hk01s.90b9-52e1-20c8.cfd
+      Host: hk01s.9872-f8ad063c17f4.cfd
     path: /
   ws-path: /
 - alterId: 0
@@ -217,15 +217,15 @@ proxies:
   name: 5|?? 香港 - 2
   network: ws
   port: 80
-  server: df8f25.90b9-52e1-20c8.cfd
+  server: 68607c.9872-f8ad063c17f4.cfd
   type: vmess
   udp: true
   uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
   ws-headers:
-    Host: hk02s.90b9-52e1-20c8.cfd
+    Host: hk02s.9872-f8ad063c17f4.cfd
   ws-opts:
     headers:
-      Host: hk02s.90b9-52e1-20c8.cfd
+      Host: hk02s.9872-f8ad063c17f4.cfd
     path: /
   ws-path: /
 - alterId: 0
@@ -233,15 +233,31 @@ proxies:
   name: 5|?? 香港 - 3
   network: ws
   port: 80
-  server: df8f25.90b9-52e1-20c8.cfd
+  server: 68607c.9872-f8ad063c17f4.cfd
   type: vmess
   udp: true
   uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
   ws-headers:
-    Host: hk03s.90b9-52e1-20c8.cfd
+    Host: hk03s.9872-f8ad063c17f4.cfd
   ws-opts:
     headers:
-      Host: hk03s.90b9-52e1-20c8.cfd
+      Host: hk03s.9872-f8ad063c17f4.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 5|?? 香港 - 4
+  network: ws
+  port: 80
+  server: 68607c.9872-f8ad063c17f4.cfd
+  type: vmess
+  udp: true
+  uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
+  ws-headers:
+    Host: hk04s.9872-f8ad063c17f4.cfd
+  ws-opts:
+    headers:
+      Host: hk04s.9872-f8ad063c17f4.cfd
     path: /
   ws-path: /
 - alterId: 0
@@ -413,8 +429,22 @@ proxies:
   skip-cert-verify: true
   type: hysteria2
   up: 0
+- cipher: chacha20-ietf-poly1305
+  name: 21|🇭🇰 香港 02 | 1x HK
+  password: a5b0a3cd-2714-4d78-ac56-cc53e568c0e9
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 21|🇭🇰 香港住宅IP 03 | 1x HK
+  password: a5b0a3cd-2714-4d78-ac56-cc53e568c0e9
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - down: 1000
-  name: 21|🇭🇰香港04
+  name: 22|🇭🇰香港04
   password: 0755ae27-3fda-4802-869f-0ffbda05fff2
   port: 52890
   server: 107.174.52.160
@@ -423,7 +453,7 @@ proxies:
   type: hysteria2
   up: 1000
 - down: 1000
-  name: '22|🇭🇰香港04 #1'
+  name: '23|🇭🇰香港04 #1'
   password: dc55f78c-43f5-4cb2-af10-2b7615607581
   port: 52890
   server: 107.174.52.160
@@ -431,7 +461,7 @@ proxies:
   sni: niubi.pandafly.site
   type: hysteria2
   up: 1000
-- name: 23|香港[B1]备用hy2
+- name: 24|香港[B1]备用hy2
   password: a92716f0-ea87-436d-9296-3fab1248250d
   port: 50000
   server: ackxg.hssl8088.icu
@@ -439,7 +469,7 @@ proxies:
   sni: ackxg.hssl8088.icu
   type: hysteria2
   udp: true
-- name: '24|香港[B1]备用hy2 #1'
+- name: '25|香港[B1]备用hy2 #1'
   password: d227adad-d1c9-4218-aff4-773f0ce5ba1d
   port: 50000
   server: ackxg.hssl8088.icu
@@ -447,7 +477,7 @@ proxies:
   sni: ackxg.hssl8088.icu
   type: hysteria2
   udp: true
-- name: '25|香港[B1]备用hy2 #2'
+- name: '26|香港[B1]备用hy2 #2'
   password: bc4aa0d5-bab3-4198-bc6e-71a703dae55d
   port: 50000
   server: ackxg.hssl8088.icu
@@ -456,40 +486,33 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 27|🇭🇰 香港 02 | 1x HK
-  password: 4bcd4ed8-8933-41ec-9aaf-b71776999a65
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 4bcd4ed8-8933-41ec-9aaf-b71776999a65
-  port: 36145
-  server: free.2weradf.xyz
+  name: 27|🇭🇰香港 02 | 1x HK
+  password: 970c4ec7-fedf-4357-b200-fb603966f58e
+  port: 31143
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 33|🇭🇰 HK
+  name: 34|🇭🇰 HK
   password: amazonskr05
   port: 443
   server: 54.203.99.21
   type: ss
 - cipher: aes-256-cfb
-  name: 33|🇭🇰 HK 2
+  name: 34|🇭🇰 HK 2
   password: amazonskr05
   port: 443
   server: 13.215.49.223
   type: ss
 - cipher: aes-256-cfb
-  name: 33|🇭🇰 HK 3
+  name: 34|🇭🇰 HK 3
   password: amazonskr05
   port: 443
   server: 35.72.9.98
   type: ss
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 33|🇭🇰 HK 4
+  name: 34|🇭🇰 HK 4
   network: tcp
   port: 25791
   reality-opts:
@@ -504,7 +527,7 @@ proxies:
   uuid: 711007f1-9cdf-4fd9-b5d4-d67aee173281
 - alterId: 0
   cipher: auto
-  name: 41|🇭🇰香港01|1x
+  name: 42|🇭🇰香港01|1x
   port: 48888
   server: gy.youaremygod.top
   type: vmess
@@ -512,7 +535,7 @@ proxies:
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
-  name: 41|🇭🇰香港02|1x
+  name: 42|🇭🇰香港02|1x
   port: 48889
   server: gy.youaremygod.top
   type: vmess
@@ -520,7 +543,7 @@ proxies:
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
-  name: 41|🇭🇰香港03|1x
+  name: 42|🇭🇰香港03|1x
   port: 48890
   server: gy.youaremygod.top
   type: vmess
@@ -528,7 +551,7 @@ proxies:
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
-  name: 41|🇭🇰香港04|1x
+  name: 42|🇭🇰香港04|1x
   port: 48894
   server: gy.youaremygod.top
   type: vmess
@@ -536,7 +559,7 @@ proxies:
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
-  name: 41|🇭🇰香港05|1x
+  name: 42|🇭🇰香港05|1x
   port: 48891
   server: gg.youaremygod.top
   type: vmess
@@ -544,7 +567,7 @@ proxies:
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
-  name: 41|🇭🇰香港06|1x
+  name: 42|🇭🇰香港06|1x
   port: 48892
   server: gg.youaremygod.top
   type: vmess
@@ -552,7 +575,7 @@ proxies:
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
-  name: 41|🇭🇰香港07|1x
+  name: 42|🇭🇰香港07|1x
   port: 48893
   server: gg.youaremygod.top
   type: vmess
@@ -560,21 +583,21 @@ proxies:
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
-  name: 41|🇭🇰香港08|1x
+  name: 42|🇭🇰香港08|1x
   port: 48895
   server: gg.youaremygod.top
   type: vmess
   udp: true
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - cipher: chacha20-ietf-poly1305
-  name: 41|打機神線|🇭🇰香港01|5x
+  name: 42|打機神線|🇭🇰香港01|5x
   password: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
   port: 10111
   server: ii.youaremygod.top
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 41|打機神線|🇭🇰香港02|5x
+  name: 42|打機神線|🇭🇰香港02|5x
   password: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
   port: 10112
   server: ii.youaremygod.top
@@ -582,7 +605,7 @@ proxies:
   udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 43|🇭🇰 香港-1(RT)
+  name: 44|🇭🇰 香港-1(RT)
   network: tcp
   port: 6843
   reality-opts:
@@ -597,7 +620,7 @@ proxies:
   uuid: 0a3cd062-241a-43fc-9c50-eccacbbd5aae
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 43|🇭🇰 香港-2(RT)
+  name: 44|🇭🇰 香港-2(RT)
   network: tcp
   port: 7749
   reality-opts:
@@ -612,7 +635,7 @@ proxies:
   uuid: 0a3cd062-241a-43fc-9c50-eccacbbd5aae
 - alterId: 0
   cipher: auto
-  name: 43|🇭🇰 香港-2(VM)
+  name: 44|🇭🇰 香港-2(VM)
   network: ws
   port: 443
   server: hkvm.gecs.top
@@ -626,244 +649,244 @@ proxies:
       Host: hkvm.gecs.top
     path: /vm
 - cipher: aes-256-gcm
-  name: 74|[香港1-Emby] ✨ 2x
+  name: 75|[香港1-Emby] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 37685
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港2-Emby] ✨ 2x
+  name: 75|[香港2-Emby] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 40543
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港3-Emby] ✨ 2x
+  name: 75|[香港3-Emby] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 39631
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港4-Emby] ✨ 2x
+  name: 75|[香港4-Emby] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 28147
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港5-Emby] ✨ 2x
+  name: 75|[香港5-Emby] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 48147
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港6-Emby] ✨ 2x
+  name: 75|[香港6-Emby] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 35463
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港7] ✨ 2x
+  name: 75|[香港7] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 35194
   server: 69-in-2.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港8] ✨ 2x
+  name: 75|[香港8] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 22487
   server: 69-in-2.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港9] ✨ 2x
+  name: 75|[香港9] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 59306
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港10] ✨ 2x
+  name: 75|[香港10] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 49603
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港22] ✨ 2x
+  name: 75|[香港22] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 33568
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港23] ✨ 2x
+  name: 75|[香港23] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 33566
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港24] ✨ 2x
+  name: 75|[香港24] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 56560
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港25] ✨ 2x
+  name: 75|[香港25] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 34512
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港26] ✨ 2x
+  name: 75|[香港26] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31512
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港27] ✨ 2x
+  name: 75|[香港27] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31511
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港28] ✨ 2x
+  name: 75|[香港28] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31510
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港29] ✨ 2x
+  name: 75|[香港29] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31514
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港30] ✨ 2x
+  name: 75|[香港30] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31515
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港31] ✨ 2x
+  name: 75|[香港31] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31517
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港32] ✨ 2x
+  name: 75|[香港32] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31518
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港33] ✨ 2x
+  name: 75|[香港33] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31521
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港34] ✨ 2x
+  name: 75|[香港34] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31522
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港35] ✨ 2x
+  name: 75|[香港35] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31523
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港36] ✨ 2x
+  name: 75|[香港36] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31524
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港37] ✨ 2x
+  name: 75|[香港37] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31527
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港38] ✨ 2x
+  name: 75|[香港38] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31528
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港39] ✨ 2x
+  name: 75|[香港39] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31529
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港40] ✨ 2x
+  name: 75|[香港40] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31516
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港41] ✨ 2x
+  name: 75|[香港41] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 33523
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港42] ✨ 2x
+  name: 75|[香港42] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 33524
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港43] ✨ 2x
+  name: 75|[香港43] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 33525
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港44] ✨ 2x
+  name: 75|[香港44] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 33526
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 74|[香港45] ✨ 2x
+  name: 75|[香港45] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 31519
   server: 69-in-3.226969.xyz
   type: ss
   udp: true
-- name: '75,76|香港 #1'
+- name: '76,77|香港 #1'
   password: 74f19601-056d-443a-b94e-13bd373c9eec
   port: 36800
   server: xg.xjyjc.top
@@ -872,13 +895,13 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: aes-128-gcm
-  name: 77|🇭🇰香港 IPV6
+  name: 78|🇭🇰香港 IPV6
   password: 32c41b01-84be-11ef-bb6b-bc241111d95d
   port: 41895
   server: ipv6.wnwwv.cn
   type: ss
   udp: true
-- name: 79|🇭🇰 HK8直连x4
+- name: 80|🇭🇰 HK8直连x4
   password: d516b33d-86ee-49e8-9af7-4eb7405e5cfe
   port: 443
   server: hk8hy.fuckvps.top
@@ -887,55 +910,55 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 81|🇭🇰 Hong Kong 2
+  name: 82|🇭🇰 Hong Kong 2
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46602
   server: xg-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 81|🇭🇰 Hong Kong 3
+  name: 82|🇭🇰 Hong Kong 3
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46603
   server: xg-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 81|🇭🇰 Hong Kong 4
+  name: 82|🇭🇰 Hong Kong 4
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46604
   server: xg-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 81|🇭🇰 Hong Kong 5
+  name: 82|🇭🇰 Hong Kong 5
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46605
   server: xg-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 81|🇭🇰 Hong Kong 6
+  name: 82|🇭🇰 Hong Kong 6
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46606
   server: xg-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 81|🇭🇰 Hong Kong 7
+  name: 82|🇭🇰 Hong Kong 7
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46607
   server: xg-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 81|🇭🇰 Hong Kong 8
+  name: 82|🇭🇰 Hong Kong 8
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46608
   server: xg-jd.huidu51.com
   type: ss
   udp: true
-- name: 87|香港1直连Hysteria2
+- name: 88|香港1直连Hysteria2
   password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
   port: 8080
   server: hkmax01.376897.xyz
@@ -943,7 +966,7 @@ proxies:
   sni: hkmax01.376897.xyz
   type: hysteria2
   udp: true
-- name: 87|香港2直连Hysteria2
+- name: 88|香港2直连Hysteria2
   password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
   port: 8080
   server: hkmax02.376897.xyz
@@ -951,7 +974,7 @@ proxies:
   sni: hkmax02.376897.xyz
   type: hysteria2
   udp: true
-- name: 87|香港3直连Hysteria2
+- name: 88|香港3直连Hysteria2
   password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
   port: 8080
   server: hkmax03.376897.xyz
@@ -959,7 +982,7 @@ proxies:
   sni: hkmax03.376897.xyz
   type: hysteria2
   udp: true
-- name: 87|香港01直连Hysteria2
+- name: 88|香港01直连Hysteria2
   password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
   port: 8080
   server: hkmax01.767887.xyz
@@ -967,7 +990,7 @@ proxies:
   sni: hkmax01.767887.xyz
   type: hysteria2
   udp: true
-- name: 87|香港02直连Hysteria2
+- name: 88|香港02直连Hysteria2
   password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
   port: 8080
   server: hkmax02.757866.xyz
@@ -975,7 +998,7 @@ proxies:
   sni: hkmax02.757866.xyz
   type: hysteria2
   udp: true
-- name: 87|香港03直连Hysteria2
+- name: 88|香港03直连Hysteria2
   password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
   port: 8080
   server: hkmax03.476579.xyz
@@ -983,7 +1006,7 @@ proxies:
   sni: hkmax03.476579.xyz
   type: hysteria2
   udp: true
-- name: 87|香港06直连Hysteria2
+- name: 88|香港06直连Hysteria2
   password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
   port: 8080
   server: hkmax06.767887.xyz
@@ -991,7 +1014,7 @@ proxies:
   sni: hkmax06.767887.xyz
   type: hysteria2
   udp: true
-- name: 87|香港H03直连Hysteria2
+- name: 88|香港H03直连Hysteria2
   password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
   port: 8080
   server: hkmax003.233235.xyz
@@ -999,14 +1022,14 @@ proxies:
   sni: hkmax003.233235.xyz
   type: hysteria2
   udp: true
-- name: 87|香港|01|隧道
+- name: 88|香港|01|隧道
   password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
   port: 37107
   server: twjpzz2.595780.xyz
   sni: 2jp04162531be-29a9-2764-8627-51a5f4436fbd.233235.xyz
   type: trojan
   udp: true
-- name: 88|HK-bv-500Mbps
+- name: 89|HK-bv-500Mbps
   network: ws
   port: 443
   server: back-hk3.uni-verse.top
@@ -1021,7 +1044,7 @@ proxies:
       Host: back-hk3.uni-verse.top
     max-early-data: 2560
     path: /nanliang
-- name: '89|香港1直连Hysteria2 #1'
+- name: '90|香港1直连Hysteria2 #1'
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
   port: 8080
   server: hkmax01.376897.xyz
@@ -1029,7 +1052,7 @@ proxies:
   sni: hkmax01.376897.xyz
   type: hysteria2
   udp: true
-- name: '89|香港2直连Hysteria2 #1'
+- name: '90|香港2直连Hysteria2 #1'
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
   port: 8080
   server: hkmax02.376897.xyz
@@ -1037,7 +1060,7 @@ proxies:
   sni: hkmax02.376897.xyz
   type: hysteria2
   udp: true
-- name: '89|香港3直连Hysteria2 #1'
+- name: '90|香港3直连Hysteria2 #1'
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
   port: 8080
   server: hkmax03.376897.xyz
@@ -1045,7 +1068,7 @@ proxies:
   sni: hkmax03.376897.xyz
   type: hysteria2
   udp: true
-- name: '89|香港01直连Hysteria2 #1'
+- name: '90|香港01直连Hysteria2 #1'
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
   port: 8080
   server: hkmax01.767887.xyz
@@ -1053,7 +1076,7 @@ proxies:
   sni: hkmax01.767887.xyz
   type: hysteria2
   udp: true
-- name: '89|香港02直连Hysteria2 #1'
+- name: '90|香港02直连Hysteria2 #1'
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
   port: 8080
   server: hkmax02.757866.xyz
@@ -1061,7 +1084,7 @@ proxies:
   sni: hkmax02.757866.xyz
   type: hysteria2
   udp: true
-- name: '89|香港03直连Hysteria2 #1'
+- name: '90|香港03直连Hysteria2 #1'
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
   port: 8080
   server: hkmax03.476579.xyz
@@ -1069,7 +1092,7 @@ proxies:
   sni: hkmax03.476579.xyz
   type: hysteria2
   udp: true
-- name: '89|香港06直连Hysteria2 #1'
+- name: '90|香港06直连Hysteria2 #1'
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
   port: 8080
   server: hkmax06.767887.xyz
@@ -1077,7 +1100,7 @@ proxies:
   sni: hkmax06.767887.xyz
   type: hysteria2
   udp: true
-- name: '89|香港H03直连Hysteria2 #1'
+- name: '90|香港H03直连Hysteria2 #1'
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
   port: 8080
   server: hkmax003.233235.xyz
@@ -1085,13 +1108,19 @@ proxies:
   sni: hkmax003.233235.xyz
   type: hysteria2
   udp: true
-- name: '89|香港|01|隧道 #1'
+- name: '90|香港|01|隧道 #1'
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
   port: 37107
   server: twjpzz2.595780.xyz
   sni: 2jp04162531be-29a9-2764-8627-51a5f4436fbd.233235.xyz
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 92|🇭🇰1 |  1.1MB/s
+  password: 4257b671-ad95-443f-aadb-79634b16db6e
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 93|公益路线1-香港HK 限速50Mbps
   password: 3c0a4b5f-4e49-4876-9b88-a5be67f73ba9
@@ -1198,28 +1227,28 @@ proxies:
   name: 115|🇭🇰 香港S01
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 19276
-  server: yluke-g06.hk01-ae5.entry.v50307shvkaa.art
+  server: y045d-g06.hk01-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 115|🇭🇰 香港S06 | x0.8
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 1417
-  server: vw5f5-g06.hk06-ae5.entry.v50307shvkaa.art
+  server: 16jsq-g06.hk06-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 115|🇭🇰 香港S07 | x0.8
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 1424
-  server: fgngu-g06.hk07-ae5.entry.v50307shvkaa.art
+  server: lmm1l-g06.hk07-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 115|🇭🇰 香港S08 | x0.8
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 18647
-  server: j26q3-g06.hk08-ae5.entry.v50307shvkaa.art
+  server: 57jxg-g06.hk08-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - down: 2000
@@ -1675,8 +1704,8 @@ proxies:
   udp: true
 - name: 131|Trojan-香港2 | 低倍率
   password: 08d96d4a-d83e-4c14-9529-f00a63d25242
-  port: 45035
-  server: 53aea397fb87298f830d987d77911516.lh.gtm.node-is.green
+  port: 47671
+  server: 497570713747bd366f2f643d3c659977.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: lhhk1.bilibili.com
   type: trojan
@@ -1686,31 +1715,31 @@ proxies:
   name: '133|🇭🇰 香港1 #1'
   network: ws
   port: 80
-  server: df8f25.90b9-52e1-20c8.cfd
+  server: 68607c.9872-f8ad063c17f4.cfd
   type: vmess
   udp: true
   uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
   ws-headers:
-    Host: hk01s.90b9-52e1-20c8.cfd
+    Host: hk01s.9872-f8ad063c17f4.cfd
   ws-opts:
     headers:
-      Host: hk01s.90b9-52e1-20c8.cfd
+      Host: hk01s.9872-f8ad063c17f4.cfd
     path: /
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '133|🇭🇰 香港3 #2'
+  name: '133|🇭🇰 香港2 #2'
   network: ws
   port: 80
-  server: df8f25.90b9-52e1-20c8.cfd
+  server: 68607c.9872-f8ad063c17f4.cfd
   type: vmess
   udp: true
   uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
   ws-headers:
-    Host: hk03s.90b9-52e1-20c8.cfd
+    Host: hk02s.9872-f8ad063c17f4.cfd
   ws-opts:
     headers:
-      Host: hk03s.90b9-52e1-20c8.cfd
+      Host: hk02s.9872-f8ad063c17f4.cfd
     path: /
   ws-path: /
 - alterId: 0
@@ -1718,15 +1747,15 @@ proxies:
   name: '133|🇭🇰 香港4 #2'
   network: ws
   port: 80
-  server: df8f25.90b9-52e1-20c8.cfd
+  server: 68607c.9872-f8ad063c17f4.cfd
   type: vmess
   udp: true
   uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
   ws-headers:
-    Host: hk04s.90b9-52e1-20c8.cfd
+    Host: hk04s.9872-f8ad063c17f4.cfd
   ws-opts:
     headers:
-      Host: hk04s.90b9-52e1-20c8.cfd
+      Host: hk04s.9872-f8ad063c17f4.cfd
     path: /
   ws-path: /
 - alterId: 0
@@ -1734,15 +1763,15 @@ proxies:
   name: '134|🇭🇰 香港1 #2'
   network: ws
   port: 80
-  server: df8f25.90b9-52e1-20c8.cfd
+  server: 68607c.9872-f8ad063c17f4.cfd
   type: vmess
   udp: true
   uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
   ws-headers:
-    Host: hk01s.90b9-52e1-20c8.cfd
+    Host: hk01s.9872-f8ad063c17f4.cfd
   ws-opts:
     headers:
-      Host: hk01s.90b9-52e1-20c8.cfd
+      Host: hk01s.9872-f8ad063c17f4.cfd
     path: /
   ws-path: /
 - alterId: 0
@@ -1750,15 +1779,31 @@ proxies:
   name: '134|🇭🇰 香港2 #3'
   network: ws
   port: 80
-  server: df8f25.90b9-52e1-20c8.cfd
+  server: 68607c.9872-f8ad063c17f4.cfd
   type: vmess
   udp: true
   uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
   ws-headers:
-    Host: hk02s.90b9-52e1-20c8.cfd
+    Host: hk02s.9872-f8ad063c17f4.cfd
   ws-opts:
     headers:
-      Host: hk02s.90b9-52e1-20c8.cfd
+      Host: hk02s.9872-f8ad063c17f4.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '134|🇭🇰 香港3 #3'
+  network: ws
+  port: 80
+  server: 68607c.9872-f8ad063c17f4.cfd
+  type: vmess
+  udp: true
+  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
+  ws-headers:
+    Host: hk03s.9872-f8ad063c17f4.cfd
+  ws-opts:
+    headers:
+      Host: hk03s.9872-f8ad063c17f4.cfd
     path: /
   ws-path: /
 - alterId: 0
@@ -1766,15 +1811,15 @@ proxies:
   name: '134|🇭🇰 香港4 #3'
   network: ws
   port: 80
-  server: df8f25.90b9-52e1-20c8.cfd
+  server: 68607c.9872-f8ad063c17f4.cfd
   type: vmess
   udp: true
   uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
   ws-headers:
-    Host: hk04s.90b9-52e1-20c8.cfd
+    Host: hk04s.9872-f8ad063c17f4.cfd
   ws-opts:
     headers:
-      Host: hk04s.90b9-52e1-20c8.cfd
+      Host: hk04s.9872-f8ad063c17f4.cfd
     path: /
   ws-path: /
 - alpn:
@@ -2553,8 +2598,8 @@ proxies:
   udp: true
 - name: '187|Trojan-香港2 | 低倍率 #1'
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
-  port: 46941
-  server: 6b002d3218a7f90c4913530e35d4ac3c.lh.gtm.node-is.green
+  port: 46463
+  server: e4dbfcda9f7a67f55c6d5661801c8fcd.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tchk1.bilibili.com
   type: trojan
@@ -2590,8 +2635,8 @@ proxies:
   udp: true
 - name: '188|Trojan-香港2 | 低倍率 #2'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
-  port: 46407
-  server: 7a457c8d02410f3b5638b278a5e5c19a.lh.gtm.node-is.green
+  port: 43539
+  server: dca5012f5f73a3d28597520ce6909db8.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tchk1.bilibili.com
   type: trojan
@@ -2627,8 +2672,8 @@ proxies:
   udp: true
 - name: '189|Trojan-香港2 | 低倍率 #3'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
-  port: 44737
-  server: 249c30e633fea8e7787854fd50fe2765.lh.gtm.node-is.green
+  port: 48765
+  server: 118d279ba2952e8a3f3a820bad99a06c.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tchk1.bilibili.com
   type: trojan
@@ -2664,69 +2709,10 @@ proxies:
   udp: true
 - name: '190|Trojan-香港2 | 低倍率 #4'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
-  port: 45928
-  server: fc8ff5bcf41bba01ce4141c80c2c3def.lh.gtm.node-is.green
+  port: 45568
+  server: 78faf0c8c8f62fd76567e1467f8c56be.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tchk1.bilibili.com
-  type: trojan
-  udp: true
-- name: 204|香港高速
-  password: 4ce4d6a7-e47c-4d80-800c-bf874479c9b0
-  port: 5001
-  server: aws-hkhk.aikunapp.com
-  skip-cert-verify: true
-  sni: d1--cn-gotcha204-4.bilivideo.com
-  type: hysteria2
-- name: 204|香港高速2
-  password: 16ed9ae9-d895-4e13-ad48-fa7fe2720bb7
-  port: 3002
-  server: udp.1095804.xyz
-  skip-cert-verify: false
-  sni: udp.1095804.xyz
-  type: hysteria2
-  udp: true
-- mport: 52013-62013
-  name: 204|香港高速3
-  password: a9f94297-9137-4b85-9d48-bb71bc10687b
-  port: 52013
-  ports: 52013-62013
-  server: 154.16.183.48
-  skip-cert-verify: true
-  sni: files.xjqxz.top
-  type: hysteria2
-  udp: true
-- mport: 52013-62013
-  name: 204|香港高速4
-  password: a9f94297-9137-4b85-9d48-bb71bc10687b
-  port: 52013
-  ports: 52013-62013
-  server: 154.16.183.163
-  skip-cert-verify: true
-  sni: files.xjqxz.top
-  type: hysteria2
-  udp: true
-- client-fingerprint: chrome
-  name: 204|香港 新协议
-  password: 4ce4d6a7-e47c-4d80-800c-bf874479c9b0
-  port: 6001
-  server: aws-hkhk.aikunapp.com
-  skip-cert-verify: true
-  smux:
-    enabled: true
-    protocol: h2mux
-  sni: bootcdn.xuexi.cn
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 204|香港HK
-  password: 4ce4d6a7-e47c-4d80-800c-bf874479c9b0
-  port: 6001
-  server: tj-hk-1.aikunapp.com
-  skip-cert-verify: true
-  smux:
-    enabled: true
-    protocol: h2mux
-  sni: 84hpYOatf9GPMPzp.apple.com
   type: trojan
   udp: true
 - alterId: 0
