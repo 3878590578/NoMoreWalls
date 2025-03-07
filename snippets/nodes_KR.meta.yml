@@ -49,38 +49,6 @@ proxies:
   ws-opts: null
 - alterId: 0
   cipher: auto
-  name: 5|?? 韩国 - 1
-  network: ws
-  port: 80
-  server: 68607c.9872-f8ad063c17f4.cfd
-  type: vmess
-  udp: true
-  uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
-  ws-headers:
-    Host: kr01s.9872-f8ad063c17f4.cfd
-  ws-opts:
-    headers:
-      Host: kr01s.9872-f8ad063c17f4.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 5|?? 韩国 - 2
-  network: ws
-  port: 80
-  server: 68607c.9872-f8ad063c17f4.cfd
-  type: vmess
-  udp: true
-  uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
-  ws-headers:
-    Host: kr02s.9872-f8ad063c17f4.cfd
-  ws-opts:
-    headers:
-      Host: kr02s.9872-f8ad063c17f4.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 5|?? 韩国 - 3
   network: ws
   port: 80
@@ -219,22 +187,8 @@ proxies:
   server: bit-kr.03ezhg0qsa.download
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 21|🇰🇷 韩国 01 | 1x KR
-  password: a5b0a3cd-2714-4d78-ac56-cc53e568c0e9
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 21|🇰🇷 韩国 02 | 1x KR
-  password: a5b0a3cd-2714-4d78-ac56-cc53e568c0e9
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - down: 666
-  name: 22|韩国1
+  name: 21|韩国1
   password: 0755ae27-3fda-4802-869f-0ffbda05fff2
   port: 48005
   server: hg1.pandafly.site
@@ -243,7 +197,7 @@ proxies:
   type: hysteria2
   up: 666
 - down: 8888
-  name: 22|韩国2
+  name: 21|韩国2
   password: 0755ae27-3fda-4802-869f-0ffbda05fff2
   port: 48006
   server: hg2.pandafly.site
@@ -252,7 +206,7 @@ proxies:
   type: hysteria2
   up: 8888
 - down: 666
-  name: '23|韩国1 #1'
+  name: '22|韩国1 #1'
   password: dc55f78c-43f5-4cb2-af10-2b7615607581
   port: 48005
   server: hg1.pandafly.site
@@ -261,7 +215,7 @@ proxies:
   type: hysteria2
   up: 666
 - down: 8888
-  name: '23|韩国2 #1'
+  name: '22|韩国2 #1'
   password: dc55f78c-43f5-4cb2-af10-2b7615607581
   port: 48006
   server: hg2.pandafly.site
@@ -269,35 +223,47 @@ proxies:
   sni: hg2.pandafly.site
   type: hysteria2
   up: 8888
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇰🇷韩国 01 | 1x KR
-  password: 970c4ec7-fedf-4357-b200-fb603966f58e
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇰🇷韩国 02 | 1x KR
-  password: 970c4ec7-fedf-4357-b200-fb603966f58e
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 34|🇰🇷 KR
+  name: 32|🇰🇷 KR
   password: amazonskr05
   port: 443
   server: 13.215.162.189
   type: ss
 - alterId: 0
   cipher: auto
-  name: 42|🇰🇷韩国01|1x
+  name: 40|🇰🇷韩国01|1x
   port: 34241
   server: gg.youaremygod.top
   type: vmess
   udp: true
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
-- name: 44|🇰🇷 韩国
+- cipher: chacha20-ietf-poly1305
+  name: 42|🇰🇷韩国 01 | 1x KR
+  password: 3d94aa39-aa47-4327-bd17-b5b93f875fed
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 42|🇰🇷韩国 02 | 1x KR
+  password: 3d94aa39-aa47-4327-bd17-b5b93f875fed
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 43|🇰🇷 韩国 Amazon
+  password: amazonskr05
+  port: 443
+  server: 54.180.244.81
+  type: ss
+- cipher: aes-256-cfb
+  name: 43|🇰🇷 韩国 Amazon 2
+  password: amazonskr05
+  port: 443
+  server: 13.209.80.72
+  type: ss
+- name: 43|🇰🇷 韩国
   password: 63083ab4-5ef8-46d7-a3a0-1588a2b01b0a
   port: 51075
   server: lm.kaiqsz.com
@@ -305,21 +271,21 @@ proxies:
   sni: mmbiz10.redapricotcloud.com
   type: trojan
 - cipher: aes-256-gcm
-  name: 75|[韩国1] ✨ 2x
+  name: 74|[韩国1] ✨ 2x
   password: NgmMHL7OVB5t6j3X
   port: 30403
   server: 69-in-1.226969.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 78|🇰🇷韩国-首尔 01
+  name: 77|🇰🇷韩国-首尔 01
   password: 32c41b01-84be-11ef-bb6b-bc241111d95d
   port: 40789
   server: js.wnwwv.cn
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 78|🇰🇷韩国-春川 02
+  name: 77|🇰🇷韩国-春川 02
   password: 32c41b01-84be-11ef-bb6b-bc241111d95d
   port: 31080
   server: js.wnwwv.cn
@@ -327,7 +293,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 80|🇰🇷 KR韩国首尔x1
+  name: 79|🇰🇷 KR韩国首尔x1
   port: 23258
   reality-opts:
     public-key: p-g7A0RMBXZOUey2V-HjWsI-5j-EpNITj_JVqx_9OnI
@@ -340,34 +306,34 @@ proxies:
   udp: true
   uuid: d516b33d-86ee-49e8-9af7-4eb7405e5cfe
 - cipher: chacha20-ietf-poly1305
-  name: '81|🇰🇷 韩国 #1'
+  name: '80|🇰🇷 韩国 #1'
   password: eb79c4fa-baf9-456c-9163-67d9d3cf6ab5
   port: 18081
   server: jp1.yidongzf.one
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '83,84|🇰🇷韩国1 #1'
+  name: '82,83|🇰🇷韩国1 #1'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
   port: 51201
   server: a1.1tsm-sab2qkybzqc4ujzufu5yqppaomvbqfmrjunx7dmbde1ktmr.cv
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 85|🇰🇷韩国1 💧 0.6x
+  name: 84|🇰🇷韩国1 💧 0.6x
   password: a0d131b6-43e2-4bac-b5ff-b3979a574046
   port: 46285
   server: jp1.qsm1.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '86|🇰🇷韩国1 💧 0.6x #1'
+  name: '85|🇰🇷韩国1 💧 0.6x #1'
   password: 9286c93c-9c95-4c92-bfdd-5a0789da7b01
   port: 46285
   server: jp1.qsm1.xyz
   type: ss
   udp: true
-- name: 109|韩国3/رایگان - کره 3
+- name: 108|韩国3/رایگان - کره 3
   password: 107187d8-9214-41dd-b48c-60bf9fb676d3
   port: 55228
   server: 146.56.116.145
@@ -375,7 +341,7 @@ proxies:
   sni: v1.kwaicdn.com
   type: hysteria2
   udp: true
-- name: '109|韩国2 #2'
+- name: '108|韩国2 #2'
   password: 107187d8-9214-41dd-b48c-60bf9fb676d3
   port: 62111
   server: 138.2.124.166
@@ -383,7 +349,7 @@ proxies:
   sni: v1.kwaicdn.com
   type: hysteria2
   udp: true
-- name: '110,111|韩国3/رایگان - کره 3 #2'
+- name: '109,110|韩国3/رایگان - کره 3 #2'
   password: 01aa59a6-d375-4319-b948-14f515db2e50
   port: 55228
   server: 146.56.116.145
@@ -391,7 +357,7 @@ proxies:
   sni: v1.kwaicdn.com
   type: hysteria2
   udp: true
-- name: '110,111|韩国2 #4'
+- name: '109,110|韩国2 #4'
   password: 01aa59a6-d375-4319-b948-14f515db2e50
   port: 62111
   server: 138.2.124.166
@@ -399,7 +365,7 @@ proxies:
   sni: v1.kwaicdn.com
   type: hysteria2
   udp: true
-- name: '112|韩国3/رایگان - کره 3 #3'
+- name: '111|韩国3/رایگان - کره 3 #3'
   password: a7ab7c37-4797-4495-9538-f84cce7464a6
   port: 55228
   server: 146.56.116.145
@@ -407,7 +373,7 @@ proxies:
   sni: v1.kwaicdn.com
   type: hysteria2
   udp: true
-- name: '112|韩国2 #5'
+- name: '111|韩国2 #5'
   password: a7ab7c37-4797-4495-9538-f84cce7464a6
   port: 62111
   server: 138.2.124.166
@@ -415,7 +381,7 @@ proxies:
   sni: v1.kwaicdn.com
   type: hysteria2
   udp: true
-- name: '113|韩国3/رایگان - کره 3 #4'
+- name: '112|韩国3/رایگان - کره 3 #4'
   password: 057b0df4-d7e3-4e5f-aa6a-c25c1593bff1
   port: 55228
   server: 146.56.116.145
@@ -423,7 +389,7 @@ proxies:
   sni: v1.kwaicdn.com
   type: hysteria2
   udp: true
-- name: '113|韩国2 #6'
+- name: '112|韩国2 #6'
   password: 057b0df4-d7e3-4e5f-aa6a-c25c1593bff1
   port: 62111
   server: 138.2.124.166
@@ -432,10 +398,24 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: aes-256-gcm
-  name: 115|🇰🇷 韩国S01
+  name: 114|🇰🇷 韩国S01
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 20044
-  server: rxz0k-g06.kr01-ae5.entry.v50307shvkaa.art
+  server: xpcot-g06.kr01-ae5.entry.v50307shvkaa.art
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 122|🇰🇷 韩国 01 | 1x KR
+  password: aebc6e8e-924f-4904-ac72-23bbcecdf9c0
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 122|🇰🇷 韩国 02 | 1x KR
+  password: aebc6e8e-924f-4904-ac72-23bbcecdf9c0
+  port: 36313
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -454,6 +434,38 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: '133|🇰🇷 韩国1 #1'
+  network: ws
+  port: 80
+  server: 68607c.9872-f8ad063c17f4.cfd
+  type: vmess
+  udp: true
+  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
+  ws-headers:
+    Host: kr01s.9872-f8ad063c17f4.cfd
+  ws-opts:
+    headers:
+      Host: kr01s.9872-f8ad063c17f4.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 133|🇰🇷 韩国2
+  network: ws
+  port: 80
+  server: 68607c.9872-f8ad063c17f4.cfd
+  type: vmess
+  udp: true
+  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
+  ws-headers:
+    Host: kr02s.9872-f8ad063c17f4.cfd
+  ws-opts:
+    headers:
+      Host: kr02s.9872-f8ad063c17f4.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 133|🇰🇷 韩国3
   network: ws
   port: 80
@@ -466,6 +478,22 @@ proxies:
   ws-opts:
     headers:
       Host: kr03s.9872-f8ad063c17f4.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 133|🇰🇷 韩国4
+  network: ws
+  port: 80
+  server: 68607c.9872-f8ad063c17f4.cfd
+  type: vmess
+  udp: true
+  uuid: 0ba4a240-1586-4a54-929c-26389c8a4111
+  ws-headers:
+    Host: kr04s.9872-f8ad063c17f4.cfd
+  ws-opts:
+    headers:
+      Host: kr04s.9872-f8ad063c17f4.cfd
     path: /
   ws-path: /
 - alterId: 0
@@ -498,22 +526,6 @@ proxies:
   ws-opts:
     headers:
       Host: kr02s.9872-f8ad063c17f4.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '134|🇰🇷 韩国3 #1'
-  network: ws
-  port: 80
-  server: 68607c.9872-f8ad063c17f4.cfd
-  type: vmess
-  udp: true
-  uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e
-  ws-headers:
-    Host: kr03s.9872-f8ad063c17f4.cfd
-  ws-opts:
-    headers:
-      Host: kr03s.9872-f8ad063c17f4.cfd
     path: /
   ws-path: /
 - alterId: 0
