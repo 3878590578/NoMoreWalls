@@ -23,7 +23,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: 🇸 US
-  name: 395,396,416,417,435,517,600|SS-TCP-NA 🇨🇭 CH-156.146.62.162...
+  name: 395,396,416,417,435,517|🇸 US_357
   password: shadowsocks
   port: 443
   server: 156.146.62.162
@@ -50,7 +50,7 @@ proxies:
   server: 156.146.62.164
   type: ss
 - cipher: aes-256-cfb
-  name: 416|🌀29-CH |  12.1MB/s
+  name: 416,600|SS-TCP-NA 🇨🇭 CH-84.17.53.160:9...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 84.17.53.160
@@ -68,7 +68,7 @@ proxies:
     grpc-service-name: ''
   host: ''
   mode: ''
-  name: 420,540|🔗 Vauth - 1985
+  name: 420,540|🔗 Vauth - 1584
   network: tcp
   path: ''
   pbk: ''
@@ -196,28 +196,10 @@ proxies:
     path: '%2Fyouxuan'
 - alterId: 0
   cipher: auto
-  country: 🇨CO
-  h2-opts: {}
-  http-opts: {}
-  name: 515|Relay_🇨CO-🇨CH_05 | 3.41Mb
-  network: ws
-  port: 2053
-  server: live.onetwothree123.ir
-  servername: live.onetwothree123.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 52f7f4f2-ba96-4d7c-b048-bcfb9ee109dc
-  ws-opts:
-    headers:
-      HOST: live.onetwothree123.ir
-    path: /dJcxUoyK
-- alterId: 0
-  cipher: auto
   country: 🇨🇴CO
   h2-opts: {}
   http-opts: {}
-  name: 515|Relay_🇨🇴CO-🇭CH_07 |10.10Mb
+  name: 515|Relay_🇨🇴CO-CH_13
   network: ws
   port: 8443
   server: windows.onetwothree123.ir
@@ -225,7 +207,25 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: b5af7791-2801-408c-88a1-2d3bb7240bb2
+  uuid: 1cd2034c-4c8b-42cb-a4b6-98d267312788
+  ws-opts:
+    headers:
+      HOST: windows.onetwothree123.ir
+    path: /Xot8ex8r
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 515|Relay_🏁ZZ-🇭CH_138 | 1.86Mb
+  network: ws
+  port: 8443
+  server: 104.21.44.185
+  servername: windows.onetwothree123.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a722866a-d5dd-4a72-8297-eb4fb7f25b6f
   ws-opts:
     headers:
       HOST: windows.onetwothree123.ir
@@ -286,22 +286,14 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 543,544,566|🇦  V2CROSS.COM
+  name: 543,544,600|VM-TCP-NA 🇨🇭 CH-186.190.215.93...
   port: 22324
   server: 186.190.215.93
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- cipher: chacha20-ietf-poly1305
-  delay: 912
-  name: 552|瑞士 - 伯尔尼 - Aeza International ...
-  password: UQggIxCSCABoBALH599HxE
-  port: 19057
-  server: 91.103.253.151
-  type: ss
 - alterId: 0
   cipher: auto
   name: 567|🇨🇭 瑞士_032720035 L0
@@ -315,26 +307,11 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- alterId: 0
-  cipher: auto
-  name: 600|VM-TCP-NA 🇨🇭 CH-23.166.88.183:...
-  port: 22324
-  server: 23.166.88.183
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- cipher: aes-256-gcm
-  name: 600|SS-TCP-NA 🇨🇭 CH-37.143.131.121...
-  password: KDCAZFSH4HSTL2Q5
-  port: 20001
-  server: 37.143.131.121
-  type: ss
-- cipher: aes-256-gcm
-  name: 600|SS-TCP-NA 🇨🇭 CH-23.166.88.20:8...
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 23.166.88.20
+- cipher: chacha20-ietf-poly1305
+  name: 600|SS-TCP-NA 🇨🇭 CH-91.103.253.151...
+  password: 7bnfjybM14ppFqAF7cSdUW
+  port: 19057
+  server: 91.103.253.151
   type: ss
 - cipher: aes-256-cfb
   name: 600|SS-TCP-NA 🇨🇭 CH-178.209.50.206...
@@ -342,17 +319,17 @@ proxies:
   port: 989
   server: 178.209.50.206
   type: ss
+- cipher: aes-256-gcm
+  name: 600|SS-TCP-NA 🇨🇭 CH-37.143.131.121...
+  password: KDCAZFSH4HSTL2Q5
+  port: 20001
+  server: 37.143.131.121
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 600|SS-TCP-NA 🇨🇭 CH-45.95.232.236:...
   password: wFsearPAAnHrqqpFX7WP9G
   port: 4248
   server: 45.95.232.236
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 600|SS-TCP-NA 🇨🇭 CH-91.103.253.151...
-  password: 7bnfjybM14ppFqAF7cSdUW
-  port: 19057
-  server: 91.103.253.151
   type: ss
 - name: 613|🇨🇭 | 𝐒𝐖𝐈𝐓𝐙𝐄𝐑𝐋𝐀𝐍𝐃
   network: tcp
