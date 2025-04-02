@@ -8,23 +8,58 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '344,345|🇨🇭瑞士 01 #1'
+  name: '346,347|🇨🇭瑞士 01 #1'
   password: 32c41b01-84be-11ef-bb6b-bc241111d95d
   port: 41717
   server: js.wnwwv.cn
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 383|🇨🇭瑞士1 💧 0.6x
+  name: 388|🇨🇭瑞士1 💧 0.6x
   password: a0d131b6-43e2-4bac-b5ff-b3979a574046
   port: 40180
   server: oz.qsm1.xyz
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  country: 🇨🇭CH
+  delay: 1678
+  name: 394,395,421,440,561|瑞士 - 苏黎世 - DataCamp Limited - ...
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 394,395,422,440,525|🇸 US_306
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.161
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 394,395,421,422,440,525|🇺🇸 US_319
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 394,395,421,422,440,525|🇺🇸 US_317
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.163
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 394,395,421,422,440,525|🇸 US_303
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
+  type: ss
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '397,438,543,549,553,565|1|🇨🇭1 |  4.3MB/s #1'
-  network: tcp
+  flow: xtls-rprx-vision-udp443
+  name: 402,549,555,559,571,577|40|CH_speednode_0004
   port: 443
   server: yapc-1.afshin.ir
   servername: YAPC-1.afshin.ir
@@ -37,9 +72,25 @@ proxies:
   country: 🇦 PA
   h2-opts: {}
   http-opts: {}
-  name: 397,520,549,562,565,570,571,572,573,793|美国【机场推荐：https://socks.news】32
+  name: 402,442,523,525,555,568,576,577,578,579,799|美国【机场推荐：https://socks.news】32
   network: tcp
   port: '22324'
+  raw:
+    add: 186.190.215.193
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 04621bae-ab36-11ec-b909-0242ac120002
+    net: tcp
+    path: /
+    port: 22324
+    ps: 🇵🇦 PA_263
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
   server: 186.190.215.193
   servername: ''
   skip-cert-verify: true
@@ -49,56 +100,27 @@ proxies:
   ws-headers:
     Host: 186.190.215.193
   ws-path: /
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 417,418,436,520|🇺🇸 US_336
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 417,418,436,520|🇸 US_330
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.162
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 417,418,436,520|🇺🇸 US_337
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.163
-  type: ss
 - cipher: aes-256-cfb
-  country: 🇨🇭CH
-  delay: 1678
-  name: 417,436,555|瑞士 - 苏黎世 - DataCamp Limited - ...
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 84.17.53.160
-  type: ss
-- cipher: aes-256-cfb
-  name: 436|🇨CH-185.126.116.125-0153
+  name: 440|🇨CH-185.126.116.125-0153
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 185.126.116.125
   type: ss
-- name: 436,559|🇨🇭CH-152.67.71.149-2847
+- name: 440,565|🇨🇭CH-152.67.71.149-2847
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: 436|🇨CH-156.146.62.160-4384
+  name: 440|🇨CH-156.146.62.160-4384
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
 - alterId: 1
   cipher: auto
-  name: 436,559|🇨🇭CH-186.190.215.32-8088
+  name: 440,565|🇨🇭CH-186.190.215.32-8088
   network: ws
   port: 443
   server: 186.190.215.32
@@ -113,7 +135,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: 436,559|🇨🇭CH-186.190.215.75-8152
+  name: 440,565|🇨🇭CH-186.190.215.75-8152
   network: ws
   port: 443
   server: 186.190.215.75
@@ -128,7 +150,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 436,559|🇨🇭CH-140.238.212.95-8165
+  name: 440,565|🇨🇭CH-140.238.212.95-8165
   network: ws
   port: 443
   server: 140.238.212.95
@@ -143,7 +165,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 436,559|🇨🇭CH-23.166.88.27-8267
+  name: 440,565|🇨🇭CH-23.166.88.27-8267
   network: ws
   port: 443
   server: 23.166.88.27
@@ -158,7 +180,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 436,559|🇨🇭CH-186.190.215.149-8312
+  name: 440,565|🇨🇭CH-186.190.215.149-8312
   network: ws
   port: 443
   server: 186.190.215.149
@@ -172,9 +194,26 @@ proxies:
       Host: 186.190.215.149
     path: linkvws
 - client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 442,549,559|1|🇨🇭3 |  5.5MB/s
+  network: tcp
+  port: 1633
+  reality-opts:
+    public-key: stkzXR66Onu6K6sujTw1rr27jdnhHpC5EUp8CF4wQHI
+  server: 84.234.28.55
+  servername: stackoverflow.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: adcbf72d-7d0c-458c-bf65-e5dd2a195b13
+  ws-opts:
+    headers:
+      Host: JOKERRVPNTelegram:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN
+- client-fingerprint: chrome
   flow: xtls-rprx-vision-udp443
   mode: ''
-  name: 438,543,553|1,14|CH_speednode_0002
+  name: 442,549,559,571,577|40|CH_speednode_0002
   network: ''
   port: 443
   server: 152.67.68.116
@@ -184,7 +223,7 @@ proxies:
   type: vless
   udp: false
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
-- name: 449|🇨🇭瑞士
+- name: 453|🇨🇭瑞士
   network: ws
   port: 2086
   server: qrzv.youxuan.wiki
@@ -196,7 +235,7 @@ proxies:
       Host: rs1.youxuan.wiki
     path: '%2Fyouxuan'
 - cipher: chacha20-ietf-poly1305
-  name: '486,487,488,778,779,780,781|🇨🇭 Switzerland 087 #6'
+  name: '491,492,493,784,785,786,787|🇨🇭 Switzerland 087 #6'
   password: c9fa2bcffa379937679e
   plugin: obfs
   plugin-opts:
@@ -208,7 +247,43 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '526|🇨🇭瑞士 #1'
+  country: 🇨🇴CO
+  h2-opts: {}
+  http-opts: {}
+  name: 523|Relay_🇨🇴CO-CH_40 |12.29Mb
+  network: ws
+  port: 2053
+  server: aryanews.onetwothree123.ir
+  servername: aryanews.onetwothree123.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f5183399-93ae-4e31-8e7c-48affcfcaab1
+  ws-opts:
+    headers:
+      HOST: aryanews.onetwothree123.ir
+    path: /@M3HDIO1
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 523|Relay_🏁ZZ-🇭CH_233 |24.09Mb
+  network: ws
+  port: 2053
+  server: 104.21.44.185
+  servername: aryanews.onetwothree123.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: faf0b4f8-dce5-44e7-87d0-cc7c118f2a62
+  ws-opts:
+    headers:
+      HOST: aryanews.onetwothree123.ir
+    path: /🆔@M3HDIO1
+- alterId: 0
+  cipher: auto
+  name: '531|🇨🇭瑞士 #1'
   network: ws
   port: 2086
   server: qrzv.youxuan.wiki
@@ -224,7 +299,7 @@ proxies:
   ws-path: /youxuan
 - alterId: 0
   cipher: auto
-  name: '527|🇨🇭瑞士 #2'
+  name: '532|🇨🇭瑞士 #2'
   network: ws
   port: 2086
   server: qrzv.youxuan.wiki
@@ -239,7 +314,7 @@ proxies:
     path: /youxuan
   ws-path: /youxuan
 - client-fingerprint: firefox
-  name: 534|🇨🇭CH(AzadNet.t.me)
+  name: 540|🇨🇭CH(AzadNet.t.me)
   network: http
   port: 40042
   reality-opts:
@@ -252,7 +327,7 @@ proxies:
   uuid: 0cadadcb-626f-4f2e-92f1-eb53fbf05409
   ws-opts:
     path: '%2F%40NEKO_Za'
-- name: '534|🇨🇭CH(AzadNet.t.me) #1'
+- name: '540|🇨🇭CH(AzadNet.t.me) #1'
   network: tcp
   password: your_password
   port: 443
@@ -260,7 +335,7 @@ proxies:
   skip-cert-verify: true
   sni: aws-ch-zurich-1.f1rocketnode.com
   type: trojan
-- name: 613|🇨🇭 | 𝐒𝐖𝐈𝐓𝐙𝐄𝐑𝐋𝐀𝐍𝐃
+- name: 619|🇨🇭 | 𝐒𝐖𝐈𝐓𝐙𝐄𝐑𝐋𝐀𝐍𝐃
   network: tcp
   port: 8880
   server: soe.amazon-osishop.ir
@@ -273,7 +348,7 @@ proxies:
     path: '%2F'
 - grpc-opts:
     grpc-service-name: 443vless
-  name: 613|ᴠɪᴘ🇨🇭 | 𝐒𝐖𝐈𝐓𝐙𝐄𝐑𝐋𝐀𝐍𝐃
+  name: 619|ᴠɪᴘ🇨🇭 | 𝐒𝐖𝐈𝐓𝐙𝐄𝐑𝐋𝐀𝐍𝐃
   network: grpc
   port: 443
   server: soe.amazon-osishop.ir
@@ -281,14 +356,14 @@ proxies:
   type: vless
   uuid: 97b49d3b-82cd-44f1-b7f5-dea511f7db93
 - cipher: chacha20-ietf-poly1305
-  name: 614|🇨🇭 CH 瑞士
+  name: 620|🇨🇭 CH 瑞士
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49969
   server: node-a.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '633,634|🇨🇭 瑞士 #2'
+  name: '639,640|🇨🇭 瑞士 #2'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51172
   server: qq.miaolianyunapp.com
