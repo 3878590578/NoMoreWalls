@@ -569,8 +569,10 @@ class Node:
         ret = self.data.copy()
         if 'password' in ret and ret['password'].isdigit():
             ret['password'] = '!!str '+ret['password']
-        if 'uuid' in ret and len(ret['uuid']) != len(DEFAULT_UUID):
-            ret['uuid'] = DEFAULT_UUID
+        if 'uuid' in ret:
+            ret['uuid'] = str(ret['uuid'])
+            if len(ret['uuid']) != len(DEFAULT_UUID):
+                ret['uuid'] = DEFAULT_UUID
         if 'group' in ret: del ret['group']
         if 'cipher' in ret and not ret['cipher']:
             ret['cipher'] = 'auto'
