@@ -87,6 +87,15 @@ proxies:
   type: vmess
   udp: true
   uuid: 7dbdba19-6a3b-4370-93b1-fb5a89adde0c
+- country: FR
+  name: 323|FR_03
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.188.241.58
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 329|FR.法国.A
@@ -134,12 +143,13 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 379,380,409,428,593|🇫🇷 SS-TCP-NA 🇫🇷 FR-195.154.185...
+  country: 🇷FR
+  name: 379,380,409,428,512|🇫🇷FR_126
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
-- name: 379,380,428,551,562|🇺🇸 美国 Amazon数据中心
+- name: 379,380,428,551,562,563|20,21|🇫🇷FR-13.37.195.102-5489 ...
   password: telegram-id-directvpn
   port: 22222
   server: 13.37.195.102
@@ -153,7 +163,8 @@ proxies:
   server: 45.158.171.132
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 379,380,428|🇷FR-45.158.171.110-0314
+  country: 🇱🇹 LT
+  name: 379,380,428,510,512|🇱🇹 LT_176
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.110
@@ -210,7 +221,8 @@ proxies:
       Host: az05.beyondy.cfd
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 379,380,428|🇷FR-45.158.171.146-5375
+  country: 🇹 LT
+  name: 379,380,428,512|🇱🇹 LT_173
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.158.171.146
@@ -245,21 +257,16 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 379,380,428|🇫🇷FR-45.158.171.141-0319
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.158.171.141
-  type: ss
 - cipher: aes-256-cfb
-  name: 379,380,409,428|🇷FR-195.154.169.198-0313
+  name: 379,380,409,428,512,593|🇫🇷 SS-TCP-NA 🇫🇷 FR-195.154.169...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '379,380|🇫🇷 FR-146.19.168.161-7391 | 25... #1'
+  name: '379,380|🇫🇷 FR-146.19.168.161-7391 | 25... #3'
   network: ws
   port: 443
   server: 146.19.168.161
@@ -274,7 +281,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '379,380|🇫🇷 FR-45.145.166.209-5422 | 17... #1'
+  name: '379,380|🇫🇷 FR-45.145.166.209-5422 | 17... #3'
   network: ws
   port: 443
   server: hms26.xpengmotors.sbs
@@ -289,7 +296,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '379,380|🇫🇷 FR-45.145.165.114-7430 | 17... #1'
+  name: '379,380|🇫🇷 FR-45.145.165.114-7430 | 17... #3'
   network: ws
   port: 443
   server: beyonddsz.cfd
@@ -624,7 +631,8 @@ proxies:
       Host: afrhms16v.bestxray.buzz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 428,593|🇫🇷 SS-TCP-NA 🇫🇷 FR-45.158.171....
+  country: 🇸US
+  name: 428,512|🇺US_281
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.66
@@ -932,7 +940,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 428,551|🇫🇷FR-163.5.121.254-5205
+  name: 428,551,563|20,21|🇫🇷FR-163.5.121.254-5205 ...
   network: ws
   port: 443
   server: obdii.cfd
@@ -977,7 +985,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 428,526,551|🇫🇷FR-146.19.168.161-5350
+  name: 428,526,551,563|20,21|🇫🇷FR-146.19.168.161-5350...
   network: ws
   port: 443
   server: az05.beyondy.cfd
@@ -1037,7 +1045,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '428,551|🇫🇷FR-146.19.168.161-5354 #1'
+  name: 428,551,563|19|🇫🇷FR-146.19.168.161-7567
   network: ws
   port: 443
   server: 146.19.168.161
@@ -1047,8 +1055,6 @@ proxies:
   type: vmess
   uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
-    headers:
-      Host: ''
     path: /link
 - alterId: 0
   cipher: auto
@@ -1067,7 +1073,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 428,526,551|🇫🇷FR-45.145.166.209-5422
+  name: 428,526,551,563|20,21|🇫🇷FR-45.145.166.209-5422...
   network: ws
   port: 443
   server: hms26.xpengmotors.sbs
@@ -1151,7 +1157,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 428,526,551|🇫🇷FR-146.19.168.161-7391
+  name: 428,526,551,563|20,21|🇫🇷FR-146.19.168.161-7391...
   network: ws
   port: 443
   server: 146.19.168.161
@@ -1181,7 +1187,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '428,526,551|🇫🇷FR-51.77.20.137-7401 #1'
+  name: '428,526,551,563|20,21|🇫🇷FR-51.77.20.137-7401 #...'
   network: ws
   port: 443
   server: 51.77.20.137
@@ -1196,7 +1202,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '428,528,551|🇫🇷FR-163.5.159.231-7402 #1'
+  name: 428,528,551,563|20,21|🇫🇷FR-163.5.159.231-7402 ...
   network: ws
   port: 443
   server: irvideo.cfd
@@ -1271,7 +1277,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 428,528,551|🇫🇷FR-45.145.165.114-7430
+  name: 428,528,551,563|20,21|🇫🇷FR-45.145.165.114-7430...
   network: ws
   port: 443
   server: beyonddsz.cfd
@@ -1301,7 +1307,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 428,528,551|🇫🇷FR-146.19.168.112-7480
+  name: 428,528,551,563|20,21|🇫🇷FR-146.19.168.112-7480...
   network: ws
   port: 443
   server: hms19.best-tizi.top
@@ -1694,19 +1700,19 @@ proxies:
       Host: ''
     path: /vmess
 - cipher: aes-256-cfb
-  name: 428|🇷FR-162.19.59.165-9019
+  name: '428,593|🇫🇷 SS-TCP-NA 🇫🇷 FR-162.19.59.1... #2'
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.165
   type: ss
 - cipher: aes-256-cfb
-  name: 428,593|🇫🇷 SS-TCP-NA 🇫🇷 FR-162.19.59.1...
+  name: 428|🇷FR-162.19.59.163-9020
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.163
   type: ss
 - cipher: aes-256-cfb
-  name: '428,593|🇫🇷 SS-TCP-NA 🇫🇷 FR-162.19.59.1... #2'
+  name: '428,593|🇫🇷 SS-TCP-NA 🇫🇷 FR-162.19.59.1... #1'
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.162
@@ -1718,7 +1724,7 @@ proxies:
   server: 162.19.59.161
   type: ss
 - cipher: aes-256-cfb
-  name: '428,593|🇫🇷 SS-TCP-NA 🇫🇷 FR-162.19.59.1... #1'
+  name: 428,593|🇫🇷 SS-TCP-NA 🇫🇷 FR-162.19.59.1...
   password: asdKkaskJKfnsa
   port: 443
   server: 162.19.59.160
@@ -1849,7 +1855,7 @@ proxies:
   name: 476|🇫🇷 法国S01
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 20069
-  server: eafau-g06.fr01-ae5.entry.v50307shvkaa.art
+  server: y85t4-g06.fr01-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -1863,6 +1869,143 @@ proxies:
   server: console.03.aliyun.aq.kunlunaqs.com
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇨CO
+  h2-opts: {}
+  http-opts: {}
+  name: 510|Relay_🇨CO-FR_06
+  network: ws
+  port: 443
+  server: 188.114.96.2
+  servername: obdii.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      HOST: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  country: 🇨🇴CO
+  h2-opts: {}
+  http-opts: {}
+  name: 510|Relay_🇨🇴CO-🇷FR_09
+  network: ws
+  port: 443
+  server: 188.114.96.3
+  servername: obdii.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      HOST: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  country: 🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 510,563|19|🇫🇷FR-163.5.121.254-5166
+  network: ws
+  port: 443
+  server: obdii.cfd
+  servername: obdii.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 512| FR_121
+  network: ws
+  port: 443
+  server: 51.77.20.132
+  servername: a.baradiha.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: a.baradiha.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 512|🇷 FR_122
+  network: ws
+  port: 443
+  server: 163.5.159.231
+  servername: irvideo.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-headers:
+    HOST: irvideo.cfd
+  ws-path: /linkws
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 512|🇫🇷 FR_123
+  network: ws
+  port: 443
+  server: 51.77.20.137
+  servername: tilebani.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: tilebani.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 512|🇫🇷 FR_124
+  network: ws
+  port: 443
+  server: 146.19.168.161
+  servername: az05.beyondy.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-headers:
+    HOST: az05.beyondy.cfd
+  ws-path: /link
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 512|🇫🇷 FR_125
+  network: ws
+  port: 443
+  server: 51.77.20.136
+  servername: capellare.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: capellare.com
+  ws-path: /linkvws
 - name: '526|🇫🇷FR(AzadNet.t.me) #4'
   network: tcp
   password: your_password
@@ -1955,7 +2098,7 @@ proxies:
     path: /qqsvvws
 - alterId: 0
   cipher: auto
-  name: 532,562,570|🔒 VM-TCP-NA 🇫🇷 FR-38.109.228.1...
+  name: 532,562,563,570|🔒 VM-TCP-NA 🇫🇷 FR-38.109.228.1...
   network: tcp
   port: '21809'
   server: 38.109.228.113
@@ -2105,7 +2248,7 @@ proxies:
   ws-path: h=%2F3f741a9f-3c66-4102-838c-c77524d32d85
 - alterId: 0
   cipher: auto
-  name: '562,570|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228... #1'
+  name: 562,563,570|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228...
   network: tcp
   port: 27060
   server: 38.109.228.163
@@ -2114,7 +2257,7 @@ proxies:
   uuid: 71da40b9-c20e-4a6e-80cb-c8141f693526
 - alterId: 0
   cipher: auto
-  name: 562,570|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228...
+  name: '562,563,570|🔒 VM-TCP-NONE 🇫🇷 FR-38.109.228... #1'
   network: tcp
   port: 14854
   server: 38.109.228.214
@@ -2132,7 +2275,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 562,570|🔒 VM-TCP-NONE 🇫🇷 FR-23.162.152...
+  name: 562,563,570|🔒 VM-TCP-NONE 🇫🇷 FR-23.162.152...
   network: tcp
   port: 25951
   server: 23.162.152.111
@@ -2147,6 +2290,129 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 563|8|🇫🇷FR-213.32.63.176-186_1@186
+  network: tcp
+  port: 3586
+  server: 213.32.63.176
+  tls: false
+  type: vmess
+  uuid: acba8460-6c85-4d67-8f74-5a51da5e8393
+- name: 563|8|🇫🇷FR-15.237.204.41-207_1@206
+  password: telegram-id-directvpn
+  port: 22222
+  server: 15.237.204.41
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 563|8|🇫🇷FR-35.181.213.154-213_1@21...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.181.213.154
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 563|16|🇷_FR_国
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.47.183.83
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 563|19|🇫🇷FR-45.145.165.114-7583
+  network: ws
+  port: 443
+  server: beyonddsz.cfd
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 563|19|🇫🇷FR-146.19.168.112-7628
+  network: ws
+  port: 443
+  server: hms19.best-tizi.top
+  tls: true
+  type: vmess
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  ws-opts:
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 563|19|🇫🇷FR-193.160.130.102-5259
+  network: ws
+  port: 443
+  server: afrhms16v.bestxray.buzz
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 563|19|🇫🇷FR-163.5.159.231-7564
+  network: ws
+  port: 443
+  server: irvideo.cfd
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 563|19|🇫🇷FR-45.145.166.209-5262
+  network: ws
+  port: 443
+  server: hms26.xpengmotors.sbs
+  tls: true
+  type: vmess
+  uuid: fb0a2de6-bf06-4ff0-97ce-c21abcdc2d55
+  ws-opts:
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 563|19|🇫🇷FR-146.19.168.161-5593
+  network: ws
+  port: 443
+  server: az05.beyondy.cfd
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    path: /link
+- alterId: 0
+  cipher: auto
+  name: 563|28|🇫🇷 法国2
+  network: tcp
+  port: 45071
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
+- alterId: 0
+  cipher: auto
+  name: 563|28|🇫🇷 法国
+  network: tcp
+  port: 27835
+  server: ppx1.6128888.xyz
+  tls: false
+  type: vmess
+  uuid: 2a4306fd-acd4-42a0-b5db-80339e5774b2
+- alterId: 0
+  cipher: auto
+  name: 563|28|🇫🇷 法国1
+  network: tcp
+  port: 45072
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 48adfefe-6599-4cc7-9bf2-a18020260e22
 - alterId: 0
   cipher: auto
   name: 564|🇷FR-146.59.43.129-292
@@ -2173,6 +2439,24 @@ proxies:
   ws-headers:
     Host: dsw7q85l34hqa.cloudfront.net
   ws-path: /download
+- alpn:
+  - http/1.1
+  name: 569,593|🇫🇷 TR-TCP-TLS 🇫🇷 FR-15.188.241...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.188.241.58
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 569|🔒 TR-TCP-TLS 🇫🇷 FR-51.210.182....
+  network: tcp
+  password: efad7560-dfe7-11ef-b6c6-1239d0255272
+  port: 443
+  server: 51.210.182.170
+  skip-cert-verify: true
+  sni: momtazpanel.ir
+  type: trojan
 - name: 569|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.1...
   network: ws
   password: Aimer
@@ -2185,27 +2469,38 @@ proxies:
       Host: ngepx.ambercc.filegear-sg.me
 - alpn:
   - http/1.1
-  name: 569|🔒 TR-TCP-TLS 🇫🇷 FR-52.47.60.91...
+  name: 569|🔒 TR-TCP-TLS 🇫🇷 FR-35.180.177....
   network: tcp
   password: telegram-id-directvpn
   port: 22222
-  server: 52.47.60.91
+  server: 35.180.177.15
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 569|🔒 TR-TCP-TLS 🇫🇷 FR-51.210.182....
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 569|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.254....
   network: tcp
-  password: efad7560-dfe7-11ef-b6c6-1239d0255272
-  port: 443
-  server: 51.210.182.170
-  skip-cert-verify: true
-  sni: momtazpanel.ir
+  password: ebhZ11qYng
+  port: 8443
+  server: 51.195.254.75
+  sni: uk-02.allhubb.info
   type: trojan
-- name: 569,593|🇫🇷 TR-WS-TLS 🇫🇷 FR-141.11.203....
+- alpn:
+  - http/1.1
+  name: 569|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.121.2...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.36.121.2
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 569|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.2...
   network: ws
   password: NISHIKUITAN111
   port: 443
   server: 141.11.203.203
-  skip-cert-verify: true
   sni: za.ylks.xyz
   type: trojan
   ws-opts:
@@ -2220,11 +2515,11 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 569|🔒 TR-TCP-TLS 🇫🇷 FR-35.180.177....
+  name: 569|🔒 TR-TCP-TLS 🇫🇷 FR-52.47.60.91...
   network: tcp
   password: telegram-id-directvpn
   port: 22222
-  server: 35.180.177.15
+  server: 52.47.60.91
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: '569|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.1... #1'
@@ -2237,17 +2532,6 @@ proxies:
   ws-opts:
     headers:
       Host: ngepy.ambercc.filegear-sg.me
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 569|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.254....
-  network: tcp
-  password: ebhZ11qYng
-  port: 8443
-  server: 51.195.254.75
-  sni: uk-02.allhubb.info
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '573|法国1 #4'
@@ -2268,24 +2552,6 @@ proxies:
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
 - alterId: 0
   cipher: auto
-  name: 593|🇫🇷 VM-TCP-NONE 🇫🇷 FR-23.162.15...
-  port: 25951
-  server: 23.162.152.111
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e7ac718a-1751-489c-8205-24229259b410
-- alterId: 0
-  cipher: auto
-  name: 593|🇫🇷 VM-TCP-NA 🇫🇷 FR-38.109.228....
-  port: 21809
-  server: 38.109.228.113
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a6179475-489c-4bcc-b05c-481386295b93
-- alterId: 0
-  cipher: auto
   name: 593|🇫🇷 VM-TCP-NONE 🇫🇷 FR-38.109.22...
   port: 27060
   server: 38.109.228.163
@@ -2302,35 +2568,59 @@ proxies:
   tls: false
   type: vmess
   uuid: f0a214ba-2a4f-4f22-b342-03123726ab27
+- alterId: 0
+  cipher: auto
+  name: 593|🇫🇷 VM-TCP-NA 🇫🇷 FR-38.109.228....
+  port: 21809
+  server: 38.109.228.113
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a6179475-489c-4bcc-b05c-481386295b93
+- alterId: 0
+  cipher: auto
+  name: 593|🇫🇷 VM-TCP-NONE 🇫🇷 FR-23.162.15...
+  port: 25951
+  server: 23.162.152.111
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e7ac718a-1751-489c-8205-24229259b410
 - cipher: chacha20-ietf-poly1305
-  name: 593|🇫🇷 SS-TCP-NA 🇫🇷 FR-62.210.88.2...
-  password: wPx9vOTLC6T44T3NpEkqtV
-  port: 443
-  server: 62.210.88.22
+  name: 593|🇫🇷 SS-TCP-NA 🇫🇷 FR-45.158.171....
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.158.171.132
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '593|🇫🇷 SS-TCP-NA 🇫🇷 FR-45.158.171.... #2'
+  name: '593|🇫🇷 SS-TCP-NA 🇫🇷 FR-45.158.171.... #1'
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.60
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: '593|🇫🇷 SS-TCP-NA 🇫🇷 FR-45.158.171.... #3'
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.70
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 593|🇫🇷 SS-TCP-NA 🇫🇷 FR-51.195.119....
+  password: qXvO7zYU7KeaB0Md7DQLow
+  port: 1080
+  server: 51.195.119.47
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '593|🇫🇷 SS-TCP-NA 🇫🇷 FR-45.158.171.... #4'
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.158.171.146
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '593|🇫🇷 SS-TCP-NA 🇫🇷 FR-45.158.171.... #4'
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.158.171.132
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '593|🇫🇷 SS-TCP-NA 🇫🇷 FR-45.158.171.... #5'
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.70
+  name: 593|🇫🇷 SS-TCP-NA 🇫🇷 FR-62.210.88.2...
+  password: wPx9vOTLC6T44T3NpEkqtV
+  port: 443
+  server: 62.210.88.22
   type: ss
 - alterId: 0
   cipher: auto
@@ -2405,6 +2695,13 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   name: '788|🇫🇷法国02 1.5X #1'
   password: 0acc4c22-5428-4b21-870e-c92370bbc8fc
+  port: 34181
+  server: laoma1234.qeayr.cn
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '789|🇫🇷法国02 1.5X #2'
+  password: 588e6a39-f4a3-435f-8946-3aa402715096
   port: 34181
   server: laoma1234.qeayr.cn
   type: ss
