@@ -19,13 +19,6 @@ proxies:
   protocol-param: Nzg3MTg6VU5SbENJ
   server: 1.link-hub.blog
   type: ssr
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 391,392,441,528| RU_224
-  password: LqlPI19oqnunGNSLMvdXyB
-  port: 16356
-  server: 147.45.60.33
-  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 436|🇪🇪 Estonia 1 TG:@nodpai
@@ -40,6 +33,13 @@ proxies:
   tls: true
   type: vless
   uuid: 8da3432a-d4da-4f43-801f-342cda5eae9f
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 441,528|🇷🇺 RU_212
+  password: LqlPI19oqnunGNSLMvdXyB
+  port: 16356
+  server: 147.45.60.33
+  type: ss
 - alterId: 0
   cipher: auto
   name: 441,567,581|🇪🇪 github.com/freefq - 爱沙尼亚  2...
@@ -56,8 +56,9 @@ proxies:
       Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   country: 🇺 RU
-  name: 441,528,588|SS--NF解锁沙尼亚地区非自制剧-ChatGPT-TikT...
+  name: 441,526,528,577,588|SS--NF解锁沙尼亚地区非自制剧-ChatGPT-TikT...
   password: NxsHRseTSnDlGdII6D2h7g
   port: 52392
   server: 147.45.60.102
@@ -341,32 +342,3 @@ proxies:
   server: 45.80.110.224
   sni: bpb.my79801.com
   type: trojan
-- client-fingerprint: chrome
-  name: 609|VL-WS-TLS 🇪🇪 EE-147.45.60.70:4...
-  network: ws
-  port: 443
-  server: 147.45.60.70
-  servername: ee01.abvpn.ru
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 37208d52-8823-412d-944e-0a8ef08a5079
-  ws-opts:
-    headers:
-      Host: ee01.abvpn.ru
-    path: /websocket
-- name: 609|VL-WS-TLS 🇪🇪 EE-45.80.108.253:...
-  network: ws
-  port: 443
-  server: 45.80.108.253
-  servername: mmdserver.us.kg
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048

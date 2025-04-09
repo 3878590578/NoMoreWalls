@@ -7,7 +7,7 @@ proxies:
   sni: mmbiz11.redapricotcloud.com
   type: trojan
   udp: true
-- name: 202|瑞士北部（苏黎世）
+- name: 203|瑞士北部（苏黎世）
   password: c6677829-5644-427a-996d-5ac4d3223c03
   port: 34865
   server: 250407.jichang.my
@@ -21,40 +21,6 @@ proxies:
   server: oz.qsm1.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 391,392,422,441,568,577|🇨_CH_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 84.17.53.160
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 391,392,423,441,528|🇺🇸 US_256
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.161
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 391,392,422,423,441,528|🇺🇸 US_254
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.163
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 391,392,422,423,441,528|🇺🇸 US_253
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 391,392,422,423,441,528|🇸 US_262
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.162
-  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision-udp443
   name: 402|1|🇨🇭1 |  5.0MB/s
@@ -66,7 +32,7 @@ proxies:
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 402,551|🔗 Vauth - 2310
+  name: '402,551,557,573|1|🇨🇭3 |  5.5MB/s #1'
   network: tcp
   port: 443
   server: 152.67.68.116
@@ -74,6 +40,33 @@ proxies:
   tls: true
   type: vless
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: 422,423,441,528|🇸 US_238
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 422,423,441,528|🇺🇸 US_234
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: 422,423,441,528|🇸 US_233
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.163
+  type: ss
+- cipher: aes-256-cfb
+  name: 422,441,568,577|🇨_CH_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
+  type: ss
 - cipher: aes-256-cfb
   name: 441|🇨CH-185.126.116.125-0107
   password: aLpQtfEZe445QyHk
@@ -170,7 +163,7 @@ proxies:
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 443|🇨🇭1 |  3.9MB/s
+  name: 443|🇨🇭1 |  5.8MB/s
   network: ws
   port: 443
   server: cloudgetservice.mcloudservice.site
@@ -182,11 +175,32 @@ proxies:
   ws-opts:
     headers:
       Host: maxnETVipAp.nEtKh3.sitE
-    path: /linkws?ed=2560
+    path: /linkws?ed=2560flow=-udp443
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  mode: ''
+  name: 443,557,561,573,609|VL-TCP-RLT 🇨🇭 CH-84.234.29.203...
+  network: tcp
+  port: 3497
+  reality-opts:
+    public-key: b8OPGu6BSDMri-vGoSfahMJIO0trHltObYllhUYcAT0
+    short-id: b5e0d7
+  server: 84.234.29.203
+  servername: stackoverflow.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: false
+  uuid: 93a55bf9-7f6c-4a4c-a547-25099f0aaea5
+  ws-opts:
+    headers:
+      Host: JOKERRVPNTELEGRAM--JOin--@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN
+    path: ''
 - client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 443|🇨🇭2 |  5.7MB/s
+  name: 443|🇨🇭3 |  5.7MB/s
   network: ws
   port: 443
   server: 172.66.168.208
@@ -210,6 +224,24 @@ proxies:
     headers:
       Host: rs1.youxuan.wiki
     path: '%2Fyouxuan'
+- alterId: 0
+  cipher: auto
+  country: 🇨🇴CO
+  h2-opts: {}
+  http-opts: {}
+  name: 526,588|VMESS-未知>士-NF解锁瑞典地区非自制剧-ChatGP...
+  network: ws
+  port: 8443
+  server: econews.onetwothree123.ir
+  servername: econews.onetwothree123.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 46dbf0cf-4a0b-4582-9ba3-ea3cbfbc7348
+  ws-opts:
+    headers:
+      HOST: econews.onetwothree123.ir
+    path: /@M3HDIO1
 - alterId: 0
   cipher: auto
   name: '534|🇨🇭瑞士 #1'
@@ -264,33 +296,60 @@ proxies:
   skip-cert-verify: true
   sni: aws-ch-zurich-1.f1rocketnode.com
   type: trojan
-- name: 609|VL-WS-TLS 🇨🇭 CH-185.18.250.27:...
+- name: 609|VL-WS-NONE 🇨🇭 CH-185.18.250.12...
   network: ws
-  port: 443
-  server: 185.18.250.27
-  servername: sany.sofia321.woRkers.DEV
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: f9fd5b50-ae7d-5f9a-82e8-b1a9633e682e
-  ws-opts:
-    headers:
-      Host: sany.sofia321.woRkers.DEV
-    path: /
-- name: 609|VL-WS-NONE 🇨🇭 CH-185.18.250.24...
-  network: ws
-  port: 2095
-  server: 185.18.250.240
+  port: 80
+  server: 185.18.250.12
   skip-cert-verify: true
   tfo: false
   tls: false
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   ws-opts:
     headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1-TABREZ.NET?ed=2560
+      Host: ana-SErVICe.xAbjCDZ.wORkErs.deV
+    path: /1Y6MN5DFV8zB82Ai?ed=2560
+- name: 609|VL-TCP-NONE 🇨🇭 CH-84.234.28.26...
+  network: tcp
+  port: 443
+  server: 84.234.28.26
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: ab26cf44-fa18-4b0f-ab11-b619e9db7580
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 609|VL-TCP-RLT 🇨🇭 CH-84.234.29.161...
+  network: tcp
+  port: 3497
+  reality-opts:
+    public-key: b8OPGu6BSDMri-vGoSfahMJIO0trHltObYllhUYcAT0
+    short-id: b5e0d7
+  server: 84.234.29.161
+  servername: stackoverflow.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 93a55bf9-7f6c-4a4c-a547-25099f0aaea5
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /
+  name: 609|VL-GRPC-RLT 🇨🇭 CH-195.15.254.2...
+  network: grpc
+  port: 2096
+  reality-opts:
+    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
+    short-id: 765d8c54c01a53f7
+  server: 195.15.254.218
+  servername: SoURcForgE.net
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: aaea68d2-945b-453c-a546-f0688abf3693
 - name: 622|🇨🇭 | 𝐒𝐖𝐈𝐓𝐙𝐄𝐑𝐋𝐀𝐍𝐃
   network: tcp
   port: 8880
