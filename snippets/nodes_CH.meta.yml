@@ -15,54 +15,26 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: 391|🇨🇭瑞士1 💧 0.6x
+  name: 390|🇨🇭瑞士1 💧 0.6x
   password: a0d131b6-43e2-4bac-b5ff-b3979a574046
   port: 40180
   server: oz.qsm1.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 395,425,444,572,581|🇨_CH_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 84.17.53.160
-  type: ss
-- cipher: aes-128-gcm
-  name: 395,425,426,444|🇨CH-156.146.62.163-0471
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.163
-  type: ss
-- cipher: aes-128-gcm
-  name: 395,425,426,444|🇭CH-156.146.62.164-0472
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  type: ss
-- cipher: aes-128-gcm
-  name: 395,426,444|🇭CH-156.146.62.161-0482
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.161
-  type: ss
-- cipher: aes-128-gcm
-  name: 395,425,426,444|🇭CH-156.146.62.162-0508
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.162
-  type: ss
 - flow: xtls-rprx-vision-udp443-udp443
-  name: 405,583|5|2|🇨🇭1 |  3.8MB/s
+  name: 404,445,564,582|5|2|🇨🇭1 |  3.8MB/s
+  network: tcp
   port: 443
   server: yapc-1.afshin.ir
   servername: YAPC-1.afshin.ir
   skip-cert-verify: true
   tls: true
   type: vless
+  udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 405,555,583,613|🔒 VL-TCP-RLT 🇨🇭 CH-84.234.29.1...
+  flow: xtls-rprx-vision-udp443
+  name: 404,554,582|5|2|🇨🇭1 |  5.5MB/s
   network: tcp
   port: 3497
   reality-opts:
@@ -70,15 +42,16 @@ proxies:
     short-id: b5e0d7
   server: 84.234.29.161
   servername: stackoverflow.com
-  tls: false
+  tls: true
   type: vless
   uuid: 93a55bf9-7f6c-4a4c-a547-25099f0aaea5
   ws-opts:
     headers:
-      Host: JOKERRVPNTELEGRAM--JOin--@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN
+      Host: JOKERRVPNTELEGRAM--JOin--
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 405,555,583,613|🔒 VL-TCP-TLS 🇨🇭 CH-152.67.68.1...
+  flow: xtls-rprx-vision-udp443
+  mode: ''
+  name: 404,445,554,564,582|5|2|🇨🇭2 |  1.4MB/s
   network: tcp
   port: 443
   server: 152.67.68.116
@@ -86,34 +59,62 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vless
+  udp: false
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 424,425,443,531|🇺🇸 US_230
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 424,425,443,531|🇺🇸 US_240
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 424,425,443,531|🇺🇸 US_231
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.163
+  type: ss
 - cipher: aes-256-cfb
-  name: 425|🌀37-CH |  2.6MB/s
+  name: 424,443,571,580|🇨_CH_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
+  type: ss
+- cipher: aes-256-cfb
+  name: 424|🌀37-CH |  2.6MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.15.82
   type: ss
 - cipher: aes-256-cfb
-  name: 444|🇨CH-185.126.116.125-0172
+  name: 443|🇨CH-185.126.116.125-0172
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 185.126.116.125
   type: ss
-- name: 444,571|🇨🇭CH-152.67.71.149-2902
+- name: 443,570|🇨🇭CH-152.67.71.149-2902
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: 444|🇨CH-156.146.62.160-4569
+  name: 443|🇨CH-156.146.62.160-4569
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
 - alterId: 1
   cipher: auto
-  name: 444,571|🇨🇭CH-186.190.215.32-7930
+  name: 443,570|🇨🇭CH-186.190.215.32-7930
   network: ws
   port: 443
   server: 186.190.215.32
@@ -128,7 +129,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: 444,571|🇨🇭CH-186.190.215.75-7994
+  name: 443,570|🇨🇭CH-186.190.215.75-7994
   network: ws
   port: 443
   server: 186.190.215.75
@@ -143,7 +144,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 444,571|🇨🇭CH-140.238.212.95-8007
+  name: 443,570|🇨🇭CH-140.238.212.95-8007
   network: ws
   port: 443
   server: 140.238.212.95
@@ -158,7 +159,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 444,571|🇨🇭CH-23.166.88.27-8109
+  name: 443,570|🇨🇭CH-23.166.88.27-8109
   network: ws
   port: 443
   server: 23.166.88.27
@@ -173,7 +174,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 444,571|🇨🇭CH-186.190.215.149-8154
+  name: 443,570|🇨🇭CH-186.190.215.149-8154
   network: ws
   port: 443
   server: 186.190.215.149
@@ -186,7 +187,25 @@ proxies:
     headers:
       Host: 186.190.215.149
     path: linkvws
-- name: 457|🇨🇭瑞士
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  mode: ''
+  name: 445,554,564|2|🇨🇭2 |  4.8MB/s
+  network: tcp
+  port: 3497
+  reality-opts:
+    public-key: b8OPGu6BSDMri-vGoSfahMJIO0trHltObYllhUYcAT0
+    short-id: b5e0d7
+  server: 84.234.29.203
+  servername: stackoverflow.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: 93a55bf9-7f6c-4a4c-a547-25099f0aaea5
+  ws-opts:
+    headers:
+      Host: JOKERRVPNTELEGRAM--JOin--@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN
+- name: 456|🇨🇭瑞士
   network: ws
   port: 2086
   server: qrzv.youxuan.wiki
@@ -199,43 +218,7 @@ proxies:
     path: '%2Fyouxuan'
 - alterId: 0
   cipher: auto
-  country: 🇨🇴CO
-  h2-opts: {}
-  http-opts: {}
-  name: 530|Relay_🇨🇴CO-CH_17 | 7.45Mb
-  network: ws
-  port: 8443
-  server: manager.onetwothree123.ir
-  servername: manager.onetwothree123.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a996a92b-ee9c-436e-b957-0eabd07ef72a
-  ws-opts:
-    headers:
-      HOST: manager.onetwothree123.ir
-    path: /@M3HDIO1
-- alterId: 0
-  cipher: auto
-  country: 🇨🇴CO
-  h2-opts: {}
-  http-opts: {}
-  name: 530|Relay_🇨🇴CO-🇨🇭CH_18 | 3.69Mb
-  network: ws
-  port: 8443
-  server: manager.onetwothree123.ir
-  servername: manager.onetwothree123.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b3a26392-9981-4c46-bf0f-ac24d84de1f7
-  ws-opts:
-    headers:
-      HOST: manager.onetwothree123.ir
-    path: /🆔@M3HDIO1
-- alterId: 0
-  cipher: auto
-  name: '538|🇨🇭瑞士 #1'
+  name: '537|🇨🇭瑞士 #1'
   network: ws
   port: 2086
   server: qrzv.youxuan.wiki
@@ -251,7 +234,7 @@ proxies:
   ws-path: /youxuan
 - alterId: 0
   cipher: auto
-  name: '539|🇨🇭瑞士 #2'
+  name: '538|🇨🇭瑞士 #2'
   network: ws
   port: 2086
   server: qrzv.youxuan.wiki
@@ -266,7 +249,7 @@ proxies:
     path: /youxuan
   ws-path: /youxuan
 - client-fingerprint: firefox
-  name: 546|🇨🇭CH(AzadNet.t.me)
+  name: 545|🇨🇭CH(AzadNet.t.me)
   network: http
   port: 40042
   reality-opts:
@@ -279,7 +262,7 @@ proxies:
   uuid: 0cadadcb-626f-4f2e-92f1-eb53fbf05409
   ws-opts:
     path: '%2F%40NEKO_Za'
-- name: '546|🇨🇭CH(AzadNet.t.me) #1'
+- name: '545|🇨🇭CH(AzadNet.t.me) #1'
   network: tcp
   password: your_password
   port: 443
@@ -287,7 +270,7 @@ proxies:
   skip-cert-verify: true
   sni: aws-ch-zurich-1.f1rocketnode.com
   type: trojan
-- name: '583,632,633|瑞士北部（苏黎世） #2'
+- name: '582,631,632|瑞士北部（苏黎世） #2'
   password: 25c93fb5-ad17-4462-b944-edca4706c3d7
   port: 34865
   server: 250407.jichang.my
@@ -295,19 +278,46 @@ proxies:
   sni: zurich.678789.xyz
   type: trojan
   udp: true
-- client-fingerprint: firefox
-  name: 613|🔒 VL-GRPC-RLT 🇨🇭 CH-195.15.254...
-  network: grpc
-  port: 2096
-  reality-opts:
-    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
-    short-id: 765d8c54c01a53f7
-  server: 195.15.254.218
-  servername: SoURcForgE.net
+- name: 612|VL-WS-NONE 🇨🇭 CH-185.18.250.12...
+  network: ws
+  port: 2095
+  server: 185.18.250.121
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
-  uuid: aaea68d2-945b-453c-a546-f0688abf3693
-- name: 626|🇨🇭 | 𝐒𝐖𝐈𝐓𝐙𝐄𝐑𝐋𝐀𝐍𝐃
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1-TABREZ.NET?ed=2560
+- name: 612|VL-WS-NONE 🇨🇭 CH-185.18.250.52...
+  network: ws
+  port: 2095
+  server: 185.18.250.52
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1-TABREZ.NET?ed=2560
+- name: 612|VL-WS-NONE 🇨🇭 CH-185.18.250.76...
+  network: ws
+  port: 2095
+  server: 185.18.250.76
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: /
+- name: 625|🇨🇭 | 𝐒𝐖𝐈𝐓𝐙𝐄𝐑𝐋𝐀𝐍𝐃
   network: tcp
   port: 8880
   server: soe.amazon-osishop.ir
@@ -320,7 +330,7 @@ proxies:
     path: '%2F'
 - grpc-opts:
     grpc-service-name: 443vless
-  name: 626|ᴠɪᴘ🇨🇭 | 𝐒𝐖𝐈𝐓𝐙𝐄𝐑𝐋𝐀𝐍𝐃
+  name: 625|ᴠɪᴘ🇨🇭 | 𝐒𝐖𝐈𝐓𝐙𝐄𝐑𝐋𝐀𝐍𝐃
   network: grpc
   port: 443
   server: soe.amazon-osishop.ir
@@ -328,14 +338,14 @@ proxies:
   type: vless
   uuid: 97b49d3b-82cd-44f1-b7f5-dea511f7db93
 - cipher: chacha20-ietf-poly1305
-  name: 627|🇨🇭 CH 瑞士
+  name: 626|🇨🇭 CH 瑞士
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49969
   server: node-a.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '647,648|🇨🇭 瑞士 #2'
+  name: '646,647|🇨🇭 瑞士 #2'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51172
   server: qq.miaolianyunapp.com
