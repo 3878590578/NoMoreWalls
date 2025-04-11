@@ -34,14 +34,15 @@ proxies:
   type: vless
   uuid: 8da3432a-d4da-4f43-801f-342cda5eae9f
 - cipher: chacha20-ietf-poly1305
-  name: 443|🇪EE-147.45.60.33-0459
+  country: 🇺 RU
+  name: 443,531|🇺 RU_241
   password: LqlPI19oqnunGNSLMvdXyB
   port: 16356
   server: 147.45.60.33
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 443,529,531|🇷🇺 RU_208
+  name: 443,531|🇷 RU_236
   password: NxsHRseTSnDlGdII6D2h7g
   port: 52392
   server: 147.45.60.102
@@ -309,7 +310,7 @@ proxies:
     path: twitterfreecodessecurity%3Dtls
 - alterId: 0
   cipher: auto
-  name: 583|🇪EE-176.112.146.190-338
+  name: 583|🇪EE-176.112.146.190-299
   network: ws
   port: 80
   server: 176.112.146.190
@@ -333,17 +334,10 @@ proxies:
     headers:
       Host: ee.oppo.quest
     path: /
-- name: 612|VL-WS-TLS 🇪🇪 EE-45.80.108.253:...
-  network: ws
+- name: 588|🔒 TR-TCP-TLS 🇪🇪 EE-45.80.110.2...
+  network: tcp
+  password: bpb-trojan
   port: 443
-  server: 45.80.108.253
-  servername: mmdserver.us.kg
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-  ws-opts:
-    headers:
-      Host: mmdserver.us.kg
-    path: /?ed=2048
+  server: 45.80.110.224
+  sni: bpb.my79801.com
+  type: trojan
