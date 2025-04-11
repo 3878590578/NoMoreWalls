@@ -1,24 +1,11 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 192|波兰
+  name: 191|波兰
   password: 0e7f9306-0021-450b-b6b1-81d6fe9add1c
   port: 51079
   server: cnamelm-dwzksl7kzye3rdby.bestcassoulet.com
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 382,410,429,517|🇪 DE_110
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 92.118.205.228
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 382,429,517|_13
-  password: d3837224ed465f00
-  port: 57456
-  server: war.ssvpnapp.win
-  type: ss
 - cipher: aes-256-gcm
   name: 410,429|🇱PL-51.77.53.200-6236
   password: faBAoD54k87UJG7
@@ -204,6 +191,13 @@ proxies:
   password: faBAoD54k87UJG7
   port: 2375
   server: 51.77.53.200
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇪 DE
+  name: 410,429,517|🇪 DE_217
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 92.118.205.228
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇵🇱PL
@@ -489,8 +483,36 @@ proxies:
       Host: 3h-poland1.09vpn.com
     path: /vmess/
 - cipher: aes-256-gcm
+  name: 563|🇵🇱 VIP 波兰1-1G
+  password: 6ad8c45a-d634-4da6-a526-242f638225ee
+  port: 47085
+  server: pl01.jiasudu.buzz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 563|🇵🇱 VIP 波兰1-1E
+  password: 36ad09d0-9ae7-4e2b-a7cf-e3e24555887a
+  port: 47085
+  server: pl01.jiasudu.buzz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
   name: 563|🇵🇱 VIP 波兰1-1A
   password: 0597a157-2165-430c-8fdc-d6d6b72f8444
+  port: 47085
+  server: pl01.jiasudu.buzz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 563|🇵🇱 VIP 波兰1-1D
+  password: 52092bbb-8e80-4d62-a5d8-da6a0da93ecc
+  port: 47085
+  server: pl01.jiasudu.buzz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 563|🇵🇱 VIP 波兰1-1B
+  password: 224b88a9-dc41-4922-8a00-ed3f883d4c7f
   port: 47085
   server: pl01.jiasudu.buzz
   type: ss
@@ -503,30 +525,27 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 563|🇵🇱 VIP 波兰1-1B
-  password: 36ad09d0-9ae7-4e2b-a7cf-e3e24555887a
+  name: 563|🇵🇱 VIP 波兰1-1F
+  password: 919b17e5-b4a7-491e-8089-6c0ae220e77c
   port: 47085
   server: pl01.jiasudu.buzz
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 563|🇵🇱 VIP 波兰1-1E
-  password: 52092bbb-8e80-4d62-a5d8-da6a0da93ecc
-  port: 47085
-  server: pl01.jiasudu.buzz
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 563|🇵🇱 VIP 波兰1-1D
-  password: 224b88a9-dc41-4922-8a00-ed3f883d4c7f
-  port: 47085
-  server: pl01.jiasudu.buzz
-  type: ss
-  udp: true
-- name: 574|🔒 TR-TCP-TLS 🇵🇱 PL-51.83.186.1...
+- name: 574,598|🇵🇱 TR-TCP-TLS 🇵🇱 PL-51.83.186....
   network: tcp
   password: 2959e4f7-7589-4a40-9b96-1be750ac7845
   port: 80
   server: 51.83.186.142
+  skip-cert-verify: true
   sni: pl1.trojanvh.xyz
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 575|🔒 VM-TCP-NA 🇵🇱 PL-2.56.125.101...
+  network: tcp
+  port: '38088'
+  server: 2.56.125.101
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1275ea18-bc9c-4bcb-b3fd-fee70272e143
