@@ -22,25 +22,25 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 400,401,431,432,450|🇭CH-156.146.62.163-0376
+  name: 401,431,432,450|🇭CH-156.146.62.163-0376
   password: shadowsocks
   port: 443
   server: 156.146.62.163
   type: ss
 - cipher: aes-128-gcm
-  name: 400,401,431,432,450|🇨🇭CH-156.146.62.162-0375
+  name: 401,431,432,450|🇨🇭CH-156.146.62.162-0375
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
-  name: 400,401,431,432,450|🇨🇭CH-156.146.62.164-0395
+  name: 401,431,432,450|🇨🇭CH-156.146.62.164-0395
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  name: 400,401,432,450|CH-156.146.62.161-0372
+  name: 401,432,450|CH-156.146.62.161-0372
   password: shadowsocks
   port: 443
   server: 156.146.62.161
@@ -152,13 +152,12 @@ proxies:
   skip-cert-verify: true
   sni: aws-ch-zurich-1.f1rocketnode.com
   type: trojan
-- name: '590,639,640|瑞士北部（苏黎世） #2'
-  password: 25c93fb5-ad17-4462-b944-edca4706c3d7
-  port: 34865
-  server: 250407.jichang.my
-  skip-cert-verify: false
-  sni: zurich.678789.xyz
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '585|🇨🇭 瑞士 #1'
+  password: 0384e697-7042-4dde-ab7b-1e1f0c8cba79
+  port: 26038
+  server: diao.arken8379.com
+  type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 634|🇨🇭 CH 瑞士
@@ -167,8 +166,15 @@ proxies:
   server: node-a.dlg365.com
   type: ss
   udp: true
+- name: '639,640|瑞士北部（苏黎世） #2'
+  password: 25c93fb5-ad17-4462-b944-edca4706c3d7
+  port: 34865
+  server: 250407.jichang.my
+  sni: zurich.678789.xyz
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '654,655|🇨🇭 瑞士 #2'
+  name: '654,655|🇨🇭 瑞士 #3'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51172
   server: qq.miaolianyunapp.com

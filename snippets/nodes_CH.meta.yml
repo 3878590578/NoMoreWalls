@@ -22,31 +22,32 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 400,401,431,432,450|🇭CH-156.146.62.163-0376
+  name: 401,431,432,450|🇭CH-156.146.62.163-0376
   password: shadowsocks
   port: 443
   server: 156.146.62.163
   type: ss
 - cipher: aes-128-gcm
-  name: 400,401,431,432,450|🇨🇭CH-156.146.62.162-0375
+  name: 401,431,432,450|🇨🇭CH-156.146.62.162-0375
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
-  name: 400,401,431,432,450|🇨🇭CH-156.146.62.164-0395
+  name: 401,431,432,450|🇨🇭CH-156.146.62.164-0395
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  name: 400,401,432,450|CH-156.146.62.161-0372
+  name: 401,432,450|CH-156.146.62.161-0372
   password: shadowsocks
   port: 443
   server: 156.146.62.161
   type: ss
-- flow: xtls-rprx-vision-udp443-udp443
-  name: 411,452,568,572,584,590|5|2|🇨🇭1 |  3.8MB/s
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision-udp443-udp443
+  name: 411,452,562,568,572,584,590|5|0|🇨🇭3 |  2.0MB/s
   network: tcp
   port: 443
   server: yapc-1.afshin.ir
@@ -57,24 +58,8 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 411,562,590,620|🔒 VL-TCP-RLT 🇨🇭 CH-84.234.29.1...
-  network: tcp
-  port: 3497
-  reality-opts:
-    public-key: b8OPGu6BSDMri-vGoSfahMJIO0trHltObYllhUYcAT0
-    short-id: b5e0d7
-  server: 84.234.29.161
-  servername: stackoverflow.com
-  tls: false
-  type: vless
-  uuid: 93a55bf9-7f6c-4a4c-a547-25099f0aaea5
-  ws-opts:
-    headers:
-      Host: JOKERRVPNTELEGRAM--JOin--@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN------@JOKERRVPN
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 411,452,562,568,572,584,590,620|🔒 VL-TCP-TLS 🇨🇭 CH-152.67.68.1...
+  flow: xtls-rprx-vision-udp443-udp443
+  name: 411,452,562,568,572,584,590|5|1|🇨🇭2 |  2.8MB/s
   network: tcp
   port: 443
   server: 152.67.68.116
@@ -183,6 +168,24 @@ proxies:
     headers:
       Host: 186.190.215.149
     path: linkvws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  mode: ''
+  name: 452,562,572|1|🇨🇭2 |  4.9MB/s
+  network: tcp
+  port: 3497
+  reality-opts:
+    public-key: b8OPGu6BSDMri-vGoSfahMJIO0trHltObYllhUYcAT0
+    short-id: b5e0d7
+  server: 84.234.29.203
+  servername: stackoverflow.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: 93a55bf9-7f6c-4a4c-a547-25099f0aaea5
+  ws-opts:
+    headers:
+      Host: JOKERRVPNTELEGRAM--JOin--%40JOKERRVPN------%40JOKERRVPN------%40JOKERRVPN------%40JOKERRVPN------%40JOKERRVPN------%40JOKERRVPN------%40JOKERRVPN------%40JOKERRVPN------%40JOKERRVPN
 - name: 463|🇨🇭瑞士
   network: ws
   port: 2086
@@ -248,46 +251,20 @@ proxies:
   skip-cert-verify: true
   sni: aws-ch-zurich-1.f1rocketnode.com
   type: trojan
-- name: '590,639,640|瑞士北部（苏黎世） #2'
-  password: 25c93fb5-ad17-4462-b944-edca4706c3d7
-  port: 34865
-  server: 250407.jichang.my
-  skip-cert-verify: false
-  sni: zurich.678789.xyz
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '585|🇨🇭 瑞士 #1'
+  password: 0384e697-7042-4dde-ab7b-1e1f0c8cba79
+  port: 26038
+  server: diao.arken8379.com
+  type: ss
   udp: true
-- name: 620|🔒 VL-WS-NONE 🇨🇭 CH-185.18.250....
-  network: ws
-  port: 2095
-  server: 185.18.250.76
+- name: 620|🔒 VL-TCP-NONE 🇨🇭 CH-84.234.28....
+  network: tcp
+  port: 443
+  server: 84.234.28.26
   tls: false
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-- name: '620|🔒 VL-WS-NONE 🇨🇭 CH-185.18.250.... #1'
-  network: ws
-  port: 2095
-  server: 185.18.250.121
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-- client-fingerprint: firefox
-  name: 620|🔒 VL-GRPC-RLT 🇨🇭 CH-195.15.254...
-  network: grpc
-  port: 2096
-  reality-opts:
-    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
-    short-id: 765d8c54c01a53f7
-  server: 195.15.254.218
-  servername: SoURcForgE.net
-  tls: false
-  type: vless
-  uuid: 91ea65a6-8896-40ea-ae94-63f1c90d15ef
+  uuid: ab26cf44-fa18-4b0f-ab11-b619e9db7580
 - name: 633|🇨🇭 | 𝐒𝐖𝐈𝐓𝐙𝐄𝐑𝐋𝐀𝐍𝐃
   network: tcp
   port: 8880
@@ -315,8 +292,15 @@ proxies:
   server: node-a.dlg365.com
   type: ss
   udp: true
+- name: '639,640|瑞士北部（苏黎世） #2'
+  password: 25c93fb5-ad17-4462-b944-edca4706c3d7
+  port: 34865
+  server: 250407.jichang.my
+  sni: zurich.678789.xyz
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '654,655|🇨🇭 瑞士 #2'
+  name: '654,655|🇨🇭 瑞士 #3'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51172
   server: qq.miaolianyunapp.com
