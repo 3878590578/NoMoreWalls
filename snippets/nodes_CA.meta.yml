@@ -98,27 +98,29 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1071
-  name: 72,393,548|加拿大 - 多伦多 - Tangram Canada Inc...
+  name: 72,379,393,548|加拿大 - 多伦多 - Tangram Canada Inc...
   port: 58891
   server: 91.194.11.162
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
 - auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
   country: 🇨🇦CA
   delay: 2119
-  name: 72,393,548|加拿大 - 旺市 - Cloudflare, Inc. - ...
+  name: 72,393,429,546,548|加拿大 - 旺市 - Cloudflare, Inc. - ...
   password: 2429bee3-e0c1-47dd-b420-75e6512b184b
   port: 30300
   server: 155.248.219.28
   skip-cert-verify: true
   sni: www.bing.com
+  tls: false
   type: hysteria2
   udp: true
 - auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   country: 🇨🇦CA
   delay: 1743
-  name: '72,393,429,542,548,558|0|🇨🇦9 |  1.2MB/s #1'
+  name: 72,393,542,548,558|2|🇨🇦3 |  1.9MB/s
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979
   server: 192.18.145.7
@@ -226,10 +228,10 @@ proxies:
     path: /
   ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: 191|🇨🇦加拿大 01 | 1x CA
-  password: fa7d51ac-2f10-4bb0-ba7c-b1e560ae100d
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 191|🇨🇦 加拿大 01 | 1x CA
+  password: 2c610aac-1bf9-4e03-935b-f6bab813ccd1
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -298,10 +300,10 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 209|🇨🇦 加拿大 01 | 1x CA
-  password: 3527d77f-a6df-4a03-9b9e-28b8d8122533
-  port: 36441
-  server: free.2weradf.xyz
+  name: 211|🇨🇦加拿大 01 | 1x CA
+  password: c03ea365-c821-438e-9973-3be5cfe28efe
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - name: '241,242|「🇨🇦」EMO | 冰糖心 x3 #1'
@@ -321,7 +323,7 @@ proxies:
 - down: 1000
   name: 260|🇨🇦加拿大02
   password: e558f60d-96be-447e-aaa8-21a9c9caf7a8
-  port: 20717
+  port: 20794
   ports: 20701-20799
   server: au.1e6af9be69cbae59cba.tech
   skip-cert-verify: false
@@ -331,21 +333,52 @@ proxies:
 - down: 1000
   name: '261|🇨🇦加拿大02 #1'
   password: 41fb3188-ebdf-43a8-9168-015df84ba376
-  port: 20776
+  port: 20717
   ports: 20701-20799
   server: au.1e6af9be69cbae59cba.tech
   skip-cert-verify: false
   sni: au.1e6af9be69cbae59cba.tech
   type: hysteria2
   up: 1000
-- name: '330|🇨🇦加拿大02 #2'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '302,303|🇨🇦 CA-ArcticCloud-Reality #1'
+  network: tcp
+  port: 60001
+  reality-opts:
+    public-key: ecrKVIqDtdDq-RxaU_vbVDStNwzzT-ghVPPl2oPOdF8
+  server: 158.69.121.75
+  servername: addons.mozilla.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 93368b00-354d-4ee1-89d1-9f047e2d4359
+- alterId: 0
+  cipher: auto
+  name: '302,303|🇨🇦 CA-ArcticCloud #1'
+  network: ws
+  port: 443
+  server: 5.10.246.123
+  servername: arcticcloudargo.xiaozi.ggff.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 0ef5c4f2-0677-48f4-97a5-c4d33901808b
+  ws-opts:
+    headers:
+      Host: arcticcloudargo.xiaozi.ggff.net
+    path: /vmess-argo?ed=2048
+- down: 1000
+  name: '330|🇨🇦加拿大02 #2'
   password: c5ff9416-15f6-4919-a928-dc94a8290086
-  port: 20716
+  port: 20730
+  ports: 20701-20799
   server: au.1e6af9be69cbae59cba.tech
   skip-cert-verify: false
   sni: au.1e6af9be69cbae59cba.tech
-  tls: false
   type: hysteria2
+  up: 1000
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 338|🇨🇦 CA加拿大多伦多x1直连
@@ -381,25 +414,208 @@ proxies:
   server: jp1.qsm1.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇨 CZ
+  name: 379,408,513|🇨 CZ_131
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 379,427|CA-23.162.200.227-0919
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 379,427,552|🇨🇦CA-134.195.198.147-0978
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 379,427,513|_06
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- alterId: 0
+  cipher: auto
+  delay: 1166
+  name: '379,427,533,543,552,564,566,673|🇨🇦 加拿大 001 #2'
+  network: ws
+  port: '2052'
+  server: s1.db-link01.top
+  servername: 100-151-164-47.s1.db-link01.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-151-164-47.s1.db-link01.top
+    path: /dabai.in172.67.2.142
+- alterId: 0
+  cipher: auto
+  name: '379,427,543,552,564,566,673|🇨🇦 加拿大 002 #2'
+  network: ws
+  port: '8880'
+  server: s4.db-link02.top
+  servername: ''
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-128-12-180.s4.db-link02.top
+    path: /dabai.in104.25.239.131
+- alterId: 0
+  cipher: auto
+  name: '379,427,543,552,564,566,673|🇨🇦 加拿大 003 #2'
+  network: ws
+  port: '8080'
+  server: 104.16.155.10
+  servername: ''
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-149-191-2.s5.db-link02.top
+    path: /dabai.in104.20.16.209
+- alterId: 0
+  cipher: auto
+  name: '379,427,543,552,564,566,673|🇨🇦 加拿大 004 #2'
+  network: ws
+  port: '2086'
+  server: s1.cn-db.top
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-47-154-9.s1.cn-db.top
+    path: /
+- delay: 1303
+  name: 379,543|加拿大 005
+  network: ws
+  port: 443
+  server: 140.238.158.238
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '379,427,543,552,564,566,673|🇨🇦 加拿大 006 #2'
+  network: ws
+  port: '443'
+  server: us159.vp1000.net
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a9326a5a-b890-46e3-bd3d-a4f9d5082323
+  ws-opts:
+    headers:
+      Host: us148.vp1000.net
+    path: /cp100vp800kkkdsnx
+- name: 379,543|加拿大 007
+  network: ws
+  port: 443
+  server: 138.197.175.155
+  servername: imn90-plkdefss5487-jhnvgfdf.ssaaddaaffmmoottaahhaarrii.store
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3df4aabf-29d7-457e-f228-016156fc686a
+  ws-opts:
+    headers:
+      Host: imn90-plkdefss5487-jhnvgfdf.ssaaddaaffmmoottaahhaarrii.store
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '379,427,543,552,564,566,673|🇨🇦 加拿大 008 #2'
+  network: ws
+  port: '8080'
+  server: s4.db-link02.top
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-217-184-172.s4.db-link02.top
+    path: /dabai.in104.25.238.226
+- allowInsecure: ''
+  name: '379,427,543,552,564,566,570,673|🇨🇦 加拿大 009 #2'
+  network: tcp
+  password: ef23ddd0-14c5-39c2-9880-af55ce892363
+  port: 52492
+  server: 142.171.162.85
+  skip-cert-verify: false
+  sni: t28.qifei.app
+  tls: true
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 379,389,536,542,546,558,564|5,40|CA_speednode_0001
+  network: tcp
+  port: 42557
+  reality-opts:
+    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
+    short-id: f430927d
+  server: 155.248.219.28
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision-udp443
-  name: 389,536,542,546,558,564|5|1|🇨🇦3 |  4.5MB/s
+  name: 389,536,542,564|5|1|🇨🇦3 |  4.5MB/s
   port: 16011
   server: gysz0000.dynu.net
   servername: www.amazon.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 389,536,542,546,558,564|5,40|CA_speednode_0001
-  port: 42557
-  server: 155.248.219.28
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
 - cipher: aes-128-gcm
   name: 408|🇨🇦1 |  14.1MB/s
   password: shadowsocks
@@ -408,17 +624,10 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 408,427,513|🇦CA_102
+  name: 408,427,513|🇦CA_120
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇨 CZ
-  name: 408,513| CZ_111
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
   type: ss
 - name: 413|SPECAIL|1.5X WIFI
   password: bf9a43a1-c449-4c77-b712-9265efe3ebc8
@@ -454,39 +663,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
-- alterId: 0
-  cipher: auto
-  name: 427|CA-23.162.200.227-0919
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 427,552|🇨🇦CA-134.195.198.147-0978
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 427,513|_06
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
 - alterId: 0
   cipher: auto
   name: 427|🇨🇦CA-51.79.102.253-1048
@@ -883,9 +1059,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  country: 🇨🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 427,552,564,573|VMESS--NF解锁拿大地区非自制剧-ChatGPT-Ti...
+  name: 427,511,552,564,573|VMESS--NF解锁拿大地区非自制剧-ChatGPT-Ti...
   network: ws
   port: 80
   server: 51.79.102.253
@@ -1246,14 +1423,16 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- client-fingerprint: ''
+- client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 429|🇨🇦1 |  1.3MB/s
+  name: 429,536,594|VL-WS-TLS 🏴‍☠️ NA-104.21.3.219...
   network: ws
   port: 8443
-  server: 172.67.153.156
+  server: 104.21.3.219
   servername: ovhwuxian.pai50288.uk
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   udp: false
@@ -1262,36 +1441,6 @@ proxies:
     headers:
       Host: ovhwuxian.pai50288.uk
     path: /57ba2ab1
-- name: 429|🇨🇦2 |  1.2MB/s
-  network: ws
-  port: 443
-  server: huxley.ns.cloudflare.com
-  servername: vb.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: vb.ylka.dpdns.org
-    path: /?ed=2560
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 429|🇨🇦4 |  1.0MB/s
-  network: ws
-  port: 443
-  server: 160.123.255.18
-  servername: vb.ylka.dpdns.org
-  tls: true
-  type: vless
-  udp: false
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: vb.ylka.dpdns.org
-    path: /?ed=2560security=tls
 - down: null
   name: '435|加拿大1 #1'
   password: beb8b58c-fa25-4533-9df2-6dcd5d388509
@@ -1310,7 +1459,7 @@ proxies:
   sni: jnd1.gywanglug.xyz
   type: hysteria2
   up: null
-- name: '444|🇨🇦 加拿大 #5'
+- name: '444|🇨🇦 加拿大 #6'
   network: tcp
   password: 675ddf25-0a98-4ec6-bcd0-fa1c1cc498cd
   port: 50121
@@ -1331,7 +1480,7 @@ proxies:
   name: 475|🇨🇦 加拿大S01
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 20059
-  server: mroig-g06.ca01-ae5.entry.v50307shvkaa.art
+  server: fdh6t-g06.ca01-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - alterId: 0
@@ -1643,9 +1792,9 @@ proxies:
   cipher: auto
   name: '506,507|加拿大1-多伦多-白嫖优化节点-CDN | 1x #1'
   network: ws
-  port: 2053
-  server: 1744578141.tencentapp.cn
-  servername: 1744578178.speed.fdvb.cccp.freefly.pp.ua
+  port: 2096
+  server: 1744591941.tencentapp.cn
+  servername: 1744591978.speed.fdvb.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1653,11 +1802,71 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1744578178.speed.fdvb.cccp.freefly.pp.ua
+      Host: 1744591978.speed.fdvb.cccp.freefly.pp.ua
     path: /
+- alterId: 0
+  cipher: auto
+  country: 🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: 511,527,563,564,571|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
+  network: tcp
+  port: '58891'
+  server: 91.194.11.162
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+- alterId: 0
+  cipher: auto
+  country: 🇨🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: '511,527,543,555,563,564,566,571,673|🇮🇱 以色列 002 #2'
+  network: tcp
+  port: '28984'
+  server: 91.194.11.178
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
+  ws-headers:
+    Host: 91.194.11.178
+- alterId: 0
+  cipher: auto
+  country: 🇨🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: '511,527,543,555,563,564,566,571,673|🇮🇱 以色列 001 #2'
+  network: tcp
+  port: '27699'
+  raw:
+    add: 91.194.11.118
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: c23b127b-af87-43bb-aa1e-ce42374a2b53
+    net: tcp
+    path: ''
+    port: '27699'
+    ps: 🔥Join+Telegram:@FarahVPN🟣
+    scy: auto
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 91.194.11.118
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '527,536,542,558|0|🇨🇦4 |  5.1MB/s #1'
+  name: 527,536,542,594|🇨🇦 VL-TCP-RLT 🇨🇦 CA-158.69.121...
   network: tcp
   port: 25169
   reality-opts:
@@ -1665,6 +1874,8 @@ proxies:
     short-id: ab507240
   server: 158.69.121.75
   servername: www.apple.com
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 7fdb3160-0840-4823-fae5-f39ead148300
@@ -1675,7 +1886,7 @@ proxies:
   tls: false
   type: vless
   uuid: 4b00bc23-3920-48ac-956c-1c0e4c574465
-- name: 527,536|🔗 Vauth - 2284
+- name: 527,536|🔗 Vauth - 3019
   network: grpc
   port: 59483
   server: 142.132.163.156
@@ -3443,18 +3654,14 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 529,565|🏁RELAY-104.19.32.46-104
+  name: '529|加拿大_多伦多 #220'
   network: ws
   port: 2086
   server: 104.19.32.46
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-headers:
-    Host: 104.19.32.46
   ws-opts: {}
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '529|加拿大_多伦多 #221'
@@ -3487,32 +3694,24 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 529,565|🏁RELAY-104.19.47.32-008
+  name: '529|加拿大_多伦多 #224'
   network: ws
   port: 2086
   server: 104.19.47.32
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-headers:
-    Host: 104.19.47.32
   ws-opts: {}
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 529,565|🏁RELAY-104.19.46.39-006
+  name: '529|加拿大_多伦多 #225'
   network: ws
   port: 2086
   server: 104.19.46.39
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-headers:
-    Host: 104.19.46.39
   ws-opts: {}
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '529,568|关注电报https://t.me/aifenxiang202... #16'
@@ -3545,18 +3744,14 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 529,565|🏁RELAY-104.20.25.146-011
+  name: '529|加拿大_多伦多 #229'
   network: ws
   port: 2086
   server: 104.20.25.146
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-headers:
-    Host: 104.20.25.146
   ws-opts: {}
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '529|加拿大_渥太華 #2'
@@ -3678,9 +3873,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 529,563|CF中转_0413103915 L6
+  name: '529|加拿大_多伦多 #237'
   network: ws
-  port: '443'
+  port: 443
   server: 188.114.97.2
   tls: true
   type: vmess
@@ -3756,9 +3951,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 529,563|CF中转_0413103512 L6
+  name: '529|加拿大_多伦多 #243'
   network: ws
-  port: '443'
+  port: 443
   server: 172.67.181.241
   tls: true
   type: vmess
@@ -4241,9 +4436,9 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 529,563|CF中转_0413103909 L0
+  name: '529|加拿大_多伦多 #280'
   network: ws
-  port: '443'
+  port: 443
   server: 188.114.96.3
   tls: true
   type: vmess
@@ -4358,9 +4553,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '529|加拿大_多伦多 #291'
+  name: 529,563|CF中转_0413203721 L0
   network: ws
-  port: 443
+  port: '443'
   server: 188.114.96.3
   tls: true
   type: vmess
@@ -4371,22 +4566,9 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '529|加拿大_多伦多 #292'
+  name: '529|加拿大_多伦多 #293'
   network: ws
   port: 443
-  server: 188.114.97.2
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 529,563|CF中转_0413103918 L6
-  network: ws
-  port: '443'
   server: 188.114.96.1
   tls: true
   type: vmess
@@ -4462,9 +4644,9 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 529,563|CF中转_0413107878 L6
+  name: '529|加拿大_多伦多 #303'
   network: ws
-  port: '443'
+  port: 443
   server: 172.67.170.13
   tls: true
   type: vmess
@@ -4761,9 +4943,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '529|加拿大_多伦多 #327'
+  name: '529,563|🇺🇸 美国 CloudFlare节点 6 #1'
   network: ws
-  port: 443
+  port: '443'
   server: 162.159.8.120
   tls: true
   type: vmess
@@ -5798,36 +5980,6 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- delay: 1303
-  name: 543|加拿大 005
-  network: ws
-  port: 443
-  server: 140.238.158.238
-  servername: c01.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: c01.ylkszy.eu.org
-    path: /?ed=2560
-- name: 543|加拿大 007
-  network: ws
-  port: 443
-  server: 138.197.175.155
-  servername: imn90-plkdefss5487-jhnvgfdf.ssaaddaaffmmoottaahhaarrii.store
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3df4aabf-29d7-457e-f228-016156fc686a
-  ws-opts:
-    headers:
-      Host: imn90-plkdefss5487-jhnvgfdf.ssaaddaaffmmoottaahhaarrii.store
-    path: /
 - alterId: 0
   cipher: auto
   name: 552|🇨🇦CA-104.247.81.52-5672
@@ -5957,33 +6109,19 @@ proxies:
     headers:
       Host: ll.ylkszy.eu.org
     path: /
-- auth: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  name: 559|🇨🇦 加拿大-2
-  password: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  port: 19842
-  server: ca.731732.xyz
-  skip-cert-verify: false
-  sni: ca.731732.xyz
-  type: hysteria2
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 559|🇨🇦 加拿大1-1B
-  port: 45064
-  server: haa.dashuai.cyou
+  name: 555|🇨🇦 _加拿大
+  network: ws
+  port: '80'
+  server: 51.79.103.76
   tls: false
   type: vmess
-  udp: true
-  uuid: ab3e2eda-bbed-4aed-96a6-4c998bc6034c
-- alterId: 0
-  cipher: auto
-  name: 559|🇨🇦 加拿大2-1A
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6a982554-7172-4580-abe4-e2c781be2acb
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 559|🇨🇦 加拿大1-1A
@@ -5992,13 +6130,74 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 6a982554-7172-4580-abe4-e2c781be2acb
+  uuid: 97263a25-d387-474d-8509-d4eebe93dafa
+- alterId: 0
+  cipher: auto
+  name: 559|🇨🇦 加拿大2-1B
+  port: 45065
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7ba58d09-f1ce-4fc7-8eb4-1077aee027cd
+- alterId: 0
+  cipher: auto
+  name: 559|🇨🇦 加拿大1-1B
+  port: 45064
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7ba58d09-f1ce-4fc7-8eb4-1077aee027cd
+- alterId: 0
+  cipher: auto
+  name: 559|🇨🇦 加拿大1-1C
+  port: 45064
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 98a6ecbc-fb2a-4181-9d01-80c936ad04cf
+- cipher: aes-128-gcm
+  name: 559|QI-CAR
+  password: f4d5c1f6-6e83-4f25-b6ff-2ced1ca00315
+  port: 1
+  server: 1
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: 559|🇨🇦 VIP 加拿大1-1B
-  password: cf55243d-946e-4cb2-a775-c4443420419d
+  name: 559|🇨🇦 VIP 加拿大1-1A
+  password: 4de261e7-88a4-4380-ae33-89ccff8a6841
   port: 47071
   server: ca01.jiasudu.buzz
   type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 559|🇨🇦 加拿大2-1A
+  port: 45065
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 97263a25-d387-474d-8509-d4eebe93dafa
+- auth: 930a28ac-503a-486b-ab32-21750677311f
+  name: 559|🇨🇦 加拿大-2
+  password: 930a28ac-503a-486b-ab32-21750677311f
+  port: 19842
+  server: ca.731732.xyz
+  skip-cert-verify: false
+  sni: ca.731732.xyz
+  type: hysteria2
+  udp: true
+- auth: 930a28ac-503a-486b-ab32-21750677311f
+  name: 559|🇨🇦 加拿大-1
+  password: 930a28ac-503a-486b-ab32-21750677311f
+  port: 19842
+  server: ca2.731732.xyz
+  skip-cert-verify: false
+  sni: ca2.731732.xyz
+  type: hysteria2
   udp: true
 - alterId: 0
   cipher: auto
@@ -6008,41 +6207,14 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: c2f3caa1-29fa-44d5-99d6-d267f31b3c90
+  uuid: 98a6ecbc-fb2a-4181-9d01-80c936ad04cf
 - cipher: aes-256-gcm
-  name: 559|🇨🇦 VIP 加拿大1-1A
-  password: 2823c728-7b04-4f47-bfc2-92ff0ec1e6c4
+  name: 559|🇨🇦 VIP 加拿大1-1B
+  password: 7f429650-535f-45e1-8469-2d69c99911b4
   port: 47071
   server: ca01.jiasudu.buzz
   type: ss
   udp: true
-- auth: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  name: 559|🇨🇦 加拿大-1
-  password: c09b5f87-fa91-450a-aa77-a829bad43b6f
-  port: 19842
-  server: ca2.731732.xyz
-  skip-cert-verify: false
-  sni: ca2.731732.xyz
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 559|🇨🇦 加拿大1-1C
-  port: 45064
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c2f3caa1-29fa-44d5-99d6-d267f31b3c90
-- alterId: 0
-  cipher: auto
-  name: 559|🇨🇦 加拿大2-1B
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ab3e2eda-bbed-4aed-96a6-4c998bc6034c
 - alterId: 0
   cipher: auto
   name: 563|🇨🇦 _CA_加拿大
@@ -6054,7 +6226,7 @@ proxies:
   uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
   ws-opts:
     headers:
-      Host: ''
+      Host: teams.microsoft.com
     path: /
 - name: 564|8|🇨🇦CA-15.222.64.220-198_1@198
   password: xV6yLF0Z69Hm
@@ -6402,124 +6574,18 @@ proxies:
   tls: false
   type: hysteria2
   up: null
-- cipher: aes-256-gcm
-  name: 565|🇨CA-134.195.198.252-067
-  password: pKEW8JPByTVTLtM
+- name: 566|🇨🇦 github.com/freefq - 加拿大  23
+  password: ea48cdda-6db7-4f34-9d42-7bd9d41b4740
   port: 443
-  server: 134.195.198.252
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 566|加拿大(欢迎订阅Youtube破解资源君)
-  network: ws
+  server: 1002hk1326.tfzhc.top
+  skip-cert-verify: false
+  type: trojan
+- name: 566|🇨🇦 github.com/freefq - 加拿大  38
+  password: ea48cdda-6db7-4f34-9d42-7bd9d41b4740
   port: 443
-  server: 0326hk01.fans8.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-  ws-opts:
-    headers:
-      Host: 0326hk01.fans8.xyz
-    path: /ray
-- alterId: 2
-  cipher: auto
-  name: '566|加拿大(欢迎订阅Youtube破解资源君) #1'
-  network: ws
-  port: 443
-  server: 0326kr.fans8.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-  ws-opts:
-    headers:
-      Host: 0326kr.fans8.xyz
-    path: /ray
-- alterId: 2
-  cipher: auto
-  name: '566|加拿大(欢迎订阅Youtube破解资源君) #2'
-  network: ws
-  port: 443
-  server: 0319hzm01.fans8.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-  ws-opts:
-    headers:
-      Host: 0319hzm01.fans8.xyz
-    path: /nmsl
-- alterId: 1
-  cipher: auto
-  name: '566|加拿大(欢迎订阅Youtube破解资源君) #3'
-  network: ws
-  port: 50701
-  server: in-v1.sdgdn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: telegram.channel.ripaojiedian
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '566|加拿大(欢迎订阅Youtube破解资源君) #4'
-  network: ws
-  port: 50206
-  server: in-v1.sdgdn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: telegram.channel.p2psharing
-    path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: '566|加拿大(欢迎订阅Youtube破解资源君) #5'
-  network: ws
-  port: 50207
-  server: in-v1.sdgdn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: in-v1.sdgdn.com
-    path: /hls/cctv5phd.m3u8
-- alterId: 2
-  cipher: auto
-  name: '566|加拿大(欢迎订阅Youtube破解资源君) #6'
-  network: ws
-  port: 443
-  server: 165.154.225.231
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-  ws-opts:
-    headers:
-      Host: 330hk02.fans8.xyz
-    path: /ray
-- alterId: 2
-  cipher: auto
-  name: '566|加拿大(欢迎订阅Youtube破解资源君) #7'
-  network: ws
-  port: 443
-  server: 165.154.225.176
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-  ws-opts:
-    headers:
-      Host: 0326hk01.fans8.xyz
-    path: /ray
+  server: 1002tw01.tfzhc.top
+  skip-cert-verify: false
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '567|加拿大2 #2'
@@ -6538,12 +6604,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 5eb8a504-4855-4011-a6bb-6d9488dbcb22
-- name: 570,594|🇨🇦 TR-TCP-TLS 🇨🇦 CA-104.234.23...
+- name: 570|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
   network: tcp
   password: Aimer
   port: 2087
   server: 104.234.239.235
-  skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
@@ -6564,23 +6629,49 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
-- alpn:
-  - h3%2Ch2
-  client-fingerprint: chrome
-  name: 594|🇨🇦 VL-WS-TLS 🇨🇦 CA-23.227.39.4...
+- name: 594|🇨🇦 VL-WS-TLS 🇨🇦 CA-23.227.38.1...
   network: ws
   port: 443
-  server: 23.227.39.47
-  servername: steep-pine-3b0b.facic63646.workers.dev
+  server: 23.227.38.135
+  servername: eupmaq-fyvoq0da0mdvvzehshnqqcd6inl5ihzvry3fo5veeghhfkkhertre6uy.t03w4b.workers.Dev
   skip-cert-verify: true
   tfo: false
   tls: true
   type: vless
-  uuid: d6660712-4d18-47fd-b095-0c36db667250
+  uuid: 465fc43c-9872-40f9-bb94-ebee934e40b4
   ws-opts:
     headers:
-      Host: steep-pine-3b0b.facic63646.workers.dev
-    path: /?ed=2048
+      Host: eupmaq-fyvoq0da0mdvvzehshnqqcd6inl5ihzvry3fo5veeghhfkkhertre6uy.t03w4b.workers.Dev
+    path: /
+- grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /
+  name: 594|🇨🇦 VL-GRPC-NONE 🇨🇦 CA-148.113....
+  network: grpc
+  port: 443
+  server: 148.113.195.64
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: ccfd04dc-202e-4e11-aafe-a133dc8f7645
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /
+  name: 594|🇨🇦 VL-GRPC-RLT 🇨🇦 CA-138.197.1...
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: 1hdF2ghIgrvTH9rf493hDR8y1ZEjKqW8U6sg2gt-jAk
+    short-id: 6036be4e05b3c4f4
+  server: 138.197.154.162
+  servername: CaNVa.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d1b63250-4cfa-4029-8931-df44f2af2c51
 - cipher: chacha20-ietf-poly1305
   name: 618|加拿大|CA1
   password: 5231f59f-c196-4094-aea5-4ecaa069ddc5
@@ -6603,14 +6694,14 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '625|🇨🇦 加拿大 #6'
+  name: '625|🇨🇦 加拿大 #7'
   password: cbb65161-47a3-4989-bea2-19369b7b983e
   port: 51176
   server: qq.miaolianyunapp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '626,627|🇨🇦 加拿大 #8'
+  name: '626,627|🇨🇦 加拿大 #9'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51176
   server: qq.miaolianyunapp.com
@@ -6640,8 +6731,8 @@ proxies:
   udp: true
 - name: 674|Trojan-加拿大2 | 低倍率
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
-  port: 40114
-  server: 43472d26861a27bcbdc2837ecd98841e.lh.gtm.node-is.green
+  port: 40627
+  server: e38d3b22209e7ee9df8b44d164ee6d87.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcca1.bilibili.com
   type: trojan
@@ -6670,8 +6761,8 @@ proxies:
   udp: true
 - name: '675|Trojan-加拿大2 | 低倍率 #1'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
-  port: 40833
-  server: 051749bd7c4bdf14e09a544d6b987c6e.lh.gtm.node-is.green
+  port: 43862
+  server: 9aa6e2c11751102deb0dd2c8b261fb49.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcca1.bilibili.com
   type: trojan
@@ -6700,8 +6791,8 @@ proxies:
   udp: true
 - name: '676|Trojan-加拿大2 | 低倍率 #2'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
-  port: 45196
-  server: 5acf79a8de86ffc097b8b0e0b3ff3e26.lh.gtm.node-is.green
+  port: 40700
+  server: 6554fa7866c84b6474e7d2856f87a1c2.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcca1.bilibili.com
   type: trojan
@@ -6730,16 +6821,16 @@ proxies:
   udp: true
 - name: '677|Trojan-加拿大2 | 低倍率 #3'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
-  port: 49329
-  server: 7b131c89e3aee14decb7202b98de95e1.lh.gtm.node-is.green
+  port: 42293
+  server: 3f283e86bbef750c4d70b3a071ef88e1.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcca1.bilibili.com
   type: trojan
   udp: true
 - name: 679|V1-加拿大-IPv6
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 47859
-  server: 6fa30a5cd16654d4cec43f04902efb07.v1.cac.node-is.green
+  port: 46710
+  server: cfc7ab955179950fee9c99b30a1f857b.v1.cac.node-is.green
   skip-cert-verify: true
   sni: ca1.bilibili.com
   type: trojan
