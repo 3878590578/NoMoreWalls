@@ -24,7 +24,7 @@ proxies:
   udp: true
 - allowInsecure: ''
   country: FR
-  name: '323,424,527,543,552,563,564,565,566,678|🇫🇷 法国 001 #1'
+  name: '323,424,527,543,552,563,564,565,566,570,678|🇫🇷 法国 001 #1'
   network: tcp
   password: utF6JLQd2x
   port: 1935
@@ -34,6 +34,20 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: LT
+  name: 323|netflix_NL
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.69
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: LT
+  name: 323,424|🇹LT-45.87.175.65-6235
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.65
+  type: ss
 - cipher: aes-256-cfb
   country: LT
   name: 323,424|🇹LT-185.237.185.160-6482
@@ -42,39 +56,32 @@ proxies:
   server: 185.237.185.160
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇱🇹LT
-  name: 323,511| |18.09Mb
+  country: LT
+  name: '323|netflix_NL #2'
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.157
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: LT
-  name: '323|netflix_NL #1'
+  name: 323,424|🇹LT-45.87.175.35-1049
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 45.87.175.69
+  server: 45.87.175.35
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇳🇱 NL
-  name: 323,424,511,513|🇱 NL_203
+  country: MX
+  name: 323,424|MX-147.78.1.27-6485
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 147.78.1.27
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: NL
+  name: 323,424|🇳🇱NL-193.29.139.189-0991
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 193.29.139.189
-  type: ss
-- cipher: aes-256-cfb
-  country: PL
-  name: 323,424|🇱PL-217.30.10.18-1153
-  password: QWDDvVE9npNurQfA
-  port: 9026
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  country: PL
-  name: 323,424|🇵🇱PL-217.30.10.18-1117
-  password: ueLXVkvh4hckhErQ
-  port: 9060
-  server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
   country: PL
@@ -85,9 +92,16 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: PL
-  name: 323,424|🇵🇱PL-217.30.10.18-6491
-  password: KnJGad3FqTvjqbaX
-  port: 9014
+  name: 323,424|🇱PL-217.30.10.18-1158
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  country: PL
+  name: 323,424|🇱PL-217.30.10.18-1153
+  password: QWDDvVE9npNurQfA
+  port: 9026
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
@@ -98,21 +112,35 @@ proxies:
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
+  country: PL
+  name: 323,424|🇵🇱PL-217.30.10.18-1117
+  password: ueLXVkvh4hckhErQ
+  port: 9060
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇱PL
-  name: 323,419,424,513|PL_212
+  country: PL
+  name: 323,419,424|🇵🇱PL-217.30.10.18-1140
   password: UTJA57ypk2XKQpnm
   port: 9033
   server: 217.30.10.18
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: US
-  name: '323|netflix_NL #4'
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.158.171.141
-  type: ss
+- country: RU
+  name: 323,424,570|🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.95...
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 45.67.215.95
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
 - cipher: chacha20-ietf-poly1305
   country: US
   name: 323,424|🇷FR-45.158.171.60-0999
@@ -120,20 +148,13 @@ proxies:
   port: 8080
   server: 45.158.171.60
   type: ss
-- country: ZZ
-  name: 323,405,424,543|美国 535
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: visa.cn
-  skip-cert-verify: false
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: zamim340.ggff.net
-    path: /tr?ed=2560
+- cipher: chacha20-ietf-poly1305
+  country: US
+  name: '323|netflix_NL #7'
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.158.171.141
+  type: ss
 - country: ZZ
   name: 323,405,424,543|美国 533
   network: ws
