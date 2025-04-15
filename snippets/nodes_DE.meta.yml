@@ -508,7 +508,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 104,514,574|10,30|🇺🇸 美国 CloudFlare节点 3
+  name: '104,514|🇩🇪 德国01-免费-1K #1'
   network: ws
   port: 2096
   server: de01.sh-cloudflare.sbs
@@ -1365,22 +1365,15 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 204|🇩🇪 德国 01 | 1x DE
-  password: 0b0f85cf-73f4-420b-bc1b-e3fa5a917af0
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 212|🇩🇪德国 01 | 1x DE
-  password: 7e82b136-b853-43a5-bd54-635b574bd0da
+  name: 210|🇩🇪德国 01 | 1x DE
+  password: eb82e354-32fb-4e10-bce0-c8546a569efb
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 223|🇩🇪 IPLC|德国01
+  name: 222|🇩🇪 IPLC|德国01
   password: err
   port: 24531
   server: sg.76681f9610f175c6.com
@@ -1388,7 +1381,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: '224|🇩🇪 IPLC|德国01 #1'
+  name: '223|🇩🇪 IPLC|德国01 #1'
   password: eaccad9b-965d-44e1-819d-3cdfad7e91d9
   port: 24531
   server: sg.76681f9610f175c6.com
@@ -1397,7 +1390,7 @@ proxies:
 - alpn:
   - h3
   auth: fc44fe6a-f083-4591-9c03-f8d61dc3907f
-  name: 249|🇩🇪 DE-hy2
+  name: 248|🇩🇪 DE-hy2
   obfs: none
   password: fc44fe6a-f083-4591-9c03-f8d61dc3907f
   port: 60358
@@ -1405,67 +1398,68 @@ proxies:
   skip-cert-verify: true
   type: hysteria2
 - cipher: rc4-md5
-  name: 281|德国 H1
+  name: 280|德国 H1
   password: 26d8vZ
   port: 5185
   server: ge01.htz.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 281|德国 H2
+  name: 280|德国 H2
   password: 26d8vZ
   port: 5185
   server: ge02.htz.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 281|德国 H3
+  name: 280|德国 H3
   password: 26d8vZ
   port: 5185
   server: ge03.htz.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 281|德国 H4
+  name: 280|德国 H4
   password: 26d8vZ
   port: 5185
   server: ge04.htz.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 281|德国 H5
+  name: 280|德国 H5
   password: 26d8vZ
   port: 5185
   server: ge05.htz.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 281|德国 H6
+  name: 280|德国 H6
   password: 26d8vZ
   port: 5185
   server: ge06.htz.wtf
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: 306|DE-CT8-xhttp
-  network: xhttp
-  port: 443
-  server: 5.10.246.123
-  servername: ct8.owg.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: d5fd9125-cd52-b16b-5408-d203f9532da7
-  ws-opts:
-    headers:
-      Host: ct8.owg.dpdns.org
-    path: '%2Fxhttp'
 - alterId: 0
   cipher: auto
-  name: 306,307|🇩🇪 DE-帕斯云
+  name: '305,306|🇩🇪 DE-FreeCloud #1'
   network: ws
-  port: 443
-  server: 5.10.246.123
+  port: 38324
+  server: 20.18.143.107
+  servername: freecloudargo.lzj520hxw.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c1bd444b-d90d-4bec-b1de-e801df80ca7d
+  ws-opts:
+    headers:
+      Host: freecloudargo.lzj520hxw.dpdns.org
+    path: /vmess-argo?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '305,306|🇩🇪 DE-帕斯云 #1'
+  network: ws
+  port: 38324
+  server: 20.18.143.107
   servername: pasiyunargo.lzj520hxw.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -1477,10 +1471,10 @@ proxies:
     path: /vmess-argo?ed=2048
 - alterId: 0
   cipher: auto
-  name: 306,307|🇩🇪 DE-Lap
+  name: '305,306|🇩🇪 DE-Lap #1'
   network: ws
-  port: 443
-  server: 5.10.246.123
+  port: 38324
+  server: 20.18.143.107
   servername: de.lzj520hxw.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -1490,44 +1484,32 @@ proxies:
     headers:
       Host: de.lzj520hxw.dpdns.org
     path: /vmess-argo?ed=2048
-- allowInsecure: '1'
-  name: 326,553,574,580,685|🇩🇪 德国 027
-  network: tcp
-  password: 4467ae8518abf1ef321618c0bfb5549ccc
-  port: 60800
-  server: 130.61.173.105
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  tls: true
-  type: trojan
-- country: DE
-  name: 333|DE_02
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.74.237.206
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '373|🇩🇪 德国 #1'
+  name: '372|🇩🇪 德国 #1'
   password: a4e169c9-3933-4d1e-98f5-4b58cd460c54
   port: 30989
   server: 01.liantongzf.one
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '374|🇩🇪 德国 #2'
+  name: '373|🇩🇪 德国 #2'
   password: eb79c4fa-baf9-456c-9163-67d9d3cf6ab5
   port: 30989
   server: 01.liantongzf.one
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 385|🇩🇪德国1 💧 0.6x
+  name: 384|🇩🇪德国1 💧 0.6x
   password: a0d131b6-43e2-4bac-b5ff-b3979a574046
   port: 36617
   server: oz.qsm1.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 385|🇩🇪 德国 01 | 1x DE
+  password: 36f55bb5-3cd8-4edf-a223-329ba9d90a4c
+  port: 36471
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -1550,6 +1532,15 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: ''
+  flow: -udp443
+  name: 399,574|5,12|🇮🇷_IR_伊朗->🇺🇸_US_美国
+  port: 31904
+  server: tv2rayrr.set7.site
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 37e9ed0b-bde6-48ad-b837-9f19a5bbc80f
+- client-fingerprint: ''
   flow: ''
   name: 399|2|🇩🇪5 |  5.0MB/s
   port: 23568
@@ -1569,7 +1560,7 @@ proxies:
   uuid: 55e79d77-c2ea-40ec-b10e-8deb79972c37
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 399,537,546|🔗 Vauth - 202
+  name: 399,537,546|🔗 Vauth - 143
   network: tcp
   port: 443
   reality-opts:
@@ -1580,6 +1571,15 @@ proxies:
   tls: false
   type: vless
   uuid: eacc24ed-a1c1-4037-9af4-4f6bcd657119
+- client-fingerprint: ''
+  flow: -udp443
+  name: 399,574|5,12|未知
+  port: 31904
+  server: 138.199.203.23
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 37e9ed0b-bde6-48ad-b837-9f19a5bbc80f
 - name: 399|2|🇩🇪11 |  5.0MB/s
   obfs: salamander
   obfs-password: 6c80ade6
@@ -1740,8 +1740,7 @@ proxies:
   server: 217.182.198.219
   type: ss
 - cipher: rc4-md5
-  country: 🇪DE
-  name: 418,437,521,523|_60
+  name: 418,437,523|_83
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
@@ -1864,7 +1863,7 @@ proxies:
     path: /7vZtQ5D4M70AQWRN?ed=2560#5113
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 432,437,523|_10
+  name: 432,437,523|_11
   password: EXN3S3eQpjE7EJu8
   port: 9027
   server: 80.92.204.106
@@ -1886,12 +1885,13 @@ proxies:
   uuid: 6a99725d-2af8-d27c-cef5-302fbbe54c07
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 432,437|🇪DE-80.92.204.106-1151
+  name: 432,437,523|_20
   password: c3NtHJ5ujV2tGDfj
   port: 9084
   server: 80.92.204.106
   tfo: false
   type: ss
+  udp: true
 - client-fingerprint: chrome
   grpc-opts:
     grpc-mode: gun
@@ -1909,7 +1909,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇩🇪DE
-  name: 432,437,523|🇩🇪DE_109
+  name: 432,437,523|🇪DE_137
   password: 4R3hUfZ2FHhDmNcP
   port: 9061
   server: 80.92.204.106
@@ -1917,7 +1917,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 432,437,523|_57
+  name: 432,437,523|_86
   password: M3t2ZEQcMGRWBjRa
   port: 9011
   server: 80.92.204.106
@@ -1926,7 +1926,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇩🇪DE
-  name: 432,437,523|🇪DE_103
+  name: 432,437,523|🇩🇪DE_143
   password: XPtzA9sCug3SPR4c
   port: 9025
   server: 80.92.204.106
@@ -1934,7 +1934,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 432,437,523|_09
+  name: 432,437,523|_10
   password: ZET59LF6DvCC8KVt
   port: 9005
   server: 80.92.204.106
@@ -1943,7 +1943,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇩🇪DE
-  name: 432,437,523|🇩🇪DE_104
+  name: 432,437,523|🇩🇪DE_138
   password: BwcAUZk8hUFAkDGN
   port: 9031
   server: 80.92.204.106
@@ -1951,7 +1951,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 432,437,523|_33
+  name: 432,437,523|_09
   password: BejrQvtu9sqUeNuZ
   port: 9024
   server: 80.92.204.106
@@ -1959,7 +1959,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 432,437,523|_16
+  name: 432,437,523|_22
   password: f63gg8EruDnUrmz4
   port: 9010
   server: 80.92.204.106
@@ -1968,7 +1968,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 432,546|🔗 Vauth - 250
+  name: 432,546|🔗 Vauth - 259
   network: tcp
   port: 443
   reality-opts:
@@ -1984,7 +1984,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇩🇪DE
-  name: 432,437,523|🇩🇪DE_107
+  name: 432,437,523|🇩🇪DE_141
   password: cp8pRSUAyLhTfVWH
   port: 9064
   server: 80.92.204.106
@@ -2023,7 +2023,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇩🇪DE
-  name: 432,437,523|🇩🇪DE_105
+  name: 432,437,523|🇩🇪DE_145
   password: NvS8N4Vf8qAGPSCL
   port: 9046
   server: 80.92.204.106
@@ -2048,7 +2048,7 @@ proxies:
   uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 432,437,523|_07
+  name: 432,437,523|_08
   password: a3GFYt36Sm82Vys9
   port: 9000
   server: 80.92.204.106
@@ -2083,7 +2083,7 @@ proxies:
   uuid: e3966665-79e5-4445-bc6d-8f1f955beba5
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 432,437,523|_18
+  name: 432,437,523|_24
   password: BNmAXXxAHYpTRdzu
   port: 9020
   server: 80.92.204.106
@@ -2092,7 +2092,8 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 432,437|🇩🇪DE-80.92.204.106-1134
+  country: 🇩🇪DE
+  name: 432,437,523|🇩🇪DE_139
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 80.92.204.106
@@ -2117,7 +2118,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇩🇪DE
-  name: 432,437,523|🇩🇪DE_106
+  name: 432,437,523|🇪DE_136
   password: S7KwUu7yBy58S3Ga
   port: 9042
   server: 80.92.204.106
@@ -2139,8 +2140,8 @@ proxies:
   uuid: abaf193b-eeb9-4a8a-afa7-6b6385156e94
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇪DE
-  name: 432,437,523|🇩🇪DE_102
+  country: 🇩🇪DE
+  name: 432,437,523|🇩🇪DE_144
   password: ZpNDDKRu9MagNvaf
   port: 9015
   server: 80.92.204.106
@@ -2149,7 +2150,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇩🇪DE
-  name: 432,437,523|🇩🇪DE_110
+  name: 432,437,523|🇩🇪DE_142
   password: FAdUvMJUq5vDgKEq
   port: 9006
   server: 80.92.204.106
@@ -2216,7 +2217,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '437,562,576|🇺🇸 美国(欢迎订阅Youtube破解资源君) #9'
+  name: '437,562,576|🇺🇸 美国(欢迎订阅Youtube破解资源君) #10'
   network: ws
   port: '80'
   server: hkml.fenglingcloud.com
@@ -2311,8 +2312,18 @@ proxies:
     headers:
       Host: irvideo.cfd
     path: /
+- allowInsecure: ''
+  name: '437,537,553,562,574,575,576,685|🇬🇧 英国 016 #1'
+  network: tcp
+  password: I46LpSIM1f
+  port: 1935
+  server: 194.164.57.9
+  skip-cert-verify: false
+  sni: x4ger-ionos.devefun.net
+  tls: true
+  type: trojan
 - cipher: aes-256-cfb
-  name: 437,523|_14
+  name: 437,523|_19
   password: TN2YqghxeFDKZfLU
   port: 9037
   server: 80.92.204.106
@@ -2389,7 +2400,7 @@ proxies:
     path: /shirker
 - alterId: 0
   cipher: auto
-  name: '437,562,576|🇺🇸 github.com/freefq - 美国Cloud... #11'
+  name: '437,562,576|🇺🇸 github.com/freefq - 美国Cloud... #12'
   network: ws
   port: '443'
   server: sgp.kapok.buzz
@@ -2513,15 +2524,15 @@ proxies:
   tls: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  country: 🇩🇪 DE
-  name: 437,521,523,575,583|SS-加利亚-NF解锁国地区非自制剧-ChatGPT-Tik...
+  country: 🇪 DE
+  name: 437,523,583|SS-加利亚-NF解锁国地区非自制剧-ChatGPT-Tik...
   password: q7jwtcA0MmyYi0JddUgXXj
   port: 42037
   server: 85.208.139.31
   type: ss
 - alterId: 0
   cipher: auto
-  name: '437,562,573|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #47'
+  name: '437,562,573|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #75'
   network: ws
   port: '443'
   server: cf-lt-dns.sharecentre.online
@@ -2556,7 +2567,7 @@ proxies:
   skip-cert-verify: false
   sni: de1.trojan-lite.com
   type: trojan
-- name: 437,562,573|🇩🇪 _德国
+- name: 437,562|🇩🇪DE-165.22.74.230-2134
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
   server: nextstepcareer.online
@@ -2565,9 +2576,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 437,562,573|🇧🇪 _比利时
+  name: 437,562|🇩🇪DE-57.129.25.22-2161
   network: ws
-  port: '443'
+  port: 443
   server: 57.129.25.22
   servername: ''
   skip-cert-verify: false
@@ -2580,9 +2591,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 437,562,573|🇺🇸 _美国 21
+  name: 437,562|🇩🇪DE-23.158.56.241-2166
   network: ws
-  port: '443'
+  port: 443
   server: 23.158.56.241
   servername: ''
   skip-cert-verify: false
@@ -2595,9 +2606,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 437,562,573|🇧🇪 _比利时 2
+  name: 437,562|🇩🇪DE-57.129.25.20-2170
   network: ws
-  port: '443'
+  port: 443
   server: 57.129.25.20
   servername: ''
   skip-cert-verify: false
@@ -2610,17 +2621,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 437,573|🇵🇱 _波兰
+  name: 437|🇩🇪DE-91.149.233.178-2151
   network: ws
-  port: '20050'
+  port: 20050
   server: 91.149.233.178
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 4a205af4-ec8e-4624-b033-71d2e5548814
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 437|🇪DE-164.90.234.85-2265
@@ -2845,7 +2854,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 437,565,573,574,576,581|🔒 VM-WS-NA 🇩🇪 DE-91.149.233.17...
+  name: 437,574,581|🔒 VM-WS-NA 🇩🇪 DE-91.149.233.17...
   network: ws
   port: 20051
   server: 91.149.233.178
@@ -3390,14 +3399,14 @@ proxies:
       Host: ''
     path: /cctv13/hd.m3u8
 - cipher: aes-256-cfb
-  name: 437,523|_15
+  name: 437,523|_21
   password: rpgbNnU9rDDU4aWZ
   port: 9094
   server: 80.92.204.106
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 437,523|_17
+  name: 437,523|_23
   password: GA9KzeEgvfxNrgmM
   port: 9019
   server: 80.92.204.106
@@ -3545,25 +3554,24 @@ proxies:
       Host: ''
     path: /linkvws
 - cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 437,523|🇪 DE_99
+  name: 437|🇪DE-91.230.27.95-6193
   password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
   port: 54075
   server: beta.mattenadene.org
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 437,523|🇩🇪DE_108
+  name: 437,523|🇩🇪DE_140
   password: Sn5B7jTqr76aCJT8
   port: 9097
   server: 80.92.204.106
   type: ss
 - country: 🇩🇪DE
-  name: 437,523,562,573,580|🔒 TR-TCP-TLS 🇩🇪 DE-139.162.158...
+  name: 437,523,562,580|🔒 TR-TCP-TLS 🇩🇪 DE-139.162.158...
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: de2-full.privateip.net
   type: trojan
   udp: true
@@ -3600,15 +3608,12 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  country: 🇪DE
-  h2-opts: {}
-  http-opts: {}
-  name: 437,521,562|🇩🇪DE-193.122.58.158-6447
+  name: 437,562|🇩🇪DE-193.122.58.158-6447
   network: ws
   port: 443
   server: 193.122.58.158
   servername: irvideo.cfd
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
@@ -4480,70 +4485,51 @@ proxies:
   skip-cert-verify: false
   sni: frtgrpc.mainssh.xyz
   type: trojan
-- client-fingerprint: ''
+- client-fingerprint: chrome
   flow: ''
-  mode: ''
-  name: 439|🇩🇪1 |  5.8MB/s
-  network: ws
-  port: 2053
-  server: 172.67.204.84
-  servername: all18.kikforwindows.com
+  grpc-opts:
+    grpc-service-name: V2RayMizban----V2RayMizban----V2RayMizban----V2RayMizban----V2RayMizban----V2RayMizban----V2RayMizban
+  mode: gun
+  name: 439|🇩🇪1 |  3.9MB/s
+  network: grpc
+  port: 8443
+  server: crm.iranigamepars.ir
+  servername: Vpnmizban.iranigamepars.ir
   tls: true
   type: vless
   udp: false
-  uuid: 99333609-167f-4750-ab63-34cfa27c723a
-  ws-opts:
-    headers:
-      Host: all18.kikforwindows.com
-    path: /containers/de
+  uuid: 3e509f62-56ef-479f-a884-e74aea5b89e1
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 439,546|🔗 Vauth - 877
+  name: 439|🇩🇪2 |  3.0MB/s
   network: ws
-  port: 22222
-  server: 3.121.65.203
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      Host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 439|🇩🇪3 |  1.9MB/s
-  network: ws
-  port: 2096
-  server: whatismyipaddress.com
-  servername: wwwspeedtestnetwhiteberinsistomd6625996s26.elitemizban.ir
-  tls: true
-  type: vless
-  udp: false
-  uuid: 27a778d4-543e-43f5-85a2-6acf18821ccb
-  ws-opts:
-    headers:
-      Host: wwwspeedtestnetwhiteberinsistomd6625996s26.elitemizban.ir
-    path: ''
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 439|🇩🇪4 |  5.6MB/s
-  network: ws
-  port: 2082
-  server: 104.17.148.22
+  port: 8880
+  server: website.amin-app.ir
   servername: ''
   tls: false
   type: vless
   udp: false
-  uuid: 84854813-6a9c-43c4-e941-4700f7cd9e2e
+  uuid: 1e4ccb23-7360-4842-b85c-5207e1add36d
   ws-opts:
     headers:
-      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
-    path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082
+      Host: vIhYpErClOuD.aCaDeMiGrOuP.iR.
+    path: /Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420?ed=2048
+- alterId: 2
+  cipher: auto
+  name: 439|🇩🇪3 |  3.7MB/s
+  network: ws
+  port: 23618
+  server: 18.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e092af45-5038-39e5-a446-2d3362a6980b
+  ws-opts:
+    headers:
+      Host: 18.mamamajd.site
+    path: /
 - down: null
   name: 445|德国1
   password: beb8b58c-fa25-4533-9df2-6dcd5d388509
@@ -4604,7 +4590,7 @@ proxies:
   name: 485|🇩🇪 德国S01
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 20054
-  server: o7s7i-g06.de01-ae5.entry.v50307shvkaa.art
+  server: uqomo-g06.de01-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - alterId: 0
@@ -4826,9 +4812,9 @@ proxies:
   cipher: auto
   name: '516,517|德国纽伦堡无限制-白嫖优化-连接数/BT/PT/矿池-2Gb... #1'
   network: ws
-  port: 2053
-  server: 1744664541.tencentapp.cn
-  servername: 1744664578.speed.nlb.cccp.freefly.pp.ua
+  port: 2096
+  server: 1744678341.tencentapp.cn
+  servername: 1744678378.speed.nlb.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -4836,7 +4822,7 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1744664578.speed.nlb.cccp.freefly.pp.ua
+      Host: 1744678378.speed.nlb.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
@@ -5032,7 +5018,7 @@ proxies:
   uuid: 69b49a35-cf55-4d14-9f2b-d7ce3a0db72e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 537,546|🔗 Vauth - 156
+  name: 537,546|🔗 Vauth - 283
   network: tcp
   port: 443
   reality-opts:
@@ -5045,7 +5031,7 @@ proxies:
   uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 537,546|🔗 Vauth - 221
+  name: 537,546|🔗 Vauth - 154
   network: grpc
   port: 2087
   reality-opts:
@@ -5083,7 +5069,7 @@ proxies:
   uuid: ca16a141-2fe3-4299-b8b8-2a765b13c076
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 537,546|🔗 Vauth - 317
+  name: 537,546|🔗 Vauth - 220
   network: tcp
   port: 577
   reality-opts:
@@ -5096,7 +5082,7 @@ proxies:
   uuid: bf4631cc-27eb-4b8e-ab85-5db1ddab6125
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 537,546|🔗 Vauth - 296
+  name: 537,546|🔗 Vauth - 279
   network: tcp
   port: 443
   reality-opts:
@@ -5792,6 +5778,35 @@ proxies:
   type: vless
   udp: true
   uuid: 47d7d5eb-55e6-4085-a155-bdf3fcc428f6
+- allowInsecure: '1'
+  name: '553,574,575,576,580,685|🇩🇪 德国 027 #1'
+  network: tcp
+  password: 4467ae8518abf1ef321618c0bfb5549ccc
+  port: 60800
+  server: 130.61.173.105
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  tls: true
+  type: trojan
+- allowInsecure: '1'
+  name: '553,574,575,576,580,685|🇩🇪 德国 028 #1'
+  network: tcp
+  password: 4467ae8518abf1ef321618c0bfb5549ccc
+  port: 42600
+  server: 84.235.237.61
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  tls: true
+  type: trojan
+- client-fingerprint: chrome
+  flow: ''
+  name: 556|2|🇩🇪2 |  2.8MB/s
+  port: 3037
+  server: de.headsetabad.ir
+  servername: refersion.com
+  tls: true
+  type: vless
+  uuid: 7f3e8830-70ce-4fa2-8185-e73baeb780a6
 - name: 562|🇩🇪DE-194.164.57.9-1664
   password: I46LpSIM1f
   port: 1935
@@ -5810,48 +5825,17 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: 564|【高级】🇪德国 - 滑梯云
+  name: 562,573,803|波兰【机场推荐：https://socks.news】2
   network: ws
-  port: 20011
-  server: htsub-2024.899696998.xyz
-  skip-cert-verify: true
+  port: '20050'
+  server: 91.149.233.178
+  servername: ''
   tls: false
   type: vmess
-  udp: true
-  uuid: eb9b6d07-8644-437f-a1c5-dbed378d38ed
+  uuid: 400abbb8-dfb5-4a71-8604-b1fa77f82dcf
   ws-opts:
     headers:
-      Host: yyyt-de-2024.mofaxw.top
-    path: /2024
-- alterId: 2
-  cipher: auto
-  name: 564|🇪 [vip①]德国1 - MG Network
-  network: ws
-  port: 23616
-  server: 16.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bade10e2-3c32-376f-a1fb-8d6694c1f251
-  ws-opts:
-    headers:
-      Host: 16.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 564|🇩🇪 [vip①]德国2 - MG Network
-  network: ws
-  port: 23618
-  server: 18.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bade10e2-3c32-376f-a1fb-8d6694c1f251
-  ws-opts:
-    headers:
-      Host: 18.mamamajd.site
+      Host: ''
     path: /
 - name: 569,574|28|🇩🇪 德国 04 TR
   password: a962cbed-df96-4c7a-b943-8a66137c9348
@@ -5923,38 +5907,6 @@ proxies:
   type: vless
   udp: true
   uuid: a962cbed-df96-4c7a-b943-8a66137c9348
-- name: 573|🇩🇪 德国_5
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.126.239.35
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 573|🇩🇪 德国_041410139 M51
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.72.123.152
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 573|🇩🇪 德国_041410186 M53
-  network: tcp
-  port: '22324'
-  server: 23.158.56.184
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 573|🇩🇪 德国_041410185
-  network: tcp
-  port: '22324'
-  server: 4.ilgm.saint.ydns.eu
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - name: 573|🇩🇪 德国_4
   password: telegram-id-privatevpns
   port: 22222
@@ -5962,6 +5914,31 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 573|🇩🇪 德国_041420189
+  network: tcp
+  port: '22324'
+  server: 4.ilgm.saint.ydns.eu
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: 573|🇩🇪 德国_5
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.126.239.35
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 573|🇩🇪 德国_041420187 M53
+  network: tcp
+  port: '22324'
+  server: 23.158.56.184
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - name: 574|5|🇩🇪 JH德国1-1
   password: 07a0e875-9b9a-4e11-a81f-8af85f82e74d
   port: 20489
@@ -6030,7 +6007,7 @@ proxies:
   tls: true
   type: vmess
   uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- name: 574|高速|流媒体|德国01
+- name: 574|高速|流媒体|德国02
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D
   password: 8f835273-675b-42fb-91b4-01b501885321
@@ -6042,7 +6019,7 @@ proxies:
   type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 575|🇩🇪DE-91.195.240.12-061
+  name: 575|🇩🇪DE-91.195.240.12-044
   network: ws
   port: 80
   server: hkml.fenglingcloud.com
@@ -6055,20 +6032,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 575|🇩🇪DE-91.149.233.178-186
-  network: ws
-  port: 20051
-  server: 91.149.233.178
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a8ca1114-9792-4c23-8c92-629e9e3b2d3a
-  ws-headers:
-    Host: 91.149.233.178
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 575|🇪DE-91.195.240.12-281
+  name: 575|🇪DE-91.195.240.12-298
   network: ws
   port: 443
   server: sgp.kapok.buzz
@@ -6081,7 +6045,7 @@ proxies:
   ws-path: /4befdd8a6/
 - alterId: 64
   cipher: auto
-  name: 575|🇪DE-89.163.157.147-283
+  name: 575|🇪DE-89.163.157.147-300
   network: ws
   port: 443
   server: 89.163.157.147
@@ -6094,7 +6058,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 575|🇪DE-31.22.109.209-304
+  name: 575|🇪DE-31.22.109.209-321
   network: ws
   port: 443
   server: 31.22.109.209
@@ -6107,7 +6071,7 @@ proxies:
   ws-path: /4ba99a39b90faa/
 - alterId: 0
   cipher: auto
-  name: 575|🇩🇪DE-158.180.48.19-357
+  name: 575|🇩🇪DE-158.180.48.19-374
   network: ws
   port: 23451
   server: frankfurt.faforex.eu.org
@@ -6120,7 +6084,7 @@ proxies:
   ws-path: /itdog?ed=2560
 - alterId: 1
   cipher: auto
-  name: 575|🇪DE-130.61.253.111-387
+  name: 575|🇪DE-130.61.253.111-404
   network: ws
   port: 8080
   server: 130.61.253.111
@@ -6133,7 +6097,7 @@ proxies:
   ws-path: /download
 - alterId: 0
   cipher: auto
-  name: 575|🇩🇪DE-92.114.54.227-542
+  name: 575|🇩🇪DE-92.114.54.227-559
   network: ws
   port: 32683
   server: 92.114.54.227
@@ -6718,6 +6682,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 577|德国01-免费-2Q
+  network: ws
+  port: '2096'
+  server: de01.sh-cloudflare.sbs
+  tls: true
+  type: vmess
+  uuid: ae687a78-69cb-413f-a2a7-ec1fb1783466
+  ws-opts:
+    headers:
+      Host: de01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
+  cipher: auto
   name: 577|德国01-免费-2G
   network: ws
   port: '2096'
@@ -7250,20 +7227,20 @@ proxies:
   udp: true
 - name: 691|V1-德国-IPv6
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 42653
-  server: b7c6e16c7565a2b48a572b6a4a742bc4.v1.cac.node-is.green
+  port: 49063
+  server: 61418db33a6132580617b808660a162e.v1.cac.node-is.green
   skip-cert-verify: true
   sni: de1.bilibili.com
   type: trojan
   udp: true
-- name: '741,839,840,841|🇩🇪 德国3 #3'
+- name: '741,839,841|🇩🇪 德国3 #3'
   password: '!!str 1'
   port: 443
   server: starlink-fra.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: hysteria2
-- name: '741,839,840,841|🇩🇪 德国4 #3'
+- name: '741,839,841|🇩🇪 德国4 #3'
   password: '!!str 1'
   port: 443
   server: starlink-fra2.2513142.xyz
@@ -7348,3 +7325,31 @@ proxies:
   sni: apple.com
   type: hysteria2
   udp: true
+- name: '840|🇩🇪 德国1 #2'
+  password: ZIXQa-7pg0vPahuyi8bABhob
+  port: 443
+  server: starlink-fra.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: hysteria2
+- name: '840|🇩🇪 德国2 #2'
+  password: ZIXQa-7pg0vPahuyi8bABhob
+  port: 443
+  server: starlink-fra2.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: hysteria2
+- name: '840|🇩🇪 德国3 #2'
+  password: ZIXQa-7pg0vPahuyi8bABhob
+  port: 4433
+  server: starlink-fra.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+- name: '840|🇩🇪 德国4 #2'
+  password: ZIXQa-7pg0vPahuyi8bABhob
+  port: 4433
+  server: starlink-fra2.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
