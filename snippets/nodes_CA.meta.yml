@@ -83,7 +83,7 @@ proxies:
     path: /xxxzzz
 - auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
   delay: 1787
-  name: '72,405,556,562,572|2|🇨🇦2 |  1.2MB/s #1'
+  name: 72,405,562,578|2|🇨🇦2 |  1.2MB/s
   password: 2429bee3-e0c1-47dd-b420-75e6512b184b
   port: 30300
   server: 155.248.219.28
@@ -388,15 +388,8 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 201|🇨🇦加拿大 01 | 1x CA
-  password: 4c4a36a2-7fcc-4002-949c-ffb1265cbe40
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 202|🇨🇦 加拿大 01 | 1x CA
-  password: 5b950f0a-d872-4928-8320-51cd90de0635
+  password: f83f70da-559f-48eb-a511-1f31261f81a0
   port: 36441
   server: free.2weradf.xyz
   type: ss
@@ -410,7 +403,7 @@ proxies:
 - down: 1000
   name: '254|🇨🇦加拿大02 #1'
   password: e558f60d-96be-447e-aaa8-21a9c9caf7a8
-  port: 20735
+  port: 20747
   ports: 20701-20799
   server: au.1e6af9be69cbae59cba.tech
   skip-cert-verify: false
@@ -420,7 +413,17 @@ proxies:
 - down: 1000
   name: '255|🇨🇦加拿大02 #2'
   password: 41fb3188-ebdf-43a8-9168-015df84ba376
-  port: 20798
+  port: 20760
+  ports: 20701-20799
+  server: au.1e6af9be69cbae59cba.tech
+  skip-cert-verify: false
+  sni: au.1e6af9be69cbae59cba.tech
+  type: hysteria2
+  up: 1000
+- down: 1000
+  name: '339|🇨🇦加拿大02 #3'
+  password: c5ff9416-15f6-4919-a928-dc94a8290086
+  port: 20702
   ports: 20701-20799
   server: au.1e6af9be69cbae59cba.tech
   skip-cert-verify: false
@@ -462,6 +465,26 @@ proxies:
   server: jp1.qsm1.xyz
   type: ss
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '401,441,550,556,560,572|2|🇨🇦1 |  5.1MB/s #1'
+  network: tcp
+  port: 16011
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 401,556,572,578|2|🇨🇦1 |  3.8MB/s
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 132.145.108.102
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - cipher: aes-128-gcm
   name: 420|🇨🇦1 |  14.1MB/s
   password: shadowsocks
@@ -469,15 +492,13 @@ proxies:
   server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇦CA
-  name: 420,439,527|🇦CA_125
+  name: 420,439|🇨CA-142.4.216.225-1115
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇨 CZ
-  name: 420,527,587|SS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-T...
+  name: 420,587|SS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-T...
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
@@ -547,7 +568,7 @@ proxies:
       Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 439,527|_05
+  name: 439|🇨🇦CA-142.4.216.225-1108
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -939,7 +960,7 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8
-- name: 439,527,566|🇨🇦CA-178.128.238.42-6158
+- name: 439,566|🇨🇦CA-178.128.238.42-6158
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
   server: ca-full.privateip.net
@@ -1357,27 +1378,20 @@ proxies:
   skip-cert-verify: true
   sni: trj.rollingnext.co.uk
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 441,550,560|2|🇨🇦1 |  5.1MB/s
-  network: tcp
-  port: 16011
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.amazon.com
+- name: 441|🇨🇦1 |  1.2MB/s
+  network: ws
+  port: 10912
+  server: 116.47.10.236
+  servername: bn.ylks0033.dpdns.org
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: '441,556,560,572|2|🇨🇦1 |  3.8MB/s #1'
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 132.145.108.102
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: bn.ylks0033.dpdns.org
+    path: /?ed=2560
 - down: null
   name: '449|加拿大1 #1'
   password: 597dc9ce-5ce8-4ff5-833b-76cd4e5789e1
@@ -1408,7 +1422,7 @@ proxies:
   name: 488|🇨🇦 加拿大S01
   password: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503
   port: 20059
-  server: 7kvlq-g06.ca01-ae5.entry.v50307shvkaa.art
+  server: prull-g06.ca01-ae5.entry.v50307shvkaa.art
   type: ss
   udp: true
 - alterId: 0
@@ -1720,9 +1734,9 @@ proxies:
   cipher: auto
   name: '520,521|加拿大1-多伦多-白嫖优化节点-CDN | 1x #1'
   network: ws
-  port: 2096
-  server: 1745032941.tencentapp.cn
-  servername: 1745032978.speed.fdvb.cccp.freefly.pp.ua
+  port: 2053
+  server: 1745043141.tencentapp.cn
+  servername: 1745043178.speed.fdvb.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1730,7 +1744,7 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1745032978.speed.fdvb.cccp.freefly.pp.ua
+      Host: 1745043178.speed.fdvb.cccp.freefly.pp.ua
     path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -5840,6 +5854,20 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+- cipher: chacha20-ietf-poly1305
+  name: '553,554|🇨🇦 0|🇨🇦加拿大 01 | 1x CA #1'
+  password: 17588e42-debc-4ee0-bef2-f6ffa05286bc
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '553,554|🇨🇦 1|🇨🇦 加拿大 01 | 1x CA #1'
+  password: a5e0b2f6-ef2f-440b-9775-3dd4a81df721
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - delay: 1303
   name: 557|加拿大 005
   network: ws
@@ -5855,6 +5883,13 @@ proxies:
     headers:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
+- name: 569,577|❓ 未知_133
+  password: Aimer
+  port: 2087
+  server: 104.234.239.235
+  skip-cert-verify: true
+  sni: epcco.ambercc.filegear-sg.me
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 576|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -6431,8 +6466,8 @@ proxies:
   udp: true
 - name: 700|Trojan-加拿大2 | 低倍率
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
-  port: 49163
-  server: da3f7d3ee03f52a13815475fadee54df.lh.gtm.node-is.green
+  port: 46724
+  server: d8e3bf57abf70ab0e14cb3e86f7a522d.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcca1.bilibili.com
   type: trojan
@@ -6461,8 +6496,8 @@ proxies:
   udp: true
 - name: '701|Trojan-加拿大2 | 低倍率 #1'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
-  port: 46183
-  server: d6ca21d143e497dc5606975a9431baf5.lh.gtm.node-is.green
+  port: 48248
+  server: 0a23c145200ae2002001f502c45843f2.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcca1.bilibili.com
   type: trojan
@@ -6491,8 +6526,8 @@ proxies:
   udp: true
 - name: '702|Trojan-加拿大2 | 低倍率 #2'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
-  port: 42752
-  server: a934a55e6829c7ac81839d34a4ff9ffd.lh.gtm.node-is.green
+  port: 43897
+  server: b9f7669dc7265da00abc2220aabd6e5a.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcca1.bilibili.com
   type: trojan
@@ -6521,16 +6556,16 @@ proxies:
   udp: true
 - name: '703|Trojan-加拿大2 | 低倍率 #3'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
-  port: 42170
-  server: 7a39c9835df04e182be5104440de0f36.lh.gtm.node-is.green
+  port: 49908
+  server: e63c6192630d1a249332d2448c8516ab.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcca1.bilibili.com
   type: trojan
   udp: true
 - name: 705|V1-加拿大-IPv6
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 47004
-  server: 6360e42997f2e97b344dcacbeee8af8c.v1.cac.node-is.green
+  port: 46505
+  server: 64f2c734c86c5df3a889bbad4ec42fa9.v1.cac.node-is.green
   skip-cert-verify: true
   sni: ca1.bilibili.com
   type: trojan
