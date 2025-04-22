@@ -24,6 +24,13 @@ proxies:
   sni: bl01.sulink.one
   type: hysteria2
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 184|波兰
+  password: 0e7f9306-0021-450b-b6b1-81d6fe9add1c
+  port: 51079
+  server: cnamelm-dwzksl7kzye3rdby.bestcassoulet.com
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 414,433|🇱PL-51.77.53.200-8362
   password: faBAoD54k87UJG7
@@ -212,7 +219,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  name: 414,433,521|🇪 DE_140
+  name: 414,433,521|🇪 DE_133
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 92.118.205.228
@@ -274,7 +281,8 @@ proxies:
   server: 217.30.10.63
   type: ss
 - cipher: aes-256-cfb
-  name: 433|🇵🇱PL-217.30.10.18-7590
+  country: PL
+  name: 433,519| |12.26Mb
   password: BejrQvtu9sqUeNuZ
   port: 9024
   server: 217.30.10.18
@@ -381,96 +389,6 @@ proxies:
   port: 9006
   server: 217.30.10.68
   type: ss
-- down: 1000
-  name: 511|[Hy2]波兰1
-  password: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  port: 32237
-  server: pl1.xn--04q43rwxe.eu.org
-  skip-cert-verify: true
-  sni: pl1.xn--04q43rwxe.eu.org
-  type: hysteria2
-  up: 1000
-- down: 1000
-  name: 511|[Hy2]波兰2
-  password: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  port: 22215
-  server: pl2.xn--04q43rwxe.eu.org
-  skip-cert-verify: true
-  sni: pl2.xn--04q43rwxe.eu.org
-  type: hysteria2
-  up: 1000
-- down: 1000
-  name: 511|[Hy2]波兰3
-  password: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  port: 27142
-  server: pl3.xn--04q43rwxe.eu.org
-  skip-cert-verify: true
-  sni: pl3.xn--04q43rwxe.eu.org
-  type: hysteria2
-  up: 1000
-- down: 1000
-  name: 511|[Hy2]波兰4
-  password: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  port: 21081
-  server: pl4.xn--04q43rwxe.eu.org
-  skip-cert-verify: true
-  sni: pl4.xn--04q43rwxe.eu.org
-  type: hysteria2
-  up: 1000
-- alterId: 0
-  cipher: auto
-  name: 511|[vmess]波兰5-CDN
-  network: ws
-  port: 2053
-  server: cfip.xxxxxxxx.tk
-  servername: pl5.xn--04q43rwxe.eu.org
-  tls: true
-  type: vmess
-  udp: true
-  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  ws-headers:
-    Host: pl5.xn--04q43rwxe.eu.org
-  ws-opts:
-    headers:
-      Host: pl5.xn--04q43rwxe.eu.org
-    path: /pl5vmess
-  ws-path: /pl5vmess
-- alterId: 0
-  cipher: auto
-  name: 511|[vmess]波兰6-CDN
-  network: ws
-  port: 2053
-  server: cfip.xxxxxxxx.tk
-  servername: pl6.xn--04q43rwxe.eu.org
-  tls: true
-  type: vmess
-  udp: true
-  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  ws-headers:
-    Host: pl6.xn--04q43rwxe.eu.org
-  ws-opts:
-    headers:
-      Host: pl6.xn--04q43rwxe.eu.org
-    path: /pl6vmess
-  ws-path: /pl6vmess
-- alterId: 0
-  cipher: auto
-  name: 511|[vmess]波兰7-CDN
-  network: ws
-  port: 2053
-  server: cfip.xxxxxxxx.tk
-  servername: pl7.xn--04q43rwxe.eu.org
-  tls: true
-  type: vmess
-  udp: true
-  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  ws-headers:
-    Host: pl7.xn--04q43rwxe.eu.org
-  ws-opts:
-    headers:
-      Host: pl7.xn--04q43rwxe.eu.org
-    path: /pl7vmess
-  ws-path: /pl7vmess
 - name: '537|波兰_华沙 #2'
   network: ws
   port: 80
@@ -528,7 +446,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 578|🔒 TR-TCP-TLS 🇵🇱 PL-51.83.186.1...
+- name: '578|🔒 TR-TCP-TLS 🇵🇱 PL-51.83.186.1... #1'
   network: tcp
   password: 2959e4f7-7589-4a40-9b96-1be750ac7845
   port: 80
