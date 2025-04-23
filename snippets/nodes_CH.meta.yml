@@ -46,7 +46,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 216|🇨🇭 IPLC|瑞士
+  name: 217|🇨🇭 IPLC|瑞士
   password: err
   port: 24561
   server: sg.76681f9610f175c6.com
@@ -54,7 +54,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: '217|🇨🇭 IPLC|瑞士 #1'
+  name: '218|🇨🇭 IPLC|瑞士 #1'
   password: 7ecbcf83-bae5-45f4-a844-39bce69185a7
   port: 24561
   server: sg.76681f9610f175c6.com
@@ -62,22 +62,35 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: '218|🇨🇭 IPLC|瑞士 #2'
+  name: '219|🇨🇭 IPLC|瑞士 #2'
   password: eaccad9b-965d-44e1-819d-3cdfad7e91d9
   port: 24561
   server: sg.76681f9610f175c6.com
   tfo: false
   type: ss
 - cipher: aes-128-gcm
-  name: 393|🇨🇭瑞士1 💧 0.6x
+  name: 394|🇨🇭瑞士1 💧 0.6x
   password: a0d131b6-43e2-4bac-b5ff-b3979a574046
   port: 40180
   server: oz.qsm1.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 398,548,554,570,576|5,40|CH_speednode_0003
+  flow: xtls-rprx-vision-udp443
+  name: 399,439,548,576|5|14|CH_speednode_0005
+  network: tcp
+  port: 443
+  server: 152.67.68.116
+  servername: yapc-1.afshin.ir
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision-udp443
+  name: 399,439,548,576|5|14|CH_speednode_0003
+  network: tcp
   port: 443
   server: yapc-1.afshin.ir
   servername: YAPC-1.afshin.ir
@@ -87,37 +100,39 @@ proxies:
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
 - client-fingerprint: chrome
   flow: xtls-rprx-vision-udp443
-  name: 398,576|5|2|🇨🇭4 |  3.5MB/s
-  port: 6718
+  mode: ''
+  name: 399,439,548,554,558,570,576|5|1|🇨🇭1 |  5.7MB/s
+  network: tcp
+  port: 30548
+  reality-opts:
+    public-key: KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A
+    short-id: d6d54c08fbbf895f
   server: 37.156.46.65
   servername: stackoverflow.com
   tls: true
   type: vless
-  uuid: 94d0f2e3-39e9-f0a6-7c2b-2b832e6e5636
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 398,548,554,570,576|5,40|CH_speednode_0005
-  port: 443
-  server: 152.67.68.116
-  servername: yapc-1.afshin.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
+  udp: false
+  uuid: ba3f2120-b5f2-fa63-5b12-2f37f8240e8f
+  ws-opts:
+    headers:
+      Host: '%2FTELEGRAM----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN'
 - cipher: aes-128-gcm
-  name: 418,419,437|🇭CH-156.146.62.164-1025
+  country: 🇸 US
+  name: 418,419,437,525|🇸 US_519
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  name: 418,419,437|🇭CH-156.146.62.162-1046
+  country: 🇸 US
+  name: 418,419,437,525|🇸 US_523
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
-  name: 418,419,437|🇭CH-156.146.62.163-1024
+  country: ' US'
+  name: 418,419,437,525|🇺 US_518
   password: shadowsocks
   port: 443
   server: 156.146.62.163
@@ -129,11 +144,12 @@ proxies:
   server: 84.17.53.160
   type: ss
 - cipher: aes-256-cfb
-  name: 418,437|🇷FR-51.15.15.82-0874
+  name: 418,437,525|_91
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.15.82
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 437|🇨CH-185.126.116.125-0094
   password: aLpQtfEZe445QyHk
@@ -233,24 +249,6 @@ proxies:
     headers:
       Host: 186.190.215.149
     path: linkvws
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  mode: ''
-  name: '439,548,554,558,570|2|🇨🇭1 |  5.7MB/s #1'
-  network: tcp
-  port: 30548
-  reality-opts:
-    public-key: KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A
-    short-id: d6d54c08fbbf895f
-  server: 37.156.46.65
-  servername: stackoverflow.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: ba3f2120-b5f2-fa63-5b12-2f37f8240e8f
-  ws-opts:
-    headers:
-      Host: '%2FTELEGRAM----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN'
 - name: 449|🇨🇭瑞士
   network: ws
   port: 2086
@@ -294,16 +292,6 @@ proxies:
       Host: rs1.youxuan.wiki
     path: /youxuan
   ws-path: /youxuan
-- alterId: 0
-  cipher: auto
-  name: 575,576,583|🔒 VM-TCP-NA 🇨🇭 CH-186.190.215....
-  network: tcp
-  port: '22324'
-  server: 186.190.215.93
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - cipher: chacha20-ietf-poly1305
   name: 619|🇨🇭 CH 瑞士
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
