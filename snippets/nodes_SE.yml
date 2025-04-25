@@ -30,24 +30,15 @@ proxies:
   server: cnamelm-dwzksl7kzye3rdby.bestcassoulet.com
   type: ss
   udp: true
-- country: SE
-  name: 352|SE_24
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.21.163.250
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '390|🇸🇪 瑞典 #1'
+  name: '391|🇸🇪 瑞典 #1'
   password: a4e169c9-3933-4d1e-98f5-4b58cd460c54
   port: 47541
   server: 01.liantongzf.one
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '391|🇸🇪 瑞典 #2'
+  name: '392|🇸🇪 瑞典 #2'
   password: eb79c4fa-baf9-456c-9163-67d9d3cf6ab5
   port: 47541
   server: 01.liantongzf.one
@@ -98,7 +89,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   country: 🇪 SE
-  name: 448,538| SE_283
+  name: 448,538| SE_277
   password: UDcjYQ6Z6AIWxViZpqyOmO
   port: 44013
   server: 46.246.98.155
@@ -152,14 +143,15 @@ proxies:
   server: 13.49.241.14
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 448|🇸SE-62.60.231.81-5915
+  country: 🇰HK
+  name: 448,536| |50.04Mb
   password: W7fIo8Gp6TLb1YHZNH1fu5
   port: 39008
   server: 62.60.231.81
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇷 IR
-  name: 448,538|🇮🇷 IR_205
+  name: 448,538|🇷 IR_202
   password: y6fgyC28hscmdwqXj2v0Fm
   port: 37618
   server: 62.60.152.158
@@ -240,9 +232,9 @@ proxies:
   cipher: auto
   name: '531,532|瑞典临时公用-共享100Mbps | 0x #1'
   network: ws
-  port: 2053
-  server: 1745551941.tencentapp.cn
-  servername: 1745551378.speed.sccapv.cccp.freefly.pp.ua
+  port: 2083
+  server: 1745561541.tencentapp.cn
+  servername: 1745561578.speed.sccapv.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -250,14 +242,14 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1745551378.speed.sccapv.cccp.freefly.pp.ua
+      Host: 1745561578.speed.sccapv.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
   country: 🇪 SE
   h2-opts: {}
   http-opts: {}
-  name: 538|🇪 SE_285
+  name: 538|🇪 SE_279
   network: ws
   port: 443
   server: 185.146.173.95
@@ -320,30 +312,6 @@ proxies:
   skip-cert-verify: true
   sni: sourceforge.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 589|36|🔒 VM-WS-NA 🇸🇪 SE-185.146.17...
-  network: ws
-  port: '2052'
-  server: 185.146.173.91
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6e88465e-a2ac-57d3-bbaf-f72e4439bd75
-  ws-opts:
-    headers:
-      Host: De1.vmess.site.
-    path: /vmess
-- name: 595|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
-  network: ws
-  password: vpn
-  port: 2025
-  server: 150.241.78.252
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: '%2F'
 - alpn:
   - http/1.1
   name: 595|🔒 TR-TCP-TLS 🇸🇪 SE-13.49.32.18...
@@ -351,6 +319,15 @@ proxies:
   password: telegram-id-vlessconfig
   port: 22222
   server: 13.49.32.184
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 595|🔒 TR-TCP-TLS 🇸🇪 SE-51.21.163.2...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.21.163.250
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 595|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
@@ -364,6 +341,30 @@ proxies:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
     path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
+- name: 595|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
+  network: ws
+  password: vpn
+  port: 2025
+  server: 150.241.78.252
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: '%2F'
+- alterId: 0
+  cipher: auto
+  name: 596|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
+  network: ws
+  port: '2052'
+  server: 185.146.173.91
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6e88465e-a2ac-57d3-bbaf-f72e4439bd75
+  ws-opts:
+    headers:
+      Host: De1.vmess.site.
+    path: /vmess
 - cipher: chacha20-ietf-poly1305
   name: '651,652|🇸🇪 瑞典 #4'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
