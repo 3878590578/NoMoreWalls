@@ -1,6 +1,7 @@
 proxies:
 - client-fingerprint: chrome
-  name: 1,23,184,188,427,429,542,543,545,549,555,561,563,564|台湾|@ripaojiedian
+  name: '1,23,184,188,389,427,542,543,545,549,555,558,561,563,564,567,568,569|🇨🇳 1,11,12|台湾|@ripaojiedian
+    #2'
   network: tcp
   password: e0413ac0-1e45-48d8-980d-9f1bcbba4983
   port: 27201
@@ -259,25 +260,37 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 270|🇹🇼 台湾 01 | 1x TW
-  password: d38c722c-59c3-4605-870d-b9172e4870ee
-  port: 36241
-  server: free.2weradf.xyz
+  name: 199|🇹🇼台湾 01 | 1x TW
+  password: b8aeba4c-d833-4d25-9518-2d1925b357f2
+  port: 31241
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 270|🇹🇼 台湾 02 | 1x TW
-  password: d38c722c-59c3-4605-870d-b9172e4870ee
-  port: 36243
-  server: free.2weradf.xyz
+  name: 199|🇹🇼台湾 02 | 1x TW
+  password: b8aeba4c-d833-4d25-9518-2d1925b357f2
+  port: 31243
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 270|🇹🇼 台湾 03 | 1x TW
-  password: d38c722c-59c3-4605-870d-b9172e4870ee
-  port: 36245
-  server: free.2weradf.xyz
+  name: 199|🇹🇼台湾 03 | 1x TW
+  password: b8aeba4c-d833-4d25-9518-2d1925b357f2
+  port: 31245
+  server: free.2apzhfa.xyz
   type: ss
+  udp: true
+- allowInsecure: '1'
+  country: 🇹🇼TW
+  name: 324,427,514,537,538,542,543,555,566,567,573|🔒 TR-TCP-TLS 🇹🇼 TW-220.130.58....
+  network: tcp
+  password: 851418c5-a1f0-453c-b8f8-24664990bdf8
+  port: 28503
+  server: 220.130.58.136
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  tls: true
+  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
@@ -771,6 +784,16 @@ proxies:
     headers:
       Host: 012.AP.POP.node-for-smallairport.win
     path: /
+- country: 🇼TW
+  name: '427,514,542,543,555,558,566,567,568,569,573|🔒 TR-TCP-NA 🇹🇼 TW-220.130.58.1...
+    #1'
+  password: 851418c5-a1f0-453c-b8f8-24664990bdf8
+  port: 28504
+  server: 220.130.58.136
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 427,555,567|23|mattkaydiary.com|中国台湾(TW)Ta...
@@ -1092,7 +1115,7 @@ proxies:
     path: /v2ray
 - cipher: aes-128-gcm
   country: 🇼 TW
-  name: 427,514,516| TW_282
+  name: 427,514,516| TW_275
   password: 79739832-b888-415a-a454-8b53911c944a
   port: 30332
   server: vps.200566.xyz
@@ -1468,7 +1491,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '565|1|🇹🇼 台湾 02 | 1x TW #3'
+  name: 565|1|🇹🇼 台湾 02 | 1x TW
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36243
   server: free.2weradf.xyz
@@ -1528,11 +1551,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 7a81d3d2-38f3-4ff8-81ff-43ed0807f3cc
-- name: 573|🔒 TR-TCP-NA 🇹🇼 TW-188.253.6.21...
-  password: Aimer
+- name: 573|🔒 TR-GRPC-TLS 🇹🇼 TW-60.249.28....
+  network: grpc
+  password: 67eb147db1c0f8c5
   port: 443
-  server: 188.253.6.210
-  sni: ngepz.ambercc.filegear-sg.me
+  server: 60.249.28.59
+  sni: 007.com
   type: trojan
 - name: 573|🔒 TR-WS-TLS 🇹🇼 TW-166.0.198.68...
   network: ws
@@ -1546,12 +1570,18 @@ proxies:
     headers:
       Host: 222.golinkwuxian.top
     path: '%2Fapple'
-- name: 573|🔒 TR-GRPC-TLS 🇹🇼 TW-60.249.28....
-  network: grpc
-  password: 67eb147db1c0f8c5
+- name: 573|🔒 TR-TCP-NA 🇹🇼 TW-188.253.6.21...
+  password: Aimer
   port: 443
-  server: 60.249.28.59
-  sni: 007.com
+  server: 188.253.6.210
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+- name: '573|🔒 TR-TCP-TLS 🇹🇼 TW-220.130.58.... #1'
+  network: tcp
+  password: 851418c5-a1f0-453c-b8f8-24664990bdf8
+  port: 28506
+  server: 220.130.58.136
+  sni: green2.cdntencentmusic.com
   type: trojan
 - name: '592|🇹🇼|台湾-进阶 01 #1'
   password: fe0b59ec-6af0-45db-9509-4c66b464af2e
@@ -1586,35 +1616,56 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 609|🇹🇼 TW 01
+  name: 596|🇹🇼 台湾 01 | 1x TW
+  password: 4fc2003b-d64a-4e84-bea3-dfc2a4ac5d6b
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 596|🇹🇼 台湾 02 | 1x TW
+  password: 4fc2003b-d64a-4e84-bea3-dfc2a4ac5d6b
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 596|🇹🇼 台湾 03 | 1x TW
+  password: 4fc2003b-d64a-4e84-bea3-dfc2a4ac5d6b
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 610|🇹🇼 TW 01
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49961
   server: node-tw.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 609|🇹🇼 TW 02
+  name: 610|🇹🇼 TW 02
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49962
   server: node-tw.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 609|🇹🇼 TW 03
+  name: 610|🇹🇼 TW 03
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49963
   server: node-tw.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 609|🇹🇼 TW 04
+  name: 610|🇹🇼 TW 04
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49964
   server: node-tw.dlg365.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 609|🇹🇼 TW 05
+  name: 610|🇹🇼 TW 05
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49965
   server: node-tw.dlg365.com
@@ -1622,7 +1673,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '620,621|TW.台湾.A #5'
+  name: '621,622|TW.台湾.A #5'
   port: 13255
   server: xdtw.cokecloud.top
   type: vmess
@@ -1630,7 +1681,7 @@ proxies:
   uuid: a01b5e27-ece5-4675-866f-36b23a65d2a8
 - alterId: 0
   cipher: auto
-  name: '620,621|TW.台湾.B | 推荐 #5'
+  name: '621,622|TW.台湾.B | 推荐 #5'
   port: 29299
   server: xdtw.cokecloud.top
   type: vmess
@@ -1638,70 +1689,70 @@ proxies:
   uuid: a01b5e27-ece5-4675-866f-36b23a65d2a8
 - alterId: 0
   cipher: auto
-  name: '620,621|TW.台湾.C | 高速2x倍率 #5'
+  name: '621,622|TW.台湾.C | 高速2x倍率 #5'
   port: 53497
   server: xdtw.cokecloud.top
   type: vmess
   udp: true
   uuid: a01b5e27-ece5-4675-866f-36b23a65d2a8
 - cipher: chacha20-ietf-poly1305
-  name: '620,621|TW.台湾.D #5'
+  name: '621,622|TW.台湾.D #5'
   password: a01b5e27-ece5-4675-866f-36b23a65d2a8
   port: 21073
   server: xdtw.cokecloud.top
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 622|台湾|TW01
+  name: 623|台湾|TW01
   password: 5231f59f-c196-4094-aea5-4ecaa069ddc5
   port: 45614
   server: u43jymjhccmf8ahbux6gnmtscnctt3gc.08.01.tw.6l6.site
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 622|台湾|TW02
+  name: 623|台湾|TW02
   password: 5231f59f-c196-4094-aea5-4ecaa069ddc5
   port: 35805
   server: 1w91dj53mb3tjunfqy7q3bdu1fo0sged.08.02.tw.6l6.site
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '623|台湾|TW01 #1'
+  name: '624|台湾|TW01 #1'
   password: fef880e7-87cb-4bea-8e5e-5ae2bba6fbb5
   port: 45614
   server: u43jymjhccmf8ahbux6gnmtscnctt3gc.08.01.tw.6l6.site
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '623|台湾|TW02 #1'
+  name: '624|台湾|TW02 #1'
   password: fef880e7-87cb-4bea-8e5e-5ae2bba6fbb5
   port: 35805
   server: 1w91dj53mb3tjunfqy7q3bdu1fo0sged.08.02.tw.6l6.site
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '624|台湾|TW01 #2'
+  name: '625|台湾|TW01 #2'
   password: 6063748c-ca22-4407-8852-f077a90b39e9
   port: 45614
   server: u43jymjhccmf8ahbux6gnmtscnctt3gc.08.01.tw.6l6.site
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '624|台湾|TW02 #2'
+  name: '625|台湾|TW02 #2'
   password: 6063748c-ca22-4407-8852-f077a90b39e9
   port: 35805
   server: 1w91dj53mb3tjunfqy7q3bdu1fo0sged.08.02.tw.6l6.site
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 625|🇹🇼台湾1
+  name: 626|🇹🇼台湾1
   password: 2177c494-cc50-4378-8df9-fd6a22600d0f
   port: 20073
   server: iost.prprcheng.top
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 625|🇹🇼台湾2
+  name: 626|🇹🇼台湾2
   password: 2177c494-cc50-4378-8df9-fd6a22600d0f
   port: 13755
   server: 1.prprcheng.top
@@ -1709,7 +1760,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '657|台湾1 #3'
+  name: '658|台湾1 #3'
   port: 10182
   server: zz6.xmfvpn.com
   type: vmess
@@ -1717,41 +1768,41 @@ proxies:
   uuid: 9854cb4c-922a-373c-a77d-9792727c83a4
 - alterId: 0
   cipher: auto
-  name: '657|台湾2 #3'
+  name: '658|台湾2 #3'
   port: 10183
   server: zz5.xmfvpn.com
   type: vmess
   udp: true
   uuid: 9854cb4c-922a-373c-a77d-9792727c83a4
 - cipher: aes-128-gcm
-  name: '688|台湾1 #4'
+  name: '689|台湾1 #4'
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
   port: 50017
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '688|台湾2 #4'
+  name: '689|台湾2 #4'
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
   port: 50018
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 688|台湾3
+  name: 689|台湾3
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
   port: 50019
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 688|台湾4
+  name: 689|台湾4
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
   port: 50020
   server: lh2.node-is.green
   type: ss
   udp: true
-- name: 688|Trojan-台湾1 | 低倍率
+- name: 689|Trojan-台湾1 | 低倍率
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
   port: 10116
   server: cc.rk1.node-is.green
@@ -1759,43 +1810,43 @@ proxies:
   sni: tctw1.bilibili.com
   type: trojan
   udp: true
-- name: 688|Trojan-台湾2 | 低倍率
+- name: 689|Trojan-台湾2 | 低倍率
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
-  port: 46325
-  server: 097620537a2664e471cf7a0e36d4de5d.lh.gtm.node-is.green
+  port: 45607
+  server: 1d48443142dc6b3c59d3ef07476c1aa6.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tctw1.bilibili.com
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: '689|台湾1 #5'
+  name: '690|台湾1 #5'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
   port: 50017
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '689|台湾2 #5'
+  name: '690|台湾2 #5'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
   port: 50018
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '689|台湾3 #1'
+  name: '690|台湾3 #1'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
   port: 50019
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '689|台湾4 #1'
+  name: '690|台湾4 #1'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
   port: 50020
   server: lh2.node-is.green
   type: ss
   udp: true
-- name: '689|Trojan-台湾1 | 低倍率 #1'
+- name: '690|Trojan-台湾1 | 低倍率 #1'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
   port: 10116
   server: cc.rk1.node-is.green
@@ -1803,43 +1854,43 @@ proxies:
   sni: tctw1.bilibili.com
   type: trojan
   udp: true
-- name: '689|Trojan-台湾2 | 低倍率 #1'
+- name: '690|Trojan-台湾2 | 低倍率 #1'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
-  port: 41379
-  server: 23e7d6b906673f3c2dcbe2d72dab3dbe.lh.gtm.node-is.green
+  port: 42627
+  server: 8f3e7d81c82b56fc6d9942410f2d2ee9.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tctw1.bilibili.com
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: '690|台湾1 #6'
+  name: '691|台湾1 #6'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
   port: 50017
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '690|台湾2 #6'
+  name: '691|台湾2 #6'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
   port: 50018
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '690|台湾3 #2'
+  name: '691|台湾3 #2'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
   port: 50019
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '690|台湾4 #2'
+  name: '691|台湾4 #2'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
   port: 50020
   server: lh2.node-is.green
   type: ss
   udp: true
-- name: '690|Trojan-台湾1 | 低倍率 #2'
+- name: '691|Trojan-台湾1 | 低倍率 #2'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
   port: 10116
   server: cc.rk1.node-is.green
@@ -1847,43 +1898,43 @@ proxies:
   sni: tctw1.bilibili.com
   type: trojan
   udp: true
-- name: '690|Trojan-台湾2 | 低倍率 #2'
+- name: '691|Trojan-台湾2 | 低倍率 #2'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
-  port: 43717
-  server: b314d4c81acd827b0976af34b154db1f.lh.gtm.node-is.green
+  port: 41386
+  server: 50926112fd19ef3c05c6d3b7c8b234a5.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tctw1.bilibili.com
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: '691|台湾1 #7'
+  name: '692|台湾1 #7'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
   port: 50017
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '691|台湾2 #7'
+  name: '692|台湾2 #7'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
   port: 50018
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '691|台湾3 #3'
+  name: '692|台湾3 #3'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
   port: 50019
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '691|台湾4 #3'
+  name: '692|台湾4 #3'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
   port: 50020
   server: lh2.node-is.green
   type: ss
   udp: true
-- name: '691|Trojan-台湾1 | 低倍率 #3'
+- name: '692|Trojan-台湾1 | 低倍率 #3'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
   port: 10116
   server: cc.rk1.node-is.green
@@ -1891,58 +1942,37 @@ proxies:
   sni: tctw1.bilibili.com
   type: trojan
   udp: true
-- name: '691|Trojan-台湾2 | 低倍率 #3'
+- name: '692|Trojan-台湾2 | 低倍率 #3'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
-  port: 43683
-  server: 13db5de297e9024ff9e3a08e6d205a53.lh.gtm.node-is.green
+  port: 40562
+  server: f03b8fb2703b12eb334ac78c89c6a70e.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tctw1.bilibili.com
   type: trojan
   udp: true
-- name: 692|V1-台湾-IPv6
+- name: 693|V1-台湾-IPv6
   password: b3d566e4-e177-48fa-b09c-45bc5e58bc58
-  port: 42742
-  server: 51ac7db565f95634a9c8b907ee54487a.v1.cac.node-is.green
+  port: 44377
+  server: 6ac19e651684106d2b3ede02d1b0037c.v1.cac.node-is.green
   skip-cert-verify: true
   sni: tw1.bilibili.com
   type: trojan
   udp: true
-- name: '694|V1-台湾-IPv6 #1'
+- name: '695|V1-台湾-IPv6 #1'
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 42838
-  server: dfb7d1e00545d6c573e2867a86850359.v1.cac.node-is.green
+  port: 48760
+  server: 3d3800833720c29895bcd8406978ca42.v1.cac.node-is.green
   skip-cert-verify: true
   sni: tw1.bilibili.com
   type: trojan
   udp: true
-- name: '709,710|Taiwan Pro 1 #1'
+- name: '710,711|Taiwan Pro 1 #1'
   password: '!!str 3747000103274291200'
   port: 443
   server: choice-sunbeam.sponge924.mom
   skip-cert-verify: false
   sni: choice-sunbeam.sponge924.mom
   type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 754|🇹🇼台湾 01 | 1x TW
-  password: 11153ec3-a22b-4180-88a9-2745d9699387
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 754|🇹🇼台湾 02 | 1x TW
-  password: 11153ec3-a22b-4180-88a9-2745d9699387
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 754|🇹🇼台湾 03 | 1x TW
-  password: 11153ec3-a22b-4180-88a9-2745d9699387
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
   udp: true
 - name: '780,781|安徽联通转台湾HiNet[M][Trojan][倍率:1] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
