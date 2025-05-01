@@ -30,6 +30,16 @@ proxies:
   server: cnamelm-dwzksl7kzye3rdby.bestcassoulet.com
   type: ss
   udp: true
+- country: SE
+  name: 328,424,554|🇸🇪SE-51.21.59.141-6738
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.21.59.141
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '367|🇸🇪 瑞典 #1'
   password: a4e169c9-3933-4d1e-98f5-4b58cd460c54
@@ -88,21 +98,22 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 424|🇪SE-46.246.98.155-1078
+  country: 🇪 SE
+  name: 424,514|🇪 SE_419
   password: UDcjYQ6Z6AIWxViZpqyOmO
   port: 44013
   server: 46.246.98.155
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇮 IR
-  name: 424,514|🇮 IR_366
+  name: 424,514|🇮 IR_374
   password: y6fgyC28hscmdwqXj2v0Fm
   port: 37618
   server: 62.60.152.158
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇰 HK
-  name: 424,512,514|🇰 HK_150
+  name: 424,514| HK_148
   password: W7fIo8Gp6TLb1YHZNH1fu5
   port: 39008
   server: 62.60.231.81
@@ -145,10 +156,10 @@ proxies:
   port: 27092
   server: 13.49.241.14
   type: ss
-- name: 424,554|🇸🇪SE-51.21.59.141-6738
+- name: 424,554,566|5|美国+北卡罗来纳(美国邮政局)
   password: telegram-id-privatevpns
   port: 22222
-  server: 51.21.59.141
+  server: 56.228.72.135
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
@@ -228,9 +239,9 @@ proxies:
   cipher: auto
   name: '507,508|瑞典临时公用-共享100Mbps | 0x #1'
   network: ws
-  port: 2087
-  server: 1746123141.tencentapp.cn
-  servername: 1746123178.speed.sccapv.cccp.freefly.pp.ua
+  port: 8443
+  server: 1746133341.tencentapp.cn
+  servername: 1746133378.speed.sccapv.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -238,30 +249,14 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1746123178.speed.sccapv.cccp.freefly.pp.ua
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🇨🇴CO
-  h2-opts: {}
-  http-opts: {}
-  name: 512,566,570|🇺🇸美国20 | ⬇️ 1.8MB/s
-  network: ws
-  port: 443
-  server: ray.skymirror.cc
-  servername: ray.skymirror.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c99929e1-9c82-4a33-d11e-f177247b8f63
-  ws-opts:
+      Host: 1746133378.speed.sccapv.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
   country: 🇪 SE
   h2-opts: {}
   http-opts: {}
-  name: 514|🇪 SE_413
+  name: 514|🇪 SE_420
   network: ws
   port: 443
   server: 185.146.173.95
@@ -322,27 +317,13 @@ proxies:
   skip-cert-verify: true
   sni: sourceforge.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 566|36|🔒 VM-WS-NA 🇸🇪 SE-185.146.17...
-  network: ws
-  port: '2052'
-  server: 185.146.173.91
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6e88465e-a2ac-57d3-bbaf-f72e4439bd75
-  ws-opts:
-    headers:
-      Host: De1.vmess.site.
-    path: /vmess
 - alpn:
   - http/1.1
-  name: 572|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.72.1...
+  name: 572|🔒 TR-TCP-TLS 🇸🇪 SE-51.21.59.14...
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 56.228.72.135
+  server: 51.21.59.141
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 572|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
@@ -356,6 +337,15 @@ proxies:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
     path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
+- alpn:
+  - http/1.1
+  name: 572|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.72.1...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 56.228.72.135
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: 572|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
   network: ws
   password: vpn
@@ -366,16 +356,8 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: '%2F'
-- name: '741,836,838|🇸🇪 瑞典2 #2'
+- name: '742,837,838,839|🇸🇪 瑞典2 #3'
   password: '!!str 1'
-  port: 443
-  server: starlink-sto.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-- name: 837|🇸🇪 瑞典2🔒
-  password: 升级订阅解锁全部节点
   port: 443
   server: starlink-sto.2513142.xyz
   skip-cert-verify: true

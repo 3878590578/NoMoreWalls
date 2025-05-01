@@ -121,30 +121,18 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 386,566,709|CH_5bc40_0003 6
-  network: tcp
+  flow: xtls-rprx-vision-udp443
+  name: 386,566|5|15|CH_speednode_0003
   port: 443
   server: 152.67.68.116
   servername: YAPC-1.afshin.ir
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
-- flow: xtls-rprx-vision
-  name: 386|1|🇨🇭3 |  5.3MB/s
-  port: 443
-  server: yapc-1.afshin.ir
-  servername: yapc-1.afshin.ir
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 386,544,548,560,566,709|CH_5bc40_0002 6
+  name: 386,544,548,560,566,710|CH_3b667_0001 4
   network: tcp
   port: 31548
   reality-opts:
@@ -159,21 +147,21 @@ proxies:
   udp: true
   uuid: 37ce86f5-df0c-0384-a4b2-8cedd9a1aedc
 - cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 405,406,424,514|🇺🇸 US_423
+  country: 🇸 US
+  name: 405,406,424,514|🇺 US_431
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
   country: 🇸 US
-  name: 405,406,424,514|🇺🇸 US_432
+  name: 405,406,424,514|🇺🇸 US_436
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
-  country: 🇸 US
+  country: 🇺 US
   name: 405,406,424,514|🇸 US_430
   password: shadowsocks
   port: 443
@@ -341,13 +329,13 @@ proxies:
     path: /youxuan
   ws-path: /youxuan
 - cipher: chacha20-ietf-poly1305
-  name: 607|🇨🇭 CH 瑞士
+  name: 608|🇨🇭 CH 瑞士
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49969
   server: node-a.dlg365.com
   type: ss
   udp: true
-- name: '612,613|🇨🇭瑞士北部（苏黎世）hy2 #4'
+- name: '613,614|🇨🇭瑞士北部（苏黎世）hy2 #4'
   password: 20bc0771-1fde-45ee-8052-3c26249c43dc
   port: 56060
   server: zurich.678789.xyz
@@ -357,7 +345,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '612,613|🇨🇭瑞士北部（苏黎世）vless #4'
+  name: '613,614|🇨🇭瑞士北部（苏黎世）vless #4'
   port: 38232
   reality-opts:
     public-key: 926aHJ34LgO6wd1NWM91yXDa577ihzXJXNZmce6Th3I
@@ -369,7 +357,7 @@ proxies:
   type: vless
   udp: true
   uuid: 20bc0771-1fde-45ee-8052-3c26249c43dc
-- name: '612,613|🇨🇭瑞士北部（苏黎世）trojan #4'
+- name: '613,614|🇨🇭瑞士北部（苏黎世）trojan #4'
   password: 20bc0771-1fde-45ee-8052-3c26249c43dc
   port: 34865
   server: 250407.jichang.my
@@ -377,7 +365,7 @@ proxies:
   sni: trojan-zurich.678789.xyz
   type: trojan
   udp: true
-- name: '741,836,838|🇨🇭 瑞士1 #2'
+- name: '742,837,838,839|🇨🇭 瑞士1 #3'
   password: '!!str 1'
   port: 10009
   server: starlink-fra.2513142.xyz
@@ -385,7 +373,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '741,836,838|🇨🇭 瑞士2 #2'
+- name: '742,837,838,839|🇨🇭 瑞士2 #3'
   password: '!!str 1'
   port: 10009
   server: starlink-fra2.2513142.xyz
@@ -393,7 +381,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '741,836,838|🇨🇭 瑞士3 #2'
+- name: '742,837,838,839|🇨🇭 瑞士3 #3'
   password: '!!str 1'
   port: 10014
   server: starlink-fra.2513142.xyz
@@ -401,7 +389,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '741,836,838|🇨🇭 瑞士4 #2'
+- name: '742,837,838,839|🇨🇭 瑞士4 #3'
   password: '!!str 1'
   port: 10014
   server: starlink-fra2.2513142.xyz
@@ -410,7 +398,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '786,787,788,789|🇨🇭 Switzerland 087 #3'
+  name: '787,788,789,790|🇨🇭 Switzerland 087 #3'
   password: c9fa2bcffa379937679e
   plugin: obfs
   plugin-opts:
@@ -421,41 +409,9 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '807|🇨🇭瑞士-苏黎世 1.5X #2'
+  name: '808|🇨🇭瑞士-苏黎世 1.5X #2'
   password: 0acc4c22-5428-4b21-870e-c92370bbc8fc
   port: 59556
   server: ore.zenovz.xyz
   type: ss
-  udp: true
-- name: 837|🇨🇭 瑞士1🔒
-  password: 升级订阅解锁全部节点
-  port: 10009
-  server: starlink-fra.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-- name: 837|🇨🇭 瑞士2🔒
-  password: 升级订阅解锁全部节点
-  port: 10009
-  server: starlink-fra2.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-- name: 837|🇨🇭 瑞士3🔒
-  password: 升级订阅解锁全部节点
-  port: 10014
-  server: starlink-fra.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-- name: 837|🇨🇭 瑞士4🔒
-  password: 升级订阅解锁全部节点
-  port: 10014
-  server: starlink-fra2.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
   udp: true
