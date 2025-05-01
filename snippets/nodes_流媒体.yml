@@ -34,24 +34,34 @@ proxies:
     path: /
   ws-path: /
 - country: FR
-  name: 329,425,554,565,566|20,21|🇪🇸ES-141.227.128.69-1082...
+  name: 329,425,554,565,566,572|🔒 TR-TCP-NA 🇪🇸 ES-141.227.128....
   network: tcp
   password: utF6JLQd2x
   port: 1935
   server: 141.227.128.69
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: x1es-ovh.devefun.net
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: x1es-ovh.devefun.net
 - country: IE
   name: 329|netflix_IE
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 18.203.133.90
+  server: 18.200.164.156
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: LT
+  name: 329|netflix_NL
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.157
+  type: ss
 - cipher: aes-256-cfb
   country: LT
   name: 329,425|🇹LT-185.237.185.160-6216
@@ -60,11 +70,18 @@ proxies:
   server: 185.237.185.160
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇳🇱 NL
-  name: 329,425,515|🇱 NL_561
-  password: cvII85TrW6n0OGyfpHVS1u
+  country: LT
+  name: 329,425|LT-45.87.175.69-6214
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 193.29.139.189
+  server: 45.87.175.69
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: MX
+  name: 329,425|MX-147.78.1.27-6217
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 147.78.1.27
   type: ss
 - cipher: aes-256-cfb
   country: PL
@@ -74,10 +91,19 @@ proxies:
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: 🇱PL
+  name: 329,420,425,515|PL_499
+  password: UTJA57ypk2XKQpnm
+  port: 9033
+  server: 217.30.10.18
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
   country: PL
-  name: 329,425|🇱PL-217.30.10.18-6219
-  password: TN2YqghxeFDKZfLU
-  port: 9037
+  name: 329,425|🇵🇱PL-217.30.10.18-6220
+  password: Lp27rqyJq72bZsqX
+  port: 9045
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
@@ -89,9 +115,9 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: PL
-  name: 329,425|🇵🇱PL-217.30.10.18-6221
-  password: KnJGad3FqTvjqbaX
-  port: 9014
+  name: 329,425|🇱PL-217.30.10.18-6219
+  password: TN2YqghxeFDKZfLU
+  port: 9037
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
@@ -100,6 +126,27 @@ proxies:
   password: QWDDvVE9npNurQfA
   port: 9026
   server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  country: PL
+  name: 329,425|🇵🇱PL-217.30.10.18-6221
+  password: KnJGad3FqTvjqbaX
+  port: 9014
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  country: PL
+  name: 329,425,515|_03
+  password: ueLXVkvh4hckhErQ
+  port: 9060
+  server: 217.30.10.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: US
+  name: 329,425|🇷FR-45.158.171.60-1032
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.60
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 386|🇹🇷土耳其奈飞解锁 1.5X 04
