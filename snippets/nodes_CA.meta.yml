@@ -303,14 +303,14 @@ proxies:
   uuid: c6677829-5644-427a-996d-5ac4d3223c03
 - cipher: chacha20-ietf-poly1305
   name: 194|🇨🇦加拿大 01 | 1x CA
-  password: e7a37c8a-bbb3-4dea-9dd6-23ac38570e5a
+  password: 25379cad-703e-4dd6-81bb-e8add7e1952b
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 196|🇨🇦 加拿大 01 | 1x CA
-  password: 89df9daf-abb4-4b20-a732-7019e60e9cab
+  name: 195|🇨🇦 加拿大 01 | 1x CA
+  password: 53c4680e-682f-43ca-9a2a-5bbe91542a58
   port: 36441
   server: free.2weradf.xyz
   type: ss
@@ -322,7 +322,7 @@ proxies:
   server: haa.dashuai.cyou
   type: vmess
   udp: true
-  uuid: 587a7f69-a2b3-4ad6-883f-d20cfa4f5355
+  uuid: 5439736e-50ef-42c4-b4d0-42211b0c0e33
 - alterId: 0
   cipher: auto
   name: '363|加拿大2 #2'
@@ -330,7 +330,7 @@ proxies:
   server: xdd.dashuai.cyou
   type: vmess
   udp: true
-  uuid: 587a7f69-a2b3-4ad6-883f-d20cfa4f5355
+  uuid: 5439736e-50ef-42c4-b4d0-42211b0c0e33
 - cipher: chacha20-ietf-poly1305
   name: '367|🇨🇦 加拿大 #1'
   password: a4e169c9-3933-4d1e-98f5-4b58cd460c54
@@ -404,13 +404,15 @@ proxies:
   server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 405,424|🇦CA-142.4.216.225-6238
+  country: 🇦CA
+  name: 405,424,512|🇦CA_116
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 405,573|SS-拿大-NF解锁加拿大地区非自制剧-ChatGPT-Ti...
+  country: 🇨 CZ
+  name: 405,512,573|SS-拿大-NF解锁加拿大地区非自制剧-ChatGPT-Ti...
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
@@ -1208,7 +1210,7 @@ proxies:
       Host: ''
     path: /cctv13/hd.m3u8
 - cipher: chacha20-ietf-poly1305
-  name: 424|🇦CA-142.4.216.225-6073
+  name: 424,512|_05
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -1994,9 +1996,9 @@ proxies:
   cipher: auto
   name: '505,506|加拿大1-多伦多-白嫖优化节点-CDN | 1x #1'
   network: ws
-  port: 8443
-  server: 1746425541.tencentapp.cn
-  servername: 1746425871.speed.fdvb.cccp.freefly.pp.ua
+  port: 2087
+  server: 1746436341.tencentapp.cn
+  servername: 1746436371.speed.fdvb.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2004,7 +2006,7 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1746425871.speed.fdvb.cccp.freefly.pp.ua
+      Host: 1746436371.speed.fdvb.cccp.freefly.pp.ua
     path: /
 - name: 528|加拿大_多伦多
   network: ws
@@ -6172,13 +6174,20 @@ proxies:
     headers:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
-- name: '555|🇨🇦 _加拿大 #1'
+- name: '555,564|24|🇨🇦 _加拿大 #1'
   password: Aimer
   port: 2087
   server: 104.234.239.235
   skip-cert-verify: false
   sni: epcch.ambercc.filegear-sg.me
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 559|🇨🇦 bing548
+  password: 2b70b00f-8e42-429e-a3f1-8599ebc6f557
+  port: 48871
+  server: aambx02qw.dorabbb.top
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 562|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -6523,19 +6532,11 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: 564|28|🇨🇦 bing295
-  network: tcp
-  port: 45064
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 87ac193e-ddad-4d76-b935-c121fc210ba0
-- alterId: 0
-  cipher: auto
   name: 564,571|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
   network: tcp
   port: '28984'
   server: 91.194.11.178
+  servername: ''
   tls: false
   type: vmess
   uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
@@ -6549,24 +6550,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
-- alterId: 0
-  cipher: auto
-  name: '567|加拿大2 #5'
-  network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: c6bcc678-92f0-43c0-bf44-5f34057ea26b
-- alterId: 0
-  cipher: auto
-  name: '567|加拿大1 #5'
-  network: tcp
-  port: '45064'
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: c6bcc678-92f0-43c0-bf44-5f34057ea26b
 - name: 570|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
   network: tcp
   password: Aimer
@@ -6576,7 +6559,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '574|加拿大1 #6'
+  name: '574|加拿大1 #5'
   network: tcp
   port: '45064'
   server: haa.dashuai.cyou
@@ -6585,7 +6568,7 @@ proxies:
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
 - alterId: 0
   cipher: auto
-  name: '574|加拿大2 #6'
+  name: '574|加拿大2 #5'
   network: tcp
   port: '45065'
   server: xdd.dashuai.cyou
@@ -6658,14 +6641,14 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '684|加拿大1 #7'
+  name: '684|加拿大1 #6'
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
   port: 50021
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '684|加拿大2 #7'
+  name: '684|加拿大2 #6'
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
   port: 50022
   server: lh2.node-is.green
@@ -6681,21 +6664,21 @@ proxies:
   udp: true
 - name: 684|Trojan-加拿大2 | 低倍率
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
-  port: 47059
-  server: 049b134412cc0594ae4eb8cdf739a07d.lh.gtm.node-is.green
+  port: 41163
+  server: 8c41f852e55c68767fa294ba7565f0b8.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcca1.bilibili.com
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: '685|加拿大1 #8'
+  name: '685|加拿大1 #7'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
   port: 50021
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '685|加拿大2 #8'
+  name: '685|加拿大2 #7'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
   port: 50022
   server: lh2.node-is.green
@@ -6711,21 +6694,21 @@ proxies:
   udp: true
 - name: '685|Trojan-加拿大2 | 低倍率 #1'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
-  port: 45071
-  server: e01a5254ca53e918d49757a339f2031c.lh.gtm.node-is.green
+  port: 40247
+  server: 1a7351ec4f2c620633bd79832eb9544e.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcca1.bilibili.com
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: '686|加拿大1 #9'
+  name: '686|加拿大1 #8'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
   port: 50021
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '686|加拿大2 #9'
+  name: '686|加拿大2 #8'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
   port: 50022
   server: lh2.node-is.green
@@ -6741,21 +6724,21 @@ proxies:
   udp: true
 - name: '686|Trojan-加拿大2 | 低倍率 #2'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
-  port: 41418
-  server: 39daa3408bd34f3dea88f9072df1e6f2.lh.gtm.node-is.green
+  port: 49207
+  server: 4a8b423837660d185874d901e0b1a72a.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcca1.bilibili.com
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: '687|加拿大1 #10'
+  name: '687|加拿大1 #9'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
   port: 50021
   server: lh2.node-is.green
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '687|加拿大2 #10'
+  name: '687|加拿大2 #9'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
   port: 50022
   server: lh2.node-is.green
@@ -6771,24 +6754,24 @@ proxies:
   udp: true
 - name: '687|Trojan-加拿大2 | 低倍率 #3'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
-  port: 42165
-  server: 042a1bedbf16ccb549a2956eca0f0941.lh.gtm.node-is.green
+  port: 45209
+  server: 7dfba3fceb73bf8c666542cd283da741.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tcca1.bilibili.com
   type: trojan
   udp: true
 - name: 688|V1-加拿大-IPv6
   password: b3d566e4-e177-48fa-b09c-45bc5e58bc58
-  port: 47381
-  server: 7d8e909a2aa9dcd5158a37a6bf3b9dbf.v1.cac.node-is.green
+  port: 44156
+  server: d522cc5f94b17d6d42815ece180e00b4.v1.cac.node-is.green
   skip-cert-verify: true
   sni: ca1.bilibili.com
   type: trojan
   udp: true
 - name: '690|V1-加拿大-IPv6 #1'
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 47299
-  server: f5b11c589c804d2dd1ee44ba9340e480.v1.cac.node-is.green
+  port: 48304
+  server: d1cb8038582107a1c4e3af04c87bc1a3.v1.cac.node-is.green
   skip-cert-verify: true
   sni: ca1.bilibili.com
   type: trojan
@@ -6806,7 +6789,7 @@ proxies:
   server: jp1.qsm1.xyz
   type: ss
   udp: true
-- name: '740,829,830,831|🇨🇦 加拿大1 #7'
+- name: '740,831,833|🇨🇦 加拿大1 #6'
   password: '!!str 1'
   port: 443
   server: starlink-tor.2513142.xyz
@@ -6814,7 +6797,7 @@ proxies:
   sni: www.cloudflare.com
   type: hysteria2
   udp: true
-- name: '740,829,830,831|🇨🇦 加拿大2 #7'
+- name: '740,831,833|🇨🇦 加拿大2 #6'
   password: '!!str 1'
   port: 443
   server: starlink-tor.2513142.xyz
@@ -6852,7 +6835,7 @@ proxies:
   type: hysteria2
   up: 1000
 - down: 50
-  name: '817,818|🇨🇦CA 加拿大 #1'
+  name: '819,820|🇨🇦CA 加拿大 #1'
   password: 867f512f-93d2-4344-853c-50965de9b103
   port: 55215
   server: shy41.zqjc.cloud
@@ -6860,3 +6843,19 @@ proxies:
   sni: shy41.zqjc.cloud
   type: hysteria2
   up: 500
+- name: 832|🇨🇦 加拿大1🔒
+  password: 升级订阅解锁全部节点
+  port: 443
+  server: starlink-tor.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: hysteria2
+  udp: true
+- name: 832|🇨🇦 加拿大2🔒
+  password: 升级订阅解锁全部节点
+  port: 443
+  server: starlink-tor.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
