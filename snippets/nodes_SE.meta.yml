@@ -72,29 +72,25 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  country: 🇪 SE
-  name: 423,510,565|🇪 bing1859
+  name: 423,565|🇪 bing1859
   password: UDcjYQ6Z6AIWxViZpqyOmO
   port: 44013
   server: 46.246.98.155
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇮 IR
-  name: 423,510,565|bing1558
+  name: 423,565|bing1558
   password: y6fgyC28hscmdwqXj2v0Fm
   port: 37618
   server: 62.60.152.158
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  country: HK
-  name: '423,508,545,546,565,566|🇭🇰 香港3|@ripaojiedian #1'
+  country: 🇰HK
+  name: 423,508,545,546,565,571|SE-62.60.231.81-261
   password: W7fIo8Gp6TLb1YHZNH1fu5
   port: 39008
   server: 62.60.231.81
-  tfo: false
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -218,9 +214,9 @@ proxies:
   cipher: auto
   name: '503,504|瑞典临时公用-共享100Mbps | 0x #1'
   network: ws
-  port: 2053
-  server: 1746478941.tencentapp.cn
-  servername: 1746479451.speed.sccapv.cccp.freefly.pp.ua
+  port: 2096
+  server: 1746492741.tencentapp.cn
+  servername: 1746493011.speed.sccapv.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -228,7 +224,7 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1746479451.speed.sccapv.cccp.freefly.pp.ua
+      Host: 1746493011.speed.sccapv.cccp.freefly.pp.ua
     path: /
 - name: 533|🇸🇪SE(AzadNet.t.me)
   network: tcp
@@ -281,6 +277,34 @@ proxies:
     headers:
       Host: De1.vmess.site.
     path: /vmess
+- alpn:
+  - http/1.1
+  name: 576|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.151.1...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.60.151.163
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 576|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.53.2...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 56.228.53.24
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 576|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
+  network: ws
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: '%2F'
 - name: 576|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
   network: ws
   password: vpn
@@ -291,24 +315,6 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: '%2F'
-- alpn:
-  - http/1.1
-  name: 576|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.53.2...
-  network: tcp
-  password: telegram-id-vlessconfig
-  port: 22222
-  server: 56.228.53.24
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 576|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.151.1...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.60.151.163
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - name: 576|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
@@ -320,16 +326,6 @@ proxies:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
     path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
-- name: 576|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
-  network: ws
-  password: vpn
-  port: 2025
-  server: 109.120.132.80
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: '%2F'
 - name: 735|瑞典-直连
   password: 5415e20c-dbe6-46ff-9cc1-1c092184d801
   port: 10000
@@ -337,13 +333,6 @@ proxies:
   skip-cert-verify: true
   sni: ruidian.959555.xyz
   type: hysteria2
-  udp: true
-- cipher: aes-256-gcm
-  name: 736|付费-瑞典
-  password: 1d6797c1-974c-41fd-bc35-5e7a80c11575
-  port: 37442
-  server: hk1.xn--fiqs8s40dz2j.com
-  type: ss
   udp: true
 - name: '741,839,840,841|🇸🇪 瑞典1 #3'
   password: '!!str 1'
