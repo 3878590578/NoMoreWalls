@@ -14,15 +14,6 @@ proxies:
   server: cnamelm-dwzksl7kzye3rdby.bestcassoulet.com
   type: ss
   udp: true
-- country: SE
-  name: 336|SE_16
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.60.151.163
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '368|🇸🇪 瑞典 #1'
   password: a4e169c9-3933-4d1e-98f5-4b58cd460c54
@@ -81,7 +72,8 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 425|🇪SE-46.246.98.155-1106
+  country: 🇪 SE
+  name: 425,512|🇪 SE_368
   password: UDcjYQ6Z6AIWxViZpqyOmO
   port: 44013
   server: 46.246.98.155
@@ -125,26 +117,28 @@ proxies:
   server: 13.49.241.14
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 425,510,512| HK_160
+  country: 🇰HK
+  name: 425,510| | 2.37Mb
   password: W7fIo8Gp6TLb1YHZNH1fu5
   port: 39008
   server: 62.60.231.81
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇷 IR
-  name: 425,512| IR_318
+  name: 425,512| IR_303
   password: y6fgyC28hscmdwqXj2v0Fm
   port: 37618
   server: 62.60.152.158
   type: ss
-- name: 425,560|🇸🇪SE-56.228.53.24-6604
+- country: 🇺🇸US
+  name: 425,510,560|🇸🇪SE-56.228.53.24-6604
   password: telegram-id-privatevpns
   port: 22222
   server: 56.228.53.24
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 425|🇸SE-37.19.222.214-9798
   password: asdKkaskJKfnsa
@@ -221,9 +215,9 @@ proxies:
   cipher: auto
   name: '505,506|瑞典临时公用-共享100Mbps | 0x #1'
   network: ws
-  port: 2087
-  server: 1746609141.tencentapp.cn
-  servername: 1746609171.speed.sccapv.cccp.freefly.pp.ua
+  port: 2083
+  server: 1746620541.tencentapp.cn
+  servername: 1746620571.speed.sccapv.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -231,7 +225,7 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1746609171.speed.sccapv.cccp.freefly.pp.ua
+      Host: 1746620571.speed.sccapv.cccp.freefly.pp.ua
     path: /
 - name: 535|🇸🇪SE(AzadNet.t.me)
   network: tcp
@@ -270,11 +264,21 @@ proxies:
   skip-cert-verify: true
   sni: sourceforge.net
   type: trojan
+- name: 578|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
+  network: ws
+  password: vpn
+  port: 2025
+  server: 150.241.78.252
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: /
 - alpn:
   - http/1.1
   name: 578|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.53.2...
   network: tcp
-  password: telegram-id-privatevpns
+  password: telegram-id-vlessconfig
   port: 22222
   server: 56.228.53.24
   sni: trojan.burgerip.co.uk
@@ -299,17 +303,7 @@ proxies:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
     path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
-- name: 578|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
-  network: ws
-  password: vpn
-  port: 2025
-  server: 150.241.78.252
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: '%2F'
-- name: '744,845,847|🇸🇪 瑞典2 #2'
+- name: '744,845,846,847|🇸🇪 瑞典2 #3'
   password: '!!str 1'
   port: 443
   server: starlink-sto.2513142.xyz
@@ -323,11 +317,3 @@ proxies:
   server: my.singaporenodeserverone.kyiv.ua
   sni: 45.32.28.232
   type: trojan
-- name: 846|🇸🇪 瑞典2🔒
-  password: 升级订阅解锁全部节点
-  port: 443
-  server: starlink-sto.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
