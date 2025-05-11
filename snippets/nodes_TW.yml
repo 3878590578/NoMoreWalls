@@ -1,37 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  delay: 534
-  name: '1,76,340,402,406,440,568,572,574,578,581,584,586,587,589,590,591,592|🇨🇳 13,14|台湾|@ripaojiedian
-    #2'
-  network: tcp
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 3462
-  server: a10.taipeicitygovernment.kyiv.ua
-  skip-cert-verify: false
-  sni: 45.32.28.232
-  type: trojan
-- client-fingerprint: chrome
-  delay: 2032
-  name: '1,76,340,402,406,440,568,572,574,578,581,584,586,587,589,590,591,592|🇨🇳 13,14|台湾2|@ripaojiedian
-    #2'
-  network: tcp
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 443
-  server: taifo01a.kbservice.club
-  skip-cert-verify: false
-  sni: 45.32.28.232
-  type: trojan
-- alpn:
-  - h3
-  client-fingerprint: chrome
-  name: 1,568,572,584,586,587|台湾3|@ripaojiedian
-  network: tcp
-  password: bpb-trojan
-  port: 443
-  server: 35.201.203.106
-  skip-cert-verify: false
-  sni: skwygx.top
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 58|🇹🇼 台湾 1-1B
   password: 0871a57c-64fd-44ff-a6aa-90d14d497b97
@@ -218,6 +185,48 @@ proxies:
   password: 0e7f9306-0021-450b-b6b1-81d6fe9add1c
   port: 51051
   server: cnamepc03-d2zdrzg6ilecsynk.besttarik.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 194|🇹🇼台湾 01 | 1x TW
+  password: e920bee2-522b-449a-aa88-d880de9b5502
+  port: 31241
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 194|🇹🇼台湾 02 | 1x TW
+  password: e920bee2-522b-449a-aa88-d880de9b5502
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 194|🇹🇼台湾 03 | 1x TW
+  password: e920bee2-522b-449a-aa88-d880de9b5502
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 196|🇹🇼 台湾 01 | 1x TW
+  password: 5558e16d-7e9d-4f33-80f7-b3a2d3e37c5b
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 196|🇹🇼 台湾 02 | 1x TW
+  password: 5558e16d-7e9d-4f33-80f7-b3a2d3e37c5b
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 196|🇹🇼 台湾 03 | 1x TW
+  password: 5558e16d-7e9d-4f33-80f7-b3a2d3e37c5b
+  port: 36245
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -646,7 +655,7 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: aes-256-cfb
-  name: 440,527|_67
+  name: 440,527|_81
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
@@ -1091,6 +1100,23 @@ proxies:
   port: 50701
   server: 61.220.130.70
   type: ss
+- alpn:
+  - h3
+  client-fingerprint: randomized
+  name: 442|🇹🇼1 |  5.8MB/s|0%|Netflix|Disn...
+  network: ws
+  password: Aimer
+  port: '2096'
+  server: 176.124.223.133
+  skip-cert-verify: false
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.67 Safari/537.36
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 475|🇹🇼 台湾|TW01
@@ -1305,6 +1331,17 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: 568,572,584,586,587,590,596|🔒 TR-TCP-NA 🇹🇼 TW-35.201.203.1...
+  network: tcp
+  password: bpb-trojan
+  port: 443
+  server: 35.201.203.106
+  skip-cert-verify: false
+  sni: skwygx.top
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 588|0| 01 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1334,7 +1371,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 588|1|🇹🇼 台湾 02 | 1x TW
+  name: '588|1|🇹🇼 台湾 02 | 1x TW #1'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36243
   server: free.2weradf.xyz
@@ -1376,24 +1413,12 @@ proxies:
     headers:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
-- alpn:
-  - h3
-  name: 596|🔒 TR-WS-NA 🇹🇼 TW-35.201.203.10...
-  network: ws
-  password: bpb-trojan
+- name: 596|🔒 TR-TCP-NA 🇹🇼 TW-210.203.60.1...
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
-  server: 35.201.203.106
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  ws-opts:
-    headers:
-      Host: skwygx.top
-- name: 596|🔒 TR-TCP-NA 🇹🇼 TW-220.130.58.1...
-  password: 851418c5-a1f0-453c-b8f8-24664990bdf8
-  port: 28504
-  server: 220.130.58.136
-  sni: green2.cdntencentmusic.com
+  server: 210.203.60.189
+  skip-cert-verify: false
+  sni: 45.32.28.232
   type: trojan
 - name: 596|🔒 TR-GRPC-TLS 🇹🇼 TW-60.249.28....
   network: grpc
@@ -1402,12 +1427,11 @@ proxies:
   server: 60.249.28.59
   sni: 007.com
   type: trojan
-- name: 596|🔒 TR-TCP-NA 🇹🇼 TW-210.203.60.1...
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 443
-  server: 210.203.60.189
-  skip-cert-verify: false
-  sni: 45.32.28.232
+- name: 596|🔒 TR-TCP-NA 🇹🇼 TW-220.130.58.1...
+  password: 851418c5-a1f0-453c-b8f8-24664990bdf8
+  port: 28504
+  server: 220.130.58.136
+  sni: green2.cdntencentmusic.com
   type: trojan
 - name: '613|🇹🇼|台湾-进阶 01 #1'
   password: fe0b59ec-6af0-45db-9509-4c66b464af2e
@@ -1570,8 +1594,8 @@ proxies:
   udp: true
 - name: 702|Trojan-台湾2 | 低倍率
   password: 593c3d63-04c7-4bbb-a03f-114eba08636c
-  port: 46417
-  server: 9fb5ad88088717b985c7923fad285a01.lh.gtm.node-is.green
+  port: 47266
+  server: 59ce8c612f8b875bb6d573776cc996bc.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tctw1.bilibili.com
   type: trojan
@@ -1614,8 +1638,8 @@ proxies:
   udp: true
 - name: '703|Trojan-台湾2 | 低倍率 #1'
   password: b64ec383-e598-465a-9e59-70e9b0d87f66
-  port: 49371
-  server: 8ceab18251a7a594d65b78171dbf5d51.lh.gtm.node-is.green
+  port: 42202
+  server: a89977233004118e4faba5ec01d67811.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tctw1.bilibili.com
   type: trojan
@@ -1658,8 +1682,8 @@ proxies:
   udp: true
 - name: '704|Trojan-台湾2 | 低倍率 #2'
   password: 8d4fa037-3324-485e-a3fc-2862210ee4f7
-  port: 49696
-  server: 564b719023d9c46207a13f7dfd816f3f.lh.gtm.node-is.green
+  port: 43309
+  server: 95bbeb542e87dab59b1b85a1f9afacd4.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tctw1.bilibili.com
   type: trojan
@@ -1702,24 +1726,24 @@ proxies:
   udp: true
 - name: '705|Trojan-台湾2 | 低倍率 #3'
   password: 07e55e4a-ef94-4e81-addc-b62532cb503a
-  port: 40802
-  server: bf528457137404a96a72bf95a274772c.lh.gtm.node-is.green
+  port: 49874
+  server: 0d7799898edf4dea7262c2efdf1e7cb5.lh.gtm.node-is.green
   skip-cert-verify: true
   sni: tctw1.bilibili.com
   type: trojan
   udp: true
 - name: 706|V1-台湾-IPv6
   password: b3d566e4-e177-48fa-b09c-45bc5e58bc58
-  port: 41379
-  server: 1334a84e073430876a402504c10f24b6.v1.cac.node-is.green
+  port: 49762
+  server: c9ecbb9140f2d1c1d7b9edbcbc77636d.v1.cac.node-is.green
   skip-cert-verify: true
   sni: tw1.bilibili.com
   type: trojan
   udp: true
 - name: '708|V1-台湾-IPv6 #1'
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 46375
-  server: 1a3c47dbfc91607c21696f63e38472e4.v1.cac.node-is.green
+  port: 46639
+  server: ddc86f09fe9798426e11d75275b61b8a.v1.cac.node-is.green
   skip-cert-verify: true
   sni: tw1.bilibili.com
   type: trojan
@@ -1733,7 +1757,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 724|TW_f0fca_0025 2
+  name: 724|TW_f0fca_0025 6
   password: 937f6b6168b6
   plugin: v2ray-plugin
   plugin-opts:
