@@ -1,41 +1,20 @@
 proxies:
 - cipher: aes-128-gcm
-  name: 6|[ss]日本1[中转][高速]
-  password: 3757e7d9-e5cd-467a-a826-27f9f385b8fc
-  port: 51218
-  server: 113.96.190.245
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 6|[ss]香港1[中转]
-  password: 3757e7d9-e5cd-467a-a826-27f9f385b8fc
-  port: 10888
-  server: 113.96.190.245
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 6|[ss]香港2[中转]
-  password: 3757e7d9-e5cd-467a-a826-27f9f385b8fc
-  port: 10999
-  server: 113.96.190.245
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '7|[ss]日本1[中转][高速] #1'
+  name: 7|[ss]日本1[中转][高速]
   password: 3a9a065f-d486-4a0f-a5be-9cac7fbc59c7
   port: 51218
   server: 113.96.190.245
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '7|[ss]香港1[中转] #1'
+  name: 7|[ss]香港1[中转]
   password: 3a9a065f-d486-4a0f-a5be-9cac7fbc59c7
   port: 10888
   server: 113.96.190.245
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '7|[ss]香港2[中转] #1'
+  name: 7|[ss]香港2[中转]
   password: 3a9a065f-d486-4a0f-a5be-9cac7fbc59c7
   port: 10999
   server: 113.96.190.245
@@ -3841,6 +3820,60 @@ proxies:
   sni: us.catxstar.com
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 445|🇰🇷 _US_美国->🇰🇷_KR_韩国
+  password: piv97XS1Cval86vfwHPD5j
+  port: 443
+  server: 194.87.216.121
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 445,545|美国-拉斯维加斯-001-1D
+  network: ws
+  port: '20058'
+  server: 45.147.201.231
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4dadb82a-2395-45f2-a681-f9c9cfc7f600
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- name: 445,521,542|10|美国 047
+  network: ws
+  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
+  port: 443
+  server: 172.67.204.120
+  skip-cert-verify: true
+  sni: ddcDe.890603.XYz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ddcDe.890603.XYz
+    path: /COp52Dbu3dvwvDWUxOqxq
+- alterId: 0
+  cipher: auto
+  name: 445|🇳🇱 _NL_荷兰->🇨🇳_CN_中国
+  port: 58819
+  server: 194.5.193.95
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b0bf81e1-0b18-4253-a278-d516f580240a
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: db
+  name: 445,541|🇷🇺_RU_俄罗斯->🇰🇷_KR_韩国
+  network: grpc
+  password: 3c4e10af98c30972
+  port: 443
+  server: 88.210.36.106
+  skip-cert-verify: true
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 511|CF中转_021805008 L0
@@ -4448,29 +4481,9 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-- name: '541|🇨🇳_CN_中国->🇺🇸_US_美国 #6'
-  network: tcp
-  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
-  port: 15229
-  server: 99dfcb82-sxhts0-t5qufl-8n27.cu.plebai.net
-  sni: 99dfcb82-sxhts0-t5qufl-8n27.cu.plebai.net
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 541|🇨🇳 _TW_台湾->🇺🇸_US_美国
-  network: ws
-  port: '80'
-  server: 107.167.182.230
-  tls: false
-  type: vmess
-  uuid: efcb7d7c-c582-46f5-eeff-0e553342528d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /tg@hkaa0
-- alterId: 0
-  cipher: auto
-  name: '541|🇨🇳_CN_中国->🇺🇸_US_美国 #7'
+  name: 541|🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz
@@ -4483,113 +4496,22 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 541|🇩🇪 _US_美国->🇩🇪_DE_德国
+  name: 541|🇹🇼_TW_台湾->🇺🇸_US_美国
   network: ws
-  port: '80'
-  server: flkf2.shabijichang.com
+  port: 80
+  server: 107.167.182.230
   tls: false
   type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  uuid: efcb7d7c-c582-46f5-eeff-0e553342528d
   ws-opts:
     headers:
-      Host: flkf2.shabijichang.com
-    path: /
+      Host: br.gy.youxuan-1.66688888.xyz
+    path: /tg@hkaa0
 - alterId: 0
   cipher: auto
-  name: 541|🇬🇧 _US_美国->🇬🇧_GB_英国_1
+  name: 541|🇺🇸_US_美国->🇸🇦_SA_沙特阿拉伯
   network: ws
-  port: '80'
-  server: mrb2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mrb2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 541|🇬🇧 _US_美国->🇬🇧_GB_英国_2
-  network: ws
-  port: '80'
-  server: ld2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: ld2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 541|🇮🇳 _US_美国->🇮🇳_IN_印度_1
-  network: ws
-  port: '80'
-  server: 104.17.18.26
-  tls: false
-  type: vmess
-  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 541|🇮🇳 _US_美国->🇮🇳_IN_印度_2
-  network: ws
-  port: '80'
-  server: 104.26.8.44
-  tls: false
-  type: vmess
-  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 541|🇮🇳 _US_美国->🇮🇳_IN_印度_3
-  network: ws
-  port: '80'
-  server: mm2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mm2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 541|🇮🇳 _US_美国->🇮🇳_IN_印度_4
-  network: ws
-  port: '80'
-  server: mm3.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mm3.shabijichang.com
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 541|🇳🇱 _US_美国->🇳🇱_NL_荷兰
-  network: ws
-  port: '30000'
-  server: 45.199.138.191
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/1696251522438
-- alterId: 0
-  cipher: auto
-  name: 541|🇸🇦 _US_美国->🇸🇦_SA_沙特阿拉伯
-  network: ws
-  port: '80'
+  port: 80
   server: jd3.shabijichang.com
   tls: false
   type: vmess
@@ -4639,7 +4561,111 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 541|CF中转_06131012060 L0
+  name: '541|🇺🇸_US_美国->🇩🇪_DE_德国 #5'
+  network: ws
+  port: 80
+  server: flkf2.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: flkf2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '541|🇺🇸_US_美国->🇬🇧_GB_英国 #3'
+  network: ws
+  port: 80
+  server: ld2.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: ld2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '541|🇺🇸_US_美国->🇬🇧_GB_英国 #4'
+  network: ws
+  port: 80
+  server: mrb2.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: mrb2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 541|🇺🇸_US_美国->🇮🇳_IN_印度
+  network: ws
+  port: 80
+  server: 104.17.18.26
+  tls: false
+  type: vmess
+  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
+  ws-opts:
+    headers:
+      Host: a.109420.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '541|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
+  network: ws
+  port: 80
+  server: 104.26.8.44
+  tls: false
+  type: vmess
+  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
+  ws-opts:
+    headers:
+      Host: a.109420.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '541|🇺🇸_US_美国->🇮🇳_IN_印度 #2'
+  network: ws
+  port: 80
+  server: mm2.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: mm2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '541|🇺🇸_US_美国->🇮🇳_IN_印度 #3'
+  network: ws
+  port: 80
+  server: mm3.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: mm3.shabijichang.com
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 541|🇺🇸_US_美国->🇳🇱_NL_荷兰
+  network: ws
+  port: 30000
+  server: 45.199.138.191
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.42077230.xyz
+    path: /path/1696251522438
+- alterId: 0
+  cipher: auto
+  name: 541|CF中转_06132012168 L0
   network: ws
   port: '2082'
   server: 104.16.155.10
@@ -4653,7 +4679,21 @@ proxies:
     path: /dabai.in172.64.25.37
 - alterId: 0
   cipher: auto
-  name: 541|CF中转_06131012059 L0
+  name: 541|CF中转_06132012961 L0
+  network: ws
+  port: '2086'
+  server: 104.19.174.68
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 447fb52e-8377-452e-8f9e-873dd2d3f1f8
+  ws-opts:
+    headers:
+      Host: cae3mg9qsg55eo5lhq.lovebaipiao.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 541|CF中转_06132012167 L0
   network: ws
   port: '2082'
   server: 104.19.48.236
@@ -4667,7 +4707,7 @@ proxies:
     path: /dabai.in172.64.25.37
 - alterId: 0
   cipher: auto
-  name: 541|CF中转_06131012062 L0
+  name: 541|CF中转_06132012170 L0
   network: ws
   port: '8443'
   server: 104.21.32.1
@@ -4681,7 +4721,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 541|CF中转_06131012061 L0
+  name: 541|CF中转_06132012169 L0
   network: ws
   port: '2096'
   server: 104.21.64.1
@@ -4693,6 +4733,20 @@ proxies:
     headers:
       Host: de01.sh-cloudflare.sbs
     path: /
+- alterId: 0
+  cipher: auto
+  name: 541|CF中转_061320057 L1
+  network: ws
+  port: '80'
+  server: 104.21.73.59
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  ws-opts:
+    headers:
+      Host: hk.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
 - alterId: 0
   cipher: auto
   name: 541,542,549|🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.80....
@@ -4707,6 +4761,20 @@ proxies:
     headers:
       Host: de01.sh-cloudflare.sbs
     path: /
+- alterId: 0
+  cipher: auto
+  name: 541,542,549|🔒 VM-WS-NA 🏴‍☠️ NA-172.67.209....
+  network: ws
+  port: '80'
+  server: 172.67.209.79
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 512d9674-db12-44ca-a1b5-654244549b65
+  ws-opts:
+    headers:
+      Host: xcccvvbnmj.999834.xyz
+    path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm
 - alterId: 0
   cipher: auto
   name: 541,542|16|🇳_CN_中国->_GB_国
@@ -5417,6 +5485,20 @@ proxies:
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 551|VMESS->国-NF解锁兰自制剧-ChatGPT-TikT...
+  network: ws
+  port: 443
+  server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    path: /azumase.ren
 - cipher: aes-128-gcm
   name: 566|香港03-广移中转A-优惠倍率*11
   password: d9f21420-f6d9-41f3-9e0e-98e9f983caed
