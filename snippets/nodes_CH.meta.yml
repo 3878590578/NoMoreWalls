@@ -17,21 +17,21 @@ proxies:
   ws-opts: null
 - cipher: aes-128-gcm
   country: 🇸 US
-  name: 384,385,403,447,493|🇺🇸 US_244
+  name: 384,385,403,448,494|🇺🇸 US_269
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
   country: 🇸 US
-  name: 384,385,403,447,493|🇺🇸 US_240
+  name: 384,385,403,448,494|🇺🇸 US_265
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 384,385,403,447,493|🇺🇸 US_241
+  country: 🇸 US
+  name: 384,385,403,448,494|🇸 US_256
   password: shadowsocks
   port: 443
   server: 156.146.62.163
@@ -55,12 +55,12 @@ proxies:
   server: 185.126.116.125
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 403,447,553|SS--NF解锁自制剧-ChatGPT-TikTok-You...
+  name: 403,448,554|SS--NF解锁自制剧-ChatGPT-TikTok-You...
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 204.136.10.115
   type: ss
-- name: 403,532|🇨🇭CH-152.67.71.149-2743
+- name: 403,533|🇨🇭CH-152.67.71.149-2743
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
@@ -74,7 +74,7 @@ proxies:
   type: ss
 - alterId: 1
   cipher: auto
-  name: 403,532|🇨🇭CH-186.190.215.32-7726
+  name: 403,533|🇨🇭CH-186.190.215.32-7726
   network: ws
   port: 443
   server: 186.190.215.32
@@ -89,7 +89,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: 403,532|🇨🇭CH-186.190.215.75-7790
+  name: 403,533|🇨🇭CH-186.190.215.75-7790
   network: ws
   port: 443
   server: 186.190.215.75
@@ -104,7 +104,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 403,532|🇨🇭CH-140.238.212.95-7803
+  name: 403,533|🇨🇭CH-140.238.212.95-7803
   network: ws
   port: 443
   server: 140.238.212.95
@@ -119,7 +119,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 403,532|🇨🇭CH-23.166.88.27-7905
+  name: 403,533|🇨🇭CH-23.166.88.27-7905
   network: ws
   port: 443
   server: 23.166.88.27
@@ -134,7 +134,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 403,532|🇨🇭CH-186.190.215.149-7950
+  name: 403,533|🇨🇭CH-186.190.215.149-7950
   network: ws
   port: 443
   server: 186.190.215.149
@@ -158,51 +158,35 @@ proxies:
     headers:
       Host: rs1.593920.xyz
     path: '%2Fyouxuan'
-- name: 474|VL-WS-NA 🇨🇭 CH-185.18.250.20:8...
-  network: ws
-  port: 8880
-  server: 185.18.250.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /
-- name: 474|VL-WS-TLS 🇨🇭 CH-185.18.250.27:...
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 475|VL-WS-TLS 🇨🇭 CH-91.192.102.55:...
   network: ws
   port: 443
-  server: 185.18.250.27
-  servername: sany.sofia321.woRkers.DEV
+  server: 91.192.102.55
+  servername: vdd.wxgqlfx.cn
   skip-cert-verify: true
   tfo: false
   tls: true
   type: vless
-  uuid: f9fd5b50-ae7d-5f9a-82e8-b1a9633e682e
+  uuid: f184c89c-80a4-4a3a-bc67-97db43266c11
   ws-opts:
     headers:
-      Host: sany.sofia321.woRkers.DEV
-    path: /
-- name: 474|VL-WS-NONE 🇨🇭 CH-185.18.250.29...
-  network: ws
-  port: 8880
-  server: 185.18.250.29
-  servername: hk.laoyoutiao.link
+      Host: vdd.wxgqlfx.cn
+    path: /TG@wxgqlfx?ed=2560
+- name: 475|VL-TCP-NA 🇨🇭 CH-84.234.31.140:...
+  network: tcp
+  port: 66
+  server: 84.234.31.140
   skip-cert-verify: true
   tfo: false
   tls: false
   type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3
+  uuid: 98f6bad3-37ea-4b8e-8892-e759c0c0c67b
 - alterId: 0
   cipher: auto
-  name: '499|🇨🇭瑞士 #1'
+  name: '500|🇨🇭瑞士 #1'
   network: ws
   port: 2086
   server: zzzqb1.593920.xyz
@@ -218,7 +202,7 @@ proxies:
   ws-path: /youxuan
 - alterId: 0
   cipher: auto
-  name: '500|🇨🇭瑞士 #2'
+  name: '501|🇨🇭瑞士 #2'
   network: ws
   port: 2086
   server: zzzqb1.593920.xyz
@@ -234,7 +218,7 @@ proxies:
   ws-path: /youxuan
 - alterId: 0
   cipher: auto
-  name: 544,551|🔒 VM-TCP-NA 🇨🇭 CH-23.166.88.18...
+  name: 545,552|🔒 VM-TCP-NA 🇨🇭 CH-23.166.88.18...
   network: tcp
   port: '22324'
   server: 23.166.88.183
@@ -243,13 +227,13 @@ proxies:
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - cipher: chacha20-ietf-poly1305
-  name: 576|🇨🇭 CH 瑞士
+  name: 577|🇨🇭 CH 瑞士
   password: c031c57e-21e2-4a60-9af0-289ca27c0cb7
   port: 49969
   server: node-a.dlg365.com
   type: ss
   udp: true
-- name: '699,787,788,789|🇨🇭 瑞士1 #3'
+- name: '700,787,788,789|🇨🇭 瑞士1 #3'
   password: '!!str 1'
   port: 10009
   server: starlink-fra.2513142.xyz
@@ -257,7 +241,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '699,787,788,789|🇨🇭 瑞士2 #3'
+- name: '700,787,788,789|🇨🇭 瑞士2 #3'
   password: '!!str 1'
   port: 10009
   server: starlink-fra2.2513142.xyz
@@ -265,7 +249,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '699,787,788,789|🇨🇭 瑞士3 #3'
+- name: '700,787,788,789|🇨🇭 瑞士3 #3'
   password: '!!str 1'
   port: 10014
   server: starlink-fra.2513142.xyz
@@ -273,7 +257,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '699,787,788,789|🇨🇭 瑞士4 #3'
+- name: '700,787,788,789|🇨🇭 瑞士4 #3'
   password: '!!str 1'
   port: 10014
   server: starlink-fra2.2513142.xyz
