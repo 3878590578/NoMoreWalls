@@ -168,12 +168,10 @@ proxies:
   type: vless
   uuid: 3f4d4304-43ea-4b21-bbe7-36400c54c504
 - delay: 502
-  name: 72,98,346,466,510|法国 - 巴黎 - Online S.A.S. - 10
+  name: 72,346,510|法国 - 巴黎 - Online S.A.S. - 10
   network: ws
   port: 8080
   server: 172.67.73.163
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vless
   udp: true
@@ -191,8 +189,7 @@ proxies:
   auth_str: dongtaiwang.com
   delay: 1056
   down: '100'
-  fast-open: false
-  name: 72,98,346,385,466,510|法国 - 巴黎 - Online S.A.S. - 12
+  name: 72,346,385,510|法国 - 巴黎 - Online S.A.S. - 12
   obfs: ''
   port: 15010
   protocol: ''
@@ -232,8 +229,7 @@ proxies:
   auth_str: dongtaiwang.com
   delay: 1605
   down: 100
-  fast-open: false
-  name: 72,98,346,466,510|法国 - 巴黎 - Online S.A.S. - 7
+  name: 72,346,510|法国 - 巴黎 - Online S.A.S. - 7
   port: 14241
   protocol: udp
   server: 51.159.226.1
@@ -248,8 +244,7 @@ proxies:
   auth_str: dongtaiwang.com
   delay: 1593
   down: '55'
-  fast-open: false
-  name: 72,98,346,466,510|法国 - 巴黎 - Online S.A.S. - 8
+  name: 72,346,510|法国 - 巴黎 - Online S.A.S. - 8
   obfs: ''
   port: 46938
   protocol: ''
@@ -259,13 +254,10 @@ proxies:
   type: hysteria
   up: '11'
 - delay: 489
-  name: 72,98,346,466,510|法国 - 巴黎 - Online S.A.S. - 9
+  name: 72,346,510|法国 - 巴黎 - Online S.A.S. - 9
   network: ws
   port: 80
   server: tgju.org
-  servername: eLOQuENt-caSE.ZUlaIR.orG.
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vless
   udp: true
@@ -278,7 +270,8 @@ proxies:
     path: /?ed=2048
   xudp: true
 - alpn:
-  - h2%2Chttp%2F1.1
+  - h2
+  - http/1.1
   client-fingerprint: chrome
   name: '98,466|FR_4 | ⬇️ 8.4MB/s|0%|Netflix|Y... #1'
   network: ws
@@ -286,14 +279,13 @@ proxies:
   server: 172.67.73.48
   servername: q1.19KalA.co
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: ebe2de6a-6caf-4d57-8275-dbdb3e62d94f
   ws-opts:
     headers:
       Host: q1.19KalA.co
-    path: /
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: '99,100,470,471|法国2-1A #1'
@@ -327,7 +319,7 @@ proxies:
 - down: 400
   name: 117|🇫🇷 法国A1|0.8倍
   password: afc216c8-e407-48e0-86b1-6bf20f709c72
-  port: 37183
+  port: 37379
   server: fr1.node.cross666.top
   skip-cert-verify: true
   sni: ubuntu.mirrors.ovh.net
@@ -381,7 +373,7 @@ proxies:
   server: haa.dashuai.cyou
   type: vmess
   udp: true
-  uuid: e5d6426c-c507-4cf9-a3cf-bac17b6d6f83
+  uuid: 0fdf5573-5e12-44d1-ac0c-a6bd59b67009
 - alterId: 0
   cipher: auto
   name: '316|法国2 #1'
@@ -389,7 +381,7 @@ proxies:
   server: xdd.dashuai.cyou
   type: vmess
   udp: true
-  uuid: e5d6426c-c507-4cf9-a3cf-bac17b6d6f83
+  uuid: 0fdf5573-5e12-44d1-ac0c-a6bd59b67009
 - cipher: chacha20-ietf-poly1305
   name: 317|[ss]法国
   password: f1668bd4-b517-45c7-818b-1e94b6c71d49
@@ -406,7 +398,7 @@ proxies:
   udp: true
 - down: ''
   fingerprint: ''
-  name: '342,385,504,508,520,525,526|2|🇫🇷1 |  3.4MB/s|15%|Openai #1'
+  name: '342,385,504,508,520,525,526|🇫🇷1 |  3.4MB/s|15%|Openai #3'
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -514,13 +506,15 @@ proxies:
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-cfb
-  name: 364,383,430|🇫🇷 FR-195.154.169.198-0310
+  name: 364,383,430,475|_26
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 364,383,430|🇫🇷 FR-195.154.185.174-0305
+  country: 🇷FR
+  name: 364,383,430,475|🇷FR_82
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
@@ -728,31 +722,36 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: chacha20-ietf-poly1305
-  name: 383,430|🇫🇷 FR-45.158.171.151-0303
+  country: 🇱🇹 LT
+  name: 383,430,475|🇱🇹 LT_159
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.158.171.151
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 383,430|🇫🇷 FR-45.158.171.132-0295
+  country: 🇱🇹 LT
+  name: 383,430,475|🇱🇹 LT_156
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.158.171.132
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 383,430|🇫🇷 FR-45.158.171.146-0299
+  country: 🇱🇹 LT
+  name: 383,430,475|🇱🇹 LT_167
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.158.171.146
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 383,430|🇫🇷 FR-45.158.171.136-5108
+  country: 🇱🇹 LT
+  name: 383,430,475|🇱🇹 LT_152
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.158.171.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 383,430|🇫🇷 FR-45.158.171.110-0287
+  country: 🇱🇹 LT
+  name: 383,430,475|🇱🇹 LT_148
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.110
@@ -773,7 +772,8 @@ proxies:
       Host: beyonddsz.cfd
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 383,430|🇫🇷 FR-45.158.171.66-0294
+  country: 🇸US
+  name: 383,430,475|🇺🇸US_267
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.66
@@ -1078,17 +1078,20 @@ proxies:
       Host: ahdaeph8.com
     path: /ws
 - cipher: chacha20-ietf-poly1305
-  name: 383|🇷FR-51.195.119.47-5095
+  country: 🇷 FR
+  name: 383,475| FR_81
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
   type: ss
-- name: 383,514|🇫🇷FR-51.195.202.129-5068
+- country: 🇷FR
+  name: 383,475,514|🇫🇷FR-51.195.202.129-5068
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 383,514|🇫🇷FR-144.24.200.164-5076
@@ -1119,12 +1122,14 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 383,514|🇫🇷FR-51.178.42.187-5182
+- country: 🇸US
+  name: 383,475,514|🇫🇷FR-51.178.42.187-5182
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - name: 383|🇷FR-13.38.159.113-5247
   password: telegram-id-privatevpns
   port: 22222
@@ -1889,7 +1894,7 @@ proxies:
   sni: hsfg.huasuan666.top
   type: hysteria2
   udp: true
-- name: '423|法国 #2'
+- name: '422|法国 #2'
   password: aa6e6708-8b38-4148-9cbf-45d53bc23b1f
   port: 22158
   server: hsfg.huasuan666.top
@@ -1898,7 +1903,7 @@ proxies:
   type: hysteria2
   udp: true
 - auth: 1c1bb02a-bd5d-4e6c-9cb7-0d5b4cbdf568
-  name: 424,521|yandex-436
+  name: 423,521|yandex-977
   password: 1c1bb02a-bd5d-4e6c-9cb7-0d5b4cbdf568
   port: 22158
   server: hsfg.huasuan666.top
@@ -1906,7 +1911,7 @@ proxies:
   sni: hsfg.huasuan666.top
   type: hysteria2
   udp: true
-- name: '425|法国 #4'
+- name: '424|法国 #4'
   password: 97889ef6-2b76-48a8-9faf-be4bb779a483
   port: 22158
   server: hsfg.huasuan666.top
@@ -1914,7 +1919,7 @@ proxies:
   sni: hsfg.huasuan666.top
   type: hysteria2
   udp: true
-- name: '426|法国 #5'
+- name: '425|法国 #5'
   password: 0a35a30a-2b09-42f4-8228-b84644db054d
   port: 22158
   server: hsfg.huasuan666.top
@@ -1931,25 +1936,12 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-gcm
-  name: 443,521|yandex-397
+  name: 443,521|yandex-431
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '468,469|法国1-CDN | 1X #1'
-  network: ws
-  port: 2095
-  server: 1750669941.tencentapp.cn
-  type: vmess
-  udp: true
-  uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
-  ws-opts:
-    headers:
-      Host: 1750670091.speed.fraovfdma.cccp.uruu.cn
-    path: /
 - alterId: 0
   cipher: auto
   name: 481|🇫🇷法国 1
@@ -2179,7 +2171,8 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: 525|法国_062220371+L0
+  name: 525,532|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.255....
+  network: tcp
   password: vmRtExJrt6
   port: 8443
   server: 51.195.255.103
@@ -2236,14 +2229,13 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 526,533|🔒 VM-TCP-NA 🇫🇷 FR-95.179.216.1...
+  name: 526,533|🔒 VM-TCP-NA 🇫🇷 FR-45.12.133.43...
   network: tcp
-  port: '8874'
-  server: 95.179.216.149
-  servername: ''
+  port: '28444'
+  server: 45.12.133.43
   tls: false
   type: vmess
-  uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
+  uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
 - alterId: 0
   cipher: auto
   name: 526,533|🔒 VM-TCP-NA 🇫🇷 FR-135.125.182....
@@ -2255,15 +2247,6 @@ proxies:
   type: vmess
   uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
 - alterId: 0
-  cipher: auto
-  name: 526,533|🔒 VM-TCP-NA 🇫🇷 FR-45.12.133.43...
-  network: tcp
-  port: '28444'
-  server: 45.12.133.43
-  tls: false
-  type: vmess
-  uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
-- alterId: 0
   cipher: chacha20-poly1305
   name: 526,533|🔒 VM-TCP-NA 🇫🇷 FR-62.60.156.13...
   network: tcp
@@ -2273,6 +2256,16 @@ proxies:
   tls: false
   type: vmess
   uuid: a022e05b-b5c1-48b5-aa71-8ca90cb8c181
+- alterId: 0
+  cipher: auto
+  name: 526,533|🔒 VM-TCP-NA 🇫🇷 FR-95.179.216.1...
+  network: tcp
+  port: '8874'
+  server: 95.179.216.149
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
 - alterId: 0
   cipher: auto
   name: 527|🇫🇷FR-146.59.43.129-221
@@ -2315,58 +2308,6 @@ proxies:
   uuid: adf60098-73d2-4546-92a5-798a485ec837
 - alpn:
   - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.205....
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.181.205.213
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 532|🔒 TR-TCP-NA 🇫🇷 FR-57.128.177.1...
-  password: Aimer
-  port: 8443
-  server: 57.128.177.172
-  skip-cert-verify: false
-  sni: epccy.ambercc.filegear-sg.me
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.162....
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.236.162.49
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.0.228...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.39.0.228
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.119....
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.181.119.49
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.50.18...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 51.44.50.180
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
   name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.237.9.7:...
   network: tcp
   password: telegram-id-privatevpns
@@ -2374,324 +2315,19 @@ proxies:
   server: 15.237.9.7
   sni: trojan.burgerip.co.uk
   type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.167....
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.236.167.194
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-52.47.97.39...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.47.97.39
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.184....
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 15.236.184.202
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.132.1...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.132.12
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.4.140...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.39.4.140
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.38.159.1...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 13.38.159.113
-  sni: trojan.burgerip.co.uk
+- name: 532|🔒 TR-TCP-NA 🇫🇷 FR-51.210.182.1...
+  password: 90720280-0373-11f0-8b53-1239d0255272
+  port: 443
+  server: 51.210.182.170
+  skip-cert-verify: true
   type: trojan
 - alpn:
   - http/1.1
   name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-52.47.109.5...
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.47.109.58
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.73.25...
-  network: tcp
   password: telegram-id-directvpn
-  port: 22222
-  server: 13.36.73.252
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.38.180.1...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.38.180.105
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.50.18... #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.50.180
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-15.237.9.7:... #1'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 15.237.9.7
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.255....
-  network: tcp
-  password: vmRtExJrt6
-  port: 8443
-  server: 51.195.255.103
-  sni: uk-03.allhubb.info
-  type: trojan
-- name: 532|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.1...
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 141.11.203.191
-  sni: epmw.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epmw.ambercc.filegear-sg.me
-    path: '%2F%3Fed%3D2560'
-- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.136.2...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.136.20
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-52.47.109.5... #1'
-  network: tcp
-  password: telegram-id-v2rayvpnchannel
   port: 22223
   server: 52.47.109.58
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.196....
-  network: tcp
-  password: telegram-id-v2rayvpnchannel
-  port: 22222
-  server: 15.236.196.227
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 532|🔒 TR-TCP-NA 🇫🇷 FR-141.11.203.1...
-  password: Aimer
-  port: 443
-  server: 141.11.203.168
-  skip-cert-verify: false
-  sni: epccs.ambercc.filegear-sg.me
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.173....
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 15.236.173.146
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-52.47.53.14...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.47.53.147
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.106.2...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.36.106.226
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.12.20...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.39.12.209
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.101.1...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.36.101.183
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 532|🔒 TR-TCP-NA 🇫🇷 FR-51.195.254.7...
-  network: tcp
-  password: ebhZ11qYng
-  port: 8443
-  server: 51.195.254.75
-  skip-cert-verify: true
-  sni: uk-02.allhubb.info
-  type: trojan
-  ws-opts:
-    headers:
-      Host: uk-02.allhubb.info
-- alpn:
-  - http/1.1
-  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.4.140... #1'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 13.39.4.140
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.188.148....
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 15.188.148.184
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-13.38.159.1... #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.38.159.113
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.101.1... #1'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 13.36.101.183
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.72.77...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.39.72.77
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.0.228... #1'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 13.39.0.228
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.124....
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.124.214
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.90.29...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.90.29
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.82.4...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.236.82.47
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.82.4... #1'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 15.236.82.47
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-141.227.160...
-  network: tcp
-  password: AXpQXM4vNh
-  port: 1935
-  server: 141.227.160.167
-  sni: x2swe-ovh.devefun.net
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.235....
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 35.181.235.158
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 532|🔒 TR-TCP-NA 🇫🇷 FR-152.228.191....
-  password: Aimer
-  port: 443
-  server: 152.228.191.232
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.163.1...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 13.36.163.133
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -2701,55 +2337,6 @@ proxies:
   password: telegram-id-privatevpns
   port: 22222
   server: 51.44.107.116
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.104....
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.104.97
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.106.2... #1'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 13.36.106.226
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-15.237.4.13... #1'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 15.237.4.132
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.139.3...
-  network: tcp
-  password: telegram-id-v2rayvpnchannel
-  port: 22222
-  server: 51.44.139.34
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-38.180.240....
-  network: tcp
-  password: d2adff89-5143-4d67-921f-3478464de5bb
-  port: 443
-  server: 38.180.240.150
-  sni: fr.freeguard.org
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-35.180.80.3...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.180.80.3
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.148.9...
@@ -2762,91 +2349,64 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.37.219.2...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.37.219.243
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.235.... #1'
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.38.159.1...
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 35.181.235.158
+  server: 13.38.159.113
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 532|🔒 TR-WS-TLS 🇫🇷 FR-185.16.110.1...
+- name: 532|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.1...
   network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 185.16.110.113
-  sni: icecream.955850.xyz
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
   ws-opts:
     headers:
-      Host: icecream.955850.xyz
-    path: '%2FTelegram%40V2ray_Alpha'
-- name: 532|🔒 TR-TCP-NA 🇫🇷 FR-51.210.182.1...
-  password: 90720280-0373-11f0-8b53-1239d0255272
-  port: 443
-  server: 51.210.182.170
-  skip-cert-verify: true
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.182....
+      Host: ngepx.ambercc.filegear-sg.me
+- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.82.4...
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 35.181.182.231
+  server: 15.236.82.47
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
   - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.237.90.4...
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.50.18...
+  network: tcp
+  password: telegram-id-v2rayvpnchannel
+  port: 22223
+  server: 51.44.50.180
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.163.1...
   network: tcp
   password: telegram-id-directvpn
-  port: 22222
-  server: 15.237.90.40
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.173.... #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.236.173.146
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.68.13.10...
-  network: tcp
-  password: FiSo7J6vfS
-  port: 1935
-  server: 51.68.13.106
-  sni: x1fr-ovh.devefun.net
-  type: trojan
-- name: 532|🔒 TR-TCP-NA 🇫🇷 FR-57.128.176.3...
-  password: Aimer
-  port: 8443
-  server: 57.128.176.37
-  skip-cert-verify: false
-  sni: epccy.ambercc.filegear-sg.me
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.163.1... #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
+  port: 22223
   server: 13.36.163.133
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.101.1...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.36.101.183
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.235....
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 35.181.235.158
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -2867,9 +2427,55 @@ proxies:
   server: 13.36.249.249
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.159.59.1...
+  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
+  port: 443
+  server: 51.159.59.186
+  sni: zula.ir
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.68.13.10...
+  network: tcp
+  password: FiSo7J6vfS
+  port: 1935
+  server: 51.68.13.106
+  sni: x1fr-ovh.devefun.net
+  type: trojan
+- name: 532|🔒 TR-WS-TLS 🇫🇷 FR-185.16.110.1...
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 185.16.110.113
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: '%2FTelegram%40V2ray_Alpha'
 - alpn:
   - http/1.1
-  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.90.29... #1'
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.119....
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.181.119.49
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.138.1...
+  network: tcp
+  password: telegram-id-v2rayvpnchannel
+  port: 22223
+  server: 51.44.138.112
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.90.29...
   network: tcp
   password: telegram-id-directvpn
   port: 22223
@@ -2878,17 +2484,33 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.55.24...
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-13.38.159.1... #1'
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.55.243
+  password: telegram-id-v2rayvpnchannel
+  port: 22223
+  server: 13.38.159.113
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.124.... #1'
+- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.124....
   password: telegram-id-privatevpns
   port: 22222
   server: 35.181.124.0
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 532|🔒 TR-TCP-NA 🇫🇷 FR-57.128.176.3...
+  password: Aimer
+  port: 8443
+  server: 57.128.176.37
+  skip-cert-verify: false
+  sni: epccy.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.72.77...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.72.77
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -2902,21 +2524,121 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-15.188.148.... #1'
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.38.180.1...
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 15.188.148.184
+  server: 13.38.180.105
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 532|🔒 TR-TCP-NA 🇫🇷 FR-57.128.177.1...
+  password: Aimer
+  port: 8443
+  server: 57.128.177.172
+  skip-cert-verify: false
+  sni: epccy.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.163.1... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.36.163.133
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
   - http/1.1
-  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.184.9...
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.196....
+  network: tcp
+  password: telegram-id-v2rayvpnchannel
+  port: 22222
+  server: 15.236.196.227
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.0.228...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.39.0.228
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.132.1...
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.39.184.98
+  server: 51.44.132.12
   sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.124.... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.181.124.214
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.139.3...
+  network: tcp
+  password: telegram-id-v2rayvpnchannel
+  port: 22222
+  server: 51.44.139.34
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 532|🔒 TR-TCP-NA 🇫🇷 FR-51.195.254.7...
+  network: tcp
+  password: ebhZ11qYng
+  port: 8443
+  server: 51.195.254.75
+  skip-cert-verify: true
+  sni: uk-02.allhubb.info
+  type: trojan
+  ws-opts:
+    headers:
+      Host: uk-02.allhubb.info
+- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.136.2...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.136.20
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-52.47.109.5... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.47.109.58
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.4.140...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.4.140
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.104....
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.181.104.97
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-38.180.240....
+  network: tcp
+  password: d2adff89-5143-4d67-921f-3478464de5bb
+  port: 443
+  server: 38.180.240.150
+  sni: fr.freeguard.org
   type: trojan
 - name: 532|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.2...
   network: ws
@@ -2929,11 +2651,292 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: /
-- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.159.59.1...
-  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.90.29... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.90.29
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 532|🔒 TR-TCP-NA 🇫🇷 FR-141.11.203.1...
+  password: Aimer
   port: 443
-  server: 51.159.59.186
-  sni: zula.ir
+  server: 141.11.203.168
+  skip-cert-verify: false
+  sni: epccs.ambercc.filegear-sg.me
+  type: trojan
+- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-52.47.97.39...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.47.97.39
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-35.180.80.3...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.180.80.3
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.237.90.4...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 15.237.90.40
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.184.9...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.184.98
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.237.4.13...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 15.237.4.132
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.173....
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.236.173.146
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.184....
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 15.236.184.202
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.4.140... #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.39.4.140
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.73.25...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.36.73.252
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-52.47.53.14...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.47.53.147
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.188.148....
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.188.148.184
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.182....
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.181.182.231
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.205....
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.181.205.213
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 532|🔒 TR-TCP-NA 🇫🇷 FR-152.228.191....
+  password: Aimer
+  port: 443
+  server: 152.228.191.232
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.235.... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.181.235.158
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.138.1... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.138.112
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.50.18... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.50.180
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-15.237.9.7:... #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 15.237.9.7
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.106.2...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.36.106.226
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-141.227.160...
+  network: tcp
+  password: AXpQXM4vNh
+  port: 1935
+  server: 141.227.160.167
+  sni: x2swe-ovh.devefun.net
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.162.... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.236.162.49
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-15.188.148.... #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 15.188.148.184
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.101.1... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.36.101.183
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.37.219.2...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.37.219.243
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.167....
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.236.167.194
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-13.36.106.2... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.36.106.226
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.55.24...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.55.243
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.82.4... #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 15.236.82.47
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 532|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.12.20...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.12.209
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.0.228... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.0.228
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '532|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.173.... #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 15.236.173.146
+  sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
@@ -2967,6 +2970,22 @@ proxies:
   server: ojrandvej2ruev8ejki2unopb5etrur3.08.01.fr.6l6.site
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 569|🇷 一元机场:ssrsub.de 法国 02
+  port: 45072
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 03982cc4-c4b0-4978-80ea-e9ab35f942ba
+- name: 569|🇷 一元机场:ssrsub.de 法国 03
+  password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
+  port: 27235
+  server: d3aa7c56-syf5s0-tgzvop-hns7.cm5.cnkuaishou.com
+  sni: d3aa7c56-syf5s0-tgzvop-hns7.cm5.cnkuaishou.com
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 620|🇫🇷France-法国1
   password: 0305e0ec-ec7e-4770-9aa3-81e3427f91b6
@@ -2989,7 +3008,55 @@ proxies:
   skip-cert-verify: true
   type: hysteria2
 - client-fingerprint: chrome
-  name: 640|FR_9e1e1_0048 5
+  name: 640|FR_speednode_0066 2
+  network: ws
+  port: 8880
+  server: 141.11.203.254
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
+  ws-opts:
+    headers:
+      Host: yg.bantony199.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: 640|FR_speednode_0067 2
+  network: ws
+  port: 8880
+  server: 141.11.202.254
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
+  ws-opts:
+    headers:
+      Host: yg.bantony199.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: 640|FR_speednode_0068 2
+  network: ws
+  port: 8880
+  server: 185.16.110.254
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
+  ws-opts:
+    headers:
+      Host: yg.bantony199.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: 640|FR_9e1e1_0048 2
   network: ws
   port: 8880
   server: 141.11.202.251
@@ -3170,7 +3237,17 @@ proxies:
 - down: 1000
   name: 779|🇫🇷 法国巴黎世家 一号
   password: d17cb60f-3180-4151-b999-9addd0674314
-  port: 20164
+  port: 20125
+  ports: 20101-20199
+  server: fg.xueshan.shop
+  skip-cert-verify: false
+  sni: fg.xueshan.shop
+  type: hysteria2
+  up: 1000
+- down: 1000
+  name: 779|🇫🇷 法国巴黎世家 二号
+  password: d17cb60f-3180-4151-b999-9addd0674314
+  port: 20123
   ports: 20101-20199
   server: fg.xueshan.shop
   skip-cert-verify: false
@@ -3180,7 +3257,7 @@ proxies:
 - down: 1000
   name: 779|🇫🇷 法国巴黎世家 三号
   password: d17cb60f-3180-4151-b999-9addd0674314
-  port: 20186
+  port: 20171
   ports: 20101-20199
   server: fg.xueshan.shop
   skip-cert-verify: false
@@ -3190,7 +3267,7 @@ proxies:
 - down: 1000
   name: 779|🇫🇷 法国巴黎世家 四号
   password: d17cb60f-3180-4151-b999-9addd0674314
-  port: 20131
+  port: 20104
   ports: 20101-20199
   server: fg.xueshan.shop
   skip-cert-verify: false
