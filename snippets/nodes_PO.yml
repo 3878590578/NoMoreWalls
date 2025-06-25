@@ -218,7 +218,8 @@ proxies:
   server: 51.77.53.200
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 370,389,437|🇵🇱 PL-92.118.205.228-0373
+  country: 🇪 DE
+  name: 370,389,483|🇪 DE_66
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 92.118.205.228
@@ -239,7 +240,7 @@ proxies:
   server: pr.fastsoonlink.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 389,437|🇵🇱 PL-45.144.48.63-0367
+  name: 389,483|_10
   password: d3837224ed465f00
   port: 57456
   server: war.ssvpnapp.win
@@ -441,6 +442,20 @@ proxies:
   uuid: 1275ea18-bc9c-4bcb-b3fd-fee70272e143
 - alterId: 0
   cipher: auto
+  name: 534|36|🔒 VM-WS-TLS 🇵🇱 PL-57.128.19...
+  network: ws
+  port: '443'
+  server: 57.128.193.117
+  servername: kapelleng.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: 534,541|🔒 VM-TCP-NA 🇵🇱 PL-45.154.156.1...
   network: tcp
   port: '32648'
@@ -449,20 +464,6 @@ proxies:
   tls: false
   type: vmess
   uuid: bc8e1235-6cef-4bdd-f3f2-0b4f3c8a7b70
-- alterId: 0
-  cipher: auto
-  name: 534,541|🔒 VM-WS-NA 🇵🇱 PL-91.185.187.49...
-  network: ws
-  port: 18984
-  server: 91.185.187.49
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 955e16be-0def-405f-b685-6399601c561e
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: 534,541|🔒 VM-WS-NA 🇵🇱 PL-31.186.86.47:...
@@ -477,14 +478,28 @@ proxies:
     headers:
       Host: ''
     path: /vmess-argo?ed=2048
-- name: '540|🔒 TR-TCP-TLS 🇵🇱 PL-51.83.186.1... #1'
+- alterId: 0
+  cipher: auto
+  name: 534,541|🔒 VM-WS-NA 🇵🇱 PL-91.185.187.49...
+  network: ws
+  port: 18984
+  server: 91.185.187.49
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 955e16be-0def-405f-b685-6399601c561e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- name: 540|🔒 TR-TCP-TLS 🇵🇱 PL-51.83.186.1...
   network: tcp
   password: 2959e4f7-7589-4a40-9b96-1be750ac7845
   port: 80
   server: 51.83.186.142
   sni: pl1.trojanvh.xyz
   type: trojan
-- name: '677,764,766|🇵🇱 波兰2 住宅 #2'
+- name: '677,764,765,766|🇵🇱 波兰2 住宅 #3'
   password: '!!str 1'
   port: 20181
   server: 212.127.78.119

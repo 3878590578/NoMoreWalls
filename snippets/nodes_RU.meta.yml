@@ -58,7 +58,7 @@ proxies:
 - auth: dongtaiwang.com
   client-fingerprint: chrome
   fast-open: true
-  name: 99,294,476,576|🇷🇺 机场推荐:dafei.de 俄罗斯 04
+  name: 99,476,576|🇷🇺 机场推荐:dafei.de 俄罗斯 04
   password: dongtaiwang.com
   port: 30033
   server: 46.29.163.171
@@ -66,9 +66,8 @@ proxies:
   sni: www.bing.com
   type: hysteria2
 - auth: dongtaiwang.com
-  client-fingerprint: chrome
   fast-open: true
-  name: 99,294,476,576|🇷🇺 机场推荐:dafei.de 俄罗斯 07
+  name: '99,294,476|RU_3 | ⬇️ 6.3MB/s|0% #1'
   password: dongtaiwang.com
   port: 50850
   server: 45.129.2.108
@@ -77,7 +76,7 @@ proxies:
   type: hysteria2
 - auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   down: 1000
-  name: 162,529|yandex-990
+  name: 162,529|yandex-496
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 46.17.43.71
@@ -142,8 +141,16 @@ proxies:
   sni: apple.com
   type: hysteria
   up: 1000
+- fast-open: true
+  name: 294|Russia_Moscow_hy2_3
+  password: dongtaiwang.com
+  port: 23579
+  server: 45.129.2.248
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - country: RU
-  name: 301|Relay_RU-RU_11
+  name: 301|Relay_RU-RU_10
   password: dongtaiwang.com
   port: 30033
   server: hy2.694463.xyz
@@ -167,7 +174,8 @@ proxies:
   tls: false
   type: hysteria2
 - cipher: chacha20-ietf-poly1305
-  name: 370,389,437|🇷🇺 RU-45.151.62.54-0428
+  country: 🇺 RU
+  name: 370,389,483|🇷🇺 RU_160
   password: 0zyDRZ1XmNXaaCAN7KEA8a
   port: 28825
   server: 45.151.62.54
@@ -421,8 +429,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 389,437,522,534,541,576|🇷🇺 机场推荐:dafei.de 俄罗斯 05
+  name: '389,522,534,541|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23... #1'
   network: ws
   port: 22069
   server: 45.147.201.231
@@ -432,37 +439,36 @@ proxies:
   type: vmess
   uuid: 57159348-4d98-4311-a990-e62f8c70fd43
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - cipher: aes-256-gcm
-  country: 🇨🇿CZ
-  name: 389,437,481| |12.15Mb
+  name: 389|🇷🇺RU-194.87.196.7-0212
   password: 1aa23ecefeba6669
   port: 50120
   server: 194.87.196.7
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 389,437|🇷🇺 RU-45.139.24.24-0327
+  country: 🇺 RU
+  name: 389,483|🇺 RU_158
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
   type: ss
 - cipher: aes-256-gcm
-  country: 🇨🇿CZ
-  name: 389,437,481| |30.72Mb
+  name: 389|🇺RU-195.133.5.185-0347
   password: 7f20be91749b5874
   port: 50120
   server: 195.133.5.185
   type: ss
 - cipher: aes-256-gcm
-  country: 🇷🇺RU
-  name: 389,437,481| | 2.96Mb
+  name: 389|🇺RU-185.22.153.67-0363
   password: b55c7e84afdd52cb
   port: 50120
   server: 185.22.153.67
   type: ss
 - cipher: aes-256-gcm
-  country: 🇨CZ
-  name: 389,437,481| |32.74Mb
+  name: 389|🇷🇺RU-195.133.5.176-0364
   password: d7a15f7a4c806a33
   port: 50210
   server: 195.133.5.176
@@ -662,7 +668,8 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 389|🇺RU-185.126.239.250-5064
+  country: 🇧 GB
+  name: 389,483|🇧 GB_79
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -732,7 +739,7 @@ proxies:
   type: vless
   udp: true
   uuid: 7c147a1d-b576-422e-88c6-f0f45e0a3a7d
-- name: 437,513,534|10|俄罗斯 004
+- name: 436,437,513,534|10|俄罗斯 004
   network: ws
   port: 80
   server: 185.174.138.194
@@ -748,69 +755,84 @@ proxies:
       Host: pormang.webhost99.workers.dev
     path: /
 - client-fingerprint: chrome
-  name: 465,474|🔒 VL-TCP-RLT 🇷🇺 RU-217.25.90.9...
-  network: tcp
-  port: 2121
-  reality-opts:
-    public-key: Q_8F-dYpbc4eyPJ3ZjwILp9-VaMpHMREkLPw5NSkdHM
-    short-id: 4e5cbbc2cd2a65
-  server: 217.25.90.91
-  servername: journalofbigdata.springeropen.com
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 9ae8687b-0036-490a-f38d-033ec3f6077d
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 465,474|🔒 VL-TCP-RLT 🇷🇺 RU-212.233.94....
+  name: 465,474|🔒 VL-TCP-RLT 🇷🇺 RU-109.120.189...
   network: tcp
   port: 443
   reality-opts:
     public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
     short-id: 0f917152a871e9c0
-  server: 212.233.94.204
+  server: 109.120.189.30
   servername: maviks.eu
   skip-cert-verify: true
   tfo: false
   tls: false
   type: vless
-  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
-  ws-opts:
-    headers:
-      Host: TELEGRAM%20%3A%20MARAMBASHI%20MARAMBASHI
+  uuid: 0a947205-01a0-4634-8e78-daf200d02def
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 465,474|🔒 VL-TCP-RLT 🇷🇺 RU-213.219.215...
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-
+  name: 465|🇷🇺 VL-GRPC-RLT 🇷🇺 RU-185.112.8...
+  network: grpc
+  port: 28868
+  reality-opts:
+    public-key: nvJMFwrkef7UgJ48MgJx00PxbFLUi1eD7XiW51mEfw8
+    short-id: b50f1f795b28b0
+  server: 185.112.83.224
+  servername: miro.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 1455d2de-3550-4bfa-b8e6-21bbe51be4f1
+- client-fingerprint: firefox
+  name: 465,474|🔒 VL-TCP-RLT 🇷🇺 RU-188.225.87....
   network: tcp
   port: 443
   reality-opts:
-    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
-    short-id: 0f917152a871e9c0
-  server: 213.219.215.89
-  servername: maviks.eu
+    public-key: AeGa3uPZPwKxK8-oefhzXVs6N376xXxw293dD0Gl-Vs
+    short-id: 0898b2d9
+  server: 188.225.87.169
+  servername: mirror.yandex.ru
   skip-cert-verify: true
   tfo: false
   tls: false
   type: vless
-  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
-- name: 465|🇷🇺 VL-WS-NA 🇷🇺 RU-185.148.107....
-  network: ws
-  port: 8880
-  server: 185.148.107.251
+  uuid: b4f3c864-3241-4abe-884e-adffcbbc5ffa
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 465,474|🔒 VL-TCP-RLT 🇷🇺 RU-145.249.109...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: OzfC9K0wCrfVT_PpIUGfDFTTxiCetmx7gG6E4RARNw0
+    short-id: 7409f4913a0eba93
+  server: 145.249.109.53
+  servername: cdnjs.com
   skip-cert-verify: true
   tfo: false
   tls: false
   type: vless
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 465|🇷🇺 VL-WS-NA 🇷🇺 RU-45.142.255.2...
+  uuid: abb2d75f-e5f1-4db8-98f6-048dfb0eed94
+- client-fingerprint: firefox
+  name: 465,474|🔒 VL-TCP-RLT 🇷🇺 RU-89.23.113.1...
+  network: tcp
+  port: 5057
+  reality-opts:
+    public-key: SIZUCP8kFTMNONyzojhPmYWM_530dU3MEJVsJAV_604
+  server: 89.23.113.102
+  servername: refersion.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: aa2be8f1-32f2-4358-a2d3-e98f3c458955
+- name: 465|🇷🇺 VL-WS-NA 🇷🇺 RU-31.12.75.254...
   network: ws
   port: 8880
-  server: 45.142.255.254
+  server: 31.12.75.254
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -818,54 +840,71 @@ proxies:
   uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
   ws-opts:
     headers:
-      Host: yg.bantony199.top
-    path: /Telegram🇨🇳
-- name: 465,474|🔒 VL-WS-NA 🇷🇺 RU-45.8.211.219:...
-  network: ws
-  port: 8880
-  server: 45.8.211.219
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /Channel
-- name: 465|🇷🇺 VL-WS-NA 🇷🇺 RU-5.182.84.251...
-  network: ws
-  port: 8880
-  server: 5.182.84.251
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
       Host: Telegram-channel-WangCai2
     path: /Telegram🇨🇳
-- name: 465|🇷🇺 VL-WS-NONE 🇷🇺 RU-185.148.10...
+- name: 465|🇷🇺 VL-WS-NA 🇷🇺 RU-45.67.215.12...
   network: ws
-  port: 8880
-  server: 185.148.106.82
+  port: 443
+  server: 45.67.215.122
+  servername: nn.ylks0033.dpdns.org
   skip-cert-verify: true
   tfo: false
   tls: false
   type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: '/Channel id: @ShadowProxy66?ed=2560'
-- name: 465,474|🔒 VL-WS-NA 🇷🇺 RU-213.241.198.2...
+      Host: nn.ylks0033.dpdns.org
+    path: /
+- alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  client-fingerprint: chrome
+  name: 465|🇷🇺 VL-WS-TLS 🇷🇺 RU-185.148.106...
+  network: ws
+  port: 443
+  server: 185.148.106.19
+  servername: ital.supercyberpower.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 0870a931-b121-1278-f010-b140a958a300
+  ws-opts:
+    headers:
+      Host: ital.supercyberpower.com
+    path: /
+- name: 465|🇷🇺 VL-WS-NONE 🇷🇺 RU-46.254.93....
   network: ws
   port: 8880
-  server: 213.241.198.29
-  servername: hk.laoyoutiao.link
+  server: 46.254.93.124
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 379a7f53-fddf-460f-8a62-52330c0d9cf5
+  ws-opts:
+    headers:
+      Host: vIhYpErClOuD.aCaDeMiGrOuP.iR.
+    path: /Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420?ed=2048
+- name: 465|🇷🇺 VL-WS-NA 🇷🇺 RU-45.67.215.14...
+  network: ws
+  port: 443
+  server: 45.67.215.146
+  servername: sl.ylka.dpdns.org
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: sl.ylka.dpdns.org
+    path: /
+- name: 465,474|🔒 VL-WS-NA 🇷🇺 RU-5.182.84.63:8...
+  network: ws
+  port: 8880
+  server: 5.182.84.63
+  servername: jp.laoyoutiao.link
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -873,93 +912,118 @@ proxies:
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: hk.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 474|🔒 VL-XHTTP-RLT 🇷🇺 RU-103.71.22...
-  network: xhttp
-  port: 443
+  grpc-opts:
+    grpc-service-name: Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-
+  name: 474|🔒 VL-GRPC-RLT 🇷🇺 RU-185.112.83...
+  network: grpc
+  port: 28868
   reality-opts:
-    public-key: qA_eE0wQjt1xVCoATIsSReYxPhtqjcCx93TCdbV7MVM
-    short-id: 7d348dcbfbeee7
-  server: 103.71.22.42
-  servername: mmg.whatsapp.net
+    public-key: nvJMFwrkef7UgJ48MgJx00PxbFLUi1eD7XiW51mEfw8
+    short-id: b50f1f795b28b0
+  server: 185.112.83.224
+  servername: miro.com
   tls: false
   type: vless
-  uuid: 56cc6e17-16db-4b6e-b0de-0c40bd771536
-  ws-opts:
-    headers:
-      Host: mmg.whatsapp.net
-    path: /mms/video
-- name: 474|🔒 VL-WS-NA 🇷🇺 RU-185.148.107.2...
+  uuid: 1455d2de-3550-4bfa-b8e6-21bbe51be4f1
+- name: 474|🔒 VL-WS-NA 🇷🇺 RU-31.12.75.254:...
   network: ws
   port: 8880
-  server: 185.148.107.251
-  tls: false
-  type: vless
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560'
-- name: 474|🔒 VL-WS-NA 🇷🇺 RU-45.142.255.25...
-  network: ws
-  port: 8880
-  server: 45.142.255.254
+  server: 31.12.75.254
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
   tls: false
   type: vless
   uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
   ws-opts:
     headers:
       Host: yg.bantony199.top
-    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3'
-- name: 474|🔒 VL-WS-NA 🇷🇺 RU-5.182.84.251:...
-  network: ws
-  port: 8880
-  server: 5.182.84.251
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
     path: /Telegram🇨🇳
-- name: 474|🔒 VL-WS-NONE 🇷🇺 RU-185.148.106...
+- name: 474|🔒 VL-WS-NA 🇷🇺 RU-45.67.215.122...
   network: ws
-  port: 8880
-  server: 185.148.106.82
+  port: 443
+  server: 45.67.215.122
+  servername: nn.ylks0033.dpdns.org
+  skip-cert-verify: true
   tls: false
   type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 474|🔒 VL-WS-TLS 🇷🇺 RU-185.148.106....
+  network: ws
+  port: 443
+  server: 185.148.106.19
+  servername: ital.supercyberpower.com
+  tls: true
+  type: vless
+  uuid: 0870a931-b121-1278-f010-b140a958a300
   ws-opts:
     headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: '%2FChannel%20id%3A%20%40ShadowProxy66%3Fed%3D2560'
+      Host: ital.supercyberpower.com
+    path: '%2F'
+- name: 474|🔒 VL-WS-NONE 🇷🇺 RU-46.254.93.1...
+  network: ws
+  port: 8880
+  server: 46.254.93.124
+  tls: false
+  type: vless
+  uuid: 379a7f53-fddf-460f-8a62-52330c0d9cf5
+  ws-opts:
+    headers:
+      Host: vIhYpErClOuD.aCaDeMiGrOuP.iR.
+    path: '%2FJoin--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420%3Fed%3D2048'
+- name: 474|🔒 VL-WS-NA 🇷🇺 RU-45.67.215.146...
+  network: ws
+  port: 443
+  server: 45.67.215.146
+  servername: sl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 483|🇺 RU_164
+  password: c40641c1f89e7acb
+  port: 57456
+  server: tr.vpnsparta.pro
+  type: ss
 - alterId: 0
   cipher: auto
-  country: 🇭🇺HU
+  country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 481,533|🇺🇸 US_238
+  name: 483,533|🇷🇺 RU_191
   network: tcp
-  port: 45235
-  server: lt.fxlcn.com
+  port: 45245
+  server: ye.fxlcn.com
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 487|公益|俄罗斯|V2
-  network: ws
-  port: 33895
-  server: 45.8.159.241
+  country: 🇷🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 483,533|🇷🇺 RU_192
+  network: tcp
+  port: 45215
+  server: fa.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  udp: true
-  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '490|🇷🇺俄罗斯（IPV6节点） #2'
@@ -1720,7 +1784,7 @@ proxies:
     headers:
       Host: epmo.ambercc.filegear-sg.me
     path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
-- name: '533,540|🔒 TR-WS-TLS 🇺🇸 US-108.165.152.... #11'
+- name: '533,540|🔒 TR-WS-TLS 🇺🇸 US-108.165.152.... #10'
   network: ws
   password: Aimer
   port: 2083
@@ -1731,7 +1795,7 @@ proxies:
     headers:
       Host: epmo.ambercc.filegear-sg.me
     path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
-- name: 533,540|🔒 TR-WS-TLS 🇺🇸 US-108.165.152....
+- name: '533,540|🔒 TR-WS-TLS 🇺🇸 US-108.165.152.... #3'
   network: ws
   password: Aimer
   port: 443
@@ -1819,7 +1883,7 @@ proxies:
     headers:
       Host: epmo.ambercc.filegear-sg.me
     path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
-- name: '533,540|🔒 TR-WS-TLS 🇺🇸 US-199.34.228.1... #1'
+- name: 533,540|🔒 TR-WS-TLS 🇺🇸 US-199.34.228.1...
   network: ws
   password: Aimer
   port: 8443
@@ -1874,16 +1938,6 @@ proxies:
     headers:
       Host: epmo.ambercc.filegear-sg.me
     path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
-- alterId: 0
-  cipher: auto
-  name: 533|🇷🇺 RU_191
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - name: 534|8|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
@@ -1897,20 +1951,19 @@ proxies:
   skip-cert-verify: true
   sni: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com
   type: trojan
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 534,541|🔒 VM-WS-TLS 🇷🇺 RU-185.133.42.1...
+  name: 534,541|🔒 VM-WS-NA 🇷🇺 RU-176.32.35.148...
   network: ws
-  port: '30001'
-  server: 185.133.42.144
-  servername: www.17336793.xyz
-  tls: true
+  port: '21013'
+  server: 176.32.35.148
+  tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 01d8ffc6-092e-46d5-8a09-6766f2bb2188
   ws-opts:
     headers:
-      Host: www.17336793.xyz
-    path: /path/170733132233
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 534|36|🔒 VM-WS-NA 🇷🇺 RU-31.129.105...
@@ -1925,15 +1978,20 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 534,541|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
-  network: tcp
-  port: '20779'
-  server: 45.12.114.15
-  tls: false
+  name: 534,541|🔒 VM-WS-TLS 🇷🇺 RU-185.133.42.1...
+  network: ws
+  port: '30001'
+  server: 185.133.42.144
+  servername: www.17336793.xyz
+  tls: true
   type: vmess
-  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.17336793.xyz
+    path: /path/170733132233
 - alterId: 0
   cipher: auto
   name: 534,541|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
@@ -1951,20 +2009,6 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 534,541|🔒 VM-WS-NA 🇷🇺 RU-185.22.152.23...
-  network: ws
-  port: 23009
-  server: 185.22.152.236
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a940fa03-5c1a-40d2-a9a3-329b724a5076
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '534,541|🔒 VM-WS-NA 🇷🇺 RU-185.22.152.23... #1'
   network: ws
   port: '23022'
   server: 185.22.152.236
@@ -1987,30 +2031,62 @@ proxies:
   uuid: e4f60c1c-50e5-4d4a-b087-47ab29a46eed
 - alterId: 0
   cipher: auto
-  name: 534,541|🔒 VM-WS-NA 🇷🇺 RU-176.32.35.148...
+  name: '534,541|🔒 VM-WS-NA 🇷🇺 RU-185.22.152.23... #1'
   network: ws
-  port: '21013'
-  server: 176.32.35.148
+  port: 23009
+  server: 185.22.152.236
+  servername: ''
   tls: false
   type: vmess
-  uuid: 01d8ffc6-092e-46d5-8a09-6766f2bb2188
+  uuid: a940fa03-5c1a-40d2-a9a3-329b724a5076
   ws-opts:
     headers:
       Host: ''
     path: /
-- auth: dongtaiwang.com
-  name: 537,643|46.17.41.5:12904
+- alterId: 0
+  cipher: auto
+  name: 534,541|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  network: tcp
+  port: '20779'
+  server: 45.12.114.15
+  tls: false
+  type: vmess
+  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
+- alterId: 0
+  cipher: auto
+  name: 534,541|🔒 VM-TCP-NA 🇷🇺 RU-176.113.82.1...
+  network: tcp
+  port: '25408'
+  server: 176.113.82.162
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1a43405a-73cc-4d44-8982-494b65a9560b
+- name: 537|🇷🇺 俄罗斯 07
   password: dongtaiwang.com
   port: 12904
   server: 46.17.41.5
   skip-cert-verify: true
   tls: false
   type: hysteria2
+- name: 540|🔒 TR-TCP-TLS 🇷🇺 RU-5.182.84.22...
+  network: tcp
+  password: Aimer
+  port: 2096
+  server: 5.182.84.22
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
 - name: 540|🔒 TR-TCP-NA 🇷🇺 RU-213.241.198....
   password: Aimer
-  port: 2083
-  server: 213.241.198.59
-  sni: epmw.ambercc.filegear-sg.me
+  port: 2053
+  server: 213.241.198.189
+  skip-cert-verify: false
+  sni: agepj.ambercc.filegear-sg.me
+  type: trojan
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.93:...
+  password: NISHIKUITAN111
+  port: 443
+  server: 5.182.84.93
   type: trojan
 - name: 540|🔒 TR-TCP-TLS 🇷🇺 RU-92.63.192.1...
   network: tcp
@@ -2019,26 +2095,25 @@ proxies:
   server: 92.63.192.110
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.52:...
-  password: Aimer
-  port: 2083
-  server: 5.182.84.52
-  skip-cert-verify: false
-  sni: epccu.ambercc.filegear-sg.me
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-45.67.215.23...
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.234
+  sni: icecream.955850.xyz
   type: trojan
-- name: 540|🔒 TR-TCP-TLS 🇷🇺 RU-45.67.215.2...
-  network: tcp
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-89.248.207.3...
+  password: Aimer
+  port: 443
+  server: 89.248.207.37
+  skip-cert-verify: false
+  sni: epcci.ambercc.filegear-sg.me
+  type: trojan
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.9:2...
   password: Aimer
   port: 2087
-  server: 45.67.215.217
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-46.254.93.25...
-  password: Aimer
-  port: 2087
-  server: 46.254.93.251
+  server: 5.182.84.9
   skip-cert-verify: false
-  sni: agepj.ambercc.filegear-sg.me
+  sni: epcca.ambercc.filegear-sg.me
   type: trojan
 - alpn:
   - h3
@@ -2053,12 +2128,106 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2F%40NoForcedHeaven%40NoForcedHeaven%40NoForcedHeaven%40NoForcedHeaven'
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-89.248.207.3...
+- name: 540|🔒 TR-WS-TLS 🇷🇺 RU-185.148.106....
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 185.148.106.44
+  sni: za.ylks.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: za.ylks.xyz
+    path: /
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.244...
   password: Aimer
   port: 443
-  server: 89.248.207.37
+  server: 5.182.84.244
   skip-cert-verify: false
-  sni: epcci.ambercc.filegear-sg.me
+  sni: epcch.ambercc.filegear-sg.me
+  type: trojan
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-176.124.223....
+  password: Aimer
+  port: 443
+  server: 176.124.223.92
+  sni: epccn.ambercc.filegear-sg.me
+  type: trojan
+- name: 540|🔒 TR-WS-NA 🇷🇺 RU-45.67.215.218...
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.218
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+- name: '540|🔒 TR-WS-TLS 🇷🇺 RU-176.124.223.... #1'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 176.124.223.50
+  sni: ageph.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ageph.ambercc.filegear-sg.mehttp/1.1
+    path: /
+- name: 540|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.52...
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 46.254.93.52
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ngepx.ambercc.filegear-sg.me
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-46.254.93.24...
+  password: Aimer
+  port: 8443
+  server: 46.254.93.243
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.229...
+  password: Aimer
+  port: 2087
+  server: 5.182.84.229
+  sni: epmw.ambercc.filegear-sg.me
+  type: trojan
+- name: 540|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.13...
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 46.254.93.134
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: agept.ambercc.filegear-sg.me
+- name: 540|🔒 TR-GRPC-TLS 🇷🇺 RU-195.133.52...
+  network: grpc
+  password: '@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven'
+  port: 2087
+  server: 195.133.52.153
+  sni: ru2.asc-sam.ir
+  type: trojan
+- name: 540|🔒 TR-WS-NA 🇷🇺 RU-45.67.215.5:4...
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.5
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-77.232.140.1...
+  password: Aimer
+  port: 2053
+  server: 77.232.140.101
+  skip-cert-verify: false
+  sni: agepl.ambercc.filegear-sg.me
   type: trojan
 - name: 540|🔒 TR-WS-TLS 🇷🇺 RU-77.232.140.7...
   network: ws
@@ -2071,12 +2240,19 @@ proxies:
     headers:
       Host: epmf.ambercc.filegear-sg.me
     path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
-- name: 540|🔒 TR-TCP-TLS 🇷🇺 RU-46.254.92.2...
-  network: tcp
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-46.254.93.25...
   password: Aimer
-  port: 2053
-  server: 46.254.92.201
-  sni: ngepx.ambercc.filegear-sg.me
+  port: 2087
+  server: 46.254.93.251
+  skip-cert-verify: false
+  sni: agepj.ambercc.filegear-sg.me
+  type: trojan
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.85.28:...
+  password: Aimer
+  port: 443
+  server: 5.182.85.28
+  skip-cert-verify: false
+  sni: epccr.ambercc.filegear-sg.me
   type: trojan
 - name: 540|🔒 TR-WS-NA 🇷🇺 RU-45.67.215.153...
   network: ws
@@ -2088,96 +2264,17 @@ proxies:
   ws-opts:
     headers:
       Host: icecream.955850.xyz
-- name: 540|🔒 TR-GRPC-TLS 🇷🇺 RU-195.133.52...
-  network: grpc
-  password: '@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven'
-  port: 2087
-  server: 195.133.52.153
-  sni: ru2.asc-sam.ir
-  type: trojan
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-46.254.92.14...
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.50:...
   password: Aimer
-  port: 2087
-  server: 46.254.92.142
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.93:...
-  password: NISHIKUITAN111
-  port: 443
-  server: 5.182.84.93
-  type: trojan
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.85.28:...
-  password: Aimer
-  port: 443
-  server: 5.182.85.28
-  skip-cert-verify: false
-  sni: epccr.ambercc.filegear-sg.me
+  port: 2096
+  server: 5.182.84.50
+  sni: epcch.ambercc.filegear-sg.me
   type: trojan
 - name: '540|🔒 TR-TCP-NA 🇷🇺 RU-213.241.198.... #1'
   password: Aimer
-  port: 2053
-  server: 213.241.198.189
-  skip-cert-verify: false
-  sni: agepj.ambercc.filegear-sg.me
-  type: trojan
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-176.124.223....
-  password: Aimer
-  port: 443
-  server: 176.124.223.92
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-- name: 540|🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.95...
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 45.67.215.95
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.9:2...
-  password: Aimer
-  port: 2087
-  server: 5.182.84.9
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '540|🔒 TR-WS-TLS 🇷🇺 RU-176.124.223.... #1'
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 176.124.223.40
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ngepy.ambercc.filegear-sg.me
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-46.254.93.24...
-  password: Aimer
-  port: 8443
-  server: 46.254.93.243
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: 540|🔒 TR-WS-TLS 🇷🇺 RU-185.148.106....
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.148.106.44
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-46.254.92.19...
-  password: Aimer
-  port: 443
-  server: 46.254.92.191
-  skip-cert-verify: false
-  sni: agepj.ambercc.filegear-sg.me
+  port: 2083
+  server: 213.241.198.59
+  sni: epmw.ambercc.filegear-sg.me
   type: trojan
 - name: 540|🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.19...
   network: ws
@@ -2190,76 +2287,20 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: '%2FTelegram%40V2ray_Alpha'
-- name: 540|🔒 TR-WS-NA 🇷🇺 RU-45.67.215.5:4...
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 45.67.215.5
-  sni: icecream.955850.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-- name: '540|🔒 TR-WS-TLS 🇷🇺 RU-176.124.223.... #2'
-  network: ws
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.52:...
   password: Aimer
-  port: 8443
-  server: 176.124.223.50
-  sni: ageph.ambercc.filegear-sg.me
+  port: 2083
+  server: 5.182.84.52
+  skip-cert-verify: false
+  sni: epccu.ambercc.filegear-sg.me
   type: trojan
-  ws-opts:
-    headers:
-      Host: ageph.ambercc.filegear-sg.mehttp/1.1
-    path: /
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-45.67.215.14...
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-46.254.92.19...
   password: Aimer
   port: 443
-  server: 45.67.215.148
-  sni: epmq.ambercc.filegear-sg.me
+  server: 46.254.92.191
+  skip-cert-verify: false
+  sni: agepj.ambercc.filegear-sg.me
   type: trojan
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.120...
-  password: Aimer
-  port: 443
-  server: 5.182.84.120
-  sni: agepy.aimercc.filegear-sg.me
-  type: trojan
-- name: 540|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.13...
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 46.254.93.134
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-- name: 540|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.52...
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 46.254.93.52
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ngepx.ambercc.filegear-sg.me
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.50:...
-  password: Aimer
-  port: 2096
-  server: 5.182.84.50
-  sni: epcch.ambercc.filegear-sg.me
-  type: trojan
-- name: 540|🔒 TR-WS-TLS 🇷🇺 RU-5.182.85.129...
-  network: ws
-  password: blue2024
-  port: 443
-  server: 5.182.85.129
-  sni: b.promote.icu
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tb.promote.icu
-    path: /?ed
 - name: 540|🔒 TR-TCP-TLS 🇷🇺 RU-46.254.93.2...
   network: tcp
   password: Aimer
@@ -2267,62 +2308,12 @@ proxies:
   server: 46.254.93.211
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.229...
-  password: Aimer
-  port: 2087
-  server: 5.182.84.229
-  sni: epmw.ambercc.filegear-sg.me
-  type: trojan
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-77.232.140.1...
+- name: 540|🔒 TR-TCP-TLS 🇷🇺 RU-46.254.92.2...
+  network: tcp
   password: Aimer
   port: 2053
-  server: 77.232.140.101
-  skip-cert-verify: false
-  sni: agepl.ambercc.filegear-sg.me
-  type: trojan
-- name: 540|🔒 TR-WS-NA 🇷🇺 RU-45.67.215.218...
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 45.67.215.218
-  sni: icecream.955850.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-45.67.215.23...
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 45.67.215.234
-  sni: icecream.955850.xyz
-  type: trojan
-- name: '540|🔒 TR-TCP-TLS 🇷🇺 RU-45.67.215.2... #1'
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 45.67.215.250
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: 540|🔒 TR-TCP-TLS 🇷🇺 RU-5.182.84.66...
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 5.182.84.66
-  sni: acepo.ambercc.filegear-sg.me
-  type: trojan
-- name: 540|🔒 TR-TCP-TLS 🇷🇺 RU-5.182.84.22...
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 5.182.84.22
+  server: 46.254.92.201
   sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.244...
-  password: Aimer
-  port: 443
-  server: 5.182.84.244
-  skip-cert-verify: false
-  sni: epcch.ambercc.filegear-sg.me
   type: trojan
 - name: 540|🔒 TR-WS-TLS 🇷🇺 RU-194.53.53.24...
   network: ws
@@ -2335,6 +2326,78 @@ proxies:
     headers:
       Host: vle.amclubsvip.dpdns.org
     path: '%2F%3Fed%3D2560%26PROT_TYPE%3Dtrojan'
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-46.254.92.14...
+  password: Aimer
+  port: 2087
+  server: 46.254.92.142
+  skip-cert-verify: false
+  sni: epccf.ambercc.filegear-sg.me
+  type: trojan
+- name: '540|🔒 TR-WS-TLS 🇷🇺 RU-176.124.223.... #2'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 176.124.223.40
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ngepy.ambercc.filegear-sg.me
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.120...
+  password: Aimer
+  port: 443
+  server: 5.182.84.120
+  sni: agepy.aimercc.filegear-sg.me
+  type: trojan
+- name: 540|🔒 TR-TCP-TLS 🇷🇺 RU-45.67.215.2...
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 45.67.215.217
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+- name: 540|🔒 TR-TCP-NA 🇷🇺 RU-45.67.215.14...
+  password: Aimer
+  port: 443
+  server: 45.67.215.148
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: 540|🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.95...
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 45.67.215.95
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: '540|🔒 TR-TCP-TLS 🇷🇺 RU-45.67.215.2... #1'
+  network: tcp
+  password: Aimer
+  port: 2096
+  server: 45.67.215.250
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- name: 540|🔒 TR-WS-TLS 🇷🇺 RU-5.182.85.129...
+  network: ws
+  password: blue2024
+  port: 443
+  server: 5.182.85.129
+  sni: b.promote.icu
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tb.promote.icu
+    path: /?ed
+- name: 540|🔒 TR-TCP-TLS 🇷🇺 RU-5.182.84.66...
+  network: tcp
+  password: Aimer
+  port: 2083
+  server: 5.182.84.66
+  sni: acepo.ambercc.filegear-sg.me
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 541|🔒 VM-WS-NA 🇷🇺 RU-31.129.105.23...
@@ -2349,16 +2412,6 @@ proxies:
     headers:
       Host: 31.129.105.239
     path: /
-- alterId: 0
-  cipher: auto
-  name: 541|🔒 VM-TCP-NA 🇷🇺 RU-176.113.82.1...
-  network: tcp
-  port: '25408'
-  server: 176.113.82.162
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1a43405a-73cc-4d44-8982-494b65a9560b
 - cipher: chacha20-ietf-poly1305
   name: '571,572|RU.俄国.A #1'
   password: a01b5e27-ece5-4675-866f-36b23a65d2a8
@@ -2366,25 +2419,26 @@ proxies:
   server: rutf.cokecloud.top
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
+- auth: da8a19b4-eab6-4f78-9be0-69bdb71ccd1c
+  client-fingerprint: chrome
+  down: 100
   name: 576|🇺 机场推荐:dafei.de 俄罗斯 02
-  network: ws
-  port: 20066
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: da8a19b4-eab6-4f78-9be0-69bdb71ccd1c
+  port: 30076
   server: 45.147.201.231
-  tls: false
-  type: vmess
+  skip-cert-verify: true
+  type: hysteria2
   udp: true
-  uuid: 92b40e8a-14c1-46b8-bc0b-bb3cbdfe59be
-  ws-opts:
-    path: /
-- auth: 4f450011-b6b8-41dd-a8f1-5cca6d5f6dfb
+  up: 100
+- auth: f8efea99-4e1c-4e80-aba5-cee2a2ed1d2c
   client-fingerprint: chrome
   down: 100
   name: 576|🇷🇺 机场推荐:dafei.de 俄罗斯 03
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 4f450011-b6b8-41dd-a8f1-5cca6d5f6dfb
+  password: f8efea99-4e1c-4e80-aba5-cee2a2ed1d2c
   port: 31007
   server: 45.147.201.231
   skip-cert-verify: true
@@ -2392,7 +2446,7 @@ proxies:
   udp: true
   up: 100
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0129 4
+  name: 643|RU_a651b_0129
   network: ws
   port: 8880
   server: 46.254.92.254
@@ -2408,7 +2462,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0130 4
+  name: 643|RU_a651b_0130
   network: ws
   port: 8880
   server: 5.182.84.254
@@ -2424,7 +2478,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0131 4
+  name: 643|RU_a651b_0131
   network: ws
   port: 8880
   server: 46.254.93.254
@@ -2440,7 +2494,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0132 4
+  name: 643|RU_a651b_0132
   network: ws
   port: 8880
   server: 45.8.211.254
@@ -2456,7 +2510,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0133 4
+  name: 643|RU_a651b_0133
   network: ws
   port: 8880
   server: 5.182.85.254
@@ -2472,7 +2526,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0134 4
+  name: 643|RU_a651b_0134
   network: ws
   port: 8880
   server: 45.67.215.254
@@ -2488,7 +2542,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0135 4
+  name: 643|RU_a651b_0135
   network: ws
   port: 8880
   server: 77.105.163.254
@@ -2504,7 +2558,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0136 4
+  name: 643|RU_a651b_0136
   network: ws
   port: 8880
   server: 45.142.120.254
@@ -2520,7 +2574,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0137 4
+  name: 643|RU_a651b_0137
   network: ws
   port: 8880
   server: 213.219.247.254
@@ -2536,7 +2590,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0138 4
+  name: 643|RU_a651b_0138
   network: ws
   port: 8880
   server: 31.12.75.254
@@ -2552,7 +2606,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0139 4
+  name: 643|RU_a651b_0139
   network: ws
   port: 8880
   server: 185.59.218.254
@@ -2568,7 +2622,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0140 4
+  name: 643|RU_a651b_0140
   network: ws
   port: 8880
   server: 188.42.145.254
@@ -2584,7 +2638,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0141 4
+  name: 643|RU_a651b_0141
   network: ws
   port: 8880
   server: 185.148.107.254
@@ -2600,7 +2654,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0142 4
+  name: 643|RU_a651b_0142
   network: ws
   port: 8880
   server: 185.174.138.254
@@ -2616,7 +2670,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0143 4
+  name: 643|RU_a651b_0143
   network: ws
   port: 8880
   server: 45.142.255.254
@@ -2632,7 +2686,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0144 4
+  name: 643|RU_a651b_0144
   network: ws
   port: 8880
   server: 77.232.140.254
@@ -2648,7 +2702,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0145 4
+  name: 643|RU_a651b_0145
   network: ws
   port: 8880
   server: 194.53.53.254
@@ -2664,7 +2718,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0146 4
+  name: 643|RU_a651b_0146
   network: ws
   port: 8880
   server: 185.221.160.254
@@ -2680,7 +2734,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0147 4
+  name: 643|RU_a651b_0147
   network: ws
   port: 8880
   server: 193.9.49.254
@@ -2696,7 +2750,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0148 4
+  name: 643|RU_a651b_0148
   network: ws
   port: 8880
   server: 45.135.235.254
@@ -2712,7 +2766,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0149 4
+  name: 643|RU_a651b_0149
   network: ws
   port: 8880
   server: 193.233.21.254
@@ -2728,7 +2782,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0150 4
+  name: 643|RU_a651b_0150
   network: ws
   port: 8880
   server: 185.176.24.254
@@ -2744,7 +2798,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0151 4
+  name: 643|RU_a651b_0151
   network: ws
   port: 8880
   server: 193.233.132.254
@@ -2760,7 +2814,7 @@ proxies:
       Host: yg.bantony199.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: 643|RU_a651b_0152 4
+  name: 643|RU_a651b_0152
   network: ws
   port: 8880
   server: 213.241.198.254
@@ -2783,7 +2837,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '677,764,766|🇷🇺 俄罗斯1 #3'
+- name: '677,764,765,766|🇷🇺 俄罗斯1 #4'
   password: '!!str 1'
   port: 10010
   server: starlink-fra.2513142.xyz
@@ -2791,7 +2845,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '677,764,766|🇷🇺 俄罗斯2 #2'
+- name: '677,764,765,766|🇷🇺 俄罗斯2 #3'
   password: '!!str 1'
   port: 10010
   server: starlink-fra2.2513142.xyz
@@ -2821,26 +2875,10 @@ proxies:
   server: console.03.aliyun.aq.kunlunaqs.com
   type: ss
   udp: true
-- name: 765|🇷🇺 俄罗斯1🔒
-  password: 升级订阅解锁全部节点
-  port: 10010
-  server: z-eu.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-- name: 765|🇷🇺 俄罗斯2🔒
-  password: 升级订阅解锁全部节点
-  port: 10010
-  server: z-eu2.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
 - down: 1000
   name: 779|🇷🇺 莫斯科没眼泪 一号
   password: d17cb60f-3180-4151-b999-9addd0674314
-  port: 20138
+  port: 20199
   ports: 20101-20199
   server: els.xueshan.shop
   skip-cert-verify: false
@@ -2848,9 +2886,9 @@ proxies:
   type: hysteria2
   up: 1000
 - down: 1000
-  name: 779|🇷🇺 莫斯科没眼泪 四号
+  name: 779|🇷🇺 莫斯科没眼泪 二号
   password: d17cb60f-3180-4151-b999-9addd0674314
-  port: 20187
+  port: 20147
   ports: 20101-20199
   server: els.xueshan.shop
   skip-cert-verify: false
@@ -2860,7 +2898,17 @@ proxies:
 - down: 1000
   name: 779|🇷🇺 莫斯科没眼泪 三号
   password: d17cb60f-3180-4151-b999-9addd0674314
-  port: 20146
+  port: 20118
+  ports: 20101-20199
+  server: els.xueshan.shop
+  skip-cert-verify: false
+  sni: els.xueshan.shop
+  type: hysteria2
+  up: 1000
+- down: 1000
+  name: 779|🇷🇺 莫斯科没眼泪 四号
+  password: d17cb60f-3180-4151-b999-9addd0674314
+  port: 20141
   ports: 20101-20199
   server: els.xueshan.shop
   skip-cert-verify: false
