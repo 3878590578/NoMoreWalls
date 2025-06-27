@@ -156,17 +156,59 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 474|🔒 VL-WS-NONE 🇸🇪 SE-185.146.173...
+- name: 474|VL-WS-TLS 🇸🇪 SE-185.146.173.63...
   network: ws
-  port: 80
-  server: 185.146.173.20
-  tls: false
+  port: 2087
+  server: 185.146.173.63
+  servername: Tp006A9aAs.GoLaBkAsHaNiZ.iNfO
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
-  uuid: 319e3dc1-ceb3-4258-b069-675db969ad62
+  uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
   ws-opts:
     headers:
-      Host: crtU6u.dl-aPARaT.coM
-    path: /backup
+      Host: Tp006A9aAs.GoLaBkAsHaNiZ.iNfO
+    path: /
+- name: 474|VL-WS-NONE 🇸🇪 SE-185.146.173.8...
+  network: ws
+  port: 8880
+  server: 185.146.173.8
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 59550f61-947f-42a4-f666-c3681d3dbeaf
+  ws-opts:
+    headers:
+      Host: 6.v-_-_-_-_-_-_mainv2ray_-_-_-_-_-_-_mainv2ray6.6.6.6.6.6.mralpha-vpn.COM.
+    path: /
+- name: 474|VL-WS-TLS 🇸🇪 SE-193.233.115.22...
+  network: ws
+  port: 8443
+  server: 193.233.115.226
+  servername: 0926.qiang2000.link
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
+  ws-opts:
+    headers:
+      Host: 0926.qiang2000.link
+    path: /
+- grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: vless-grpc
+  name: 474|VL-GRPC-NA 🇸🇪 SE-41.216.182.16...
+  network: grpc
+  port: 2052
+  server: 41.216.182.162
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 1ebefa01-716a-5bd4-9ae1-48d6bd8fff13
 - name: 503|瑞典_021805001+L30
   password: telegram-id-privatevpns
   port: 22222
@@ -217,16 +259,6 @@ proxies:
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: 540|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
-  network: ws
-  password: vpn
-  port: 2025
-  server: 109.120.132.80
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: '%2F'
 - name: 540|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
