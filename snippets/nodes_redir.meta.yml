@@ -3655,7 +3655,14 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
-- name: 430,525|12|🇮🇷_IR_伊朗->🇺🇸_US_美国
+- cipher: chacha20-ietf-poly1305
+  name: 199|🇯🇵日本 05 中转 x10
+  password: 0991bb00-5a25-4c42-8205-153787512b5b
+  port: 57805
+  server: jp1asdfghjtyhj.aeccssssss.xyz
+  type: ss
+  udp: true
+- name: 430,524,525|12|🇮🇷_IR_伊朗->🇺🇸_US_美国
   network: tcp
   port: 28599
   server: 109.122.202.170
@@ -3692,7 +3699,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 430,524,525,568|🇺🇸 机场推荐:dafei.de 美国 38
+  name: 430,524,525,568|🇺🇸 机场推荐:dafei.de 美国 43
   network: ws
   port: 30825
   server: 111.26.109.79
@@ -4298,10 +4305,11 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 523,525|30|_CN_->_US_国
+  name: 523,524,525|30|_CN_->_US_国
   network: ws
   port: 30836
   server: v36.heduian.link
+  servername: ''
   skip-cert-verify: true
   sni: ''
   tls: false
@@ -4431,10 +4439,11 @@ proxies:
   ws-path: /
 - alterId: 2
   cipher: auto
-  name: 523,525|30|🇨🇳_CN_中国->🇺🇸_US_美国_8
+  name: 523,524,525|30|🇨🇳_CN_中国->🇺🇸_US_美国_8
   network: ws
   port: 30808
   server: v8.heduian.link
+  servername: ''
   skip-cert-verify: true
   sni: ''
   tls: false
@@ -4564,7 +4573,7 @@ proxies:
   server: 63.176.196.109
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 524|🇸🇪_SE_瑞典->🇺🇸_US_美国
+- name: '524|🇸🇪_SE_瑞典->🇺🇸_US_美国 #1'
   network: ws
   port: 8080
   server: 185.146.173.69
@@ -4581,13 +4590,6 @@ proxies:
   uuid: 1fbd7633-8800-4de0-87fb-c656017f4099
   ws-opts:
     path: /nimws
-- name: 524|🇮🇷_IR_伊朗->🇬🇧_GB_英国
-  network: tcp
-  port: 8080
-  server: 193.176.243.102
-  tls: false
-  type: vless
-  uuid: 42586269-540d-49b2-a0c9-efb794ce06fe
 - name: 524|🇺🇸_US_美国->🇩🇪_DE_德国
   network: ws
   port: 2053
@@ -4665,15 +4667,6 @@ proxies:
   uuid: a3f8cad2-e83b-4429-a290-373bec463c7e
   ws-opts:
     path: /nimws
-- name: 524|🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-  network: ws
-  port: 80
-  server: 45.8.146.207
-  tls: false
-  type: vless
-  uuid: a6c4db3e-7785-429e-8bc5-9eaf7b1a79b1
-  ws-opts:
-    path: /vless/
 - name: '524|🇺🇸_US_美国->🇫🇷_FR_法国 #3'
   network: ws
   port: 443
@@ -4706,7 +4699,20 @@ proxies:
     path: /telegram:@vpnhub69telegram:@vpnhub69telegram:@vpnhub69telegram:@vpnhub69
 - alterId: 0
   cipher: auto
-  name: '524|🇨🇳_CN_中国->🇺🇸_US_美国 #5'
+  name: 524|🇨🇳 _TW_台湾->🇺🇸_US_美国
+  network: ws
+  port: '80'
+  server: 107.167.182.230
+  tls: false
+  type: vmess
+  uuid: efcb7d7c-c582-46f5-eeff-0e553342528d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /tg@hkaa0
+- alterId: 0
+  cipher: auto
+  name: '524|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz
@@ -4719,21 +4725,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 524,731|节点日期：06-27
-  network: ws
-  port: '30840'
-  server: 111.26.109.79
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: api100-core-quic-lf.amemv.com
-    path: /index
-- alterId: 0
-  cipher: auto
-  name: 524,731|中国【机场推荐：https://a0a.xyz/】46
+  name: 524,731|中国【机场推荐：https://a0a.xyz/】12
   network: ws
   port: '30840'
   server: v40.heduian.link
@@ -4747,22 +4739,113 @@ proxies:
     path: /index
 - alterId: 0
   cipher: auto
-  name: 524|🇹🇼_TW_台湾->🇺🇸_US_美国
+  name: 524|🇩🇪 _US_美国->🇩🇪_DE_德国
   network: ws
-  port: 80
-  server: 107.167.182.230
+  port: '80'
+  server: flkf2.shabijichang.com
   tls: false
   type: vmess
-  uuid: efcb7d7c-c582-46f5-eeff-0e553342528d
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
-      Host: br.gy.youxuan-1.66688888.xyz
-    path: /tg@hkaa0
+      Host: flkf2.shabijichang.com
+    path: /
 - alterId: 0
   cipher: auto
-  name: 524|🇺🇸_US_美国->🇸🇦_SA_沙特阿拉伯
+  name: 524|🇬🇧 _US_美国->🇬🇧_GB_英国_1
   network: ws
-  port: 80
+  port: '80'
+  server: mrb2.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: mrb2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 524|🇬🇧 _US_美国->🇬🇧_GB_英国_2
+  network: ws
+  port: '80'
+  server: ld2.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: ld2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 524|🇮🇳 _US_美国->🇮🇳_IN_印度_1
+  network: ws
+  port: '80'
+  server: 104.17.18.26
+  tls: false
+  type: vmess
+  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 524|🇮🇳 _US_美国->🇮🇳_IN_印度_2
+  network: ws
+  port: '80'
+  server: 104.26.8.44
+  tls: false
+  type: vmess
+  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 524|🇮🇳 _US_美国->🇮🇳_IN_印度_3
+  network: ws
+  port: '80'
+  server: mm2.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: mm2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 524|🇮🇳 _US_美国->🇮🇳_IN_印度_4
+  network: ws
+  port: '80'
+  server: mm3.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: mm3.shabijichang.com
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 524|🇳🇱 _US_美国->🇳🇱_NL_荷兰
+  network: ws
+  port: '30000'
+  server: 45.199.138.191
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/1696251522438
+- alterId: 0
+  cipher: auto
+  name: 524|🇸🇦 _US_美国->🇸🇦_SA_沙特阿拉伯
+  network: ws
+  port: '80'
   server: jd3.shabijichang.com
   tls: false
   type: vmess
@@ -4823,7 +4906,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 524|🇺🇸_US_美国->🇨🇳_CN_中国
+  name: '524|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
   network: ws
   port: 8080
   server: 104.19.47.186
@@ -4872,19 +4955,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '524|🇺🇸_US_美国->🇩🇪_DE_德国 #5'
-  network: ws
-  port: 80
-  server: flkf2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: flkf2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 524|🇺🇸_US_美国->🇪🇸_ES_西班牙
   network: ws
   port: 80
@@ -4895,118 +4965,21 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '524|🇺🇸_US_美国->🇬🇧_GB_英国 #2'
+  name: 524|CF中转_06270512985 L0
   network: ws
-  port: 80
-  server: ld2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: ld2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '524|🇺🇸_US_美国->🇬🇧_GB_英国 #3'
-  network: ws
-  port: 80
-  server: mrb2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mrb2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 524|🇺🇸_US_美国->🇮🇳_IN_印度
-  network: ws
-  port: 80
-  server: 104.17.18.26
-  tls: false
-  type: vmess
-  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
-  ws-opts:
-    headers:
-      Host: a.109420.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '524|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
-  network: ws
-  port: 80
-  server: 104.26.8.44
-  tls: false
-  type: vmess
-  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
-  ws-opts:
-    headers:
-      Host: a.109420.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '524|🇺🇸_US_美国->🇮🇳_IN_印度 #2'
-  network: ws
-  port: 80
-  server: mm2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mm2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '524|🇺🇸_US_美国->🇮🇳_IN_印度 #3'
-  network: ws
-  port: 80
-  server: mm3.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mm3.shabijichang.com
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 524|🇺🇸_US_美国->🇳🇱_NL_荷兰
-  network: ws
-  port: 30000
-  server: 45.199.138.191
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.42077230.xyz
-    path: /path/1696251522438
-- alterId: 0
-  cipher: auto
-  name: 524,525,532|🔒 VM-TCP-NONE 🇮🇷 IR-85.198.23....
-  network: tcp
-  port: '52262'
-  server: 85.198.23.63
+  port: '2082'
+  server: 104.16.155.10
   servername: ''
   tls: false
   type: vmess
-  uuid: af5a0d0c-c898-4a51-ba6a-47179d483e41
-- alterId: 0
-  cipher: aes-128-gcm
-  name: '524|🇮🇷_IR_伊朗->🇺🇸_US_美国 #1'
-  network: tcp
-  port: '2535'
-  server: 89.44.112.34
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04d7c089-bbc5-4ef2-80ef-a0982cf33708
+  uuid: 1c713b69-0abe-3a1e-bf70-b0579ea2f772
+  ws-opts:
+    headers:
+      Host: 100-207-132-205.s2.db-link02.top
+    path: /dabai.in172.64.25.37
 - alterId: 0
   cipher: auto
-  name: 524|CF中转_06262012843 L6
+  name: 524|CF中转_06270512899 L6
   network: ws
   port: '2082'
   server: 104.18.7.41
@@ -5020,7 +4993,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 524|CF中转_06262011379 L0
+  name: 524|CF中转_06270512997 L0
+  network: ws
+  port: '2082'
+  server: 104.19.48.236
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1c713b69-0abe-3a1e-bf70-b0579ea2f772
+  ws-opts:
+    headers:
+      Host: 100-207-132-205.s2.db-link02.top
+    path: /dabai.in172.64.25.37
+- alterId: 0
+  cipher: auto
+  name: 524|CF中转_06270511337 L0
   network: ws
   port: '80'
   server: 104.21.30.37
@@ -5034,7 +5021,7 @@ proxies:
     path: /gbkQ0mhWbEUSLppj7jCmY
 - alterId: 0
   cipher: auto
-  name: 524|CF中转_06262012835 L0
+  name: 524|CF中转_06270512892 L0
   network: ws
   port: '8443'
   server: 104.21.32.1
@@ -5048,7 +5035,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 524|CF中转_06262012844 L0
+  name: 524|CF中转_06270512900 L0
   network: ws
   port: '80'
   server: 104.21.38.90
@@ -5062,7 +5049,7 @@ proxies:
     path: /87Ex2JiYYWr7FRa06b88JSo
 - alterId: 0
   cipher: auto
-  name: 524|CF中转_06262012840 L0
+  name: 524|CF中转_06270512897 L0
   network: ws
   port: '80'
   server: 104.26.13.15
@@ -5076,7 +5063,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 524|CF中转_06262012838 L0
+  name: 524|CF中转_06270512895 L0
   network: ws
   port: '80'
   server: 104.26.13.9
@@ -5090,21 +5077,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 524|CF中转_06262012841 L3
-  network: ws
-  port: '443'
-  server: 172.66.168.209
-  servername: maXNEtVIP-usA-VP3.nETKH3.SiTE
-  tls: true
-  type: vmess
-  uuid: 5428dcc2-9950-4404-b8a5-9dac82acb210
-  ws-opts:
-    headers:
-      Host: maXNEtVIP-usA-VP3.nETKH3.SiTE
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 524|CF中转_06262012845
+  name: 524|CF中转_06270512901
   network: ws
   port: '2087'
   server: 172.67.131.27
@@ -5118,7 +5091,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 524|CF中转_06262012837 L0
+  name: 524|CF中转_06270512894 L0
   network: ws
   port: '80'
   server: 172.67.199.104
@@ -5132,7 +5105,7 @@ proxies:
     path: /NjLXrucxVIcvpHPhIJoo2wcE6Q
 - alterId: 0
   cipher: auto
-  name: 524|CF中转_06262012836 L0
+  name: 524|CF中转_06270512893 L0
   network: ws
   port: '8443'
   server: 172.67.193.50
@@ -5146,21 +5119,7 @@ proxies:
     path: /horsen
 - alterId: 0
   cipher: auto
-  name: 524|CF中转_062620023 L0
-  network: ws
-  port: '80'
-  server: 172.67.209.79
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 512d9674-db12-44ca-a1b5-654244549b65
-  ws-opts:
-    headers:
-      Host: xcccvvbnmj.999834.xyz
-    path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm
-- alterId: 0
-  cipher: auto
-  name: 524|CF中转_06262012842 L0
+  name: 524|CF中转_06270512898 L0
   network: ws
   port: '80'
   server: 172.67.72.42
@@ -5174,7 +5133,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 524|CF中转_06262012839 L0
+  name: 524|CF中转_06270512896 L0
   network: ws
   port: '80'
   server: 172.67.72.48
