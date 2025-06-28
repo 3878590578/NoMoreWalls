@@ -156,11 +156,26 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 474|VL-WS-TLS 🇸🇪 SE-185.146.173.63...
+- name: 474|VL-WS-NONE 🇸🇪 SE-185.146.173.3...
+  network: ws
+  port: 2095
+  server: 185.146.173.38
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: cfb6d9ad-7a14-4061-b159-8902fd73bb55
+  ws-opts:
+    headers:
+      Host: DigiV2ray---_-_---DIGIq.radioTehran.org.
+    path: /
+- alpn:
+  - h2http/1.1
+  name: 474|VL-WS-TLS 🇸🇪 SE-185.146.173.37...
   network: ws
   port: 2087
-  server: 185.146.173.63
-  servername: Tp006A9aAs.GoLaBkAsHaNiZ.iNfO
+  server: 185.146.173.37
+  servername: tp946i0h5O.NewDom-DidI2.inFO
   skip-cert-verify: true
   tfo: false
   tls: true
@@ -168,47 +183,30 @@ proxies:
   uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
   ws-opts:
     headers:
-      Host: Tp006A9aAs.GoLaBkAsHaNiZ.iNfO
+      Host: tp946i0h5O.NewDom-DidI2.inFO
     path: /
-- name: 474|VL-WS-NONE 🇸🇪 SE-185.146.173.8...
+- name: 474|VL-WS-NONE 🇸🇪 SE-185.146.173.2...
   network: ws
-  port: 8880
-  server: 185.146.173.8
+  port: 2095
+  server: 185.146.173.237
   skip-cert-verify: true
   tfo: false
   tls: false
   type: vless
-  uuid: 59550f61-947f-42a4-f666-c3681d3dbeaf
+  uuid: 35cb8320-20f4-4571-bf1a-bae0bb38b616
   ws-opts:
     headers:
-      Host: 6.v-_-_-_-_-_-_mainv2ray_-_-_-_-_-_-_mainv2ray6.6.6.6.6.6.mralpha-vpn.COM.
-    path: /
-- name: 474|VL-WS-TLS 🇸🇪 SE-193.233.115.22...
-  network: ws
-  port: 8443
-  server: 193.233.115.226
-  servername: 0926.qiang2000.link
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
-  ws-opts:
-    headers:
-      Host: 0926.qiang2000.link
-    path: /
-- grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless-grpc
-  name: 474|VL-GRPC-NA 🇸🇪 SE-41.216.182.16...
-  network: grpc
-  port: 2052
-  server: 41.216.182.162
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 1ebefa01-716a-5bd4-9ae1-48d6bd8fff13
+      Host: V2ray-_-_-_-_-Vpn_Mikey.Amir-Mikey.Tech.
+    path: /@Vpn_Mikey،@Vpn_Mikey
+- cipher: aes-128-cfb
+  country: 🇪 SE
+  name: 483|🇪 SE_174
+  obfs: http_post
+  password: $$Turb0VPN$$
+  port: 443
+  protocol: auth_aes128_md5
+  server: ssca.irundns.net
+  type: ssr
 - name: 503|瑞典_021805001+L30
   password: telegram-id-privatevpns
   port: 22222
@@ -236,13 +234,6 @@ proxies:
     headers:
       Host: tx.vs2024.dpdns.org
     path: '%2F%3Fed%3D2560'
-- name: 533|🇸🇪_SE_瑞典
-  network: ws
-  port: 8880
-  server: lightning6-joinbed.filj.top
-  tls: false
-  type: vless
-  uuid: 9f8f8016-e2dd-4d6c-944b-7ca431086211
 - name: 534|8|🇸🇪SE-95.164.33.62-233_1@232
   password: 0b1371aa-649d-41dc-9126-338c87936500
   port: 443
