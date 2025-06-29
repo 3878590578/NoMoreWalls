@@ -4131,10 +4131,11 @@ proxies:
   uuid: fa168c05-2e67-4095-9755-8fcd0a116435
 - alterId: 0
   cipher: auto
-  name: 439|🇸🇪 _SE_瑞典->🇨🇳_CN_中国_0@0
-  port: 62002
+  name: 439,536,537|12|🇸🇪_SE_瑞典->🇨🇳_CN_中国
+  network: tcp
+  port: '62002'
   server: 213.66.68.73
-  skip-cert-verify: true
+  servername: ''
   tls: false
   type: vmess
   uuid: 5b9b682a-7811-4050-b287-254320f3ac9e
@@ -4142,70 +4143,32 @@ proxies:
   network: tcp
   port: 8880
   server: 91.107.157.118
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vless
   uuid: 28b97b15-ccd8-40f9-a02a-d0ecd44ac556
-- name: 439|🇩🇪 _IR_伊朗->🇩🇪_DE_德国
+- name: 439,536,537|12|🇮🇷_IR_伊朗->🇩🇪_DE_德国
   network: ws
   port: 3134
   server: 217.60.236.41
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vless
   uuid: 6683e519-99b1-4df8-9d20-f39a2a7ed1b0
   ws-opts:
-    path: /
+    path: '%2F'
 - name: '439,536,537|12|🇮🇷_IR_伊朗->🇩🇪_DE_德国 #1'
   network: tcp
   port: 2020
   server: 94.182.142.16
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vless
   uuid: c27e0180-7b4a-49ba-a862-a62f5e2bc17d
-- alterId: 2
-  cipher: auto
-  name: 439|_CN_中国->🏳️_unKnow_未知
-  network: ws
-  port: 30829
-  server: 111.26.109.79
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    path: /
 - name: 439,536,537|12|🇮🇷_IR_伊朗->🇹🇷_TR_土耳其
   network: tcp
   port: 443
   server: 78.31.235.115
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vless
   uuid: d0f14ec4-5be0-4645-9010-dd0fabf1b541
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 439|🇺🇸 _IR_伊朗->🇺🇸_US_美国_1@10
-  port: 2535
-  server: 89.44.112.34
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 04d7c089-bbc5-4ef2-80ef-a0982cf33708
-- alpn:
-  - http/1.1
-  name: 439|🇺🇸 _US_美国->🇩🇪_DE_德国_1@13
-  password: telegram-id-directvpn
-  port: 22223
-  server: 63.178.144.147
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 506|CF中转_021805008 L0
@@ -4869,7 +4832,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '535,537,541|🇨🇳_定制专线：@QS00008 #2'
+  name: '535,537,541|🇨🇳_定制专线：@QS00008 #11'
   network: tcp
   port: 17235
   server: 00fd0574-sux8g0-sv07nd-jtx1.cm5.p5pv.com
@@ -4905,7 +4868,7 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: '535,537,541|🇨🇳_定制专线：@QS00008 #4'
+  name: '535,537,541|🇨🇳_定制专线：@QS00008 #13'
   network: tcp
   port: 5228
   server: 157.148.96.92
@@ -4931,7 +4894,7 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: '535,537,541|🇨🇳_定制专线：@QS00008 #3'
+  name: '535,537,541|🇨🇳_定制专线：@QS00008 #12'
   network: tcp
   port: 5229
   server: 2c2227e1-sutj40-t907cr-1c1mr.cu.plebai.net
@@ -5167,7 +5130,7 @@ proxies:
     path: /tg@hkaa0
 - alterId: 0
   cipher: auto
-  name: '536|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  name: '536|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz
@@ -5378,6 +5341,20 @@ proxies:
     path: /87Ex2JiYYWr7FRa06b88JSo
 - alterId: 0
   cipher: auto
+  name: 536,537|9|🇺🇸 美国3|@ripaojiedian
+  network: ws
+  port: 80
+  server: 104.21.57.206
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3d9741da-c0e4-47cc-a5e0-f1af3d337dae
+  ws-opts:
+    headers:
+      Host: sssssssssssdddfgt.4444926.xyz
+    path: /U2Z0FoBkgtZqfwAwY2SNm
+- alterId: 0
+  cipher: auto
   name: 536|CF中转_0629181172 L0
   network: ws
   port: '2096'
@@ -5502,16 +5479,6 @@ proxies:
     headers:
       Host: h4.grAsSoRy.shop
     path: /
-- alterId: 0
-  cipher: auto
-  name: 536,537|12|🇸🇪_SE_瑞典->🇨🇳_CN_中国
-  network: tcp
-  port: '62002'
-  server: 213.66.68.73
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5b9b682a-7811-4050-b287-254320f3ac9e
 - alterId: 0
   cipher: auto
   name: 537|8|🇺🇸_US_美国->🇩🇪_DE_德国_1_0@0
@@ -6250,18 +6217,6 @@ proxies:
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     path: /
-- name: 541|美国 cf中转
-  network: ws
-  port: 443
-  server: vip6.cloudflare.182682.xyz
-  servername: axszhongzhuan.axsnangedafanonline.top
-  tls: true
-  type: vless
-  uuid: c61f0359-d3bd-47ab-a52c-b54c627741d3
-  ws-opts:
-    headers:
-      Host: axszhongzhuan.axsnangedafanonline.top
-    path: '%2Fadminaaa'
 - alterId: 0
   cipher: auto
   h2-opts: {}
