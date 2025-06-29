@@ -3777,14 +3777,44 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 435,531|12,36|🔒 VM-TCP-NA 🇸🇪 SE-213.66...
-  network: tcp
-  port: '62002'
+  name: 435|🇸🇪 _SE_瑞典->🇨🇳_CN_中国_0@0
+  port: 62002
   server: 213.66.68.73
-  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 5b9b682a-7811-4050-b287-254320f3ac9e
+- alterId: 2
+  cipher: auto
+  name: 435|_CN_中国->🏳️_unKnow_未知
+  network: ws
+  port: 30829
+  server: 111.26.109.79
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 435|🇺🇸 _IR_伊朗->🇺🇸_US_美国_1@10
+  port: 2535
+  server: 89.44.112.34
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 04d7c089-bbc5-4ef2-80ef-a0982cf33708
+- alpn:
+  - http/1.1
+  name: 435,530|🇺🇸_US_美国->🇩🇪_DE_德国
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 63.178.144.147
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 500|CF中转_021805008 L0
@@ -4604,18 +4634,9 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-- alpn:
-  - http/1.1
-  name: 530|🇺🇸_US_美国->🇩🇪_DE_德国
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 63.178.144.147
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '530|🇨🇳_CN_中国->🇺🇸_US_美国 #7'
+  name: '530|🇨🇳_CN_中国->🇺🇸_US_美国 #5'
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz
@@ -5572,6 +5593,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 531|12|🇸🇪_SE_瑞典->🇨🇳_CN_中国
+  network: tcp
+  port: '62002'
+  server: 213.66.68.73
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5b9b682a-7811-4050-b287-254320f3ac9e
+- alterId: 0
+  cipher: auto
   name: 531|13|🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
   network: ws
   port: 23169
@@ -5660,23 +5691,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 540|VMESS->国-ChatGPT-1a2d514b-37cf...
-  network: ws
-  port: 443
-  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  ws-opts:
-    headers:
-      HOST: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-    path: /azumase.ren
-- alterId: 0
-  cipher: auto
   name: 767|菲律宾 马尼拉-中转
   network: ws
   port: 18596
@@ -5694,24 +5708,3 @@ proxies:
       Host: flb1.718node.com
     path: /shha
   ws-path: /shha
-- cipher: chacha20-ietf-poly1305
-  name: 859|🇲🇴澳门中转
-  password: 66ddd790-10ed-4a16-b334-0b7e3577b5b7
-  port: 20000
-  server: zz.xiao666666.site
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '860,861|🇲🇴澳门中转 #2'
-  password: 02f3eac9-9ccf-41f2-b95a-e19d1db7b5f8
-  port: 20000
-  server: zz.xiao666666.site
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '862|🇲🇴澳门中转 #3'
-  password: 103104c5-a3f5-4c48-8d8f-a72a56959799
-  port: 20000
-  server: zz.xiao666666.site
-  type: ss
-  udp: true
