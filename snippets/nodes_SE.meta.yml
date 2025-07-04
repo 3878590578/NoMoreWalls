@@ -158,8 +158,9 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   grpc-opts:
-    grpc-service-name: Tel:@VPN_KING_V2RAY
-  name: 474|🔒 VL-GRPC-RLT 🇸🇪 SE-109.120.13...
+    grpc-mode: gun
+    grpc-service-name: Tel%3A%40VPN_KING_V2RAY
+  name: 474|VL-GRPC-RLT 🇸🇪 SE-109.120.132....
   network: grpc
   port: 2083
   reality-opts:
@@ -167,12 +168,14 @@ proxies:
     short-id: 3b35fd9cd4d47fe6
   server: 109.120.132.204
   servername: speedtest.net
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: f5476642-ce98-45af-b227-273dcfd4f96a
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 474|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
+  name: 474|VL-TCP-RLT 🇸🇪 SE-94.242.58.133...
   network: tcp
   port: 443
   reality-opts:
@@ -180,12 +183,17 @@ proxies:
     short-id: 7755e972daf8eec8
   server: 94.242.58.133
   servername: video.intfreed.ru
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 474|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /
+  name: 474|VL-GRPC-RLT 🇸🇪 SE-91.186.218.1...
   network: grpc
   port: 2083
   reality-opts:
@@ -193,37 +201,44 @@ proxies:
     short-id: adf8a1f5689177a2
   server: 91.186.218.167
   servername: www.speedtest.net
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 5e54f178-a532-4e4f-9418-d3afc5478011
-- name: 474|🔒 VL-WS-NONE 🇸🇪 SE-185.146.173...
+- name: 474|VL-WS-NONE 🇸🇪 SE-185.146.173.1...
   network: ws
   port: 2052
   server: 185.146.173.194
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: 78802591-aa5f-47ea-8184-9e30368d9b50
   ws-opts:
     headers:
       Host: 2.V2ray.debian.org.fxp.debian.org.speedtest.net.らわなさらわ.onlinesrvpro.site.
-- name: 474|🔒 VL-WS-NA 🇸🇪 SE-185.146.173.1...
+    path: /
+- name: 474|VL-WS-NA 🇸🇪 SE-185.146.173.16:...
   network: ws
   port: 2052
   server: 185.146.173.16
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
   ws-opts:
     headers:
       Host: digitalscientificresearchgroup.ir
-    path: '%2FTM-%40AZARBAYJAB1'
+    path: /TM-@AZARBAYJAB1
 - alterId: 0
   cipher: auto
   name: '513,514|瑞典-共享100Mbps | 1x #1'
   network: ws
-  port: 2083
-  server: 1751576541.tencentapp.cn
-  servername: 1751577051.speed.sccapv.cccp.freefly.pp.ua
+  port: 2087
+  server: 1751590341.tencentapp.cn
+  servername: 1751590731.speed.sccapv.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -231,7 +246,7 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1751577051.speed.sccapv.cccp.freefly.pp.ua
+      Host: 1751590731.speed.sccapv.cccp.freefly.pp.ua
     path: /
 - name: 540|瑞典_021805001+L30
   password: telegram-id-privatevpns
@@ -248,6 +263,18 @@ proxies:
   server: 13.60.149.22
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 570|🇸🇪_瑞典
+  network: ws
+  port: 8880
+  server: 195.13.55.177
+  servername: Telegram-channel-WangCai2
+  tls: true
+  type: vless
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: Telegram-channel-WangCai2
+    path: '%2F'
 - name: 571|8|🇸🇪SE-95.164.33.62-233_1@232
   password: 0b1371aa-649d-41dc-9126-338c87936500
   port: 443
@@ -293,7 +320,7 @@ proxies:
   type: trojan
   ws-opts:
     path: /Telegram@proxy
-- name: '715,810,811,812|🇸🇪 瑞典1 #3'
+- name: '715,811,812,813|🇸🇪 瑞典1 #3'
   password: '!!str 1'
   port: 443
   server: starlink-sto.2513142.xyz
@@ -301,7 +328,7 @@ proxies:
   sni: www.cloudflare.com
   type: hysteria2
   udp: true
-- name: '715,810,811,812|🇸🇪 瑞典2 #3'
+- name: '715,811,812,813|🇸🇪 瑞典2 #3'
   password: '!!str 1'
   port: 443
   server: starlink-sto.2513142.xyz
