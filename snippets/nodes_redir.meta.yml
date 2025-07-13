@@ -3664,17 +3664,19 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- name: 444|🇺🇸_US_美国->🇧🇪_BE_比利时
+- name: 444|🇺🇸 _US_美国->🇧🇪_BE_比利时
   network: ws
   port: 80
   server: www.speedtest.net.cdn.cloudflare.net
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: 6b3b071f-096b-4e4c-8d70-0e0b53f27434
   ws-opts:
     headers:
       Host: VAST-RAdIo.zuLAIR.oRG
-    path: '%2F%3Fed%3D2048'
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 519|CF中转_021805008 L0
@@ -4656,7 +4658,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: '549|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
+  name: '549|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz
