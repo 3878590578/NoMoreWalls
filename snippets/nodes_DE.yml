@@ -114,15 +114,15 @@ proxies:
   name: 165|Anycast|德国
   network: ws
   port: 51519
-  server: c6099f87.flzz2l5ezv0vi7v.e7mbqhx.com
+  server: 31ef3472.flzz2l5ezv0vi7v.e7mbqhx.com
   type: vmess
   udp: true
   uuid: 567bbda0-3773-3e89-8a1c-15557ec50800
   ws-headers:
-    Host: c6099f87.flzz2l5ezv0vi7v.e7mbqhx.com
+    Host: 31ef3472.flzz2l5ezv0vi7v.e7mbqhx.com
   ws-opts:
     headers:
-      Host: c6099f87.flzz2l5ezv0vi7v.e7mbqhx.com
+      Host: 31ef3472.flzz2l5ezv0vi7v.e7mbqhx.com
     path: /564dfa20/
   ws-path: /564dfa20/
 - cipher: chacha20-ietf-poly1305
@@ -140,14 +140,14 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 176,568|yandex-842
+  name: 176,568|yandex-1260
   password: 4e8f29bb-5d25-46b3-9add-32f277389e81
   port: 23334
   server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 176,568|yandex-843
+  name: 176,568|yandex-1261
   password: 4e8f29bb-5d25-46b3-9add-32f277389e81
   port: 23115
   server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
@@ -168,42 +168,84 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 269|德国 H1
+  name: 270|德国 H1
+  password: O1I5Hi
+  port: 11037
+  server: ge01.htz.wtf
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 270|德国 H2
+  password: O1I5Hi
+  port: 11037
+  server: ge02.htz.wtf
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 270|德国 H3
+  password: O1I5Hi
+  port: 11037
+  server: ge03.htz.wtf
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 270|德国 H4
+  password: O1I5Hi
+  port: 11037
+  server: ge04.htz.wtf
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 270|德国 H5
+  password: O1I5Hi
+  port: 11037
+  server: ge05.htz.wtf
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 270|德国 H6
+  password: O1I5Hi
+  port: 11037
+  server: ge06.htz.wtf
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: '271|德国 H1 #1'
   password: 26d8vZ
   port: 5185
   server: ge01.htz.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 269|德国 H2
+  name: '271|德国 H2 #1'
   password: 26d8vZ
   port: 5185
   server: ge02.htz.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 269|德国 H3
+  name: '271|德国 H3 #1'
   password: 26d8vZ
   port: 5185
   server: ge03.htz.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 269|德国 H4
+  name: '271|德国 H4 #1'
   password: 26d8vZ
   port: 5185
   server: ge04.htz.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 269|德国 H5
+  name: '271|德国 H5 #1'
   password: 26d8vZ
   port: 5185
   server: ge05.htz.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 269|德国 H6
+  name: '271|德国 H6 #1'
   password: 26d8vZ
   port: 5185
   server: ge06.htz.wtf
@@ -230,7 +272,7 @@ proxies:
   type: vmess
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - cipher: chacha20-ietf-poly1305
-  name: 375,568|yandex-701
+  name: 375,568|yandex-368
   password: 5e6eb5bf-a236-42bd-a7a9-f9284939fb1d
   port: 41039
   server: zz5.fgmcx.top
@@ -482,7 +524,8 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 408,413|🇪DE-80.92.204.106-0364
+  country: 🇪DE
+  name: 408,413,516|🇪DE_55
   password: cp8pRSUAyLhTfVWH
   port: 9064
   server: 80.92.204.106
@@ -570,7 +613,8 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 408|🇩🇪 Germany 30 TG:@nodpai
+  country: 🇩🇪DE
+  name: 408,516|🇩🇪DE_57
   password: ZpNDDKRu9MagNvaf
   port: 9015
   server: 80.92.204.106
@@ -1342,12 +1386,13 @@ proxies:
   server: de2-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: 413,561|🇩🇪DE-167.99.142.150-4882
+- name: 413,516,561|🇩🇪DE-167.99.142.150-4882
   password: 3240d72a-1373-4566-9c6c-68524e4b13fc
   port: 443
   server: es-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 1
   cipher: auto
   name: 413,561|🇩🇪DE-57.129.25.20-4886
@@ -1438,7 +1483,8 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 413,561,568,572|🇩🇪DE_59
+- country: 🇪DE
+  name: 413,516,561,568,572|🇩🇪DE_59
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -1446,12 +1492,14 @@ proxies:
   sni: de2-full.privateip.net
   type: trojan
   udp: true
-- name: 413,561|🇩🇪DE-51.195.101.222-4908
+- country: 🇫🇷FR
+  name: 413,516,561|🇩🇪DE-51.195.101.222-4908
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 413,561|🇩🇪DE-23.158.56.241-5000
@@ -2339,7 +2387,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 472,568|yandex-1011
+  name: 472,568|yandex-503
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 28001
   server: de001.dogsvip.site
@@ -2411,10 +2459,11 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '503|德国-优化 #8'
+  name: 503,568|yandex-106
   network: ws
   port: 16644
   server: planb.mojcn.com
+  tls: false
   type: vmess
   udp: true
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -2427,10 +2476,11 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '503|德国-优化2 #8'
+  name: 503,568|yandex-107
   network: ws
   port: 16644
   server: m.cnmjcn.com
+  tls: false
   type: vmess
   udp: true
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -2445,9 +2495,9 @@ proxies:
   cipher: auto
   name: '507,508|德国纽伦堡1 | 0x #1'
   network: ws
-  port: 2053
-  server: 1753283541.tencentapp.cn
-  servername: 1753283620.speed.nlb.cccp.freefly.pp.ua
+  port: 2087
+  server: 1753294341.tencentapp.cn
+  servername: 1753294660.speed.nlb.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2455,15 +2505,15 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1753283620.speed.nlb.cccp.freefly.pp.ua
+      Host: 1753294660.speed.nlb.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
   name: '507,508|德国纽伦堡2 | 0x #1'
   network: ws
-  port: 8443
-  server: 1753283541.tencentapp.cn
-  servername: 1753283620.speed.nlbbacvb.cccp.freefly.pp.ua
+  port: 2083
+  server: 1753294341.tencentapp.cn
+  servername: 1753294660.speed.nlbbacvb.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2471,15 +2521,15 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1753283620.speed.nlbbacvb.cccp.freefly.pp.ua
+      Host: 1753294660.speed.nlbbacvb.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
   name: '509,510|德国纽伦堡1 | 0x #3'
   network: ws
-  port: 2053
-  server: 1753283541.tencentapp.cn
-  servername: 1753283620.speed.nlb.cccp.freefly.pp.ua
+  port: 2087
+  server: 1753294341.tencentapp.cn
+  servername: 1753294660.speed.nlb.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2487,15 +2537,15 @@ proxies:
   uuid: 32ec475c-b573-4c4e-bee3-918b2060e283
   ws-opts:
     headers:
-      Host: 1753283620.speed.nlb.cccp.freefly.pp.ua
+      Host: 1753294660.speed.nlb.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
   name: '509,510|德国纽伦堡2 | 0x #3'
   network: ws
-  port: 8443
-  server: 1753283541.tencentapp.cn
-  servername: 1753283620.speed.nlbbacvb.cccp.freefly.pp.ua
+  port: 2083
+  server: 1753294341.tencentapp.cn
+  servername: 1753294660.speed.nlbbacvb.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2503,8 +2553,15 @@ proxies:
   uuid: 32ec475c-b573-4c4e-bee3-918b2060e283
   ws-opts:
     headers:
-      Host: 1753283620.speed.nlbbacvb.cccp.freefly.pp.ua
+      Host: 1753294660.speed.nlbbacvb.cccp.freefly.pp.ua
     path: /
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 516|🇪DE_56
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
 - name: '537|德国_Frankfurt am Main #3'
   network: ws
   password: NISHIKUITAN222
@@ -2712,7 +2769,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7afd3b86-e173-3cd5-b79e-12cc32adf7ee
+  uuid: c989f965-8e4b-3269-aa2d-89f91d5f3dcb
   ws-opts:
     headers:
       Host: 16.mamamajd.site
@@ -2727,7 +2784,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7afd3b86-e173-3cd5-b79e-12cc32adf7ee
+  uuid: c989f965-8e4b-3269-aa2d-89f91d5f3dcb
   ws-opts:
     headers:
       Host: 18.mamamajd.site
@@ -2878,7 +2935,7 @@ proxies:
   server: 130.61.77.41
   type: ss
   udp: true
-- name: 691|德国01
+- name: 692|德国01
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10839
   server: ppg-other.05vr9nyqg5.download
@@ -2886,28 +2943,28 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: 695|🇩🇪 德国3
+- name: 696|🇩🇪 德国3
   password: mSIusSz2Ku3YUWxB85cQa
   port: 443
   server: starlink-fra.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: 695|🇩🇪 德国4
+- name: 696|🇩🇪 德国4
   password: mSIusSz2Ku3YUWxB85cQa
   port: 443
   server: starlink-fra2.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: '695,806,807,808|🇩🇪 德国5🔒 #3'
+- name: '696,808,809,810|🇩🇪 德国5🔒 #3'
   password: 升级订阅解锁全部节点
   port: 10025
   server: z-eu.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: '695,806,807,808|🇩🇪 德国6🔒 #3'
+- name: '696,808,809,810|🇩🇪 德国6🔒 #3'
   password: 升级订阅解锁全部节点
   port: 33850
   server: 158.180.36.225
@@ -2915,7 +2972,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '752,753|安徽联通转德国HA[M][倍率:0.9] #1'
+  name: '754,755|安徽联通转德国HA[M][倍率:0.9] #1'
   password: 4EyS3nbpwetIJvPQ
   plugin: obfs
   plugin-opts:
@@ -2925,28 +2982,28 @@ proxies:
   server: ahcu.k1ka52.ccddn4.icu
   type: ss
   udp: true
-- name: '752,753|安徽联通转德国HZ2[Trojan][倍率:0.8] #1'
+- name: '754,755|安徽联通转德国HZ2[Trojan][倍率:0.8] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65160
   server: ahcu.k1ka52.ccddn4.icu
   sni: dl.cscudehet.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: '752,753|安徽联通转德国HZ[Trojan][倍率:0.8] #1'
+- name: '754,755|安徽联通转德国HZ[Trojan][倍率:0.8] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65159
   server: ahcu.k1ka52.ccddn4.icu
   sni: dl.hncudehet.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: '752,753|江苏联通转德国HZ2[Trojan][倍率:0.8] #1'
+- name: '754,755|江苏联通转德国HZ2[Trojan][倍率:0.8] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65215
   server: jscu.b3jg6a.ccddn4.icu
   sni: dl.jscudehet2.cc.tjcct.xyz
   type: trojan
   udp: true
-- name: '752,753|江苏联通转德国HZ[Trojan][倍率:0.8] #1'
+- name: '754,755|江苏联通转德国HZ[Trojan][倍率:0.8] #1'
   password: d8176c20-4671-370a-ad14-f55e1de83233
   port: 65214
   server: jscu.b3jg6a.ccddn4.icu
@@ -2954,7 +3011,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: 762|🇩🇪 Germany 044
+  name: 764|🇩🇪 Germany 044
   password: bd62dac6636078647014
   plugin: obfs
   plugin-opts:
@@ -2965,48 +3022,48 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 785|🇩🇪德国01
+  name: 787|🇩🇪德国01
   password: e46320ba-395e-48f6-87b5-23939d4356bd
   port: 46502
   server: yy3.vyunyunnode.top
   type: ss
   udp: true
-- name: '806|🇩🇪 德国3 #1'
+- name: '808|🇩🇪 德国3 #1'
   password: LCXzMd9rngX_38o4mcgwZ6SF
   port: 443
   server: starlink-fra.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: '806|🇩🇪 德国4 #1'
+- name: '808|🇩🇪 德国4 #1'
   password: LCXzMd9rngX_38o4mcgwZ6SF
   port: 443
   server: starlink-fra2.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: '807|🇩🇪 德国3 #2'
+- name: '809|🇩🇪 德国3 #2'
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-fra.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: '807|🇩🇪 德国4 #2'
+- name: '809|🇩🇪 德国4 #2'
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-fra2.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: '808|🇩🇪 德国3 #3'
+- name: '810|🇩🇪 德国3 #3'
   password: drpkx0fKv4I9AF4j2i2MH2Op
   port: 443
   server: starlink-fra.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: '808|🇩🇪 德国4 #3'
+- name: '810|🇩🇪 德国4 #3'
   password: drpkx0fKv4I9AF4j2i2MH2Op
   port: 443
   server: starlink-fra2.2513142.xyz
@@ -3015,7 +3072,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '820|「🇩🇪」EMO | 冰灵果 x5 #1'
+  name: '822|「🇩🇪」EMO | 冰灵果 x5 #1'
   network: ws
   port: 8443
   server: v37.emoyes.top
