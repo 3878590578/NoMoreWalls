@@ -188,6 +188,22 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 63|?? 韩国 - 1
+  network: ws
+  port: 80
+  server: 967a95.fff57e61-7557-a1db.cfd
+  type: vmess
+  udp: true
+  uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
+  ws-headers:
+    Host: kr01s.fff57e61-7557-a1db.cfd
+  ws-opts:
+    headers:
+      Host: kr01s.fff57e61-7557-a1db.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 63|?? 日本 - 1
   network: ws
   port: 80
@@ -204,7 +220,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 63|?? 日本 - 2
+  name: 63|?? 日本 - 4
   network: ws
   port: 80
   server: 967a95.fff57e61-7557-a1db.cfd
@@ -212,10 +228,10 @@ proxies:
   udp: true
   uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
   ws-headers:
-    Host: jp02s.fff57e61-7557-a1db.cfd
+    Host: jp04s.fff57e61-7557-a1db.cfd
   ws-opts:
     headers:
-      Host: jp02s.fff57e61-7557-a1db.cfd
+      Host: jp04s.fff57e61-7557-a1db.cfd
     path: /
   ws-path: /
 - cipher: aes-256-gcm
@@ -593,10 +609,11 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 90|JP-日本 01
+  name: 90,566|0|yandex-27
   network: ws
-  port: 80
+  port: '80'
   server: e6cjccn36pz4.jkhkgj.xyz
+  tls: false
   type: vmess
   udp: true
   uuid: 5c3cd045-bd33-44c9-b02f-1087ce9ec34c
@@ -609,10 +626,11 @@ proxies:
   ws-path: /market/jp1?ed=512
 - alterId: 0
   cipher: auto
-  name: 90|JP-日本 02
+  name: 90,566|0|yandex-28
   network: ws
-  port: 80
+  port: '80'
   server: gfqeqjc1173p.jkhkgj.xyz
+  tls: false
   type: vmess
   udp: true
   uuid: 5c3cd045-bd33-44c9-b02f-1087ce9ec34c
@@ -657,11 +675,10 @@ proxies:
   ws-path: /market/jp1?ed=512
 - alterId: 0
   cipher: auto
-  name: 92,566|0|yandex-16413
+  name: '92|JP-日本 01 #2'
   network: ws
-  port: '80'
+  port: 80
   server: e6cjccn36pz4.jkhkgj.xyz
-  tls: false
   type: vmess
   udp: true
   uuid: e15ac3ce-6a1a-412a-aa07-4bc52daa5935
@@ -674,11 +691,10 @@ proxies:
   ws-path: /market/jp1?ed=512
 - alterId: 0
   cipher: auto
-  name: 92,566|0|yandex-16414
+  name: '92|JP-日本 02 #2'
   network: ws
-  port: '80'
+  port: 80
   server: gfqeqjc1173p.jkhkgj.xyz
-  tls: false
   type: vmess
   udp: true
   uuid: e15ac3ce-6a1a-412a-aa07-4bc52daa5935
@@ -723,6 +739,16 @@ proxies:
   ws-path: /market/jp1?ed=512
 - alterId: 0
   cipher: auto
+  name: '98,505|日本NO.1 #2'
+  port: 45056
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4de38435-b815-4f28-b364-8c4161cd3005
+- alterId: 0
+  cipher: auto
   name: '98,99,505,506|日本NO.2-1A #1'
   port: 45057
   server: xdd.dashuai.cyou
@@ -730,27 +756,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: b753a9b6-13a0-4ca1-b3aa-95eb60efc0c3
-- alterId: 0
-  cipher: auto
-  name: '98,99,505,506|日本NO.1-1A #1'
-  port: 45056
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b753a9b6-13a0-4ca1-b3aa-95eb60efc0c3
-- alterId: 0
-  cipher: auto
-  name: '99,506|日本NO.2-1B #1'
-  port: 45057
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e1d7b487-6ebd-45db-a534-16c71a4c8f4a
+  uuid: 4de38435-b815-4f28-b364-8c4161cd3005
 - alterId: 0
   cipher: auto
   name: '99,506|日本NO.1-1B #1'
@@ -760,7 +766,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: e1d7b487-6ebd-45db-a534-16c71a4c8f4a
+  uuid: ee99c59c-affd-4f75-83c4-76e53fff34c9
+- alterId: 0
+  cipher: auto
+  name: '99,506|日本NO.2-1B #1'
+  port: 45057
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ee99c59c-affd-4f75-83c4-76e53fff34c9
 - alterId: 0
   cipher: auto
   name: '101,509|JP | 日本 LB-1T #1'
@@ -1697,39 +1713,7 @@ proxies:
   uuid: 81558167-2a4c-4756-9327-111a62db30d5
 - alterId: 0
   cipher: auto
-  name: 209|🇰🇷 韩国1
-  network: ws
-  port: 80
-  server: 967a95.fff57e61-7557-a1db.cfd
-  type: vmess
-  udp: true
-  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
-  ws-headers:
-    Host: kr01s.fff57e61-7557-a1db.cfd
-  ws-opts:
-    headers:
-      Host: kr01s.fff57e61-7557-a1db.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 209|🇯🇵 日本2
-  network: ws
-  port: 80
-  server: 967a95.fff57e61-7557-a1db.cfd
-  type: vmess
-  udp: true
-  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
-  ws-headers:
-    Host: jp02s.fff57e61-7557-a1db.cfd
-  ws-opts:
-    headers:
-      Host: jp02s.fff57e61-7557-a1db.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 209|🇯🇵 日本4
+  name: 210|🇯🇵 日本4
   network: ws
   port: 80
   server: 967a95.fff57e61-7557-a1db.cfd
@@ -1741,6 +1725,38 @@ proxies:
   ws-opts:
     headers:
       Host: jp04s.fff57e61-7557-a1db.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 210|🇯🇵 日本1
+  network: ws
+  port: 80
+  server: 967a95.fff57e61-7557-a1db.cfd
+  type: vmess
+  udp: true
+  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
+  ws-headers:
+    Host: jp01s.fff57e61-7557-a1db.cfd
+  ws-opts:
+    headers:
+      Host: jp01s.fff57e61-7557-a1db.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 210|🇯🇵 日本2
+  network: ws
+  port: 80
+  server: 967a95.fff57e61-7557-a1db.cfd
+  type: vmess
+  udp: true
+  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
+  ws-headers:
+    Host: jp02s.fff57e61-7557-a1db.cfd
+  ws-opts:
+    headers:
+      Host: jp02s.fff57e61-7557-a1db.cfd
     path: /
   ws-path: /
 - name: '220|日本 #19'
@@ -2398,7 +2414,7 @@ proxies:
   server: haa.dashuai.cyou
   type: vmess
   udp: true
-  uuid: 57481d91-51ec-4a89-9e84-27d6183ea348
+  uuid: 85c46177-2f2a-42d5-bfb6-582a7e132847
 - alterId: 0
   cipher: auto
   name: '344|日本NO.2 #1'
@@ -2406,11 +2422,11 @@ proxies:
   server: xdd.dashuai.cyou
   type: vmess
   udp: true
-  uuid: 57481d91-51ec-4a89-9e84-27d6183ea348
+  uuid: 85c46177-2f2a-42d5-bfb6-582a7e132847
 - down: 998
   name: 347|🇯🇵日本1
   password: 6c459a2a-78d8-48a5-8acf-77ab0e5bd0a4
-  port: 30393
+  port: 30386
   ports: 30301-30399
   server: rb.yuanbaojc.site
   skip-cert-verify: false
@@ -2420,7 +2436,7 @@ proxies:
 - down: 998
   name: 347|🇯🇵日本2
   password: 6c459a2a-78d8-48a5-8acf-77ab0e5bd0a4
-  port: 30353
+  port: 30383
   ports: 30301-30399
   server: rb.yuanbaojc.site
   skip-cert-verify: false
@@ -2430,7 +2446,7 @@ proxies:
 - down: 998
   name: 347|🇯🇵日本3
   password: 6c459a2a-78d8-48a5-8acf-77ab0e5bd0a4
-  port: 30315
+  port: 30385
   ports: 30301-30399
   server: rb.yuanbaojc.site
   skip-cert-verify: false
@@ -2440,7 +2456,7 @@ proxies:
 - down: 998
   name: 347|🇯🇵日本4
   password: 6c459a2a-78d8-48a5-8acf-77ab0e5bd0a4
-  port: 30374
+  port: 30318
   ports: 30301-30399
   server: rb.yuanbaojc.site
   skip-cert-verify: false
@@ -2541,7 +2557,7 @@ proxies:
       Host: centos7
     path: /634c5c4f9782
 - auth: 1c473b13-502d-47eb-8cf8-70a38d56c5bd
-  name: '367,498,544,548,560,565|9|日本Hy2-3 #2'
+  name: '367,498,544,548,560,565|9|日本Hy2-3 #1'
   password: 1c473b13-502d-47eb-8cf8-70a38d56c5bd
   port: 443
   server: jp1.interld123456789.com
@@ -2558,7 +2574,7 @@ proxies:
   sni: www.microsoft.com
   tls: false
   type: hysteria2
-- name: '367,544,548,560,565|9|日本2 #2'
+- name: '367,544,548,560,565|9|日本2 #1'
   password: 262100bd-a0c7-4412-a62d-a07d01f11a6a
   port: 443
   server: 45.11.1.62
@@ -2567,7 +2583,7 @@ proxies:
   tls: false
   type: hysteria2
 - auth: 2a9b85bd-27cc-4e3b-b77d-54dbe5bc23af
-  name: '367,498,544,548,560,565|9|日本 #1 #2'
+  name: '367,498,544,548,560,565|9|日本 #1 #1'
   password: 2a9b85bd-27cc-4e3b-b77d-54dbe5bc23af
   port: 443
   server: aws-linkhy17.liangxin1.xyz
@@ -2593,7 +2609,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '367,544,548,560,565|10|🇯🇵 @Filter_breaker #2'
+- name: '367,544,548,560,565|10|🇯🇵 @Filter_breaker #1'
   password: bd3e3f61-242a-42ae-8598-fc0821f29104
   port: 50000
   server: 45.11.1.62
@@ -2615,7 +2631,7 @@ proxies:
   ws-headers:
     Host: 47.74.57.10
   ws-path: /
-- name: '367,544,548,560,565|14|JP_speednode_0167 #2'
+- name: '367,544,548,560,565|14|JP_speednode_0167 #1'
   network: ws
   port: 8880
   server: 103.116.7.3
@@ -2851,7 +2867,7 @@ proxies:
 - down: 80
   name: 371|🇯🇵 JP 日本-Hy2
   password: 5e6eb5bf-a236-42bd-a7a9-f9284939fb1d
-  port: 34027
+  port: 38208
   ports: 30000-40000
   server: akjp1um.mmaccc.top
   skip-cert-verify: true
@@ -4203,7 +4219,7 @@ proxies:
   server: 54.199.83.239
   type: ss
 - cipher: aes-256-gcm
-  name: 409,508| | 6.91Mb
+  name: 409,508|_03 | 2.87Mb
   password: 70a0b8103356
   plugin: v2ray-plugin
   plugin-opts:
@@ -5060,7 +5076,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 497,566|0|yandex-16215
+  name: 497,566|0|yandex-16757
   network: ws
   port: '16617'
   server: m.cnmjin.net
@@ -5077,7 +5093,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 497,566|0|yandex-16216
+  name: 497,566|0|yandex-16758
   network: ws
   port: '16617'
   server: t.cnmjcn.cyou
@@ -5168,9 +5184,9 @@ proxies:
   cipher: auto
   name: '501,502|日本1-CDN | 1x #1'
   network: ws
-  port: 2083
-  server: 1753521141.tencentapp.cn
-  servername: 1753521100.speed.vcanfr.cccp.freefly.pp.ua
+  port: 8443
+  server: 1753532541.tencentapp.cn
+  servername: 1753532500.speed.vcanfr.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -5178,15 +5194,15 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1753521100.speed.vcanfr.cccp.freefly.pp.ua
+      Host: 1753532500.speed.vcanfr.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
   name: '501,502|日本2-CDN | 1x #1'
   network: ws
-  port: 2083
-  server: 1753521141.tencentapp.cn
-  servername: 1753521100.speed.tbneve.cccp.freefly.pp.ua
+  port: 8443
+  server: 1753532541.tencentapp.cn
+  servername: 1753532500.speed.tbneve.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -5194,15 +5210,15 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1753521100.speed.tbneve.cccp.freefly.pp.ua
+      Host: 1753532500.speed.tbneve.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
   name: '501,502|日本3-CDN | 1x #1'
   network: ws
-  port: 2087
-  server: 1753521141.tencentapp.cn
-  servername: 1753521100.speed.whwdcj.cccp.freefly.pp.ua
+  port: 2053
+  server: 1753532541.tencentapp.cn
+  servername: 1753532500.speed.whwdcj.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -5210,15 +5226,15 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1753521100.speed.whwdcj.cccp.freefly.pp.ua
+      Host: 1753532500.speed.whwdcj.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
   name: '501,502|日本4-CDN | 1x #1'
   network: ws
-  port: 8443
-  server: 1753521141.tencentapp.cn
-  servername: 1753521100.speed.swjfgz.cccp.freefly.pp.ua
+  port: 2087
+  server: 1753532541.tencentapp.cn
+  servername: 1753532500.speed.swjfgz.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -5226,15 +5242,15 @@ proxies:
   uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 1753521100.speed.swjfgz.cccp.freefly.pp.ua
+      Host: 1753532500.speed.swjfgz.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
   name: '503,504|日本1-CDN | 1x #3'
   network: ws
-  port: 2083
-  server: 1753521141.tencentapp.cn
-  servername: 1753521100.speed.vcanfr.cccp.freefly.pp.ua
+  port: 8443
+  server: 1753532541.tencentapp.cn
+  servername: 1753532500.speed.vcanfr.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -5242,15 +5258,15 @@ proxies:
   uuid: 32ec475c-b573-4c4e-bee3-918b2060e283
   ws-opts:
     headers:
-      Host: 1753521100.speed.vcanfr.cccp.freefly.pp.ua
+      Host: 1753532500.speed.vcanfr.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
   name: '503,504|日本2-CDN | 1x #3'
   network: ws
-  port: 2083
-  server: 1753521141.tencentapp.cn
-  servername: 1753521100.speed.tbneve.cccp.freefly.pp.ua
+  port: 8443
+  server: 1753532541.tencentapp.cn
+  servername: 1753532500.speed.tbneve.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -5258,15 +5274,15 @@ proxies:
   uuid: 32ec475c-b573-4c4e-bee3-918b2060e283
   ws-opts:
     headers:
-      Host: 1753521100.speed.tbneve.cccp.freefly.pp.ua
+      Host: 1753532500.speed.tbneve.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
   name: '503,504|日本3-CDN | 1x #3'
   network: ws
-  port: 2087
-  server: 1753521141.tencentapp.cn
-  servername: 1753521100.speed.whwdcj.cccp.freefly.pp.ua
+  port: 2053
+  server: 1753532541.tencentapp.cn
+  servername: 1753532500.speed.whwdcj.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -5274,15 +5290,15 @@ proxies:
   uuid: 32ec475c-b573-4c4e-bee3-918b2060e283
   ws-opts:
     headers:
-      Host: 1753521100.speed.whwdcj.cccp.freefly.pp.ua
+      Host: 1753532500.speed.whwdcj.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
   name: '503,504|日本4-CDN | 1x #3'
   network: ws
-  port: 8443
-  server: 1753521141.tencentapp.cn
-  servername: 1753521100.speed.swjfgz.cccp.freefly.pp.ua
+  port: 2087
+  server: 1753532541.tencentapp.cn
+  servername: 1753532500.speed.swjfgz.cccp.freefly.pp.ua
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -5290,8 +5306,41 @@ proxies:
   uuid: 32ec475c-b573-4c4e-bee3-918b2060e283
   ws-opts:
     headers:
-      Host: 1753521100.speed.swjfgz.cccp.freefly.pp.ua
+      Host: 1753532500.speed.swjfgz.cccp.freefly.pp.ua
     path: /
+- cipher: aes-128-gcm
+  country: 🇵JP
+  name: 508|JP_45 |19.36Mb
+  password: '!!str 10086'
+  port: 10087
+  server: 153.121.51.214
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇯🇵JP
+  name: 508|🇯🇵JP_46 |12.90Mb
+  password: '!!str 10086'
+  port: 10087
+  server: 160.16.123.124
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇯🇵JP
+  name: 508|🇯🇵JP_47 |16.07Mb
+  password: '!!str 10086'
+  port: 10087
+  server: 153.121.43.183
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 508|🇯🇵JP_48 | 9.67Mb
+  network: tcp
+  port: 59361
+  server: 164.70.68.128
+  skip-cert-verify: true
+  type: vmess
+  uuid: d4e2f2e2-bd2d-423e-89fb-cfcf435e7963
 - name: '515|日本 #42'
   password: 56a98bfe-90f9-439b-9408-b8e5cf5dea2b
   port: 26423
@@ -6242,7 +6291,7 @@ proxies:
     path: freecodes%E8%98%87%E5%B0%8F%E6%AA%B8%7C%E8%8F%AF%E6%9D%B1%E9%9B%BB%E8%A8%8A%7C%E8%A7%A3%E9%8E%96Netflix
 - alterId: 0
   cipher: auto
-  name: '565|13|日本v2|@ripaojiedian #2'
+  name: '565|13|日本v2|@ripaojiedian #1'
   network: kcp
   port: '56428'
   server: 8.211.136.249
@@ -6387,7 +6436,7 @@ proxies:
 - down: 499
   name: 595|🇯🇵日本东京
   password: fa85eb2d-2d8d-47e2-ae53-55141ba5207d
-  port: 39933
+  port: 39916
   ports: 39901-39999
   server: jp.1mao.me
   skip-cert-verify: false
@@ -6397,7 +6446,7 @@ proxies:
 - down: 499
   name: 595|🇯🇵日本
   password: fa85eb2d-2d8d-47e2-ae53-55141ba5207d
-  port: 39980
+  port: 39929
   ports: 39901-39999
   server: jp.1mao.me
   skip-cert-verify: false
@@ -6861,7 +6910,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.nintendo.net:193531
+    host: db5fe62.dl.nvidia.com:193531
     mode: tls
   port: 2377
   server: db5fe62.j1.glados-config.net
@@ -6872,7 +6921,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.epicgames.com:193531
+    host: db5fe62.dl.microsoft.com:193531
     mode: tls
   port: 2377
   server: db5fe62.j2.glados-config.net
@@ -6883,7 +6932,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.cl:193531
+    host: db5fe62.dl.microsoft.it:193531
     mode: tls
   port: 2377
   server: db5fe62.j3.glados-config.net
@@ -6894,7 +6943,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 9f6b1e7.dl.nintendo.es:141612
+    host: 9f6b1e7.dl.nintendo.eu:141612
     mode: tls
   port: 2377
   server: 9f6b1e7.j1.glados-config.net
@@ -6905,7 +6954,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 9f6b1e7.dl.microsoft.com:141612
+    host: 9f6b1e7.dl.nintendo.it:141612
     mode: tls
   port: 2377
   server: 9f6b1e7.j2.glados-config.net
@@ -6916,7 +6965,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 9f6b1e7.dl.microsoft.fi:141612
+    host: 9f6b1e7.dl.nintendo.eu:141612
     mode: tls
   port: 2377
   server: 9f6b1e7.j3.glados-config.net
@@ -6927,7 +6976,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 407738b.dl.nintendo.be:154938
+    host: 407738b.dl.microsoft.es:154938
     mode: tls
   port: 2377
   server: 407738b.j1.glados-config.net
@@ -6938,7 +6987,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 407738b.dl.microsoft.cat:154938
+    host: 407738b.dl.microsoft.hu:154938
     mode: tls
   port: 2377
   server: 407738b.j2.glados-config.net
@@ -6949,7 +6998,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 407738b.dl.nintendo.net:154938
+    host: 407738b.dl.microsoft.lu:154938
     mode: tls
   port: 2377
   server: 407738b.j3.glados-config.net
@@ -6960,7 +7009,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.microsoft.eu:154942
+    host: 5dfbdfc.dl.nvidia.com:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.j1.glados-config.net
@@ -6971,7 +7020,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.microsoft.eu:154942
+    host: 5dfbdfc.dl.nintendo.net:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.j2.glados-config.net
@@ -6982,7 +7031,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.microsoft.ee:154942
+    host: 5dfbdfc.dl.nintendo.es:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.j3.glados-config.net
@@ -6993,7 +7042,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 4aa81ac.dl.xboxlive.com:154946
+    host: 4aa81ac.dl.microsoft.lu:154946
     mode: tls
   port: 2377
   server: 4aa81ac.j1.glados-config.net
@@ -7004,7 +7053,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 4aa81ac.dl.microsoft.de:154946
+    host: 4aa81ac.dl.microsoft.cat:154946
     mode: tls
   port: 2377
   server: 4aa81ac.j2.glados-config.net
@@ -7015,7 +7064,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 4aa81ac.dl.nintendo.net:154946
+    host: 4aa81ac.dl.microsoft.com:154946
     mode: tls
   port: 2377
   server: 4aa81ac.j3.glados-config.net
@@ -7026,7 +7075,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.hu:154948
+    host: feb7fa9.dl.microsoft.is:154948
     mode: tls
   port: 2377
   server: feb7fa9.j1.glados-config.net
@@ -7037,7 +7086,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.ch:154948
+    host: feb7fa9.dl.microsoft.io:154948
     mode: tls
   port: 2377
   server: feb7fa9.j2.glados-config.net
@@ -7048,7 +7097,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.it:154948
+    host: feb7fa9.dl.microsoft.cl:154948
     mode: tls
   port: 2377
   server: feb7fa9.j3.glados-config.net
@@ -7059,7 +7108,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.nvidia.com:185672
+    host: 10805ea.dl.microsoft.lt:185672
     mode: tls
   port: 2377
   server: 10805ea.j1.glados-config.net
@@ -7070,7 +7119,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.fastly.net:185672
+    host: 10805ea.dl.microsoft.is:185672
     mode: tls
   port: 2377
   server: 10805ea.j2.glados-config.net
@@ -7081,7 +7130,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.microsoft.ge:185672
+    host: 10805ea.dl.nintendo.es:185672
     mode: tls
   port: 2377
   server: 10805ea.j3.glados-config.net
