@@ -46,7 +46,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 158|iplc|广新01|1.5x
+  name: 157|iplc|广新01|1.5x
   port: 59931
   server: f926bb60.flzxj2oa5sl0j7n.e7mbqhx.com
   type: vmess
@@ -54,7 +54,7 @@ proxies:
   uuid: 567bbda0-3773-3e89-8a1c-15557ec50800
 - alterId: 0
   cipher: auto
-  name: 158|iplc|广新02|1.5x
+  name: 157|iplc|广新02|1.5x
   port: 59932
   server: f926bb60.flzxj2oa5sl0j7n.e7mbqhx.com
   type: vmess
@@ -153,10 +153,10 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 389,661|🇦🇷 专线|01倍率5
+  name: 389|🇨🇳 CN 030 |  18.0MB/s
   port: 26122
   server: ppy-boardv2.02ijp4uos1.download
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
@@ -307,7 +307,7 @@ proxies:
       Host: v5.heduian.link
     path: /
 - cipher: aes-128-gcm
-  name: 402|🇨CN-183.236.51.11-0517
+  name: 402,469|🇺🇸 _CN_中国->🇺🇸_US_美国_0@16
   password: 01721e43-5389-4f97-b21c-900abb2bda9e
   port: 12017
   server: awes35lesl.blhao0o.dpdns.org
@@ -319,6 +319,20 @@ proxies:
   server: cn01.efan8867801.xyz
   type: ss
   udp: true
+- name: 402,563,574|11|🇸🇬 新加坡|@ripaojiedian
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1601
+  server: 36.156.102.125
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: 402,563,574|11|🇸🇬 新加坡2|@ripaojiedian
+  password: 253bc477d4e43c209f2d427272968280
+  port: 697
+  server: 36.156.102.125
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - cipher: rc4-md5
   name: 402,550,551,576|🇳CN-113.99.143.13-291
   password: efanccyun
@@ -366,6 +380,20 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
+  name: 402,574|🇨🇳 江苏省 移动
+  network: ws
+  port: '30804'
+  server: v4.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
   name: '402,574,577|_中国 #2'
   network: ws
   port: '30830'
@@ -395,12 +423,12 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '402,563,566,574|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  name: '402,469,563,566,574|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
   network: ws
   port: '30833'
   server: v33.heduian.link
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -907,25 +935,6 @@ proxies:
   tls: false
   type: vmess
   uuid: fa4b6f8f-1264-45ec-9651-6160c12cabc5
-- client-fingerprint: chrome
-  name: '402,550,551,553,557,566,569,571,572,575,576,577|🇰🇷 韩国2|@ripaojiedian #6'
-  network: tcp
-  password: 005fddef-e432-482f-a98c-2715563a2b25
-  port: 36009
-  server: 139.199.194.86
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: '402,550,551,553,557,566,569,571,572,575,576,577|🇸🇬 新加坡2|@ripaojiedian #6'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 406
-  server: 36.156.102.125
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
 - name: 402,563,574|二爷翻墙_5
   network: tcp
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
@@ -1593,7 +1602,7 @@ proxies:
   server: awes35lesl.blhao0o.dpdns.org
   type: ss
 - cipher: aes-128-gcm
-  name: 402,661|🇺🇸 美国 135
+  name: 402,516|🇺🇸 美国 135
   password: 01721e43-5389-4f97-b21c-900abb2bda9e
   port: 12028
   server: awes35lesl.blhao0o.dpdns.org
@@ -1702,7 +1711,7 @@ proxies:
       Host: v39.heduian.link
     path: /oooo
 - cipher: aes-256-cfb
-  name: '402,522,527|_01 #1'
+  name: 402|🇨CN-222.186.20.102-5235
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -2162,10 +2171,10 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  country: 🇨🇳 CN
+  country: 🇳 CN
   h2-opts: {}
   http-opts: {}
-  name: '522,524,574|Github搜索TrojanLinks #20'
+  name: '524,574|Github搜索TrojanLinks #20'
   network: tcp
   port: '59003'
   server: 183.236.51.36
@@ -2176,10 +2185,10 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  country: 🇳 CN
+  country: 🇨🇳 CN
   h2-opts: {}
   http-opts: {}
-  name: '522,524,574|Github搜索TrojanLinks #9'
+  name: '524,574|Github搜索TrojanLinks #9'
   network: tcp
   port: '50007'
   server: 112.132.215.34
@@ -2190,49 +2199,26 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  country: 🇨🇳CN
+  country: 🇨🇳 CN
   h2-opts: {}
   http-opts: {}
-  name: '522,574|Github搜索TrojanLinks #8'
+  name: '524,574|Github搜索TrojanLinks #8'
   network: tcp
   port: '50002'
   server: 112.132.215.12
+  servername: ury-unit-c030ehei8.poget71138.workers.dev
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: '522,574|Github搜索TrojanLinks #34'
-  network: tcp
-  port: '50002'
-  server: 47.116.166.178
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: 522|🇨🇳CN_24 | 6.11Mb
-  network: tcp
-  port: 50002
-  server: 120.210.205.59
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /ivideos.sbs/linkws
 - alterId: 64
   cipher: auto
   country: 🇨🇳 CN
   delay: 192
   h2-opts: {}
   http-opts: {}
-  name: '522,524,559,574|Github搜索TrojanLinks #33'
+  name: '524,559,574|Github搜索TrojanLinks #33'
   network: tcp
   port: '50002'
   server: 47.104.186.133
@@ -2243,35 +2229,14 @@ proxies:
   ws-path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 64
   cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: '522,574|Github搜索TrojanLinks #35'
+  name: '541|中国_广州市 #1'
   network: tcp
-  port: '50002'
-  server: 47.92.152.169
-  skip-cert-verify: true
+  port: '54104'
+  server: 183.236.51.23
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  country: 🇨🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: 524,574|二爷翻墙_29
-  network: ws
-  port: 30807
-  server: v7.heduian.link
-  servername: ocbc.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    HOST: ocbc.com
-  ws-opts: {}
-  ws-path: /oooo
 - name: 562|🇨🇳CN-183.56.247.206-000
   password: f441a2b0-31ef-490d-bd91-9b1cd960f4ce
   port: 29482
@@ -2660,6 +2625,14 @@ proxies:
     headers:
       Host: v8.heduian.link
     path: /
+- name: 563,574|12|美国4|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 472
+  server: 36.156.102.125
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 573|2|🇸24 |  4.8MB/s
@@ -3082,7 +3055,7 @@ proxies:
     path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
 - alterId: 0
   cipher: auto
-  name: '574,798|中国【机场推荐：https://a0a.xyz/】48 #1'
+  name: 574,798|中国【机场推荐：https://a0a.xyz/】57
   network: tcp
   port: '20788'
   server: 45.121.48.174
@@ -3161,7 +3134,7 @@ proxies:
     path: /564dfa20/
 - alterId: 0
   cipher: auto
-  name: 574|中国_080804064
+  name: 574,798|中国【机场推荐：https://a0a.xyz/】114
   network: tcp
   port: '15105'
   server: hkt-detour-05.grabgo.pro
@@ -3490,10 +3463,3 @@ proxies:
   ws-headers:
     Host: v30.heduian.link
   ws-path: /oooo
-- cipher: aes-256-gcm
-  name: 661|🇨🇳  21
-  password: 308fa140-3e75-417c-b809-63f8ab4bb045
-  port: 50796
-  server: i2plcwjnhrl6.gym0boy.com
-  type: ss
-  udp: true
