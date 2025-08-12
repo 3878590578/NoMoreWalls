@@ -1,4 +1,40 @@
 proxies:
+- name: 91|CZ_1|5.7MB/s|GPT⁺|NF|D+|0%
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.42.113
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
+- name: 91|NL_11|4.1MB/s|GPT⁺|NF|D+
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 172.66.206.205
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
+- alpn:
+  - h3
+  name: 91|NL_14|5.2MB/s|GPT
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 172.67.180.227
+  skip-cert-verify: true
+  sni: mashdt.pages.dev
+  type: trojan
+  ws-opts:
+    path: '%2Ftr%3Fed%3D2560'
 - name: 777|澳大利亚1|流媒体|GPT
   password: b9b452d5-d041-47d3-9902-f2a95266cabd
   port: 19025
