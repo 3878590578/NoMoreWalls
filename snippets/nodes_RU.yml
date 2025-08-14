@@ -48,42 +48,42 @@ proxies:
     path: /564dfa20/
   ws-path: /564dfa20/
 - cipher: rc4-md5
-  name: 230|俄罗斯 01
+  name: 232|俄罗斯 01
   password: 26d8vZ
   port: 5185
   server: ru01.fjk.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 230|俄罗斯 02
+  name: 232|俄罗斯 02
   password: 26d8vZ
   port: 5185
   server: ru02.fjk.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 230|俄罗斯 03
+  name: 232|俄罗斯 03
   password: 26d8vZ
   port: 5185
   server: ru03.fjk.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 230|俄罗斯 04
+  name: 232|俄罗斯 04
   password: 26d8vZ
   port: 5185
   server: ru04.fjk.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 230|俄罗斯 05
+  name: 232|俄罗斯 05
   password: 26d8vZ
   port: 5185
   server: ru05.fjk.wtf
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 230|俄罗斯 06
+  name: 232|俄罗斯 06
   password: 26d8vZ
   port: 5185
   server: ru06.fjk.wtf
@@ -417,13 +417,14 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 366,486|🇬🇧 GB_75
+  name: 366,486|🇧 GB_86
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 366|🇺RU-45.139.24.24-5042
+  country: 🇺 RU
+  name: 366,486| RU_180
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
@@ -475,56 +476,24 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 478,554,625|🇷🇺 罗斯联 26
+  name: '478,540|🇷🇺 俄罗斯联邦 26 #1'
   network: ws
-  port: 22092
+  port: '22092'
   server: 45.136.245.177
   tls: false
   type: vmess
   udp: true
-  uuid: f3c21af1-242e-418e-8cbe-a87d16ac4e71
+  uuid: 394ee3b2-598c-4bc4-8cf2-9a55647954aa
   ws-opts:
+    headers:
+      Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: '478,554,625|🇷🇺 俄罗斯联邦 22 #1'
-  network: ws
-  port: 22092
-  server: 45.136.245.177
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 77a2a0cb-5291-4e19-be89-7fab504cb74d
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺 RU
-  name: 486|🇷🇺 RU_165
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 2.59.163.104
-  type: ss
 - alterId: 0
   cipher: auto
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 486,536|🇷🇺 RU_161
-  network: tcp
-  port: 45215
-  server: fa.fxlcn.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇷🇺 RU
-  h2-opts: {}
-  http-opts: {}
-  name: 486,536|🇷🇺 RU_160
+  name: 486,536|🇷🇺 RU_168
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -534,11 +503,33 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇷🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 486,536|🇷🇺 RU_167
+  network: tcp
+  port: 45215
+  server: fa.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - cipher: aes-256-cfb
   country: 🇺RU
-  name: 486|🇺RU_169
-  password: KnJGad3FqTvjqbaX
-  port: 9014
+  name: 486|🇺RU_187
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 486|🇺RU_188
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
   server: 45.89.52.66
   type: ss
 - name: '502|俄罗斯联邦_莫斯科 #2'
@@ -876,32 +867,6 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: '512,513|RU_speednode_0158 #1'
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 77.232.140.114
-  skip-cert-verify: false
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: '512,513|RU_speednode_0159 #1'
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 46.254.93.251
-  skip-cert-verify: false
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
 - name: '512,513|RU_speednode_0160 #1'
   network: ws
   password: Aimer
@@ -1093,7 +1058,7 @@ proxies:
   server: 92.243.74.180
   sni: epgb.aimercc.dpdns.org
   type: trojan
-- name: 536,540|🇳🇱 荷兰 098
+- name: '536,540|🇳🇱 荷兰 098 #1'
   network: tcp
   password: Aimer
   port: 8443
@@ -1108,7 +1073,7 @@ proxies:
   server: 92.243.75.49
   sni: epgb.aimercc.dpdns.org
   type: trojan
-- name: 536|🇷🇺 RU_162
+- name: 536|🇷🇺 RU_169
   password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
   port: 1066
   server: 194.104.147.74
@@ -1127,31 +1092,74 @@ proxies:
     path: '%2F'
 - alterId: 0
   cipher: auto
-  name: 536|俄罗斯联邦_081318251 L0
+  name: 536|俄罗斯联邦_081404259 L0
   network: ws
   port: '23157'
   server: 45.136.245.177
   servername: ''
   tls: false
   type: vmess
-  uuid: 0c7d0723-1114-4d0e-b743-55af32b05a8d
+  uuid: 16b3c746-5abc-43ce-a158-ac559ee7a8e3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 536|俄罗斯联邦_081404257 L0
+  network: ws
+  port: '23157'
+  server: 45.136.245.177
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 71a58ac8-3a3d-42fc-9831-19558f30da68
   ws-opts:
     headers:
       Host: ''
     path: ''
 - alterId: 0
   cipher: auto
-  name: '540|🇷🇺 俄罗斯联邦 26 #1'
+  name: 536|俄罗斯联邦_081404244 L0
   network: ws
-  port: '22092'
+  port: '23157'
   server: 45.136.245.177
+  servername: ''
   tls: false
   type: vmess
-  uuid: 394ee3b2-598c-4bc4-8cf2-9a55647954aa
+  uuid: a1f369ab-9b0f-4521-97ee-fa1b9a7222b7
   ws-opts:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 536|俄罗斯联邦_081404262 L0
+  network: ws
+  port: '23157'
+  server: 45.136.245.177
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b3d19f8d-4b04-4f7c-8add-51f27861a172
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 536|俄罗斯联邦_081404251
+  network: ws
+  port: '54298'
+  server: aeryrixsp630ww1.lovebaipiao.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 391c7767-185a-4064-b2bd-857447b561f5
+  ws-opts:
+    headers:
+      Host: www.bytedance.com
+    path: /zh
 - cipher: aes-128-gcm
   name: 554,625|🇨🇱 CL GRUPO 01
   password: Sj10bnYDe7w6V29E
