@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '26,176|🇯🇵 日本1 #1'
+  name: '26,176|🇭🇰 香港4 #2'
   network: ws
   port: 80
   server: 2c8814.9fde584d.cfd
@@ -9,10 +9,10 @@ proxies:
   udp: true
   uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
   ws-headers:
-    Host: jp01s.9fde584d.cfd
+    Host: hk04s.9fde584d.cfd
   ws-opts:
     headers:
-      Host: jp01s.9fde584d.cfd
+      Host: hk04s.9fde584d.cfd
     path: /
   ws-path: /
 - alterId: 0
@@ -1179,11 +1179,11 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 206|🇯🇵 JP
+- name: 206|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - alterId: 0
@@ -1409,7 +1409,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '266,311,503,507,516,519,522,524|13|日本v2|@ripaojiedian #1'
+  name: '266,311,503,507,516,519,522,524|13|日本v2|@ripaojiedian #2'
   network: kcp
   port: '37257'
   server: 47.74.57.10
@@ -1450,7 +1450,7 @@ proxies:
   server: haa.dashuai.cyou
   type: vmess
   udp: true
-  uuid: 44cc0267-69bf-48d4-a2e9-e7b0481f0237
+  uuid: ead6e44d-bcee-4377-8995-f2ad7e9f08f4
 - alterId: 0
   cipher: auto
   name: '288|日本NO.2 #1'
@@ -1458,7 +1458,7 @@ proxies:
   server: xdd.dashuai.cyou
   type: vmess
   udp: true
-  uuid: 44cc0267-69bf-48d4-a2e9-e7b0481f0237
+  uuid: ead6e44d-bcee-4377-8995-f2ad7e9f08f4
 - cipher: chacha20-ietf-poly1305
   name: 294|🇯🇵   Japan 15
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
@@ -1503,10 +1503,12 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 301|🇯🇵日本1
+  name: 301,524|美国_0816041762 L0
   network: ws
-  port: 2086
+  port: '2086'
   server: 141.193.213.73
+  servername: ''
+  tls: false
   type: vmess
   udp: true
   uuid: 2abba4af-d203-4cb2-a7d5-a0cb05d9aca2
@@ -1519,10 +1521,12 @@ proxies:
   ws-path: /5atdxvyfjn60ggx/jp1
 - alterId: 0
   cipher: auto
-  name: 301|🇯🇵日本2
+  name: 301,524|美国_0816041766 L0
   network: ws
-  port: 2086
+  port: '2086'
   server: 141.193.213.223
+  servername: ''
+  tls: false
   type: vmess
   udp: true
   uuid: 2abba4af-d203-4cb2-a7d5-a0cb05d9aca2
@@ -1535,10 +1539,12 @@ proxies:
   ws-path: /5atdxvyfjn60ggx/jp1
 - alterId: 0
   cipher: auto
-  name: 301|🇯🇵日本3
+  name: 301,524|未知_0816041662
   network: ws
-  port: 2086
+  port: '2086'
   server: cloudflare.182682.xyz
+  servername: ''
+  tls: false
   type: vmess
   udp: true
   uuid: 2abba4af-d203-4cb2-a7d5-a0cb05d9aca2
@@ -2130,7 +2136,7 @@ proxies:
     headers:
       Host: 138.2.52.176
     path: /
-- name: 353|🇵JP-47.79.85.78-1089
+- name: 353,524|US美国(mibei77.com 米贝节点分享)
   network: ws
   password: Aimer
   port: 443
@@ -3122,20 +3128,13 @@ proxies:
       Host: ba0f678896ea70308a3ea611bb985d7b.mobgslb.tbcache.com
     path: /
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 465|>>@shadowproxy66::JP
-  network: ws
-  port: '30001'
-  server: 107.148.6.67
-  servername: www.53865734.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.53865734.xyz
-    path: /path/170733132233
+- cipher: chacha20-ietf-poly1305
+  name: 466|🇯🇵 日本 02
+  password: 11a3aa98-417b-4b6e-83c3-b178fb3c21ab
+  port: 31923
+  server: 120.233.44.206
+  type: ss
+  udp: true
 - name: '489|日本_Osaka #1'
   network: ws
   password: NISHIKUITAN222
@@ -3404,6 +3403,18 @@ proxies:
   type: vmess
   udp: true
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: '521|🇯🇵 日本|@ripaojiedian #4'
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202508150964186-C3Laaffn48.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 523|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -3565,7 +3576,7 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- name: 524|日本_081518257
+- name: 524|日本_081604257
   password: 0xC6Mws4Dg
   port: 1935
   server: x2-japan-amazon-v2.devefun.org
@@ -3609,15 +3620,13 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '524,528,542,607,741|节点日期：08-13 #1'
+  name: '524,528,741|节点日期：08-13 #1'
   network: ws
   port: '443'
   server: 172.67.170.147
   servername: ''
-  skip-cert-verify: false
   tls: true
   type: vmess
-  udp: true
   uuid: ffcf7ec1-3e09-4821-b3d9-b426a107b73b
   ws-opts:
     headers:
@@ -3637,9 +3646,19 @@ proxies:
     headers:
       Host: v6.583181.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: 524|日本_081604255
+  network: tcp
+  port: '21005'
+  server: tls.06.node-for-bigairport.win
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
 - alterId: 2
   cipher: auto
-  name: 524|日本_081518172
+  name: 524|日本_081604254
   network: ws
   port: '10001'
   server: b.jp.mbsurfnode3.top
@@ -3737,7 +3756,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 542,607|🇯🇵 106 日本
+  name: 542,607|🇯🇵 日本 27
+  port: 21005
+  server: tls.06.node-for-bigairport.win
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+- alterId: 0
+  cipher: auto
+  name: '542,607|🇯🇵 106 日本 #1'
   port: 50006
   server: 120.241.226.42
   type: vmess
@@ -3822,13 +3851,6 @@ proxies:
   server: cm2.akaochangnode.xyz
   type: ss
   udp: true
-- name: 611|🇯🇵 日本 001
-  password: Aimer
-  port: 2083
-  server: 103.116.7.67
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
 - name: '651|日本01 #4'
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10811
@@ -4069,7 +4091,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '657,755,756,757|🇳🇬 尼日利亚2🔒 #3'
+- name: '657,756,757,758|🇳🇬 尼日利亚2🔒 #3'
   password: 升级订阅解锁全部节点
   port: 10022
   server: z-eu2.2513142.xyz
@@ -4082,7 +4104,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.nintendo.be:57468
+    host: 26af988.dl.microsoft.jp:57468
     mode: tls
   port: 2377
   server: 26af988.j1.glados-config.net
@@ -4092,7 +4114,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.microsoft.md:57468
+    host: 26af988.dl.nvidia.com:57468
     mode: tls
   port: 2377
   server: 26af988.j2.glados-config.net
@@ -4102,7 +4124,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.nintendo.es:57468
+    host: 26af988.dl.microsoft.es:57468
     mode: tls
   port: 2377
   server: 26af988.j3.glados-config.net
@@ -4112,7 +4134,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.com:193531
+    host: db5fe62.dl.blizzard.com:193531
     mode: tls
   port: 2377
   server: db5fe62.j1.glados-config.net
@@ -4123,7 +4145,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.nintendo.net:193531
+    host: db5fe62.dl.microsoft.es:193531
     mode: tls
   port: 2377
   server: db5fe62.j2.glados-config.net
@@ -4134,7 +4156,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.hu:193531
+    host: db5fe62.dl.microsoft.ee:193531
     mode: tls
   port: 2377
   server: db5fe62.j3.glados-config.net
@@ -4145,7 +4167,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.microsoft.is:154942
+    host: 5dfbdfc.dl.microsoft.lt:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.j1.glados-config.net
@@ -4156,7 +4178,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.microsoft.cz:154942
+    host: 5dfbdfc.dl.microsoft.fi:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.j2.glados-config.net
@@ -4167,7 +4189,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.blizzard.com:154942
+    host: 5dfbdfc.dl.microsoft.net:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.j3.glados-config.net
@@ -4178,7 +4200,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.net:154948
+    host: feb7fa9.dl.nintendo.de:154948
     mode: tls
   port: 2377
   server: feb7fa9.j1.glados-config.net
@@ -4189,7 +4211,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.lv:154948
+    host: feb7fa9.dl.nintendo.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.j2.glados-config.net
@@ -4200,7 +4222,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.com:154948
+    host: feb7fa9.dl.nintendo.es:154948
     mode: tls
   port: 2377
   server: feb7fa9.j3.glados-config.net
@@ -4211,7 +4233,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.nintendo.net:185672
+    host: 10805ea.dl.microsoft.fi:185672
     mode: tls
   port: 2377
   server: 10805ea.j1.glados-config.net
@@ -4222,7 +4244,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.microsoft.cl:185672
+    host: 10805ea.dl.nintendo.es:185672
     mode: tls
   port: 2377
   server: 10805ea.j2.glados-config.net
@@ -4233,7 +4255,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.microsoft.de:185672
+    host: 10805ea.dl.microsoft.cl:185672
     mode: tls
   port: 2377
   server: 10805ea.j3.glados-config.net
@@ -4550,7 +4572,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 743|日本普通线路1
+  name: 744|日本普通线路1
   port: 13095
   server: zz.xiaoqingwa.xyz
   type: vmess
@@ -4558,7 +4580,7 @@ proxies:
   uuid: 09740703-d597-3396-9502-45bb6e293342
 - alterId: 0
   cipher: auto
-  name: 743|日本普通线路2
+  name: 744|日本普通线路2
   port: 13096
   server: zz.xiaoqingwa.xyz
   type: vmess
@@ -4566,17 +4588,7 @@ proxies:
   uuid: 09740703-d597-3396-9502-45bb6e293342
 - alterId: 0
   cipher: auto
-  name: '745|日本普通线路2 #1'
-  network: tcp
-  port: '13096'
-  server: zz.xiaoqingwa.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 09740703-d597-3396-9502-45bb6e293342
-- alterId: 0
-  cipher: auto
-  name: '745|日本普通线路1 #1'
+  name: '746|日本普通线路1 #1'
   network: tcp
   port: '13095'
   server: zz.xiaoqingwa.xyz
@@ -4584,7 +4596,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 09740703-d597-3396-9502-45bb6e293342
-- name: '755|🇯🇵 日本7 #2'
+- alterId: 0
+  cipher: auto
+  name: '746|日本普通线路2 #1'
+  network: tcp
+  port: '13096'
+  server: zz.xiaoqingwa.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 09740703-d597-3396-9502-45bb6e293342
+- name: '756|🇯🇵 日本7 #2'
   password: LCXzMd9rngX_38o4mcgwZ6SF
   port: 443
   server: starlink-tko.2513142.xyz
@@ -4592,7 +4614,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '755|🇯🇵 日本8 #1'
+- name: '756|🇯🇵 日本8 #1'
   password: LCXzMd9rngX_38o4mcgwZ6SF
   port: 443
   server: starlink-tko2.2513142.xyz
@@ -4600,7 +4622,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '755|🇯🇵 日本9 #1'
+- name: '756|🇯🇵 日本9 #1'
   password: LCXzMd9rngX_38o4mcgwZ6SF
   port: 443
   server: starlink-tko3.2513142.xyz
@@ -4608,7 +4630,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '755|🇯🇵 日本10 #1'
+- name: '756|🇯🇵 日本10 #1'
   password: LCXzMd9rngX_38o4mcgwZ6SF
   port: 443
   server: starlink-tko4.2513142.xyz
@@ -4616,7 +4638,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '755|🇯🇵 日本11 #1'
+- name: '756|🇯🇵 日本11 #1'
   password: LCXzMd9rngX_38o4mcgwZ6SF
   port: 443
   server: starlink-tko5.2513142.xyz
@@ -4624,7 +4646,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '755|🇯🇵 日本12 #1'
+- name: '756|🇯🇵 日本12 #1'
   password: LCXzMd9rngX_38o4mcgwZ6SF
   port: 443
   server: starlink-tko6.2513142.xyz
@@ -4632,7 +4654,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '756|🇯🇵 日本7 #3'
+- name: '757|🇯🇵 日本7 #3'
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-tko.2513142.xyz
@@ -4640,7 +4662,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '756|🇯🇵 日本8 #2'
+- name: '757|🇯🇵 日本8 #2'
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-tko2.2513142.xyz
@@ -4648,7 +4670,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '756|🇯🇵 日本9 #2'
+- name: '757|🇯🇵 日本9 #2'
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-tko3.2513142.xyz
@@ -4656,7 +4678,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '756|🇯🇵 日本10 #2'
+- name: '757|🇯🇵 日本10 #2'
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-tko4.2513142.xyz
@@ -4664,7 +4686,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '756|🇯🇵 日本11 #2'
+- name: '757|🇯🇵 日本11 #2'
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-tko5.2513142.xyz
@@ -4672,7 +4694,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '756|🇯🇵 日本12 #2'
+- name: '757|🇯🇵 日本12 #2'
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-tko6.2513142.xyz
@@ -4680,7 +4702,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '757|🇯🇵 日本7 #4'
+- name: '758|🇯🇵 日本7 #4'
   password: drpkx0fKv4I9AF4j2i2MH2Op
   port: 443
   server: starlink-tko.2513142.xyz
@@ -4688,7 +4710,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '757|🇯🇵 日本8 #3'
+- name: '758|🇯🇵 日本8 #3'
   password: drpkx0fKv4I9AF4j2i2MH2Op
   port: 443
   server: starlink-tko2.2513142.xyz
@@ -4696,7 +4718,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '757|🇯🇵 日本9 #3'
+- name: '758|🇯🇵 日本9 #3'
   password: drpkx0fKv4I9AF4j2i2MH2Op
   port: 443
   server: starlink-tko3.2513142.xyz
@@ -4704,7 +4726,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '757|🇯🇵 日本10 #3'
+- name: '758|🇯🇵 日本10 #3'
   password: drpkx0fKv4I9AF4j2i2MH2Op
   port: 443
   server: starlink-tko4.2513142.xyz
@@ -4712,7 +4734,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '757|🇯🇵 日本11 #3'
+- name: '758|🇯🇵 日本11 #3'
   password: drpkx0fKv4I9AF4j2i2MH2Op
   port: 443
   server: starlink-tko5.2513142.xyz
@@ -4720,7 +4742,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '757|🇯🇵 日本12 #3'
+- name: '758|🇯🇵 日本12 #3'
   password: drpkx0fKv4I9AF4j2i2MH2Op
   port: 443
   server: starlink-tko6.2513142.xyz
