@@ -1,4 +1,20 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: '26,176|🇰🇷 韩国2 #2'
+  network: ws
+  port: 80
+  server: fae592.00274bce.cfd
+  type: vmess
+  udp: true
+  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
+  ws-headers:
+    Host: kr02s.00274bce.cfd
+  ws-opts:
+    headers:
+      Host: kr02s.00274bce.cfd
+    path: /
+  ws-path: /
 - name: '90,466|🇬🇧 GB_1|4.9MB/s|YT-GB|NF|D+ #1'
   network: ws
   port: 8880
@@ -292,23 +308,6 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '226,569|新加坡01|流媒体 #12'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: WEttTimK6Q9qB8cd2AQ8kyDJOVfKAlPIl5E1T7-q0Dw
-    short-id: 1afbe06d
-  server: sg001.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 790f4282-a179-446e-bc2a-4eba58e669d5
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
   name: '286,567,568|新加坡01|流媒体 #11'
   network: grpc
   port: 20230
@@ -326,7 +325,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '287|新加坡01|流媒体 #9'
+  name: '287|新加坡01|流媒体 #1'
   network: grpc
   port: 20230
   reality-opts:
@@ -339,6 +338,23 @@ proxies:
   type: vless
   udp: true
   uuid: 813e7fc5-2c9a-4967-802b-6443930ecb7e
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '288,289,290,570|新加坡01|流媒体 #13'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: WEttTimK6Q9qB8cd2AQ8kyDJOVfKAlPIl5E1T7-q0Dw
+    short-id: 1afbe06d
+  server: sg001.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
 - alterId: 0
   cipher: auto
   name: 301|香港NO.1（GPT奈飞等）
@@ -346,7 +362,7 @@ proxies:
   server: haa.dashuai.cyou
   type: vmess
   udp: true
-  uuid: e456c7fc-2a09-480f-95ff-8b5475f46835
+  uuid: 9266cbaf-388c-45ec-94a3-f989852eb83b
 - alterId: 0
   cipher: auto
   name: 301|(隧道)英国2
@@ -354,22 +370,35 @@ proxies:
   server: xdd.dashuai.cyou
   type: vmess
   udp: true
-  uuid: e456c7fc-2a09-480f-95ff-8b5475f46835
-- name: '325,464,502,506,518|GB_speednode_0071 #2'
+  uuid: 9266cbaf-388c-45ec-94a3-f989852eb83b
+- auth: ''
+  delay: 893
+  fast-open: false
+  name: '325,464,502,506,508,518,523|9|UK #2'
+  password: 3C8h8X6kimbOX68joVe3kTERw
+  port: 7197
+  server: 206.189.20.193
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  tls: false
+  type: hysteria2
+- name: '325,464,502,506,518|GB_speednode_0069 #2'
   network: ws
   port: 8880
-  server: 109.176.239.188
-  servername: Telegram-channel-WangCai2
+  server: 194.36.55.213
+  servername: jp.laoyoutiao.link
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2
+      Host: jp.laoyoutiao.link
+    path: /
 - name: '325,464,502,506,518|GB_speednode_0070 #2'
   network: ws
   port: 8880
@@ -385,7 +414,56 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2
-- name: '325,464,502,506,518,523|14|GB_speednode_0058 #1'
+- name: '325,464,502,506,518|GB_speednode_0071 #2'
+  network: ws
+  port: 8880
+  server: 109.176.239.188
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2
+- delay: 1558
+  name: '325,464,502,506,508,518,523|14|GB_speednode_0072 #2'
+  network: ws
+  port: 8880
+  server: 109.176.239.3
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /Telegram
+  xudp: true
+- delay: 900
+  name: '325,464,502,506,508,518,523|14|GB_speednode_0074 #2'
+  network: ws
+  port: 8880
+  server: 91.193.58.27
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /
+  xudp: true
+- name: '325,464,502,506,518,523|14|GB_speednode_0075 #2'
   network: ws
   port: 8880
   server: 25.26.27.29
@@ -401,7 +479,7 @@ proxies:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
 - delay: 1277
-  name: '325,464,502,506,508,518,523|14|GB_speednode_0059 #1'
+  name: '325,464,502,506,508,518,523|14|GB_speednode_0077 #2'
   network: ws
   port: 8880
   server: 25.26.27.177
@@ -418,13 +496,13 @@ proxies:
     path: /
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 348,349,367,473|🇧GB_66
+  name: 348,349,367,473|🇬🇧GB_78
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
 - cipher: aes-128-gcm
-  name: 348,367,473|_12
+  name: 348,367,473|_13
   password: shadowsocks
   port: 443
   server: 212.102.53.80
@@ -460,7 +538,7 @@ proxies:
   server: 145.239.6.202
   type: ss
 - cipher: aes-128-gcm
-  name: 348,349,367,473|_15
+  name: 348,349,367,473|_16
   password: shadowsocks
   port: 443
   server: 212.102.53.78
@@ -472,7 +550,7 @@ proxies:
   server: 51.68.206.229
   type: ss
 - cipher: aes-128-gcm
-  name: 348,349,367,473|_14
+  name: 348,349,367,473|_15
   password: shadowsocks
   port: 443
   server: 212.102.53.196
@@ -496,7 +574,7 @@ proxies:
   server: 169.150.210.233
   type: ss
 - cipher: aes-128-gcm
-  name: 348,349,367,473|_13
+  name: 348,349,367,473|_14
   password: shadowsocks
   port: 443
   server: 212.102.53.81
@@ -509,13 +587,13 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇧GB
-  name: 348,349,367,473|🇬🇧GB_65
+  name: 348,349,367,473|🇬🇧GB_77
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
-  name: 348,349,367,473|_11
+  name: 348,349,367,473|_12
   password: shadowsocks
   port: 443
   server: 212.102.53.193
@@ -533,7 +611,7 @@ proxies:
   server: 145.239.6.202
   type: ss
 - cipher: aes-128-gcm
-  name: 348,349,367,473|_09
+  name: 348,349,367,473|_10
   password: shadowsocks
   port: 443
   server: 212.102.53.79
@@ -545,7 +623,8 @@ proxies:
   server: 145.239.6.202
   type: ss
 - cipher: aes-128-gcm
-  name: 348,349,367|🇧GB-141.98.101.178-0305
+  country: 🇧 GB
+  name: 348,349,367,473| GB_67
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -569,7 +648,7 @@ proxies:
   server: 145.239.6.202
   type: ss
 - cipher: aes-128-gcm
-  name: 348,349,367,473|_05
+  name: 348,349,367,473|_19
   password: shadowsocks
   port: 443
   server: 212.102.53.194
@@ -588,7 +667,7 @@ proxies:
   server: 145.239.6.202
   type: ss
 - cipher: aes-128-gcm
-  name: 348,349,367,473|_02
+  name: 348,349,367,473|_20
   password: shadowsocks
   port: 443
   server: 212.102.53.197
@@ -804,14 +883,14 @@ proxies:
   server: 62.100.205.48
   type: ss
 - cipher: aes-128-gcm
-  name: 367,473|_03
+  name: 367,473|_04
   password: shadowsocks
   port: 443
   server: uk-dc1.yangon.club
   type: ss
 - alterId: 0
   cipher: auto
-  name: '367,428,512|🇬🇧GB-64.227.45.92-0240 #1'
+  name: '367,427,512|🇬🇧GB-64.227.45.92-0240 #1'
   network: ws
   port: 20086
   server: 64.227.45.92
@@ -832,14 +911,14 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 367,473| GB_58
+  name: 367,473|🇬🇧 GB_70
   password: Bog0ELmMM9DSxDdQ
   port: 443
   server: 85.210.120.237
   type: ss
 - alterId: 0
   cipher: auto
-  name: 367,428,512,523|英国_081618140 L3
+  name: 367,427,512,523|英国_081704111 L3
   network: ws
   port: '20086'
   server: 173.208.51.193
@@ -2247,7 +2326,7 @@ proxies:
   obfs: salamander
   obfs-password: LNAnPYDfFyesRAVn
   password: beb8b58c-fa25-4533-9df2-6dcd5d388509
-  port: 22395
+  port: 25319
   ports: 21000-26000
   server: hl1.gy6688.xyz
   skip-cert-verify: true
@@ -2376,7 +2455,7 @@ proxies:
   sni: jnd.dport.top
   type: hysteria2
   udp: true
-- name: '420|英国 #6'
+- name: '419|英国 #6'
   password: aa6e6708-8b38-4148-9cbf-45d53bc23b1f
   port: 22156
   server: hsyg.huasuan666.top
@@ -2384,7 +2463,7 @@ proxies:
   sni: hsyg.huasuan666.top
   type: hysteria2
   udp: true
-- name: '421|英国 #7'
+- name: '420|英国 #7'
   password: 1c1bb02a-bd5d-4e6c-9cb7-0d5b4cbdf568
   port: 22156
   server: hsyg.huasuan666.top
@@ -2392,7 +2471,7 @@ proxies:
   sni: hsyg.huasuan666.top
   type: hysteria2
   udp: true
-- name: '422|英国 #8'
+- name: '421|英国 #8'
   password: fd16dd2e-c06d-48ab-97fc-d9c076e71973
   port: 22156
   server: hsyg.huasuan666.top
@@ -2400,7 +2479,7 @@ proxies:
   sni: hsyg.huasuan666.top
   type: hysteria2
   udp: true
-- name: '423|英国 #9'
+- name: '422|英国 #9'
   password: 97889ef6-2b76-48a8-9faf-be4bb779a483
   port: 22156
   server: hsyg.huasuan666.top
@@ -2408,7 +2487,7 @@ proxies:
   sni: hsyg.huasuan666.top
   type: hysteria2
   udp: true
-- name: '424|英国 #10'
+- name: '423|英国 #10'
   password: 0a35a30a-2b09-42f4-8228-b84644db054d
   port: 22156
   server: hsyg.huasuan666.top
@@ -2416,7 +2495,7 @@ proxies:
   sni: hsyg.huasuan666.top
   type: hysteria2
   udp: true
-- name: '425|美国 #28'
+- name: '424|美国 #28'
   password: 26ffe2b7-7bf7-4f4e-a9a8-21005db28d81
   port: 22151
   server: hsmg.huasuan666.top
@@ -2424,7 +2503,7 @@ proxies:
   sni: hsmg.huasuan666.top
   type: hysteria2
   udp: true
-- name: '425|英国 #11'
+- name: '424|英国 #11'
   password: 26ffe2b7-7bf7-4f4e-a9a8-21005db28d81
   port: 22156
   server: hsyg.huasuan666.top
@@ -2433,7 +2512,7 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: aes-256-gcm
-  name: 437|🇬🇧 Great Britain丨01
+  name: 436|🇬🇧 Great Britain丨01
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: '23001'
   server: uk001.dogsvip.site
@@ -2441,7 +2520,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '449,450|日本-优化 #1'
+  name: '448,449|日本-优化 #1'
   network: ws
   port: 16617
   server: planb.mojcn.com
@@ -2457,7 +2536,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '449,450|英国-优化2 #1'
+  name: '448,449|英国-优化2 #1'
   network: ws
   port: 16645
   server: m.cnmjin.net
@@ -2473,7 +2552,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '449,450|英国-优化3 #1'
+  name: '448,449|英国-优化3 #1'
   network: ws
   port: 16645
   server: t.cnmjcn.cyou
@@ -2610,7 +2689,7 @@ proxies:
     headers:
       Host: 638879176706396454.amsterdam-prx-dnraaal.info
     path: /zwtnbvws
-- name: 464,465|🇺🇸 美国 646
+- name: 464|GB_speednode_0060
   network: ws
   port: 8880
   server: 194.36.55.186
@@ -2745,38 +2824,6 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: '464,502,506,518|GB_speednode_0069 #2'
-  network: ws
-  port: 8880
-  server: 194.36.55.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /
-- delay: 1558
-  name: '464,502,506,508,518|GB_speednode_0072 #2'
-  network: ws
-  port: 8880
-  server: 109.176.239.3
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /Telegram
-  xudp: true
 - name: 464|GB_speednode_0073
   network: ws
   port: 8880
@@ -2792,23 +2839,6 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2
-- delay: 900
-  name: '464,502,506,508,518|GB_speednode_0074 #2'
-  network: ws
-  port: 8880
-  server: 91.193.58.27
-  servername: kjgx.laoyoutiao.link
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /
-  xudp: true
 - name: 464|GB_speednode_0076
   network: ws
   port: 8880
@@ -2824,8 +2854,21 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2
+- alterId: 0
+  cipher: auto
+  country: 🇧 GB
+  h2-opts: {}
+  http-opts: {}
+  name: 473|🇧 GB_74
+  network: ws
+  port: 20086
+  server: 82.29.132.9
+  skip-cert-verify: true
+  type: vmess
+  uuid: b2c61f53-a359-429c-900e-255f02def6be
+  ws-path: /
 - country: 🇬🇧 GB
-  name: 473|🇧 GB_63
+  name: 473|🇧 GB_76
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -2837,7 +2880,7 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 476|Relay_ZZ-🇧GB_39
+  name: 476|Relay_ZZ-🇧GB_38
   network: ws
   port: 80
   server: test3.flha.ru
@@ -3477,11 +3520,10 @@ proxies:
   sni: ultimate-civet.adder289.quest
   type: trojan
 - delay: 569
-  name: '508,523|GB英国(mibei77.com 米贝节点分享) #1'
+  name: '508|英国 - Slough - DigitalOcean, LL... #1'
   network: tcp
   port: 2053
   server: 188.166.144.24
-  tls: false
   type: vless
   udp: true
   uuid: e207a4a0-0237-46f5-acd5-2410f1452de5
@@ -3575,7 +3617,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a2d69b67-e280-37d6-b4d2-790bef9c0188
+  uuid: 30397a87-fc04-3443-88aa-997a47438640
 - alterId: 2
   cipher: auto
   name: 514|🇬🇧 [vip①]英国2 - MG Network
@@ -3585,7 +3627,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a2d69b67-e280-37d6-b4d2-790bef9c0188
+  uuid: 30397a87-fc04-3443-88aa-997a47438640
 - alterId: 0
   cipher: auto
   name: 514|【高级】🇧英国1 - 滑梯云
@@ -3629,13 +3671,13 @@ proxies:
   port: 443
   server: series-a2.varzesh360.co
   type: ss
-- name: 523|🇬🇧 GB_66
+- name: 523|🇬🇧 GB_77
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
   sni: 51.38.65.155
   type: trojan
-- name: 523|🇬🇧GB_70
+- name: 523|🇬🇧GB_81
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
@@ -3646,44 +3688,16 @@ proxies:
   name: 523|FUK
   network: ws
   password: Aimer
-  port: 12367
-  server: 121.165.36.35
+  port: 12504
+  server: 183.104.64.80
   skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
+  sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
     headers:
-      Host: epgc.aimercc.dpdns.org
+      Host: epgb.aimercc.dpdns.org
     path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
-- alpn:
-  - h3
-  name: '523|FUK #1'
-  network: ws
-  password: Aimer
-  port: 21268
-  server: 125.138.28.68
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
-- alpn:
-  - h3
-  name: '523|FUK #2'
-  network: ws
-  password: Aimer
-  port: 12224
-  server: 222.114.194.139
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
-- name: 523|🇬🇧 GB_67
+- name: 523|🇬🇧 GB_78
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -3733,6 +3747,18 @@ proxies:
     headers:
       Host: ax1.bgm2024.dpdns.org
     path: '%2F%3Fed%3D2560'
+- name: '523|GB英国(mibei77.com 米贝节点分享) #1'
+  network: ws
+  port: 443
+  server: 104.19.99.250
+  servername: F1.paRsa.fiLegEar-Sg.Me
+  tls: true
+  type: vless
+  uuid: 8df60790-c903-4661-b85d-64c0009378e5
+  ws-opts:
+    headers:
+      Host: f1.parsa.filegear-sg.me
+    path: '%2F%3Fed'
 - name: '523|🇬🇧_英国 #3'
   network: ws
   port: 443
@@ -3745,16 +3771,6 @@ proxies:
     headers:
       Host: edgc.esslh.filegear-sg.me
     path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
-- alterId: 0
-  cipher: auto
-  name: 523|英国_081618144 L0
-  network: tcp
-  port: '44023'
-  server: 51.38.64.209
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
 - name: 527|🇬🇧 英国 02
   password: 4eba7d4d-8460-4f9f-9718-9f06886b5489
   port: 22156
@@ -3943,6 +3959,28 @@ proxies:
   skip-cert-verify: false
   sni: kr-qingyun.dwyun.me
   type: trojan
+- cipher: aes-128-gcm
+  name: 541,611|🇬🇧 GB Catixs 01
+  password: Sj10bnYDe7w6V29E
+  plugin: obfs
+  plugin-opts:
+    host: 2b247be778.m.ctrip.com
+    mode: http
+  port: 11059
+  server: prebjdata1.233netpre.net
+  type: ss
+- cipher: aes-128-gcm
+  name: 541,611|🇬🇧 GB Haruka 02
+  password: 14837141-5001-4d21-9a25-52feb9967302
+  port: 19915
+  server: lmuk.91king.win
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 541,611|🇬🇧 GB Massivegrid 03
+  password: 5d9d2a9c-ceb6-4c9b-8db5-2c0d0ba22fbf
+  port: 36259
+  server: del.papermsg.com
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 544|[V1] 🇬🇧 United Kingdom 1 CM
   password: c60f7003-f61a-4fff-a027-af3e7c38add7
@@ -4060,7 +4098,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '570|新加坡01|流媒体 #13'
+  name: '569|新加坡01|流媒体 #12'
   network: grpc
   port: 20230
   reality-opts:
@@ -4072,7 +4110,7 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  uuid: 790f4282-a179-446e-bc2a-4eba58e669d5
 - alterId: 0
   cipher: auto
   name: '573,574|UK.英国.A #1'
@@ -4102,6 +4140,55 @@ proxies:
   server: cm2.akaochangnode.xyz
   type: ss
   udp: true
+- name: 615|🇬🇧 英国 002
+  password: ttfang
+  port: 2096
+  server: 25.25.25.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+- name: 615|🇬🇧 英国 003
+  password: ttfang
+  port: 2096
+  server: 25.26.27.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+- name: 615|🇬🇧 英国 004
+  password: ttfang
+  port: 2096
+  server: 45.8.211.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+- name: 615|🇬🇧 英国 005
+  password: ttfang
+  port: 2096
+  server: 45.12.30.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+- name: 615|🇬🇧 英国 006
+  password: ttfang
+  port: 2096
+  server: 45.12.31.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+- name: 615|🇬🇧 英国 007
+  password: ttfang
+  port: 2096
+  server: 45.85.118.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+- name: 615|🇬🇧 英国 008
+  password: ttfang
+  port: 2096
+  server: 45.85.119.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
 - cipher: aes-256-gcm
   name: '655|英国 #12'
   password: 5bdd27ef-f464-418d-bcb6-73ea06c88067
@@ -4149,7 +4236,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '691|美国 #44'
+- name: '691|美国 #43'
   password: 927f1be9-7e0e-4905-b0d1-1639e20a4049
   port: 22151
   server: hsmg.huasuan666.top
@@ -4165,6 +4252,14 @@ proxies:
   sni: hsyg.huasuan666.top
   type: hysteria2
   udp: true
+- name: '692|美国 #44'
+  password: 681b592d-a727-42f2-b91f-797081d0b0c1
+  port: 22151
+  server: hsmg.huasuan666.top
+  skip-cert-verify: true
+  sni: hsmg.huasuan666.top
+  type: hysteria2
+  udp: true
 - name: '692|英国 #14'
   password: 681b592d-a727-42f2-b91f-797081d0b0c1
   port: 22156
@@ -4173,7 +4268,7 @@ proxies:
   sni: hsyg.huasuan666.top
   type: hysteria2
   udp: true
-- name: '693|美国 #46'
+- name: '693|美国 #45'
   password: fdbe6695-f3f0-40d7-8099-42b6d9d0c65a
   port: 22151
   server: hsmg.huasuan666.top
@@ -4226,7 +4321,7 @@ proxies:
   obfs: salamander
   obfs-password: LNAnPYDfFyesRAVn
   password: 77d16a10-7d7f-443e-acad-5b279260a523
-  port: 25082
+  port: 25531
   ports: 21000-26000
   server: hl1.gy6688.xyz
   skip-cert-verify: true
