@@ -86,7 +86,7 @@ proxies:
   server: haa.dashuai.cyou
   type: vmess
   udp: true
-  uuid: 7f4118dc-6c5d-46f1-8377-9d1360ef51ba
+  uuid: 81bf492d-7f20-4b7f-9279-820e4b5c5888
 - alterId: 0
   cipher: auto
   name: '306|加拿大2 #1'
@@ -94,7 +94,7 @@ proxies:
   server: xdd.dashuai.cyou
   type: vmess
   udp: true
-  uuid: 7f4118dc-6c5d-46f1-8377-9d1360ef51ba
+  uuid: 81bf492d-7f20-4b7f-9279-820e4b5c5888
 - cipher: aes-128-gcm
   name: 352|🇨🇦1 |  14.1MB/s
   password: shadowsocks
@@ -102,13 +102,15 @@ proxies:
   server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 352,371,434|🇨🇦 CA-142.4.216.225-0288
+  country: 🇦CA
+  name: 352,371,434,481|🇦CA_44
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 352,371,434|🇨🇦 CA-79.127.233.170-0164
+  country: 🇨 CZ
+  name: 352,371,434,481|🇨🇿 CZ_53
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
@@ -196,7 +198,7 @@ proxies:
   server: 38.180.211.126
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 371,434|🇨🇦 CA-142.4.216.225-0278
+  name: 371,434,481|_06
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -217,8 +219,8 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-128-cfb
-  country: 🇦🇿AZ
-  name: 371,434,484,520|8J%2BHqPCfh6ZDQS00NS4xNTQuMjA0...
+  country: 🇪 SE
+  name: 371,434,481,520|8J%2BHqPCfh6ZDQS00NS4xNTQuMjA0...
   obfs: http_post
   obfs-param: ''
   password: $$Turb0VPN$$
@@ -797,7 +799,7 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8
-- name: 371,520|🇨🇦CA-148.113.207.224-4892
+- name: 371,481,520|🇨🇦CA-148.113.207.224-4892
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
   server: ca-full.privateip.net
@@ -1429,20 +1431,6 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '434,502,503,531|🇨🇦 加拿大 V2CROSS.COM #1'
-  network: ws
-  port: '443'
-  server: 205.233.181.3
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-  ws-opts:
-    headers:
-      Host: farid.1.berozha.ir
-    path: /us.kkp.me.eu.org/aa
 - cipher: aes-256-gcm
   name: 444|🇨🇦 Canada丨01
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
@@ -3925,6 +3913,19 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 531|🇨🇦 加拿大 V2CROSS.COM
+  network: ws
+  port: '443'
+  server: 205.233.181.3
+  tls: true
+  type: vmess
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  ws-opts:
+    headers:
+      Host: farid.1.berozha.ir
+    path: /us.kkp.me.eu.org/aa
+- alterId: 0
+  cipher: auto
   name: 531|🇨🇦 _CA_加拿大
   network: ws
   port: '80'
@@ -3968,10 +3969,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
+- cipher: chacha20-ietf-poly1305
+  name: 573|[1倍] 加拿大01
+  password: c3ffd605-d9fb-42b7-98f2-a29fb999e5b6
+  port: 19586
+  server: mm.huawei-api.top
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: ''
-  name: 550,621|🇦🇺 AU CAPL 01
+  name: 621|🇦🇺 AU CAPL 01
   port: 26110
   server: ppy-boardv2.02ijp4uos1.download
   tls: false
@@ -3980,13 +3988,13 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: ''
-  name: 550,621|🇨🇦 CA DIGITALOCEAN 01
+  name: 621|🇨🇦 CA DIGITALOCEAN 01
   port: 26114
   server: ppy-boardv2.02ijp4uos1.download
   tls: false
   type: vmess
   uuid: 1cff3ca9-a6d4-34b9-b7f7-62ac3ced85c4
-- name: 550,621|🇨🇦 CA AS 02
+- name: 621|🇨🇦 CA AS 02
   password: 8ed337d1-7930-41cd-9d6d-eaca3c84b266
   port: 36006
   server: 67c4e645-8f50-4aba-abb1-def1a8f60d5c.bbtechconsultants.com
@@ -3994,24 +4002,17 @@ proxies:
   sni: cert.bitbyte.one
   type: trojan
 - cipher: aes-128-gcm
-  name: 550,621|🇨🇦 CA DIGITALOCEAN 02
+  name: 621|🇨🇦 CA DIGITALOCEAN 02
   password: 14837141-5001-4d21-9a25-52feb9967302
   port: 19920
   server: lmca.91king.win
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 550,621|🇨🇦 CA ORACLE 03
+  name: 621|🇨🇦 CA ORACLE 03
   password: 5d9d2a9c-ceb6-4c9b-8db5-2c0d0ba22fbf
   port: 36129
   server: hongl.papermsg.com
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 573|[1倍] 加拿大01
-  password: c3ffd605-d9fb-42b7-98f2-a29fb999e5b6
-  port: 19586
-  server: mm.huawei-api.top
-  type: ss
-  udp: true
 - name: '671,768,769,770|🇨🇦 加拿大2🔒 #3'
   password: 升级订阅解锁全部节点
   port: 443
