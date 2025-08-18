@@ -162,7 +162,7 @@ proxies:
   server: 13.60.149.22
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 525|瑞典_081718063+L0
+- name: 525|瑞典_081804062+L0
   network: tcp
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
@@ -171,33 +171,70 @@ proxies:
   type: trojan
 - alpn:
   - h3
-  name: 525|SEA
+  client-fingerprint: random
+  name: 525|SE
   network: ws
-  password: Aimer
-  port: 443
-  server: 192.227.231.62
+  port: 8443
+  server: 147.45.73.233
+  servername: xz.bgm2024.dpdns.org
   skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
-- name: 525|SE_speednode_0221
-  network: ws
-  port: 8880
-  server: 185.146.173.39
-  servername: de2.mmad.news
-  skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
-  uuid: 4d6bad54-1217-49c0-8569-2fe1df2b8914
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      Host: de2.mmad.news
-    path: /8880/wsGoogle
+      Host: xz.bgm2024.dpdns.org
+    path: '%2F%3Fed%3D2560'
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: '525|SE #1'
+  network: ws
+  port: 2053
+  server: 147.45.74.79
+  servername: ax1.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      Host: ax1.bgm2024.dpdns.org
+    path: '%2F%3Fed%3D2560'
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: '525|SE #2'
+  network: ws
+  port: 444
+  server: 91.184.243.81
+  servername: ax1.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      Host: ax1.bgm2024.dpdns.org
+    path: '%2F%3Fed%3D2560'
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: '525|SE #3'
+  network: ws
+  port: 8443
+  server: 94.228.164.78
+  servername: xz.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      Host: xz.bgm2024.dpdns.org
+    path: '%2F%3Fed%3D2560'
 - mport: 50000-53000
-  name: 614|🇸🇪 斯哥尔-1.5倍率
+  name: 543,614|🇸🇪 斯尔-1.5倍率
   password: 04a1071c-ea85-4534-ab51-8a1a5beb6e8b
   port: 50000
   ports: 50000-53000
