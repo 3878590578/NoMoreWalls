@@ -9,10 +9,10 @@ proxies:
   udp: true
   uuid: 57ab7cfe-9012-4b99-85db-01eab717f788
   ws-headers:
-    Host: file.dingtalk.com
+    Host: tms.dingtalk.com
   ws-opts:
     headers:
-      Host: file.dingtalk.com
+      Host: tms.dingtalk.com
     path: /market/ru?ed=512
   ws-path: /market/ru?ed=512
 - alterId: 0
@@ -25,10 +25,10 @@ proxies:
   udp: true
   uuid: 57ab7cfe-9012-4b99-85db-01eab717f788
   ws-headers:
-    Host: file.dingtalk.com
+    Host: tms.dingtalk.com
   ws-opts:
     headers:
-      Host: file.dingtalk.com
+      Host: tms.dingtalk.com
     path: /market/ru?ed=512
   ws-path: /market/ru?ed=512
 - alterId: 0
@@ -41,10 +41,10 @@ proxies:
   udp: true
   uuid: ae2e2083-7cdc-47d2-be14-f7db9ddebf2c
   ws-headers:
-    Host: file.dingtalk.com
+    Host: tms.dingtalk.com
   ws-opts:
     headers:
-      Host: file.dingtalk.com
+      Host: tms.dingtalk.com
     path: /market/ru?ed=512
   ws-path: /market/ru?ed=512
 - alterId: 0
@@ -57,10 +57,10 @@ proxies:
   udp: true
   uuid: ae2e2083-7cdc-47d2-be14-f7db9ddebf2c
   ws-headers:
-    Host: file.dingtalk.com
+    Host: tms.dingtalk.com
   ws-opts:
     headers:
-      Host: file.dingtalk.com
+      Host: tms.dingtalk.com
     path: /market/ru?ed=512
   ws-path: /market/ru?ed=512
 - cipher: rc4-md5
@@ -105,7 +105,7 @@ proxies:
   server: ru06.fjk.wtf
   type: ss
   udp: true
-- name: 274,371,434,471,507,508,511|俄罗斯 002
+- name: 274,371,434,471,473,507,508,511|俄罗斯 002
   network: ws
   password: Aimer
   port: 2087
@@ -157,7 +157,7 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: '274,329,371,434,471,507,508,510,511,514,526,531|14|RU_speednode_0184 #2'
+- name: '274,329,371,434,471,507,508,510,511,514,526,531,550,621|🇺🇸 美国 594 #1'
   network: ws
   password: tg-fq521free
   port: 443
@@ -334,13 +334,15 @@ proxies:
       Host: 195.133.53.192
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 371|🇺RU-45.139.24.24-0263
+  country: 🇺 RU
+  name: 371,481|🇺 RU_155
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 371|🇺RU-185.126.239.250-0348
+  country: 🇧 GB
+  name: 371,481|🇬🇧 GB_71
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -593,13 +595,18 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 481|🇺 RU_126
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 2.59.163.104
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 473|🇷🇺 俄罗斯联邦 01
+  network: ws
+  port: 22096
+  server: 45.136.245.177
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 16bb7696-8c6e-447c-9dd3-cb7fdae430fa
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   country: 🇺 RU
@@ -607,8 +614,8 @@ proxies:
   http-opts: {}
   name: 481,531|🇷🇺 RU_149
   network: tcp
-  port: 45245
-  server: ye.fxlcn.com
+  port: 45215
+  server: fa.fxlcn.com
   servername: ''
   skip-cert-verify: true
   tls: false
@@ -620,16 +627,23 @@ proxies:
   country: 🇷🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 481,531|🇷🇺 RU_148
+  name: 481,531|🇷🇺 RU_150
   network: tcp
-  port: 45215
-  server: fa.fxlcn.com
+  port: 45245
+  server: ye.fxlcn.com
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
+- cipher: aes-256-cfb
+  country: 🇺RU
+  name: 481|🇺RU_160
+  password: PeHSHm5SqEjBuEXE
+  port: 9065
+  server: 45.89.52.66
+  type: ss
 - name: '497|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -979,19 +993,6 @@ proxies:
   type: trojan
   ws-opts:
     path: Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: 523|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享)
-  network: ws
-  port: '8880'
-  server: 46.254.92.171
-  tls: false
-  type: vmess
-  uuid: bac7eb53-3470-3af0-a69f-b0561333cda1
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 530|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1027,20 +1028,27 @@ proxies:
   server: 46.254.93.243
   sni: epgc.aimercc.dpdns.org
   type: trojan
-- name: 531|🇷🇺 RU_150
+- name: 531|🇷🇺 RU_151
   password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
   port: 1066
   server: 194.104.147.74
   sni: 194.104.147.74
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '583,584|RU.俄国.A #1'
-  password: a01b5e27-ece5-4675-866f-36b23a65d2a8
-  port: 44753
-  server: rutf.cokecloud.top
-  type: ss
-  udp: true
-- name: 621|🇷🇺 RU Misaka 02
+- alterId: 0
+  cipher: auto
+  name: '531|RU俄罗斯(mibei77.com 米贝节点分享) #2'
+  network: ws
+  port: '8880'
+  server: 91.124.127.171
+  servername: TG.WangCai2.s4.db-link02.top
+  tls: false
+  type: vmess
+  uuid: bac7eb53-3470-3af0-a69f-b0561333cda1
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.db-link02.top
+    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- name: 550,621|🇷🇺 RU Misaka 02
   password: 8ed337d1-7930-41cd-9d6d-eaca3c84b266
   port: 36016
   server: 67c4e645-8f50-4aba-abb1-def1a8f60d5c.bbtechconsultants.com
@@ -1048,7 +1056,7 @@ proxies:
   sni: cert.bitbyte.one
   type: trojan
 - cipher: aes-128-gcm
-  name: 621|🇨🇱 CL GRUPO 01
+  name: 550,621|🇨🇱 CL GRUPO 01
   password: Sj10bnYDe7w6V29E
   plugin: obfs
   plugin-opts:
@@ -1058,23 +1066,49 @@ proxies:
   server: preshdata1.233netpre.net
   type: ss
 - cipher: aes-128-gcm
-  name: 621|🇷🇺 RU LLC 01-2
+  name: 550,621|🇷🇺 RU LLC 01-2
   password: 14837141-5001-4d21-9a25-52feb9967302
   port: 19919
   server: lmru.91king.win
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 621|🇷🇺 RU LLC 02
+  name: 550,621|🇷🇺 RU LLC 02
   password: bce04a68-22a4-4808-b31e-1af4f1992fd3
   port: 65451
   server: ru01.youlianlink.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 621|🇷🇺 RU FIRST 03
+  name: 550,621|🇷🇺 RU FIRST 03
   password: 5d9d2a9c-ceb6-4c9b-8db5-2c0d0ba22fbf
   port: 36191
   server: hongl.papermsg.com
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 550,621|🇷🇺 罗斯联邦 13
+  network: ws
+  port: 25030
+  server: 45.136.245.177
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac09066f-0ec5-45cf-b5d2-50ab44440eec
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: '583,584|RU.俄国.A #1'
+  password: a01b5e27-ece5-4675-866f-36b23a65d2a8
+  port: 44753
+  server: rutf.cokecloud.top
+  type: ss
+  udp: true
+- name: '625|🇷🇺 俄罗斯 001 #1'
+  password: tg-fq521free
+  port: 443
+  server: 194.76.18.129
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
 - name: '625|🇷🇺 俄罗斯 002 #1'
   password: Aimer
   port: 2087
@@ -1145,31 +1179,10 @@ proxies:
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
-- name: '625|🇷🇺 俄罗斯 012 #1'
-  password: ttfang
-  port: 2096
-  server: 5.182.84.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
 - name: '625|🇷🇺 俄罗斯 013 #1'
   password: ttfang
   port: 2096
   server: 5.182.85.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-- name: '625|🇷🇺 俄罗斯 014 #1'
-  password: ttfang
-  port: 2096
-  server: 46.254.92.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-- name: '625|🇷🇺 俄罗斯 015 #1'
-  password: ttfang
-  port: 2096
-  server: 46.254.93.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
