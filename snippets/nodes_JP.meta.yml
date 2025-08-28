@@ -131,7 +131,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 61|?? 新加坡 - 1
+  name: 61|?? 美国 - 2
   network: ws
   port: 80
   server: 5564d7.d5e36e3f.cyou
@@ -139,10 +139,10 @@ proxies:
   udp: true
   uuid: a75c68b5-0de4-422e-9ee3-6b8d9c8993a6
   ws-headers:
-    Host: sg01s.d5e36e3f.cyou
+    Host: us02s.d5e36e3f.cyou
   ws-opts:
     headers:
-      Host: sg01s.d5e36e3f.cyou
+      Host: us02s.d5e36e3f.cyou
     path: /
   ws-path: /
 - alterId: 0
@@ -191,6 +191,22 @@ proxies:
   ws-opts:
     headers:
       Host: jp03s.d5e36e3f.cyou
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 61|?? 日本 - 4
+  network: ws
+  port: 80
+  server: 5564d7.d5e36e3f.cyou
+  type: vmess
+  udp: true
+  uuid: a75c68b5-0de4-422e-9ee3-6b8d9c8993a6
+  ws-headers:
+    Host: jp04s.d5e36e3f.cyou
+  ws-opts:
+    headers:
+      Host: jp04s.d5e36e3f.cyou
     path: /
   ws-path: /
 - alterId: 0
@@ -1267,7 +1283,7 @@ proxies:
   udp: true
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 176|日本 JP1
+  name: 175|日本 JP1
   port: 22208
   server: jp1.nfsqttt.cn
   servername: cdn-go.cn
@@ -1278,7 +1294,7 @@ proxies:
   uuid: b9e6b867-d43e-48f8-bfd2-2f8d59c4db00
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 176|日本 JP2 住宅
+  name: 175|日本 JP2 住宅
   port: 22209
   server: jp2.nfsqttt.cn
   servername: cdn-go.cn
@@ -1288,7 +1304,7 @@ proxies:
   udp: true
   uuid: b9e6b867-d43e-48f8-bfd2-2f8d59c4db00
 - cipher: chacha20-ietf-poly1305
-  name: 176|日本|JP01|ND
+  name: 175|日本|JP01|ND
   password: b9e6b867-d43e-48f8-bfd2-2f8d59c4db00
   port: 11124
   server: jp01.nfsqttt.cn
@@ -1296,7 +1312,7 @@ proxies:
   udp: true
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '181|日本 JP1 #1'
+  name: '180|日本 JP1 #1'
   port: 22208
   server: jp1.nfsqttt.cn
   servername: cdn-go.cn
@@ -1307,7 +1323,7 @@ proxies:
   uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '181|日本 JP2 住宅 #1'
+  name: '180|日本 JP2 住宅 #1'
   port: 22209
   server: jp2.nfsqttt.cn
   servername: cdn-go.cn
@@ -1317,7 +1333,7 @@ proxies:
   udp: true
   uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
 - cipher: chacha20-ietf-poly1305
-  name: '181|日本|JP01|ND #1'
+  name: '180|日本|JP01|ND #1'
   password: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
   port: 11124
   server: jp01.nfsqttt.cn
@@ -1594,29 +1610,29 @@ proxies:
 - name: 194|🇯🇵 直连 | 东京号
   password: 94931862-1484-11f0-9ab7-f23c95b6f51d
   port: 3443
-  server: 6c5ac4d1-t1rj40-t3fjp7-cdfn.tkydc3.cdnbytescm.com
+  server: f84a0a07-t1tds0-t3fjp7-cdfn.tkydc3.cdnbytescm.com
   tls: true
   type: http
   username: 94931862-1484-11f0-9ab7-f23c95b6f51d
 - name: '194|🇯🇵 直连 | 东京号 #1'
   password: 94931862-1484-11f0-9ab7-f23c95b6f51d
   port: 3443
-  server: d01d05eb-t1rj40-t3fjp7-cdfn.tky02.east.189ti.com
+  server: db532788-t1tds0-t3fjp7-cdfn.tky02.east.189ti.com
   tls: true
   type: http
   username: 94931862-1484-11f0-9ab7-f23c95b6f51d
 - name: '194|🇯🇵 直连 | 东京号 #2'
   password: 94931862-1484-11f0-9ab7-f23c95b6f51d
   port: 3443
-  server: 24425482-t1rj40-t3fjp7-cdfn.tky05.east.189ti.com
+  server: 5f7cfc36-t1tds0-t3fjp7-cdfn.tky05.east.189ti.com
   tls: true
   type: http
   username: 94931862-1484-11f0-9ab7-f23c95b6f51d
-- name: 211|JP
-  network: tcp
+- name: 211|🇯🇵 JP
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
+  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - alterId: 0
@@ -1778,7 +1794,7 @@ proxies:
   udp: true
 - client-fingerprint: ios
   flow: ''
-  name: '231,601|日本01 #21'
+  name: '231,601|日本01 #15'
   port: 20230
   reality-opts:
     public-key: opaO8sUF9JU5hP2wRoUgS6aWxFLfen83in6ZWJMonG4
@@ -1794,7 +1810,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '231,601|日本02 #21'
+  name: '231,601|日本02 #15'
   network: grpc
   port: 20230
   reality-opts:
@@ -1811,7 +1827,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '231,601|日本03 #19'
+  name: '231,601|日本03 #13'
   network: grpc
   port: 20230
   reality-opts:
@@ -1828,7 +1844,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '231,601|日本04 #19'
+  name: '231,601|日本04 #13'
   network: grpc
   port: 20230
   reality-opts:
@@ -1841,7 +1857,7 @@ proxies:
   type: vless
   udp: true
   uuid: 790f4282-a179-446e-bc2a-4eba58e669d5
-- name: '231,601|日本05 #17'
+- name: '231,601|日本05 #11'
   network: ws
   password: 790f4282-a179-446e-bc2a-4eba58e669d5
   port: 20230
@@ -1850,7 +1866,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '231,601|日本06 #17'
+- name: '231,601|日本06 #11'
   network: ws
   password: 790f4282-a179-446e-bc2a-4eba58e669d5
   port: 20230
@@ -1859,7 +1875,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '231,601|日本07 #17'
+- name: '231,601|日本07 #11'
   network: ws
   password: 790f4282-a179-446e-bc2a-4eba58e669d5
   port: 20230
@@ -1868,7 +1884,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '231,601|日本08 #17'
+- name: '231,601|日本08 #11'
   network: ws
   password: 790f4282-a179-446e-bc2a-4eba58e669d5
   port: 20230
@@ -1980,7 +1996,7 @@ proxies:
   udp: true
 - client-fingerprint: ios
   flow: ''
-  name: '233,235,236,238,239,240|日本01 #10'
+  name: '233,234,236,237|日本01 #8'
   port: 20230
   reality-opts:
     public-key: opaO8sUF9JU5hP2wRoUgS6aWxFLfen83in6ZWJMonG4
@@ -1996,7 +2012,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '233,235,236,238,239,240|日本02 #10'
+  name: '233,234,236,237|日本02 #8'
   network: grpc
   port: 20230
   reality-opts:
@@ -2013,7 +2029,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '233,235,236,238,239,240|日本03 #10'
+  name: '233,234,236,237|日本03 #8'
   network: grpc
   port: 20230
   reality-opts:
@@ -2030,7 +2046,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '233,235,236,238,239,240|日本04 #10'
+  name: '233,234,236,237|日本04 #8'
   network: grpc
   port: 20230
   reality-opts:
@@ -2043,7 +2059,7 @@ proxies:
   type: vless
   udp: true
   uuid: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
-- name: '233,235,236,238,239,240|日本05 #10'
+- name: '233,234,236,237|日本05 #8'
   network: ws
   password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
   port: 20230
@@ -2052,7 +2068,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '233,235,236,238,239,240|日本06 #10'
+- name: '233,234,236,237|日本06 #8'
   network: ws
   password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
   port: 20230
@@ -2061,7 +2077,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '233,235,236,238,239,240|日本07 #10'
+- name: '233,234,236,237|日本07 #8'
   network: ws
   password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
   port: 20230
@@ -2070,7 +2086,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '233,235,236,238,239,240|日本08 #10'
+- name: '233,234,236,237|日本08 #8'
   network: ws
   password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
   port: 20230
@@ -2080,196 +2096,196 @@ proxies:
   type: trojan
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇵 日本  B01 500Mbps 1 Netflix
+  name: 242,570,648|🇯🇵 日本  B01 500Mbps 1 Netflix
   password: aIMe3C
   port: 48657
   server: jp06.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇵 日本 ソフトバンク B02 500Mbps 1倍 Net...
+  name: 242,570,648|🇯🇵 日本 ソフトバンク B02 500Mbps 1倍 Ne...
   password: aIMe3C
   port: 48657
   server: jp07.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇵 日本 ソフトバンク B03 500Mbps 1倍 Net...
+  name: 242,570,648|🇯🇵 日本 ソフトバンク B03 500Mbps 1倍 Ne...
   password: aIMe3C
   port: 48657
   server: jp08.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇵 日本 ソフトバンク B04 500Mbps 1倍 Net...
+  name: 242,570,648|🇯🇵 日本 ソフトバンク B04 500Mbps 1倍 Ne...
   password: aIMe3C
   port: 48657
   server: jp09.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇵 日本 ソフトバンク B05 500Mbps 1倍 Net...
+  name: 242,570,648|🇯🇵 日本 ソフトバンク B05 500Mbps 1倍 Ne...
   password: aIMe3C
   port: 48657
   server: jp10.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇵 日本  au 1 B 01
+  name: 242,570,648|🇯🇵 日本  au 1 B 01
   password: aIMe3C
   port: 48657
   server: jp01.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇵 日本 まつやまし auひかり ホーム1ギガ B 02
+  name: 242,570,648|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 02
   password: aIMe3C
   port: 48657
   server: jp02.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本 つやまし auひかり ホーム1ギガ B 03
+  name: '242,570,648|🇯🇵 日本 つやまし auひかり ホーム1ギガ B 03 #1'
   password: aIMe3C
   port: 48657
   server: jp03.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇵 日本 まつやまし auひかり ホーム1ギガ B 04
+  name: 242,570,648|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 04
   password: aIMe3C
   port: 48657
   server: jp04.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇵 日本 まつやまし auひかり ホーム1ギガ B 06
+  name: 242,570,648|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 06
   password: aIMe3C
   port: 48657
   server: jp27.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本 つやまし auひかり ホーム1ギガ B 07
+  name: '242,570,648|🇯🇵 日本 つやまし auひかり ホーム1ギガ B 07 #1'
   password: aIMe3C
   port: 48657
   server: jp28.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本 つやまし auひかり ホーム1ギガ B 08
+  name: '242,570,648|🇯🇵 日本 つやまし auひかり ホーム1ギガ B 08 #1'
   password: aIMe3C
   port: 48657
   server: jp29.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本 つやまし auひかり ホーム1ギガ B 09
+  name: '242,570,648|🇯🇵 日本 つやまし auひかり ホーム1ギガ B 09 #1'
   password: aIMe3C
   port: 48657
   server: jp30.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇵 日本 まつやまし auひかり ホーム1ギガ B 10
+  name: 242,570,648|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 10
   password: aIMe3C
   port: 48657
   server: jp31.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 11
+  name: '242,570,648|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 11 #1'
   password: aIMe3C
   port: 48657
   server: jp32.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 12
+  name: '242,570,648|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 12 #1'
   password: aIMe3C
   port: 48657
   server: jp22.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 13
+  name: '242,570,648|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 13 #1'
   password: aIMe3C
   port: 48657
   server: jp23.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 14
+  name: '242,570,648|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 14 #1'
   password: aIMe3C
   port: 48657
   server: jp24.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 15
+  name: '242,570,648|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 15 #1'
   password: aIMe3C
   port: 48657
   server: jp25.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇵 日本 まつやまし auひかり ホーム1ギガ B 16
+  name: 242,570,648|🇯🇵 日本 まつやまし auひかり ホーム1ギガ B 16
   password: aIMe3C
   port: 48657
   server: jp26.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本大 ー B 01
+  name: '242,570,648|🇯🇵 日本大 ー B 01 #1'
   password: aIMe3C
   port: 48657
   server: jp14.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本大阪 オプテージ B 02
+  name: '242,570,648|🇯🇵 日本大阪 オプテージ B 02 #1'
   password: aIMe3C
   port: 48657
   server: jp15.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本大阪 オプテージ B 03
+  name: '242,570,648|🇯🇵 日本大阪 オプテージ B 03 #1'
   password: aIMe3C
   port: 48657
   server: jp16.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本大阪 オプテージ B 04
+  name: '242,570,648|🇯🇵 日本大阪 オプテージ B 04 #1'
   password: aIMe3C
   port: 48657
   server: jp17.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本大阪 オプテージ B 05
+  name: '242,570,648|🇯🇵 日本大阪 オプテージ B 05 #1'
   password: aIMe3C
   port: 48657
   server: jp18.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本大阪 オプテージ B 06
+  name: '242,570,648|🇯🇵 日本大阪 オプテージ B 06 #1'
   password: aIMe3C
   port: 48657
   server: jp19.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 日本大阪 オプテージ B 07
+  name: '242,570,648|🇯🇵 日本大阪 オプテージ B 07 #1'
   password: aIMe3C
   port: 48657
   server: jp20.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 242,570|🇯🇵 连接 日本
+  name: '242,570,648|🇯🇵 连接 日本 #1'
   password: aIMe3C
   port: 48657
   server: 103.152.227.147
@@ -2471,8 +2487,8 @@ proxies:
   server: 103.152.227.147
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: '281,351,394,456,527,528,530,531,534,540,543,546,548,549,551,655|🇺🇸 美国 004
+- country: 🇵JP
+  name: '281,351,394,456,504,527,528,530,531,534,540,543,546,551|12,13|香港6|@ripaojiedian
     #2'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -2481,6 +2497,7 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: '281,527,528,548|🇯🇵 日本2|@ripaojiedian #2'
@@ -2507,107 +2524,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cb774883-1c2f-4b8a-8637-828f356e0c76
-- client-fingerprint: ios
-  flow: ''
-  name: '289,599,600|日本01 #20'
-  port: 20230
-  reality-opts:
-    public-key: opaO8sUF9JU5hP2wRoUgS6aWxFLfen83in6ZWJMonG4
-    short-id: b92b2a09
-  server: jp001.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '289,599,600|日本02 #20'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: yNOemxnmT-HQ2HiR9fdHSN2B8HpHsRyMIsir_iAlaHE
-    short-id: 5c3c9f11
-  server: jp002.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '289,599,600|日本03 #18'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: 4DQqVav-gK4Y1cMDDt4qyVpQf0GB6NkPgCPnjwude3c
-    short-id: d3b6f0c3
-  server: jp003.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '289,599,600|日本04 #18'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: lbOfuIKCBPcQH4AEnwnPw1LNxWrl-Bul6KU99H240Fc
-    short-id: abae4722
-  server: jp004.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
-- name: '289,599,600|日本05 #16'
-  network: ws
-  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
-  port: 20230
-  server: jp005.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '289,599,600|日本06 #16'
-  network: ws
-  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
-  port: 20230
-  server: jp006.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '289,599,600|日本07 #16'
-  network: ws
-  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
-  port: 20230
-  server: jp007.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '289,599,600|日本08 #16'
-  network: ws
-  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
-  port: 20230
-  server: jp008.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 295|JP.日本.A
   password: e065bbf0-7e7f-467a-9ae5-0435ee709dbb
@@ -2720,309 +2636,6 @@ proxies:
   server: cokecloudjp.cokecloud.top
   type: ss
   udp: true
-- client-fingerprint: ios
-  flow: ''
-  name: '301|日本01 #12'
-  port: 20230
-  reality-opts:
-    public-key: opaO8sUF9JU5hP2wRoUgS6aWxFLfen83in6ZWJMonG4
-    short-id: b92b2a09
-  server: jp001.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 813e7fc5-2c9a-4967-802b-6443930ecb7e
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '301|日本02 #12'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: yNOemxnmT-HQ2HiR9fdHSN2B8HpHsRyMIsir_iAlaHE
-    short-id: 5c3c9f11
-  server: jp002.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 813e7fc5-2c9a-4967-802b-6443930ecb7e
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '301|日本03 #12'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: 4DQqVav-gK4Y1cMDDt4qyVpQf0GB6NkPgCPnjwude3c
-    short-id: d3b6f0c3
-  server: jp003.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 813e7fc5-2c9a-4967-802b-6443930ecb7e
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '301|日本04 #12'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: lbOfuIKCBPcQH4AEnwnPw1LNxWrl-Bul6KU99H240Fc
-    short-id: abae4722
-  server: jp004.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 813e7fc5-2c9a-4967-802b-6443930ecb7e
-- name: '301|日本05 #12'
-  network: ws
-  password: 813e7fc5-2c9a-4967-802b-6443930ecb7e
-  port: 20230
-  server: jp005.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '301|日本06 #12'
-  network: ws
-  password: 813e7fc5-2c9a-4967-802b-6443930ecb7e
-  port: 20230
-  server: jp006.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '301|日本07 #12'
-  network: ws
-  password: 813e7fc5-2c9a-4967-802b-6443930ecb7e
-  port: 20230
-  server: jp007.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '301|日本08 #12'
-  network: ws
-  password: 813e7fc5-2c9a-4967-802b-6443930ecb7e
-  port: 20230
-  server: jp008.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- client-fingerprint: ios
-  flow: ''
-  name: '308|日本01 #13'
-  port: 20230
-  reality-opts:
-    public-key: opaO8sUF9JU5hP2wRoUgS6aWxFLfen83in6ZWJMonG4
-    short-id: b92b2a09
-  server: jp001.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '308|日本02 #13'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: yNOemxnmT-HQ2HiR9fdHSN2B8HpHsRyMIsir_iAlaHE
-    short-id: 5c3c9f11
-  server: jp002.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '308|日本03 #13'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: 4DQqVav-gK4Y1cMDDt4qyVpQf0GB6NkPgCPnjwude3c
-    short-id: d3b6f0c3
-  server: jp003.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '308|日本04 #13'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: lbOfuIKCBPcQH4AEnwnPw1LNxWrl-Bul6KU99H240Fc
-    short-id: abae4722
-  server: jp004.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-- name: '308|日本05 #13'
-  network: ws
-  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-  port: 20230
-  server: jp005.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '308|日本06 #13'
-  network: ws
-  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-  port: 20230
-  server: jp006.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '308|日本07 #13'
-  network: ws
-  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-  port: 20230
-  server: jp007.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '308|日本08 #13'
-  network: ws
-  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-  port: 20230
-  server: jp008.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- client-fingerprint: ios
-  flow: ''
-  name: '312,603|日本01 #23'
-  port: 20230
-  reality-opts:
-    public-key: opaO8sUF9JU5hP2wRoUgS6aWxFLfen83in6ZWJMonG4
-    short-id: b92b2a09
-  server: jp001.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '312,603|日本02 #23'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: yNOemxnmT-HQ2HiR9fdHSN2B8HpHsRyMIsir_iAlaHE
-    short-id: 5c3c9f11
-  server: jp002.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '312,603|日本03 #21'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: 4DQqVav-gK4Y1cMDDt4qyVpQf0GB6NkPgCPnjwude3c
-    short-id: d3b6f0c3
-  server: jp003.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '312,603|日本04 #21'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: lbOfuIKCBPcQH4AEnwnPw1LNxWrl-Bul6KU99H240Fc
-    short-id: abae4722
-  server: jp004.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-- name: '312,603|日本05 #19'
-  network: ws
-  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-  port: 20230
-  server: jp005.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '312,603|日本06 #19'
-  network: ws
-  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-  port: 20230
-  server: jp006.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '312,603|日本07 #19'
-  network: ws
-  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-  port: 20230
-  server: jp007.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '312,603|日本08 #19'
-  network: ws
-  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-  port: 20230
-  server: jp008.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 316|日本NO.1
@@ -3030,7 +2643,7 @@ proxies:
   server: haa.dashuai.cyou
   type: vmess
   udp: true
-  uuid: 97d368f0-ea4e-4df5-b262-5fc60fbd644f
+  uuid: f266e14a-caed-42a3-878b-14577f01abd7
 - alterId: 0
   cipher: auto
   name: 316|日本NO.2
@@ -3038,7 +2651,7 @@ proxies:
   server: xdd.dashuai.cyou
   type: vmess
   udp: true
-  uuid: 97d368f0-ea4e-4df5-b262-5fc60fbd644f
+  uuid: f266e14a-caed-42a3-878b-14577f01abd7
 - name: '319|日本 #5'
   password: bd5ced55-0594-4277-b733-1e23f32191f4
   port: 40001
@@ -3393,7 +3006,7 @@ proxies:
   uuid: 494ab5b1-3c91-4047-903b-0ea59c42435f
   ws-opts: null
 - auth: 2a9b85bd-27cc-4e3b-b77d-54dbe5bc23af
-  name: '351,527,528,530,534,546,551|9|日本 #3'
+  name: '351,493,527,528,530,534,546,551|9|日本 #3'
   password: 2a9b85bd-27cc-4e3b-b77d-54dbe5bc23af
   port: 443
   server: aws-linkhy17.liangxin1.xyz
@@ -3402,7 +3015,7 @@ proxies:
   tls: false
   type: hysteria2
 - auth: 31e03220-caa2-409d-8fa9-ae5016d2702b
-  name: 351,527,528,530,534,546,551|日本_082718098
+  name: 351,493,527,528,530,534,546,551|日本_082804077
   password: 31e03220-caa2-409d-8fa9-ae5016d2702b
   port: 443
   server: 154.85.18.233
@@ -3411,7 +3024,7 @@ proxies:
   tls: false
   type: hysteria2
 - auth: 5d110f18-5a37-4db3-8cf6-f0bced38a1ae
-  name: 351,493,527,528,530,534,546,551|日本_082718099
+  name: 351,493,527,528,530,534,546,551|日本_082804078
   password: 5d110f18-5a37-4db3-8cf6-f0bced38a1ae
   port: 443
   server: 154.85.18.233
@@ -3420,7 +3033,7 @@ proxies:
   tls: false
   type: hysteria2
 - auth: b866d83a-d301-4270-b699-40f322bf52fb
-  name: 351,493,527,528,530,534,546,551|日本_082718100
+  name: 351,493,527,528,530,534,546,551|日本_082804079
   password: b866d83a-d301-4270-b699-40f322bf52fb
   port: 443
   server: 154.85.19.63
@@ -3467,7 +3080,7 @@ proxies:
 - down: 499
   name: 354|🇯🇵日本东京 1.3X倍率
   password: e306bc9d-7060-4c88-837b-248a2ae4f1a8
-  port: 39915
+  port: 39941
   ports: 39901-39999
   server: jp.1mao.me
   skip-cert-verify: false
@@ -3477,14 +3090,14 @@ proxies:
 - down: 499
   name: 354|🇯🇵日本 1.3X倍率
   password: e306bc9d-7060-4c88-837b-248a2ae4f1a8
-  port: 39924
+  port: 39965
   ports: 39901-39999
   server: jp.1mao.me
   skip-cert-verify: false
   sni: jp.1mao.me
   type: hysteria2
   up: 500
-- name: '355|日本01 #15'
+- name: '355|日本01 #9'
   password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
   port: 8081
   server: 1jp003.156786.xyz
@@ -3492,7 +3105,7 @@ proxies:
   sni: 1jp003.156786.xyz
   type: hysteria2
   udp: true
-- name: '355|日本02 #15'
+- name: '355|日本02 #9'
   password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
   port: 8081
   server: hyfnjp01.156786.xyz
@@ -3580,7 +3193,7 @@ proxies:
   sni: jp08.476579.xyz
   type: hysteria2
   udp: true
-- name: '357|日本01 #16'
+- name: '357|日本01 #10'
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
   port: 8081
   server: 1jp003.156786.xyz
@@ -3588,7 +3201,7 @@ proxies:
   sni: 1jp003.156786.xyz
   type: hysteria2
   udp: true
-- name: '357|日本02 #16'
+- name: '357|日本02 #10'
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
   port: 8081
   server: hyfnjp01.156786.xyz
@@ -5081,7 +4694,7 @@ proxies:
 - down: 198
   name: 398|🇯🇵日本
   password: 2701a7c2-3658-405c-a058-dc84e19ab130
-  port: 30674
+  port: 30659
   ports: 30601-30699
   server: jp.myyfqh.tech
   skip-cert-verify: false
@@ -5091,7 +4704,7 @@ proxies:
 - down: 198
   name: '398|🇯🇵日本东京 #1'
   password: 2701a7c2-3658-405c-a058-dc84e19ab130
-  port: 30625
+  port: 30648
   ports: 30601-30699
   server: jp.myyfqh.tech
   skip-cert-verify: false
@@ -5101,7 +4714,7 @@ proxies:
 - down: 198
   name: 398|🇯🇵日本2号
   password: 2701a7c2-3658-405c-a058-dc84e19ab130
-  port: 30639
+  port: 30624
   ports: 30601-30699
   server: jp.myyfqh.tech
   skip-cert-verify: false
@@ -5111,7 +4724,7 @@ proxies:
 - down: 198
   name: 398|🇯🇵日本樱花
   password: 2701a7c2-3658-405c-a058-dc84e19ab130
-  port: 30614
+  port: 30637
   ports: 30601-30699
   server: jp.myyfqh.tech
   skip-cert-verify: false
@@ -5667,48 +5280,6 @@ proxies:
   sni: jp01.kittycdn.pp.ua
   type: hysteria2
   up: null
-- client-fingerprint: chrome
-  name: 493|Rayan - SSM - WSDR - JP - II -...
-  network: ws
-  port: 443
-  server: 5.253.41.139
-  servername: zula.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 9ff807b0-c4e3-5f52-b560-0bb48c37cf3f
-  ws-opts:
-    headers:
-      Host: 5.253.41.139
-    path: '%2Fvless'
-- client-fingerprint: chrome
-  name: 493|Rayan - SSM - WSCT - JP - II -...
-  network: ws
-  port: 443
-  server: www.speedtest.net
-  servername: jp-2-ssm.medicaldream.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 9ff807b0-c4e3-5f52-b560-0bb48c37cf3f
-  ws-opts:
-    headers:
-      Host: jp-2-ssm.medicaldream.ir
-    path: '%2Fvless'
-- alterId: 0
-  cipher: auto
-  name: 493|>>@shadowproxy66::JP
-  network: ws
-  port: '30001'
-  server: 107.148.6.67
-  servername: www.53865734.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.53865734.xyz
-    path: /path/170733132233
 - client-fingerprint: random
   name: 516|日本_东京
   network: ws
@@ -6184,7 +5755,7 @@ proxies:
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - delay: 1932
-  name: 536,570|🇵 JP_1 |  1.6MB/s
+  name: 536,570,648|🇯🇵 JP_1 |  1.6MB/s
   password: yD0mxkCA18WgPD1uVGd3Eu1dc
   port: 27789
   server: 47.245.0.72
@@ -6278,7 +5849,7 @@ proxies:
   type: vmess
   uuid: 2b30da31-c82a-3c2a-bb35-e9e2bb142781
 - delay: 1980
-  name: '536,570,591|日本 #61'
+  name: 536,570,591,648|🇯🇵 -2
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 9f7987cf-d2fd-4b99-89cf-8b3009bd4235
@@ -6289,7 +5860,7 @@ proxies:
   type: hysteria2
   udp: true
 - delay: 1754
-  name: '536,732|日本 #64'
+  name: '536,732|日本 #63'
   password: 3a6148f3-ba99-4b0e-8022-043aa94b5864
   port: 22161
   server: hsrb.huasuan666.top
@@ -6480,7 +6051,7 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- name: 551|日本_082718300
+- name: 551|日本_082804284
   password: 262100bd-a0c7-4412-a62d-a07d01f11a6a
   port: 443
   server: 153.121.42.218
@@ -6488,7 +6059,7 @@ proxies:
   sni: www.microsoft.com
   tls: false
   type: hysteria2
-- name: 551|日本_082718301
+- name: 551|日本_082804285
   password: 9e0bfb51-ea67-4065-b95f-cbea81cc261f
   port: 443
   server: 153.121.42.218
@@ -6496,7 +6067,7 @@ proxies:
   sni: www.microsoft.com
   tls: false
   type: hysteria2
-- name: 551|日本_082718302
+- name: 551|日本_082804286
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-jp3.2513142.xyz
@@ -6607,7 +6178,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: '551|JP #6'
+  name: '551|JP #4'
   network: ws
   port: 443
   server: 141.147.176.157
@@ -6623,7 +6194,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: '551|JP #7'
+  name: '551|JP #5'
   network: ws
   port: 2096
   server: 150.230.196.57
@@ -6639,7 +6210,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: '551|JP #8'
+  name: '551|JP #6'
   network: ws
   port: 16010
   server: 152.70.101.24
@@ -6655,7 +6226,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: '551|JP #9'
+  name: '551|JP #7'
   network: ws
   port: 443
   server: 158.101.77.33
@@ -6671,7 +6242,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: '551|JP #10'
+  name: '551|JP #8'
   network: ws
   port: 8443
   server: 185.184.223.85
@@ -6687,7 +6258,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: '551|JP #11'
+  name: '551|JP #9'
   network: ws
   port: 443
   server: 45.76.198.248
@@ -6703,7 +6274,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: '551|JP #12'
+  name: '551|JP #10'
   network: ws
   port: 8843
   server: 47.79.90.82
@@ -6936,7 +6507,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 551|日本_082718049 L0
+  name: 551|日本_082804050 L0
   network: ws
   port: '80'
   server: 172.111.146.64
@@ -6966,14 +6537,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
-- cipher: chacha20-ietf-poly1305
-  name: 570|🇵 日本 29
-  password: 6a4a5f5d-d391-4d6e-8afe-a782c18e7be4
-  port: 31923
-  server: 120.233.44.206
-  type: ss
-  udp: true
-- name: '579|日本 #49'
+- name: '579|日本 #48'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: ab0a8cd1-fbc5-4e15-bdc3-6a907d333c33
@@ -6983,7 +6547,7 @@ proxies:
   sni: rb.dport.top
   type: hysteria2
   udp: true
-- name: '580|日本 #50'
+- name: '580|日本 #49'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: fb10ef6d-29d5-4d69-91fa-7e187711e6f0
@@ -6993,7 +6557,7 @@ proxies:
   sni: rb.dport.top
   type: hysteria2
   udp: true
-- name: '581|日本 #51'
+- name: '581|日本 #50'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: fb4b92d0-41d4-41e2-baff-815f98812037
@@ -7003,7 +6567,7 @@ proxies:
   sni: rb.dport.top
   type: hysteria2
   udp: true
-- name: '582|日本 #52'
+- name: '582|日本 #51'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: f85c721f-8f83-4061-ad3f-92951b90c3ec
@@ -7013,7 +6577,7 @@ proxies:
   sni: rb.dport.top
   type: hysteria2
   udp: true
-- name: '583|日本 #53'
+- name: '583|日本 #52'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: c99b400e-5926-4a86-a13f-de22d53f7f8b
@@ -7023,7 +6587,7 @@ proxies:
   sni: rb.dport.top
   type: hysteria2
   udp: true
-- name: '584|日本 #54'
+- name: '584|日本 #53'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 8617f696-b39b-42f5-a93a-28576356e053
@@ -7033,7 +6597,7 @@ proxies:
   sni: rb.dport.top
   type: hysteria2
   udp: true
-- name: '585|日本 #55'
+- name: '585|日本 #54'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 244b9ddf-73a0-4d2d-8e63-738a393a4027
@@ -7043,7 +6607,7 @@ proxies:
   sni: rb.dport.top
   type: hysteria2
   udp: true
-- name: '586|日本 #56'
+- name: '586|日本 #55'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: e21e10a8-c958-4f0f-be84-797533ea457f
@@ -7053,7 +6617,7 @@ proxies:
   sni: rb.dport.top
   type: hysteria2
   udp: true
-- name: '587|日本 #57'
+- name: '587|日本 #56'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: b058f12d-d1c6-4a6b-94cd-8f68b05bb0f5
@@ -7063,7 +6627,7 @@ proxies:
   sni: rb.dport.top
   type: hysteria2
   udp: true
-- name: '588|日本 #58'
+- name: '588|日本 #57'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 0d12ddf0-aa3d-4059-91dd-98c7e59db7fc
@@ -7073,7 +6637,7 @@ proxies:
   sni: rb.dport.top
   type: hysteria2
   udp: true
-- name: '589|日本 #59'
+- name: '589|日本 #58'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 0bc75bff-b818-4188-bb81-0b248cc493cd
@@ -7083,7 +6647,7 @@ proxies:
   sni: rb.dport.top
   type: hysteria2
   udp: true
-- name: '590|日本 #60'
+- name: '590|日本 #59'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 6bbcc1d3-d492-4b8d-aaa7-4d35d68135a8
@@ -7116,7 +6680,108 @@ proxies:
   udp: true
 - client-fingerprint: ios
   flow: ''
-  name: '602|日本01 #22'
+  name: '599,600|日本01 #14'
+  port: 20230
+  reality-opts:
+    public-key: opaO8sUF9JU5hP2wRoUgS6aWxFLfen83in6ZWJMonG4
+    short-id: b92b2a09
+  server: jp001.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '599,600|日本02 #14'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: yNOemxnmT-HQ2HiR9fdHSN2B8HpHsRyMIsir_iAlaHE
+    short-id: 5c3c9f11
+  server: jp002.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '599,600|日本03 #12'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: 4DQqVav-gK4Y1cMDDt4qyVpQf0GB6NkPgCPnjwude3c
+    short-id: d3b6f0c3
+  server: jp003.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '599,600|日本04 #12'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: lbOfuIKCBPcQH4AEnwnPw1LNxWrl-Bul6KU99H240Fc
+    short-id: abae4722
+  server: jp004.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+- name: '599,600|日本05 #10'
+  network: ws
+  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  port: 20230
+  server: jp005.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '599,600|日本06 #10'
+  network: ws
+  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  port: 20230
+  server: jp006.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '599,600|日本07 #10'
+  network: ws
+  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  port: 20230
+  server: jp007.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '599,600|日本08 #10'
+  network: ws
+  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  port: 20230
+  server: jp008.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- client-fingerprint: ios
+  flow: ''
+  name: '602|日本01 #16'
   port: 20230
   reality-opts:
     public-key: opaO8sUF9JU5hP2wRoUgS6aWxFLfen83in6ZWJMonG4
@@ -7132,7 +6797,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '602|日本02 #22'
+  name: '602|日本02 #16'
   network: grpc
   port: 20230
   reality-opts:
@@ -7149,7 +6814,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '602|日本03 #20'
+  name: '602|日本03 #14'
   network: grpc
   port: 20230
   reality-opts:
@@ -7166,7 +6831,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '602|日本04 #20'
+  name: '602|日本04 #14'
   network: grpc
   port: 20230
   reality-opts:
@@ -7179,7 +6844,7 @@ proxies:
   type: vless
   udp: true
   uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
-- name: '602|日本05 #18'
+- name: '602|日本05 #12'
   network: ws
   password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
   port: 20230
@@ -7188,7 +6853,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '602|日本06 #18'
+- name: '602|日本06 #12'
   network: ws
   password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
   port: 20230
@@ -7197,7 +6862,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '602|日本07 #18'
+- name: '602|日本07 #12'
   network: ws
   password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
   port: 20230
@@ -7206,9 +6871,110 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '602|日本08 #18'
+- name: '602|日本08 #12'
   network: ws
   password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  port: 20230
+  server: jp008.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- client-fingerprint: ios
+  flow: ''
+  name: '603|日本01 #17'
+  port: 20230
+  reality-opts:
+    public-key: opaO8sUF9JU5hP2wRoUgS6aWxFLfen83in6ZWJMonG4
+    short-id: b92b2a09
+  server: jp001.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '603|日本02 #17'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: yNOemxnmT-HQ2HiR9fdHSN2B8HpHsRyMIsir_iAlaHE
+    short-id: 5c3c9f11
+  server: jp002.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '603|日本03 #15'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: 4DQqVav-gK4Y1cMDDt4qyVpQf0GB6NkPgCPnjwude3c
+    short-id: d3b6f0c3
+  server: jp003.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '603|日本04 #15'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: lbOfuIKCBPcQH4AEnwnPw1LNxWrl-Bul6KU99H240Fc
+    short-id: abae4722
+  server: jp004.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+- name: '603|日本05 #13'
+  network: ws
+  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+  port: 20230
+  server: jp005.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '603|日本06 #13'
+  network: ws
+  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+  port: 20230
+  server: jp006.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '603|日本07 #13'
+  network: ws
+  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
+  port: 20230
+  server: jp007.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '603|日本08 #13'
+  network: ws
+  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
   port: 20230
   server: jp008.421421.xyz
   skip-cert-verify: true
@@ -7457,7 +7223,7 @@ proxies:
   server: cm2.akaochangnode.xyz
   type: ss
   udp: true
-- name: '695|日本01 #24'
+- name: '695|日本01 #18'
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10811
   server: ppg-jp.05vr9nyqg5.download
@@ -7465,7 +7231,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '695|日本02 #24'
+- name: '695|日本02 #18'
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10812
   server: ppg-jp.05vr9nyqg5.download
@@ -7473,7 +7239,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '695|日本03 #22'
+- name: '695|日本03 #16'
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10813
   server: ppg-jp.05vr9nyqg5.download
@@ -7481,7 +7247,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '695|日本04 #22'
+- name: '695|日本04 #16'
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10814
   server: ppg-jp.05vr9nyqg5.download
@@ -7489,7 +7255,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '695|日本05 #20'
+- name: '695|日本05 #14'
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10815
   server: ppg-jp.05vr9nyqg5.download
@@ -7497,7 +7263,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '695|日本06 #20'
+- name: '695|日本06 #14'
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10816
   server: ppg-jp.05vr9nyqg5.download
@@ -7505,7 +7271,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '695|日本07 #20'
+- name: '695|日本07 #14'
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10817
   server: ppg-jp.05vr9nyqg5.download
@@ -7513,7 +7279,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '695|日本08 #20'
+- name: '695|日本08 #14'
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10818
   server: ppg-jp.05vr9nyqg5.download
@@ -7521,7 +7287,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '696|日本01 #25'
+- name: '696|日本01 #19'
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10811
   server: ppg-jp.05vr9nyqg5.download
@@ -7529,7 +7295,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '696|日本02 #25'
+- name: '696|日本02 #19'
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10812
   server: ppg-jp.05vr9nyqg5.download
@@ -7537,7 +7303,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '696|日本03 #23'
+- name: '696|日本03 #17'
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10813
   server: ppg-jp.05vr9nyqg5.download
@@ -7545,7 +7311,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '696|日本04 #23'
+- name: '696|日本04 #17'
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10814
   server: ppg-jp.05vr9nyqg5.download
@@ -7553,7 +7319,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '696|日本05 #21'
+- name: '696|日本05 #15'
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10815
   server: ppg-jp.05vr9nyqg5.download
@@ -7561,7 +7327,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '696|日本06 #21'
+- name: '696|日本06 #15'
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10816
   server: ppg-jp.05vr9nyqg5.download
@@ -7569,7 +7335,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '696|日本07 #21'
+- name: '696|日本07 #15'
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10817
   server: ppg-jp.05vr9nyqg5.download
@@ -7577,7 +7343,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '696|日本08 #21'
+- name: '696|日本08 #15'
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10818
   server: ppg-jp.05vr9nyqg5.download
@@ -7585,7 +7351,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '697|日本01 #26'
+- name: '697|日本01 #20'
   password: fc8da0ee-df81-4fd1-bd66-f40ec59bb6d0
   port: 10811
   server: ppg-jp.05vr9nyqg5.download
@@ -7593,7 +7359,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '697|日本02 #26'
+- name: '697|日本02 #20'
   password: fc8da0ee-df81-4fd1-bd66-f40ec59bb6d0
   port: 10812
   server: ppg-jp.05vr9nyqg5.download
@@ -7601,7 +7367,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '697|日本03 #24'
+- name: '697|日本03 #18'
   password: fc8da0ee-df81-4fd1-bd66-f40ec59bb6d0
   port: 10813
   server: ppg-jp.05vr9nyqg5.download
@@ -7609,7 +7375,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '697|日本04 #24'
+- name: '697|日本04 #18'
   password: fc8da0ee-df81-4fd1-bd66-f40ec59bb6d0
   port: 10814
   server: ppg-jp.05vr9nyqg5.download
@@ -7617,7 +7383,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '697|日本05 #22'
+- name: '697|日本05 #16'
   password: fc8da0ee-df81-4fd1-bd66-f40ec59bb6d0
   port: 10815
   server: ppg-jp.05vr9nyqg5.download
@@ -7625,7 +7391,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '697|日本06 #22'
+- name: '697|日本06 #16'
   password: fc8da0ee-df81-4fd1-bd66-f40ec59bb6d0
   port: 10816
   server: ppg-jp.05vr9nyqg5.download
@@ -7633,7 +7399,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '697|日本07 #22'
+- name: '697|日本07 #16'
   password: fc8da0ee-df81-4fd1-bd66-f40ec59bb6d0
   port: 10817
   server: ppg-jp.05vr9nyqg5.download
@@ -7641,7 +7407,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '697|日本08 #22'
+- name: '697|日本08 #16'
   password: fc8da0ee-df81-4fd1-bd66-f40ec59bb6d0
   port: 10818
   server: ppg-jp.05vr9nyqg5.download
@@ -7758,7 +7524,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.microsoft.hu:57468
+    host: 26af988.dl.nintendo.es:57468
     mode: tls
   port: 2377
   server: 26af988.j1.glados-config.net
@@ -7768,7 +7534,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.nintendo.net:57468
+    host: 26af988.dl.microsoft.de:57468
     mode: tls
   port: 2377
   server: 26af988.j2.glados-config.net
@@ -7778,7 +7544,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.mozilla.net:57468
+    host: 26af988.dl.microsoft.is:57468
     mode: tls
   port: 2377
   server: 26af988.j3.glados-config.net
@@ -7788,7 +7554,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.ee:193531
+    host: db5fe62.dl.microsoft.lu:193531
     mode: tls
   port: 2377
   server: db5fe62.j1.glados-config.net
@@ -7799,7 +7565,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.it:193531
+    host: db5fe62.dl.nintendo.de:193531
     mode: tls
   port: 2377
   server: db5fe62.j2.glados-config.net
@@ -7810,7 +7576,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.de:193531
+    host: db5fe62.dl.microsoft.fi:193531
     mode: tls
   port: 2377
   server: db5fe62.j3.glados-config.net
@@ -7821,7 +7587,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.nintendo.com:154942
+    host: 5dfbdfc.dl.microsoft.it:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.j1.glados-config.com
@@ -7832,7 +7598,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.microsoft.lu:154942
+    host: 5dfbdfc.dl.nintendo.jp:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.j2.glados-config.com
@@ -7843,7 +7609,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.nintendo.net:154942
+    host: 5dfbdfc.dl.microsoft.is:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.j3.glados-config.com
@@ -7854,7 +7620,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.eu:154948
+    host: feb7fa9.dl.microsoft.jp:154948
     mode: tls
   port: 2377
   server: feb7fa9.j1.glados-config.net
@@ -7865,7 +7631,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.io:154948
+    host: feb7fa9.dl.nintendo.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.j2.glados-config.net
@@ -7876,7 +7642,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.dk:154948
+    host: feb7fa9.dl.microsoft.ge:154948
     mode: tls
   port: 2377
   server: feb7fa9.j3.glados-config.net
@@ -7887,7 +7653,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.microsoft.hu:185672
+    host: 10805ea.dl.mozilla.net:185672
     mode: tls
   port: 2377
   server: 10805ea.j1.glados-config.net
@@ -7898,7 +7664,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.microsoft.fi:185672
+    host: 10805ea.dl.nintendo.net:185672
     mode: tls
   port: 2377
   server: 10805ea.j2.glados-config.net
@@ -7909,13 +7675,13 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.nintendo.net:185672
+    host: 10805ea.dl.microsoft.cz:185672
     mode: tls
   port: 2377
   server: 10805ea.j3.glados-config.net
   type: ss
   udp: false
-- name: '730|日本 #62'
+- name: '730|日本 #61'
   password: 927f1be9-7e0e-4905-b0d1-1639e20a4049
   port: 22161
   server: hsrb.huasuan666.top
@@ -7923,7 +7689,7 @@ proxies:
   sni: hsrb.huasuan666.top
   type: hysteria2
   udp: true
-- name: '731|日本 #63'
+- name: '731|日本 #62'
   password: 681b592d-a727-42f2-b91f-797081d0b0c1
   port: 22161
   server: hsrb.huasuan666.top
@@ -7931,7 +7697,7 @@ proxies:
   sni: hsrb.huasuan666.top
   type: hysteria2
   udp: true
-- name: '733|日本 #65'
+- name: '733|日本 #64'
   password: fdbe6695-f3f0-40d7-8099-42b6d9d0c65a
   port: 22161
   server: hsrb.huasuan666.top
@@ -7939,7 +7705,7 @@ proxies:
   sni: hsrb.huasuan666.top
   type: hysteria2
   udp: true
-- name: '734|日本 #66'
+- name: '734|日本 #65'
   password: 366dad01-dd99-47be-92fa-6beddd09fff9
   port: 22161
   server: hsrb.huasuan666.top
@@ -7947,7 +7713,7 @@ proxies:
   sni: hsrb.huasuan666.top
   type: hysteria2
   udp: true
-- name: '735|日本 #67'
+- name: '735|日本 #66'
   password: f97899a2-7aa0-4883-b887-a7f1e16a5802
   port: 22161
   server: hsrb.huasuan666.top
@@ -7955,7 +7721,7 @@ proxies:
   sni: hsrb.huasuan666.top
   type: hysteria2
   udp: true
-- name: '736|日本 #68'
+- name: '736|日本 #67'
   password: 23c15759-0c36-4158-a54a-c6ef49025a53
   port: 22161
   server: hsrb.huasuan666.top
@@ -7963,7 +7729,7 @@ proxies:
   sni: hsrb.huasuan666.top
   type: hysteria2
   udp: true
-- name: '737|日本 #69'
+- name: '737|日本 #68'
   password: f8f33da1-c9da-4a22-8dbc-3954dbdf3f19
   port: 22161
   server: hsrb.huasuan666.top
@@ -7971,7 +7737,7 @@ proxies:
   sni: hsrb.huasuan666.top
   type: hysteria2
   udp: true
-- name: '738|日本 #70'
+- name: '738|日本 #69'
   password: cfbb2ce1-2c72-4337-a660-ca6c7cd6791c
   port: 22161
   server: hsrb.huasuan666.top
@@ -7979,7 +7745,7 @@ proxies:
   sni: hsrb.huasuan666.top
   type: hysteria2
   udp: true
-- name: '739|日本 #71'
+- name: '739|日本 #70'
   password: d42599d3-cdb8-49a2-967e-fbad34644b5c
   port: 22161
   server: hsrb.huasuan666.top
@@ -8296,7 +8062,7 @@ proxies:
   sni: jp1.runjustfast.com
   type: trojan
   udp: true
-- name: '779|日本 #72'
+- name: '779|日本 #71'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: c197f9f0-84e1-4ca4-b87e-b290afa95191
@@ -8629,11 +8395,4 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 820|日本02丨Netflix
-  password: db7841da-ff0d-495e-8ae2-fb855b17610a
-  port: 46899
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz
-  type: ss
   udp: true
