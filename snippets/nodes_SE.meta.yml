@@ -1,4 +1,22 @@
 proxies:
+- http-opts:
+    headers:
+      Host:
+      - speedtest.net
+    method: GET
+    path:
+    - /
+  name: '333,454,491,495,507,512|13|SE_speednode_0014 #2'
+  network: http
+  port: 8888
+  server: 185.36.145.227
+  servername: speedtest.net
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 48b81d34-df01-4c94-9e34-0ccb4c40c547
 - client-fingerprint: chrome
   name: 371|🇸🇪 Sweden 1 TG:@nodpai
   password: telegram-id-directvpn
@@ -8,7 +26,7 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: aes-256-cfb
-  name: 376,417|SE-121.127.46.147-0200
+  name: 376|🇸SE-121.127.46.147-0218
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 121.127.46.147
@@ -126,34 +144,6 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- client-fingerprint: chrome
-  name: 454|Rayan - SSM - WSDR - SE - I - ...
-  network: ws
-  port: 443
-  server: 41.216.182.162
-  servername: zula.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 407fcb9c-021f-5f2c-bf6c-a58f72d1f5fc
-  ws-opts:
-    headers:
-      Host: 41.216.182.162
-    path: '%2Fvless'
-- client-fingerprint: chrome
-  name: 454|Rayan - SSM - WSCT - SE - I - ...
-  network: ws
-  port: 443
-  server: www.speedtest.net
-  servername: se-1-ssm.medicaldream.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 407fcb9c-021f-5f2c-bf6c-a58f72d1f5fc
-  ws-opts:
-    headers:
-      Host: se-1-ssm.medicaldream.ir
-    path: '%2Fvless'
 - name: 482|瑞典_021805001+L30
   password: telegram-id-privatevpns
   port: 22222
@@ -169,14 +159,6 @@ proxies:
   server: 13.60.149.22
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 491,495,507,512|13|SE_speednode_0014
-  port: 8888
-  server: 185.36.145.227
-  servername: speedtest.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 48b81d34-df01-4c94-9e34-0ccb4c40c547
 - alterId: 0
   cipher: auto
   name: 512|瑞典_083018054 L0
@@ -191,6 +173,13 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 593|🇸🇪 瑞典 001
+  password: ttfang
+  port: 2096
+  server: 195.13.55.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
 - name: '639,734,735,736|🇸🇪 瑞典1🔒 #3'
   password: 升级订阅解锁全部节点
   port: 443
