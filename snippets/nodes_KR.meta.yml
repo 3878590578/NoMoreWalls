@@ -112,22 +112,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 62|?? 韩国 - 2
-  network: ws
-  port: 80
-  server: 5564d7.d5e36e3f.cyou
-  type: vmess
-  udp: true
-  uuid: a75c68b5-0de4-422e-9ee3-6b8d9c8993a6
-  ws-headers:
-    Host: kr02s.d5e36e3f.cyou
-  ws-opts:
-    headers:
-      Host: kr02s.d5e36e3f.cyou
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 62|?? 韩国 - 3
   network: ws
   port: 80
@@ -140,6 +124,22 @@ proxies:
   ws-opts:
     headers:
       Host: kr03s.d5e36e3f.cyou
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 62|?? 韩国 - 4
+  network: ws
+  port: 80
+  server: 5564d7.d5e36e3f.cyou
+  type: vmess
+  udp: true
+  uuid: a75c68b5-0de4-422e-9ee3-6b8d9c8993a6
+  ws-headers:
+    Host: kr04s.d5e36e3f.cyou
+  ws-opts:
+    headers:
+      Host: kr04s.d5e36e3f.cyou
     path: /
   ws-path: /
 - alterId: 1
@@ -296,21 +296,25 @@ proxies:
       Host: tms.dingtalk.com
     path: /market/kr1?ed=512
   ws-path: /market/kr1?ed=512
-- down: 50
-  name: 154|🇰🇷 韩国1
+- auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
+  down: 50
+  name: 154,515|yandex-643
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 140.245.68.133
   skip-cert-verify: true
   type: hysteria2
+  udp: true
   up: 50
-- down: 50
-  name: 154|🇰🇷 韩国2
+- auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
+  down: 50
+  name: 154,515|yandex-644
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 158.180.77.90
   skip-cert-verify: true
   type: hysteria2
+  udp: true
   up: 50
 - name: 165|韩国
   obfs: salamander
@@ -364,9 +368,10 @@ proxies:
   type: vless
   udp: true
   uuid: b9e6b867-d43e-48f8-bfd2-2f8d59c4db00
-- client-fingerprint: edge
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '179|韩国 KR1 #1'
+  name: 179,515|yandex-247
+  network: tcp
   port: 22212
   server: kr1.nfsqttt.cn
   servername: cdn-go.cn
@@ -375,9 +380,10 @@ proxies:
   type: vless
   udp: true
   uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
-- client-fingerprint: edge
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '179|韩国 KR2 住宅 #1'
+  name: 179,515|yandex-248
+  network: tcp
   port: 22213
   server: kr2.nfsqttt.cn
   servername: cdn-go.cn
@@ -387,7 +393,7 @@ proxies:
   udp: true
   uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
 - down: null
-  name: 187|韩国🚀️155
+  name: 188|韩国🚀️155
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31155
   server: BGP1.abyssvpn.com
@@ -396,7 +402,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|韩国🚀️156
+  name: 188|韩国🚀️156
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31156
   server: BGP1.abyssvpn.com
@@ -405,7 +411,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|韩国🚀️255
+  name: 188|韩国🚀️255
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31155
   server: BGP2.abyssvpn.com
@@ -414,7 +420,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|韩国🚀️256
+  name: 188|韩国🚀️256
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31156
   server: BGP2.abyssvpn.com
@@ -423,7 +429,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|韩国🚀️355
+  name: 188|韩国🚀️355
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31155
   server: BGP3.abyssvpn.com
@@ -432,7 +438,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|韩国🚀️356
+  name: 188|韩国🚀️356
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31156
   server: BGP3.abyssvpn.com
@@ -441,7 +447,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|韩国🚀️455
+  name: 188|韩国🚀️455
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31155
   server: BGP4.abyssvpn.com
@@ -450,7 +456,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|韩国🚀️456
+  name: 188|韩国🚀️456
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31156
   server: BGP4.abyssvpn.com
@@ -459,7 +465,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|韩国🚀️555
+  name: 188|韩国🚀️555
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31155
   server: BGP5.abyssvpn.com
@@ -468,7 +474,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|韩国🚀️556
+  name: 188|韩国🚀️556
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31156
   server: BGP5.abyssvpn.com
@@ -477,7 +483,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|韩国🚀️655
+  name: 188|韩国🚀️655
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31155
   server: BGP6.abyssvpn.com
@@ -486,7 +492,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|韩国🚀️656
+  name: 188|韩国🚀️656
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31156
   server: BGP6.abyssvpn.com
@@ -495,147 +501,147 @@ proxies:
   type: hysteria2
   up: null
 - cipher: rc4-md5
-  name: 232|韩国 전라북도 전주시 商宽 B 01
+  name: 233|韩国 전라북도 전주시 商宽 B 01
   password: aIMe3C
   port: 48657
   server: krsk01.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 232|韩国 전라북도 전주시 商宽 B 02
+  name: 233|韩国 전라북도 전주시 商宽 B 02
   password: aIMe3C
   port: 48657
   server: krsk02.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 232|韩国 전라북도 전주시 商宽 B 03
+  name: 233|韩国 전라북도 전주시 商宽 B 03
   password: aIMe3C
   port: 48657
   server: krsk03.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 232|韩国 전라북도 전주시 商宽 B 04
+  name: 233|韩国 전라북도 전주시 商宽 B 04
   password: aIMe3C
   port: 48657
   server: krsk04.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 232|韩国 전라북도 전주시 商宽 B 05
+  name: 233|韩国 전라북도 전주시 商宽 B 05
   password: aIMe3C
   port: 48657
   server: krsk05.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 232|韩国 전라북도 전주시 商宽 B 06
+  name: 233|韩国 전라북도 전주시 商宽 B 06
   password: aIMe3C
   port: 48657
   server: krsk06.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 232|韩国 전라북도 전주시 商宽 B 07
+  name: 233|韩国 전라북도 전주시 商宽 B 07
   password: aIMe3C
   port: 48657
   server: krsk07.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 232|韩国 전라북도 전주시 商宽 B 08
+  name: 233|韩国 전라북도 전주시 商宽 B 08
   password: aIMe3C
   port: 48657
   server: krsk08.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 232|韩国 전라북도 전주시 商宽 B 09
+  name: 233|韩国 전라북도 전주시 商宽 B 09
   password: aIMe3C
   port: 48657
   server: krsk09.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 232|韩国 전라북도 전주시 商宽 B 10
+  name: 233|韩国 전라북도 전주시 商宽 B 10
   password: aIMe3C
   port: 48657
   server: krsk10.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '233|韩国 전라북도 전주시 商宽 B 01 #1'
+  name: '234|韩国 전라북도 전주시 商宽 B 01 #1'
   password: 26d8vZ
   port: 5185
   server: krsk01.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '233|韩国 전라북도 전주시 商宽 B 02 #1'
+  name: '234|韩国 전라북도 전주시 商宽 B 02 #1'
   password: 26d8vZ
   port: 5185
   server: krsk02.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '233|韩国 전라북도 전주시 商宽 B 03 #1'
+  name: '234|韩国 전라북도 전주시 商宽 B 03 #1'
   password: 26d8vZ
   port: 5185
   server: krsk03.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '233|韩国 전라북도 전주시 商宽 B 04 #1'
+  name: '234|韩国 전라북도 전주시 商宽 B 04 #1'
   password: 26d8vZ
   port: 5185
   server: krsk04.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '233|韩国 전라북도 전주시 商宽 B 05 #1'
+  name: '234|韩国 전라북도 전주시 商宽 B 05 #1'
   password: 26d8vZ
   port: 5185
   server: krsk05.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '233|韩国 전라북도 전주시 商宽 B 06 #1'
+  name: '234|韩国 전라북도 전주시 商宽 B 06 #1'
   password: 26d8vZ
   port: 5185
   server: krsk06.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '233|韩国 전라북도 전주시 商宽 B 07 #1'
+  name: '234|韩国 전라북도 전주시 商宽 B 07 #1'
   password: 26d8vZ
   port: 5185
   server: krsk07.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '233|韩国 전라북도 전주시 商宽 B 08 #1'
+  name: '234|韩国 전라북도 전주시 商宽 B 08 #1'
   password: 26d8vZ
   port: 5185
   server: krsk08.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '233|韩国 전라북도 전주시 商宽 B 09 #1'
+  name: '234|韩国 전라북도 전주시 商宽 B 09 #1'
   password: 26d8vZ
   port: 5185
   server: krsk09.graniterapids.com
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '233|韩国 전라북도 전주시 商宽 B 10 #1'
+  name: '234|韩国 전라북도 전주시 商宽 B 10 #1'
   password: 26d8vZ
   port: 5185
   server: krsk10.graniterapids.com
   type: ss
   udp: true
 - down: null
-  name: '333|韩国🚀️155 #1'
+  name: '334|韩国🚀️155 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31155
   server: BGP1.abyssvpn.com
@@ -644,7 +650,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|韩国🚀️156 #1'
+  name: '334|韩国🚀️156 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31156
   server: BGP1.abyssvpn.com
@@ -653,7 +659,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|韩国🚀️255 #1'
+  name: '334|韩国🚀️255 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31155
   server: BGP2.abyssvpn.com
@@ -662,7 +668,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|韩国🚀️256 #1'
+  name: '334|韩国🚀️256 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31156
   server: BGP2.abyssvpn.com
@@ -671,7 +677,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|韩国🚀️355 #1'
+  name: '334|韩国🚀️355 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31155
   server: BGP3.abyssvpn.com
@@ -680,7 +686,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|韩国🚀️356 #1'
+  name: '334|韩国🚀️356 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31156
   server: BGP3.abyssvpn.com
@@ -689,7 +695,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|韩国🚀️455 #1'
+  name: '334|韩国🚀️455 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31155
   server: BGP4.abyssvpn.com
@@ -698,7 +704,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|韩国🚀️456 #1'
+  name: '334|韩国🚀️456 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31156
   server: BGP4.abyssvpn.com
@@ -707,7 +713,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|韩国🚀️555 #1'
+  name: '334|韩国🚀️555 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31155
   server: BGP5.abyssvpn.com
@@ -716,7 +722,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|韩国🚀️556 #1'
+  name: '334|韩国🚀️556 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31156
   server: BGP5.abyssvpn.com
@@ -725,7 +731,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|韩国🚀️655 #1'
+  name: '334|韩国🚀️655 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31155
   server: BGP6.abyssvpn.com
@@ -734,7 +740,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|韩国🚀️656 #1'
+  name: '334|韩国🚀️656 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31156
   server: BGP6.abyssvpn.com
@@ -742,6 +748,36 @@ proxies:
   sni: apple.com
   type: hysteria2
   up: null
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 335|🇰🇷韩国首尔02|高速
+  port: 13145
+  reality-opts:
+    public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+    short-id: 4b070735
+  server: seoul-1ddns.aboutanime.eu.org
+  servername: buylite.music.apple.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1f84e51f-c290-4426-9468-3060af826425
+- client-fingerprint: edge
+  flow: ''
+  name: 335|🇰🇷韩国首尔03|0.1x
+  network: ws
+  port: 443
+  server: tencent-app.baipiao0721-dns78655.eu
+  servername: xn--94qs6eg1crsgruek00aezjnvrmki.xn--4gqza090la383cba657a9rw23a362bz35amu9c.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1f84e51f-c290-4426-9468-3060af826425
+  ws-opts:
+    headers:
+      Host: xn--vcs93hiw0av27a.xn--4gqza090la383cba657a9rw23a362bz35amu9c.site
+    path: /
 - cipher: aes-256-cfb
   name: 362|🇰🇷1 |  8.2MB/s
   password: amazonskr05
@@ -886,15 +922,15 @@ proxies:
       Host: 0000000000000000000000000044.bgroup-node-for-bigairport.sbs
     path: /
 - cipher: aes-256-cfb
-  country: 🇸 US
-  name: 381,469|🇸 US_160
+  country: 🇺🇸 US
+  name: 381,422,469|🇸 US_176
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
   country: 🇸 US
-  name: 381,469|🇸 US_166
+  name: 381,422,469|🇺🇸 US_177
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
@@ -1452,10 +1488,24 @@ proxies:
   port: 2003
   server: 125.141.26.5
   type: ss
+- name: '422,495,496|[Vless] KR_speednode_0010 #1'
+  network: ws
+  port: 50000
+  server: 1.177.49.132
+  servername: test1.testspeed.sbs
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 689e5c9c-3c97-4eaf-9716-287dffa6afe0
+  ws-opts:
+    headers:
+      Host: test1.testspeed.sbs
+    path: /proxyip=1.177.49.132:50000fp=random
 - cipher: aes-256-gcm
-  name: 432|🇰🇷 South Korea丨01
+  name: 432,515|yandex-87
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
-  port: '21001'
+  port: 21001
   server: kr001.dogsvip.site
   type: ss
   udp: true
@@ -1494,81 +1544,24 @@ proxies:
   sni: kr01.kittycdn.pp.ua
   type: hysteria2
   up: null
-- cipher: chacha20-ietf-poly1305
-  name: 461|🇰🇷 韩国
-  password: 5b751724-20b0-49a5-87fb-b0eb95b4485e
-  port: 15151
-  server: 36.141.40.46
-  type: ss
-- client-fingerprint: chrome
-  name: 461|🇰🇷 Rayan - SSM - WSDR - KR - I...
+- client-fingerprint: random
+  name: 461|KR_speednode_0010 3
   network: ws
-  port: 443
-  server: 45.82.246.106
-  servername: zula.ir
+  port: 50000
+  server: 1.177.49.132
+  servername: test1.testspeed.sbs
   skip-cert-verify: true
   tfo: false
   tls: true
   type: vless
-  uuid: 2ed6a813-be48-548f-a8dd-8b23eb6c7133
+  udp: true
+  uuid: 689e5c9c-3c97-4eaf-9716-287dffa6afe0
   ws-opts:
     headers:
-      Host: zula.ir
-    path: /vless
-- client-fingerprint: chrome
-  name: 461|🇰🇷 Rayan - SSM - WSCT - KR - I...
-  network: ws
-  port: 443
-  server: www.speedtest.net
-  servername: kr-1-ssm.medicaldream.ir
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 37fea7dc-269d-539c-892f-3cd04260fd4b
-  ws-opts:
-    headers:
-      Host: kr-1-ssm.medicaldream.ir
-    path: /vless
-- client-fingerprint: chrome
-  name: '461|🇰🇷 Rayan - SSM - WSCT - KR - I... #1'
-  network: ws
-  port: 443
-  server: www.speedtest.net
-  servername: kr-2-ssm.medicaldream.ir
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 2ed6a813-be48-548f-a8dd-8b23eb6c7133
-  ws-opts:
-    headers:
-      Host: kr-2-ssm.medicaldream.ir
-    path: /vless
-- client-fingerprint: chrome
-  name: '461|🇰🇷 Rayan - SSM - WSDR - KR - I... #1'
-  network: ws
-  port: 443
-  server: 45.88.182.15
-  servername: zula.ir
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 37fea7dc-269d-539c-892f-3cd04260fd4b
-  ws-opts:
-    headers:
-      Host: zula.ir
-    path: /vless
-- cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 469|🇷 KR_83
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  type: ss
+      Host: test1.testspeed.sbs
+    path: /proxyip=1.177.49.132:50000
 - country: 🇷 KR
-  name: 469,519|🇰🇷 KR_77
+  name: 469,515,519|🇰🇷 KR_77
   password: '!!str 0588'
   port: 50000
   server: 175.203.30.93
@@ -2033,7 +2026,7 @@ proxies:
   sni: www.cloudflare.com
   tls: false
   type: hysteria2
-- name: '519,745|🇰🇷 韩国1 #3'
+- name: '519,745|🇰🇷 韩国1 #4'
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-sol.2513142.xyz
@@ -2246,9 +2239,9 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: telegram%20%40freecodes%20%2F%3Fed%3D2560
-- name: 538,597|🇰🇷 国1
+- name: '538,597|🇰🇷 韩国1 #1'
   password: 93ce285e-1d56-4526-8180-f26d85481f94
-  port: 11059
+  port: 11011
   ports: 11001-11099
   server: fq-kr.mxtn.net
   skip-cert-verify: false
@@ -2256,33 +2249,12 @@ proxies:
   type: hysteria2
 - name: '538,597|🇰🇷 韩国2 #1'
   password: 93ce285e-1d56-4526-8180-f26d85481f94
-  port: 11018
+  port: 11044
   ports: 11001-11099
   server: fq-kr.mxtn.net
   skip-cert-verify: false
   sni: fq-kr.mxtn.net
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 549|[1倍] 韩国01
-  password: c3ffd605-d9fb-42b7-98f2-a29fb999e5b6
-  port: 19551
-  server: mm.huawei-api.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 549|[1倍] 韩国02
-  password: c3ffd605-d9fb-42b7-98f2-a29fb999e5b6
-  port: 19551
-  server: tt.huawei-api.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 549|[1倍] 韩国03
-  password: c3ffd605-d9fb-42b7-98f2-a29fb999e5b6
-  port: 19551
-  server: n1.huawei-api.top
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '558,559|KR.韩国.A #1'
   password: a01b5e27-ece5-4675-866f-36b23a65d2a8
@@ -2321,7 +2293,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '649|🇰🇷 韩国1 #1'
+- name: '649|🇰🇷 韩国1 #2'
   password: mSIusSz2Ku3YUWxB85cQa
   port: 443
   server: starlink-sol.2513142.xyz
@@ -2353,33 +2325,6 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- cipher: aes-128-gcm
-  name: '715,716,717,718|🇰🇷 SouthKorea 037 #3'
-  password: d7577ca6729babe0790f
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45921
-  server: kr037.jd.kunlunpx.com
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 731|韩国普通线路1
-  port: 13091
-  server: zz.xiaoqingwa.xyz
-  type: vmess
-  udp: true
-  uuid: 09740703-d597-3396-9502-45bb6e293342
-- alterId: 0
-  cipher: auto
-  name: 731|韩国普通线路2
-  port: 13092
-  server: zz.xiaoqingwa.xyz
-  type: vmess
-  udp: true
-  uuid: 09740703-d597-3396-9502-45bb6e293342
 - alterId: 0
   cipher: auto
   name: '733|韩国普通线路1 #1'
@@ -2400,7 +2345,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 09740703-d597-3396-9502-45bb6e293342
-- name: '744|🇰🇷 韩国1 #2'
+- name: '744|🇰🇷 韩国1 #3'
   password: LCXzMd9rngX_38o4mcgwZ6SF
   port: 443
   server: starlink-sol.2513142.xyz
@@ -2456,7 +2401,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '746|🇰🇷 韩国1 #4'
+- name: '746|🇰🇷 韩国1 #5'
   password: drpkx0fKv4I9AF4j2i2MH2Op
   port: 443
   server: starlink-sol.2513142.xyz

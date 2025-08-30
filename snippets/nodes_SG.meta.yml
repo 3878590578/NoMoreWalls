@@ -49,22 +49,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 62|?? 新加坡 - 1
-  network: ws
-  port: 80
-  server: 5564d7.d5e36e3f.cyou
-  type: vmess
-  udp: true
-  uuid: a75c68b5-0de4-422e-9ee3-6b8d9c8993a6
-  ws-headers:
-    Host: sg01s.d5e36e3f.cyou
-  ws-opts:
-    headers:
-      Host: sg01s.d5e36e3f.cyou
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 62|?? 新加坡 - 2
   network: ws
   port: 80
@@ -93,22 +77,6 @@ proxies:
   ws-opts:
     headers:
       Host: sg03s.d5e36e3f.cyou
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 62|?? 新加坡 - 4
-  network: ws
-  port: 80
-  server: 5564d7.d5e36e3f.cyou
-  type: vmess
-  udp: true
-  uuid: a75c68b5-0de4-422e-9ee3-6b8d9c8993a6
-  ws-headers:
-    Host: sg04s.d5e36e3f.cyou
-  ws-opts:
-    headers:
-      Host: sg04s.d5e36e3f.cyou
     path: /
   ws-path: /
 - alterId: 0
@@ -794,100 +762,15 @@ proxies:
       Host: tms.dingtalk.com
     path: /market/sg?ed=512
   ws-path: /market/sg?ed=512
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '150,151|新加坡02|流媒体 #1'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: 1cs7mxEcoVKwcYepAnKgqHAFhRxPv6aO3tv7lNhwLDQ
-    short-id: 46bf6ea0
-  server: sg002.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '150,151|新加坡03|流媒体 #1'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: hBXQa1tSoP0jjIezHxeyKhf1YKxe8CoBHoxvIxEJuAc
-    short-id: 2c5ecaae
-  server: sg003.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '150,151|新加坡04|流媒体 #1'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: Bkxd25PPovqeYw6AevM-L266KM2kLDJomgmorzvGFmM
-    short-id: 2c846487
-  server: sg004.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
-- name: '150,151|新加坡05|流媒体 #1'
-  network: ws
-  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
-  port: 20230
-  server: sg005.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '150,151|新加坡06|流媒体 #1'
-  network: ws
-  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
-  port: 20230
-  server: sg006.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '150,151|新加坡07|流媒体 #1'
-  network: ws
-  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
-  port: 20230
-  server: sg007.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '150,151|新加坡08|流媒体 #1'
-  network: ws
-  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
-  port: 20230
-  server: sg008.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- down: 100
-  name: 154|🇸🇬 新加坡1
+- auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
+  down: 100
+  name: 154,515|yandex-646
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30002
   server: 139.99.89.107
   skip-cert-verify: true
   type: hysteria2
+  udp: true
   up: 100
 - client-fingerprint: edge
   flow: xtls-rprx-vision
@@ -925,9 +808,10 @@ proxies:
   server: sg02.nfsqttt.cn
   type: ss
   udp: true
-- client-fingerprint: edge
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '179|新加坡 SG1 #1'
+  name: 179,515|yandex-241
+  network: tcp
   port: 22206
   server: sg1.nfsqttt.cn
   servername: cdn-go.cn
@@ -936,9 +820,10 @@ proxies:
   type: vless
   udp: true
   uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
-- client-fingerprint: edge
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '179|新加坡 SG2 #1'
+  name: 179,515|yandex-242
+  network: tcp
   port: 22207
   server: sg2.nfsqttt.cn
   servername: cdn-go.cn
@@ -948,27 +833,27 @@ proxies:
   udp: true
   uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
 - cipher: chacha20-ietf-poly1305
-  name: '179|新加坡|SG01|ND #1'
+  name: 179,515|yandex-260
   password: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
   port: 11109
   server: sg01.nfsqttt.cn
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '179|新加坡|SG02|ND #1'
+  name: 179,515|yandex-261
   password: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
   port: 11120
   server: sg02.nfsqttt.cn
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '182,183,184,185,186,223,224,242,330,331,431,750|🇸🇬 加频道获取新订阅 #11'
+  name: '183,184,185,186,187,224,225,243,331,332,431,750|🇸🇬 加频道获取新订阅 #11'
   password: 89b0fd33-9bea-1b7c-4f46-8b817328a901
   port: 17315
   server: 120.240.103.35
   type: ss
 - down: null
-  name: 187|新加坡🚀️102
+  name: 188|新加坡🚀️102
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31102
   server: BGP1.abyssvpn.com
@@ -977,7 +862,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|新加坡🚀️202
+  name: 188|新加坡🚀️202
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31102
   server: BGP2.abyssvpn.com
@@ -986,7 +871,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|新加坡🚀️302
+  name: 188|新加坡🚀️302
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31102
   server: BGP3.abyssvpn.com
@@ -995,7 +880,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|新加坡🚀️402
+  name: 188|新加坡🚀️402
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31102
   server: BGP4.abyssvpn.com
@@ -1004,7 +889,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|新加坡🚀️502
+  name: 188|新加坡🚀️502
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31102
   server: BGP5.abyssvpn.com
@@ -1013,7 +898,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: 187|新加坡🚀️602
+  name: 188|新加坡🚀️602
   password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
   port: 31102
   server: BGP6.abyssvpn.com
@@ -1021,14 +906,14 @@ proxies:
   sni: apple.com
   type: hysteria2
   up: null
-- name: 190|🇸🇬 直连 | 加坡四号
+- name: 191|🇸🇬 直连 | 加坡四号
   password: 94931862-1484-11f0-9ab7-f23c95b6f51d
   port: 3443
   server: ad89eef0-t1x340-t3fjp7-cdfn.east.sgp2.189ti.com
   tls: true
   type: http
   username: 94931862-1484-11f0-9ab7-f23c95b6f51d
-- name: 206|SG
+- name: 207|SG
   network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
@@ -1037,7 +922,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 217|🇸🇬新加坡
+  name: 218|🇸🇬新加坡
   port: 443
   reality-opts:
     public-key: geXtlGNYBAQKgRseZd_iesJeU92z7fY2koG-knCXoWU
@@ -1050,7 +935,7 @@ proxies:
   udp: true
   uuid: 7d319f08-a95e-4554-80f9-6ada3c1ac80d
 - mport: 55000-56000
-  name: 217|🇸🇬新加坡2
+  name: 218|🇸🇬新加坡2
   password: 7d319f08-a95e-4554-80f9-6ada3c1ac80d
   port: 55000
   ports: 55000-56000
@@ -1063,355 +948,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '225|新加坡02|流媒体 #2'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: 1cs7mxEcoVKwcYepAnKgqHAFhRxPv6aO3tv7lNhwLDQ
-    short-id: 46bf6ea0
-  server: sg002.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '225|新加坡03|流媒体 #2'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: hBXQa1tSoP0jjIezHxeyKhf1YKxe8CoBHoxvIxEJuAc
-    short-id: 2c5ecaae
-  server: sg003.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '225|新加坡04|流媒体 #2'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: Bkxd25PPovqeYw6AevM-L266KM2kLDJomgmorzvGFmM
-    short-id: 2c846487
-  server: sg004.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38
-- name: '225|新加坡05|流媒体 #2'
-  network: ws
-  password: 4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38
-  port: 20230
-  server: sg005.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '225|新加坡06|流媒体 #2'
-  network: ws
-  password: 4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38
-  port: 20230
-  server: sg006.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '225|新加坡07|流媒体 #2'
-  network: ws
-  password: 4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38
-  port: 20230
-  server: sg007.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '225|新加坡08|流媒体 #2'
-  network: ws
-  password: 4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38
-  port: 20230
-  server: sg008.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '226,553|新加坡02|流媒体 #11'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: 1cs7mxEcoVKwcYepAnKgqHAFhRxPv6aO3tv7lNhwLDQ
-    short-id: 46bf6ea0
-  server: sg002.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 790f4282-a179-446e-bc2a-4eba58e669d5
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '226,553|新加坡03|流媒体 #11'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: hBXQa1tSoP0jjIezHxeyKhf1YKxe8CoBHoxvIxEJuAc
-    short-id: 2c5ecaae
-  server: sg003.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 790f4282-a179-446e-bc2a-4eba58e669d5
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '226,553|新加坡04|流媒体 #11'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: Bkxd25PPovqeYw6AevM-L266KM2kLDJomgmorzvGFmM
-    short-id: 2c846487
-  server: sg004.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 790f4282-a179-446e-bc2a-4eba58e669d5
-- name: '226,553|新加坡05|流媒体 #11'
-  network: ws
-  password: 790f4282-a179-446e-bc2a-4eba58e669d5
-  port: 20230
-  server: sg005.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '226,553|新加坡06|流媒体 #11'
-  network: ws
-  password: 790f4282-a179-446e-bc2a-4eba58e669d5
-  port: 20230
-  server: sg006.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '226,553|新加坡07|流媒体 #11'
-  network: ws
-  password: 790f4282-a179-446e-bc2a-4eba58e669d5
-  port: 20230
-  server: sg007.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '226,553|新加坡08|流媒体 #11'
-  network: ws
-  password: 790f4282-a179-446e-bc2a-4eba58e669d5
-  port: 20230
-  server: sg008.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '227|新加坡02|流媒体 #4'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: 1cs7mxEcoVKwcYepAnKgqHAFhRxPv6aO3tv7lNhwLDQ
-    short-id: 46bf6ea0
-  server: sg002.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ac590e89-ba43-49a1-a8b2-38ec70dc7907
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '227|新加坡03|流媒体 #4'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: hBXQa1tSoP0jjIezHxeyKhf1YKxe8CoBHoxvIxEJuAc
-    short-id: 2c5ecaae
-  server: sg003.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ac590e89-ba43-49a1-a8b2-38ec70dc7907
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '227|新加坡04|流媒体 #4'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: Bkxd25PPovqeYw6AevM-L266KM2kLDJomgmorzvGFmM
-    short-id: 2c846487
-  server: sg004.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ac590e89-ba43-49a1-a8b2-38ec70dc7907
-- name: '227|新加坡05|流媒体 #4'
-  network: ws
-  password: ac590e89-ba43-49a1-a8b2-38ec70dc7907
-  port: 20230
-  server: sg005.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '227|新加坡06|流媒体 #4'
-  network: ws
-  password: ac590e89-ba43-49a1-a8b2-38ec70dc7907
-  port: 20230
-  server: sg006.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '227|新加坡07|流媒体 #4'
-  network: ws
-  password: ac590e89-ba43-49a1-a8b2-38ec70dc7907
-  port: 20230
-  server: sg007.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '227|新加坡08|流媒体 #4'
-  network: ws
-  password: ac590e89-ba43-49a1-a8b2-38ec70dc7907
-  port: 20230
-  server: sg008.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '228,229,230|新加坡02|流媒体 #7'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: 1cs7mxEcoVKwcYepAnKgqHAFhRxPv6aO3tv7lNhwLDQ
-    short-id: 46bf6ea0
-  server: sg002.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '228,229,230|新加坡03|流媒体 #7'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: hBXQa1tSoP0jjIezHxeyKhf1YKxe8CoBHoxvIxEJuAc
-    short-id: 2c5ecaae
-  server: sg003.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '228,229,230|新加坡04|流媒体 #7'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: Bkxd25PPovqeYw6AevM-L266KM2kLDJomgmorzvGFmM
-    short-id: 2c846487
-  server: sg004.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
-- name: '228,229,230|新加坡05|流媒体 #7'
-  network: ws
-  password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
-  port: 20230
-  server: sg005.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '228,229,230|新加坡06|流媒体 #7'
-  network: ws
-  password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
-  port: 20230
-  server: sg006.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '228,229,230|新加坡07|流媒体 #7'
-  network: ws
-  password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
-  port: 20230
-  server: sg007.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '228,229,230|新加坡08|流媒体 #7'
-  network: ws
-  password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
-  port: 20230
-  server: sg008.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '287,551,552|新加坡02|流媒体 #10'
+  name: '288,551,552|新加坡02|流媒体 #11'
   network: grpc
   port: 20230
   reality-opts:
@@ -1428,7 +965,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '287,551,552|新加坡03|流媒体 #10'
+  name: '288,551,552|新加坡03|流媒体 #11'
   network: grpc
   port: 20230
   reality-opts:
@@ -1445,7 +982,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '287,551,552|新加坡04|流媒体 #10'
+  name: '288,551,552|新加坡04|流媒体 #11'
   network: grpc
   port: 20230
   reality-opts:
@@ -1458,7 +995,7 @@ proxies:
   type: vless
   udp: true
   uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
-- name: '287,551,552|新加坡05|流媒体 #10'
+- name: '288,551,552|新加坡05|流媒体 #11'
   network: ws
   password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
   port: 20230
@@ -1467,7 +1004,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '287,551,552|新加坡06|流媒体 #10'
+- name: '288,551,552|新加坡06|流媒体 #11'
   network: ws
   password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
   port: 20230
@@ -1476,7 +1013,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '287,551,552|新加坡07|流媒体 #10'
+- name: '288,551,552|新加坡07|流媒体 #11'
   network: ws
   password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
   port: 20230
@@ -1485,9 +1022,270 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '287,551,552|新加坡08|流媒体 #10'
+- name: '288,551,552|新加坡08|流媒体 #11'
   network: ws
   password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  port: 20230
+  server: sg008.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '289|新加坡02|流媒体 #1'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: 1cs7mxEcoVKwcYepAnKgqHAFhRxPv6aO3tv7lNhwLDQ
+    short-id: 46bf6ea0
+  server: sg002.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 813e7fc5-2c9a-4967-802b-6443930ecb7e
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '289|新加坡03|流媒体 #1'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: hBXQa1tSoP0jjIezHxeyKhf1YKxe8CoBHoxvIxEJuAc
+    short-id: 2c5ecaae
+  server: sg003.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 813e7fc5-2c9a-4967-802b-6443930ecb7e
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '289|新加坡04|流媒体 #1'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: Bkxd25PPovqeYw6AevM-L266KM2kLDJomgmorzvGFmM
+    short-id: 2c846487
+  server: sg004.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 813e7fc5-2c9a-4967-802b-6443930ecb7e
+- name: '289|新加坡05|流媒体 #1'
+  network: ws
+  password: 813e7fc5-2c9a-4967-802b-6443930ecb7e
+  port: 20230
+  server: sg005.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '289|新加坡06|流媒体 #1'
+  network: ws
+  password: 813e7fc5-2c9a-4967-802b-6443930ecb7e
+  port: 20230
+  server: sg006.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '289|新加坡07|流媒体 #1'
+  network: ws
+  password: 813e7fc5-2c9a-4967-802b-6443930ecb7e
+  port: 20230
+  server: sg007.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '289|新加坡08|流媒体 #1'
+  network: ws
+  password: 813e7fc5-2c9a-4967-802b-6443930ecb7e
+  port: 20230
+  server: sg008.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '290,291,292,515,554|新加坡02|流媒体 #13'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: 1cs7mxEcoVKwcYepAnKgqHAFhRxPv6aO3tv7lNhwLDQ
+    short-id: 46bf6ea0
+  server: sg002.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '290,291,292,515,554|新加坡03|流媒体 #13'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: hBXQa1tSoP0jjIezHxeyKhf1YKxe8CoBHoxvIxEJuAc
+    short-id: 2c5ecaae
+  server: sg003.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '290,291,292,515,554|新加坡04|流媒体 #13'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: Bkxd25PPovqeYw6AevM-L266KM2kLDJomgmorzvGFmM
+    short-id: 2c846487
+  server: sg004.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+- name: '290,291,292,554|新加坡05|流媒体 #13'
+  network: ws
+  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  port: 20230
+  server: sg005.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '290,291,292,554|新加坡06|流媒体 #13'
+  network: ws
+  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  port: 20230
+  server: sg006.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '290,291,292,554|新加坡07|流媒体 #13'
+  network: ws
+  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  port: 20230
+  server: sg007.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '290,291,292,554|新加坡08|流媒体 #13'
+  network: ws
+  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  port: 20230
+  server: sg008.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '293,294,295,297,298|新加坡02|流媒体 #9'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: 1cs7mxEcoVKwcYepAnKgqHAFhRxPv6aO3tv7lNhwLDQ
+    short-id: 46bf6ea0
+  server: sg002.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '293,294,295,297,298|新加坡03|流媒体 #9'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: hBXQa1tSoP0jjIezHxeyKhf1YKxe8CoBHoxvIxEJuAc
+    short-id: 2c5ecaae
+  server: sg003.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '293,294,295,297,298|新加坡04|流媒体 #9'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: Bkxd25PPovqeYw6AevM-L266KM2kLDJomgmorzvGFmM
+    short-id: 2c846487
+  server: sg004.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+- name: '293,294,295,297,298|新加坡05|流媒体 #9'
+  network: ws
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: sg005.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '293,294,295,297,298|新加坡06|流媒体 #9'
+  network: ws
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: sg006.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '293,294,295,297,298|新加坡07|流媒体 #9'
+  network: ws
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: sg007.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '293,294,295,297,298|新加坡08|流媒体 #9'
+  network: ws
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
   port: 20230
   server: sg008.421421.xyz
   skip-cert-verify: true
@@ -1496,21 +1294,21 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 302|新加坡NO.1
+  name: 303|新加坡NO.1
   port: 45054
   server: haa.dashuai.cyou
   type: vmess
   udp: true
-  uuid: f919a50e-33bd-4d2d-85ad-0cd734d9a551
+  uuid: 3eb55b0c-2f41-4676-a9a9-555634931215
 - alterId: 0
   cipher: auto
-  name: 302|新加坡NO.2
+  name: 303|新加坡NO.2
   port: 45055
   server: xdd.dashuai.cyou
   type: vmess
   udp: true
-  uuid: f919a50e-33bd-4d2d-85ad-0cd734d9a551
-- name: 305|新加坡
+  uuid: 3eb55b0c-2f41-4676-a9a9-555634931215
+- name: 306|新加坡
   password: bd5ced55-0594-4277-b733-1e23f32191f4
   port: 40001
   server: xjp.dimoyun.top
@@ -1518,7 +1316,7 @@ proxies:
   sni: xjp.dimoyun.top
   type: hysteria2
   udp: true
-- name: '306|新加坡 #1'
+- name: '307|新加坡 #1'
   password: 5927b5bc-9b72-49d3-92d6-7df23688a11f
   port: 40001
   server: xjp.dimoyun.top
@@ -1526,7 +1324,7 @@ proxies:
   sni: xjp.dimoyun.top
   type: hysteria2
   udp: true
-- name: '307|新加坡 #2'
+- name: '308|新加坡 #2'
   password: 48da59f8-4814-4e0f-a6b4-342affcc7422
   port: 40001
   server: xjp.dimoyun.top
@@ -1534,7 +1332,7 @@ proxies:
   sni: xjp.dimoyun.top
   type: hysteria2
   udp: true
-- name: '308|新加坡 #3'
+- name: '309|新加坡 #3'
   password: d5db84c7-7b44-49ce-aa78-b2f603a39428
   port: 40001
   server: xjp.dimoyun.top
@@ -1542,7 +1340,7 @@ proxies:
   sni: xjp.dimoyun.top
   type: hysteria2
   udp: true
-- name: '309|新加坡 #4'
+- name: '310|新加坡 #4'
   password: 46460496-2052-44ca-81d9-76deaf65e64d
   port: 40001
   server: xjp.dimoyun.top
@@ -1550,7 +1348,8 @@ proxies:
   sni: xjp.dimoyun.top
   type: hysteria2
   udp: true
-- name: '310|新加坡 #5'
+- auth: 57119095-1a67-4e21-9480-c7f960715fb6
+  name: 311,515|yandex-728
   password: 57119095-1a67-4e21-9480-c7f960715fb6
   port: 40001
   server: xjp.dimoyun.top
@@ -1558,7 +1357,7 @@ proxies:
   sni: xjp.dimoyun.top
   type: hysteria2
   udp: true
-- name: '311|新加坡 #6'
+- name: '312|新加坡 #6'
   password: 71f0596d-92fc-4615-9171-848c51d70da1
   port: 40001
   server: xjp.dimoyun.top
@@ -1566,7 +1365,7 @@ proxies:
   sni: xjp.dimoyun.top
   type: hysteria2
   udp: true
-- name: '312|新加坡 #7'
+- name: '313|新加坡 #7'
   password: 84348302-f6ea-46b0-9540-58d09e919b6c
   port: 40001
   server: xjp.dimoyun.top
@@ -1574,7 +1373,7 @@ proxies:
   sni: xjp.dimoyun.top
   type: hysteria2
   udp: true
-- name: '313|新加坡 #8'
+- name: '314|新加坡 #8'
   password: d379ea04-d403-47b5-abe9-fdffa3907411
   port: 40001
   server: xjp.dimoyun.top
@@ -1582,7 +1381,7 @@ proxies:
   sni: xjp.dimoyun.top
   type: hysteria2
   udp: true
-- name: '314|新加坡 #9'
+- name: '315|新加坡 #9'
   password: 40085e6d-2059-49ca-9ddf-085a8d6c9f4b
   port: 40001
   server: xjp.dimoyun.top
@@ -1591,49 +1390,49 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 318|🇸🇬  Singapore 9
+  name: 319|🇸🇬  Singapore 9
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46609
   server: xjp-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 318|🇸🇬  Singapore 10
+  name: 319|🇸🇬  Singapore 10
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46610
   server: xjp-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 318|🇸🇬  Singapore 11
+  name: 319|🇸🇬  Singapore 11
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46611
   server: xjp-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 318|🇸🇬  Singapore 12
+  name: 319|🇸🇬  Singapore 12
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46612
   server: xjp-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 318|🇸🇬  Singapore 13
+  name: 319|🇸🇬  Singapore 13
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46613
   server: xjp-jd.huidu51.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 318|🇸🇬  Singapore 14
+  name: 319|🇸🇬  Singapore 14
   password: dbba4dcb-db0c-4415-a6d3-d72a93206f5b
   port: 46614
   server: xjp-jd.huidu51.com
   type: ss
   udp: true
 - down: null
-  name: '333|新加坡🚀️102 #1'
+  name: '334|新加坡🚀️102 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31102
   server: BGP1.abyssvpn.com
@@ -1642,7 +1441,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|新加坡🚀️202 #1'
+  name: '334|新加坡🚀️202 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31102
   server: BGP2.abyssvpn.com
@@ -1651,7 +1450,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|新加坡🚀️302 #1'
+  name: '334|新加坡🚀️302 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31102
   server: BGP3.abyssvpn.com
@@ -1660,7 +1459,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|新加坡🚀️402 #1'
+  name: '334|新加坡🚀️402 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31102
   server: BGP4.abyssvpn.com
@@ -1669,7 +1468,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|新加坡🚀️502 #1'
+  name: '334|新加坡🚀️502 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31102
   server: BGP5.abyssvpn.com
@@ -1678,7 +1477,7 @@ proxies:
   type: hysteria2
   up: null
 - down: null
-  name: '333|新加坡🚀️602 #1'
+  name: '334|新加坡🚀️602 #1'
   password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
   port: 31102
   server: BGP6.abyssvpn.com
@@ -1686,6 +1485,48 @@ proxies:
   sni: apple.com
   type: hysteria2
   up: null
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 335|频道：@GZAOWUJD
+  port: 11451
+  reality-opts:
+    public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+    short-id: 4b070735
+  server: sg2.gzcloud.shop
+  servername: buylite.music.apple.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1f84e51f-c290-4426-9468-3060af826425
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 335|🇸🇬新加坡04|高速
+  port: 11451
+  reality-opts:
+    public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+    short-id: 4b070735
+  server: sg3.gzcloud.shop
+  servername: buylite.music.apple.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1f84e51f-c290-4426-9468-3060af826425
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 335|🇸🇬新加坡05|高速
+  port: 13444
+  reality-opts:
+    public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+    short-id: 4b070735
+  server: sg-a1.oci.ee
+  servername: buylite.music.apple.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1f84e51f-c290-4426-9468-3060af826425
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -1981,7 +1822,8 @@ proxies:
   sni: xjp.foldjc.top
   type: hysteria2
   udp: true
-- name: '347|新加坡 #12'
+- auth: 8eb7c190-7f94-4ad6-9b19-b35ea5456275
+  name: 347,515|yandex-192
   password: 8eb7c190-7f94-4ad6-9b19-b35ea5456275
   port: 37012
   server: xjp.foldjc.top
@@ -2510,110 +2352,110 @@ proxies:
   server: 217.197.161.166
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-217.197.161.138-0126
+  name: 381,422|🇸🇬 SG-217.197.161.138-0173
   password: G!yBwPWH3Vao
   port: 811
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-217.197.161.166-0127
+  name: 381,422|🇸🇬 SG-217.197.161.166-0174
   password: G!yBwPWH3Vao
   port: 801
   server: 217.197.161.166
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-217.197.161.166-0128
+  name: 381,422|🇸🇬 SG-217.197.161.166-0175
   password: G!yBwPWH3Vao
   port: 811
   server: 217.197.161.166
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-217.197.161.136-0129
+  name: 381,422|🇸🇬 SG-217.197.161.136-0176
   password: G!yBwPWH3Vao
   port: 808
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-217.197.161.166-0130
+  name: 381,422|🇸🇬 SG-217.197.161.166-0177
   password: G!yBwPWH3Vao
   port: 800
   server: 217.197.161.166
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-217.197.161.136-0131
+  name: 381,422|🇸🇬 SG-217.197.161.136-0178
   password: G!yBwPWH3Vao
   port: 806
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-217.197.161.164-0132
+  name: 381,422|🇸🇬 SG-217.197.161.164-0179
   password: G!yBwPWH3Vao
   port: 811
   server: 217.197.161.164
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-217.197.161.164-0133
+  name: 381,422|🇸🇬 SG-217.197.161.164-0180
   password: G!yBwPWH3Vao
   port: 806
   server: 217.197.161.164
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-217.197.161.136-0134
+  name: 381,422|🇸🇬 SG-217.197.161.136-0181
   password: G!yBwPWH3Vao
   port: 803
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-81.90.189.18-0135
+  name: 381,422|🇸🇬 SG-81.90.189.18-0182
   password: G!yBwPWH3Vao
   port: 812
   server: 81.90.189.18
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-81.90.189.152-0136
+  name: 381,422|🇸🇬 SG-81.90.189.152-0183
   password: G!yBwPWH3Vao
   port: 805
   server: 81.90.189.152
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-217.197.161.164-0137
+  name: 381,422|🇸🇬 SG-217.197.161.164-0184
   password: G!yBwPWH3Vao
   port: 803
   server: 217.197.161.164
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-81.90.189.152-0138
+  name: 381,422|🇸🇬 SG-81.90.189.152-0185
   password: G!yBwPWH3Vao
   port: 800
   server: 81.90.189.152
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-81.90.189.18-0139
+  name: 381,422|🇸🇬 SG-81.90.189.18-0186
   password: G!yBwPWH3Vao
   port: 806
   server: 81.90.189.18
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-81.90.189.18-0140
+  name: 381,422|🇸🇬 SG-81.90.189.18-0187
   password: G!yBwPWH3Vao
   port: 800
   server: 81.90.189.18
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-217.197.161.136-0141
+  name: 381,422|🇸🇬 SG-217.197.161.136-0188
   password: G!yBwPWH3Vao
   port: 810
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 381|🇸🇬SG-217.197.161.138-0142
+  name: 381,422|🇸🇬 SG-217.197.161.138-0189
   password: G!yBwPWH3Vao
   port: 805
   server: 217.197.161.138
   type: ss
 - alterId: 4
   cipher: auto
-  name: '381,422,508|🇸🇬SG-103.253.26.134-0192 #1'
+  name: 381,508|🇸🇬SG-103.253.26.134-0192
   network: ws
   port: 443
   server: 103.253.26.134
@@ -2628,12 +2470,12 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '381,422,508|🇸🇬SG-180.215.130.123-0193 #1'
+  name: 381,422,508|🇸🇬SG-180.215.130.123-0193
   network: ws
   port: 46452
   server: 180.215.130.123
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: c5414fe0-018b-473a-aa3b-f210f2ba42f5
@@ -2643,12 +2485,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '381,422,508|🇸🇬SG-8.214.33.158-0194 #1'
+  name: 381,422,508|🇸🇬SG-8.214.33.158-0194
   network: ws
   port: 80
   server: 8.214.33.158
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef
@@ -2658,7 +2500,7 @@ proxies:
     path: /
 - alterId: 4
   cipher: auto
-  name: '381,422,508|🇸🇬SG-202.61.141.130-0196 #1'
+  name: 381,508|🇸🇬SG-202.61.141.130-0196
   network: ws
   port: 443
   server: 202.61.141.130
@@ -2673,7 +2515,7 @@ proxies:
     path: /ws
 - alterId: 4
   cipher: auto
-  name: '381,422,508|🇸🇬SG-103.253.26.20-0197 #1'
+  name: 381,508|🇸🇬SG-103.253.26.20-0197
   network: ws
   port: 443
   server: 103.253.26.20
@@ -2688,12 +2530,12 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '381,422,508|🇸🇬SG-180.215.130.123-0198 #1'
+  name: 381,422,508|🇸🇬SG-180.215.130.123-0198
   network: ws
   port: 11584
   server: 180.215.130.123
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 181472ed-0bb7-43be-dccb-74aca2b33ed5
@@ -2703,12 +2545,12 @@ proxies:
     path: /
 - alterId: 4
   cipher: auto
-  name: 381,508|🇸🇬SG-103.253.26.20-0379
+  name: 381,422,508|🇸🇬SG-103.253.26.20-0379
   network: ws
   port: 443
   server: 103.253.26.20
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
@@ -2718,12 +2560,12 @@ proxies:
     path: /
 - alterId: 4
   cipher: auto
-  name: 381,508|🇸🇬SG-202.61.141.130-0380
+  name: 381,422,508|🇸🇬SG-202.61.141.130-0380
   network: ws
   port: 443
   server: 202.61.141.130
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
@@ -2733,12 +2575,12 @@ proxies:
     path: /
 - alterId: 4
   cipher: auto
-  name: 381,508|🇸🇬SG-103.253.26.134-0383
+  name: 381,422,508|🇸🇬SG-103.253.26.134-0383
   network: ws
   port: 443
   server: 103.253.26.134
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
@@ -4043,72 +3885,72 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: aes-256-gcm
-  name: 432|🇸🇬 Singapore丨01
+  name: 432,515|yandex-57
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
-  port: '18001'
+  port: 18001
   server: sg001.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 432|🇸🇬 Singapore丨02
+  name: 432,515|yandex-58
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
-  port: '18002'
+  port: 18002
   server: sg002.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 432|🇸🇬 Singapore丨03
+  name: 432,515|yandex-59
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
-  port: '18003'
+  port: 18003
   server: sg003.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 432|🇸🇬 Singapore丨04
+  name: 432,515|yandex-60
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
-  port: '18004'
+  port: 18004
   server: sg004.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 432|🇸🇬 Singapore丨05
+  name: 432,515|yandex-61
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
-  port: '18005'
+  port: 18005
   server: sg005.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 432|🇸🇬 Singapore丨06
+  name: 432,515|yandex-62
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
-  port: '18006'
+  port: 18006
   server: sg006.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 432|🇸🇬 Singapore丨07
+  name: 432,515|yandex-63
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
-  port: '18007'
+  port: 18007
   server: sg007.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 432|🇸🇬 Singapore丨08
+  name: 432,515|yandex-64
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
-  port: '18008'
+  port: 18008
   server: sg008.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 432|🇸🇬 Singapore丨09
+  name: 432,515|yandex-65
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
-  port: '18009'
+  port: 18009
   server: sg009.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 432|🇸🇬 Singapore丨10
+  name: 432,515|yandex-66
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
-  port: '18010'
+  port: 18010
   server: sg010.dogsvip.site
   type: ss
   udp: true
@@ -4250,7 +4092,7 @@ proxies:
       Host: 756397c511531ef77c25528fae0e0d27.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: 450|🇸🇬 新加坡 1
+- name: 450,515|yandex-1038
   password: a8910f0e-8664-458c-adc5-7dfebbd88672
   port: 10001
   server: huyun-cdn.sg1.abccba.top
@@ -4258,7 +4100,7 @@ proxies:
   sni: music.163.com
   type: trojan
   udp: true
-- name: 450|🇸🇬 新加坡 1 [ IPv6 ]
+- name: 450,515|yandex-1039
   password: a8910f0e-8664-458c-adc5-7dfebbd88672
   port: 10001
   server: huyun-cdn6.sg1.huyun.icu
@@ -4266,7 +4108,7 @@ proxies:
   sni: dl.hu-yunpan.top
   type: trojan
   udp: true
-- name: 450|🇸🇬 新加坡 2 [ 推荐 ]
+- name: 450,515|yandex-1040
   password: a8910f0e-8664-458c-adc5-7dfebbd88672
   port: 10002
   server: huyun-cdn.sg2.abccba.top
@@ -4274,7 +4116,7 @@ proxies:
   sni: tms.dingtalk.com
   type: trojan
   udp: true
-- name: 450|🇸🇬 新加坡 2 [ 高速 ] [ IPv6 ]
+- name: 450,515|yandex-1041
   password: a8910f0e-8664-458c-adc5-7dfebbd88672
   port: 10002
   server: huyun-cdn6.sg2.huyun.icu
@@ -4282,7 +4124,7 @@ proxies:
   sni: dl.hu-yunpan.top
   type: trojan
   udp: true
-- name: 450|🇸🇬 新加坡 3
+- name: 450,515|yandex-1042
   password: a8910f0e-8664-458c-adc5-7dfebbd88672
   port: 10004
   server: huyun-cdn.sg3.abccba.top
@@ -4290,7 +4132,7 @@ proxies:
   sni: tms.dingtalk.com
   type: trojan
   udp: true
-- name: 450|🇸🇬 新加坡 3 [ IPv6 ]
+- name: 450,515|yandex-1043
   password: a8910f0e-8664-458c-adc5-7dfebbd88672
   port: 10004
   server: huyun-cdn6.sg3.huyun.icu
@@ -4325,39 +4167,6 @@ proxies:
   ws-opts:
     headers:
       Host: xn--01-cr5c93pitv.xn--9kq81ml53a.site
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 461|🇸🇬 新加坡 7
-  password: 5b751724-20b0-49a5-87fb-b0eb95b4485e
-  port: 15141
-  server: 36.141.40.46
-  type: ss
-- client-fingerprint: chrome
-  name: 461|🇸🇬 Rayan - SSM - WSCT - SG - I...
-  network: ws
-  port: 443
-  server: www.speedtest.net
-  servername: sg-2-ssm.medicaldream.ir
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 021c3e15-6361-5107-b463-8062d99dbd79
-  ws-opts:
-    headers:
-      Host: sg-2-ssm.medicaldream.ir
-    path: /vless
-- name: 461|🇸🇬 TR-WS-TLS 🇸🇬 SG-128.199.237...
-  network: ws
-  password: ttfang
-  port: 443
-  server: 128.199.237.143
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
     path: /
 - name: 484|新加坡_新加坡
   network: ws
@@ -5752,72 +5561,31 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 538,597|🇸🇬 新加坡 42
-  network: tcp
-  port: 8080
-  reality-opts:
-    public-key: LmdkJJjr6pRvyiyzEztiiH64mAVeHuV3Tm-JGUX1jic
-  server: vl1.cpddx.club
-  servername: www.bing.com
+- alterId: 0
+  cipher: auto
+  name: 538,597|🇸🇬 新加坡 19
+  port: 45054
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2d718496-06fd-42dd-bb56-8d523f72a69a
+- name: 538,597|🇸🇬 新加坡 23
+  network: ws
+  port: 443
+  server: www.racknerd.com
+  servername: legendvps-sg.lzjnb.shop
   tls: true
   type: vless
   udp: true
-  uuid: 3f05b1eb-8c10-44b0-b59e-7f3af4aa3415
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 538,597|🇸🇬 新加坡 30
-  network: tcp
-  port: 8080
-  reality-opts:
-    public-key: LmdkJJjr6pRvyiyzEztiiH64mAVeHuV3Tm-JGUX1jic
-  server: vl1.cpddx.club
-  servername: www.bing.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e882645e-868f-4d47-9a2a-804088e082af
-- auth: 99153f03-a723-4765-bb48-2d09676e9aad
-  down: 1000
-  name: 538,597|🇸🇬 新加坡 16
-  password: 99153f03-a723-4765-bb48-2d09676e9aad
-  port: 8443
-  server: h22.cpddx.club
-  skip-cert-verify: false
-  sni: h22.cpddx.club
-  type: hysteria2
-  udp: true
-  up: 200
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 538,597|🇸🇬 新加坡 29
-  network: tcp
-  port: 8080
-  reality-opts:
-    public-key: LmdkJJjr6pRvyiyzEztiiH64mAVeHuV3Tm-JGUX1jic
-  server: vl1.cpddx.club
-  servername: www.bing.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f59b01ac-b951-46ce-b8bd-4b8a5b707e48
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 538,597|🇸🇬 新加坡 48
-  network: tcp
-  port: 8080
-  reality-opts:
-    public-key: LmdkJJjr6pRvyiyzEztiiH64mAVeHuV3Tm-JGUX1jic
-  server: vl1.cpddx.club
-  servername: www.bing.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e3746b7b-173f-414f-87b8-b8086a05f75c
+  uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51
+  ws-opts:
+    headers:
+      Host: legendvps-sg.lzjnb.shop
+    path: /lzjjjjjjj
 - name: '538,597|🇸🇬 新加坡1 #1'
   password: 93ce285e-1d56-4526-8180-f26d85481f94
-  port: 11003
+  port: 11048
   ports: 11001-11099
   server: fq-sg.mxtn.net
   skip-cert-verify: false
@@ -5825,7 +5593,7 @@ proxies:
   type: hysteria2
 - name: 538,597|🇸🇬 新加坡2
   password: 93ce285e-1d56-4526-8180-f26d85481f94
-  port: 11076
+  port: 11089
   ports: 11001-11099
   server: fq-sg.mxtn.net
   skip-cert-verify: false
@@ -5838,27 +5606,6 @@ proxies:
   skip-cert-verify: true
   sni: xjp.foldjc.top
   type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 549|[1倍] 新加坡01
-  password: c3ffd605-d9fb-42b7-98f2-a29fb999e5b6
-  port: 19541
-  server: mm.huawei-api.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 549|[1倍] 新加坡02
-  password: c3ffd605-d9fb-42b7-98f2-a29fb999e5b6
-  port: 19541
-  server: n1.huawei-api.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 549|[1倍] 新加坡03
-  password: c3ffd605-d9fb-42b7-98f2-a29fb999e5b6
-  port: 19541
-  server: tt.huawei-api.top
-  type: ss
   udp: true
 - down: 1024
   name: 549|[0.8倍] 新加坡01 H
@@ -5873,7 +5620,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '554|新加坡02|流媒体 #12'
+  name: '553|新加坡02|流媒体 #12'
   network: grpc
   port: 20230
   reality-opts:
@@ -5885,12 +5632,12 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  uuid: 790f4282-a179-446e-bc2a-4eba58e669d5
 - client-fingerprint: chrome
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '554|新加坡03|流媒体 #12'
+  name: '553|新加坡03|流媒体 #12'
   network: grpc
   port: 20230
   reality-opts:
@@ -5902,12 +5649,12 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  uuid: 790f4282-a179-446e-bc2a-4eba58e669d5
 - client-fingerprint: chrome
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '554|新加坡04|流媒体 #12'
+  name: '553|新加坡04|流媒体 #12'
   network: grpc
   port: 20230
   reality-opts:
@@ -5919,37 +5666,37 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
-- name: '554|新加坡05|流媒体 #12'
+  uuid: 790f4282-a179-446e-bc2a-4eba58e669d5
+- name: '553|新加坡05|流媒体 #12'
   network: ws
-  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  password: 790f4282-a179-446e-bc2a-4eba58e669d5
   port: 20230
   server: sg005.421421.xyz
   skip-cert-verify: true
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '554|新加坡06|流媒体 #12'
+- name: '553|新加坡06|流媒体 #12'
   network: ws
-  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  password: 790f4282-a179-446e-bc2a-4eba58e669d5
   port: 20230
   server: sg006.421421.xyz
   skip-cert-verify: true
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '554|新加坡07|流媒体 #12'
+- name: '553|新加坡07|流媒体 #12'
   network: ws
-  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  password: 790f4282-a179-446e-bc2a-4eba58e669d5
   port: 20230
   server: sg007.421421.xyz
   skip-cert-verify: true
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '554|新加坡08|流媒体 #12'
+- name: '553|新加坡08|流媒体 #12'
   network: ws
-  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  password: 790f4282-a179-446e-bc2a-4eba58e669d5
   port: 20230
   server: sg008.421421.xyz
   skip-cert-verify: true
@@ -5960,7 +5707,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '555|新加坡02|流媒体 #13'
+  name: '555|新加坡02|流媒体 #14'
   network: grpc
   port: 20230
   reality-opts:
@@ -5977,7 +5724,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '555|新加坡03|流媒体 #13'
+  name: '555|新加坡03|流媒体 #14'
   network: grpc
   port: 20230
   reality-opts:
@@ -5994,7 +5741,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '555|新加坡04|流媒体 #13'
+  name: '555|新加坡04|流媒体 #14'
   network: grpc
   port: 20230
   reality-opts:
@@ -6007,7 +5754,7 @@ proxies:
   type: vless
   udp: true
   uuid: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-- name: '555|新加坡05|流媒体 #13'
+- name: '555|新加坡05|流媒体 #14'
   network: ws
   password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
   port: 20230
@@ -6016,7 +5763,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '555|新加坡06|流媒体 #13'
+- name: '555|新加坡06|流媒体 #14'
   network: ws
   password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
   port: 20230
@@ -6025,7 +5772,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '555|新加坡07|流媒体 #13'
+- name: '555|新加坡07|流媒体 #14'
   network: ws
   password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
   port: 20230
@@ -6034,7 +5781,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '555|新加坡08|流媒体 #13'
+- name: '555|新加坡08|流媒体 #14'
   network: ws
   password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
   port: 20230
@@ -6073,20 +5820,6 @@ proxies:
   type: vmess
   udp: true
   uuid: a01b5e27-ece5-4675-866f-36b23a65d2a8
-- cipher: chacha20-ietf-poly1305
-  name: 560|🇸🇬新加坡1
-  password: 2177c494-cc50-4378-8df9-fd6a22600d0f
-  port: 33689
-  server: iost.prprcheng.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '560|🇸🇬新加坡2 #1'
-  password: 2177c494-cc50-4378-8df9-fd6a22600d0f
-  port: 14930
-  server: czby.prprcheng.top
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 568|Legend-SG
@@ -6115,20 +5848,6 @@ proxies:
   ws-opts:
     path: '%2F'
 - cipher: chacha20-ietf-poly1305
-  name: 571|新加坡01A
-  password: c8e618b6-50ec-4a23-8c97-4b58e90f072a
-  port: 27529
-  server: yd.tianji6.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 571|新加坡01B
-  password: c8e618b6-50ec-4a23-8c97-4b58e90f072a
-  port: 56789
-  server: lt.tianji6.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 600|🇸🇬Singapore-新加坡1
   password: 0305e0ec-ec7e-4770-9aa3-81e3427f91b6
   port: 42213
@@ -6142,49 +5861,7 @@ proxies:
   server: cm2.akaochangnode.xyz
   type: ss
   udp: true
-- alpn:
-  - h3
-  congestion-controller: bbr
-  name: 601|【混合基础版】新加坡 1
-  password: 36440287-a7b6-4855-9ea3-5ac1baa2868c
-  port: 9999
-  server: pinghaojipinlajisgg.uou.mom
-  skip-cert-verify: true
-  sni: www.icloud.com
-  type: tuic
-  udp: true
-  udp-relay-mode: quic
-  uuid: 36440287-a7b6-4855-9ea3-5ac1baa2868c
-- name: 601|【混合基础版】新加坡 2
-  password: 36440287-a7b6-4855-9ea3-5ac1baa2868c
-  port: 11112
-  server: pinghaojipinlajisgg.uou.mom
-  skip-cert-verify: true
-  sni: www.icloud.com
-  type: anytls
-  udp: true
-- alpn:
-  - h3
-  congestion-controller: bbr
-  name: '602|【混合基础版】新加坡 1 #1'
-  password: 315a1305-3116-4089-a374-b5637cccb9f8
-  port: 9999
-  server: pinghaojipinlajisgg.uou.mom
-  skip-cert-verify: true
-  sni: www.icloud.com
-  type: tuic
-  udp: true
-  udp-relay-mode: quic
-  uuid: 315a1305-3116-4089-a374-b5637cccb9f8
-- name: '602|【混合基础版】新加坡 2 #1'
-  password: 315a1305-3116-4089-a374-b5637cccb9f8
-  port: 11112
-  server: pinghaojipinlajisgg.uou.mom
-  skip-cert-verify: true
-  sni: www.icloud.com
-  type: anytls
-  udp: true
-- name: 603|🇸🇬 新加坡 001
+- name: '603|🇸🇬 新加坡 001 #1'
   password: ttfang
   port: 2096
   server: 185.18.184.194
@@ -6484,7 +6161,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.microsoft.de:57468
+    host: 26af988.dl.mozilla.net:57468
     mode: tls
   port: 2377
   server: 26af988.s1.glados-config.net
@@ -6494,7 +6171,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.microsoft.cat:57468
+    host: 26af988.dl.nintendo.it:57468
     mode: tls
   port: 2377
   server: 26af988.s2.glados-config.net
@@ -6504,7 +6181,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.nintendo.eu:57468
+    host: 26af988.dl.nintendo.jp:57468
     mode: tls
   port: 2377
   server: 26af988.s3.glados-config.net
@@ -6514,7 +6191,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.lu:193531
+    host: db5fe62.dl.microsoft.cz:193531
     mode: tls
   port: 2377
   server: db5fe62.s1.glados-config.net
@@ -6525,7 +6202,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.it:193531
+    host: db5fe62.dl.microsoft.fi:193531
     mode: tls
   port: 2377
   server: db5fe62.s2.glados-config.net
@@ -6536,7 +6213,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.nvidia.com:193531
+    host: db5fe62.dl.microsoft.ge:193531
     mode: tls
   port: 2377
   server: db5fe62.s3.glados-config.net
@@ -6547,7 +6224,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.fastly.net:154942
+    host: 5dfbdfc.dl.microsoft.cz:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.s1.glados-config.com
@@ -6558,7 +6235,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.nintendo.es:154942
+    host: 5dfbdfc.dl.microsoft.hu:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.s2.glados-config.com
@@ -6569,7 +6246,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.microsoft.jp:154942
+    host: 5dfbdfc.dl.microsoft.it:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.s3.glados-config.com
@@ -6580,7 +6257,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.eu:154948
+    host: feb7fa9.dl.nintendo.jp:154948
     mode: tls
   port: 2377
   server: feb7fa9.s1.glados-config.net
@@ -6591,7 +6268,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.ch:154948
+    host: feb7fa9.dl.microsoft.hu:154948
     mode: tls
   port: 2377
   server: feb7fa9.s2.glados-config.net
@@ -6602,7 +6279,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.it:154948
+    host: feb7fa9.dl.nintendo.de:154948
     mode: tls
   port: 2377
   server: feb7fa9.s3.glados-config.net
@@ -6613,7 +6290,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.microsoft.jp:185672
+    host: 10805ea.dl.fastly.net:185672
     mode: tls
   port: 2377
   server: 10805ea.s1.glados-config.net
@@ -6624,7 +6301,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.nintendo.jp:185672
+    host: 10805ea.dl.mozilla.net:185672
     mode: tls
   port: 2377
   server: 10805ea.s2.glados-config.net
@@ -6635,7 +6312,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.nintendo.jp:185672
+    host: 10805ea.dl.microsoft.io:185672
     mode: tls
   port: 2377
   server: 10805ea.s3.glados-config.net
@@ -6712,61 +6389,6 @@ proxies:
   skip-cert-verify: true
   sni: hsxjp.huasuan666.top
   type: hysteria2
-  udp: true
-- cipher: aes-128-gcm
-  name: '715,716,717,718|🇸🇬 Singapore 057 #3'
-  password: 4092a0d31011e2046687
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45937
-  server: sg057.jd.kunlunpx.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '715,716,717,718|🇸🇬 Singapore 034 #3'
-  password: 1d8e4861b251c8c4ce78
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45918
-  server: sg034.jd.kunlunpx.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '715,716,717,718|🇸🇬 Singapore 032 #3'
-  password: f4cd0a554e9d0558c581
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45917
-  server: sg032.jd.kunlunpx.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '715,716,717,718|🇸🇬 Singapore 035 #3'
-  password: b4c9e286a46bd6ecca13
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45919
-  server: sg035.jd.kunlunpx.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '715,716,717,718|🇸🇬 Singapore 078 #3'
-  password: 0722bd4137ff579e6917
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45579
-  server: sg078.jd.kunlunpx.com
-  type: ss
   udp: true
 - alterId: 0
   cipher: auto
