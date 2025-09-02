@@ -81,20 +81,20 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 307|加拿大1
+  name: 306|加拿大1
   port: 45064
   server: haa.dashuai.cyou
   type: vmess
   udp: true
-  uuid: f61df316-f16e-41c1-9c37-e9f7df005b72
+  uuid: 8aa224fa-d5cd-49c3-95b9-824294bf4e66
 - alterId: 0
   cipher: auto
-  name: 307|加拿大2
+  name: 306|加拿大2
   port: 45065
   server: xdd.dashuai.cyou
   type: vmess
   udp: true
-  uuid: f61df316-f16e-41c1-9c37-e9f7df005b72
+  uuid: 8aa224fa-d5cd-49c3-95b9-824294bf4e66
 - cipher: aes-128-gcm
   name: 368|🇨🇦1 |  14.1MB/s
   password: shadowsocks
@@ -103,14 +103,14 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 368,387,428,475|🇦CA_41
+  name: 368,387,475|🇦CA_41
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇨 CZ
-  name: 368,387,428,475|🇨🇿 CZ_50
+  name: 368,387,475| CZ_49
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
@@ -151,7 +151,7 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: aes-128-cfb
   country: 🇪 SE
-  name: 387,428,475,514|8J%2BHqPCfh6ZDQS00NS4xNTQuMjA0...
+  name: 387,475,514|8J%2BHqPCfh6ZDQS00NS4xNTQuMjA0...
   obfs: http_post
   obfs-param: ''
   password: $$Turb0VPN$$
@@ -161,19 +161,19 @@ proxies:
   server: ssca.irundns.net
   type: ssr
 - cipher: aes-256-cfb
-  name: 387,428|🇨🇦 CA-79.127.233.170-0215
+  name: 387|🇦CA-79.127.233.170-0207
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 79.127.233.170
   type: ss
 - alterId: 0
   cipher: auto
-  name: 387,428,514|🇨🇦CA-23.162.200.227-0226
+  name: 387,514|🇨🇦CA-23.162.200.227-0226
   network: ws
   port: 443
   server: 23.162.200.227
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -183,12 +183,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 387,428,514|🇨🇦CA-134.195.198.147-0236
+  name: 387,514|🇨🇦CA-134.195.198.147-0236
   network: ws
   port: 443
   server: 134.195.198.147
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -197,19 +197,19 @@ proxies:
       Host: inna.cfd
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 387,428,475|_06
+  name: 387,475|_02
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
 - alterId: 0
   cipher: auto
-  name: 387,428,514|🇨🇦CA-51.79.102.253-0316
+  name: 387,514|🇨🇦CA-51.79.102.253-0316
   network: ws
   port: 80
   server: 51.79.102.253
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -765,7 +765,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   country: 🇸 US
-  name: 387,428,475|🇸 US_162
+  name: 387,475|🇺🇸 US_170
   password: Kuiqk2cP0BMWrgme9IfEvp
   port: 443
   server: 38.180.211.126
@@ -1264,7 +1264,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 387,514,525|🇺🇸 US_160
+  name: '387,514,525|🇺🇸 US_160 #1'
   network: ws
   port: 443
   server: 15.235.83.228
@@ -1597,11 +1597,11 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 467|🇨🇦 >>@free4allVPN::CA
+  name: 467|>>@free4allVPN::CA
   network: ws
-  port: 80
+  port: '80'
   server: 51.79.102.253
-  skip-cert-verify: true
+  servername: ''
   tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -4128,6 +4128,13 @@ proxies:
   server: mm.huawei-api.top
   type: ss
   udp: true
+- name: 606|🇨🇦 加拿大 001
+  password: slch2024
+  port: 2096
+  server: 205.233.181.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
 - name: '652,749,750,751|🇨🇦 加拿大2🔒 #3'
   password: 升级订阅解锁全部节点
   port: 443
