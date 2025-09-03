@@ -227,14 +227,15 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 379,421|🇨🇳 TW-154.223.20.79-0305
+  name: 379,469|_23
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 379,508,519|台湾_090218001 L0
+  name: 379,508,519|台湾_090304014 L0
   network: ws
   port: '20521'
   server: 103.61.139.137
@@ -248,12 +249,10 @@ proxies:
       Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 379,516|🇹🇼 台湾3|@ripaojiedian
+  name: 379|TW-125.228.180.215-0661
   password: 60f661f4-579c-45c9-8156-e0db88911dc6
   port: 10089
   server: 125.228.180.215
-  tfo: false
   type: ss
 - alterId: 0
   cipher: auto
@@ -286,23 +285,26 @@ proxies:
   type: vmess
   uuid: f6406b6d-5487-46da-f793-46611269a306
 - cipher: chacha20-ietf-poly1305
-  name: 379|🇹🇼TW-36.232.126.210-0948
+  name: 379,537,597|🇨🇳 台湾家宽 1075-15
   password: bc318033-0adc-44c7-b75a-e6f927d31dca
   port: 10147
   server: 36.232.126.210
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 379|🇼TW-36.232.127.162-0950
+  name: '379,537,597|🇨🇳 台湾家宽 1096-80 #1'
   password: 1f64d67c-33f3-478f-a6a4-1dc4284ee192
   port: 10140
   server: 36.232.127.162
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 379|🇹🇼TW-114.46.79.69-0951
+  name: '379,537,597|🇨🇳 台湾 165-75 #1'
   password: ee095dba-fdb0-4ba0-b16e-fa6f6d02b5d0
   port: 10070
   server: 114.46.79.69
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '379,508,519|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #19'
@@ -801,18 +803,22 @@ proxies:
     headers:
       Host: us3.guolicheng.cyou
     path: /suti/us3?ed=2048
-- name: 379,508|🇹🇼TW-59.125.131.163-4888
+- country: 🇳 CN
+  name: 379,469,508|🇹🇼TW-59.125.131.163-4888
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 379,508|🇹🇼TW-210.203.60.190-4964
+  udp: true
+- country: 🇼 TW
+  name: 379,469,508|🇹🇼TW-210.203.60.190-4964
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
   server: taifo03a.kbservice.club
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - name: 379,508|🇹🇼TW-36.227.210.110-5490
   password: ED177480-E516-11EA-8B44-BBC4E882BA0B
   port: 20261
@@ -873,6 +879,13 @@ proxies:
   port: 50701
   server: 61.220.130.70
   type: ss
+- name: 421,490,491,519|台湾_090304004
+  password: 0d9154c94b184c65
+  port: 30010
+  server: zhw9527k.qt1999.xyz
+  skip-cert-verify: false
+  sni: zhw9527k.qt1999.xyz
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '443,444|台湾-优化 #1'
@@ -1017,26 +1030,32 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇼 TW
+  h2-opts: {}
+  http-opts: {}
+  name: 469| TW_159
+  network: ws
+  port: 20521
+  server: 103.61.139.137
+  skip-cert-verify: true
+  type: vmess
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇼TW
-  name: 472|TW_12
+  name: 472|TW_11
   password: 6150d205-c7fc-4f51-bf78-c40b68f73500
   port: 10124
   server: 36.232.116.119
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇹🇼TW
-  name: 472|🇹🇼TW_13
-  password: ab81ea11-ee79-48a6-8b5a-dfdde31294fd
-  port: 10088
-  server: 1.170.63.190
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 472|🇹🇼TW_14
-  password: e29af388-e050-4f8a-bc32-1d0720ad5a49
-  port: 10117
-  server: 36.235.7.111
+  name: 472|🇹🇼TW_12
+  password: a7653b0d-4483-4e16-8ae3-e24f5e7c923a
+  port: 10057
+  server: 125.231.72.47
   type: ss
 - alterId: 64
   cipher: auto
@@ -1120,22 +1139,15 @@ proxies:
     headers:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
-- name: 519|🇹🇼 TW_131
+- name: 519|🇹🇼 TW_144
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
   server: taifo03a.kbservice.club
   sni: taifo03a.kbservice.club
   type: trojan
-- name: 519|台湾_090218101
-  password: 86dea495-bb00-4292-b06b-40c7fed00743
-  port: 33889
-  server: cdntwa.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdntwa.xiaomispeed.com
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 519|台湾_090218015 L0
+  name: 519|台湾_090304015 L0
   network: tcp
   port: '35034'
   server: 165.154.195.38
@@ -1159,20 +1171,6 @@ proxies:
       Host: idx.xiaomayi.nyc.mn
     max-early-data: 2048
     path: /7ef17346-1b45-49e2-8cbd-f9aa6b9f303b-vm
-- cipher: chacha20-ietf-poly1305
-  name: 537,597|🇨🇳 台湾 036-21
-  password: 930028e6-79b0-4e58-aa63-1e7d66ae46f9
-  port: 52112
-  server: mlc.cac.cab
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 537,597|🇨🇳 台湾 006-24
-  password: 95cc61dd-8121-4e4c-9aa1-4051ddb04a2d
-  port: 51112
-  server: mlc.cac.cab
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 548|[1倍] 台湾01
   password: c3ffd605-d9fb-42b7-98f2-a29fb999e5b6
@@ -1275,7 +1273,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.nintendo.jp:57468
+    host: 26af988.dl.microsoft.com:57468
     mode: tls
   port: 2377
   server: 26af988.t1.glados-config.net
@@ -1285,7 +1283,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.blizzard.com:57468
+    host: 26af988.dl.microsoft.it:57468
     mode: tls
   port: 2377
   server: 26af988.t2.glados-config.net
@@ -1295,7 +1293,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.microsoft.com:57468
+    host: 26af988.dl.microsoft.net:57468
     mode: tls
   port: 2377
   server: 26af988.t3.glados-config.net
@@ -1305,7 +1303,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.microsoft.ch:57468
+    host: 26af988.dl.microsoft.lt:57468
     mode: tls
   port: 2377
   server: 26af988.t4.glados-config.net
@@ -1315,7 +1313,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.nintendo.com:57468
+    host: 26af988.dl.nintendo.jp:57468
     mode: tls
   port: 2377
   server: 26af988.t5.glados-config.net
@@ -1325,7 +1323,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 26af988.dl.fastly.net:57468
+    host: 26af988.dl.nintendo.net:57468
     mode: tls
   port: 2377
   server: 26af988.t6.glados-config.net
@@ -1335,7 +1333,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.it:193531
+    host: db5fe62.dl.microsoft.es:193531
     mode: tls
   port: 2377
   server: db5fe62.t1.glados-config.net
@@ -1346,7 +1344,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.io:193531
+    host: db5fe62.dl.microsoft.hu:193531
     mode: tls
   port: 2377
   server: db5fe62.t2.glados-config.net
@@ -1357,7 +1355,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.net:193531
+    host: db5fe62.dl.nintendo.eu:193531
     mode: tls
   port: 2377
   server: db5fe62.t3.glados-config.net
@@ -1368,7 +1366,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.cl:193531
+    host: db5fe62.dl.microsoft.cat:193531
     mode: tls
   port: 2377
   server: db5fe62.t4.glados-config.net
@@ -1379,7 +1377,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.nintendo.be:193531
+    host: db5fe62.dl.mozilla.net:193531
     mode: tls
   port: 2377
   server: db5fe62.t5.glados-config.net
@@ -1390,7 +1388,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.cat:193531
+    host: db5fe62.dl.nintendo.net:193531
     mode: tls
   port: 2377
   server: db5fe62.t6.glados-config.net
@@ -1401,7 +1399,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.microsoft.io:154942
+    host: 5dfbdfc.dl.blizzard.com:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.t1.glados-config.com
@@ -1412,7 +1410,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.microsoft.de:154942
+    host: 5dfbdfc.dl.microsoft.lu:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.t2.glados-config.com
@@ -1423,7 +1421,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.microsoft.md:154942
+    host: 5dfbdfc.dl.mozilla.net:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.t3.glados-config.com
@@ -1434,7 +1432,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.nvidia.com:154942
+    host: 5dfbdfc.dl.nintendo.de:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.t4.glados-config.com
@@ -1445,7 +1443,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.fastly.net:154942
+    host: 5dfbdfc.dl.microsoft.is:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.t5.glados-config.com
@@ -1456,7 +1454,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 5dfbdfc.dl.microsoft.es:154942
+    host: 5dfbdfc.dl.microsoft.ee:154942
     mode: tls
   port: 2377
   server: 5dfbdfc.t6.glados-config.com
@@ -1467,7 +1465,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.it:154948
+    host: feb7fa9.dl.epicgames.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.t1.glados-config.net
@@ -1478,7 +1476,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.net:154948
+    host: feb7fa9.dl.microsoft.ch:154948
     mode: tls
   port: 2377
   server: feb7fa9.t2.glados-config.net
@@ -1489,7 +1487,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.jp:154948
+    host: feb7fa9.dl.nintendo.es:154948
     mode: tls
   port: 2377
   server: feb7fa9.t3.glados-config.net
@@ -1500,7 +1498,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.net:154948
+    host: feb7fa9.dl.nintendo.de:154948
     mode: tls
   port: 2377
   server: feb7fa9.t4.glados-config.net
@@ -1511,7 +1509,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.blizzard.com:154948
+    host: feb7fa9.dl.microsoft.es:154948
     mode: tls
   port: 2377
   server: feb7fa9.t5.glados-config.net
@@ -1522,7 +1520,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.eu:154948
+    host: feb7fa9.dl.nintendo.it:154948
     mode: tls
   port: 2377
   server: feb7fa9.t6.glados-config.net
@@ -1533,7 +1531,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.nintendo.net:185672
+    host: 10805ea.dl.mozilla.net:185672
     mode: tls
   port: 2377
   server: 10805ea.t1.glados-config.net
@@ -1544,7 +1542,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.microsoft.com:185672
+    host: 10805ea.dl.microsoft.md:185672
     mode: tls
   port: 2377
   server: 10805ea.t2.glados-config.net
@@ -1555,7 +1553,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.microsoft.fi:185672
+    host: 10805ea.dl.nintendo.es:185672
     mode: tls
   port: 2377
   server: 10805ea.t3.glados-config.net
@@ -1566,7 +1564,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.nintendo.net:185672
+    host: 10805ea.dl.microsoft.it:185672
     mode: tls
   port: 2377
   server: 10805ea.t4.glados-config.net
@@ -1577,7 +1575,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.nintendo.net:185672
+    host: 10805ea.dl.fastly.net:185672
     mode: tls
   port: 2377
   server: 10805ea.t5.glados-config.net
@@ -1588,7 +1586,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 10805ea.dl.fastly.net:185672
+    host: 10805ea.dl.microsoft.jp:185672
     mode: tls
   port: 2377
   server: 10805ea.t6.glados-config.net
@@ -1672,6 +1670,17 @@ proxies:
     mode: http
   port: 45914
   server: tw030.jd.kunlunpx.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 713|🇹🇼 TaiwanDynamicIP
+  password: 3e26a8cfb09fda219b36
+  plugin: obfs
+  plugin-opts:
+    host: 4be5dcc8d73c771e331b.microsoft.com
+    mode: http
+  port: 45573
+  server: tw080.jd.kunlunpx.com
   type: ss
   udp: true
 - cipher: aes-128-gcm
