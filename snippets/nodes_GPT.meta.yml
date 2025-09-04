@@ -537,6 +537,22 @@ proxies:
   ws-opts:
     headers:
       Host: syyn-th1-mp7fr2.1095819.xyz
+- alpn:
+  - h3
+  auth-str: ''
+  auth_str: ''
+  client-fingerprint: chrome
+  down: 100
+  fast-open: false
+  name: '95,283,478|NL_1|7.3MB/s|GPT⁺|NF|37% #1'
+  port: 37519
+  ports: 10000-20000
+  protocol: udp
+  server: 109.104.153.91
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 100
 - client-fingerprint: chrome
   name: '95,478|NL_2|6.3MB/s|GPT⁺|27% #1'
   network: ws
@@ -544,11 +560,14 @@ proxies:
   server: nl.horizongatex.org
   servername: nl.horizongatex.org
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 2988936d-3c33-4572-900c-40df2c63faa0
   ws-opts:
-    path: '%2F'
+    headers:
+      Host: nl.horizongatex.org
+    path: /
 - alpn:
   - h3
   auth_str: ae845cbd-08fb-4346-929a-e28a6f3960a8
@@ -556,7 +575,7 @@ proxies:
   down: 70
   fast-open: true
   name: 685|1印度-ChatGPT
-  port: 6841
+  port: 8558
   ports: 6000-11000
   protocol: udp
   server: in2.shiyuandian.shop
@@ -570,7 +589,7 @@ proxies:
   down: 70
   fast-open: true
   name: 685|2印度-ChatGPT
-  port: 8635
+  port: 9032
   ports: 6000-11000
   protocol: udp
   server: in3.shiyuandian.shop
@@ -584,7 +603,7 @@ proxies:
   down: 70
   fast-open: true
   name: 685|1悉尼-ChatGPT
-  port: 7389
+  port: 8183
   ports: 6000-11000
   protocol: udp
   server: au.shiyuandian.shop

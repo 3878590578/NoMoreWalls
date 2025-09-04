@@ -149,22 +149,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 66|?? 韩国 - 2
-  network: ws
-  port: 80
-  server: 775f26.bf6f1e14.cfd
-  type: vmess
-  udp: true
-  uuid: a75c68b5-0de4-422e-9ee3-6b8d9c8993a6
-  ws-headers:
-    Host: kr02s.bf6f1e14.cfd
-  ws-opts:
-    headers:
-      Host: kr02s.bf6f1e14.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 66|?? 韩国 - 3
   network: ws
   port: 80
@@ -177,6 +161,22 @@ proxies:
   ws-opts:
     headers:
       Host: kr03s.bf6f1e14.cfd
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 66|?? 韩国 - 4
+  network: ws
+  port: 80
+  server: 775f26.bf6f1e14.cfd
+  type: vmess
+  udp: true
+  uuid: a75c68b5-0de4-422e-9ee3-6b8d9c8993a6
+  ws-headers:
+    Host: kr04s.bf6f1e14.cfd
+  ws-opts:
+    headers:
+      Host: kr04s.bf6f1e14.cfd
     path: /
   ws-path: /
 - alterId: 1
@@ -317,21 +317,25 @@ proxies:
   sni: kr-qingyun.dwyun.me
   type: trojan
   udp: true
-- down: 50
-  name: 157|🇰🇷 韩国1
+- auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
+  down: 50
+  name: 157,531|yandex-3922
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 140.245.68.133
   skip-cert-verify: true
   type: hysteria2
+  udp: true
   up: 50
-- down: 50
-  name: 157|🇰🇷 韩国2
+- auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
+  down: 50
+  name: 157,531|yandex-3923
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 158.180.77.90
   skip-cert-verify: true
   type: hysteria2
+  udp: true
   up: 50
 - name: 168|韩国
   obfs: salamander
@@ -395,7 +399,7 @@ proxies:
   udp: true
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 181|韩国 KR1
+  name: 180|韩国 KR1
   port: 22212
   server: kr1.nfsqttt.cn
   servername: cdn-go.cn
@@ -406,7 +410,7 @@ proxies:
   uuid: b9e6b867-d43e-48f8-bfd2-2f8d59c4db00
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 181|韩国 KR2 住宅
+  name: 180|韩国 KR2 住宅
   port: 22213
   server: kr2.nfsqttt.cn
   servername: cdn-go.cn
@@ -415,9 +419,10 @@ proxies:
   type: vless
   udp: true
   uuid: b9e6b867-d43e-48f8-bfd2-2f8d59c4db00
-- client-fingerprint: edge
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '186|韩国 KR1 #1'
+  name: 185,531|yandex-4624
+  network: tcp
   port: 22212
   server: kr1.nfsqttt.cn
   servername: cdn-go.cn
@@ -426,9 +431,10 @@ proxies:
   type: vless
   udp: true
   uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
-- client-fingerprint: edge
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '186|韩国 KR2 住宅 #1'
+  name: 185,531|yandex-4625
+  network: tcp
   port: 22213
   server: kr2.nfsqttt.cn
   servername: cdn-go.cn
@@ -437,114 +443,6 @@ proxies:
   type: vless
   udp: true
   uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
-- down: null
-  name: 194|韩国🚀️155
-  password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
-  port: 31155
-  server: BGP1.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: 194|韩国🚀️156
-  password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
-  port: 31156
-  server: BGP1.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: 194|韩国🚀️255
-  password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
-  port: 31155
-  server: BGP2.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: 194|韩国🚀️256
-  password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
-  port: 31156
-  server: BGP2.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: 194|韩国🚀️355
-  password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
-  port: 31155
-  server: BGP3.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: 194|韩国🚀️356
-  password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
-  port: 31156
-  server: BGP3.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: 194|韩国🚀️455
-  password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
-  port: 31155
-  server: BGP4.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: 194|韩国🚀️456
-  password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
-  port: 31156
-  server: BGP4.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: 194|韩国🚀️555
-  password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
-  port: 31155
-  server: BGP5.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: 194|韩国🚀️556
-  password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
-  port: 31156
-  server: BGP5.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: 194|韩国🚀️655
-  password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
-  port: 31155
-  server: BGP6.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: 194|韩国🚀️656
-  password: a4246fda-4ac9-40ee-82e7-28e80d279cc3
-  port: 31156
-  server: BGP6.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
 - cipher: rc4-md5
   name: 243|韩国 SK 전라북도 전주시 商宽 10Gbps Netfl...
   password: 26d8vZ
@@ -594,114 +492,6 @@ proxies:
   server: krgame06.fjk.wtf
   type: ss
   udp: true
-- down: null
-  name: '345|韩国🚀️155 #1'
-  password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
-  port: 31155
-  server: BGP1.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: '345|韩国🚀️156 #1'
-  password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
-  port: 31156
-  server: BGP1.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: '345|韩国🚀️255 #1'
-  password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
-  port: 31155
-  server: BGP2.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: '345|韩国🚀️256 #1'
-  password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
-  port: 31156
-  server: BGP2.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: '345|韩国🚀️355 #1'
-  password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
-  port: 31155
-  server: BGP3.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: '345|韩国🚀️356 #1'
-  password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
-  port: 31156
-  server: BGP3.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: '345|韩国🚀️455 #1'
-  password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
-  port: 31155
-  server: BGP4.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: '345|韩国🚀️456 #1'
-  password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
-  port: 31156
-  server: BGP4.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: '345|韩国🚀️555 #1'
-  password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
-  port: 31155
-  server: BGP5.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: '345|韩国🚀️556 #1'
-  password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
-  port: 31156
-  server: BGP5.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: '345|韩国🚀️655 #1'
-  password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
-  port: 31155
-  server: BGP6.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
-- down: null
-  name: '345|韩国🚀️656 #1'
-  password: 878f173a-5eb5-4b4a-849c-d30e12e9095e
-  port: 31156
-  server: BGP6.abyssvpn.com
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  up: null
 - client-fingerprint: edge
   flow: xtls-rprx-vision
   name: 346|🇰🇷韩国首尔02|高速
@@ -904,18 +694,20 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   country: 🇺🇸 US
-  name: 395,436,485|🇸 US_170
+  name: 395,485,531|yandex-3323
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   country: 🇺🇸 US
-  name: 395,436,485|🇺🇸 US_169
+  name: 395,485,531|yandex-3604
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 395,524|🇰🇷KR-152.69.230.170-0531
@@ -1282,12 +1074,12 @@ proxies:
   server: 3.36.118.190
   type: ss
 - cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 395,485|🇰🇷 KR_82
+  name: 395,531|yandex-3455
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 395,524|🇰🇷KR-54.180.114.77-5398
@@ -1461,17 +1253,10 @@ proxies:
   port: 2003
   server: 125.141.26.5
   type: ss
-- cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 436,485|🇷 KR_81
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  type: ss
 - cipher: aes-256-gcm
-  name: 446|🇰🇷 South Korea丨01
+  name: 446,531|yandex-821
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
-  port: '21001'
+  port: 21001
   server: kr001.dogsvip.site
   type: ss
   udp: true
@@ -1533,6 +1318,14 @@ proxies:
   skip-cert-verify: true
   sni: any.mjanyt.com
   type: anytls
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇷 KR
+  name: 485,531|yandex-3252
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
   udp: true
 - name: 500|韩国_首尔特别市
   network: ws
@@ -1940,7 +1733,7 @@ proxies:
   type: trojan
 - cipher: aes-128-gcm
   delay: 462
-  name: 520|韩国 - 首尔特别市 - Sejong Networks -...
+  name: 520,531|yandex-735
   password: VXPipi29nxMO
   plugin: obfs
   plugin-opts:
@@ -1949,6 +1742,7 @@ proxies:
   port: 1052
   server: kr2.qiangdong.xyz
   type: ss
+  udp: true
 - name: 524|🇰🇷KR-210.183.11.2-0977
   network: ws
   password: Aimer
@@ -2048,35 +1842,14 @@ proxies:
     headers:
       Host: ''
     path: /c399917/
-- name: 554,613|🇰🇷 悦 ·  韩国2-125
+- name: 554|🇷 悦 ·  韩国2-125
   password: e889ff36-a27f-477e-bcb5-f2ccdb361de5
-  port: 21046
+  port: 21097
   ports: 21001-21099
   server: yue-kr.yuetoto.net
   skip-cert-verify: false
   sni: yue-kr.yuetoto.net
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 565|[1倍] 韩国01
-  password: c3ffd605-d9fb-42b7-98f2-a29fb999e5b6
-  port: 19551
-  server: mm.huawei-api.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 565|[1倍] 韩国02
-  password: c3ffd605-d9fb-42b7-98f2-a29fb999e5b6
-  port: 19551
-  server: tt.huawei-api.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 565|[1倍] 韩国03
-  password: c3ffd605-d9fb-42b7-98f2-a29fb999e5b6
-  port: 19551
-  server: n1.huawei-api.top
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '574,575|KR.韩国.A #1'
   password: a01b5e27-ece5-4675-866f-36b23a65d2a8
@@ -2158,33 +1931,6 @@ proxies:
   server: kr037.jd.kunlunpx.com
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: '729,730,731,732|🇰🇷 SouthKorea 037 #4'
-  password: d7577ca6729babe0790f
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45921
-  server: kr037.jd.kunlunpx.com
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 747|韩国普通线路1
-  port: 13091
-  server: zz.xiaoqingwa.xyz
-  type: vmess
-  udp: true
-  uuid: 09740703-d597-3396-9502-45bb6e293342
-- alterId: 0
-  cipher: auto
-  name: 747|韩国普通线路2
-  port: 13092
-  server: zz.xiaoqingwa.xyz
-  type: vmess
-  udp: true
-  uuid: 09740703-d597-3396-9502-45bb6e293342
 - alterId: 0
   cipher: auto
   name: '749|韩国普通线路1 #1'

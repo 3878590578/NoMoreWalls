@@ -22,16 +22,18 @@ proxies:
   sni: mirror.hyperdedic.ru
   type: hysteria2
   up: 100
-- down: 1000
-  name: 157|🇷🇺 俄罗斯1
+- auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
+  down: 1000
+  name: 157,531|yandex-3921
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 46.17.43.71
   skip-cert-verify: true
   sni: du.wish.ml
   type: hysteria2
+  udp: true
   up: 1000
-- name: '283,350,395,436,511,512,514,515,530,535|14|RU_speednode_0010 #1'
+- name: 283,350,395,477,511,512,514,515,518,530,531,535|14|RU_speednode_0010
   network: ws
   password: slch2024
   port: 2096
@@ -76,7 +78,8 @@ proxies:
   sni: els1.dimoyun.top
   type: hysteria2
   udp: true
-- name: '319|俄罗斯1 #2'
+- auth: 48da59f8-4814-4e0f-a6b4-342affcc7422
+  name: 319,531|yandex-257
   password: 48da59f8-4814-4e0f-a6b4-342affcc7422
   port: 40001
   server: els1.dimoyun.top
@@ -84,7 +87,8 @@ proxies:
   sni: els1.dimoyun.top
   type: hysteria2
   udp: true
-- name: '319|俄罗斯2 #2'
+- auth: 48da59f8-4814-4e0f-a6b4-342affcc7422
+  name: 319,531|yandex-260
   password: 48da59f8-4814-4e0f-a6b4-342affcc7422
   port: 40001
   server: els2.dimoyun.top
@@ -222,7 +226,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 350,514,530,535|14|RU_speednode_0008
+  name: 350,535|14|RU_speednode_0008
   port: 443
   server: ru-nl01-vlr01.tcp-reset-club.net
   servername: hls-svod.itunes.apple.com
@@ -457,15 +461,15 @@ proxies:
   sni: download.windowsupdate1.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 395,436,485| GB_59
+  country: 🇬🇧 GB
+  name: 395,485|🇧 GB_60
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 395,436,477,485|🇺 RU_146
+  name: 395,485|🇺 RU_144
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
@@ -508,25 +512,27 @@ proxies:
     path: /6e9EtZ2dL
 - alterId: 0
   cipher: auto
-  name: 395,436|🇺🇸 _RU_俄罗斯->🇺🇸_US_美国_0@2
+  name: 395,531|yandex-417
   network: ws
   port: 23168
   server: 46.17.45.21
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: 4cf81d78-40d6-45dd-9b70-beb9c51adfa6
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 395,436|🇺🇸 _RU_俄罗斯->🇺🇸_US_美国_1_0@3
+  name: 395,531|yandex-418
   network: ws
   port: 25039
   server: 46.17.45.21
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: e8c470e9-56ee-4cf0-b251-dd07e3d58a60
   ws-opts:
     path: /
@@ -887,6 +893,19 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- name: 477,506,507,511,512,514,518,530,531|yandex-4266
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.174.138.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
 - alterId: 0
   cipher: auto
   country: 🇺 RU
@@ -1651,25 +1670,20 @@ proxies:
     headers:
       Host: ''
     path: /
-- delay: 1833
-  name: 520,554,613|🏴‍☠️ hysteria2-msk-4
+- auth: ee4a8f20-5467-4f12-bd87-ff21b7ba817c
+  delay: 1833
+  name: 520,531,554|‍☠️ hysteria2-msk-4
   password: ee4a8f20-5467-4f12-bd87-ff21b7ba817c
   port: 16187
   server: 95.181.212.141
   skip-cert-verify: true
   tfo: false
   type: hysteria2
+  udp: true
 - name: 524|🇷🇺RU-45.88.148.234-2899
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 45.88.148.234
-  type: trojan
-- name: '527,617|🇷🇺 俄罗斯 001 #1'
-  password: slch2024
-  port: 2096
-  server: 185.221.160.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 534|0|🇺俄罗斯 01 | 1x RU
@@ -2128,9 +2142,17 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 554,613|🇷🇺 悦 ·  俄罗斯2-133
+- name: 554|🇺 悦 ·  俄罗斯1-132
   password: e889ff36-a27f-477e-bcb5-f2ccdb361de5
-  port: 21018
+  port: 21048
+  ports: 21001-21099
+  server: yue-ru.yuetoto.net
+  skip-cert-verify: false
+  sni: yue-ru.yuetoto.net
+  type: hysteria2
+- name: 554|🇺 悦 ·  俄罗斯2-133
+  password: e889ff36-a27f-477e-bcb5-f2ccdb361de5
+  port: 21091
   ports: 21001-21099
   server: yue-ru.yuetoto.net
   skip-cert-verify: false
@@ -2143,70 +2165,77 @@ proxies:
   server: rutf.cokecloud.top
   type: ss
   udp: true
-- name: '617|🇷🇺 俄罗斯 002 #1'
+- name: 617|🇷🇺 俄罗斯 001
+  password: slch2024
+  port: 2096
+  server: 185.221.160.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+- name: 617|🇷🇺 俄罗斯 002
   password: slch2024
   port: 2096
   server: 213.241.198.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
-- name: '617|🇷🇺 俄罗斯 003 #1'
+- name: 617|🇷🇺 俄罗斯 003
   password: slch2024
   port: 2096
   server: 213.219.247.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
-- name: '617|🇷🇺 俄罗斯 004 #1'
+- name: 617|🇷🇺 俄罗斯 004
   password: slch2024
   port: 2096
   server: 195.13.54.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
-- name: '617|🇷🇺 俄罗斯 005 #1'
+- name: 617|🇷🇺 俄罗斯 005
   password: slch2024
   port: 2096
   server: 195.13.45.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
-- name: '617|🇷🇺 俄罗斯 006 #1'
+- name: 617|🇷🇺 俄罗斯 006
   password: slch2024
   port: 2096
   server: 195.13.44.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
-- name: '617|🇷🇺 俄罗斯 008 #1'
+- name: 617|🇷🇺 俄罗斯 008
   password: slch2024
   port: 2096
   server: 193.233.132.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
-- name: '617|🇷🇺 俄罗斯 009 #1'
+- name: 617|🇷🇺 俄罗斯 009
   password: slch2024
   port: 2096
   server: 193.233.21.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
-- name: '617|🇷🇺 俄罗斯 010 #1'
+- name: 617|🇷🇺 俄罗斯 010
   password: slch2024
   port: 2096
   server: 193.124.18.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
-- name: '617|🇷🇺 俄罗斯 011 #1'
+- name: 617|🇷🇺 俄罗斯 011
   password: slch2024
   port: 2096
   server: 193.9.49.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
-- name: '617|🇷🇺 俄罗斯 012 #1'
+- name: 617|🇷🇺 俄罗斯 012
   password: slch2024
   port: 2096
   server: 185.174.138.195
@@ -2263,14 +2292,6 @@ proxies:
   udp: true
 - name: '693|俄罗斯 #13'
   password: 681b592d-a727-42f2-b91f-797081d0b0c1
-  port: 22160
-  server: hsels.huasuan666.top
-  skip-cert-verify: true
-  sni: hsels.huasuan666.top
-  type: hysteria2
-  udp: true
-- name: '694|俄罗斯 #14'
-  password: 3a6148f3-ba99-4b0e-8022-043aa94b5864
   port: 22160
   server: hsels.huasuan666.top
   skip-cert-verify: true
@@ -2339,17 +2360,6 @@ proxies:
   plugin: obfs
   plugin-opts:
     host: 4be5dcc8d73c771e331b.microsoft.com
-    mode: http
-  port: 45930
-  server: ru046.jd.kunlunpx.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '729,730,731,732|🇷🇺 Russia 046 #4'
-  password: 11575f448fb4021fc611
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
     mode: http
   port: 45930
   server: ru046.jd.kunlunpx.com
