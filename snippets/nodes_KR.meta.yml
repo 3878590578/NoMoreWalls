@@ -172,22 +172,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 66|?? 韩国 - 1
-  network: ws
-  port: 80
-  server: 8630d6.ebc79b31.cfd
-  type: vmess
-  udp: true
-  uuid: a75c68b5-0de4-422e-9ee3-6b8d9c8993a6
-  ws-headers:
-    Host: kr01s.ebc79b31.cfd
-  ws-opts:
-    headers:
-      Host: kr01s.ebc79b31.cfd
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 66|?? 韩国 - 2
   network: ws
   port: 80
@@ -374,7 +358,7 @@ proxies:
   udp: true
 - auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   down: 50
-  name: 156,526|yandex-1248
+  name: 156,526|yandex-530
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 140.245.68.133
@@ -384,7 +368,7 @@ proxies:
   up: 50
 - auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   down: 50
-  name: 156,526|yandex-1249
+  name: 156,526|yandex-531
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 158.180.77.90
@@ -476,7 +460,7 @@ proxies:
   uuid: b9e6b867-d43e-48f8-bfd2-2f8d59c4db00
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 184,526|yandex-4775
+  name: 184,526|yandex-1740
   network: tcp
   port: 22212
   server: kr1.nfsqttt.cn
@@ -488,7 +472,7 @@ proxies:
   uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 184,526|yandex-4776
+  name: 184,526|yandex-1741
   network: tcp
   port: 22213
   server: kr2.nfsqttt.cn
@@ -810,23 +794,24 @@ proxies:
       Host: 152.67.218.38
     path: /
 - cipher: aes-256-cfb
-  country: 🇺🇸 US
-  name: 390,479,526|yandex-4284
+  country: 🇸 US
+  name: 390,430,479,526|yandex-4558
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 390,526|yandex-4416
+  country: 🇷 KR
+  name: 390,479,526|yandex-4690
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 390,479,482,526|yandex-352
+  country: 🇸US
+  name: 390,430,479,482,526|yandex-672
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
@@ -1370,8 +1355,28 @@ proxies:
   port: 2003
   server: 125.141.26.5
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 430,501,502,526|yandex-719
+  network: ws
+  port: 31164
+  server: 121.148.27.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 013517ba-85e5-4d0a-8610-af8632cca6ef
+  ws-opts:
+    path: /arki?ed=2048
+- cipher: aes-256-cfb
+  name: 430,526|yandex-4487
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: 440,526|yandex-1234
+  name: 440,526|yandex-504
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 21001
   server: kr001.dogsvip.site
@@ -1436,6 +1441,62 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
+- client-fingerprint: chrome
+  name: 471|Rayan - SSM - WSDR - KR - II -...
+  network: ws
+  port: 443
+  server: 45.82.246.106
+  servername: zula.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 2ed6a813-be48-548f-a8dd-8b23eb6c7133
+  ws-opts:
+    headers:
+      Host: 45.82.246.106
+    path: '%2Fvless'
+- client-fingerprint: chrome
+  name: 471|Rayan - SSM - WSCT - KR - I - ...
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: kr-1-ssm.medicaldream.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 37fea7dc-269d-539c-892f-3cd04260fd4b
+  ws-opts:
+    headers:
+      Host: kr-1-ssm.medicaldream.ir
+    path: '%2Fvless'
+- client-fingerprint: chrome
+  name: 471|Rayan - SSM - WSCT - KR - II -...
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: kr-2-ssm.medicaldream.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 2ed6a813-be48-548f-a8dd-8b23eb6c7133
+  ws-opts:
+    headers:
+      Host: kr-2-ssm.medicaldream.ir
+    path: '%2Fvless'
+- client-fingerprint: chrome
+  name: 471|Rayan - SSM - WSDR - KR - I - ...
+  network: ws
+  port: 443
+  server: 45.88.182.15
+  servername: zula.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 37fea7dc-269d-539c-892f-3cd04260fd4b
+  ws-opts:
+    headers:
+      Host: 45.88.182.15
+    path: '%2Fvless'
 - name: 495|韩国_首尔特别市
   network: ws
   port: 8443
@@ -1842,7 +1903,7 @@ proxies:
   type: trojan
 - cipher: aes-128-gcm
   delay: 462
-  name: 515,526|yandex-90
+  name: 515,526|yandex-879
   password: VXPipi29nxMO
   plugin: obfs
   plugin-opts:
@@ -1944,6 +2005,18 @@ proxies:
   server: 144.24.69.60
   sni: glckr.hruqoaw.cn
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 522,526|yandex-651
+  network: ws
+  port: 55582
+  server: 121.148.27.194
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c47059b2-c52e-4abd-b585-417461366b0c
+  ws-opts:
+    path: /arki?ed=2048
 - cipher: chacha20-ietf-poly1305
   name: 529|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2013,14 +2086,6 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   tls: false
-  type: hysteria2
-- name: 549,608|🇰🇷 悦 ·  韩国2-125
-  password: e889ff36-a27f-477e-bcb5-f2ccdb361de5
-  port: 21068
-  ports: 21001-21099
-  server: yue-kr.yuetoto.net
-  skip-cert-verify: false
-  sni: yue-kr.yuetoto.net
   type: hysteria2
 - cipher: chacha20-ietf-poly1305
   name: '569,570|KR.韩国.A #1'
