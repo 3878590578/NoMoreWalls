@@ -325,7 +325,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: '153|韩国 #1'
+  name: '151,153|韩国 #1'
   password: 7af26eae-63c7-43c8-b335-e3528f790459
   port: 1243
   server: zominsisa.dlayernet.xyz
@@ -333,7 +333,7 @@ proxies:
   udp: true
 - auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   down: 50
-  name: 158,522|yandex-460
+  name: 158,522|yandex-231
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 140.245.68.133
@@ -343,7 +343,7 @@ proxies:
   up: 50
 - auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   down: 50
-  name: 158,522|yandex-461
+  name: 158,522|yandex-232
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 158.180.77.90
@@ -435,7 +435,7 @@ proxies:
   uuid: b9e6b867-d43e-48f8-bfd2-2f8d59c4db00
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 186,522|yandex-873
+  name: 186,522|yandex-819
   network: tcp
   port: 22212
   server: kr1.nfsqttt.cn
@@ -447,7 +447,7 @@ proxies:
   uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 186,522|yandex-874
+  name: 186,522|yandex-820
   network: tcp
   port: 22213
   server: kr2.nfsqttt.cn
@@ -594,6 +594,20 @@ proxies:
   password: 26d8vZ
   port: 5185
   server: krgame06.fjk.wtf
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  delay: 221
+  name: '283,511,522,523|🇰🇷 韩国|@ripaojiedian #1'
+  password: VXPipi29nxMO
+  plugin: obfs
+  plugin-opts:
+    host: 182039459a34f64238143cd31ddebbc914362.taobao.com
+    mode: http
+  port: 1052
+  server: kr2.qiangdong.xyz
+  tfo: false
   type: ss
   udp: true
 - client-fingerprint: edge
@@ -769,23 +783,21 @@ proxies:
       Host: 152.67.218.38
     path: /
 - cipher: aes-256-cfb
-  country: 🇸 US
-  name: 390,430,475,522|yandex-3967
+  name: 390,522|yandex-4320
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇸 US
-  name: 390,430,475|🇺🇸 US_134
+  country: 🇸US
+  name: 390,478|🇸US_43
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 390,475,522|yandex-3896
+  name: 390,522|yandex-4249
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
@@ -859,11 +871,15 @@ proxies:
     path: /reffs7y26g0ua
 - alterId: 0
   cipher: auto
-  name: 390,522,526|🇰🇷 韩国 KT电信
+  country: 🇰🇷KR
+  h2-opts: {}
+  http-opts: {}
+  name: 390,478,522,526|韩国_090604004 L0
   network: ws
   port: '55582'
   server: 121.148.27.194
-  skip-cert-verify: false
+  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -1345,7 +1361,7 @@ proxies:
   server: 125.141.26.5
   type: ss
 - cipher: aes-256-gcm
-  name: 439,522|yandex-4403
+  name: 439,522|yandex-70
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 21001
   server: kr001.dogsvip.site
@@ -1411,73 +1427,153 @@ proxies:
   type: anytls
   udp: true
 - client-fingerprint: chrome
-  name: 467|🇰🇷 Rayan - SSM - WSDR - KR - I...
+  name: 467|Rayan - SSM - WSDR - KR - II -...
   network: ws
   port: 443
   server: 45.82.246.106
   servername: zula.ir
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: 2ed6a813-be48-548f-a8dd-8b23eb6c7133
   ws-opts:
     headers:
-      Host: zula.ir
-    path: /vless
+      Host: 45.82.246.106
+    path: '%2Fvless'
 - client-fingerprint: chrome
-  name: 467|🇰🇷 Rayan - SSM - WSCT - KR - I...
+  name: 467|Rayan - SSM - WSCT - KR - I - ...
   network: ws
   port: 443
   server: www.speedtest.net
   servername: kr-1-ssm.medicaldream.ir
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: 37fea7dc-269d-539c-892f-3cd04260fd4b
   ws-opts:
     headers:
       Host: kr-1-ssm.medicaldream.ir
-    path: /vless
+    path: '%2Fvless'
 - client-fingerprint: chrome
-  name: '467|🇰🇷 Rayan - SSM - WSCT - KR - I... #1'
+  name: 467|Rayan - SSM - WSCT - KR - II -...
   network: ws
   port: 443
   server: www.speedtest.net
   servername: kr-2-ssm.medicaldream.ir
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: 2ed6a813-be48-548f-a8dd-8b23eb6c7133
   ws-opts:
     headers:
       Host: kr-2-ssm.medicaldream.ir
-    path: /vless
+    path: '%2Fvless'
 - client-fingerprint: chrome
-  name: '467|🇰🇷 Rayan - SSM - WSDR - KR - I... #1'
+  name: 467|Rayan - SSM - WSDR - KR - I - ...
   network: ws
   port: 443
   server: 45.88.182.15
   servername: zula.ir
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: 37fea7dc-269d-539c-892f-3cd04260fd4b
   ws-opts:
     headers:
-      Host: zula.ir
-    path: /vless
-- cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 475,522|yandex-4099
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  type: ss
+      Host: 45.88.182.15
+    path: '%2Fvless'
+- alterId: 0
+  cipher: auto
+  country: 🇷KR
+  h2-opts: {}
+  http-opts: {}
+  name: 478,522,526|韩国_090604003 L0
+  network: ws
+  port: '16375'
+  server: 203.231.254.17
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
+  uuid: 524d9b26-e837-4217-9ac2-f9dc902b6ed8
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🇰🇷KR
+  h2-opts: {}
+  http-opts: {}
+  name: 478,522,526|韩国_090604001 L0
+  network: ws
+  port: '14065'
+  server: 203.231.254.17
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93ea7b38-dc6b-4b27-a02f-ec390ffdd920
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🇰🇷KR
+  h2-opts: {}
+  http-opts: {}
+  name: 478,522|yandex-465
+  network: ws
+  port: 31164
+  server: 121.148.27.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 013517ba-85e5-4d0a-8610-af8632cca6ef
+  ws-opts:
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🇰🇷KR
+  h2-opts: {}
+  http-opts: {}
+  name: 478,522,526|韩国_090604002 L0
+  network: ws
+  port: '9208'
+  server: 203.231.254.17
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ad68fbb4-b61a-491e-aa3f-f3d27f25996a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🇰🇷KR
+  h2-opts: {}
+  http-opts: {}
+  name: 478,522,526|韩国_090604005 L0
+  network: ws
+  port: '45630'
+  server: 121.148.27.194
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 75970383-3123-404d-86a5-136819cfcedf
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
 - name: 491|韩国_首尔特别市
   network: ws
   port: 8443
@@ -1885,7 +1981,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2323
-  name: 511,522|yandex-697
+  name: 511,522|yandex-313
   network: ws
   port: 55582
   server: 121.148.27.194
@@ -1895,18 +1991,6 @@ proxies:
   uuid: c47059b2-c52e-4abd-b585-417461366b0c
   ws-opts:
     path: /arki
-- cipher: aes-128-gcm
-  delay: 221
-  name: 511,522|yandex-698
-  password: VXPipi29nxMO
-  plugin: obfs
-  plugin-opts:
-    host: 182039459a34f64238143cd31ddebbc914362.taobao.com
-    mode: http
-  port: 1052
-  server: kr2.qiangdong.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 513|🇷 VIP 韩国01-1A
   password: e78fb3f8-1cce-4c6e-96a0-7a20ddb58647
@@ -1975,21 +2059,6 @@ proxies:
   sni: kr-qingyun.dwyun.me
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 518,522,526|韩国_090518005 L0
-  network: ws
-  port: '14065'
-  server: 203.231.254.17
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93ea7b38-dc6b-4b27-a02f-ec390ffdd920
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
 - cipher: chacha20-ietf-poly1305
   name: 525|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2035,7 +2104,7 @@ proxies:
   server: 3.34.192.249
   tfo: false
   type: ss
-- name: 526|韩国_090518125
+- name: 526|韩国_090604124
   password: V3bDL91w89Uh5n65tXawOrHt
   port: 443
   server: starlink-sol.2513142.xyz
@@ -2052,7 +2121,7 @@ proxies:
   tls: false
   type: hysteria2
   udp: true
-- name: 526|韩国_090518127
+- name: 526|韩国_090604126
   password: dqxLsBV3LitAt8Jwux5IRn7m
   port: 443
   server: starlink-sol.2513142.xyz
@@ -2134,7 +2203,7 @@ proxies:
     path: '%2F%3Fed%3D2560'
 - alterId: 0
   cipher: auto
-  name: 526|韩国_090518106 M64
+  name: 526|韩国_090604105 M64
   network: tcp
   port: '8888'
   server: 146.56.112.110
@@ -2142,15 +2211,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-- alterId: 0
-  cipher: auto
-  name: 544|🇷 韩国 04-91
-  port: 45075
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3d96c02f-679c-4948-ae2a-a4dcf278e396
 - cipher: chacha20-ietf-poly1305
   name: '564,565|KR.韩国.A #1'
   password: a01b5e27-ece5-4675-866f-36b23a65d2a8
@@ -2165,22 +2225,6 @@ proxies:
   server: xckr.cokecloud.top
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 568|321 韩国
-  port: 50021
-  server: 120.241.226.20
-  type: vmess
-  udp: true
-  uuid: f3c11ea9-8694-4e45-9373-2d9a8ea9c988
-- alterId: 0
-  cipher: auto
-  name: 568|322 韩国
-  port: 50022
-  server: 120.241.226.20
-  type: vmess
-  udp: true
-  uuid: f3c11ea9-8694-4e45-9373-2d9a8ea9c988
 - name: 647|韩国01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10836
