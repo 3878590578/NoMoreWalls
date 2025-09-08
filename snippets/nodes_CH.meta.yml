@@ -14,19 +14,22 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 408,409,427|🇭CH-156.146.62.164-0245
+  country: 🇸 US
+  name: 408,409,427,514|🇸 US_139
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  name: 408,409,427|🇨🇭CH-156.146.62.162-0234
+  country: 🇸 US
+  name: 408,409,427,514|🇺🇸 US_143
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
-  name: 408,409,427|🇨CH-156.146.62.163-0235
+  country: 🇸 US
+  name: 408,409,427,514|🇸 US_138
   password: shadowsocks
   port: 443
   server: 156.146.62.163
@@ -63,7 +66,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: 427|🇨CH-156.146.62.160-4110
+  name: 427|🇨CH-156.146.62.160-4106
   password: shadowsocks
   port: 443
   server: 156.146.62.160
@@ -130,7 +133,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '427,554|🇨🇭CH-186.190.215.149-7647 #1'
+  name: 427,554|🇨🇭CH-186.190.215.149-7647
   network: ws
   port: 443
   server: 186.190.215.149
@@ -177,6 +180,65 @@ proxies:
     headers:
       Host: xn--zqsr25d.xn--9kq81ml53a.site
     path: /
+- down: null
+  name: 495|[Hy2]瑞士苏黎世5-高速-长期
+  obfs: salamander
+  obfs-password: Tkyv7BlXrfdXs8Hz
+  password: e87bb107-99fa-45ee-a118-2261ef2db036
+  port: 18261
+  server: 167.17.181.233
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria2
+  up: null
+- down: null
+  name: 495|[Hy2]瑞士苏黎世4-高速-长期
+  obfs: salamander
+  obfs-password: nQeGkMf3UpOvoGfb
+  password: e87bb107-99fa-45ee-a118-2261ef2db036
+  port: 51261
+  server: 167.17.181.233
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria2
+  up: null
+- down: null
+  name: 495|[Hy2]瑞士苏黎世3-高速-长期
+  obfs: salamander
+  obfs-password: 7eqpwVttsjpPPrYN
+  password: e87bb107-99fa-45ee-a118-2261ef2db036
+  port: 56261
+  server: 167.17.181.233
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria2
+  up: null
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: 495|[tuic]瑞士苏黎世2-高速-长期
+  password: e87bb107-99fa-45ee-a118-2261ef2db036
+  port: 53414
+  server: 167.17.181.233
+  skip-cert-verify: true
+  sni: apple.com
+  type: tuic
+  udp: true
+  udp-relay-mode: native
+  uuid: e87bb107-99fa-45ee-a118-2261ef2db036
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: 495|[tuic]瑞士苏黎世1-高速-长期
+  password: e87bb107-99fa-45ee-a118-2261ef2db036
+  port: 23414
+  server: 167.17.181.233
+  skip-cert-verify: true
+  sni: apple.com
+  type: tuic
+  udp: true
+  udp-relay-mode: native
+  uuid: e87bb107-99fa-45ee-a118-2261ef2db036
 - name: '693,798,799,800|🇨🇭 瑞士1🔒 #3'
   password: 升级订阅解锁全部节点
   port: 10014
