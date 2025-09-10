@@ -177,7 +177,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: '291,390,462,511,583,584,588,589,591,595,601,604,607,608,609,610,611,612|12,13|香港|@ripaojiedian
+  name: '291,390,462,552,588,589,591,595,601,604,607,608,609,610,611,612|12,13|香港|@ripaojiedian
     #2'
   network: ws
   port: '30809'
@@ -195,7 +195,7 @@ proxies:
     path: /oooo
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '291,588,589,608,609|🇭🇰 香港2|@ripaojiedian #2'
+  name: '291,552,588,589,608,609|🇭🇰 香港2|@ripaojiedian #3'
   password: 2b5fad3874e5
   plugin: v2ray-plugin
   plugin-opts:
@@ -211,19 +211,20 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 291,588,589,608|yandex-952
+  client-fingerprint: chrome
+  name: '291,552,588,589,608,609|🇯🇵 日本|@ripaojiedian #3'
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509031722041-NTzL1f4K0s.download.microsoft.com
+    host: 202509031722041-UO2JxEthna.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
   udp: true
 - client-fingerprint: chrome
-  country: 🇨🇳CN
-  name: '291,390,462,564,588,589,591,595,601,604,607,608,609,610,612|12,13|日本4|@ripaojiedian
+  name: '291,390,462,552,588,589,591,595,601,604,607,608,609,610,612|12,13|日本4|@ripaojiedian
     #2'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -233,22 +234,19 @@ proxies:
   sni: 23.45.86.28
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  country: 🇨🇳CN
-  name: '291,390,462,564,588,589,591,595,601,604,607,608,609,610,612|12,13|新加坡2|@ripaojiedian
-    #2'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 9160
-  server: 36.156.102.77
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '291,462,552,588,589,608,609|🇯🇵 日本6|@ripaojiedian #4'
+  password: LcmwtQRzICXGQLioSolzi7
+  port: 2055
+  server: 106.15.224.42
+  tfo: false
+  type: ss
   udp: true
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: '291,390,462,588,589,591,595,601,604,607,608,609,610,612|12,13|新加坡3|@ripaojiedian
+  name: '291,390,462,552,588,589,591,595,601,604,607,608,609,610,612|12,13|新加坡3|@ripaojiedian
     #2'
   network: ws
   port: '30839'
@@ -265,48 +263,29 @@ proxies:
       Host: baidu.com
     path: /oooo
 - cipher: rc4-md5
-  name: 291,588,589,608|yandex-960
+  client-fingerprint: chrome
+  name: '291,552,588,589,608,609|🇺🇸 美国2|@ripaojiedian #3'
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509031722041-NTzL1f4K0s.download.microsoft.com
+    host: 202509031722041-UO2JxEthna.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
   udp: true
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: '291,609|🇯🇵 日本|@ripaojiedian #2'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202509031722041-UO2JxEthna.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '291,462,609|🇯🇵 日本6|@ripaojiedian #2'
-  password: LcmwtQRzICXGQLioSolzi7
-  port: 2055
-  server: 106.15.224.42
-  tfo: false
-  type: ss
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: '291,609|🇺🇸 美国2|@ripaojiedian #2'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202509031722041-UO2JxEthna.download.microsoft.com
-    mode: http
-  port: 8774
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
+- client-fingerprint: chrome
+  name: '291,390,462,552,588,589,591,595,601,604,607,608,609,610,612|12,13|新加坡2|@ripaojiedian
+    #2'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 9160
+  server: 36.156.102.77
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 449|🇨🇳 CN 030 |  18.0MB/s
@@ -643,7 +622,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 462,601,608|yandex-3287
+  name: 462,601,608|yandex-4466
   network: ws
   port: 30806
   server: v6.heduian.link
@@ -675,7 +654,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 462,601,608|yandex-1879
+  name: 462,601,608|yandex-774
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -703,7 +682,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 462,601,604,608|yandex-4601
+  name: 462,511,601,604,608|yandex-4818
   network: ws
   port: 30835
   server: v35.heduian.link
@@ -719,7 +698,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 462,601,604,608|yandex-4603
+  name: 462,601,604,608|yandex-4820
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -735,7 +714,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '462,511,601,604,608,612|🇨🇳_CN_中国->🇺🇸_US_美国 #5'
+  name: '462,511,601,604,608,612|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -750,12 +729,11 @@ proxies:
       Host: ocbc.com
     path: /oooo
 - cipher: aes-256-gcm
-  name: 462,608|yandex-4694
+  name: 462|🇳CN-36.150.27.82-1167
   password: e0c4345e-f943-4a45-977b-514fdec6ffe9
   port: 47083
   server: entrance03.qqa678.cc
   type: ss
-  udp: true
 - name: '462,601,612|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #3'
   password: ba4fedf8c217c146
   port: 3389
@@ -2031,7 +2009,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
 - cipher: aes-256-cfb
-  name: 462,564|_01
+  name: '462,564|_01 #1'
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -2342,7 +2320,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 462,601,608|yandex-2677
+  name: 462,601,608|yandex-2604
   network: ws
   port: 30824
   server: v24.heduian.link
@@ -2358,7 +2336,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 462,601,608|yandex-3738
+  name: 462,601,608|yandex-3665
   network: ws
   port: 30828
   server: v28.heduian.link
@@ -2378,6 +2356,53 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
+- alterId: 64
+  cipher: auto
+  country: 🇳 CN
+  h2-opts: {}
+  http-opts: {}
+  name: 561| CN_41
+  network: ws
+  port: 443
+  server: 202.79.161.188
+  servername: www.32278117.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    HOST: www.32278117.xyz
+  ws-path: /path/170733132233
+- alterId: 64
+  cipher: auto
+  country: 🇨🇳 CN
+  h2-opts: {}
+  http-opts: {}
+  name: '561,612|Github搜索TrojanLinks #24'
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  country: 🇨🇳 CN
+  delay: 415
+  h2-opts: {}
+  http-opts: {}
+  name: '561,597,612|Github搜索TrojanLinks #9'
+  network: tcp
+  port: '50002'
+  server: 112.132.215.12
+  servername: ury-unit-c030ehei8.poget71138.workers.dev
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /ivideos.sbs/linkws
 - alterId: 64
   cipher: auto
   name: '579|中国_广州市 #1'
@@ -2496,6 +2521,18 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: d673e01d-e157-4c99-9421-c9fdf63cf870
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳 TW
+  delay: 480
+  h2-opts: {}
+  http-opts: {}
+  name: 597|中国 - 臺北市 - Global Communicatio...
+  network: none
+  port: 40762
+  server: 103.115.109.250
+  type: vmess
+  uuid: 35ce6e3a-4ddc-472c-9e9f-a34362c194e7
 - alterId: 64
   cipher: auto
   country: 🇨🇳CN
