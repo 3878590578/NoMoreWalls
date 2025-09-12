@@ -101,12 +101,26 @@ proxies:
   up: 100
 - alterId: 0
   cipher: auto
+  name: 223|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
   name: '340|法国1 #1'
   port: 45072
   server: haa.dashuai.cyou
   type: vmess
   udp: true
-  uuid: 0e73a98d-3c87-42cb-a391-14647518167c
+  uuid: 7a55ff05-3b05-4df1-8995-c91ae694c735
 - alterId: 0
   cipher: auto
   name: '340|法国2 #1'
@@ -114,7 +128,7 @@ proxies:
   server: xdd.dashuai.cyou
   type: vmess
   udp: true
-  uuid: 0e73a98d-3c87-42cb-a391-14647518167c
+  uuid: 7a55ff05-3b05-4df1-8995-c91ae694c735
 - alterId: 0
   cipher: auto
   name: '340|法国 #1'
@@ -122,7 +136,7 @@ proxies:
   server: fg.dashuai.cyou
   type: vmess
   udp: true
-  uuid: 0e73a98d-3c87-42cb-a391-14647518167c
+  uuid: 7a55ff05-3b05-4df1-8995-c91ae694c735
 - cipher: aes-256-cfb
   name: 451,470|NL-51.15.27.48-1033
   password: f8f7aCzcPKbsF8p3
@@ -220,13 +234,15 @@ proxies:
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-cfb
-  name: 451,470,521|🇫🇷 FR-195.154.169.198-0177
+  name: 451,470,574|_09
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 451,470,521|🇫🇷 FR-195.154.185.174-0171
+  country: 🇷FR
+  name: 451,470,574|🇷FR_56
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
@@ -443,37 +459,43 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: chacha20-ietf-poly1305
-  name: 470,521|🇫🇷 FR-45.158.171.110-0166
+  country: 🇱🇹 LT
+  name: 470,574|🇱🇹 LT_126
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.110
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 470,521|🇫🇷 FR-45.158.171.146-0185
+  country: 🇱🇹 LT
+  name: 470,574|🇱🇹 LT_127
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.158.171.146
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 470,521|🇫🇷 FR-45.158.171.60-0259
+  country: 🇱🇹 LT
+  name: 470,574|🇱🇹 LT_124
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.60
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 470,521,565|🇩🇪 >>@V2rayNG3::DE
+  country: 🇷 FR
+  name: 470,574| FR_55
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 470,521|🇫🇷 FR-45.158.171.66-0286
+  country: 🇸US
+  name: 470,574|🇸US_206
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.66
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 470,521|🇫🇷 FR-45.158.171.70-0284
+  country: 🇹 LT
+  name: 470,574|🇱🇹 LT_132
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.70
@@ -795,12 +817,14 @@ proxies:
     headers:
       Host: ahdaeph8.com
     path: /ws
-- name: 470,613|🇫🇷FR-51.195.202.129-5198
+- country: 🇫🇷FR
+  name: 470,574,613|🇫🇷FR-51.195.202.129-5198
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 470,613|🇫🇷FR-146.59.55.50-5258
@@ -816,12 +840,14 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 470,613|🇫🇷FR-51.178.42.187-5309
+- country: 🇸US
+  name: 470,574,613|🇫🇷FR-51.178.42.187-5309
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 470|🇷FR-195.154.200.150-5801
   password: pKEW8JPByTVTLtM
@@ -883,7 +909,7 @@ proxies:
   port: 443
   server: 146.59.55.50
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1496,7 +1522,7 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: aes-256-gcm
-  name: 533,620|yandex-4908
+  name: 533,620|yandex-5045
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
@@ -1541,122 +1567,118 @@ proxies:
   udp: true
   udp-relay-mode: native
   uuid: e87bb107-99fa-45ee-a118-2261ef2db036
-- cipher: aes-256-gcm
-  name: 565|🇫🇷 France
-  password: 5bda2736-81e7-43b4-86fc-286f8f8e6578
-  port: 8443
-  server: 51.195.103.227
-  type: ss
 - client-fingerprint: chrome
-  name: 565|🇫🇷 Rayan - CBT - WSDR - FR - I...
+  name: 565|Rayan - CBT - WSDR - FR - I - ...
   network: ws
   port: 2087
   server: 185.120.59.70
   servername: zula.ir
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: f7728501-0797-4cfa-af4b-989a215dae7c
   ws-opts:
     headers:
-      Host: zula.ir
-    path: /vless
+      Host: 185.120.59.70
+    path: '%2Fvless'
 - client-fingerprint: chrome
-  name: 565|🇫🇷 Rayan - CBT - WSCT - FR - I...
+  name: 565|Rayan - CBT - WSCT - FR - I - ...
   network: ws
   port: 2087
   server: www.speedtest.net
   servername: fr-1-cbt.medicaldream.ir
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: f7728501-0797-4cfa-af4b-989a215dae7c
   ws-opts:
     headers:
       Host: fr-1-cbt.medicaldream.ir
-    path: /vless
+    path: '%2Fvless'
 - alpn:
   - h3h2
-  name: 565|🇫🇷 >>@DailyV2RY::FR
+  name: 565|>>@DailyV2RY::FR
   network: ws
   port: 2096
   server: 104.18.26.90
   servername: 638874929583412911.zagreb-prx-dnraaad.info
-  skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: d93d7da2-6c2c-4fc6-bc2a-1da9cef60793
   ws-opts:
     headers:
       Host: 638874929583412911.zagreb-prx-dnraaad.info
-    path: /ohfqcwws
+    path: '%2Fohfqcwws'
 - alpn:
   - h3h2
-  name: 565|🇫🇷 >>@DailyV2RY::FR 2
+  name: '565|>>@DailyV2RY::FR #1'
   network: ws
   port: 2096
   server: 104.18.26.90
   servername: 638874929556641666.abadan-prx-dnraaad.info
-  skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: 752811df-c191-4f5f-acaa-ce6399a22024
   ws-opts:
     headers:
       Host: 638874929556641666.abadan-prx-dnraaad.info
-    path: /lpiipkws
+    path: '%2Flpiipkws'
 - alpn:
   - h3h2
-  name: 565|🇫🇷 >>@DailyV2RY::FR 3
+  name: '565|>>@DailyV2RY::FR #2'
   network: ws
   port: 2096
   server: 104.18.26.90
   servername: 638874929583581773.zagreb-prx-dnraaad.info
-  skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: 760d1d5e-6696-49b6-aaed-a6411ccea8db
   ws-opts:
     headers:
       Host: 638874929583581773.zagreb-prx-dnraaad.info
-    path: /ikhocbws
+    path: '%2Fikhocbws'
 - alpn:
   - h3h2
-  name: 565|🇫🇷 >>@DailyV2RY::FR 4
+  name: '565|>>@DailyV2RY::FR #3'
   network: ws
   port: 2096
   server: 104.18.26.90
   servername: 638874929583333723.zagreb-prx-dnraaad.info
-  skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: 6ebc2581-bccf-4cac-a0e1-aebd7ded874c
   ws-opts:
     headers:
       Host: 638874929583333723.zagreb-prx-dnraaad.info
-    path: /aucvumws
+    path: '%2Faucvumws'
 - alpn:
   - h3h2
-  name: 565|🇫🇷 >>@DailyV2RY::FR 6
+  name: '565|>>@DailyV2RY::FR #4'
+  network: ws
+  port: 2096
+  server: 104.18.26.90
+  servername: 638874929583386193.zagreb-prx-dnraaad.info
+  tls: true
+  type: vless
+  uuid: 4bcb875b-bc40-4455-b242-cc32e58ae871
+  ws-opts:
+    headers:
+      Host: 638874929583386193.zagreb-prx-dnraaad.info
+    path: '%2Fnodudrws'
+- alpn:
+  - h3h2
+  name: '565|>>@DailyV2RY::FR #5'
   network: ws
   port: 2096
   server: 104.18.26.90
   servername: 638874929583720535.zagreb-prx-dnraaad.info
-  skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: cb8ff90e-ee6a-4048-89eb-859da49be177
   ws-opts:
     headers:
       Host: 638874929583720535.zagreb-prx-dnraaad.info
-    path: /qivfttws
+    path: '%2Fqivfttws'
 - name: 589|法国_巴黎
   network: ws
   port: 443
@@ -1825,7 +1847,7 @@ proxies:
     path: /xrenvws
 - country: 🇫🇷FR
   delay: 2313
-  name: 609,620|yandex-647
+  name: 609,620|yandex-4945
   password: telegram-id-directvpn
   port: 22223
   server: 13.37.163.45
@@ -1835,7 +1857,7 @@ proxies:
   udp: true
 - country: 🇫🇷FR
   delay: 1249
-  name: 609,620|yandex-648
+  name: 609,620|yandex-4946
   password: telegram-id-directvpn
   port: 22223
   server: 15.237.145.40
@@ -1915,53 +1937,10 @@ proxies:
   type: http
   username: afY491o7YfK00koaXQD9kajglYHBNb94lUqgr9Bmmif5o_y09hd60AQIBM821WIZxsnp5o63PElOVpFduiCmYA==
 - cipher: chacha20-ietf-poly1305
-  name: 611|🇷 法国 X A区-1C
-  password: 5ec3a254-5521-46fa-9088-e11c57d7b9f8
-  port: 59741
-  server: zf-cm.bgblwow.org
-  type: ss
-  udp: true
-- auth: 9dfae824-e800-40f8-a26e-14b280fb3f90
-  name: 611|🇷 法国01|优化
-  obfs: salamander
-  obfs-password: oaEuemiwXTsTExVh
-  password: 9dfae824-e800-40f8-a26e-14b280fb3f90
-  port: 2053
-  server: 31.57.109.244
-  skip-cert-verify: true
-  sni: fr01.kittycdn.pp.ua
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 611|🇷 法国
-  port: 19901
-  server: fg.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6ee66121-838e-45dd-89fe-04cbba67993e
-- alterId: 0
-  cipher: auto
-  name: '611|🇫🇷 法国2 #2'
-  port: 45071
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6ee66121-838e-45dd-89fe-04cbba67993e
-- cipher: chacha20-ietf-poly1305
-  name: 611|🇫🇷 法国 X A区-1A
-  password: 5ec3a254-5521-46fa-9088-e11c57d7b9f8
-  port: 59720
-  server: zf-ct.bgblwow.org
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 611|🇷 法国 X A区-1B
-  password: 5ec3a254-5521-46fa-9088-e11c57d7b9f8
-  port: 50748
-  server: zf-cu.bgblwow.org
+  name: 611|🇫🇷 法国01
+  password: dec22cf7-b6f7-482a-acca-f352a647505c
+  port: 42917
+  server: gdyd123.nana.pics
   type: ss
   udp: true
 - name: 613|🇫🇷FR-185.16.110.195-0497
@@ -1982,7 +1961,7 @@ proxies:
   type: trojan
   ws-opts:
     path: /Telegram
-- name: '613,616,620,709|🇩🇪 德国 001 #1'
+- name: 613,616,620,709|🇩🇪 德国 001
   password: slch2024
   port: 2096
   server: 185.16.110.195
@@ -2011,25 +1990,25 @@ proxies:
   tls: true
   type: vmess
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
-- name: 624|🇫🇷FR_51
+- name: 624|🇫🇷FR_54
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 624|🇫🇷FR_49
+- name: 624|🇫🇷FR_55
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: 624|🇫🇷FR_50
+- name: 624|🇫🇷FR_56
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 624|🇫🇷FR_52
+- name: 624|🇫🇷FR_53
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -2046,7 +2025,7 @@ proxies:
   uuid: 3c7a1227-5383-3a19-7084-76624ec8f84f
 - alterId: 0
   cipher: auto
-  name: 624|法国_091118055 L0
+  name: 624|法国_091204058 L0
   network: ws
   port: '80'
   server: 51.68.191.233
@@ -2060,7 +2039,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: 624|法国_091118191 L29
+  name: 624|法国_091204195 L29
   network: ws
   port: '443'
   server: 51.77.221.113
@@ -2074,7 +2053,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 624|法国_091118190 L30
+  name: 624|法国_091204194 L30
   network: ws
   port: '443'
   server: 51.77.245.47
@@ -2088,7 +2067,7 @@ proxies:
     path: /linkws?ed=2560
 - alterId: 0
   cipher: auto
-  name: 624|法国_091118193 L39
+  name: 624|法国_091204196 L39
   network: ws
   port: '443'
   server: 51.195.91.6
@@ -2100,6 +2079,20 @@ proxies:
     headers:
       Host: BLaze-GERMaNy-6.bLaZeserVeRs1.Site
     path: /linkvkwss
+- alterId: 0
+  cipher: auto
+  name: 624|法国_091204061
+  network: ws
+  port: '8443'
+  server: ov-germany7.09vpn.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 8b7ec98d-c291-4034-9719-e6d62051636a
+  ws-opts:
+    headers:
+      Host: ov-germany7.09vpn.com
+    path: /vmess/
 - alterId: 0
   cipher: auto
   name: '635|法国1 #3'
