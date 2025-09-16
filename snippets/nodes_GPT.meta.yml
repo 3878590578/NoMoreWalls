@@ -1,18 +1,30 @@
 proxies:
-- alpn:
-  - http%2F1.1
-  client-fingerprint: randomized
-  name: '92,560|NL_2|5.4MB/s|GPT|NF|D+|GM #1'
+- client-fingerprint: chrome
+  name: '92,560,561|NL_1|15.6MB/s|GPT⁺|NF|D+ #1'
   network: ws
-  port: 443
-  server: 104.20.31.81
-  servername: V2rayNGGhavIV2RayngGHAVIv2rAYngGHAviV2rayNgghAViV2rAyNG.Pages.DeV
+  port: 8443
+  server: 188.114.97.202
+  servername: teslakit1.pages.dev
   skip-cert-verify: true
   tfo: false
   tls: true
   type: vless
-  uuid: 43f3f527-af58-4fc3-9233-678bcffbd0f7
+  uuid: c2e177d4-e610-4abd-85cd-1a869d158751
   ws-opts:
     headers:
-      Host: V2rayNGGhavIV2RayngGHAVIv2rAYngGHAviV2rayNgghAViV2rAyNG.Pages.DeV
+      Host: teslakit1.pages.dev
     path: /
+- alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  name: '92,561|❓Other_1|5.3MB/s|GPT⁺ #1'
+  network: ws
+  password: 94cf288d-f764-4ce9-a547-a7228144f056
+  port: 2053
+  server: gercdn.bm04.xyz
+  skip-cert-verify: true
+  sni: gercdn.bm04.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: gercdn.bm04.xyz
+    path: /project/activity/ws/
