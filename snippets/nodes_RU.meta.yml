@@ -1,7 +1,7 @@
 proxies:
 - auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   down: 1000
-  name: 160,634|yandex-4185
+  name: 160,634|yandex-532
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 46.17.43.71
@@ -170,8 +170,7 @@ proxies:
   sni: els1.dimoyun.top
   type: hysteria2
   udp: true
-- auth: 4542a149-b495-417f-9978-81aac98fd1e5
-  name: 352,634|yandex-592
+- name: '352|俄罗斯1 #10'
   password: 4542a149-b495-417f-9978-81aac98fd1e5
   port: 40001
   server: els1.dimoyun.top
@@ -179,8 +178,7 @@ proxies:
   sni: els1.dimoyun.top
   type: hysteria2
   udp: true
-- auth: 4542a149-b495-417f-9978-81aac98fd1e5
-  name: 352,634|yandex-595
+- name: '352|俄罗斯2 #10'
   password: 4542a149-b495-417f-9978-81aac98fd1e5
   port: 40001
   server: els2.dimoyun.top
@@ -444,7 +442,8 @@ proxies:
   sni: els1.dimoyun.top
   type: hysteria2
   udp: true
-- name: '369|俄罗斯1 #27'
+- auth: 84348302-f6ea-46b0-9540-58d09e919b6c
+  name: 369,634|yandex-150
   password: 84348302-f6ea-46b0-9540-58d09e919b6c
   port: 40001
   server: els1.dimoyun.top
@@ -452,7 +451,8 @@ proxies:
   sni: els1.dimoyun.top
   type: hysteria2
   udp: true
-- name: '369|俄罗斯2 #27'
+- auth: 84348302-f6ea-46b0-9540-58d09e919b6c
+  name: 369,634|yandex-153
   password: 84348302-f6ea-46b0-9540-58d09e919b6c
   port: 40001
   server: els2.dimoyun.top
@@ -792,8 +792,8 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 473,587|🇧 GB_69
+  country: 🇧 GB
+  name: 473,587|🇬🇧 GB_69
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -834,7 +834,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,618,634|yandex-3865
+- name: 473,618,634|yandex-1086
   network: ws
   password: vpn
   port: 2025
@@ -1010,7 +1010,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇷 RU
-  name: 473,587|🇺 RU_159
+  name: 473,578,587|🇷🇺 RU_157
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
@@ -1018,7 +1018,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇪DE
   delay: 774
-  name: 473,591,623,634,658|RU.俄罗斯
+  name: 473,591,623,634|yandex-1471
   password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41
   port: 40031
   server: ru.fastsoonlink.com
@@ -1330,33 +1330,51 @@ proxies:
   type: anytls
   udp: true
 - client-fingerprint: chrome
-  name: 578|Rayan - SSM - WSDR - RU - I - ...
+  name: 578|🇷🇺 Rayan - SSM - WSDR - RU - I...
   network: ws
   port: 443
   server: 194.226.121.190
   servername: zula.ir
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 66887fd8-94c8-5024-ad7e-46ffdd7f5bfc
   ws-opts:
     headers:
-      Host: 194.226.121.190
-    path: '%2Fvless'
+      Host: zula.ir
+    path: /vless
 - client-fingerprint: chrome
-  name: 578|Rayan - SSM - WSCT - RU - I - ...
+  name: 578|🇷🇺 Rayan - SSM - WSCT - RU - I...
   network: ws
   port: 443
   server: www.speedtest.net
   servername: ru-1-ssm.medicaldream.ir
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 66887fd8-94c8-5024-ad7e-46ffdd7f5bfc
   ws-opts:
     headers:
       Host: ru-1-ssm.medicaldream.ir
-    path: '%2Fvless'
+    path: /vless
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '578,617,621,633|RU_speednode_0020 #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8
+    short-id: 16895459a2c7768d
+  server: 176.114.86.241
+  servername: ru.sfasti.ru
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6fae85ca-395a-4f27-9eb2-75123befc475
 - alterId: 0
   cipher: auto
   country: 🇺 RU
@@ -1372,13 +1390,6 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 587|🇷🇺RU_164
-  password: ZET59LF6DvCC8KVt
-  port: 9005
-  server: 45.89.52.66
-  type: ss
 - name: 603|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -2173,16 +2184,6 @@ proxies:
   type: vless
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 621,633|RU_speednode_0020
-  port: 443
-  server: 176.114.86.241
-  servername: ru.sfasti.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6fae85ca-395a-4f27-9eb2-75123befc475
 - name: 627|🇷🇺RU-45.82.14.144-0631
   network: ws
   password: vpn
@@ -2474,7 +2475,7 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: '%2Fsnippets%2Fip%3Dproxyip.fxxk.dedyn.io%3A443%3Fed%3D2560'
-- name: '638|俄罗斯(mibei77.com 米贝节点分享) #2'
+- name: 638,656|🇱🇹 立陶宛 01-263
   network: ws
   port: 2053
   server: 91.197.1.93
@@ -2498,20 +2499,6 @@ proxies:
     headers:
       Host: 1750926573911.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
     path: telegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2%2F%3Fed%3D2560
-- name: 723|🇷🇺 俄罗斯 001
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: true
-  sni: hsdgbuys.pages.dev
-  type: trojan
-- name: 723|🇷🇺 俄罗斯 002
-  password: vpn
-  port: 2025
-  server: 109.120.132.80
-  skip-cert-verify: true
-  sni: vkvd127.mycdn.me
-  type: trojan
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
@@ -2683,14 +2670,6 @@ proxies:
   sni: els1.xiaohuolongjc.top
   type: hysteria2
   udp: true
-- name: '873|xhl俄罗斯 #8'
-  password: b15f1706-dbd5-401c-934d-a3325b995875
-  port: 37771
-  server: els1.xiaohuolongjc.top
-  skip-cert-verify: true
-  sni: els1.xiaohuolongjc.top
-  type: hysteria2
-  udp: true
 - name: '874|xhl俄罗斯 #9'
   password: 9e507422-de8c-4aeb-b856-fd013b7ae6be
   port: 37771
@@ -2821,14 +2800,6 @@ proxies:
   udp: true
 - name: 935|公益-俄罗斯4
   password: 0089fdba-e67f-4994-9df6-db45e9aa0e46
-  port: 16090
-  server: els.ylccloud.top
-  skip-cert-verify: true
-  sni: els.ylccloud.top
-  type: hysteria2
-  udp: true
-- name: '936|公益-俄罗斯4 #1'
-  password: 4ba4b49a-b5c6-4206-aaa1-edb34bfd64f0
   port: 16090
   server: els.ylccloud.top
   skip-cert-verify: true

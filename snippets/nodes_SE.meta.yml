@@ -1,6 +1,6 @@
 proxies:
 - country: 🇺🇸US
-  name: 295,401,473,591,614,615,617,627,630,634,638|13|SE_speednode_0012
+  name: 296,401,473,591,627,634,638|13|SE_speednode_0012
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 45.91.171.116
@@ -22,7 +22,7 @@ proxies:
   port: 989
   server: 121.127.46.147
   type: ss
-- name: 473,618,634|yandex-3870
+- name: 473,618,634|yandex-1091
   network: ws
   password: vpn
   port: 2025
@@ -153,13 +153,14 @@ proxies:
   server: 41.216.182.162
   servername: zula.ir
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 407fcb9c-021f-5f2c-bf6c-a58f72d1f5fc
   ws-opts:
     headers:
-      Host: 41.216.182.162
-    path: '%2Fvless'
+      Host: zula.ir
+    path: /vless
 - client-fingerprint: chrome
   name: 578|Rayan - SSM - WSCT - SE - I - ...
   network: ws
@@ -167,13 +168,14 @@ proxies:
   server: www.speedtest.net
   servername: se-1-ssm.medicaldream.ir
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 407fcb9c-021f-5f2c-bf6c-a58f72d1f5fc
   ws-opts:
     headers:
       Host: se-1-ssm.medicaldream.ir
-    path: '%2Fvless'
+    path: /vless
 - name: 608|瑞典_021805001+L30
   password: telegram-id-privatevpns
   port: 22222
@@ -198,7 +200,7 @@ proxies:
   type: trojan
   ws-opts:
     path: /
-- name: '638|🇸🇪_SE_瑞典 #2'
+- name: '638|🇸🇪_SE_瑞典 #1'
   network: ws
   port: 80
   server: 185.146.173.34
@@ -229,3 +231,30 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: '%2Fsnippets%2Fip%3Dproxyip.fxxk.dedyn.io%3A443%3Fed%3D2560'
+- name: 656|🇸🇪 瑞典 06-170
+  network: ws
+  port: 2053
+  server: 77.91.78.97
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: '%2Fsnippets%2Fip%3Dproxyip.fxxk.dedyn.io%3A443%3Fed%3D2560'
+- name: 719|🇸🇪  06-170
+  network: ws
+  port: 2053
+  server: 77.91.78.97
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kejiland.freewarp.eu.org
+    max-early-data: 2560
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443
