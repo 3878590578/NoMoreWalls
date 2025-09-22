@@ -1,7 +1,21 @@
 proxies:
+- cipher: aes-128-gcm
+  name: 153,634|yandex-1414
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2038
+  server: ogeulay-be.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153,634|yandex-1415
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2045
+  server: ogeulay-be.ilayernet.xyz
+  type: ss
+  udp: true
 - auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   down: 1000
-  name: 160,634|yandex-532
+  name: 160,634|yandex-1874
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 46.17.43.71
@@ -443,7 +457,7 @@ proxies:
   type: hysteria2
   udp: true
 - auth: 84348302-f6ea-46b0-9540-58d09e919b6c
-  name: 369,634|yandex-150
+  name: 369,634|yandex-265
   password: 84348302-f6ea-46b0-9540-58d09e919b6c
   port: 40001
   server: els1.dimoyun.top
@@ -452,7 +466,7 @@ proxies:
   type: hysteria2
   udp: true
 - auth: 84348302-f6ea-46b0-9540-58d09e919b6c
-  name: 369,634|yandex-153
+  name: 369,634|yandex-268
   password: 84348302-f6ea-46b0-9540-58d09e919b6c
   port: 40001
   server: els2.dimoyun.top
@@ -793,7 +807,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 473,587|🇬🇧 GB_69
+  name: 473,524,587| GB_61
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -834,7 +848,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,618,634|yandex-1086
+- name: 473,524,618,634|yandex-60
   network: ws
   password: vpn
   port: 2025
@@ -1010,15 +1024,15 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇷 RU
-  name: 473,578,587|🇷🇺 RU_157
+  name: 473,524,587|🇷🇺 RU_146
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇪DE
+  country: 🇺 RU
   delay: 774
-  name: 473,591,623,634|yandex-1471
+  name: 473,587,623,634,658|RU.俄罗斯
   password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41
   port: 40031
   server: ru.fastsoonlink.com
@@ -1169,6 +1183,76 @@ proxies:
   sni: hsels.huasuan666.top
   type: hysteria2
   udp: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /
+  name: 524|🇷🇺 俄罗斯 003 5
+  network: grpc
+  port: 8880
+  server: 185.236.232.72
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /
+  name: 524|🇷🇺 俄罗斯 004 5
+  network: grpc
+  port: 8880
+  server: 185.236.232.148
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /
+  name: 524|🇷🇺 俄罗斯 005 5
+  network: grpc
+  port: 8880
+  server: 185.236.232.116
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /
+  name: 524|🇷🇺 俄罗斯 006 5
+  network: grpc
+  port: 8880
+  server: 185.231.205.181
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /
+  name: 524|🇷🇺 俄罗斯 007 5
+  network: grpc
+  port: 8880
+  server: 185.231.205.246
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - alpn:
   - h2
   - http/1.1
@@ -1330,51 +1414,33 @@ proxies:
   type: anytls
   udp: true
 - client-fingerprint: chrome
-  name: 578|🇷🇺 Rayan - SSM - WSDR - RU - I...
+  name: 578|Rayan - SSM - WSDR - RU - I - ...
   network: ws
   port: 443
   server: 194.226.121.190
   servername: zula.ir
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: 66887fd8-94c8-5024-ad7e-46ffdd7f5bfc
   ws-opts:
     headers:
-      Host: zula.ir
-    path: /vless
+      Host: 194.226.121.190
+    path: '%2Fvless'
 - client-fingerprint: chrome
-  name: 578|🇷🇺 Rayan - SSM - WSCT - RU - I...
+  name: 578|Rayan - SSM - WSCT - RU - I - ...
   network: ws
   port: 443
   server: www.speedtest.net
   servername: ru-1-ssm.medicaldream.ir
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: 66887fd8-94c8-5024-ad7e-46ffdd7f5bfc
   ws-opts:
     headers:
       Host: ru-1-ssm.medicaldream.ir
-    path: /vless
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '578,617,621,633|RU_speednode_0020 #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8
-    short-id: 16895459a2c7768d
-  server: 176.114.86.241
-  servername: ru.sfasti.ru
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6fae85ca-395a-4f27-9eb2-75123befc475
+    path: '%2Fvless'
 - alterId: 0
   cipher: auto
   country: 🇺 RU
@@ -2125,6 +2191,16 @@ proxies:
       Host: ''
     path: /
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '617,621,633|RU_speednode_0020 #1'
+  port: 443
+  server: 176.114.86.241
+  servername: ru.sfasti.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6fae85ca-395a-4f27-9eb2-75123befc475
+- client-fingerprint: chrome
   grpc-opts: {}
   name: 618|俄罗斯 003
   network: grpc
@@ -2475,7 +2551,7 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: '%2Fsnippets%2Fip%3Dproxyip.fxxk.dedyn.io%3A443%3Fed%3D2560'
-- name: 638,656|🇱🇹 立陶宛 01-263
+- name: '638|俄罗斯(mibei77.com 米贝节点分享) #2'
   network: ws
   port: 2053
   server: 91.197.1.93
@@ -2499,6 +2575,62 @@ proxies:
     headers:
       Host: 1750926573911.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
     path: telegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2%2F%3Fed%3D2560
+- name: 656|🇷🇺 俄罗斯 01-231
+  network: ws
+  port: 443
+  server: 147.45.143.22
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: '%2Fsnippets%2Fip%3Dproxyip.fxxk.dedyn.io%3A443%3Fed%3D2560'
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 656,719|🇷🇺 3 |  | YouTube е ркаы-321
+  network: tcp
+  port: 443
+  reality-opts:
+    _spider-x: /M37upowvjAvKS8C
+    public-key: 1adLxAF0g_jw3N_tnuqRVLlB940gHDNE1CljKfn4sRw
+    short-id: 68d59851dd
+  server: 45.153.189.186
+  servername: www.vk.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+- name: 719|🇷🇺  01-231
+  network: ws
+  port: 443
+  server: 147.45.143.22
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kejiland.freewarp.eu.org
+    max-early-data: 2560
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+- name: '723|🇷🇺 俄罗斯 001 #1'
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: true
+  sni: hsdgbuys.pages.dev
+  type: trojan
+- name: '723|🇷🇺 俄罗斯 002 #1'
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: trojan
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
@@ -2806,6 +2938,14 @@ proxies:
   sni: els.ylccloud.top
   type: hysteria2
   udp: true
+- name: '936|公益-俄罗斯4 #1'
+  password: 4ba4b49a-b5c6-4206-aaa1-edb34bfd64f0
+  port: 16090
+  server: els.ylccloud.top
+  skip-cert-verify: true
+  sni: els.ylccloud.top
+  type: hysteria2
+  udp: true
 - name: '937|公益-俄罗斯4 #2'
   password: 7e8e9ce5-e6f8-4c86-bda2-fa29f74cb41e
   port: 16090
@@ -2816,14 +2956,6 @@ proxies:
   udp: true
 - name: '938|公益-俄罗斯4 #3'
   password: e83c768c-ec4f-4d0c-b8d1-a8c83f2ff89a
-  port: 16090
-  server: els.ylccloud.top
-  skip-cert-verify: true
-  sni: els.ylccloud.top
-  type: hysteria2
-  udp: true
-- name: '939|公益-俄罗斯4 #4'
-  password: b356766b-edbf-417d-8ef3-1d9e8c7cec44
   port: 16090
   server: els.ylccloud.top
   skip-cert-verify: true
