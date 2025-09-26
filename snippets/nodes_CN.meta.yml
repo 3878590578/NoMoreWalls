@@ -9,7 +9,8 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 296,401,473,614,615,617,621,627,630,633,634,635,636,637,638|11,12|香港|@ripaojiedian
+  name: '296,401,473,524,578,609,610,614,615,617,621,627,630,633,634,635,636,637,638|12,13|香港|@ripaojiedian
+    #2'
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -25,8 +26,7 @@ proxies:
       Host: baidu.com
     path: /oooo
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '296,614,615,634,635|🇭🇰 香港2|@ripaojiedian #2'
+  name: 296,614,615,634|yandex-4187
   password: 2b5fad3874e5
   plugin: v2ray-plugin
   plugin-opts:
@@ -34,7 +34,6 @@ proxies:
     mode: websocket
     mux: true
     path: /aqwshiog
-    skip-cert-verify: false
     tls: true
   port: 443
   server: 156.251.179.135
@@ -43,7 +42,7 @@ proxies:
   udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: '296,614,615,634,635|🇯🇵 日本|@ripaojiedian #2'
+  name: '296,578,614,615,634,635|🇯🇵 日本|@ripaojiedian #3'
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -57,7 +56,8 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 296,401,473,524,609,610,614,615,617,621,627,630,633,634,635,636,638|11,12|新加坡3|@ripaojiedian
+  name: '296,401,473,578,614,615,617,621,627,630,633,634,635,636,638|12,13|新加坡3|@ripaojiedian
+    #2'
   network: ws
   port: '30839'
   server: v39.heduian.link
@@ -73,8 +73,7 @@ proxies:
       Host: baidu.com
     path: /oooo
 - cipher: rc4-md5
-  client-fingerprint: chrome
-  name: '296,614,615,634,635|🇺🇸 美国2|@ripaojiedian #2'
+  name: 296,614,615,634|yandex-4200
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -85,6 +84,23 @@ proxies:
   tfo: false
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '296,578,633,635,636|日本4|@ripaojiedian #2'
+  network: ws
+  port: '41315'
+  server: a.lyazzz.online
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: bd64d2a3-76a1-407f-af7f-bdcdcb78d21e
+  ws-opts:
+    headers:
+      Host: img14.360buyimg.com
+    path: /obj
 - alterId: 0
   cipher: auto
   name: 460|🇨🇳 CN 030 |  18.0MB/s
@@ -1551,7 +1567,8 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
 - cipher: aes-256-cfb
-  name: 473,591|Pool__01
+  country: 🇨🇳CN
+  name: 473,591,719|🇨🇳 Pool_CN_13_2@12-390
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -1862,7 +1879,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 473,627,634|yandex-3946
+  name: '473,627,634,656,719|🇺🇸 美国 413-55 #1'
   network: ws
   port: 30824
   server: v24.heduian.link
@@ -1878,7 +1895,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 473,627,634|yandex-2351
+  name: 473,627,634|yandex-2695
   network: ws
   port: 30828
   server: v28.heduian.link
@@ -1898,22 +1915,76 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
-- alterId: 0
+- name: 524,609,610,634|yandex-3497
+  password: 2fd0d127-266d-4d0b-b453-f94659a132fc
+  port: 12000
+  server: 106.75.134.1
+  skip-cert-verify: true
+  sni: aliyun.com
+  type: trojan
+  udp: true
+- alterId: 2
   cipher: auto
-  name: '524,609,610,630,634,638|HK香港(mibei77.com 米贝节点分享) #10'
+  name: 524|_CN_中国
   network: ws
-  port: '41317'
-  server: a.lyazzz.online
-  servername: img14.360buyimg.com
+  port: 30829
+  server: v29.heduian.link
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
-  uuid: bd64d2a3-76a1-407f-af7f-bdcdcb78d21e
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: img14.360buyimg.com
-    path: /obj
+      Host: ocbc.com
+    path: /
+- name: 524|_CN_中国 2
+  network: tcp
+  port: 29495
+  server: 89.44.242.222
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b
+- name: 524|_CN_中国 3
+  network: tcp
+  port: 29500
+  server: 89.44.242.222
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 888a20e2-fc3f-4f52-973c-36a6386225b8
+- name: 578,634|yandex-4455
+  network: ws
+  port: 443
+  server: blog.811520.xyz
+  servername: vless4-8y8.pages.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2c4d3d64-9742-4d2e-9f6f-a1ecabd22b27
+  ws-opts:
+    headers:
+      Host: vless4-8y8.pages.dev
+    path: /?ed=2560
+- alterId: 64
+  cipher: auto
+  country: 🇨🇳 CN
+  h2-opts: {}
+  http-opts: {}
+  name: '587,638,656,719|🇨🇳 CN_48_1@47-210 #1'
+  network: tcp
+  port: 50002
+  server: 112.132.215.12
+  servername: ury-unit-c030ehei8.poget71138.workers.dev
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /ivideos.sbs/linkws
 - alterId: 64
   cipher: auto
   name: '605|中国_广州市 #1'
@@ -1984,7 +2055,7 @@ proxies:
   delay: 1526
   h2-opts: {}
   http-opts: {}
-  name: 623,634|yandex-4020
+  name: 623,634|yandex-171
   network: ws
   port: 11399
   server: 119.29.98.43
@@ -1999,7 +2070,7 @@ proxies:
   delay: 414
   h2-opts: {}
   http-opts: {}
-  name: 623,634|yandex-3971
+  name: 623,634|yandex-122
   network: ws
   port: 48536
   server: 119.29.98.43
@@ -2014,7 +2085,7 @@ proxies:
   delay: 1502
   h2-opts: {}
   http-opts: {}
-  name: 623,634|yandex-4047
+  name: 623,634|yandex-198
   network: ws
   port: 56532
   server: 119.29.98.43
@@ -2414,6 +2485,19 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: '630,638|🇨🇳 湖北省 移动(全省通用) #1'
+  network: ws
+  port: '41317'
+  server: a.lyazzz.online
+  tls: false
+  type: vmess
+  uuid: bd64d2a3-76a1-407f-af7f-bdcdcb78d21e
+  ws-opts:
+    headers:
+      Host: img14.360buyimg.com
+    path: /obj
+- alterId: 0
+  cipher: auto
   name: 637|2|🇸24 |  4.8MB/s
   network: tcp
   port: 5229
@@ -2685,13 +2769,15 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-- name: 638,656|🇨🇳 CN_49_1@48-211
+- country: 🇨🇳 CN
+  name: '638,656,719|🇨🇳 CN_49_1@48-211 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
   skip-cert-verify: true
   sni: a03.taipeicitygovernment.cn.ua
   type: trojan
+  udp: true
 - name: 638|🇨🇳_中国
   network: ws
   port: 2096
@@ -2876,10 +2962,14 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: 656|🇨🇳 CN_15_2@14-392
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: '656,719|🇨🇳 CN_15_2@14-392 #1'
   network: none
-  port: '59674'
+  port: 59674
   server: 43.162.114.137
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 6a4ce5b9-0d60-4a21-a8fe-897798019500
