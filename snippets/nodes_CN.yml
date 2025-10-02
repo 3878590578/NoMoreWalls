@@ -9,8 +9,8 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: '295,400,473,524,609,610,614,615,617,618,621,627,630,633,634,635,636,637,638,639,641,723|🇨🇳
-    中国 001 #2'
+  name: '295,400,473,524,609,610,614,615,617,618,621,627,630,633,634,635,636,637,638,639,641|🇭🇰
+    香港|@ripaojiedian #4'
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -25,17 +25,43 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- country: 🇨🇳CN
-  name: '295,400,524,618,634,638,641,656,719,723|🇨🇳 中国 002 #2'
+- client-fingerprint: chrome
+  name: '295,614,615,617,621,630,633,635,636,639,641|🇭🇰 香港4|@ripaojiedian #4'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 443
+  port: 444
   server: 221.128.195.217
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: '295,614,615,617,621,630,633,635,636,639,641|🇯🇵 日本2|@ripaojiedian #4'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1806
+  server: 36.156.102.88
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
-- name: '295,400,473,524,609,610,630,634,638,641|🇨🇳 广东省广州市 UCloud #2'
+- client-fingerprint: chrome
+  name: '295,614,615,617,621,630,633,635,636,639,641|🇸🇬 新加坡|@ripaojiedian #4'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1085
+  server: 36.156.102.88
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: '295,614,615,617,621,630,633,635,636,639,641|🇺🇸 美国2|@ripaojiedian #4'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3296
+  server: 36.156.102.88
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '400,473,524,609,610,621,630,633,634,638,641|🇨🇳 广东省广州市 UCloud #2'
   password: 2fd0d127-266d-4d0b-b453-f94659a132fc
   port: 12000
   server: 106.75.134.1
@@ -171,7 +197,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: '473,524,618,627,634,638,641,723|🇨🇳 中国 047 #2'
+  name: '473,524,618,627,634,638,641|🇨🇳 中国 047 #1'
   network: ws
   port: '30824'
   server: v24.heduian.link
@@ -187,7 +213,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '473,524,618,627,634,638,641,723|🇨🇳 中国 054 #2'
+  name: '473,524,618,627,634,638,641|🇨🇳 中国 054 #1'
   network: ws
   port: '30829'
   server: v29.heduian.link
@@ -203,7 +229,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '473,524,618,627,630,634,638,641,723|🇨🇳 中国 055 #2'
+  name: '473,524,609,610,618,627,630,634,638,641|_中国 #5'
   network: ws
   port: '30808'
   server: v8.heduian.link
@@ -1464,7 +1490,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
 - cipher: aes-256-cfb
-  name: 473,591,719|🏴‍☠️ Pool__01_2@0-523
+  name: 473,591|Pool__01
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -1795,13 +1821,12 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
-- country: 🇨🇳CN
-  name: '524,618,634,641,656,719,723|🇨🇳 中国 006 #2'
+- name: 524,618,634,641,656|🇭🇰 Relay_CN-HK_08_2@7-549
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 221.128.195.239
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
   udp: true
@@ -2102,6 +2127,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 524|🇨🇳 中国 063
+  port: 31212
+  server: 47.242.90.210
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
 - alterId: 64
   cipher: auto
   name: 524|🇨🇳 中国 064
@@ -2156,39 +2190,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳 CN
-  delay: 340
-  h2-opts: {}
-  http-opts: {}
-  name: '587,618,623,638,641,656,719,723|🇨🇳 中国 062 #2'
-  network: tcp
-  port: '50007'
-  server: 112.132.215.34
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
 - alterId: 64
   cipher: auto
-  country: 🇨🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: '587,638,656,719|🇨🇳 CN_40_1@39-350 #1'
-  network: tcp
-  port: 50002
-  server: 112.132.215.12
-  servername: ury-unit-c030ehei8.poget71138.workers.dev
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /ivideos.sbs/linkws
-- alterId: 64
-  cipher: auto
-  name: '605,618,641,723|🇨🇳 中国 038 #2'
+  name: '605,618,641|🇨🇳 中国 038 #1'
   network: tcp
   port: '54104'
   server: 183.236.51.23
@@ -2199,7 +2203,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '618,638,641,723|🇨🇳 中国 004 #1'
+  name: 618,638,641|🇨🇳 中国 004
   network: kcp
   port: '5043'
   server: 47.242.186.1
@@ -2209,7 +2213,7 @@ proxies:
   uuid: 93c35277-ee3f-4ab2-9d9e-462b97a8795f
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 024 #2'
+  name: '618,641|🇨🇳 中国 024 #1'
   network: tcp
   port: '52112'
   server: 183.236.51.23
@@ -2219,7 +2223,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 025 #2'
+  name: '618,641|🇨🇳 中国 025 #1'
   network: tcp
   port: '46051'
   server: us1.tiljkc.top
@@ -2229,7 +2233,7 @@ proxies:
   uuid: 0d849bb5-8663-3958-ae0a-9918d4a95b5e
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 026 #2'
+  name: '618,641|🇨🇳 中国 026 #1'
   network: tcp
   port: '58831'
   server: 183.236.48.163
@@ -2239,7 +2243,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 027 #2'
+  name: '618,641|🇨🇳 中国 027 #1'
   network: tcp
   port: '46602'
   server: 183.236.51.23
@@ -2249,7 +2253,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 028 #2'
+  name: '618,641|🇨🇳 中国 028 #1'
   network: tcp
   port: '48109'
   server: 183.236.51.23
@@ -2259,7 +2263,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 029 #2'
+  name: '618,641|🇨🇳 中国 029 #1'
   network: tcp
   port: '53002'
   server: 183.236.51.23
@@ -2269,7 +2273,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 030 #2'
+  name: '618,641|🇨🇳 中国 030 #1'
   network: tcp
   port: '49302'
   server: 183.236.51.38
@@ -2279,7 +2283,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 031 #2'
+  name: '618,641|🇨🇳 中国 031 #1'
   network: tcp
   port: '45402'
   server: 120.232.153.123
@@ -2289,7 +2293,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 032 #2'
+  name: '618,641|🇨🇳 中国 032 #1'
   network: tcp
   port: '58831'
   server: 120.232.153.27
@@ -2299,7 +2303,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 033 #2'
+  name: '618,641|🇨🇳 中国 033 #1'
   network: tcp
   port: '40972'
   server: 120.232.153.63
@@ -2309,7 +2313,7 @@ proxies:
   uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 034 #2'
+  name: '618,641|🇨🇳 中国 034 #1'
   network: tcp
   port: '52908'
   server: 120.234.102.229
@@ -2319,7 +2323,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 035 #2'
+  name: '618,641|🇨🇳 中国 035 #1'
   network: tcp
   port: '39041'
   server: hk1.tiljkc.top
@@ -2329,7 +2333,7 @@ proxies:
   uuid: 0d849bb5-8663-3958-ae0a-9918d4a95b5e
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 037 #2'
+  name: '618,641|🇨🇳 中国 037 #1'
   network: tcp
   port: '51704'
   server: 183.236.51.23
@@ -2339,7 +2343,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 039 #2'
+  name: '618,641|🇨🇳 中国 039 #1'
   network: tcp
   port: '39949'
   server: 185.207.155.123
@@ -2349,7 +2353,7 @@ proxies:
   uuid: 0899b23d-fbd2-42b8-8e48-b057cf45e24e
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 040 #2'
+  name: '618,641|🇨🇳 中国 040 #1'
   network: tcp
   port: '16785'
   server: 103.30.76.250
@@ -2359,7 +2363,7 @@ proxies:
   uuid: 086ce045-924d-4538-82ef-debb4ae9ccb5
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 041 #2'
+  name: '618,641|🇨🇳 中国 041 #1'
   network: tcp
   port: '34493'
   server: 120.198.71.214
@@ -2369,7 +2373,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 042 #2'
+  name: '618,641|🇨🇳 中国 042 #1'
   network: tcp
   port: '44014'
   server: 120.198.71.219
@@ -2379,7 +2383,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 043 #2'
+  name: '618,641|🇨🇳 中国 043 #1'
   network: tcp
   port: '31209'
   server: 120.232.153.40
@@ -2389,7 +2393,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 044 #2'
+  name: '618,641|🇨🇳 中国 044 #1'
   network: tcp
   port: '44614'
   server: 120.198.71.219
@@ -2399,7 +2403,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 045 #2'
+  name: '618,641|🇨🇳 中国 045 #1'
   network: tcp
   port: '58002'
   server: 120.232.153.27
@@ -2409,7 +2413,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 046 #2'
+  name: '618,641|🇨🇳 中国 046 #1'
   network: tcp
   port: '38951'
   server: jp1.tiljkc.top
@@ -2419,7 +2423,7 @@ proxies:
   uuid: 0d849bb5-8663-3958-ae0a-9918d4a95b5e
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 048 #2'
+  name: '618,641|🇨🇳 中国 048 #1'
   network: tcp
   port: '50052'
   server: 183.236.48.158
@@ -2429,7 +2433,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 049 #2'
+  name: '618,641|🇨🇳 中国 049 #1'
   network: tcp
   port: '59952'
   server: 183.236.48.158
@@ -2439,7 +2443,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 050 #2'
+  name: '618,641|🇨🇳 中国 050 #1'
   network: tcp
   port: '34843'
   server: sgp1.tiljkc.top
@@ -2449,7 +2453,7 @@ proxies:
   uuid: 0d849bb5-8663-3958-ae0a-9918d4a95b5e
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 051 #2'
+  name: '618,641|🇨🇳 中国 051 #1'
   network: tcp
   port: '12672'
   server: xctransfer1st.cokecloud.top
@@ -2459,7 +2463,7 @@ proxies:
   uuid: 49dadd3c-f3cf-4868-bc6b-a61cb049ab1b
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 052 #2'
+  name: '618,641|🇨🇳 中国 052 #1'
   network: tcp
   port: '48009'
   server: 183.236.51.23
@@ -2469,7 +2473,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 053 #2'
+  name: '618,641|🇨🇳 中国 053 #1'
   network: tcp
   port: '31778'
   server: 183.236.48.161
@@ -2479,7 +2483,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 057 #2'
+  name: '618,641|🇨🇳 中国 057 #1'
   network: tcp
   port: '45058'
   server: haa.dashuai.cyou
@@ -2489,7 +2493,7 @@ proxies:
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 058 #2'
+  name: '618,641|🇨🇳 中国 058 #1'
   network: tcp
   port: '45059'
   server: xdd.dashuai.cyou
@@ -2499,7 +2503,7 @@ proxies:
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 059 #2'
+  name: '618,641|🇨🇳 中国 059 #1'
   network: tcp
   port: '45060'
   server: haa.dashuai.cyou
@@ -2509,7 +2513,7 @@ proxies:
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 060 #2'
+  name: '618,641|🇨🇳 中国 060 #1'
   network: tcp
   port: '45061'
   server: xdd.dashuai.cyou
@@ -2519,7 +2523,7 @@ proxies:
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 061 #2'
+  name: '618,641|🇨🇳 中国 061 #1'
   network: tcp
   port: '19901'
   server: xg.dashuai.cyou
@@ -2529,7 +2533,22 @@ proxies:
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 063 #2'
+  country: 🇨🇳 CN
+  delay: 340
+  h2-opts: {}
+  http-opts: {}
+  name: 618,623,638,641,656|🇨🇳 CN_39_1@38-369
+  network: tcp
+  port: '50007'
+  server: 112.132.215.34
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '618,641|🇨🇳 中国 063 #1'
   network: tcp
   port: '31212'
   server: 47.242.90.210
@@ -2539,7 +2558,7 @@ proxies:
   uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 064 #2'
+  name: '618,641|🇨🇳 中国 064 #1'
   network: tcp
   port: '34565'
   server: 120.232.153.71
@@ -2549,7 +2568,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 065 #2'
+  name: '618,641|🇨🇳 中国 065 #1'
   network: tcp
   port: '45066'
   server: haa.dashuai.cyou
@@ -2559,7 +2578,7 @@ proxies:
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 066 #2'
+  name: '618,641|🇨🇳 中国 066 #1'
   network: tcp
   port: '45067'
   server: xdd.dashuai.cyou
@@ -2569,7 +2588,7 @@ proxies:
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 067 #2'
+  name: '618,641|🇨🇳 中国 067 #1'
   network: tcp
   port: '45055'
   server: xdd.dashuai.cyou
@@ -2579,7 +2598,7 @@ proxies:
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 068 #2'
+  name: '618,641|🇨🇳 中国 068 #1'
   network: tcp
   port: '52076'
   server: 101.32.244.46
@@ -2589,7 +2608,7 @@ proxies:
   uuid: 8601e642-fbd3-49a2-a32a-f8afa63c5a31
 - alterId: 64
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 069 #2'
+  name: '618,641|🇨🇳 中国 069 #1'
   network: tcp
   port: '40002'
   server: 183.236.48.163
@@ -3354,15 +3373,13 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-- country: 🇨🇳 CN
-  name: '638,656,719|🇨🇳 CN_41_1@40-351 #1'
+- name: 638,656|🇨🇳 CN_41_1@40-371
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
   skip-cert-verify: true
   sni: a03.taipeicitygovernment.cn.ua
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 638,641|🇨🇳 github.com/freefq - 广东省移动 7
@@ -3379,22 +3396,43 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: 639|6|CN_speednode_0001
-  network: tcp
-  port: 6001
-  server: cn01.efan8867801.xyz
+  name: 639|6|CN_speednode_0003
+  network: ws
+  port: 16617
+  server: m.cnmjin.net
   tls: false
   type: vmess
-  uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
+  uuid: ccee44a2-8efa-4909-9c13-1775f088eef0
+  ws-opts:
+    headers:
+      Host: a109eacdd4ee3bbb8a4f9d22e9463ae6.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
-  name: 639|6|CN_speednode_0002
-  network: tcp
-  port: 6018
-  server: cn01.365cloud8754.com
+  name: 639|6|CN_speednode_0004
+  network: ws
+  port: 16617
+  server: planb.mojcn.com
   tls: false
   type: vmess
-  uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
+  uuid: ccee44a2-8efa-4909-9c13-1775f088eef0
+  ws-opts:
+    headers:
+      Host: a109eacdd4ee3bbb8a4f9d22e9463ae6.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 639|6|CN_speednode_0005
+  network: ws
+  port: 16626
+  server: planb.mojcn.com
+  tls: false
+  type: vmess
+  uuid: ccee44a2-8efa-4909-9c13-1775f088eef0
+  ws-opts:
+    headers:
+      Host: a109eacdd4ee3bbb8a4f9d22e9463ae6.mobgslb.tbcache.com
+    path: /
 - name: 641|_中国
   password: 8a1ab0df6abea549
   port: 443
@@ -3411,46 +3449,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: '656,719|🇨🇳 CN_14_3@13-853 #1'
+  name: 656|🇨🇳 CN_14_3@13-873
   network: none
-  port: 59674
+  port: '59674'
   server: 43.162.114.137
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 6a4ce5b9-0d60-4a21-a8fe-897798019500
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: '719|🇨🇳 CN_05_2@4-526 #1'
-  network: ws
-  port: 52131
-  server: 144.48.8.51
-  skip-cert-verify: true
-  type: vmess
-  uuid: 8f75cbdf-4a32-49b5-a790-2f530f5d8668
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2048
-    path: /arki
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: '719|🇨🇳 CN_06_2@5-527 #1'
-  network: ws
-  port: 19887
-  server: 144.48.8.51
-  skip-cert-verify: true
-  type: vmess
-  uuid: 145178bc-c2f8-4125-a6de-11b47c2bf04e
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2048
-    path: /arki
