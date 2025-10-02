@@ -1,18 +1,16 @@
 proxies:
-- name: 96,522,577,607,608,619,631,632,637|6|US_speednode_0037
+- name: '96,579|FI_1|7.3MB/s|GPT⁺|NF #1'
   network: ws
   port: 80
   server: mstr.fastly80.hosting-ip.com
-  servername: gm195.io
-  skip-cert-verify: false
-  tfo: false
+  skip-cert-verify: true
   tls: false
   type: vless
   uuid: d46fbe10-7982-4229-b461-4afef5c690fa
   ws-opts:
     headers:
       Host: gm195.io
-    path: /admin
+    path: '%2Fadmin'
 - alpn:
   - h3
   auth_str: ae845cbd-08fb-4346-929a-e28a6f3960a8
@@ -20,7 +18,7 @@ proxies:
   down: 70
   fast-open: true
   name: 791|1印度-ChatGPT
-  port: 8941
+  port: 9198
   ports: 6000-11000
   protocol: udp
   server: in2.shiyuandian.shop
@@ -34,7 +32,7 @@ proxies:
   down: 70
   fast-open: true
   name: 791|2印度-ChatGPT
-  port: 6855
+  port: 7777
   ports: 6000-11000
   protocol: udp
   server: in3.shiyuandian.shop
@@ -48,7 +46,7 @@ proxies:
   down: 70
   fast-open: true
   name: 791|1悉尼-ChatGPT
-  port: 10968
+  port: 6397
   ports: 6000-11000
   protocol: udp
   server: au.shiyuandian.shop
