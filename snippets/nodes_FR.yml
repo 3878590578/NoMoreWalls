@@ -173,13 +173,15 @@ proxies:
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-cfb
-  name: 453,472|🇷FR-195.154.169.198-0213
+  name: 453,472,587|_06
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 453,472|🇷FR-195.154.185.174-0226
+  country: 🇷FR
+  name: 453,472,587|🇷FR_42
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
@@ -349,7 +351,7 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - alterId: 0
   cipher: auto
-  name: 472,627,638|🇧🇪 BE_26
+  name: '472,627,638|🇧🇪 BE_26 #1'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -378,7 +380,8 @@ proxies:
       Host: 51.68.191.233
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇫🇷FR-51.195.119.47-0294
+  country: 🇷 FR
+  name: 472,587| FR_41
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
@@ -659,7 +662,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 472,618,627,634,639,641|🇧🇪 比利时 033
+  name: 472,524,618,627,634,639,641|🇧🇪 比利时 033
   network: ws
   port: '443'
   server: jamekk.org
@@ -676,7 +679,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 472,618,627,634,639,641|🇫🇷 法国 048
+  name: 472,524,618,627,634,639,641|🇫🇷 法国 048
   network: ws
   port: '443'
   server: yichueng.org
@@ -727,7 +730,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 472,618,627,634,639,641|🇬🇧 英国 004
+  name: 472,524,618,627,634,639,641|🇬🇧 英国 004
   network: ws
   port: '80'
   server: 51.68.191.233
@@ -1077,7 +1080,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 472,627,639|3|🇫🇷FR-57.128.189.240-5245
+  name: 472,524,627,639|3|🇫🇷FR-57.128.189.240-5245
   network: ws
   port: 443
   server: 57.128.189.240
@@ -1090,12 +1093,14 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 472,627|🇫🇷FR-51.195.202.129-5266
+- country: 🇫🇷FR
+  name: 472,587,627|🇫🇷FR-51.195.202.129-5266
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 472,627|🇫🇷FR-146.59.55.50-5318
@@ -1111,12 +1116,14 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 472,627|🇫🇷FR-51.178.42.187-5372
+- country: 🇸US
+  name: 472,587,627|🇫🇷FR-51.178.42.187-5372
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - name: 472,627|🇫🇷FR-23.162.152.30-5817
   password: installshield
   port: 8443
@@ -1436,6 +1443,19 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
+- alterId: 1
+  cipher: auto
+  name: '524,609,610|法国 国际航空电讯集团公司(SITA) #2'
+  network: ws
+  port: 443
+  server: putihb.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: putihb.org
+    path: linkvws
 - cipher: aes-256-gcm
   name: 537,634|yandex-2264
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
@@ -1737,13 +1757,13 @@ proxies:
   tls: true
   type: vmess
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
-- name: 638|🇫🇷FR_46
+- name: '638|🇫🇷FR_46 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 638|🇫🇷FR_45
+- name: '638|🇫🇷FR_45 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -1892,7 +1912,7 @@ proxies:
   server: 118.184.136.159
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '719|🇫🇷 法国2-645 #1'
+  name: '719|🇫🇷 法国2-626 #1'
   password: dc9ea653-becc-44f1-95f9-16773a0519e9
   port: 12039
   server: fg02.lr9soflhleb.top
