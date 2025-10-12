@@ -14,23 +14,6 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 3|🇺🇸 US-1 | SHFX
-  network: tcp
-  port: 35500
-  server: 148.135.184.84
-  skip-cert-verify: true
-  type: vmess
-  uuid: 744847f4-8549-4bab-a8e4-6b410d271c16
-- name: 3|🇺🇸 US-2 | SHFX
-  password: b4e8771997c94732acbc9ec4d19c2589
-  port: 443
-  server: 104.17.215.6
-  skip-cert-verify: true
-  sni: jobscareerfortoday.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 3|🇺🇸 US-3 | SHFX
   network: ws
   port: 443
   server: 154.17.227.158
@@ -41,6 +24,20 @@ proxies:
     headers:
       Host: us.nbee.pp.ua
     path: /aa
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 3|🇺🇸 US-2 | SHFX
+  network: ws
+  port: 8443
+  server: 104.17.121.140
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 3da5d27f-08d0-4078-f890-cf950ecb1708
+  ws-opts:
+    path: /
 - cipher: aes-256-gcm
   name: 6|US01
   password: 01999560-39d1-7284-9e2d-63f9e2451a79
