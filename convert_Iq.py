@@ -1,72 +1,68 @@
 #!/usr/bin/env python3
-import base64, yaml, requests, sys, os
+"""
+独立脚本：把 https://raw.githubusercontent.com/WeiGiegie/vpm/main/lq.snippet
+（Base64 编码的 ss 链接） → 标准 Clash YAML（Iq.yaml）
+工作流每 3 小时调用一次即可。
+"""
+import base64
+import urllib.parse
+import yaml
+import requests
+import sys
 
-URL = 'https://raw.githubusercontent.com/WeiGiegie/vpm/main/lq.snippet'
-OUT = 'Iq.yaml'          # 单独存在，不跟主流程任何文件重名
+SRC_URL = 'https://raw.githubusercontent.com/WeiGiegie/vpm/main/lq.snippet'
+OUT_FILE = 'Iq.yaml'
 
-# 极简 Node → Clash 字典（只取常用字段）
-def raw_to_clash(raw: str):
-    """vmess/ss/trojan/vless 原始链接 → Clash 字典"""
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+}
+
+def parse_ss(url: str):
+    """ss://BASE64#NAME  →  Clash 字典"""
     try:
-        if raw.startswith('vmess://'):
-            d = __import__('json').loads(base64.b64decode(raw[8:] + '==').decode())
-            return {
-                'name': d.get('ps', 'vmess'),
-                'type': 'vmess',
-                'server': d['add'],
-                'port': int(d['port']),
-                'uuid': d['id'],
-                'alterId': int(d.get('aid', 0)),
-                'cipher': d.get('scy', 'auto'),
-                'tls': d.get('tls') == 'tls',
-                'network': d.get('net', 'tcp'),
-                'ws-opts': {'path': d.get('path', ''), 'headers': {'Host': d.get('host', '')}} if d.get('net') == 'ws' else {},
-            }
-        if raw.startswith('ss://'):
-            from urllib.parse import unquote
-            body = raw[5:]
-            if '#' in body:
-                body, name = body.rsplit('#', 1)
-                name = unquote(name)
-            else:
-                name = 'ss'
-            if '@' in body:
-                cipher_pwd, server_port = body.split('@', 1)
-            else:
-                cipher_pwd = base64.b64decode(body + '==').decode()
-                server_port = ''
-            cipher, pwd = cipher_pwd.split(':', 1)
-            server, port = server_port.split(':', 1)
-            return {
-                'name': name,
-                'type': 'ss',
-                'server': server,
-                'port': int(port),
-                'cipher': cipher,
-                'password': pwd,
-            }
-        # 其余协议同理，可再补
-        return None
-    except Exception:
+        if not url.startswith('ss://'):
+            return None
+        body, _, name_b64 = url[5:].partition('#')
+        name = urllib.parse.unquote(name_b64) if name_b64 else 'ss'
+
+        # 情况 1: BASE64@host:port
+        if '@' in body:
+            cipher_pwd, host_port = body.split('@', 1)
+        # 情况 2: 整体 BASE64
+        else:
+            plain = base64.b64decode(body + '==').decode()
+            cipher_pwd, host_port = plain.split('@', 1)
+
+        cipher, password = cipher_pwd.split(':', 1)
+        host, port = host_port.rsplit(':', 1)
+
+        return {
+            'name': name,
+            'type': 'ss',
+            'server': host,
+            'port': int(port),
+            'cipher': cipher,
+            'password': password
+        }
+    except Exception as e:
+        print(f'[warn] 解析失败: {url}  {e}', file=sys.stderr)
         return None
 
 def main():
-    r = requests.get(URL, timeout=15)
+    r = requests.get(SRC_URL, headers=HEADERS, timeout=15)
     r.raise_for_status()
 
-    proxies = []
+    nodes = []
     for line in r.text.splitlines():
         line = line.strip()
-        if '://' not in line:
-            continue
-        node = raw_to_clash(line)
+        node = parse_ss(line)
         if node:
-            proxies.append(node)
+            nodes.append(node)
 
-    with open(OUT, 'w', encoding='utf-8') as f:
-        yaml.dump({'proxies': proxies}, f, allow_unicode=True)
+    with open(OUT_FILE, 'w', encoding='utf-8') as f:
+        yaml.dump({'proxies': nodes}, f, allow_unicode=True)
 
-    print(f'::notice ::已生成 {OUT}  共 {len(proxies)} 个节点')
+    print(f'::notice ::已生成 {OUT_FILE}  共 {len(nodes)} 个节点')
 
 if __name__ == '__main__':
     main()
