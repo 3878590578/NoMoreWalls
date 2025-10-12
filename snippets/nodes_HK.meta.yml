@@ -133,22 +133,8 @@ proxies:
   name: 3|🇭🇰 HK-2 | SHFX
   network: ws
   port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 3|🇭🇰 HK-3 | SHFX
-  network: ws
-  port: 80
   server: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
@@ -156,11 +142,26 @@ proxies:
     headers:
       Host: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
     path: /
+- alterId: 2
+  cipher: auto
+  name: 3|🇭🇰 HK-3 | SHFX
+  network: ws
+  port: 80
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - client-fingerprint: random
   name: 3|🇭🇰 HK-4 | SHFX
   network: ws
-  port: 40702
-  server: 154.3.37.79
+  port: 39738
+  server: 16.162.192.30
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -174,8 +175,8 @@ proxies:
 - client-fingerprint: random
   name: 3|🇭🇰 HK-5 | SHFX
   network: ws
-  port: 8878
-  server: 205.189.160.230
+  port: 58443
+  server: 154.16.10.205
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -190,7 +191,37 @@ proxies:
   name: 3|🇭🇰 HK-6 | SHFX
   network: ws
   port: 443
-  server: 154.3.33.167
+  server: 188.253.112.112
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 3|🇭🇰 HK-7 | SHFX
+  network: ws
+  port: 443
+  server: 163.53.246.130
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 3|🇭🇰 HK-8 | SHFX
+  network: ws
+  port: 17554
+  server: 154.64.251.220
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
