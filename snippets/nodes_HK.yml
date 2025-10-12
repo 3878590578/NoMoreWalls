@@ -35,9 +35,18 @@ proxies:
   udp: true
   udp-over-tcp: true
   udp-over-tcp-version: 2
+- alterId: 0
+  name: 3|🇭🇰 HK-1 | SHFX
+  password: 1640ef52-2db0-44ab-b3f3-8690b762ebc9
+  port: 12000
+  server: 165.154.112.107
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
-  name: 3|🇭🇰 HK-1 | SHFX
+  name: 3|🇭🇰 HK-2 | SHFX
   network: ws
   port: 80
   server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
@@ -51,25 +60,11 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 3|🇭🇰 HK-2 | SHFX
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
   name: 3|🇭🇰 HK-3 | SHFX
   network: ws
   port: 80
   server: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
@@ -77,15 +72,6 @@ proxies:
     headers:
       Host: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
     path: /
-- alterId: 0
-  name: 3|🇭🇰 HK-4 | SHFX
-  password: 1640ef52-2db0-44ab-b3f3-8690b762ebc9
-  port: 12000
-  server: 165.154.112.107
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
 - cipher: aes-256-gcm
   name: 5|Panda-HK-01
   password: C62DTEoJtk325UWC
