@@ -1,1 +1,104 @@
-proxies: []
+proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇰🇷韩国高速
+  network: tcp
+  port: 29367
+  reality-opts:
+    public-key: _B55VVoq2OZeBOh5SApn3e_EHEUOt-3JA-ukWYtR2Vk
+  server: 198.20.155.147
+  servername: www.iij.ad.jp
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 8de71b42-e40a-42ff-87ad-f33b0f062c81
+- name: 1|🇰🇷韩国高速 2
+  password: 8de71b42-e40a-42ff-87ad-f33b0f062c81
+  port: 29370
+  server: 198.20.155.147
+  type: hysteria2
+- alpn:
+  - h3
+  disable-sni: true
+  name: 1|🇰🇷韩国高速 3
+  password: OdUBl9FVVf6oV2Sx1ZPr7YzZ
+  port: 29369
+  server: 198.20.155.147
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: tuic
+  udp-relay-mode: native
+  uuid: 8de71b42-e40a-42ff-87ad-f33b0f062c81
+- cipher: aes-256-cfb
+  name: 3|🇰🇷 KR-1 | SHFX
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+- cipher: aes-256-cfb
+  name: 3|🇰🇷 KR-2 | SHFX
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
+- client-fingerprint: random
+  name: 3|🇰🇷 KR-3 | SHFX
+  network: ws
+  port: 50000
+  server: tp50000.kr.proxyip.fgfw.eu.org
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 3|🇰🇷 KR-4 | SHFX
+  network: ws
+  port: 39863
+  server: 138.2.122.197
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 3|🇰🇷 KR-5 | SHFX
+  network: ws
+  port: 22053
+  server: 152.67.209.237
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 3|🇰🇷 KR-6 | SHFX
+  network: ws
+  port: 25282
+  server: 144.24.67.138
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
