@@ -741,14 +741,14 @@ class Source():
         if pending is not None: content += pending.decode(errors='ignore')
         return content
 
-def parse(self) -> 无:
+def parse(self) -> None:
     global exc_queue
     try:
         text = self.content
         if isinstance(text, str):
             if "proxies:" in text:
                 # Clash config
-                config = yaml.full_load(text.replace("!<str>"， "!!str"))
+                config = yaml.full_load(text.replace("!<str>", "!!str"))
                 sub = config['proxies']
             elif '://' in text.splitlines()[0]:      # ✅ 1. 新增：第一行就带:// => 裸链
                 sub = text.strip().splitlines()
