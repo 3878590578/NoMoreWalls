@@ -1,0 +1,27 @@
+name: Convert-Iq
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 0/3 * * *'   # 每 3 小时，但比主任务错开 5 分钟
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+        cache: 'pip'
+    - run: pip install pyyaml requests
+    - run: python convert_Iq.py
+    - name: 提交并推送
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add Iq.yaml
+        git diff --cached --quiet || (
+          git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 更新 Iq.yaml"
+          git push origin master
+        )
