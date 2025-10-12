@@ -741,40 +741,36 @@ class Source():
         if pending is not None: content += pending.decode(errors='ignore')
         return content
 
-def parse(self) -> None:
-    global exc_queue
-    try:
-        text = self.content
-        if isinstance(text, str):
-            if "proxies:" in text:
-                # Clash config
-                config = yaml.full_load(text.replace("!<str>", "!!str"))
-                sub = config['proxies']
-            elif '://' in text.splitlines()[0]:      # ✅ 1. 新增：第一行就带:// => 裸链
-                sub = text.strip().splitlines()
-            else:
-                # V2Ray Sub (Base64)
-                sub = b64decodes(text.strip()).strip().splitlines()
-        else:
-            sub = text  # 动态节点抓取后直接传入列表
+    def parse(self) -> None:
+        global exc_queue
+        try:
+            text = self.content
+            if isinstance(text, str):
+                if "proxies:" in text:
+                    # Clash config
+                    config = yaml.full_load(text.replace("!<str>","!!str"))
+                    sub = config['proxies']
+                elif '://' in text:
+                    # V2Ray raw list
+                    sub = text.strip().splitlines()
+                else:
+                    # V2Ray Sub
+                    sub = b64decodes(text.strip()).strip().splitlines()
+            else: sub = text # 动态节点抓取后直接传入列表
 
-        if 'max' in self.cfg and len(sub) > self.cfg['max']:
-            exc_queue.append(f"此订阅有 {len(sub)} 个节点，最大限制为 {self.cfg['max']} 个，忽略此订阅。")
-            self.sub = []
-        elif sub and 'ignore' in self.cfg:
-            if isinstance(sub[0], str):
-                self.sub = [_ for _ in sub if _.split('://', 1)[0] not in self.cfg['ignore']]
-            elif isinstance(sub[0], dict):
-                self.sub = [_ for _ in sub if _.get('type', '') not in self.cfg['ignore']]
-            else:
-                self.sub = sub
-        else:
-            self.sub = sub
-    except KeyboardInterrupt:
-        raise
-    except:
-        exc_queue.append("在解析 '" + self.url + "' 时发生错误：\n" + traceback.format_exc())
-
+            if 'max' in self.cfg and len(sub) > self.cfg['max']:
+                exc_queue.append(f"此订阅有 {len(sub)} 个节点，最大限制为 {self.cfg['max']} 个，忽略此订阅。")
+                self.sub = []
+            elif sub and 'ignore' in self.cfg:
+                if isinstance(sub[0], str):
+                    self.sub = [_ for _ in sub if _.split('://', 1)[0] not in self.cfg['ignore']]
+                elif isinstance(sub[0], dict):
+                    self.sub = [_ for _ in sub if _.get('type', '') not in self.cfg['ignore']] #type:ignore
+                else: self.sub = sub
+            else: self.sub = sub
+        except KeyboardInterrupt: raise
+        except: exc_queue.append(
+                "在解析 '"+self.url+"' 时发生错误：\n"+traceback.format_exc())
 
 class DomainTree:
     def __init__(self) -> None:
