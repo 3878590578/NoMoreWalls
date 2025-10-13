@@ -143,7 +143,7 @@ proxies:
   name: 2|VIP專綫（新加坡）
   password: amazonskr05
   port: 443
-  server: 13.233.212.186
+  server: 15.206.116.139
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -170,18 +170,22 @@ proxies:
   server: 5.44.249.42
   type: ss
   udp: true
-- name: 4|🇸🇬 SG-2 | SHFX
-  password: installshield
-  port: 8443
-  server: 38.180.106.124
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 4|🇸🇬 SG-2 | SHFX
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @ripaojiedian)32cf132:178330
+    mode: tls
+  port: 2377
+  server: 5.44.249.43
+  tfo: false
+  type: ss
 - client-fingerprint: random
   name: 4|🇸🇬 SG-3 | SHFX
   network: ws
-  port: 443
-  server: 103.214.23.121
+  port: 57021
+  server: 61.245.10.43
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -195,8 +199,8 @@ proxies:
 - client-fingerprint: random
   name: 4|🇸🇬 SG-4 | SHFX
   network: ws
-  port: 443
-  server: 8.219.63.1
+  port: 50000
+  server: 77.93.89.238
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -211,7 +215,22 @@ proxies:
   name: 4|🇸🇬 SG-5 | SHFX
   network: ws
   port: 443
-  server: 47.245.85.72
+  server: 8.219.0.67
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 4|🇸🇬 SG-6 | SHFX
+  network: ws
+  port: 8192
+  server: 54.255.217.120
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false

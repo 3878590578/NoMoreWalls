@@ -3,7 +3,7 @@ proxies:
   name: 2|VIP專綫（新加坡）
   password: amazonskr05
   port: 443
-  server: 13.233.212.186
+  server: 15.206.116.139
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -30,13 +30,17 @@ proxies:
   server: 5.44.249.42
   type: ss
   udp: true
-- name: 4|🇸🇬 SG-2 | SHFX
-  password: installshield
-  port: 8443
-  server: 38.180.106.124
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 4|🇸🇬 SG-2 | SHFX
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @ripaojiedian)32cf132:178330
+    mode: tls
+  port: 2377
+  server: 5.44.249.43
+  tfo: false
+  type: ss
 - cipher: aes-256-gcm
   name: 6|SG01
   password: 01999560-39d1-7284-9e2d-63f9e2451a79
