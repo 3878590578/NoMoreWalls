@@ -1,35 +1,46 @@
 proxies:
 - alterId: 2
   cipher: auto
-  name: 4|🇨🇳 CN-1 | SHFX
+  name: 5|🇨🇳 CN-1 | SHFX
   network: ws
-  port: 30824
-  server: v24.heduian.link
-  skip-cert-verify: false
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 5|🇨🇳 CN-2 | SHFX
+  network: ws
+  port: 30839
+  server: v39.heduian.link
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v24.heduian.link
+      Host: baidu.com
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 4|🇨🇳 CN-2 | SHFX
+  name: 5|🇨🇳 CN-3 | SHFX
   network: tcp
-  port: 50002
-  server: 120.210.205.59
+  port: 50007
+  server: 112.132.215.34
   skip-cert-verify: true
-  tfo: true
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: random
-  name: 4|🇨🇳 CN-3 | SHFX
+  name: 5|🇨🇳 CN-4 | SHFX
   network: ws
-  port: 16582
-  server: 166.0.199.172
+  port: 17009
+  server: 83.147.15.60
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -41,10 +52,10 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 4|🇨🇳 CN-4 | SHFX
+  name: 5|🇨🇳 CN-5 | SHFX
   network: ws
-  port: 8443
-  server: 82.152.91.83
+  port: 17009
+  server: 45.207.159.119
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
