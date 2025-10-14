@@ -7,38 +7,10 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-cfb
-  name: VIP專綫（日本）
-  password: amazonskr05
-  port: 443
-  server: 13.38.71.74
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   name: VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 54.234.186.14
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: VIP專綫（韩国）
-  password: amazonskr05
-  port: 443
-  server: 3.108.184.193
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: VIP專綫（新加坡）
-  password: amazonskr05
-  port: 443
-  server: 3.27.47.19
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: VIP專綫（香港）
-  password: amazonskr05
-  port: 443
-  server: 16.176.178.192
+  server: 54.84.99.165
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -52,14 +24,21 @@ proxies:
   name: VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 52.87.250.198
+  server: 54.234.186.14
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: VIP專綫（香港）
+  password: amazonskr05
+  port: 443
+  server: 13.233.95.41
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: VIP專綫（台湾）
   password: amazonskr05
   port: 443
-  server: 13.39.112.103
+  server: 3.107.35.33
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -70,25 +49,46 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  name: VIP專綫（日本）
+  password: amazonskr05
+  port: 443
+  server: 3.27.81.63
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
   name: VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 54.157.216.140
+  server: 52.87.250.198
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: VIP專綫（新加坡）
+  password: amazonskr05
+  port: 443
+  server: 43.205.207.209
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: VIP專綫（韩国）
+  password: amazonskr05
+  port: 443
+  server: 3.107.87.35
   type: ss
   udp: true
 proxy-groups:
 - name: Proxies
   proxies:
+  - VIP專綫（美国）
   - VIP專綫（日本）
   - VIP專綫（美国）
-  - VIP專綫（韩国）
-  - VIP專綫（新加坡）
   - VIP專綫（香港）
-  - VIP專綫（日本）
-  - VIP專綫（美国）
   - VIP專綫（台湾）
   - VIP專綫（加拿大）
+  - VIP專綫（日本）
   - VIP專綫（美国）
+  - VIP專綫（新加坡）
+  - VIP專綫（韩国）
   type: select
 redir-port: 7892
 rules:
