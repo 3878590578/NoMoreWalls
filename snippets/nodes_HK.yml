@@ -3,7 +3,7 @@ proxies:
   name: 3|VIP專綫（香港）
   password: amazonskr05
   port: 443
-  server: 43.205.207.209
+  server: 16.176.178.192
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -47,21 +47,6 @@ proxies:
   name: 5|🇭🇰 HK-1 | SHFX
   network: ws
   port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-2 | SHFX
-  network: ws
-  port: 80
   server: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
   skip-cert-verify: false
   tls: false
@@ -71,50 +56,21 @@ proxies:
     headers:
       Host: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
     path: /
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 5|🇭🇰 HK-3 | SHFX
-  network: ws
-  port: 80
-  server: be4fe2f9-t3gn40-tdnzz0-1qtp7.hk3.p5pv.com
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 5|🇭🇰 HK-2 | SHFX
+  network: http
+  port: 31212
+  server: 47.242.90.210
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-4 | SHFX
-  network: ws
-  port: 80
-  server: 9def5c5d-t398g0-tdnzz0-1qtp7.hk3.p5pv.com
-  servername: 🇭🇰HK-42.3.131.87-0275 | 4.049MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 9def5c5d-t398g0-tdnzz0-1qtp7.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-5 | SHFX
-  network: ws
-  port: 80
-  server: 54d2d7fc-t3kcg0-tdnzz0-1qtp7.hk3.p5pv.com
-  servername: 🇭🇰HK-42.3.131.87-0264 | 3.689MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 54d2d7fc-t3kcg0-tdnzz0-1qtp7.hk3.p5pv.com
-    path: /
+  udp: true
+  uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
 - cipher: aes-256-gcm
   name: 6|Panda-HK-01
   password: C62DTEoJtk325UWC
