@@ -1,15 +1,19 @@
 proxies:
-- alterId: 0
+- alterId: 2
   cipher: auto
   name: 5|🇨🇳 CN-1 | SHFX
-  network: tcp
-  port: 50002
-  server: 139.129.20.6
+  network: ws
+  port: 30839
+  server: v39.heduian.link
   skip-cert-verify: true
-  tfo: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 5|🇨🇳 CN-2 | SHFX
@@ -21,11 +25,47 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: random
+- alterId: 0
+  cipher: auto
   name: 5|🇨🇳 CN-3 | SHFX
+  network: tcp
+  port: 50002
+  server: 139.129.20.6
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  name: 5|🇨🇳 CN-4 | SHFX
   network: ws
-  port: 32819
-  server: 188.253.7.168
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v29.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳 CN-5 | SHFX
+  port: 20180
+  server: LI7kOg.gov.goldliond.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
+- client-fingerprint: random
+  name: 5|🇨🇳 CN-6 | SHFX
+  network: ws
+  port: 16582
+  server: 166.0.199.172
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -37,10 +77,10 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇨🇳 CN-4 | SHFX
+  name: 5|🇨🇳 CN-7 | SHFX
   network: ws
-  port: 443
-  server: 103.123.132.236
+  port: 995
+  server: 122.116.43.253
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
