@@ -1,18 +1,14 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
+- alterId: 0
   name: 5|🇨🇳 CN-1 | SHFX
-  port: 35248
-  reality-opts:
-    public-key: IGsSxC0wgn7wLy0NM0QN_yOREDKT_814Y_3_rbgDoTc
-    short-id: c8c0f951
-  server: 59.36.143.125
-  servername: www.lamer.com.hk
-  skip-cert-verify: false
+  password: 3c77ad6b-9c9c-4aff-beff-0a16e2cdea15
+  port: 13007
+  server: 36.141.40.42
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
   tls: true
-  type: vless
+  type: trojan
   udp: true
-  uuid: 823e8b29-7d63-4af6-92f0-f94623b7030c
 - alterId: 2
   cipher: auto
   name: 5|🇨🇳 CN-2 | SHFX
@@ -28,17 +24,22 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- alterId: 0
+- alterId: 2
   cipher: auto
   name: 5|🇨🇳 CN-3 | SHFX
-  network: tcp
-  port: 30302
-  server: 39.107.155.11
-  skip-cert-verify: true
-  tfo: true
+  network: ws
+  port: '30809'
+  server: v9.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 2
   cipher: auto
   name: 5|🇨🇳 CN-4 | SHFX
@@ -56,8 +57,8 @@ proxies:
   cipher: auto
   name: 5|🇨🇳 CN-5 | SHFX
   network: tcp
-  port: 50002
-  server: 139.129.20.6
+  port: 30302
+  server: 39.107.155.11
   skip-cert-verify: true
   tfo: true
   type: vmess
@@ -72,11 +73,38 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: random
+- alterId: 2
+  cipher: auto
   name: 5|🇨🇳 CN-7 | SHFX
   network: ws
-  port: 10004
-  server: 114.34.202.224
+  port: 30808
+  server: v8.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳 CN-8 | SHFX
+  network: tcp
+  port: 50002
+  server: 139.129.20.6
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: random
+  name: 5|🇨🇳 CN-9 | SHFX
+  network: ws
+  port: 10226
+  server: 60.248.63.88
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -88,10 +116,10 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇨🇳 CN-8 | SHFX
+  name: 5|🇨🇳 CN-10 | SHFX
   network: ws
-  port: 8443
-  server: 213.210.5.61
+  port: 16071
+  server: 60.248.63.88
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
