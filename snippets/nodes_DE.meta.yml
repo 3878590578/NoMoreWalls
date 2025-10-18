@@ -41,18 +41,25 @@ proxies:
     headers:
       Host: berlin-agents-violations-jacksonville.trycloudflare.com
     path: /7bb1be06-a5da-4f06-9a2c-f14523424adf-vm?ed=2048
-- client-fingerprint: random
-  name: 5|🇩🇪 DE-1 | SHFX
+- name: 5|🇩🇪 DE-1 | SHFX
   network: ws
-  port: 53452
-  server: 193.160.221.232
-  servername: snippet.danfeng.site
-  skip-cert-verify: true
-  tfo: false
-  tls: true
+  port: 443
+  server: 49.13.29.218
+  servername: 49.13.29.218
+  skip-cert-verify: false
+  tls: false
   type: vless
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  udp: true
+  uuid: c332c262-b173-4bb2-aba0-cca85eebc5f6
   ws-opts:
     headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
+      Host: 49.13.29.218
+    path: /linkws
+- name: 5|🇩🇪 DE-2 | SHFX
+  port: 666
+  server: 213.165.56.19
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 13e824c8-46a7-458a-b9d5-24ab4058acae
