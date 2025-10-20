@@ -101,21 +101,21 @@ proxies:
   name: 3|VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 3.133.131.192
+  server: 18.221.122.241
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: '3|VIP專綫（美国） #1'
   password: amazonskr05
   port: 443
-  server: 3.12.163.233
+  server: 3.21.12.220
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: '3|VIP專綫（美国） #2'
   password: amazonskr05
   port: 443
-  server: 18.116.24.97
+  server: 3.148.222.22
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -130,22 +130,9 @@ proxies:
   udp: true
   udp-over-tcp: true
   udp-over-tcp-version: 2
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 5|🇺🇸 US-1 | SHFX
-  port: 12143
-  reality-opts:
-    public-key: Og22mCU3ox0A2huEnkFi35BLucYlkxeFLdt0IswxonY
-  server: 38.252.8.208
-  servername: updates.cdn-apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 87023a88-d08f-419e-9100-bf4b99d29d54
 - alterId: 0
   cipher: auto
-  name: 5|🇺🇸 US-2 | SHFX
+  name: 5|🇺🇸 US-1 | SHFX
   network: ws
   port: 443
   server: 154.17.227.158
@@ -156,22 +143,8 @@ proxies:
     headers:
       Host: us.nbee.pp.ua
     path: /aa
-- name: 5|🇺🇸 US-3 | SHFX
-  network: ws
-  port: 443
-  server: ktff.tencentapp.cn
-  servername: sp5.sutu.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9c8b8aec-7a20-4271-8a4f-a87bb029dae9
-  ws-opts:
-    headers:
-      Host: sp5.sutu.eu.org
-    path: /
 - client-fingerprint: random
-  name: 5|🇺🇸 US-4 | SHFX
+  name: 5|🇺🇸 US-2 | SHFX
   network: ws
   port: 443
   server: cf-cname.xingpingcn.top
@@ -186,7 +159,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-5 | SHFX
+  name: 5|🇺🇸 US-3 | SHFX
   network: ws
   port: 2096
   server: mfa.gov.ua
@@ -201,7 +174,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-6 | SHFX
+  name: 5|🇺🇸 US-4 | SHFX
   network: ws
   port: 50000
   server: store.ubi.com
@@ -216,10 +189,40 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
+  name: 5|🇺🇸 US-5 | SHFX
+  network: ws
+  port: 15614
+  server: 38.102.235.136
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 5|🇺🇸 US-6 | SHFX
+  network: ws
+  port: 33473
+  server: 144.34.227.210
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
+- client-fingerprint: random
   name: 5|🇺🇸 US-7 | SHFX
   network: ws
-  port: 39738
-  server: 54.174.164.37
+  port: 11118
+  server: 154.26.182.107
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -233,8 +236,8 @@ proxies:
 - client-fingerprint: random
   name: 5|🇺🇸 US-8 | SHFX
   network: ws
-  port: 14691
-  server: 154.21.93.60
+  port: 2443
+  server: 107.182.179.27
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -248,8 +251,8 @@ proxies:
 - client-fingerprint: random
   name: 5|🇺🇸 US-9 | SHFX
   network: ws
-  port: 54407
-  server: 154.17.239.199
+  port: 1991
+  server: 176.122.132.65
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -263,8 +266,8 @@ proxies:
 - client-fingerprint: random
   name: 5|🇺🇸 US-10 | SHFX
   network: ws
-  port: 39738
-  server: 47.251.243.165
+  port: 7777
+  server: 154.19.241.132
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -278,8 +281,8 @@ proxies:
 - client-fingerprint: random
   name: 5|🇺🇸 US-11 | SHFX
   network: ws
-  port: 13001
-  server: 37.123.194.101
+  port: 27448
+  server: 38.105.24.143
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -293,8 +296,8 @@ proxies:
 - client-fingerprint: random
   name: 5|🇺🇸 US-12 | SHFX
   network: ws
-  port: 54321
-  server: 154.12.53.125
+  port: 39738
+  server: 54.193.114.112
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -308,128 +311,8 @@ proxies:
 - client-fingerprint: random
   name: 5|🇺🇸 US-13 | SHFX
   network: ws
-  port: 443
-  server: 172.212.108.47
-  servername: snippet.danfeng.site
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 5|🇺🇸 US-14 | SHFX
-  network: ws
-  port: 2096
-  server: 4.227.121.113
-  servername: snippet.danfeng.site
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 5|🇺🇸 US-15 | SHFX
-  network: ws
-  port: 12014
-  server: 154.9.241.42
-  servername: snippet.danfeng.site
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 5|🇺🇸 US-16 | SHFX
-  network: ws
-  port: 27702
-  server: 154.40.32.89
-  servername: snippet.danfeng.site
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 5|🇺🇸 US-17 | SHFX
-  network: ws
-  port: 39738
-  server: 3.92.127.219
-  servername: snippet.danfeng.site
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 5|🇺🇸 US-18 | SHFX
-  network: ws
-  port: 27013
-  server: 37.123.193.201
-  servername: snippet.danfeng.site
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 5|🇺🇸 US-19 | SHFX
-  network: ws
-  port: 41668
-  server: 154.9.241.42
-  servername: snippet.danfeng.site
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 5|🇺🇸 US-20 | SHFX
-  network: ws
-  port: 2023
-  server: 154.17.0.93
-  servername: snippet.danfeng.site
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 5|🇺🇸 US-21 | SHFX
-  network: ws
-  port: 21723
-  server: 38.150.3.43
+  port: 49200
+  server: 104.224.157.64
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
