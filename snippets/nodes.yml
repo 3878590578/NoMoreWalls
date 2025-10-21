@@ -42,59 +42,10 @@ proxies:
       Host: berlin-agents-violations-jacksonville.trycloudflare.com
     path: /7bb1be06-a5da-4f06-9a2c-f14523424adf-vm?ed=2048
 - cipher: aes-256-cfb
-  name: 3|VIP專綫（美国）
-  password: amazonskr05
-  port: 443
-  server: 18.116.87.3
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 3|VIP專綫（加拿大）
-  password: amazonskr05
-  port: 443
-  server: 18.116.24.97
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   name: 3|VIP專綫（日本）
   password: amazonskr05
   port: 443
   server: 51.20.184.165
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 3|VIP專綫（香港）
-  password: amazonskr05
-  port: 443
-  server: 18.134.245.70
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 3|VIP專綫（台湾）
-  password: amazonskr05
-  port: 443
-  server: 35.179.149.224
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 3|VIP專綫（韩国）
-  password: amazonskr05
-  port: 443
-  server: 13.62.47.101
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 3|VIP專綫（新加坡）
-  password: amazonskr05
-  port: 443
-  server: 13.60.9.137
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '3|VIP專綫（美国） #1'
-  password: amazonskr05
-  port: 443
-  server: 3.139.67.190
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -105,10 +56,59 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  name: 3|VIP專綫（新加坡）
+  password: amazonskr05
+  port: 443
+  server: 35.178.211.150
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 3|VIP專綫（加拿大）
+  password: amazonskr05
+  port: 443
+  server: 3.12.163.233
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 3|VIP專綫（香港）
+  password: amazonskr05
+  port: 443
+  server: 18.133.243.78
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 3|VIP專綫（美国）
+  password: amazonskr05
+  port: 443
+  server: 18.116.24.97
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '3|VIP專綫（美国） #1'
+  password: amazonskr05
+  port: 443
+  server: 18.218.220.83
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 3|VIP專綫（台湾）
+  password: amazonskr05
+  port: 443
+  server: 35.176.108.146
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 3|VIP專綫（韩国）
+  password: amazonskr05
+  port: 443
+  server: 18.135.13.132
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
   name: '3|VIP專綫（美国） #2'
   password: amazonskr05
   port: 443
-  server: 3.137.165.150
+  server: 18.118.10.94
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -239,21 +239,14 @@ proxies:
   server: preshdata1.233netpre.org
   type: ss
   udp: true
-- alterId: 0
-  name: 5|🇨🇳 CN-1 | SHFX
+- name: 5|🇨🇳 CN-1 | SHFX
+  network: tcp
   password: BxceQaOe
   port: 4451
   server: 36.150.215.138
   skip-cert-verify: true
-  tls: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 5|🇭🇷 HR-1 | SHFX
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.184.60
-  type: ss
 - alterId: 0
   cipher: auto
   name: 5|🇺🇸 US-1 | SHFX
@@ -269,14 +262,106 @@ proxies:
     path: /aa
 - alterId: 0
   cipher: auto
+  name: 5|🇭🇰 HK-1 | SHFX
+  network: ws
+  port: 443
+  server: 46.3.26.12
+  tls: true
+  type: vmess
+  uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
+  ws-opts:
+    headers:
+      Host: hk.nbee.pp.ua
+    path: /aa
+- cipher: chacha20-ietf-poly1305
+  name: 5|🇻🇳 VN-1 | SHFX
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
+- alterId: 2
+  cipher: auto
   name: 5|🇨🇳 CN-2 | SHFX
-  port: 47083
-  server: 124.236.46.114
+  network: ws
+  port: 30829
+  server: v29.heduian.link
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  uuid: fd49381f-9fd8-4403-8698-48331a4d775d
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v29.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 5|🇨🇳 CN-3 | SHFX
+  network: ws
+  port: 30824
+  server: v24.heduian.link
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v24.heduian.link
+    path: /oooo
+- cipher: aes-256-cfb
+  name: 5|🇭🇷 HR-1 | SHFX
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.184.60
+  type: ss
+- cipher: aes-256-cfb
+  name: 5|🇲🇩 MD-1 | SHFX
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳 CN-4 | SHFX
+  network: tcp
+  port: 50007
+  server: 112.132.215.34
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳 CN-5 | SHFX
+  network: tcp
+  port: 50002
+  server: 106.14.75.114
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳 CN-6 | SHFX
+  network: tcp
+  port: 30302
+  server: 39.107.155.11
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 5|🇨🇳 CN-7 | SHFX
+  network: tcp
+  password: BxceQaOe
+  port: 2145
+  server: 36.151.251.18
+  skip-cert-verify: true
+  type: trojan
+- cipher: aes-256-cfb
+  name: 5|🇺🇸 US-2 | SHFX
+  password: 9d6cceaa373bf2c8acb22e60b6a58be6
+  port: 443
+  server: 45.79.79.37
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 6|Panda-HK-01
   password: C62DTEoJtk325UWC
