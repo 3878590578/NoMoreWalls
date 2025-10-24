@@ -868,12 +868,21 @@ proxies:
   server: preshdata1.233netpre.org
   type: ss
   udp: true
+- name: 5|🇯🇵 JP-1 | SHFX
+  password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+  port: 15013
+  server: 37.202.200.19
+  skip-cert-verify: true
+  sni: jp02.weyaf9sdoh2h.space
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
-  name: 5|🇮🇸 IS-1 | SHFX
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.235.49.168
+  name: 5|🇫🇷 FR-1 | SHFX
+  password: amazonskr05
+  port: 443
+  server: 13.36.166.230
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|🇺🇸 US-1 | SHFX
@@ -888,11 +897,18 @@ proxies:
       Host: us.nbee.pp.ua
     path: /aa
 - cipher: aes-256-cfb
+  name: 5|🇮🇸 IS-1 | SHFX
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.49.168
+  type: ss
+- cipher: aes-256-cfb
   name: 5|🇵🇾 PY-1 | SHFX
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.165.233.93
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|🇭🇰 HK-1 | SHFX
@@ -906,82 +922,9 @@ proxies:
     headers:
       Host: hk.nbee.pp.ua
     path: /aa
-- name: 5|🇯🇵 JP-1 | SHFX
-  password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
-  port: 15013
-  server: 37.202.200.19
-  skip-cert-verify: true
-  sni: jp02.weyaf9sdoh2h.space
-  type: trojan
-  udp: true
-- client-fingerprint: random
-  name: 5|🇺🇸 US-2 | SHFX
-  network: ws
-  port: 443
-  server: freeyx.cloudflare88.eu.org
-  servername: do-sfo3.xhs152.shop
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3a74b4f6-76d6-439c-a9ac-658bef4ef0e3
-  ws-opts:
-    headers:
-      Host: do-sfo3.xhs152.shop
-    path: /freev2.net?ed=2048
 - alterId: 2
   cipher: auto
   name: 5|🇨🇳 CN-1 | SHFX
-  network: ws
-  port: 30824
-  server: v24.heduian.link
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v24.heduian.link
-    path: /oooo
-- cipher: aes-256-cfb
-  name: 5|🇫🇷 FR-1 | SHFX
-  password: amazonskr05
-  port: 443
-  server: 15.237.118.240
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 5|🇫🇷 FR-2 | SHFX
-  password: amazonskr05
-  port: 443
-  server: 13.36.166.230
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 5|🇫🇷 FR-3 | SHFX
-  password: amazonskr05
-  port: 443
-  server: 35.180.193.77
-  type: ss
-- cipher: aes-256-cfb
-  name: 5|🇲🇩 MD-1 | SHFX
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 5|🇨🇳 CN-2 | SHFX
-  network: tcp
-  port: 50002
-  server: 139.129.20.6
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  name: 5|🇨🇳 CN-3 | SHFX
   network: ws
   port: 30806
   server: v6.heduian.link
@@ -994,18 +937,24 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 5|🇨🇳 CN-4 | SHFX
-  network: tcp
-  port: 50002
-  server: 106.14.75.114
+  name: 5|🇨🇳 CN-2 | SHFX
+  network: ws
+  port: 30839
+  server: v39.heduian.link
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-5 | SHFX
+  name: 5|🇨🇳 CN-3 | SHFX
   network: tcp
   port: 30302
   server: 39.107.155.11
@@ -1014,21 +963,49 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
+- cipher: aes-256-cfb
+  name: 5|🇲🇩 MD-1 | SHFX
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- alterId: 0
   cipher: auto
-  name: 5|🇭🇰 HK-2 | SHFX
-  network: ws
-  port: 30807
-  server: v10.heduian.link
+  name: 5|🇨🇳 CN-4 | SHFX
+  network: tcp
+  port: 50002
+  server: 139.129.20.6
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳 CN-5 | SHFX
+  network: tcp
+  port: 50002
+  server: 106.14.75.114
   skip-cert-verify: true
   type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  name: 5|🇨🇳 CN-6 | SHFX
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v10.heduian.link
+      Host: v29.heduian.link
     path: /oooo
 - client-fingerprint: random
-  name: 5|🇺🇸 US-3 | SHFX
+  name: 5|🇺🇸 US-2 | SHFX
   network: ws
   port: 443
   server: cf-cname.xingpingcn.top
@@ -1043,7 +1020,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-4 | SHFX
+  name: 5|🇺🇸 US-3 | SHFX
   network: ws
   port: 2096
   server: time.is
@@ -1073,7 +1050,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇭🇰 HK-3 | SHFX
+  name: 5|🇭🇰 HK-2 | SHFX
   network: ws
   port: 37764
   server: 46.232.108.71
@@ -1088,7 +1065,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇭🇰 HK-4 | SHFX
+  name: 5|🇭🇰 HK-3 | SHFX
   network: ws
   port: 57811
   server: 46.232.108.166
@@ -1103,7 +1080,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇭🇰 HK-5 | SHFX
+  name: 5|🇭🇰 HK-4 | SHFX
   network: ws
   port: 443
   server: 205.189.160.29
@@ -1118,7 +1095,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇭🇰 HK-6 | SHFX
+  name: 5|🇭🇰 HK-5 | SHFX
   network: ws
   port: 43242
   server: 38.207.174.80
@@ -1133,7 +1110,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇭🇰 HK-7 | SHFX
+  name: 5|🇭🇰 HK-6 | SHFX
   network: ws
   port: 1443
   server: 38.71.124.55
@@ -1298,7 +1275,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇨🇳 CN-6 | SHFX
+  name: 5|🇨🇳 CN-7 | SHFX
   network: ws
   port: 17009
   server: 141.11.87.155
@@ -1313,7 +1290,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇨🇳 CN-7 | SHFX
+  name: 5|🇨🇳 CN-8 | SHFX
   network: ws
   port: 8443
   server: 213.210.5.61
@@ -1328,7 +1305,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-5 | SHFX
+  name: 5|🇺🇸 US-4 | SHFX
   network: ws
   port: 23456
   server: 154.26.190.103
@@ -1343,7 +1320,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-6 | SHFX
+  name: 5|🇺🇸 US-5 | SHFX
   network: ws
   port: 41668
   server: 154.9.26.241
@@ -1358,7 +1335,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-7 | SHFX
+  name: 5|🇺🇸 US-6 | SHFX
   network: ws
   port: 10358
   server: 38.207.183.237
@@ -1373,7 +1350,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-8 | SHFX
+  name: 5|🇺🇸 US-7 | SHFX
   network: ws
   port: 11283
   server: 38.47.118.247
@@ -1388,7 +1365,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-9 | SHFX
+  name: 5|🇺🇸 US-8 | SHFX
   network: ws
   port: 6443
   server: 154.17.1.6
@@ -1403,7 +1380,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-10 | SHFX
+  name: 5|🇺🇸 US-9 | SHFX
   network: ws
   port: 46200
   server: 72.249.204.153
@@ -1418,7 +1395,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-11 | SHFX
+  name: 5|🇺🇸 US-10 | SHFX
   network: ws
   port: 443
   server: 170.106.152.78
@@ -1433,7 +1410,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-12 | SHFX
+  name: 5|🇺🇸 US-11 | SHFX
   network: ws
   port: 15625
   server: 38.47.116.238
@@ -1448,7 +1425,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-13 | SHFX
+  name: 5|🇺🇸 US-12 | SHFX
   network: ws
   port: 587
   server: 38.79.114.49
@@ -1463,7 +1440,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-14 | SHFX
+  name: 5|🇺🇸 US-13 | SHFX
   network: ws
   port: 2443
   server: 65.49.216.153
@@ -1478,7 +1455,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-15 | SHFX
+  name: 5|🇺🇸 US-14 | SHFX
   network: ws
   port: 40001
   server: 104.194.87.63
@@ -1657,293 +1634,4 @@ proxies:
   server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
   tfo: true
   type: ss
-  udp: true
-- flow: xtls-rprx-vision
-  name: 8|🇭🇰香港高速01|BGP|流媒体
-  port: 35248
-  reality-opts:
-    public-key: IGsSxC0wgn7wLy0NM0QN_yOREDKT_814Y_3_rbgDoTc
-    short-id: c8c0f951
-  server: aws-link1.liangxin1.xyz
-  servername: www.lamer.com.hk
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70b2e59b-8787-42e5-b7cf-cff380d92409
-- flow: xtls-rprx-vision
-  name: 8|🇭🇰香港高速02|BGP|流媒体
-  port: 32725
-  reality-opts:
-    public-key: IdgzmrHX6nbZEVjox3WcxBE07DwXE9YIa8ZyYZuMWEw
-    short-id: 784cf058
-  server: aws-link2.liangxin1.xyz
-  servername: osxapps.itunes.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70b2e59b-8787-42e5-b7cf-cff380d92409
-- flow: xtls-rprx-vision
-  name: 8|🇭🇰香港高速03|BGP|流媒体
-  port: 24758
-  reality-opts:
-    public-key: o59R2PjAsu1h4KcFjK-EDGP41N2PHZL_Pgk64UcFxh0
-    short-id: a6d87a12
-  server: aws-link3.liangxin1.xyz
-  servername: osxapps.itunes.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70b2e59b-8787-42e5-b7cf-cff380d92409
-- flow: xtls-rprx-vision
-  name: 8|🇸🇬新加坡高速01|BGP|流媒体
-  port: 48574
-  reality-opts:
-    public-key: lmxSayN8tUg2Dag2MPXrdqZ2SQK9K3OjlaKk8wVCRnc
-    short-id: f8f18902
-  server: aws-link7.liangxin1.xyz
-  servername: www.lamer.com.sg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70b2e59b-8787-42e5-b7cf-cff380d92409
-- flow: xtls-rprx-vision
-  name: 8|🇸🇬新加坡高速02|BGP|流媒体
-  port: 39645
-  reality-opts:
-    public-key: x7VqpFP7_PrY4ebNw8hi8Ec5Tm5Upmt5JOdrN1M9VnQ
-    short-id: 2b3b0b93
-  server: aws-link8.liangxin1.xyz
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70b2e59b-8787-42e5-b7cf-cff380d92409
-- flow: xtls-rprx-vision
-  name: 8|🇸🇬新加坡高速03|BGP|流媒体
-  port: 23587
-  reality-opts:
-    public-key: H66PLLf6HkZwHk4oFqisfTawIvw2cxkEwk8Ue8sHZgA
-    short-id: 19b580ae
-  server: aws-link9.liangxin1.xyz
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70b2e59b-8787-42e5-b7cf-cff380d92409
-- flow: xtls-rprx-vision
-  name: 8|🇯🇵日本高速01|BGP|流媒体
-  port: 36574
-  reality-opts:
-    public-key: sDG-KQk1BF7V83-xnmrWDouXxpPd_ZSxKcHrJJzbols
-    short-id: 32a3650d
-  server: aws-link13.liangxin1.xyz
-  servername: www.apple.com.cn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70b2e59b-8787-42e5-b7cf-cff380d92409
-- flow: xtls-rprx-vision
-  name: 8|🇯🇵日本高速02|BGP|流媒体
-  port: 25485
-  reality-opts:
-    public-key: VOFSjjWT0wIH3Q0ntyEZd8WwksrIAb5gPt_3PBnEASg
-    short-id: 9c5b8c53
-  server: aws-link14.liangxin1.xyz
-  servername: www.apple.com.cn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70b2e59b-8787-42e5-b7cf-cff380d92409
-- flow: xtls-rprx-vision
-  name: 8|🇯🇵日本高速03|BGP|流媒体
-  port: 35457
-  reality-opts:
-    public-key: 3gb-aG6qLCJpEOFrEPZ9qKqLvVPA_ovlu0X1PvjcE0k
-    short-id: 05288db3
-  server: aws-link15.liangxin1.xyz
-  servername: www.apple.com.cn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70b2e59b-8787-42e5-b7cf-cff380d92409
-- flow: xtls-rprx-vision
-  name: 8|🇺🇸美国高速01|流媒体
-  port: 443
-  reality-opts:
-    public-key: QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o
-    short-id: 6314e825
-  server: 129.146.46.191
-  servername: download-porter.hoyoverse.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70b2e59b-8787-42e5-b7cf-cff380d92409
-- flow: xtls-rprx-vision
-  name: 8|🇰🇷韩国高速01|BGP|流媒体
-  port: 34578
-  reality-opts:
-    public-key: PSn2s5TN4e7n0LkzPunu2IA1hSmOoPYFu3d_psl2Nmc
-    short-id: e534c8be
-  server: aws-link25.liangxin1.xyz
-  servername: download-porter.hoyoverse.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70b2e59b-8787-42e5-b7cf-cff380d92409
-- flow: xtls-rprx-vision
-  name: 8|🇰🇷韩国高速02|BGP|流媒体
-  port: 36872
-  reality-opts:
-    public-key: z53evg6ewSK3gb9bS4KWdgyYU74McOLiRdFqJNpubmQ
-    short-id: ab9a0409
-  server: aws-link26.liangxin1.xyz
-  servername: download-porter.hoyoverse.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70b2e59b-8787-42e5-b7cf-cff380d92409
-- flow: xtls-rprx-vision
-  name: 8|🇨🇳台湾高速01|BGP|流媒体
-  port: 443
-  reality-opts:
-    public-key: a9I2uA3NNZA6uBAe3Tui9vZ8CG5MrMaYOifWrAdc0zg
-    short-id: a8609be8
-  server: aws-link27.liangxin1.xyz
-  servername: download-porter.hoyoverse.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70b2e59b-8787-42e5-b7cf-cff380d92409
-- mport: 60000-65530
-  name: 8|🇭🇰香港专线02|BGP|流媒体
-  password: 70b2e59b-8787-42e5-b7cf-cff380d92409
-  port: 60000
-  ports: 60000-65530
-  server: aws-linkhy2.liangxin1.xyz
-  skip-cert-verify: true
-  sni: iosapps.itunes.apple.com
-  type: hysteria2
-  udp: true
-- mport: 60000-65530
-  name: 8|🇭🇰香港专线03|BGP|流媒体
-  password: 70b2e59b-8787-42e5-b7cf-cff380d92409
-  port: 60000
-  ports: 60000-65530
-  server: aws-linkhy3.liangxin1.xyz
-  skip-cert-verify: true
-  sni: iosapps.itunes.apple.com
-  type: hysteria2
-  udp: true
-- mport: 60000-65530
-  name: 8|🇸🇬新加坡专线02|BGP|流媒体
-  password: 70b2e59b-8787-42e5-b7cf-cff380d92409
-  port: 60000
-  ports: 60000-65530
-  server: aws-linkhy10.liangxin1.xyz
-  skip-cert-verify: true
-  sni: iosapps.itunes.apple.com
-  type: hysteria2
-  udp: true
-- mport: 60000-65530
-  name: 8|🇸🇬新加坡专线03|BGP|流媒体
-  password: 70b2e59b-8787-42e5-b7cf-cff380d92409
-  port: 60000
-  ports: 60000-65530
-  server: aws-linkhy11.liangxin1.xyz
-  skip-cert-verify: true
-  sni: iosapps.itunes.apple.com
-  type: hysteria2
-  udp: true
-- mport: 60000-65530
-  name: 8|🇯🇵日本专线02|BGP|流媒体
-  password: 70b2e59b-8787-42e5-b7cf-cff380d92409
-  port: 60000
-  ports: 60000-65530
-  server: aws-linkhy16.liangxin1.xyz
-  skip-cert-verify: true
-  sni: bilibili-jp2.biliimg.com
-  type: hysteria2
-  udp: true
-- mport: 60000-65530
-  name: 8|🇯🇵日本专线03|BGP|流媒体
-  password: 70b2e59b-8787-42e5-b7cf-cff380d92409
-  port: 60000
-  ports: 60000-65530
-  server: aws-linkhy17.liangxin1.xyz
-  skip-cert-verify: true
-  sni: bilibili-jp3.biliimg.com
-  type: hysteria2
-  udp: true
-- mport: 60000-65530
-  name: 8|🇰🇷韩国专线01|BGP|流媒体
-  password: 70b2e59b-8787-42e5-b7cf-cff380d92409
-  port: 60000
-  ports: 60000-65530
-  server: aws-linkhy21.liangxin1.xyz
-  skip-cert-verify: true
-  sni: bilibili-kr.biliimg.com
-  type: hysteria2
-  udp: true
-- mport: 60000-65530
-  name: 8|🇰🇷韩国专线02|BGP|流媒体
-  password: 70b2e59b-8787-42e5-b7cf-cff380d92409
-  port: 60000
-  ports: 60000-65530
-  server: aws-linkhy22.liangxin1.xyz
-  skip-cert-verify: true
-  sni: bilibili-kr2.biliimg.com
-  type: hysteria2
-  udp: true
-- mport: 60000-65530
-  name: 8|🇨🇳台湾专线01|BGP|流媒体
-  password: 70b2e59b-8787-42e5-b7cf-cff380d92409
-  port: 60000
-  ports: 60000-65530
-  server: aws-linkhy23.liangxin1.xyz
-  skip-cert-verify: true
-  sni: bilibili-tw.biliimg.com
-  type: hysteria2
-  udp: true
-- mport: 30000-50000
-  name: 8|🇺🇸美国01|流媒体
-  password: 70b2e59b-8787-42e5-b7cf-cff380d92409
-  port: 30000
-  ports: 30000-50000
-  server: 132.226.117.48
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: hysteria2
-  udp: true
-- mport: 30000-50000
-  name: 8|🇺🇸美国02|流媒体
-  password: 70b2e59b-8787-42e5-b7cf-cff380d92409
-  port: 30000
-  ports: 30000-50000
-  server: 129.153.119.42
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: hysteria2
-  udp: true
-- mport: 30000-50000
-  name: 8|🇬🇧英国01|流媒体
-  password: 70b2e59b-8787-42e5-b7cf-cff380d92409
-  port: 30000
-  ports: 30000-50000
-  server: 79.72.81.183
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: hysteria2
   udp: true
