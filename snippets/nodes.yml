@@ -250,7 +250,17 @@ proxies:
   server: preshdata1.233netpre.org
   type: ss
   udp: true
-- name: 5|🇯🇵 JP-1 | SHFX
+- alterId: 0
+  name: 5|🇯🇵 JP-1 | SHFX
+  password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+  port: 12412
+  server: 37.202.200.11
+  skip-cert-verify: true
+  sni: wjp04.weyaf9sdoh2h.space
+  tls: true
+  type: trojan
+  udp: true
+- name: 5|🇯🇵 JP-2 | SHFX
   password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
   port: 15013
   server: 37.202.200.19
@@ -271,19 +281,25 @@ proxies:
     headers:
       Host: us.nbee.pp.ua
     path: /aa
-- cipher: aes-256-cfb
-  name: 5|🇮🇸 IS-1 | SHFX
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.235.49.168
+- cipher: chacha20-ietf-poly1305
+  name: 5|🇳🇱 NL-1 | SHFX
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.131
   type: ss
-- cipher: aes-256-cfb
-  name: 5|🇵🇾 PY-1 | SHFX
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.165.233.93
-  type: ss
-  udp: true
+- alterId: 2
+  cipher: auto
+  name: 5|🇨🇳 CN-1 | SHFX
+  network: ws
+  port: 30824
+  server: v24.heduian.link
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v24.heduian.link
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 5|🇭🇰 HK-1 | SHFX
@@ -303,29 +319,53 @@ proxies:
   port: 989
   server: 185.153.197.5
   type: ss
+- name: 5|🇭🇰 HK-2 | SHFX
+  password: 3c77ad6b-9c9c-4aff-beff-0a16e2cdea15
+  port: 13008
+  server: naiu-hk.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - cipher: aes-256-cfb
-  name: 5|🇫🇷 FR-1 | SHFX
-  password: amazonskr05
-  port: 443
-  server: 13.36.166.230
+  name: 5|🇵🇹 PT-1 | SHFX
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
   type: ss
-  udp: true
 - alterId: 2
   cipher: auto
-  name: 5|🇨🇳 CN-1 | SHFX
+  name: 5|🇨🇳 CN-2 | SHFX
   network: ws
-  port: 30824
-  server: v24.heduian.link
+  port: 30839
+  server: v39.heduian.link
   skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 5|🇨🇳 CN-3 | SHFX
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v24.heduian.link
+      Host: baidu.com
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 5|🇨🇳 CN-2 | SHFX
+  name: 5|🇨🇳 CN-4 | SHFX
   network: ws
   port: 30806
   server: v6.heduian.link
@@ -338,31 +378,22 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- cipher: aes-256-cfb
-  name: 5|🇫🇷 FR-2 | SHFX
-  password: amazonskr05
-  port: 443
-  server: 15.237.118.240
-  type: ss
-  udp: true
 - alterId: 2
   cipher: auto
-  name: 5|🇨🇳 CN-3 | SHFX
+  name: 5|🇭🇰 HK-3 | SHFX
   network: ws
-  port: 30829
-  server: v29.heduian.link
-  skip-cert-verify: false
-  tls: false
+  port: 30807
+  server: v10.heduian.link
+  skip-cert-verify: true
   type: vmess
-  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v29.heduian.link
+      Host: v10.heduian.link
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-4 | SHFX
+  name: 5|🇨🇳 CN-5 | SHFX
   network: tcp
   port: 30302
   server: 39.107.155.11
@@ -373,7 +404,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-5 | SHFX
+  name: 5|🇨🇳 CN-6 | SHFX
   network: tcp
   port: 50002
   server: 139.129.20.6
@@ -382,15 +413,96 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5|🇬🇧 GB-1 | SHFX
-  password: c40641c1f89e7acb
-  port: 57456
-  server: uk.vpnsparta.pro
-  skip-cert-verify: true
-  tls: true
+- cipher: chacha20-ietf-poly1305
+  name: 5|🇮🇹 IT-1 | SHFX
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 212.102.54.45
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-2 | SHFX
+  network: tcp
+  port: 30002
+  server: 38.12.83.217
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 5|🇩🇪 DE-1 | SHFX
+  network: tcp
+  port: 550
+  server: 162.19.205.162
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 95ca28bb-922e-49c9-9326-b4aff7c0d8ad
+- alterId: 0
+  cipher: auto
+  name: 5|🇳🇱 NL-2 | SHFX
+  network: ws
+  port: 8080
+  server: 38.180.98.215
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 773ac60d-36d7-45b5-c99e-a0e3903e2e3a
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-4 | SHFX
+  port: 28241
+  server: 38.147.160.101
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: adf0d7fc-6c13-4cff-e02a-e130cf562c6f
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-5 | SHFX
+  network: ws
+  port: 2082
+  server: 104.19.42.72
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-7 | SHFX
+  network: ws
+  port: 2082
+  server: 104.16.40.236
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  ws-opts:
+    path: /ws?ed=2048
+- cipher: chacha20-ietf-poly1305
+  name: 5|🇨🇦 CA-1 | SHFX
+  password: Kuiqk2cP0BMWrgme9IfEvp
+  port: 443
+  server: 38.180.211.126
+  type: ss
+- cipher: aes-128-gcm
+  name: 5|🇺🇸 US-9 | SHFX
+  password: Yc2CtrIz8L
+  port: 30129
+  server: 66.225.246.221
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 6|Panda-HK-01
   password: C62DTEoJtk325UWC
