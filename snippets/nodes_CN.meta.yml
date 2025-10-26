@@ -2,18 +2,19 @@ proxies:
 - alterId: 0
   name: 5|🇨🇳 CN-1 | SHFX
   password: BxceQaOe
-  port: 24392
-  server: 36.151.251.35
+  port: 4451
+  server: 36.151.251.23
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
-- name: 5|🇨🇳 CN-2 | SHFX
-  network: tcp
+- alterId: 0
+  name: 5|🇨🇳 CN-2 | SHFX
   password: BxceQaOe
-  port: 4451
-  server: 36.151.251.23
+  port: 24392
+  server: 36.151.251.35
   skip-cert-verify: true
+  tls: true
   type: trojan
   udp: true
 - alterId: 0
@@ -25,17 +26,19 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
+- alterId: 2
   cipher: auto
   name: 5|🇨🇳 CN-4 | SHFX
-  network: tcp
-  port: 30302
-  server: 39.107.155.11
+  network: ws
+  port: 30824
+  server: v24.heduian.link
   skip-cert-verify: true
-  tfo: true
   type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v24.heduian.link
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 5|🇨🇳 CN-5 | SHFX
@@ -49,15 +52,24 @@ proxies:
   cipher: auto
   name: 5|🇨🇳 CN-6 | SHFX
   network: tcp
-  port: 50002
-  server: 139.129.20.6
+  port: 30302
+  server: 39.107.155.11
   skip-cert-verify: true
   tfo: true
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: random
+- alterId: 0
+  cipher: auto
   name: 5|🇨🇳 CN-7 | SHFX
+  network: tcp
+  port: 50007
+  server: 112.132.215.34
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: random
+  name: 5|🇨🇳 CN-8 | SHFX
   network: ws
   port: 17009
   server: 141.11.87.155
@@ -72,7 +84,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇨🇳 CN-8 | SHFX
+  name: 5|🇨🇳 CN-9 | SHFX
   network: ws
   port: 8443
   server: 213.210.5.61

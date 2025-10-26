@@ -3,7 +3,7 @@ proxies:
   name: 3|VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 3.17.166.143
+  server: 3.147.66.58
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -17,7 +17,7 @@ proxies:
   name: '3|VIP專綫（美国） #2'
   password: amazonskr05
   port: 443
-  server: 3.148.213.139
+  server: 3.129.194.11
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -45,14 +45,48 @@ proxies:
     headers:
       Host: us.nbee.pp.ua
     path: /aa
-- name: 5|🇺🇸 US-3 | SHFX
-  password: 669d0ac7b5b64ebbb1abb75d5d540a5c
-  port: 443
-  server: 104.19.171.36
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-3 | SHFX
+  network: tcp
+  port: 6506
+  server: 193.124.24.247
   skip-cert-verify: true
-  sni: jobscareertoday.com
-  type: trojan
+  tfo: true
+  type: vmess
   udp: true
+  uuid: c53d41d1-7d56-43ce-9994-408780c6476a
+- cipher: rc4-md5
+  name: 5|🇺🇸 US-4 | SHFX
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 107.151.182.253
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-5 | SHFX
+  network: ws
+  port: 2095
+  server: 104.19.45.59
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-6 | SHFX
+  port: 12810
+  server: 45.77.218.99
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 469daa04-235a-47be-fdf8-41a9a72f8be2
 - cipher: aes-256-gcm
   name: 6|US01
   password: 01999560-39d1-7284-9e2d-63f9e2451a79
