@@ -250,13 +250,6 @@ proxies:
   server: preshdata1.233netpre.org
   type: ss
   udp: true
-- name: 5|🇭🇰 HK-1 | SHFX
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.98
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|🇬🇧 GB-1 | SHFX
@@ -286,7 +279,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5|🇺🇸 US-1 | SHFX
+  name: 5|🇺🇸 US-2 | SHFX
   network: ws
   port: 443
   server: 154.17.227.158
@@ -304,8 +297,17 @@ proxies:
   server: arxfw2b78fi2q9hzylhn.freesocks.work
   type: ss
 - alterId: 0
+  name: 5|🇨🇳 CN-3 | SHFX
+  password: BxceQaOe
+  port: 26373
+  server: 36.150.215.241
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: auto
-  name: 5|🇭🇰 HK-2 | SHFX
+  name: 5|🇭🇰 HK-1 | SHFX
   network: ws
   port: 443
   server: 46.3.26.12
@@ -316,19 +318,21 @@ proxies:
     headers:
       Host: hk.nbee.pp.ua
     path: /aa
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-3 | SHFX
-  network: ws
-  port: 30824
-  server: v24.heduian.link
-  skip-cert-verify: true
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 5|🇭🇰 HK-2 | SHFX
+  network: http
+  port: 8080
+  server: 103.243.26.209
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v24.heduian.link
-    path: /oooo
+  udp: true
+  uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09
 - cipher: aes-256-cfb
   name: 5|🇲🇩 MD-1 | SHFX
   password: f8f7aCzcPKbsF8p3
@@ -339,8 +343,8 @@ proxies:
   cipher: auto
   name: 5|🇨🇳 CN-4 | SHFX
   network: tcp
-  port: 50002
-  server: 139.129.20.6
+  port: 30302
+  server: 39.107.155.11
   skip-cert-verify: true
   tfo: true
   type: vmess
@@ -350,20 +354,36 @@ proxies:
   cipher: auto
   name: 5|🇨🇳 CN-5 | SHFX
   network: tcp
-  port: 30302
-  server: 39.107.155.11
+  port: 50002
+  server: 106.14.75.114
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳 CN-6 | SHFX
+  network: tcp
+  port: 50002
+  server: 139.129.20.6
   skip-cert-verify: true
   tfo: true
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 5|🇨🇳 CN-6 | SHFX
-  network: tcp
-  password: BxceQaOe
-  port: 1924
-  server: 36.150.215.241
+- cipher: aes-256-cfb
+  name: 5|🇰🇷 KR-1 | SHFX
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
+- name: 5|🇺🇸 US-3 | SHFX
+  password: 669d0ac7b5b64ebbb1abb75d5d540a5c
+  port: 443
+  server: 104.19.171.36
   skip-cert-verify: true
+  sni: jobscareertoday.com
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 6|HK01
   password: 01999560-39d1-7284-9e2d-63f9e2451a79
