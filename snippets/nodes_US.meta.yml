@@ -101,35 +101,12 @@ proxies:
   name: 3|VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 3.129.194.11
+  server: 3.148.213.139
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: '3|VIP專綫（美国） #1'
-  password: amazonskr05
-  port: 443
-  server: 18.116.40.29
-  type: ss
-  udp: true
-- auth: c232f411-96b5-4b07-b2f7-66a434725ffb
-  name: 5|🇺🇸 US-1 | SHFX
-  password: c232f411-96b5-4b07-b2f7-66a434725ffb
-  port: 23892
-  server: 38.45.89.97
-  skip-cert-verify: false
-  sni: fus02.mistea.top
-  type: hysteria2
-- auth: c232f411-96b5-4b07-b2f7-66a434725ffb
-  name: 5|🇺🇸 US-2 | SHFX
-  password: c232f411-96b5-4b07-b2f7-66a434725ffb
-  port: 23891
-  server: 108.165.213.197
-  skip-cert-verify: false
-  sni: fus01.mistea.top
-  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 5|🇺🇸 US-3 | SHFX
+  name: 5|🇺🇸 US-1 | SHFX
   network: ws
   port: 443
   server: 154.17.227.158
@@ -140,23 +117,110 @@ proxies:
     headers:
       Host: us.nbee.pp.ua
     path: /aa
-- alterId: 32
+- auth: c232f411-96b5-4b07-b2f7-66a434725ffb
+  name: 5|🇺🇸 US-2 | SHFX
+  password: c232f411-96b5-4b07-b2f7-66a434725ffb
+  port: 23892
+  server: 38.45.89.97
+  skip-cert-verify: false
+  sni: fus02.mistea.top
+  type: hysteria2
+- name: 5|🇺🇸 US-3 | SHFX
+  network: ws
+  port: 443
+  server: nrtcfdns.zone.id
+  servername: 2.294294.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de
+  ws-opts:
+    headers:
+      Host: 2.294294.xyz
+    path: /snippets
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 5|🇺🇸 US-4 | SHFX
   network: ws
   port: 443
-  server: vc.fly.dev
-  skip-cert-verify: true
+  server: 104.21.15.36
   tls: true
   type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
   ws-opts:
     headers:
-      host: vc.fly.dev
-    path: /vc
+      Host: linde06.indiavideo.sbs
+    path: /linkws
 - client-fingerprint: random
   name: 5|🇺🇸 US-5 | SHFX
+  network: ws
+  port: 2083
+  server: 104.16.113.127
+  servername: 241888.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3f3db1c3-4f40-4102-b4e7-c201cd8c36f4
+  ws-opts:
+    headers:
+      Host: 241888.xyz
+    path: /proxyip=47.239.8.172
+- client-fingerprint: randomized
+  name: 5|🇺🇸 US-6 | SHFX
+  network: ws
+  port: 443
+  server: 172.66.44.210
+  servername: mAhdIserVER-f4v.PAGEs.Dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: mAhdIserVER-f4v.PAGEs.Dev
+    path: /n43JfueuwrMHbtF5?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-8 | SHFX
+  port: 8881
+  server: 157.245.4.170
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-9 | SHFX
+  port: 43938
+  server: 104.207.143.93
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: edfa4166-7eab-4fb8-b323-7882463e2ae0
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-10 | SHFX
+  network: ws
+  port: 2082
+  server: 104.16.39.21
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    path: /ws?ed=2048
+- client-fingerprint: random
+  name: 5|🇺🇸 US-11 | SHFX
   network: ws
   port: 443
   server: cf-cname.xingpingcn.top
@@ -171,7 +235,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-6 | SHFX
+  name: 5|🇺🇸 US-12 | SHFX
   network: ws
   port: 2096
   server: time.is
@@ -186,7 +250,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-7 | SHFX
+  name: 5|🇺🇸 US-13 | SHFX
   network: ws
   port: 23456
   server: 154.26.190.103
@@ -201,7 +265,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-8 | SHFX
+  name: 5|🇺🇸 US-14 | SHFX
   network: ws
   port: 41668
   server: 154.9.26.241
@@ -216,7 +280,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-9 | SHFX
+  name: 5|🇺🇸 US-15 | SHFX
   network: ws
   port: 10358
   server: 38.207.183.237
@@ -231,7 +295,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-10 | SHFX
+  name: 5|🇺🇸 US-16 | SHFX
   network: ws
   port: 11283
   server: 38.47.118.247
@@ -246,7 +310,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-11 | SHFX
+  name: 5|🇺🇸 US-17 | SHFX
   network: ws
   port: 6443
   server: 154.17.1.6
@@ -261,7 +325,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-12 | SHFX
+  name: 5|🇺🇸 US-18 | SHFX
   network: ws
   port: 46200
   server: 72.249.204.153
@@ -276,7 +340,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-13 | SHFX
+  name: 5|🇺🇸 US-19 | SHFX
   network: ws
   port: 443
   server: 170.106.152.78
@@ -291,7 +355,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-14 | SHFX
+  name: 5|🇺🇸 US-20 | SHFX
   network: ws
   port: 15625
   server: 38.47.116.238
@@ -306,7 +370,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-15 | SHFX
+  name: 5|🇺🇸 US-21 | SHFX
   network: ws
   port: 587
   server: 38.79.114.49
@@ -321,7 +385,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-16 | SHFX
+  name: 5|🇺🇸 US-22 | SHFX
   network: ws
   port: 2443
   server: 65.49.216.153
@@ -336,7 +400,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-17 | SHFX
+  name: 5|🇺🇸 US-23 | SHFX
   network: ws
   port: 40001
   server: 104.194.87.63

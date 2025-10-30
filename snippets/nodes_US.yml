@@ -3,19 +3,12 @@ proxies:
   name: 3|VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 3.129.194.11
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '3|VIP專綫（美国） #1'
-  password: amazonskr05
-  port: 443
-  server: 18.116.40.29
+  server: 3.148.213.139
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5|🇺🇸 US-3 | SHFX
+  name: 5|🇺🇸 US-1 | SHFX
   network: ws
   port: 443
   server: 154.17.227.158
@@ -26,21 +19,53 @@ proxies:
     headers:
       Host: us.nbee.pp.ua
     path: /aa
-- alterId: 32
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 5|🇺🇸 US-4 | SHFX
   network: ws
   port: 443
-  server: vc.fly.dev
-  skip-cert-verify: true
+  server: 104.21.15.36
   tls: true
   type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
   ws-opts:
     headers:
-      host: vc.fly.dev
-    path: /vc
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-8 | SHFX
+  port: 8881
+  server: 157.245.4.170
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-9 | SHFX
+  port: 43938
+  server: 104.207.143.93
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: edfa4166-7eab-4fb8-b323-7882463e2ae0
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-10 | SHFX
+  network: ws
+  port: 2082
+  server: 104.16.39.21
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  ws-opts:
+    path: /ws?ed=2048
 - cipher: aes-256-gcm
   name: 6|US01
   password: 01999560-39d1-7284-9e2d-63f9e2451a79
