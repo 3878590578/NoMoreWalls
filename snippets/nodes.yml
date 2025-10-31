@@ -42,80 +42,97 @@ proxies:
       Host: berlin-agents-violations-jacksonville.trycloudflare.com
     path: /7bb1be06-a5da-4f06-9a2c-f14523424adf-vm?ed=2048
 - cipher: aes-256-cfb
-  name: 3|VIP專綫（加拿大）
+  name: 3|VIP專綫（日本）
   password: amazonskr05
   port: 443
-  server: 3.144.96.161
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 3|VIP專綫（台湾）
-  password: amazonskr05
-  port: 443
-  server: 18.133.240.117
+  server: 3.127.136.134
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: 3|VIP專綫（韩国）
   password: amazonskr05
   port: 443
-  server: 18.170.66.163
+  server: 15.223.195.244
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 3|VIP專綫（加拿大）
+  password: amazonskr05
+  port: 443
+  server: 3.148.200.80
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: 3|VIP專綫（新加坡）
   password: amazonskr05
   port: 443
-  server: 99.79.161.29
+  server: 18.133.78.96
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 3|VIP專綫（日本）
+  name: 3|VIP專綫（台湾）
   password: amazonskr05
   port: 443
-  server: 16.52.166.161
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '3|VIP專綫（日本） #1'
-  password: amazonskr05
-  port: 443
-  server: 15.157.66.237
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 3|VIP專綫（香港）
-  password: amazonskr05
-  port: 443
-  server: 18.170.218.19
+  server: 18.195.93.192
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: 3|VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 18.188.226.48
+  server: 3.12.164.31
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '3|VIP專綫（美国） #1'
+  password: amazonskr05
+  port: 443
+  server: 18.222.168.98
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 3|VIP專綫（香港）
+  password: amazonskr05
+  port: 443
+  server: 18.175.217.31
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '3|VIP專綫（日本） #1'
+  password: amazonskr05
+  port: 443
+  server: 18.158.60.169
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '3|VIP專綫（美国） #2'
+  password: amazonskr05
+  port: 443
+  server: 18.119.112.137
   type: ss
   udp: true
 - alterId: 0
-  cipher: auto
-  name: 5|🇲🇾 MY-1 | SHFX
-  network: tcp
-  port: 2052
-  server: 38.54.98.110
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 665d9b8f-153d-4907-adac-de12afd9c851
-- alterId: 0
-  name: 5|🇭🇰 HK-1 | SHFX
+  name: 5|🇨🇳 CN-1 | SHFX
   password: BxceQaOe
-  port: 443
-  server: 58.152.46.98
+  port: 487
+  server: 36.150.215.236
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
+- name: 5|🇨🇳 CN-2 | SHFX
+  network: tcp
+  password: BxceQaOe
+  port: 9713
+  server: 36.150.215.197
+  skip-cert-verify: true
+  type: trojan
+- name: 5|🇨🇳 CN-3 | SHFX
+  password: BxceQaOe
+  port: 43567
+  server: 36.156.102.74
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|🇺🇸 US-1 | SHFX
@@ -129,6 +146,13 @@ proxies:
     headers:
       Host: us.nbee.pp.ua
     path: /aa
+- name: 5|🇭🇰 HK-1 | SHFX
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.3
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|🇭🇰 HK-2 | SHFX
@@ -142,15 +166,20 @@ proxies:
     headers:
       Host: hk.nbee.pp.ua
     path: /aa
-- name: 5|🇭🇰 HK-3 | SHFX
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.3
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-1 | SHFX
+  name: 5|🇨🇳 CN-4 | SHFX
+  network: tcp
+  port: 50002
+  server: 139.129.20.6
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳 CN-5 | SHFX
   network: tcp
   port: 30302
   server: 39.107.155.11
@@ -161,7 +190,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-2 | SHFX
+  name: 5|🇨🇳 CN-6 | SHFX
   network: tcp
   port: 50002
   server: 106.14.75.114
@@ -169,163 +198,58 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
-  name: 5|🇲🇰 MK-1 | SHFX
+  name: 5|🇵🇹 PT-1 | SHFX
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 46.183.185.15
+  server: 185.231.233.112
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 5|🇨🇳 CN-3 | SHFX
-  network: tcp
-  port: 50002
-  server: 139.129.20.6
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 5|🇨🇳 CN-4 | SHFX
-  password: BxceQaOe
-  port: 487
-  server: 36.150.215.236
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- name: 5|🇮🇪 IE-1 | SHFX
-  password: telegram-id-directvpn
-  port: 22222
-  server: 34.249.148.68
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 5|🇨🇦 CA-1 | SHFX
-  network: ws
-  port: 443
-  server: 148.113.153.109
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: yichueng.org
-    path: linkvws
-- name: 5|🇬🇧 GB-2 | SHFX
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.176.117.240
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 5|🇺🇸 US-4 | SHFX
-  network: ws
-  port: 2096
-  server: newyork.cloudflareservervpn.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8c111c4f-af43-43fe-bbf8-d7e075479557
-  ws-opts:
-    headers:
-      Host: newyork.cloudflareservervpn.sbs
-    path: /newyork
 - cipher: chacha20-ietf-poly1305
-  name: 5|🇳🇱 NL-2 | SHFX
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.193
+  name: 5|🇰🇿 KZ-1 | SHFX
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 109.61.39.28
   type: ss
-- alterId: 1
+- alterId: 2
   cipher: auto
-  name: 5|🇫🇷 FR-1 | SHFX
+  name: 5|🇭🇰 HK-3 | SHFX
   network: ws
-  port: 443
-  server: 23.162.152.177
+  port: 80
+  server: aeb50015-t02f40-t9byd7-1jfvb.hk3.p5pv.com
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 23.162.152.177
-    path: linkvws
-- cipher: chacha20-ietf-poly1305
-  name: 5|🇳🇱 NL-3 | SHFX
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  uuid: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
+  ws-headers:
+    Host: aeb50015-t02f40-t9byd7-1jfvb.hk3.p5pv.com
+  ws-path: /
+- cipher: rc4-md5
+  name: 5|🇺🇸 US-2 | SHFX
+  obfs: plain
+  obfsparam: null
+  password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 45.87.175.155
-  type: ss
+  protocol: origin
+  protoparam: null
+  server: 107.151.182.253
+  type: ssr
 - alterId: 0
   cipher: auto
-  name: 5|🇺🇸 US-5 | SHFX
+  name: 5|🇺🇸 US-3 | SHFX
   network: ws
-  port: 2095
-  server: 104.19.45.251
+  port: 80
+  server: 104.19.44.108
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
   ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 5|🇺🇸 US-7 | SHFX
-  network: ws
-  port: 443
-  server: putihb.org
+    path: /xn--mes53ddysu0o3gl
+- name: 5|🇺🇸 US-4 | SHFX
+  password: 5041df4c-b3ae-481d-adf9-79b39f4810f2
+  port: 2083
+  server: 104.26.14.85
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: putihb.org
-    path: linkvws
-- cipher: chacha20-ietf-poly1305
-  name: 5|🇸🇬 SG-1 | SHFX
-  password: G!yBwPWH3Vao
-  port: 800
-  server: 81.90.189.152
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 5|🇬🇧 GB-3 | SHFX
-  network: ws
-  port: 443
-  server: 57.128.189.222
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: lammaland.org
-    path: linkvws
-- alterId: 64
-  cipher: auto
-  name: 5|🇨🇳 CN-5 | SHFX
-  network: tcp
-  port: 33288
-  server: 183.236.48.166
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  name: 5|🇰🇷 KR-1 | SHFX
-  password: amazonskr05
-  port: 443
-  server: 13.209.11.98
-  type: ss
+  sni: taqboostan.zagros.top
+  type: trojan
   udp: true

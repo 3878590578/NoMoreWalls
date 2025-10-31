@@ -87,18 +87,16 @@ proxies:
   name: 3|VIP專綫（香港）
   password: amazonskr05
   port: 443
-  server: 18.170.218.19
+  server: 18.175.217.31
   type: ss
   udp: true
-- alterId: 0
-  name: 5|🇭🇰 HK-1 | SHFX
+- name: 5|🇭🇰 HK-1 | SHFX
+  network: tcp
   password: BxceQaOe
   port: 443
-  server: 58.152.46.98
+  server: 58.152.53.3
   skip-cert-verify: true
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|🇭🇰 HK-2 | SHFX
@@ -112,13 +110,19 @@ proxies:
     headers:
       Host: hk.nbee.pp.ua
     path: /aa
-- client-fingerprint: chrome
+- alterId: 2
+  cipher: auto
   name: 5|🇭🇰 HK-3 | SHFX
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.3
+  network: ws
+  port: 80
+  server: aeb50015-t02f40-t9byd7-1jfvb.hk3.p5pv.com
   skip-cert-verify: true
-  type: trojan
+  tls: false
+  type: vmess
+  uuid: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
+  ws-headers:
+    Host: aeb50015-t02f40-t9byd7-1jfvb.hk3.p5pv.com
+  ws-path: /
 - client-fingerprint: random
   name: 5|🇭🇰 HK-4 | SHFX
   network: ws
