@@ -99,56 +99,14 @@ proxies:
   udp: true
 - name: 5|🇨🇳 CN-1 | SHFX
   network: tcp
-  password: b00abf05-5768-4ac9-8d20-6b1bd605bcf6
-  port: 42765
-  server: hxfz940e90d9.nfwzdm.com
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
-- name: 5|🇨🇳 CN-2 | SHFX
-  network: tcp
   password: BxceQaOe
   port: 43567
   server: 36.156.102.74
   skip-cert-verify: true
   type: trojan
-- cipher: aes-256-cfb
-  name: 5|🇻🇳 VN-1 | SHFX
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.245
-  type: ss
-  udp: true
 - alterId: 0
-  cipher: auto
-  name: 5|🇺🇸 US-1 | SHFX
-  network: ws
-  port: 443
-  server: 154.17.227.158
-  tls: true
-  type: vmess
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-  ws-opts:
-    headers:
-      Host: us.nbee.pp.ua
-    path: /aa
-- alterId: 2
   cipher: auto
   name: 5|🇭🇰 HK-1 | SHFX
-  network: ws
-  port: 80
-  server: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 5|🇭🇰 HK-2 | SHFX
   network: ws
   port: 443
   server: 46.3.26.12
@@ -159,6 +117,20 @@ proxies:
     headers:
       Host: hk.nbee.pp.ua
     path: /aa
+- name: 5|🇨🇳 CN-2 | SHFX
+  network: tcp
+  password: BxceQaOe
+  port: 9713
+  server: 36.150.215.197
+  skip-cert-verify: true
+  type: trojan
+- name: 5|🇭🇰 HK-2 | SHFX
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.3
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   name: 5|🇭🇰 HK-3 | SHFX
   password: BxceQaOe
@@ -170,26 +142,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5|🇺🇸 US-2 | SHFX
-  network: ws
-  port: 38533
-  server: 154.64.243.19
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9bc23ccf-4769-4e9a-b278-2dfa8d9ef425
-  ws-opts:
-    path: /
-- name: 5|🇭🇰 HK-4 | SHFX
+  name: 5|🇨🇳 CN-3 | SHFX
   network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.3
+  port: 50002
+  server: 106.14.75.114
   skip-cert-verify: true
-  type: trojan
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-3 | SHFX
+  name: 5|🇨🇳 CN-4 | SHFX
   network: tcp
   port: 50002
   server: 139.129.20.6
@@ -199,17 +161,8 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 5|🇺🇸 US-3 | SHFX
-  password: p78naCf2EfOlRSLTX0wFVx
-  port: 443
-  server: pupas-shirting-unsung.freesocks.work
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-4 | SHFX
+  name: 5|🇨🇳 CN-5 | SHFX
   network: tcp
   port: 30302
   server: 39.107.155.11
@@ -218,281 +171,132 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  name: 5|🇺🇸 US-4 | SHFX
-  password: dada0801
-  port: 80
-  server: 54.90.226.121
-  type: ss
-  udp: true
 - alterId: 2
   cipher: auto
-  name: 5|🇭🇰 HK-5 | SHFX
+  name: 5|🇨🇳 CN-6 | SHFX
   network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  port: 30839
+  server: v39.heduian.link
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 5|🇯🇵 JP-2 | SHFX
-  network: ws
-  port: 8080
-  server: 193.32.148.12
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
-  ws-opts:
-    headers:
-      Host: download.windowsupdate.com
-    path: /download
-- name: 5|🇮🇹 IT-1 | SHFX
-  password: c73406e2-1d3a-4724-a691-4d0b7f36cee9
-  port: 443
-  server: it-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 5|🇺🇸 US-6 | SHFX
-  network: ws
-  port: 2082
-  server: 104.19.45.13
-  tls: false
-  type: vmess
-  udp: false
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    path: github.com/Alvin9999
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇦 CA-1 | SHFX
+  name: 5|🇺🇸 US-2 | SHFX
   network: ws
   port: 443
-  server: 15.235.85.147
-  skip-cert-verify: false
+  server: 154.17.227.158
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
   ws-opts:
     headers:
-      Host: pelang.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 5|🇭🇰 HK-6 | SHFX
-  network: ws
-  port: 36703
-  server: 47.244.120.197
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  ws-opts:
-    path: /
+      Host: us.nbee.pp.ua
+    path: /aa
 - cipher: chacha20-ietf-poly1305
   name: 5|🇳🇱 NL-2 | SHFX
-  password: cvII85TrW6n0OGyfpHVS1u
+  password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
-  server: 45.87.175.187
+  server: 193.29.139.227
   type: ss
-- cipher: aes-256-cfb
-  name: 5|🇺🇸 US-8 | SHFX
-  obfs: http_simple
-  obfs-param: ''
-  password: Aa20150801*
-  port: 16608
-  protocol: auth_chain_a
-  protocol-param: ''
-  server: 45.32.93.147
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 5|🇨🇭 CH-1 | SHFX
-  password: ndJuPjq7WbFDjB4oacljGw
-  port: 10141
-  server: 5.182.36.245
+- cipher: chacha20-ietf
+  name: 5|🇭🇰 HK-4 | SHFX
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
   type: ss
-  udp: true
 - alterId: 0
-  cipher: auto
-  name: 5|🇬🇧 GB-1 | SHFX
-  network: ws
+  cipher: chacha20-ietf-poly1305
+  name: 5|🇺🇸 US-3 | SHFX
+  password: p78naCf2EfOlRSLTX0wFVx
   port: 443
-  server: 57.128.189.227
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: yichueng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 5|🇩🇪 DE-1 | SHFX
-  network: ws
-  port: 443
-  server: es-full.privateip.net
+  server: pupas-shirting-unsung.freesocks.work
   skip-cert-verify: true
   tls: true
-  type: vmess
-  udp: true
-  uuid: 60a1ba92-c2d8-4f39-b6ed-bacf45920cb3
-  ws-opts:
-    headers:
-      Host: es-full.privateip.net
-    path: /RACEVPN
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 5|🇳🇱 NL-3 | SHFX
-  password: XZMPTXYRC2XB8jet5UiHOn
-  port: 50211
-  server: 46.19.69.244
+  name: 5|🇬🇧 GB-1 | SHFX
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 94.156.250.122
+  type: ss
+- cipher: aes-256-cfb
+  name: 5|🇦🇹 AT-1 | SHFX
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.180.12.81
   type: ss
   udp: true
-- name: 5|🇷🇺 RU-1 | SHFX
-  password: ebd1c3e8-a136-49a5-a76c-88c4bf0a23aa
-  port: 30002
-  server: 45.140.169.83
+- cipher: chacha20-ietf-poly1305
+  name: 5|🇷🇴 RO-1 | SHFX
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.237.38
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-4 | SHFX
+  network: ws
+  port: 80
+  server: 104.21.237.189
   skip-cert-verify: true
-  sni: ru01.freeflyingcloud.xyz
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+  ws-opts:
+    path: /?ed=2048
+- name: 5|🇺🇸 US-7 | SHFX
+  password: onBbMV6Bt9
+  port: 15981
+  server: 38.59.245.114
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5|🇬🇷 GR-1 | SHFX
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 141.11.189.205
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5|🇨🇳 CN-7 | SHFX
+  password: 861de7db-5ada-4b36-903c-0ad6ba25d75a
+  port: 32999
+  server: gfoq.b4-h5a6gq7.h3w-kr01.my777999.top
+  type: ss
+  udp: true
+- name: 5|🇨🇳 CN-8 | SHFX
+  password: MyYoZhfX
+  port: 51000
+  server: 112.16.228.100
+  skip-cert-verify: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5|🇺🇸 US-9 | SHFX
+  name: 5|🇸🇬 SG-1 | SHFX
   network: ws
   port: 443
-  server: upload.ir
+  server: waifu.kurumi.biz.id
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  uuid: 3393cc9e-7498-4942-9bc4-c6da73080fd9
   ws-opts:
     headers:
-      Host: upload.ir
-    path: /linkws
-- cipher: aes-256-gcm
-  name: 6|HK01
-  password: 01999560-39d1-7284-9e2d-63f9e2451a79
-  port: 45579
-  server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-  tfo: true
+      Host: discord.com
+    path: /vmess
+- cipher: chacha20-ietf-poly1305
+  name: 5|🇳🇱 NL-3 | SHFX
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: beesyar.org
   type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 6|HK02
-  password: 01999560-39d1-7284-9e2d-63f9e2451a79
-  port: 43562
-  server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 6|HK03
-  password: 01999560-39d1-7284-9e2d-63f9e2451a79
-  port: 43563
-  server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 6|HK04
-  password: 01999560-39d1-7284-9e2d-63f9e2451a79
-  port: 58899
-  server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 6|HK05
-  password: 01999560-39d1-7284-9e2d-63f9e2451a79
-  port: 43565
-  server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 6|SG01
-  password: 01999560-39d1-7284-9e2d-63f9e2451a79
-  port: 43566
-  server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 6|SG02
-  password: 01999560-39d1-7284-9e2d-63f9e2451a79
-  port: 43567
-  server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 6|US01
-  password: 01999560-39d1-7284-9e2d-63f9e2451a79
-  port: 43568
-  server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 6|US02
-  password: 01999560-39d1-7284-9e2d-63f9e2451a79
-  port: 43577
-  server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 6|TW01
-  password: 01999560-39d1-7284-9e2d-63f9e2451a79
-  port: 43570
-  server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 6|EN01
-  password: 01999560-39d1-7284-9e2d-63f9e2451a79
-  port: 43571
-  server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 6|IN01
-  password: 01999560-39d1-7284-9e2d-63f9e2451a79
-  port: 51927
-  server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 6|AU01
-  password: 01999560-39d1-7284-9e2d-63f9e2451a79
-  port: 43573
-  server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 6|JP01
-  password: 01999560-39d1-7284-9e2d-63f9e2451a79
-  port: 43679
-  server: m1c6c955-iac9-sc9f-t424-szcm26524fe3.themars.top
-  tfo: true
-  type: ss
-  udp: true
