@@ -42,75 +42,103 @@ proxies:
       Host: berlin-agents-violations-jacksonville.trycloudflare.com
     path: /7bb1be06-a5da-4f06-9a2c-f14523424adf-vm?ed=2048
 - cipher: aes-256-cfb
-  name: 3|VIP專綫（日本）
-  password: amazonskr05
-  port: 443
-  server: 35.176.70.180
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 3|VIP專綫（台湾）
-  password: amazonskr05
-  port: 443
-  server: 3.124.4.242
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   name: 3|VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 3.148.200.80
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '3|VIP專綫（日本） #1'
-  password: amazonskr05
-  port: 443
-  server: 18.169.158.38
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 3|VIP專綫（新加坡）
-  password: amazonskr05
-  port: 443
-  server: 18.130.249.62
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '3|VIP專綫（美国） #1'
-  password: amazonskr05
-  port: 443
-  server: 3.15.151.69
+  server: 3.148.228.162
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: 3|VIP專綫（加拿大）
   password: amazonskr05
   port: 443
-  server: 18.222.13.226
+  server: 18.222.168.98
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 3|VIP專綫（香港）
+  name: '3|VIP專綫（美国） #1'
   password: amazonskr05
   port: 443
-  server: 18.132.10.71
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '3|VIP專綫（美国） #2'
-  password: amazonskr05
-  port: 443
-  server: 18.118.137.217
+  server: 13.58.132.188
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: 3|VIP專綫（韩国）
   password: amazonskr05
   port: 443
-  server: 18.135.96.197
+  server: 18.169.158.38
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 3|VIP專綫（日本）
+  password: amazonskr05
+  port: 443
+  server: 18.171.144.9
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '3|VIP專綫（日本） #1'
+  password: amazonskr05
+  port: 443
+  server: 15.223.198.54
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 3|VIP專綫（香港）
+  password: amazonskr05
+  port: 443
+  server: 18.130.249.62
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '3|VIP專綫（美国） #2'
+  password: amazonskr05
+  port: 443
+  server: 18.119.134.114
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 3|VIP專綫（台湾）
+  password: amazonskr05
+  port: 443
+  server: 18.175.217.31
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 3|VIP專綫（新加坡）
+  password: amazonskr05
+  port: 443
+  server: 18.132.1.44
+  type: ss
+  udp: true
+- name: 5|🇨🇳 CN-1 | SHFX
+  network: tcp
+  password: BxceQaOe
+  port: 194
+  server: 36.151.192.242
+  skip-cert-verify: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 5|🇰🇷 KR-1 | SHFX
+  network: http
+  port: 80
+  server: 152.70.92.69
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
+- name: 5|🇭🇰 HK-1 | SHFX
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.3
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|🇺🇸 US-1 | SHFX
@@ -124,21 +152,29 @@ proxies:
     headers:
       Host: us.nbee.pp.ua
     path: /aa
-- name: 5|🇭🇰 HK-1 | SHFX
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.3
-  skip-cert-verify: true
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 5|🇺🇸 US-4 | SHFX
+  name: 5|🇺🇸 US-3 | SHFX
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: pupas-shirting-unsung.freesocks.work
   type: ss
-- alterId: 0
+- alterId: 2
   cipher: auto
   name: 5|🇭🇰 HK-2 | SHFX
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b68f4b4c-2d02-11ec-9ee8-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 5|🇭🇰 HK-3 | SHFX
   network: ws
   port: 443
   server: 46.3.26.12
@@ -151,20 +187,95 @@ proxies:
     path: /aa
 - alterId: 2
   cipher: auto
-  name: 5|🇭🇰 HK-3 | SHFX
+  name: 5|🇭🇰 HK-4 | SHFX
   network: ws
-  port: 80
-  server: 0f64e685-sv0xs0-svwnuh-1t4wg.hk3.p5pv.com
+  port: 30807
+  server: v10.heduian.link
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v10.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 5|🇨🇳 CN-2 | SHFX
+  network: ws
+  port: 30804
+  server: v4.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 5|🇨🇳 CN-3 | SHFX
+  network: ws
+  port: 30839
+  server: v39.heduian.link
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 1b13e20c-e778-11ef-907f-f23c913c8d2b
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 5|🇭🇰 HK-5 | SHFX
+  network: ws
+  port: 80
+  server: a7cf5f1e-sva740-tc67m2-1tjc4.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 5|🇵🇹 PT-1 | SHFX
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 5|🇭🇰 HK-6 | SHFX
+  network: ws
+  port: 80
+  server: 54d2d7fc-t3kcg0-tdnzz0-1qtp7.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
+  ws-headers:
+    Host: 54d2d7fc-t3kcg0-tdnzz0-1qtp7.hk3.p5pv.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 5|🇭🇰 HK-7 | SHFX
+  network: ws
+  port: 80
+  server: a818614b-sv0xs0-t2p691-1s4hc.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aafedc64-9c23-11ef-a79f-f23c91cfbbc9
   ws-headers:
     Host: broadcastlv.chat.bilibili.com
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-1 | SHFX
+  name: 5|🇨🇳 CN-4 | SHFX
   network: tcp
   port: 50002
   server: 139.129.20.6
@@ -173,172 +284,3 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-4 | SHFX
-  network: ws
-  port: 80
-  server: cf9c1166-sv2sg0-tcp4th-1c4g6.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 676c67c6-5e73-11ee-9a79-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-5 | SHFX
-  network: ws
-  port: 80
-  server: 93933a41-sv0xs0-t1jamc-1fvdh.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9e1ddc04-073b-11ed-bd7c-f23c913c8d2b
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-6 | SHFX
-  network: ws
-  port: 80
-  server: dd2d23c7-t049s0-t1p8ql-1t8q3.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 775baa4a-d75b-11ef-a11a-f23c913c8d2b
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-7 | SHFX
-  network: ws
-  port: 80
-  server: f5a39ef1-sz8sg0-szi8d6-1ro8s.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-8 | SHFX
-  network: ws
-  port: 80
-  server: fdda39f3-sv4n40-tasors-1tdqt.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 167db97c-ee01-11ef-b737-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-9 | SHFX
-  network: ws
-  port: 80
-  server: be4fe2f9-t3gn40-tdnzz0-1qtp7.hk3.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-10 | SHFX
-  network: ws
-  port: 80
-  server: a442168a-sv4n40-t7hu58-1q1la.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 25b46954-9a33-11ee-8b86-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-11 | SHFX
-  network: ws
-  port: 80
-  server: 2e617951-sv2sg0-taj9mo-1tco3.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e29de954-ea01-11ef-a271-f23c91cfbbc9
-  ws-headers:
-    Host: 2e617951-sv2sg0-taj9mo-1tco3.hk3.p5pv.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 5|🇺🇸 US-6 | SHFX
-  network: ws
-  port: 8443
-  server: c7.620720.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      Host: c7.620720.xyz
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-12 | SHFX
-  network: ws
-  port: 80
-  server: f51a53a1-sv0xs0-swbdgq-1iddy.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-13 | SHFX
-  network: ws
-  port: 80
-  server: dfed4efb-t4n8g0-t636g9-luwe.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 5|🇨🇳 CN-2 | SHFX
-  network: tcp
-  port: 30302
-  server: 39.107.155.11
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-14 | SHFX
-  network: ws
-  port: 80
-  server: fb6f1580-sv2sg0-svpmdc-nx3b.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 32315324-cf6b-11ed-979b-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
