@@ -97,23 +97,9 @@ proxies:
   server: 58.152.53.3
   skip-cert-verify: true
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-2 | SHFX
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b68f4b4c-2d02-11ec-9ee8-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 0
   cipher: auto
-  name: 5|🇭🇰 HK-3 | SHFX
+  name: 5|🇭🇰 HK-2 | SHFX
   network: ws
   port: 443
   server: 46.3.26.12
@@ -126,61 +112,38 @@ proxies:
     path: /aa
 - alterId: 2
   cipher: auto
-  name: 5|🇭🇰 HK-4 | SHFX
+  name: 5|🇭🇰 HK-3 | SHFX
   network: ws
-  port: 30807
-  server: v10.heduian.link
-  skip-cert-verify: true
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: b68f4b4c-2d02-11ec-9ee8-f23c913c8d2b
   ws-opts:
     headers:
-      Host: v10.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- client-fingerprint: random
+  name: 5|🇭🇰 HK-4 | SHFX
+  network: ws
+  port: 39738
+  server: 47.243.8.9
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
+- client-fingerprint: random
   name: 5|🇭🇰 HK-5 | SHFX
   network: ws
-  port: 80
-  server: a7cf5f1e-sva740-tc67m2-1tjc4.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-6 | SHFX
-  network: ws
-  port: 80
-  server: 54d2d7fc-t3kcg0-tdnzz0-1qtp7.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
-  ws-headers:
-    Host: 54d2d7fc-t3kcg0-tdnzz0-1qtp7.hk3.p5pv.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 5|🇭🇰 HK-7 | SHFX
-  network: ws
-  port: 80
-  server: a818614b-sv0xs0-t2p691-1s4hc.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aafedc64-9c23-11ef-a79f-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- client-fingerprint: random
-  name: 5|🇭🇰 HK-8 | SHFX
-  network: ws
   port: 443
-  server: 47.239.105.224
+  server: 45.63.30.102
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
