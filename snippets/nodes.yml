@@ -112,6 +112,15 @@ proxies:
   type: ss
   udp: true
 - alterId: 0
+  name: 5|🇨🇳 CN-1 | SHFX
+  password: BxceQaOe
+  port: 4556
+  server: 36.151.192.242
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: auto
   http-opts:
     method: GET
@@ -134,6 +143,74 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - alterId: 0
+  name: 5|🇨🇳 CN-2 | SHFX
+  password: BxceQaOe
+  port: 53743
+  server: 36.151.251.47
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-3 | SHFX
+  network: ws
+  port: 443
+  server: 154.17.227.158
+  tls: true
+  type: vmess
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  ws-opts:
+    headers:
+      Host: us.nbee.pp.ua
+    path: /aa
+- cipher: aes-256-cfb
+  name: 5|🇻🇳 VN-1 | SHFX
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.58
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 5|🇹🇼 TW-1 | SHFX
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  type: ss
+- name: 5|🇺🇸 US-7 | SHFX
+  network: ws
+  password: iwangjie
+  port: 15805
+  server: 158.101.11.204
+  skip-cert-verify: true
+  sni: nodes.830901.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: nodes.830901.xyz
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 5|🇭🇰 HK-2 | SHFX
+  network: ws
+  port: 443
+  server: 46.3.26.12
+  tls: true
+  type: vmess
+  uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
+  ws-opts:
+    headers:
+      Host: hk.nbee.pp.ua
+    path: /aa
+- cipher: chacha20-ietf-poly1305
+  name: 5|🇹🇷 TR-1 | SHFX
+  password: tJlEWh2PzDMew8qo9YkPEA
+  port: 443
+  server: 38.180.105.12
+  type: ss
+  udp: true
+- alterId: 0
   cipher: auto
   http-opts:
     method: GET
@@ -148,62 +225,27 @@ proxies:
   type: vmess
   udp: true
   uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
+- cipher: aes-256-cfb
+  name: 5|🇩🇪 DE-4 | SHFX
+  password: amazonskr05
+  port: 443
+  server: 18.184.173.223
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 5|🇺🇸 US-4 | SHFX
-  network: ws
-  port: 443
-  server: 154.17.227.158
-  tls: true
+  name: 5|🇨🇳 CN-3 | SHFX
+  port: 11819
+  server: 36.133.73.36
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-  ws-opts:
-    headers:
-      Host: us.nbee.pp.ua
-    path: /aa
-- name: 5|🇨🇳 CN-1 | SHFX
-  network: tcp
-  password: BxceQaOe
-  port: 53743
-  server: 36.151.251.47
-  skip-cert-verify: true
-  type: trojan
-- cipher: aes-256-cfb
-  name: 5|🇻🇳 VN-1 | SHFX
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.58
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 5|🇹🇼 TW-1 | SHFX
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.20.79
-  type: ss
-- name: 5|🇭🇰 HK-2 | SHFX
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.3
-  skip-cert-verify: true
-  type: trojan
+  uuid: de32752c-0661-467e-82d3-35bc740a787f
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-2 | SHFX
+  name: 5|🇨🇳 CN-4 | SHFX
   network: tcp
   port: 50002
   server: 106.14.75.114
   skip-cert-verify: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 5|🇨🇳 CN-3 | SHFX
-  network: tcp
-  port: 50002
-  server: 139.129.20.6
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
