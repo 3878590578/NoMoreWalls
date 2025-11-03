@@ -7,63 +7,35 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-cfb
-  name: VIP專綫（新加坡）
+  name: VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 18.135.96.197
+  server: 18.188.20.42
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: VIP專綫（韩国）
+  password: amazonskr05
+  port: 443
+  server: 18.185.30.149
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: VIP專綫（日本）
   password: amazonskr05
   port: 443
-  server: 3.123.25.149
+  server: 18.169.158.38
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: VIP專綫（台湾）
   password: amazonskr05
   port: 443
-  server: 18.175.217.31
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: VIP專綫（美国）
-  password: amazonskr05
-  port: 443
-  server: 3.145.166.19
+  server: 18.135.96.197
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: VIP專綫（香港）
-  password: amazonskr05
-  port: 443
-  server: 13.40.73.28
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: VIP專綫（美国）
-  password: amazonskr05
-  port: 443
-  server: 13.59.110.241
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: VIP專綫（美国）
-  password: amazonskr05
-  port: 443
-  server: 3.137.215.129
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: VIP專綫（日本）
-  password: amazonskr05
-  port: 443
-  server: 15.223.198.54
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: VIP專綫（韩国）
   password: amazonskr05
   port: 443
   server: 15.223.195.244
@@ -73,22 +45,50 @@ proxies:
   name: VIP專綫（加拿大）
   password: amazonskr05
   port: 443
-  server: 3.141.46.88
+  server: 13.59.239.31
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: VIP專綫（美国）
+  password: amazonskr05
+  port: 443
+  server: 3.129.21.37
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: VIP專綫（日本）
+  password: amazonskr05
+  port: 443
+  server: 3.68.96.198
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: VIP專綫（新加坡）
+  password: amazonskr05
+  port: 443
+  server: 18.184.12.56
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: VIP專綫（美国）
+  password: amazonskr05
+  port: 443
+  server: 18.222.13.226
   type: ss
   udp: true
 proxy-groups:
 - name: Proxies
   proxies:
-  - VIP專綫（新加坡）
+  - VIP專綫（美国）
+  - VIP專綫（韩国）
   - VIP專綫（日本）
   - VIP專綫（台湾）
-  - VIP專綫（美国）
   - VIP專綫（香港）
-  - VIP專綫（美国）
+  - VIP專綫（加拿大）
   - VIP專綫（美国）
   - VIP專綫（日本）
-  - VIP專綫（韩国）
-  - VIP專綫（加拿大）
+  - VIP專綫（新加坡）
+  - VIP專綫（美国）
   type: select
 redir-port: 7892
 rules:
