@@ -101,26 +101,34 @@ proxies:
   name: 3|VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 3.141.46.88
+  server: 3.137.215.129
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: '3|VIP專綫（美国） #1'
   password: amazonskr05
   port: 443
-  server: 18.188.227.100
+  server: 3.145.166.19
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: '3|VIP專綫（美国） #2'
   password: amazonskr05
   port: 443
-  server: 3.135.220.55
+  server: 18.220.78.194
   type: ss
   udp: true
+- auth: c232f411-96b5-4b07-b2f7-66a434725ffb
+  name: 5|🇺🇸 US-1 | SHFX
+  password: c232f411-96b5-4b07-b2f7-66a434725ffb
+  port: 23891
+  server: 108.165.213.197
+  skip-cert-verify: false
+  sni: fus01.mistea.top
+  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 5|🇺🇸 US-1 | SHFX
+  name: 5|🇺🇸 US-2 | SHFX
   network: ws
   port: 443
   server: 154.17.227.158
@@ -131,59 +139,108 @@ proxies:
     headers:
       Host: us.nbee.pp.ua
     path: /aa
-- auth: c232f411-96b5-4b07-b2f7-66a434725ffb
-  name: 5|🇺🇸 US-2 | SHFX
-  password: c232f411-96b5-4b07-b2f7-66a434725ffb
-  port: 23891
-  server: 108.165.213.197
-  skip-cert-verify: false
-  sni: fus01.mistea.top
-  type: hysteria2
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 5|🇺🇸 US-3 | SHFX
-  network: grpc
-  port: 8880
-  server: 45.82.251.122
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - client-fingerprint: randomized
-  name: 5|🇺🇸 US-4 | SHFX
+  name: 5|🇺🇸 US-3 | SHFX
   network: ws
-  port: 443
-  server: 172.66.44.211
-  servername: pardazeshvpn-tg97.pages.dev
+  port: 2095
+  server: blog.cloudflare.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: freedom.pusytroller.cf
+    path: /
+- name: 5|🇺🇸 US-4 | SHFX
+  port: 80
+  server: 151.101.2.219
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 690f16d0-6425-462b-86e0-a70a8169c5d9
-  ws-opts:
-    headers:
-      Host: pardazeshvpn-tg97.pages.dev
-    path: /Telegram-
-- client-fingerprint: chrome
-  encryption: none
-  name: 5|🇺🇸 US-5 | SHFX
+  uuid: 37953a08-dad2-4f9e-abd3-c7a4ad8910bf
+- name: 5|🇺🇸 US-5 | SHFX
   network: ws
-  port: 8443
-  server: 104.21.3.219
-  servername: ovhwuxian.pai50288.uk
+  port: 443
+  server: backus1.dh03.shop
+  servername: backus1.dh03.shop
   skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  udp: true
+  uuid: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
   ws-opts:
     headers:
-      Host: ovhwuxian.pai50288.uk
-    path: /57ba2ab1
-- client-fingerprint: random
+      Host: backus1.dh03.shop
+    path: /higate
+- alterId: 0
+  cipher: auto
   name: 5|🇺🇸 US-6 | SHFX
+  network: ws
+  port: 80
+  server: 104.19.44.223
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  ws-opts:
+    path: /xn--mes53ddysu0o3gl
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-7 | SHFX
+  network: ws
+  port: 2095
+  server: 104.19.45.75
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-8 | SHFX
+  network: ws
+  port: 80
+  server: 104.21.233.68
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    path: /?ed=2048
+- name: 5|🇺🇸 US-9 | SHFX
+  network: xhttp
+  port: 80
+  server: 151.101.3.8
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0aa059af-93f0-4646-9da1-0c4fed2be2eb
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-10 | SHFX
+  network: ws
+  port: 2095
+  server: 104.19.45.57
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    path: /
+- client-fingerprint: random
+  name: 5|🇺🇸 US-11 | SHFX
   network: ws
   port: 443
   server: cf-cname.xingpingcn.top
@@ -198,7 +255,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-7 | SHFX
+  name: 5|🇺🇸 US-12 | SHFX
   network: ws
   port: 2096
   server: mfa.gov.ua
@@ -213,7 +270,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-8 | SHFX
+  name: 5|🇺🇸 US-13 | SHFX
   network: ws
   port: 2083
   server: store.ubi.com
@@ -228,7 +285,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-9 | SHFX
+  name: 5|🇺🇸 US-14 | SHFX
   network: ws
   port: 2096
   server: www.shopify.com
@@ -243,7 +300,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-10 | SHFX
+  name: 5|🇺🇸 US-15 | SHFX
   network: ws
   port: 2083
   server: staticdelivery.nexusmods.com
@@ -258,7 +315,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-11 | SHFX
+  name: 5|🇺🇸 US-16 | SHFX
   network: ws
   port: 2053
   server: cloudflare-dl.byoip.top
@@ -273,7 +330,7 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-12 | SHFX
+  name: 5|🇺🇸 US-17 | SHFX
   network: ws
   port: 2087
   server: cloudflare-dl.cnae.top
@@ -288,10 +345,40 @@ proxies:
       Host: snippet.danfeng.site
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇺🇸 US-13 | SHFX
+  name: 5|🇺🇸 US-18 | SHFX
   network: ws
-  port: 20000
-  server: 47.254.127.40
+  port: 2096
+  server: 172.233.140.175
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 5|🇺🇸 US-19 | SHFX
+  network: ws
+  port: 443
+  server: 47.88.13.222
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 5|🇺🇸 US-20 | SHFX
+  network: ws
+  port: 2025
+  server: 45.77.0.210
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false

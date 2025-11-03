@@ -3,20 +3,28 @@ proxies:
   name: 3|VIP專綫（日本）
   password: amazonskr05
   port: 443
-  server: 18.185.30.149
+  server: 3.79.57.79
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: '3|VIP專綫（日本） #1'
   password: amazonskr05
   port: 443
-  server: 18.130.249.62
+  server: 3.122.244.201
   type: ss
   udp: true
-- cipher: aes-256-cfb
+- alterId: 0
+  cipher: auto
   name: 5|🇯🇵 JP-1 | SHFX
-  password: amazonskr05
-  port: 443
-  server: 18.183.77.187
-  type: ss
-  udp: true
+  network: ws
+  port: 8080
+  server: 193.32.148.12
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /download
