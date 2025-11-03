@@ -7,31 +7,45 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-cfb
-  name: VIP專綫（台湾）
+  name: VIP專綫（新加坡）
   password: amazonskr05
   port: 443
-  server: 16.52.81.107
+  server: 18.135.96.197
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: VIP專綫（韩国）
+  name: VIP專綫（日本）
   password: amazonskr05
   port: 443
-  server: 3.68.96.198
+  server: 3.123.25.149
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: VIP專綫（台湾）
+  password: amazonskr05
+  port: 443
+  server: 18.175.217.31
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: VIP專綫（美国）
+  password: amazonskr05
+  port: 443
+  server: 3.145.166.19
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: VIP專綫（香港）
   password: amazonskr05
   port: 443
-  server: 35.176.123.151
+  server: 13.40.73.28
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: VIP專綫（新加坡）
+  name: VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 18.133.78.96
+  server: 13.59.110.241
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -45,50 +59,36 @@ proxies:
   name: VIP專綫（日本）
   password: amazonskr05
   port: 443
-  server: 3.79.57.79
+  server: 15.223.198.54
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: VIP專綫（日本）
+  name: VIP專綫（韩国）
   password: amazonskr05
   port: 443
-  server: 3.122.244.201
+  server: 15.223.195.244
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: VIP專綫（加拿大）
   password: amazonskr05
   port: 443
-  server: 18.188.20.42
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: VIP專綫（美国）
-  password: amazonskr05
-  port: 443
-  server: 3.145.166.19
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: VIP專綫（美国）
-  password: amazonskr05
-  port: 443
-  server: 18.220.78.194
+  server: 3.141.46.88
   type: ss
   udp: true
 proxy-groups:
 - name: Proxies
   proxies:
-  - VIP專綫（台湾）
-  - VIP專綫（韩国）
-  - VIP專綫（香港）
   - VIP專綫（新加坡）
+  - VIP專綫（日本）
+  - VIP專綫（台湾）
+  - VIP專綫（美国）
+  - VIP專綫（香港）
+  - VIP專綫（美国）
   - VIP專綫（美国）
   - VIP專綫（日本）
-  - VIP專綫（日本）
+  - VIP專綫（韩国）
   - VIP專綫（加拿大）
-  - VIP專綫（美国）
-  - VIP專綫（美国）
   type: select
 redir-port: 7892
 rules:
