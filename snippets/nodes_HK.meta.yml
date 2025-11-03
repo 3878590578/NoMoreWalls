@@ -84,29 +84,15 @@ proxies:
       host: cf.kun666.ip-ddns.com
     path: /?ed=2048
 - cipher: aes-256-cfb
-  name: 3,5|🇬🇧 GB-1 | SHFX
+  name: 3|VIP專綫（香港）
   password: amazonskr05
   port: 443
-  server: 35.176.123.151
+  server: 13.40.73.28
   type: ss
   udp: true
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 5|🇭🇰 HK-1 | SHFX
-  port: 36666
-  reality-opts:
-    public-key: cqCSxloJscJ3ZrNUlkSKkUFZ7SZ6vzQNszGolW_o7HY
-    short-id: 6da03029
-  server: hk2.cv1168.com
-  servername: www.python.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: aae56c24-7511-4526-9708-3fcbd804253c
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 5|🇭🇰 HK-2 | SHFX
+  name: 5|🇭🇰 HK-1 | SHFX
   port: 36666
   reality-opts:
     public-key: cqCSxloJscJ3ZrNUlkSKkUFZ7SZ6vzQNszGolW_o7HY
@@ -118,9 +104,37 @@ proxies:
   type: vless
   udp: true
   uuid: aae56c24-7511-4526-9708-3fcbd804253c
+- alterId: 0
+  cipher: auto
+  name: 5|🇭🇰 HK-2 | SHFX
+  network: ws
+  port: 443
+  server: 46.3.26.12
+  tls: true
+  type: vmess
+  uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
+  ws-opts:
+    headers:
+      Host: hk.nbee.pp.ua
+    path: /aa
+- name: 5|🇭🇰 HK-3 | SHFX
+  password: BxceQaOe
+  port: 443
+  server: 203.198.122.129
+  skip-cert-verify: true
+  type: trojan
+- alterId: 0
+  name: 5|🇭🇰 HK-4 | SHFX
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.98
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 5|🇭🇰 HK-3 | SHFX
+  name: 5|🇭🇰 HK-5 | SHFX
   port: 36666
   reality-opts:
     public-key: cqCSxloJscJ3ZrNUlkSKkUFZ7SZ6vzQNszGolW_o7HY
@@ -132,64 +146,51 @@ proxies:
   type: vless
   udp: true
   uuid: aae56c24-7511-4526-9708-3fcbd804253c
-- name: 5|🇭🇰 HK-4 | SHFX
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 203.198.122.129
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 5|🇭🇰 HK-5 | SHFX
+  name: 5|🇭🇰 HK-6 | SHFX
   network: ws
-  port: 443
-  server: 46.3.26.12
-  tls: true
-  type: vmess
-  uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
-  ws-opts:
-    headers:
-      Host: hk.nbee.pp.ua
-    path: /aa
-- name: 5|🇭🇰 HK-6 | SHFX
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.98
+  port: 80
+  server: a7cf5f1e-sva740-tc67m2-1tjc4.hk3.p5pv.com
   skip-cert-verify: true
-  type: trojan
+  tls: false
+  type: vmess
+  uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
 - alterId: 2
   cipher: auto
   name: 5|🇭🇰 HK-7 | SHFX
   network: ws
   port: 80
-  server: 9984b70d-sv4n40-sx16xo-1j3zm.hk3.p5pv.com
+  server: 865c5c01-sv4n40-t65a3e-tqgz.hk3.p5pv.com
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 6ce63b80-8b5b-11ef-b635-f23c9164ca5d
+  uuid: 88da0d21-b25d-11ec-b9f7-f23c91cfbbc9
   ws-headers:
     Host: broadcastlv.chat.bilibili.com
   ws-path: /
-- alterId: 2
-  cipher: auto
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 5|🇭🇰 HK-8 | SHFX
-  network: ws
-  port: 80
-  server: 6dbaea45-sv0xs0-t9i7o2-1lt20.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: bf4ec108-f2b7-11ef-b654-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
+  port: 55558
+  reality-opts:
+    public-key: LPatmFrK3hRMrtAybjzB7DBfqCaKnKQ6s95kmXrrFxg
+    short-id: b2defcc6
+  server: 192.238.204.48
+  servername: apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1eb58333-3051-47c2-a2eb-44e5b64233c8
 - client-fingerprint: random
   name: 5|🇭🇰 HK-9 | SHFX
   network: ws
   port: 39738
-  server: 47.243.168.8
+  server: 8.218.125.141
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -204,7 +205,7 @@ proxies:
   name: 5|🇭🇰 HK-10 | SHFX
   network: ws
   port: 39738
-  server: 47.239.64.250
+  server: 47.243.60.131
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
@@ -218,8 +219,23 @@ proxies:
 - client-fingerprint: random
   name: 5|🇭🇰 HK-11 | SHFX
   network: ws
-  port: 39738
-  server: 8.210.171.15
+  port: 8388
+  server: 47.57.190.228
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 5|🇭🇰 HK-12 | SHFX
+  network: ws
+  port: 10001
+  server: 43.161.239.49
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
