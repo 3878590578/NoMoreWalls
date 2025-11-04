@@ -111,6 +111,15 @@ proxies:
   server: 3.145.46.227
   type: ss
   udp: true
+- alterId: 0
+  name: 5|🇭🇰 HK-1 | SHFX
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.3
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 5|🇻🇳 VN-1 | SHFX
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
@@ -139,34 +148,14 @@ proxies:
       Host: us.nbee.pp.ua
     path: /aa
 - alterId: 0
-  cipher: auto
-  name: 5|🇭🇰 HK-1 | SHFX
-  network: ws
-  port: 443
-  server: 46.3.26.12
-  tls: true
-  type: vmess
-  uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
-  ws-opts:
-    headers:
-      Host: hk.nbee.pp.ua
-    path: /aa
-- cipher: chacha20-ietf-poly1305
+  cipher: chacha20-ietf-poly1305
   name: 5|🇸🇪 SE-1 | SHFX
   password: e0AuSSE9kqrZnpK1RgcuPt
   port: 50589
   server: 78.40.116.11
-  type: ss
-  udp: true
-- alterId: 0
-  name: 5|🇭🇰 HK-2 | SHFX
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.3
   skip-cert-verify: true
   tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alterId: 0
   cipher: auto
   http-opts:
@@ -184,7 +173,35 @@ proxies:
   uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
 - alterId: 0
   cipher: auto
+  name: 5|🇭🇰 HK-2 | SHFX
+  network: ws
+  port: 443
+  server: 46.3.26.12
+  tls: true
+  type: vmess
+  uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
+  ws-opts:
+    headers:
+      Host: hk.nbee.pp.ua
+    path: /aa
+- alterId: 2
+  cipher: auto
   name: 5|🇨🇳 CN-1 | SHFX
+  network: ws
+  port: 30839
+  server: v39.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳 CN-2 | SHFX
   network: tcp
   port: 30302
   server: 39.107.155.11
@@ -193,15 +210,9 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  name: 5|🇰🇷 KR-2 | SHFX
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-2 | SHFX
+  name: 5|🇨🇳 CN-3 | SHFX
   port: 11819
   server: 36.133.73.36
   skip-cert-verify: false
@@ -209,32 +220,3 @@ proxies:
   tls: false
   type: vmess
   uuid: de32752c-0661-467e-82d3-35bc740a787f
-- alterId: 0
-  cipher: auto
-  name: 5|🇨🇳 CN-3 | SHFX
-  network: tcp
-  port: 50002
-  server: 106.14.75.114
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 5|🇳🇱 NL-2 | SHFX
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 151.242.251.131
-  type: ss
-- alterId: 32
-  cipher: auto
-  name: 5|🇺🇸 US-2 | SHFX
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
