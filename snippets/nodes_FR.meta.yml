@@ -1,11 +1,16 @@
 proxies:
-- encryption: none
-  grpc-opts: {}
+- client-fingerprint: random
   name: 5|🇫🇷 FR-1 | SHFX
-  network: grpc
-  port: 8880
-  server: 86.104.74.45
-  skip-cert-verify: false
+  network: ws
+  port: 2053
+  server: 51.38.49.23
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
