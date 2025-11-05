@@ -90,9 +90,16 @@ proxies:
   server: 63.180.178.8
   type: ss
   udp: true
+- client-fingerprint: chrome
+  name: 5|🇭🇰 HK-1 | SHFX
+  password: BxceQaOe
+  port: 443
+  server: 203.198.122.129
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|🇭🇰 HK-1 | SHFX
+  name: 5|🇭🇰 HK-2 | SHFX
   network: ws
   port: 443
   server: 46.3.26.12
@@ -103,18 +110,26 @@ proxies:
     headers:
       Host: hk.nbee.pp.ua
     path: /aa
-- name: 5|🇭🇰 HK-2 | SHFX
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 203.198.122.129
-  skip-cert-verify: true
-  type: trojan
 - client-fingerprint: random
   name: 5|🇭🇰 HK-3 | SHFX
   network: ws
   port: 39738
-  server: 8.210.115.197
+  server: 47.76.196.155
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 5|🇭🇰 HK-4 | SHFX
+  network: ws
+  port: 21678
+  server: 45.136.12.224
   servername: snippet.danfeng.site
   skip-cert-verify: true
   tfo: false
