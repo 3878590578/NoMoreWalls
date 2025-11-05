@@ -3,21 +3,21 @@ proxies:
   name: 3|VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 18.224.33.22
+  server: 3.141.46.88
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: '3|VIP專綫（美国） #1'
   password: amazonskr05
   port: 443
-  server: 3.22.249.200
+  server: 18.188.20.42
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: '3|VIP專綫（美国） #2'
   password: amazonskr05
   port: 443
-  server: 18.118.166.245
+  server: 3.149.246.131
   type: ss
   udp: true
 - alterId: 0
@@ -33,20 +33,12 @@ proxies:
     headers:
       Host: us.nbee.pp.ua
     path: /aa
-- name: 5|🇺🇸 US-4 | SHFX
-  password: 0e81a9cd-d849-4101-8d64-574c283207de
-  port: 2083
-  server: 104.21.69.44
-  skip-cert-verify: true
-  sni: de1.trojanvpn.de
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 5|🇺🇸 US-7 | SHFX
+  name: 5|🇺🇸 US-2 | SHFX
   network: ws
   port: 80
-  server: 104.19.44.182
+  server: 104.19.44.37
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -56,14 +48,57 @@ proxies:
     path: /xn--mes53ddysu0o3gl
 - alterId: 0
   cipher: auto
-  name: 5|🇺🇸 US-9 | SHFX
+  name: 5|🇺🇸 US-3 | SHFX
+  network: ws
+  port: 8443
+  server: 188.114.98.20
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
+  ws-opts:
+    path: /build
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-4 | SHFX
   network: ws
   port: 2082
-  server: 104.16.43.143
+  server: 104.16.39.191
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
   ws-opts:
     path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 5|🇺🇸 US-5 | SHFX
+  network: ws
+  port: 443
+  server: vjp1.0bad.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    headers:
+      host: vjp1.0bad.com
+    path: /chat
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-6 | SHFX
+  network: ws
+  port: 443
+  server: 172.67.170.103
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /linkws
