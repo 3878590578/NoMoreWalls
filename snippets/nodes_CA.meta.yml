@@ -6,10 +6,18 @@ proxies:
   server: 3.148.145.1
   type: ss
   udp: true
-- cipher: aes-256-gcm
+- client-fingerprint: random
   name: 5|🇨🇦 CA-1 | SHFX
-  password: Y6R9pAtvxxzmGC
-  port: 9090
-  server: 23.162.200.215
-  type: ss
-  udp: true
+  network: ws
+  port: 2053
+  server: 137.184.171.169
+  servername: snippet.danfeng.site
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b5544203-55e3-426e-92f1-0684c93f9829
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.site
+    path: /?ed=2560
