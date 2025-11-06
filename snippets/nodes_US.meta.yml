@@ -101,21 +101,21 @@ proxies:
   name: 3|VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 3.147.64.175
+  server: 3.129.21.37
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: '3|VIP專綫（美国） #1'
   password: amazonskr05
   port: 443
-  server: 18.188.17.133
+  server: 3.22.249.200
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: '3|VIP專綫（美国） #2'
   password: amazonskr05
   port: 443
-  server: 18.118.166.245
+  server: 18.224.33.22
   type: ss
   udp: true
 - alterId: 0
@@ -131,193 +131,168 @@ proxies:
     headers:
       Host: us.nbee.pp.ua
     path: /aa
-- cipher: aes-256-cfb
+- client-fingerprint: random
   name: 5|🇺🇸 US-2 | SHFX
-  password: amazonskr05
+  network: ws
   port: 443
-  server: 3.145.46.227
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
+  server: cf-cname.xingpingcn.top
+  servername: snippet.danfeng.eu.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- client-fingerprint: random
   name: 5|🇺🇸 US-3 | SHFX
   network: ws
-  port: 443
-  server: sssssssxxxx.2032.pp.ua
-  tls: true
-  type: vmess
-  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
-  ws-opts:
-    headers:
-      Host: sssssssxxxx.2032.pp.ua
-    path: /6We3U9Df1WGxgFnoFPw1
-- name: 5|🇺🇸 US-4 | SHFX
-  network: ws
-  password: rXzh%3B%3FnW1GGKB(K8
-  port: 443
-  server: 104.21.18.192
+  port: 2096
+  server: mfa.gov.ua
+  servername: snippet.danfeng.eu.org
   skip-cert-verify: true
-  sni: sAiKOXpUbGm.ZhkinGkuRD13.WorkErs.dEV
-  tfo: true
-  type: trojan
-  udp: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
   ws-opts:
     headers:
-      Host: sAiKOXpUbGm.ZhkinGkuRD13.WorkErs.dEV
-    path: /tr4BCdusB84159lWnu
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  fp: chrome
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 5|🇺🇸 US-4 | SHFX
+  network: ws
+  port: 2083
+  server: store.ubi.com
+  servername: snippet.danfeng.eu.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- client-fingerprint: random
   name: 5|🇺🇸 US-5 | SHFX
   network: ws
-  path: /containers/de
-  port: 2053
-  security: tls
-  server: 199.34.230.114
-  servername: om1.omidsuccess.uk
-  skip-cert-verify: false
-  sni: om1.omidsuccess.uk
-  tls: true
-  type: vless
-  uuid: b27e35a7-51f4-468e-8921-56a4901dd923
-  ws-opts:
-    path: /containers/de
-- insecure: '0'
-  name: 5|🇺🇸 US-6 | SHFX
-  password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
-  port: 1743
-  server: 825eee23-t4un40-tcj7b6-d70y.la.shifen.uk
+  port: 2096
+  server: www.shopify.com
+  servername: snippet.danfeng.eu.org
   skip-cert-verify: true
-  sni: 825eee23-t4un40-tcj7b6-d70y.la.shifen.uk
-  tls:
-    enabled: true
-    insecure: false
-    server_name: 825eee23-t4un40-tcj7b6-d70y.la.shifen.uk
-  type: hysteria2
-- encryption: none
-  flow: xtls-rprx-vision
-  fp: chrome
-  headerType: none
-  name: 5|🇺🇸 US-7 | SHFX
-  network: tcp
-  pbk: hxPcjUR-8QiEhcFdvvJz3JS4xUnoSv6KsxMWG0yGkh0
-  port: 443
-  reality-opts:
-    public-key: hxPcjUR-8QiEhcFdvvJz3JS4xUnoSv6KsxMWG0yGkh0
-    server-name: speed.cloudflare.com
-    short-id: ''
-  security: reality
-  server: 185.77.221.10
-  sni: speed.cloudflare.com
+  tfo: false
   tls: true
   type: vless
-  uuid: 40730d97-ffa7-1108-2c53-761516eb5fda
-- encryption: none
-  flow: xtls-rprx-vision
-  fp: chrome
-  headerType: none
-  name: 5|🇺🇸 US-8 | SHFX
-  network: tcp
-  pbk: wl7R7v8MbaC_Nh-_FNf1DoFXHDquVRtfX2Z20oXL6Q8
-  port: 443
-  reality-opts:
-    public-key: wl7R7v8MbaC_Nh-_FNf1DoFXHDquVRtfX2Z20oXL6Q8
-    server-name: speed.cloudflare.com
-    short-id: ''
-  security: reality
-  server: 193.56.20.10
-  sni: speed.cloudflare.com
-  tls: true
-  type: vless
-  uuid: 40730d97-ffa7-1108-2c53-761516eb5fda
-- encryption: none
-  flow: xtls-rprx-vision
-  fp: chrome
-  headerType: none
-  name: 5|🇺🇸 US-9 | SHFX
-  network: tcp
-  pbk: hxPcjUR-8QiEhcFdvvJz3JS4xUnoSv6KsxMWG0yGkh0
-  port: 993
-  reality-opts:
-    public-key: hxPcjUR-8QiEhcFdvvJz3JS4xUnoSv6KsxMWG0yGkh0
-    server-name: speed.cloudflare.com
-    short-id: ''
-  security: reality
-  server: 185.77.221.10
-  sni: speed.cloudflare.com
-  tls: true
-  type: vless
-  uuid: 40730d97-ffa7-1108-2c53-761516eb5fda
-- encryption: none
-  flow: xtls-rprx-vision
-  fp: chrome
-  headerType: none
-  name: 5|🇺🇸 US-10 | SHFX
-  network: tcp
-  pbk: wl7R7v8MbaC_Nh-_FNf1DoFXHDquVRtfX2Z20oXL6Q8
-  port: 993
-  reality-opts:
-    public-key: wl7R7v8MbaC_Nh-_FNf1DoFXHDquVRtfX2Z20oXL6Q8
-    server-name: speed.cloudflare.com
-    short-id: ''
-  security: reality
-  server: 193.56.20.10
-  sni: speed.cloudflare.com
-  tls: true
-  type: vless
-  uuid: 40730d97-ffa7-1108-2c53-761516eb5fda
-- client-fingerprint: chrome
-  encryption: none
-  fp: chrome
-  host: om1.omidsuccess.uk
-  name: 5|🇩🇪 DE-3 | SHFX
-  network: ws
-  path: /containers/de
-  port: 2053
-  security: tls
-  server: 199.34.230.114
-  servername: om1.omidsuccess.uk
-  skip-cert-verify: false
-  sni: om1.omidsuccess.uk
-  tls: true
-  type: vless
-  uuid: b27e35a7-51f4-468e-8921-56a4901dd923
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
   ws-opts:
     headers:
-      Host: om1.omidsuccess.uk
-    path: /containers/de
-- insecure: '0'
-  name: 5|🇺🇸 US-12 | SHFX
-  password: 94931862-1484-11f0-9ab7-f23c95b6f51d
-  port: 1743
-  server: 98f4acfe-t4un40-tdini3-cdfn.la.shifen.uk
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 5|🇺🇸 US-6 | SHFX
+  network: ws
+  port: 2083
+  server: staticdelivery.nexusmods.com
+  servername: snippet.danfeng.eu.org
   skip-cert-verify: true
-  sni: 98f4acfe-t4un40-tdini3-cdfn.la.shifen.uk
-  tls:
-    enabled: true
-    insecure: false
-    server_name: 98f4acfe-t4un40-tdini3-cdfn.la.shifen.uk
-  type: hysteria2
-- encryption: none
-  fp: random
-  headerType: none
-  name: 5|🇺🇸 US-13 | SHFX
-  network: tcp
-  pbk: aiCXvan0Pyr593Kr55wJifchu1dpTBiOj9J7x2m9Hio
-  port: 28901
-  reality-opts:
-    public-key: aiCXvan0Pyr593Kr55wJifchu1dpTBiOj9J7x2m9Hio
-    server-name: images.apple.com
-    short-id: '84'
-  security: reality
-  server: 148.135.83.173
-  sid: '84'
-  sni: images.apple.com
-  spx: /
+  tfo: false
   tls: true
   type: vless
-  uuid: 15135ad9-eb14-4b1c-8ab0-6ca17b6f3301
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 5|🇺🇸 US-7 | SHFX
+  network: ws
+  port: 2053
+  server: cloudflare-dl.byoip.top
+  servername: snippet.danfeng.eu.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 5|🇺🇸 US-8 | SHFX
+  network: ws
+  port: 2087
+  server: cloudflare-dl.cnae.top
+  servername: snippet.danfeng.eu.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 5|🇺🇸 US-9 | SHFX
+  network: ws
+  port: 443
+  server: 47.79.92.16
+  servername: snippet.danfeng.eu.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 5|🇺🇸 US-10 | SHFX
+  network: ws
+  port: 443
+  server: 94.131.123.74
+  servername: snippet.danfeng.eu.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 5|🇺🇸 US-11 | SHFX
+  network: ws
+  port: 60013
+  server: 150.230.42.132
+  servername: snippet.danfeng.eu.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 5|🇺🇸 US-12 | SHFX
+  network: ws
+  port: 443
+  server: 34.69.150.180
+  servername: snippet.danfeng.eu.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
