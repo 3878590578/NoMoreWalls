@@ -37,9 +37,18 @@ proxies:
   server: 63.177.227.124
   type: ss
   udp: true
-- cipher: aes-256-cfb
+- client-fingerprint: random
   name: 5|🇰🇷 KR-1 | SHFX
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  type: ss
+  network: ws
+  port: 1777
+  server: 138.2.120.74
+  servername: snippet.danfeng.eu.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
