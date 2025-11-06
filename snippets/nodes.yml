@@ -111,6 +111,13 @@ proxies:
   server: 99.79.161.29
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 5|🇨🇳 CN-1 | SHFX
+  password: dc9ea653-becc-44f1-95f9-16773a0519e9
+  port: 31013
+  server: fl01.lr9soflhleb.top
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|🇺🇸 US-1 | SHFX
@@ -137,13 +144,6 @@ proxies:
     headers:
       Host: hk.nbee.pp.ua
     path: /aa
-- cipher: aes-128-gcm
-  name: 5|🇭🇰 HK-2 | SHFX
-  password: 57bc0c04-8184-48f5-906b-897d095ed445
-  port: 17459
-  server: liubu9.singdns.com
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 5|🇲🇩 MD-1 | SHFX
   password: f8f7aCzcPKbsF8p3
@@ -152,7 +152,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-1 | SHFX
+  name: 5|🇨🇳 CN-2 | SHFX
   network: tcp
   port: 50002
   server: 139.129.20.6
@@ -163,27 +163,79 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-2 | SHFX
-  network: tcp
-  port: 30302
-  server: 39.107.155.11
-  skip-cert-verify: true
-  tfo: true
+  name: 5|🇨🇳 CN-3 | SHFX
+  port: 11819
+  server: 36.133.73.36
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: de32752c-0661-467e-82d3-35bc740a787f
+- alterId: 2
+  cipher: auto
+  name: 5|🇨🇳 CN-4 | SHFX
+  network: ws
+  port: '30809'
+  server: v9.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-3 | SHFX
+  name: 5|🇨🇳 CN-5 | SHFX
   network: tcp
   port: 50002
   server: 106.14.75.114
   skip-cert-verify: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 5|🇱🇻 LV-1 | SHFX
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 46.183.217.204
+- alterId: 0
+  name: 5|🇨🇳 CN-6 | SHFX
+  password: adbac894-90b9-4913-b77e-a715a8d4ebc8
+  port: 20021
+  server: oss-cn-shanghai.letssepub.com
+  skip-cert-verify: true
+  sni: dingding-doc.com
+  tls: true
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: 5|🇺🇸 US-3 | SHFX
+  password: Yc2CtrIz8L
+  port: 16899
+  server: 104.245.213.31
   type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 5|🇺🇸 US-4 | SHFX
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.9
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-5 | SHFX
+  network: ws
+  port: 8880
+  server: 104.19.40.84
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  ws-opts:
+    path: /d/65dd503.TG.WangCai2.WangCai_8:107690
+- name: 5|🇺🇸 US-6 | SHFX
+  password: be968c88-86db-48e7-b8f8-ecebb33a022f
+  port: 443
+  server: 45.79.9.98
+  skip-cert-verify: true
+  type: trojan
+  udp: true
