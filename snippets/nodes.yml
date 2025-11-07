@@ -42,66 +42,66 @@ proxies:
       Host: berlin-agents-violations-jacksonville.trycloudflare.com
     path: /7bb1be06-a5da-4f06-9a2c-f14523424adf-vm?ed=2048
 - cipher: aes-256-cfb
-  name: 3|VIP專綫（日本）
+  name: 3|VIP專綫（香港）
   password: amazonskr05
   port: 443
-  server: 99.79.161.235
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 3|VIP專綫（加拿大）
-  password: amazonskr05
-  port: 443
-  server: 18.224.33.22
+  server: 3.120.183.20
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: 3|VIP專綫（美国）
   password: amazonskr05
   port: 443
-  server: 13.59.239.31
+  server: 3.147.64.175
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 3|VIP專綫（台湾）
-  password: amazonskr05
-  port: 443
-  server: 13.40.87.204
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 3|VIP專綫（香港）
-  password: amazonskr05
-  port: 443
-  server: 3.72.36.217
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '3|VIP專綫（美国） #1'
-  password: amazonskr05
-  port: 443
-  server: 18.188.17.133
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 3|VIP專綫（新加坡）
-  password: amazonskr05
-  port: 443
-  server: 18.171.250.2
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 3|VIP專綫（韩国）
+  name: 3|VIP專綫（日本）
   password: amazonskr05
   port: 443
   server: 63.177.227.124
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  name: 3|VIP專綫（新加坡）
+  password: amazonskr05
+  port: 443
+  server: 3.72.9.162
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 3|VIP專綫（台湾）
+  password: amazonskr05
+  port: 443
+  server: 18.199.91.56
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 3|VIP專綫（加拿大）
+  password: amazonskr05
+  port: 443
+  server: 3.148.145.1
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '3|VIP專綫（美国） #1'
+  password: amazonskr05
+  port: 443
+  server: 18.118.166.245
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
   name: '3|VIP專綫（美国） #2'
   password: amazonskr05
   port: 443
-  server: 18.118.137.217
+  server: 3.141.46.88
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 3|VIP專綫（韩国）
+  password: amazonskr05
+  port: 443
+  server: 3.65.219.59
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -113,17 +113,13 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5|🇺🇸 US-1 | SHFX
-  network: ws
-  port: 443
-  server: 154.17.227.158
-  tls: true
+  name: 5|🇨🇳 CN-1 | SHFX
+  port: 49509
+  server: 36.150.27.76
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-  ws-opts:
-    headers:
-      Host: us.nbee.pp.ua
-    path: /aa
+  uuid: aed41f1e-75e7-41ce-a2d4-38f65a6bbc86
 - alterId: 0
   cipher: auto
   name: 5|🇭🇰 HK-1 | SHFX
@@ -144,6 +140,19 @@ proxies:
   server: 151.242.251.133
   type: ss
 - alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-1 | SHFX
+  network: ws
+  port: 443
+  server: 154.17.227.158
+  tls: true
+  type: vmess
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  ws-opts:
+    headers:
+      Host: us.nbee.pp.ua
+    path: /aa
+- alterId: 0
   name: 5|🇭🇰 HK-2 | SHFX
   password: BxceQaOe
   port: 443
@@ -154,7 +163,22 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5|🇨🇳 CN-1 | SHFX
+  name: 5|🇨🇳 CN-2 | SHFX
+  port: 11819
+  server: 36.133.73.36
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: de32752c-0661-467e-82d3-35bc740a787f
+- cipher: chacha20-ietf-poly1305
+  name: 5|🇳🇱 NL-3 | SHFX
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.147
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳 CN-3 | SHFX
   network: tcp
   port: 50002
   server: 139.129.20.6
@@ -163,3 +187,38 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: 5|🇪🇸 ES-1 | SHFX
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 37.143.130.203
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-3 | SHFX
+  network: ws
+  port: 443
+  server: 40.160.16.219
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: serkat.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 5|🇺🇸 US-4 | SHFX
+  network: ws
+  port: 443
+  server: 104.17.197.31
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      Host: quiet-moon-132a.xetag42714.workers.dev
+    path: /ivideos.sbs/linkws
