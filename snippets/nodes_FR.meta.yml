@@ -1,9 +1,19 @@
 proxies:
-- client-fingerprint: random
+- client-fingerprint: chrome
+  fingerprint: ''
   name: 5|🇫🇷 FR-1 | SHFX
+  network: grpc
+  port: 8880
+  server: 95.164.6.156
+  tls: false
+  type: vless
+  udp: false
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: random
+  name: 5|🇫🇷 FR-2 | SHFX
   network: ws
-  port: 2053
-  server: 141.94.222.188
+  port: 8443
+  server: 94.23.153.168
   servername: snippet.danfeng.eu.org
   skip-cert-verify: true
   tfo: false
@@ -15,10 +25,25 @@ proxies:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇫🇷 FR-2 | SHFX
+  name: 5|🇫🇷 FR-3 | SHFX
   network: ws
   port: 2053
-  server: 141.94.222.33
+  server: 141.94.221.2
+  servername: snippet.danfeng.eu.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 5|🇫🇷 FR-4 | SHFX
+  network: ws
+  port: 8443
+  server: 141.94.220.21
   servername: snippet.danfeng.eu.org
   skip-cert-verify: true
   tfo: false
