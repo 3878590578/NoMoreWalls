@@ -1,23 +1,35 @@
 proxies:
 - client-fingerprint: chrome
   fingerprint: ''
+  grpc-opts:
+    grpc-service-name: vless2020
   name: 5|🇫🇷 FR-1 | SHFX
-  network: ws
-  port: 80
-  server: 51.38.232.101
+  network: grpc
+  port: 2020
+  server: 167.17.178.90
   tls: false
   type: vless
   udp: false
-  uuid: f0758892-f40c-412d-9fab-88103bad1fd8
-  ws-opts:
-    path: /vless/
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 5|🇫🇷 FR-2 | SHFX
+  uuid: 66beaaea-3f3c-47f8-a23e-60afb0524b05
+- name: 5|🇫🇷 FR-2 | SHFX
   network: grpc
   port: 8880
-  server: 95.164.6.183
-  tls: false
+  server: 195.42.233.124
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vless
-  udp: false
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: chrome
+  grpc-opts: {}
+  name: 5|🇫🇷 FR-3 | SHFX
+  network: grpc
+  port: 8880
+  server: 638937994136550920.prague-prx-dnraacl.info
+  skip-cert-verify: true
+  tfo: true
+  tls: true
+  type: vless
+  udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
