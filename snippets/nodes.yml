@@ -97,13 +97,6 @@ proxies:
   server: 103.186.155.126
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 5|🇻🇳 VN-2 | SHFX
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.194
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|🇺🇸 US-1 | SHFX
@@ -117,6 +110,13 @@ proxies:
     headers:
       Host: us.nbee.pp.ua
     path: /aa
+- cipher: aes-256-cfb
+  name: 5|🇻🇳 VN-2 | SHFX
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.194
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 5|🇻🇳 VN-3 | SHFX
   password: Nk9asglDzHzjktVzTkvhaA
@@ -129,6 +129,12 @@ proxies:
   port: 38388
   server: 103.186.154.193
   tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 5|🇰🇷 KR-1 | SHFX
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
   type: ss
 - alterId: 0
   cipher: auto
@@ -143,34 +149,26 @@ proxies:
     headers:
       Host: hk.nbee.pp.ua
     path: /aa
-- cipher: aes-256-cfb
-  name: 5|🇵🇾 PY-1 | SHFX
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.165.233.93
-  type: ss
-- cipher: aes-256-cfb
-  name: 5|🇻🇳 VN-5 | SHFX
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.139
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 5|🇳🇱 NL-1 | SHFX
+  name: 5|🇳🇱 NL-2 | SHFX
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 151.242.251.131
   type: ss
-- cipher: aes-256-cfb
-  name: 5|🇰🇷 KR-1 | SHFX
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  type: ss
 - alterId: 0
   cipher: auto
   name: 5|🇨🇳 CN-1 | SHFX
+  network: tcp
+  port: 50002
+  server: 139.129.20.6
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 5|🇨🇳 CN-2 | SHFX
   port: 49509
   server: 36.150.27.76
   skip-cert-verify: false
@@ -178,15 +176,9 @@ proxies:
   tls: false
   type: vmess
   uuid: aed41f1e-75e7-41ce-a2d4-38f65a6bbc86
-- cipher: chacha20-ietf-poly1305
-  name: 5|🇳🇱 NL-2 | SHFX
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
 - alterId: 2
   cipher: auto
-  name: 5|🇨🇳 CN-2 | SHFX
+  name: 5|🇨🇳 CN-3 | SHFX
   network: ws
   port: 30839
   server: v39.heduian.link
@@ -199,101 +191,27 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 5|🇨🇳 CN-3 | SHFX
-  network: ws
-  port: '30809'
-  server: v9.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- cipher: aes-256-cfb
-  name: 5|🇹🇼 TW-1 | SHFX
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.20.79
-  type: ss
-- cipher: aes-128-gcm
-  name: 5|🇬🇧 GB-2 | SHFX
-  password: shadowsocks
-  port: 443
-  server: uk-dc1.yangon.club
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 5|🇺🇸 US-3 | SHFX
-  port: 30587
-  server: 207.148.31.167
+  name: 5|🇺🇸 US-2 | SHFX
+  network: tcp
+  port: 443
+  server: 165.140.216.141
   skip-cert-verify: true
-  tls: false
+  tfo: true
   type: vmess
   udp: true
-  uuid: 55219214-9f2d-4914-fbaf-b1b444c85b0e
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
 - alterId: 0
   cipher: auto
   name: 5|🇭🇰 HK-2 | SHFX
   network: ws
-  port: 15097
-  server: 149.30.232.103
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 460908b8-de16-42e9-bd0d-191522ab92a5
-  ws-opts:
-    path: /arki?ed=2048
-- cipher: chacha20-ietf-poly1305
-  name: 5|🇬🇷 GR-1 | SHFX
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 141.11.189.88
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 5|🇺🇸 US-4 | SHFX
-  network: ws
-  port: 80
-  server: 104.19.44.111
+  port: 30810
+  server: 23.247.139.48
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  uuid: 82697add-9aa5-420a-97c0-4b382e2942f2
   ws-opts:
-    path: /xn--mes53ddysu0o3gl
-- alterId: 0
-  cipher: auto
-  name: 5|🇺🇸 US-5 | SHFX
-  network: ws
-  port: 2086
-  server: 104.26.8.156
-  skip-cert-verify: true
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 5|🇺🇸 US-7 | SHFX
-  network: ws
-  port: 8080
-  server: npmjs.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6cbc9c78-1cb1-57d4-a999-e2f4e34c1e03
-  ws-opts:
-    headers:
-      Host: ke7hz36ewz-4515017473.mashallahbet.com
-    path: /nasnet/cdn
+    path: /TG:@dns68群免费提供
