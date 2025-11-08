@@ -7,10 +7,24 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-cfb
+  name: VIP專綫（日本）
+  password: amazonskr05
+  port: 443
+  server: 99.79.161.29
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
   name: VIP專綫（韩国）
   password: amazonskr05
   port: 443
-  server: 18.169.170.176
+  server: 13.40.57.119
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: VIP專綫（台湾）
+  password: amazonskr05
+  port: 443
+  server: 3.120.183.20
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -24,32 +38,18 @@ proxies:
   name: VIP專綫（新加坡）
   password: amazonskr05
   port: 443
-  server: 3.10.19.150
+  server: 18.175.217.31
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: VIP專綫（香港）
   password: amazonskr05
   port: 443
-  server: 16.52.156.120
+  server: 18.175.147.212
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: VIP專綫（日本）
-  password: amazonskr05
-  port: 443
-  server: 63.177.227.124
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: VIP專綫（日本）
-  password: amazonskr05
-  port: 443
-  server: 99.79.161.29
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: VIP專綫（台湾）
   password: amazonskr05
   port: 443
   server: 18.133.239.161
@@ -58,13 +58,13 @@ proxies:
 proxy-groups:
 - name: Proxies
   proxies:
+  - VIP專綫（日本）
   - VIP專綫（韩国）
+  - VIP專綫（台湾）
   - VIP專綫（美国）
   - VIP專綫（新加坡）
   - VIP專綫（香港）
   - VIP專綫（日本）
-  - VIP專綫（日本）
-  - VIP專綫（台湾）
   type: select
 redir-port: 7892
 rules:
