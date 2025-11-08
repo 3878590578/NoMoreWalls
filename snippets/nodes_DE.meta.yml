@@ -41,19 +41,26 @@ proxies:
     headers:
       Host: berlin-agents-violations-jacksonville.trycloudflare.com
     path: /7bb1be06-a5da-4f06-9a2c-f14523424adf-vm?ed=2048
-- name: 5|🇩🇪 DE-1 | SHFX
-  port: 47387
-  server: 198.186.131.216
-  skip-cert-verify: false
-  tls: false
+- client-fingerprint: random
+  name: 5|🇩🇪 DE-1 | SHFX
+  network: ws
+  port: 8443
+  server: 51.195.44.192
+  servername: snippet.danfeng.eu.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
-  udp: true
-  uuid: cdc453bb-34c8-4405-a322-56f6878ccd40
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
 - client-fingerprint: random
   name: 5|🇩🇪 DE-2 | SHFX
   network: ws
-  port: 37561
-  server: 91.107.145.203
+  port: 443
+  server: 45.79.251.182
   servername: snippet.danfeng.eu.org
   skip-cert-verify: true
   tfo: false
@@ -68,7 +75,7 @@ proxies:
   name: 5|🇩🇪 DE-3 | SHFX
   network: ws
   port: 443
-  server: 77.221.137.133
+  server: 18.193.131.26
   servername: snippet.danfeng.eu.org
   skip-cert-verify: true
   tfo: false
@@ -82,8 +89,8 @@ proxies:
 - client-fingerprint: random
   name: 5|🇩🇪 DE-4 | SHFX
   network: ws
-  port: 2053
-  server: 142.132.165.86
+  port: 20205
+  server: 172.104.155.33
   servername: snippet.danfeng.eu.org
   skip-cert-verify: true
   tfo: false
@@ -97,8 +104,8 @@ proxies:
 - client-fingerprint: random
   name: 5|🇩🇪 DE-5 | SHFX
   network: ws
-  port: 2053
-  server: 193.42.62.215
+  port: 443
+  server: 142.132.178.99
   servername: snippet.danfeng.eu.org
   skip-cert-verify: true
   tfo: false
@@ -113,7 +120,7 @@ proxies:
   name: 5|🇩🇪 DE-6 | SHFX
   network: ws
   port: 443
-  server: 172.104.144.213
+  server: 85.215.186.111
   servername: snippet.danfeng.eu.org
   skip-cert-verify: true
   tfo: false
@@ -128,7 +135,7 @@ proxies:
   name: 5|🇩🇪 DE-7 | SHFX
   network: ws
   port: 20205
-  server: 172.105.88.163
+  server: 194.233.165.233
   servername: snippet.danfeng.eu.org
   skip-cert-verify: true
   tfo: false
