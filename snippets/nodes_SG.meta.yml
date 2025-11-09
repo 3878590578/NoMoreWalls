@@ -143,11 +143,24 @@ proxies:
   name: 3|VIP專綫（新加坡）
   password: amazonskr05
   port: 443
-  server: 18.130.251.29
+  server: 3.8.175.221
   type: ss
   udp: true
+- name: 5|🇸🇬 SG-1 | SHFX
+  network: ws
+  password: 1b26d982-fd68-44f4-bf6d-22fe17a9249a
+  port: 20230
+  server: sg006.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.alibaba.com
+    path: /
 - client-fingerprint: random
-  name: 5|🇸🇬 SG-1 | SHFX
+  name: 5|🇸🇬 SG-2 | SHFX
   network: ws
   port: 2096
   server: cfsaas.080112.xyz
@@ -162,25 +175,10 @@ proxies:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
 - client-fingerprint: random
-  name: 5|🇸🇬 SG-2 | SHFX
-  network: ws
-  port: 7445
-  server: 8.219.78.44
-  servername: snippet.danfeng.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.eu.org
-    path: /?ed=2560
-- client-fingerprint: random
   name: 5|🇸🇬 SG-3 | SHFX
   network: ws
-  port: 8444
-  server: 207.148.125.245
+  port: 39738
+  server: 140.245.104.25
   servername: snippet.danfeng.eu.org
   skip-cert-verify: true
   tfo: false
