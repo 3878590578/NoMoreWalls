@@ -1,16 +1,24 @@
 proxies:
-- cipher: aes-256-cfb
+- client-fingerprint: random
   name: 5|🇸🇪 SE-1 | SHFX
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 121.127.46.147
-  type: ss
-  udp: true
+  network: ws
+  port: 443
+  server: 195.20.208.72
+  servername: snippet.danfeng.eu.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
 - client-fingerprint: random
   name: 5|🇸🇪 SE-2 | SHFX
   network: ws
   port: 443
-  server: 46.8.228.91
+  server: 92.51.23.83
   servername: snippet.danfeng.eu.org
   skip-cert-verify: true
   tfo: false
