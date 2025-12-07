@@ -1,36 +1,32 @@
 #==========================================
-# @ConfigName        墨鱼自用Clash配置文件（已含自建节点）
+# @ConfigName        墨鱼自用Clash配置文件
 # @Author            @ddgksf2013
 # @TgChannel         𝐡𝐭𝐭𝐩𝐬://𝐭.𝐦𝐞/𝐝𝐝𝐠𝐤𝐬𝐟𝟐𝟎𝟐𝟏
-# @UpdateTime        2025-12-02 新增 4 条自建节点
-# @Function          支持手动选择、自动测速、广告屏蔽、兜底分流、按国家分组节点、多机场订阅、TUN 模式
+# @WechatID          墨鱼手记
+# @Feedback          💡请通过邮件反馈问题[其它方式一概无视]：𝐝𝐝𝐠𝐤𝐬𝐟𝟐𝟎𝟏𝟑@𝟏𝟔𝟑.𝐜𝐨𝐦 💡
+# @UpdateTime        2025/07/05 21:30 UTC/GMT +8
+# @Function          支持手动选择、自动测速、广告屏蔽、兜底分流、按国家分组节点、多机场订阅等，配置适用ClashVerge   
 # @ClashVerge        https://github.com/clash-verge-rev/clash-verge-rev/releases
+# @Thanks            @blackmatrix7, @Fndroid, @Anti
+# @Attention         𝐏𝐥𝐞𝐚𝐬𝐞 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐨𝐟 𝐂𝐥𝐚𝐬𝐡𝐕𝐞𝐫𝐠𝐞𝐟𝐨𝐫𝐖𝐢𝐧𝐝𝐨𝐰𝐬
+# @ConfigVersion     1.0.26
 #==========================================
 
-port: 7890
-socks-port: 7891
-redir-port: 7892
-mixed-port: 7893
-allow-lan: true
-bind-address: "*"
-mode: rule
-log-level: info
-ipv6: false
+port: 7890           # HTTP 代理端口
+socks-port: 7891     # Socks 端口
+redir-port: 7892     # Redir 端口
+mixed-port: 7893     # 混合端口
+allow-lan: true      # 允许局域网连接
+bind-address: "*"    # 地址绑定
+mode: rule           # 规则模式
+log-level: info      # 日志级别
+ipv6: false          # IPV6开关
 external-controller: 127.0.0.1:9090
-interface-name: Meta
-tun:
-  enable: true
-  stack: system
-  dns-hijack:
-    - 8.8.8.8:53
-    - 8.8.4.4:53
-  auto-route: true
-  auto-detect-interface: true
 
 dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:53
+  enable: true       # 不使用系统 DNS
+  ipv6: false        # 关闭 IPV6
+  listen: 0.0.0.0:53 # dns 监听
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -47,10 +43,10 @@ dns:
     - "*.battlenet.com"
     - "*.blzstatic.cn"
     - "*.battle.net"
-  nameserver:
+  nameserver:        # 默认 DNS 服务
     - 223.5.5.5
     - 119.29.29.29
-  fallback:
+  fallback:          # 国外 DNS 服务器
     - https://cloudflare-dns.com/dns-query
     - https://dns.google/dns-query
     - https://dns.alidns.com/dns-query
@@ -59,12 +55,13 @@ dns:
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
+#========= 建立锚点 =========#
 
-#========= 锚点 =========#
-pr:   &a3 {type: select,   proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, DIRECT]}
-p:    &a1 {type: http,     interval: 86400,  health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800}}
-auto: &a4 {type: url-test, lazy: true,  url: http://www.gstatic.com/generate_204, interval: 900, use: [Sub]}
-use:  &a2 {type: select,   use: [Sub]}
+# 策略组引用
+pr:   &a3 {type: select,   proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, DIRECT] }
+p:    &a1 {type: http,     interval: 86400,  health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800} }
+auto: &a4 {type: url-test, lazy: true,  url: http://www.gstatic.com/generate_204, interval: 900, use: [Sub] }
+use:  &a2 {type: select,   use: [Sub] }
 c:    &a6 {type: http,     behavior: classical, interval: 86400}
 d:    &a5 {type: http,     behavior: domain,    interval: 86400}
 i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
@@ -72,72 +69,15 @@ i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 proxy-providers:
   Sub:
     <<: *a1
-    url: https://t.me/ddgksf2021.yaml
+    url: https://liangxin.xyz/api/v1/liangxin?OwO=352a9ae5334adf0a0ebcf1cacd1c7128|
+    # URL后面填写格式1: 直接填写你的机场Clash订阅[推荐此种方式，避免订阅泄露
+    # URL后面填写格式2[集合订阅]：https://api.nexconvert.com/sub?target=clash&url=请手动填入你的订阅(多机场订阅用|分割即可)&emoji=true&list=true&new_name=true&udp=false
     path: ./proxy_providers/sub.yaml
-  Sub2:
-    <<: *a1
-    url: https://raw.githubusercontent.com/Pundsup/Live/main/configs/self_nodes.yaml
-    path: ./proxy_providers/sub2.yaml
 
-#==================== 自建节点 ====================
-proxies:
-  - name: "🇭🇰 香港01 | IEPL"
-    type: ss
-    server: hk1.example.com
-    port: 10011
-    cipher: aes-128-gcm
-    password: "Sj10bnYDe7w6V29E"
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 244547b381.m.ctrip.com
-
-  - name: "🇯🇵 日本01 | IEPL"
-    type: ss
-    server: jp1.example.com
-    port: 10021
-    cipher: aes-128-gcm
-    password: "Sj10bnYDe7w6V29E"
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 244547b381.m.ctrip.com
-
-  - name: "🇸🇬 新加坡01 | IEPL"
-    type: ss
-    server: sg1.example.com
-    port: 10031
-    cipher: aes-128-gcm
-    password: "Sj10bnYDe7w6V29E"
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 244547b381.m.ctrip.com
-
-  - name: "🇺🇸 美国01 | IEPL"
-    type: ss
-    server: us1.example.com
-    port: 10051
-    cipher: aes-128-gcm
-    password: "Sj10bnYDe7w6V29E"
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 244547b381.m.ctrip.com
-
-#==================== 策略组 ====================
+proxies: null
 proxy-groups:
-# 分流分组
-  - name: 🚀 手动切换
-    type: select
-    proxies:
-      - 🏠 自建节点          # 先把自建节点放在最上面，方便点选
-      - ♻️ 自动选择
-      - DIRECT
-    use:
-      - Sub                 # 墨鱼订阅
-      - Sub2                # 你的第二个订阅
-
+#分流分组
+  - {name: 🚀 手动切换, <<: *a2}
   - {name: 🌏 全球加速, <<: *a3}
   - {name: 🍎 苹果服务, <<: *a3}
   - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
@@ -149,37 +89,16 @@ proxy-groups:
   - {name: 🎮 游戏平台, <<: *a3}
   - {name: 🆎 AdBlock, type: select, proxies: [REJECT]}
   - {name: 🐟 兜底分流, <<: *a3}
+  
+#节点分组
+  - {name: ♻️ 自动选择, <<: *a4}
+  - {name: 🇭🇰 香港节点, <<: *a4, filter: "港|HK|(?i)Hong"           }             # a4更改为a2，即为手动选择
+  - {name: 🇯🇵 日本节点, <<:  *a4, filter: "日|东京|JP|(?i)Japan"     }             # a4更改为a2，即为手动选择     
+  - {name: 🇨🇳 台湾节点, <<: *a4, filter: "台|湾|TW|(?i)Taiwan"      }             # a4更改为a2，即为手动选择
+  - {name: 🇺🇲 美国节点, <<: *a4, filter: "美|US|(?i)States|American"}             # a4更改为a2，即为手动选择
+  - {name: 🇸🇬 狮城节点, <<: *a4, filter: "新|坡|SG|(?i)Singapore"    }            # a4更改为a2，即为手动选择
 
-# 节点分组（含订阅+自建）
-  - name: ♻️ 自动选择
-    <<: *a4                      # 仅对 Sub 做自动测速
-  - name: 🇭🇰 香港节点
-    <<: *a4
-    filter: "港|HK|(?i)Hong"
-  - name: 🇯🇵 日本节点
-    <<: *a4
-    filter: "日|东京|JP|(?i)Japan"
-  - name: 🇨🇳 台湾节点
-    <<: *a4
-    filter: "台|湾|TW|(?i)Taiwan"
-  - name: 🇺🇲 美国节点
-    <<: *a4
-    filter: "美|US|(?i)States|American"
-  - name: 🇸🇬 狮城节点
-    <<: *a4
-    filter: "新|坡|SG|(?i)Singapore"
-
-  # 新增：自建节点独立分组，也可被别处引用
-  - name: 🏠 自建节点
-    type: select
-    proxies:
-      - 🇭🇰 香港01 | IEPL
-      - 🇯🇵 日本01 | IEPL
-      - 🇸🇬 新加坡01 | IEPL
-      - 🇺🇸 美国01 | IEPL
-      - DIRECT
-
-#==================== 规则 ====================
+# 分流规则 
 rule-providers:
   Ad:          {<<: *a5, url: https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt,                                     path: ./ruleset/anti-ad-clash.yaml}
   OpenAi:      {<<: *a6, url: https://gist.githubusercontent.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4/raw/Ai.yaml,                         path: ./ruleset/OpenAi.yaml       }
@@ -199,6 +118,8 @@ rule-providers:
   Download:    {<<: *a6, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Download/Download.yaml,                  path: ./ruleset/Download.yaml     }
   ChinaIP:     {<<: *a7, url: https://cdn.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/clash-rule-provider.yml,                                     path: ./ruleset/ChinaIP.yaml      }
 
+
+# 分流Policy 
 rules:
   - RULE-SET,Ad,🆎 AdBlock
   - RULE-SET,OpenAi,🤖 OpenAi
@@ -219,3 +140,10 @@ rules:
   - RULE-SET,ChinaIP,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,🐟 兜底分流
+
+
+# TUN模式是通过在操作系统上安装一个虚拟网卡来实现的，它可以接管所有的网络流量，并将流量转发至Clash，然后由Clash发出请求
+# Windows 系统中如何启用TUN模式
+# 1、运行 Clash For Windows, 确保使用规则模式，并可以联网
+# 2、点击 General中的Service Mode右侧的Manage按钮，在弹出窗口中选择schtasks，安装服务模式。安装完成后，应用程序会自动重启，Service Mode右侧的地球图标变为绿色表示安装成功
+# 3、点击 General中的TUN Mode右侧的开关以启动TUN模式
